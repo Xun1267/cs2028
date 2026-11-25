@@ -1,3 +1,4 @@
+import { changePage, revealUpdate } from "./motion.js";
 import { majors, careers, topics } from "./content.js";
 const $ = (s) => document.querySelector(s),
   main = $("#main");
@@ -51,18 +52,114 @@ const read = () => {
     return {};
   }
 };
-let state = { fav: [], comp: [], plans: [], notes: {}, city: "", ...read() },
-  schools = [],
-  projects = [],
-  news = [],
-  trends = {},
-  page,
-  arg,
-  filters = { q: "", city: "", combo: "", year: "", view: "招生项目" };
+const defaultFilters = {
+  q: "",
+  city: "",
+  combo: "",
+  year: "",
+  sort: "",
+  view: "招生项目",
+};
+const pageSize = 20;
+const browserStateKey = "cs2028-browser-v2";
+function readBrowserState() {
+  try {
+    return JSON.parse(sessionStorage.getItem(browserStateKey)) || {};
+  } catch {
+    return {};
+  }
+}
+const browserState = readBrowserState();
+browserState.directoryEntries ||= {};
+let state = { fav: [], comp: [], plans: [], notes: {}, city: "", ...read() };
+let schools, projects, news, trends, page, arg;
+let filters = { ...defaultFilters, ...browserState.filters };
+let listPage = browserState.listPage || 1;
+let schoolByName,
+  projectById,
+  projectsBySchool,
+  indexedSchools,
+  indexedProjects,
+  searchIndex;
+let cities, years;
+const combos = ["11408", "12408", "21408", "22408"];
+const collator = new Intl.Collator("zh-CN");
+
+function storeBrowserState() {
+  if (page === "schools" && activeEntry) {
+    browserState.directoryEntries[activeEntry] = {
+      filters: { ...filters },
+      listPage,
+    };
+  }
+  try {
+    sessionStorage.setItem(
+      browserStateKey,
+      JSON.stringify({ ...browserState, filters, listPage }),
+    );
+  } catch {
+    // Browsing still works when session storage is unavailable.
+  }
+}
+
+function normalizeQuery(value) {
+  return String(value)
+    .trim()
+    .toLowerCase()
+    .replace(/武大/g, "武汉大学")
+    .replace(/华科/g, "华中科技大学");
+}
+
+function indexData() {
+  schoolByName = new Map(schools.map((school) => [school.name, school]));
+  projectById = new Map(projects.map((project) => [project.id, project]));
+  projectsBySchool = new Map();
+  for (const project of projects) {
+    if (!projectsBySchool.has(project.school))
+      projectsBySchool.set(project.school, []);
+    projectsBySchool.get(project.school).push(project);
+  }
+  cities = [
+    ...new Set(
+      [...schools, ...projects].map(({ city }) => city).filter(Boolean),
+    ),
+  ];
+  years = [...new Set(projects.map(({ year }) => String(year)).concat("2028"))]
+    .sort()
+    .reverse();
+  indexedSchools = schools.map((record) => ({
+    record,
+    text: normalizeQuery([record.name, record.city, record.province].join(" ")),
+  }));
+  indexedProjects = projects.map((record) => ({
+    record,
+    text: normalizeQuery(
+      [
+        record.school,
+        record.college,
+        record.code,
+        record.major,
+        record.campus,
+        record.city,
+        record.province,
+        record.combo,
+        record.direction,
+      ].join(" "),
+    ),
+  }));
+  searchIndex = searchRows().map((row) => ({
+    row,
+    text: normalizeQuery(row[2]),
+  }));
+}
+
 function notify(s) {
-  $("#notice").textContent = s;
+  const display = $("#previewDialog[open] #previewNotice") || $("#notice");
+  $("#notice").textContent = "";
+  $("#previewNotice").textContent = "";
+  display.textContent = s;
   clearTimeout(notify.t);
-  notify.t = setTimeout(() => ($("#notice").textContent = ""), 2200);
+  notify.t = setTimeout(() => (display.textContent = ""), 2200);
 }
 function save() {
   try {
@@ -94,32 +191,25 @@ function facts(pairs) {
           "<div><dt>" +
           esc(a) +
           "</dt><dd>" +
-          esc(b || "暂未取得") +
+          esc(b === "" || b == null ? "暂未取得" : b) +
           "</dd></div>",
       )
       .join("") +
     "</dl>"
   );
 }
-function button(action, t, val = "", cl = "") {
-  return (
-    '<button class="' +
-    cl +
-    '" data-action="' +
-    action +
-    '" data-id="' +
-    esc(val) +
-    '">' +
-    esc(t) +
-    "</button>"
-  );
+function button(action, title, value = "", className = "", pressed) {
+  const toggleState = pressed === undefined ? "" : ` aria-pressed="${pressed}"`;
+  return `<button type="button" class="${className}" data-action="${action}" data-id="${esc(value)}"${toggleState}>${esc(title)}</button>`;
 }
-function fav(p, id) {
-  return button(
-    "fav",
-    state.fav.includes(p + "/" + id) ? "取消收藏" : "收藏",
-    p + "/" + id,
-  );
+function fav(type, id) {
+  const key = type + "/" + id;
+  const selected = state.fav.includes(key);
+  return button("fav", selected ? "取消收藏" : "收藏", key, "", selected);
+}
+function compBtn(id) {
+  const selected = state.comp.includes(id);
+  return button("comp", selected ? "移出对比" : "加入对比", id, "", selected);
 }
 function opts(values, sel, all = "全部") {
   return (
@@ -138,9 +228,11 @@ function opts(values, sel, all = "全部") {
       .join("")
   );
 }
-function table(cols, rows) {
+function table(cols, rows, className = "") {
   return (
-    '<div class="scroll"><table><thead><tr>' +
+    '<div class="scroll"><table class="' +
+    className +
+    '"><thead><tr>' +
     cols.map((c) => "<th>" + c + "</th>").join("") +
     "</tr></thead><tbody>" +
     rows
@@ -153,7 +245,7 @@ function table(cols, rows) {
 }
 const empty = (s) => '<p class="empty">' + esc(s) + "</p>";
 const source = (p) => out(p.source, p.title || "招生原文");
-function projectTable(arr) {
+function projectTable(arr, quickPreview = false) {
   return arr.length
     ? table(
         ["学校 / 招生学院", "招生专业", "考试组合", "年度", "详情"],
@@ -165,8 +257,11 @@ function projectTable(arr) {
           esc(p.major) + '<small class="mono">' + esc(p.code) + "</small>",
           '<span class="mono">' + esc(p.combo || "待核实") + "</span>",
           esc(p.year),
-          link("project", "查看 →", p.id),
+          quickPreview
+            ? button("preview", "快速预览", p.id)
+            : link("project", "查看 →", p.id),
         ]),
+        "project-table",
       )
     : empty("此条件下暂无已收录项目。");
 }
@@ -293,91 +388,146 @@ function home() {
     "</section>"
   );
 }
+let cachedQuery = "";
+let cachedResults = [];
 function getFiltered() {
-  let q = filters.q
-    .trim()
-    .toLowerCase()
-    .replace(/武大/g, "武汉大学")
-    .replace(/华科/g, "华中科技大学");
-  return (filters.view === "院校名录" ? schools : projects).filter(
-    (p) =>
-      (!filters.city || p.city === filters.city) &&
-      [
-        p.name,
-        p.school,
-        p.college,
-        p.code,
-        p.major,
-        p.campus,
-        p.city,
-        p.province,
-        p.combo,
-      ]
-        .join(" ")
-        .toLowerCase()
-        .includes(q) &&
-      (filters.view === "院校名录" ||
-        ((!filters.combo || p.combo === filters.combo) &&
-          (!filters.year || String(p.year) === filters.year))),
+  const { q, city, combo, year, view, sort } = filters;
+  const query = normalizeQuery(q);
+  const key = JSON.stringify([query, city, combo, year, view, sort]);
+  if (key === cachedQuery) return cachedResults;
+
+  const directoryMode = view === "院校名录";
+  const index = directoryMode ? indexedSchools : indexedProjects;
+  const rows = index
+    .filter(
+      ({ record, text }) =>
+        (!city || record.city === city) &&
+        text.includes(query) &&
+        (directoryMode ||
+          ((!combo || record.combo === combo) &&
+            (!year || String(record.year) === year))),
+    )
+    .map(({ record }) => record);
+  if (sort === "school") {
+    rows.sort((a, b) =>
+      collator.compare(a.name || a.school, b.name || b.school),
+    );
+  } else if (sort === "year" && !directoryMode) {
+    rows.sort((a, b) => Number(b.year) - Number(a.year));
+  }
+  cachedQuery = key;
+  cachedResults = rows;
+  return rows;
+}
+
+function resultTable(rows) {
+  if (filters.view !== "院校名录") return projectTable(rows, true);
+  if (!rows.length) return empty("没有符合条件的院校。");
+  return table(
+    ["院校", "省份", "城市", "已收录项目"],
+    rows.map((school) => [
+      link("school", school.name, school.name),
+      esc(school.province),
+      esc(school.city),
+      String(projectsBySchool.get(school.name)?.length || 0),
+    ]),
+    "school-table",
   );
 }
-function results() {
-  let arr = getFiltered();
-  return (
-    '<div class="section"><b>' +
-    esc(filters.view) +
-    " · " +
-    arr.length +
-    " 条</b>" +
-    button("exportList", "导出结果") +
-    "</div>" +
-    (filters.view === "院校名录"
-      ? arr.length
-        ? table(
-            ["院校", "省份", "城市", "已收录项目"],
-            arr.map((s) => [
-              link("school", s.name, s.name),
-              esc(s.province),
-              esc(s.city),
-              String(projects.filter((p) => p.school === s.name).length),
-            ]),
-          )
-        : empty("没有符合条件的院校。")
-      : projectTable(arr))
-  );
-}
+
 function directory() {
-  return (
-    heading("院校数据库") +
-    '<div class="actions">' +
-    ["招生项目", "院校名录"]
-      .map((t) => button("view", t, t, filters.view === t ? "btn" : ""))
-      .join("") +
-    '</div><div class="filters"><label>关键词<input id="filterQ" placeholder="学校、学院或专业" value="' +
-    esc(filters.q) +
-    '"></label><label>城市<select id="city">' +
-    opts([...new Set(schools.map((x) => x.city))], filters.city) +
-    "</select></label>" +
-    (filters.view === "招生项目"
-      ? '<label>考试组合<select id="combo">' +
-        opts(["11408", "12408", "21408", "22408"], filters.combo) +
-        '</select></label><label>招生年度<select id="year">' +
-        opts(
-          [...new Set(projects.map((p) => p.year).concat([2028]))],
-          filters.year,
-        ) +
-        "</select></label>"
-      : "") +
-    button("clear", "重置") +
-    button("saveFilter", "保存筛选") +
-    (state.filters ? button("loadFilter", "恢复筛选") : "") +
-    '</div><div id="results">' +
-    results() +
-    "</div>"
-  );
+  return `${heading("院校数据库")}
+    <div class="actions" aria-label="列表模式">${["招生项目", "院校名录"]
+      .map((mode) => button("view", mode, mode, "", filters.view === mode))
+      .join("")}</div>
+    <div class="filters">
+      <label>关键词<input id="filterQ" placeholder="学校、学院或专业"></label>
+      <label>城市<select id="city">${opts(cities)}</select></label>
+      <label id="comboField">考试组合<select id="combo">${opts(combos)}</select></label>
+      <label id="yearField">招生年度<select id="year">${opts(years)}</select></label>
+      <label>排序<select id="sort">
+        <option value="">默认顺序</option><option value="school">院校名称</option>
+        <option value="year">招生年度从新到旧</option>
+      </select></label>
+      ${button("clear", "重置")}${button("saveFilter", "保存筛选")}
+      ${button("loadFilter", "恢复筛选")}
+    </div>
+    <section id="results" aria-label="查询结果">
+      <div class="section"><b id="resultCount" role="status"></b>${button("exportList", "导出结果")}</div>
+      <div id="resultTable"></div>
+      <nav id="pager" aria-label="结果分页">
+        ${button("paginate", "上一页", "-1")}<span id="pageCount" class="num"></span>
+        ${button("paginate", "下一页", "1")}
+      </nav>
+    </section>`;
 }
-const compBtn = (id) =>
-  button("comp", state.comp.includes(id) ? "移出对比" : "加入对比", id);
+
+function syncDirectoryControls() {
+  for (const field of ["city", "combo", "year", "sort"])
+    $("#" + field).value = filters[field];
+  $("#filterQ").value = filters.q;
+  const projectMode = filters.view === "招生项目";
+  $("#comboField").hidden = $("#yearField").hidden = !projectMode;
+  $('#sort option[value="year"]').disabled = !projectMode;
+  if (!projectMode && filters.sort === "year") $("#sort").value = "";
+  for (const control of document.querySelectorAll('[data-action="view"]')) {
+    control.setAttribute(
+      "aria-pressed",
+      String(control.dataset.id === filters.view),
+    );
+  }
+  $('[data-action="loadFilter"]').hidden = !state.filters;
+}
+
+let displayedRows;
+let displayedListPage;
+function updateResults(animate = false) {
+  const target = $("#resultTable");
+  if (!target) return;
+  const rows = getFiltered();
+  const totalPages = Math.max(1, Math.ceil(rows.length / pageSize));
+  listPage = Math.min(totalPages, Math.max(1, listPage));
+  if (
+    rows !== displayedRows ||
+    displayedListPage !== listPage ||
+    !target.firstChild
+  ) {
+    const horizontal = target.querySelector(".scroll")?.scrollLeft || 0;
+    target.innerHTML = resultTable(
+      rows.slice((listPage - 1) * pageSize, listPage * pageSize),
+    );
+    if (target.querySelector(".scroll"))
+      target.querySelector(".scroll").scrollLeft = horizontal;
+    if (animate) revealUpdate(target);
+  }
+  displayedRows = rows;
+  displayedListPage = listPage;
+
+  const count = `${filters.view} · ${rows.length} 条`;
+  if ($("#resultCount").textContent !== count)
+    $("#resultCount").textContent = count;
+  $("#pager").hidden = totalPages <= 1;
+  $("#pageCount").textContent = `${listPage} / ${totalPages}`;
+  $('[data-action="paginate"][data-id="-1"]').setAttribute(
+    "aria-disabled",
+    String(listPage === 1),
+  );
+  $('[data-action="paginate"][data-id="1"]').setAttribute(
+    "aria-disabled",
+    String(listPage === totalPages),
+  );
+  storeBrowserState();
+}
+
+let filterTimer;
+function changeFilters(patch, syncControls = false) {
+  Object.assign(filters, patch);
+  listPage = 1;
+  clearTimeout(filterTimer);
+  if (syncControls) syncDirectoryControls();
+  updateResults(true);
+}
+
 function detail(p) {
   return (
     heading(p.school + " · " + p.major, p.college) +
@@ -426,84 +576,116 @@ function school(s) {
     fav("school", s.name) +
     "</div>" +
     sect("已收录招生项目") +
-    projectTable(projects.filter((p) => p.school === s.name)) +
+    projectTable(projectsBySchool.get(s.name) || []) +
     '<p class="source">名录来源 · ' +
     out(s.source, "教育部") +
     "</p>"
   );
 }
-function compare() {
-  let items = state.comp
-    .map((id) => projects.find((p) => p.id === id))
-    .filter(Boolean);
+function compareOptions() {
   return (
-    heading("院校对比", "选择 2—5 个招生项目，按相应年度并列查看。") +
-    '<div class="filters"><label>添加招生项目<select id="addProject">' +
     '<option value="">选择项目</option>' +
     projects
-      .filter((p) => !state.comp.includes(p.id))
+      .filter((project) => !state.comp.includes(project.id))
       .map(
-        (p) =>
-          '<option value="' +
-          esc(p.id) +
-          '">' +
-          esc(
-            [p.school, p.college, p.major, p.direction, p.year]
+        (project) =>
+          `<option value="${esc(project.id)}">${esc(
+            [
+              project.school,
+              project.college,
+              project.major,
+              project.direction,
+              project.year,
+            ]
               .filter(Boolean)
               .join(" · "),
-          ) +
-          "</option>",
+          )}</option>`,
       )
-      .join("") +
-    "</select></label></div>" +
-    (items.length
-      ? table(
-          ["比较指标", ...items.map((p) => link("project", p.school, p.id))],
-          [
-            ...Object.entries({
-              year: "招生年度",
-              college: "招生学院",
-              major: "招生专业",
-              code: "专业代码",
-              campus: "培养地点",
-              combo: "考试组合",
-              admitted: "统考录取人数",
-              cutoff: "复试线",
-              tuition: "学费",
-            }).map(([k, t]) => [
-              t,
-              ...items.map((p) => esc(p[k] || "暂未取得")),
-            ]),
-            ["原始文件", ...items.map(source)],
-            ["操作", ...items.map((p) => compBtn(p.id))],
-          ],
-        )
-      : empty("尚未选择项目。可从上方添加，或在招生项目详情中加入对比。")) +
-    (items.length >= 2
-      ? '<div class="actions">' +
-        button("savePlan", "保存此方案") +
-        button("exportComp", "导出对比") +
-        "</div>"
-      : "") +
-    (new Set(items.map((p) => p.combo)).size > 1
-      ? "<p>各项目考试组合不同，原始分数的可比性有限。</p>"
-      : "") +
-    sect("已保存方案") +
-    (state.plans
-      .map(
-        (p, i) =>
-          '<div class="listrow">' +
-          esc(
-            p
-              .map((id) => projects.find((x) => x.id === id)?.school)
-              .join(" / "),
-          ) +
-          button("plan", "载入方案", i) +
-          "</div>",
-      )
-      .join("") || empty("暂无已保存方案。"))
+      .join("")
   );
 }
+function compareTable() {
+  const items = state.comp.map((id) => projectById.get(id)).filter(Boolean);
+  if (!items.length) {
+    return empty("尚未选择项目。可从上方添加，或在招生项目详情中加入对比。");
+  }
+  const metrics = {
+    year: "招生年度",
+    college: "招生学院",
+    major: "招生专业",
+    code: "专业代码",
+    campus: "培养地点",
+    combo: "考试组合",
+    admitted: "统考录取人数",
+    cutoff: "复试线",
+    tuition: "学费",
+  };
+  return (
+    table(
+      [
+        "比较指标",
+        ...items.map((project) => link("project", project.school, project.id)),
+      ],
+      [
+        ...Object.entries(metrics).map(([key, title]) => [
+          title,
+          ...items.map(
+            (project) => esc(project[key] ?? "暂未取得") || "暂未取得",
+          ),
+        ]),
+        ["原始文件", ...items.map(source)],
+        ["操作", ...items.map((project) => compBtn(project.id))],
+      ],
+      "compare-table",
+    ) +
+    (new Set(items.map((project) => project.combo)).size > 1
+      ? "<p>各项目考试组合不同，原始分数的可比性有限。</p>"
+      : "")
+  );
+}
+function savedPlans() {
+  return (
+    state.plans
+      .map(
+        (plan, index) =>
+          `<div class="listrow">${esc(
+            plan
+              .map((id) => projectById.get(id)?.school)
+              .filter(Boolean)
+              .join(" / "),
+          )}${button("plan", "载入方案", index)}</div>`,
+      )
+      .join("") || empty("暂无已保存方案。")
+  );
+}
+function compare() {
+  return `${heading("院校对比", "选择 2—5 个招生项目，按相应年度并列查看。")}
+    <div class="filters"><label>添加招生项目<select id="addProject">${compareOptions()}</select></label>
+    <span id="comparisonCount" class="small" role="status">已选 ${state.comp.length} / 5 项</span></div>
+    <div id="comparisonTable">${compareTable()}</div>
+    <div id="comparisonActions" class="actions" ${state.comp.length < 2 ? "hidden" : ""}>
+      ${button("savePlan", "保存此方案")}${button("exportComp", "导出对比")}
+    </div>
+    ${sect("已保存方案")}<div id="comparisonPlans">${savedPlans()}</div>`;
+}
+function updateComparison() {
+  const target = $("#comparisonTable");
+  if (!target) return;
+  const focusWasInTable = target.contains(document.activeElement);
+  const horizontal = target.querySelector(".scroll")?.scrollLeft || 0;
+  target.innerHTML = compareTable();
+  const scroll = target.querySelector(".scroll");
+  if (scroll) scroll.scrollLeft = horizontal;
+  $("#comparisonActions").hidden = state.comp.length < 2;
+  $("#comparisonCount").textContent = `已选 ${state.comp.length} / 5 项`;
+  $("#addProject").innerHTML = compareOptions();
+  if (focusWasInTable)
+    (target.querySelector('[data-action="comp"]') || $("#addProject")).focus({
+      preventScroll: true,
+    });
+  revealUpdate(target);
+}
+
 function major(m) {
   return (
     heading(m[1], m[0] + " · " + m[2]) +
@@ -580,34 +762,28 @@ function matches() {
       (!state.wantCombo || p.combo === state.wantCombo),
   );
 }
-function decision() {
+function decisionResults() {
+  const candidates = matches();
   return (
-    heading("择校决策", "按已核实的项目字段筛选候选院校。") +
-    '<div class="filters"><label>意向城市<select id="prefCity">' +
-    opts([...new Set(schools.map((s) => s.city))], state.city, "不限城市") +
-    '</select></label><label>考试组合<select id="prefCombo">' +
-    opts(["11408", "12408", "21408", "22408"], state.wantCombo, "不限组合") +
-    "</select></label>" +
-    button("pref", "保存条件", "", "btn") +
-    "</div>" +
     sect(
-      "候选项目 · " + matches().length,
+      "候选项目 · " + candidates.length,
       button("exportCandidates", "导出清单"),
     ) +
-    '<p class="small">当前条件 · ' +
-    esc(state.city || "不限城市") +
-    " / " +
-    esc(state.wantCombo || "不限组合") +
-    "</p>" +
-    projectTable(matches())
+    `<p class="small">当前条件 · ${esc(state.city || "不限城市")} / ${esc(state.wantCombo || "不限组合")}</p>` +
+    projectTable(candidates)
   );
+}
+function decision() {
+  return `${heading("择校决策", "按已核实的项目字段筛选候选院校。")}
+    <div class="filters"><label>意向城市<select id="prefCity">${opts(cities, state.city, "不限城市")}</select></label>
+    <label>考试组合<select id="prefCombo">${opts(combos, state.wantCombo, "不限组合")}</select></label>
+    ${button("pref", "保存条件", "", "btn")}</div>
+    <section id="decisionResults">${decisionResults()}</section>`;
 }
 function lookup(key) {
   const [p, id] = key.split("/");
   return p === "project"
-    ? projects.find((x) => x.id === id)?.school +
-        " · " +
-        (projects.find((x) => x.id === id)?.major || "")
+    ? projectById.get(id)?.school + " · " + (projectById.get(id)?.major || "")
     : p === "major"
       ? majors.find((m) => m[0] === id)?.[1]
       : id;
@@ -615,6 +791,7 @@ function lookup(key) {
 function saved() {
   return (
     heading("我的收藏") +
+    '<div id="favoriteList">' +
     (state.fav
       .map((k) => {
         const [p, id] = k.split("/");
@@ -633,7 +810,8 @@ function saved() {
         );
       })
       .join("") ||
-      empty("尚无收藏。可在院校、招生项目、专业和职业详情页添加。"))
+      empty("尚无收藏。可在院校、招生项目、专业和职业详情页添加。")) +
+    "</div>"
   );
 }
 function data() {
@@ -720,8 +898,8 @@ function render() {
   let pages = {
     home,
     schools: directory,
-    school: () => school(schools.find((s) => s.name === arg)),
-    project: () => detail(projects.find((p) => p.id === arg)),
+    school: () => school(schoolByName.get(arg)),
+    project: () => detail(projectById.get(arg)),
     majors: () =>
       heading("专业探索") +
       grid(majors.map((m) => [m[0] + " · " + m[2], m[1], m[3], "major", m[0]])),
@@ -754,7 +932,13 @@ function render() {
       ),
   };
   try {
-    main.innerHTML = pages[page]();
+    main.innerHTML = pages[page]
+      ? pages[page]()
+      : heading("未找到该记录") + link("home", "返回首页");
+    if (page === "schools") {
+      syncDirectoryControls();
+      updateResults();
+    }
     document.title =
       (main.querySelector("h1")?.textContent || "首页") + " · CS 2028";
   } catch (e) {
@@ -775,103 +959,125 @@ function download(name, obj) {
 function toggle(arr, v) {
   return arr.includes(v) ? arr.filter((t) => t !== v) : [...arr, v];
 }
-function act(a, id) {
-  switch (a) {
+function updateToggle(action, id, selected, selectedLabel, defaultLabel) {
+  for (const control of document.querySelectorAll(
+    `[data-action="${action}"]`,
+  )) {
+    if (control.dataset.id !== id) continue;
+    control.setAttribute("aria-pressed", String(selected));
+    control.textContent = selected ? selectedLabel : defaultLabel;
+  }
+}
+
+function toggleComparison(id) {
+  if (!state.comp.includes(id) && state.comp.length >= 5)
+    return notify("最多可选择 5 个项目");
+  state.comp = toggle(state.comp, id);
+  const selected = state.comp.includes(id);
+  updateToggle("comp", id, selected, "移出对比", "加入对比");
+  updateComparison();
+  if (save()) notify(selected ? "已加入对比" : "已移出对比");
+}
+
+function act(control) {
+  const { action, id } = control.dataset;
+  if (control.getAttribute("aria-disabled") === "true") return;
+  switch (action) {
+    case "preview":
+      return openPreview(id, control);
+    case "previewStep":
+      return stepPreview(Number(id));
     case "view":
-      filters.view = id;
-      break;
-    case "fav":
+      if (filters.view !== id) changeFilters({ view: id }, true);
+      return;
+    case "paginate":
+      listPage += Number(id);
+      return updateResults(true);
+    case "fav": {
       state.fav = toggle(state.fav, id);
-      save();
-      break;
+      const selected = state.fav.includes(id);
+      updateToggle(action, id, selected, "取消收藏", "收藏");
+      const favorite = control.closest("#favoriteList .item");
+      if (favorite && !selected) {
+        const next =
+          favorite.nextElementSibling || favorite.previousElementSibling;
+        const list = favorite.parentElement;
+        favorite.remove();
+        if (!list.childElementCount)
+          list.innerHTML = empty(
+            "尚无收藏。可在院校、招生项目、专业和职业详情页添加。",
+          );
+        (next?.querySelector('[data-action="fav"]') || main).focus({
+          preventScroll: true,
+        });
+      }
+      if (save()) notify(selected ? "已收藏" : "已取消收藏");
+      return;
+    }
     case "comp":
-      if (!state.comp.includes(id) && state.comp.length >= 5)
-        return notify("最多可选择 5 个项目");
-      state.comp = toggle(state.comp, id);
-      save();
-      break;
+      return toggleComparison(id);
     case "plan":
       state.comp = [...state.plans[Number(id)]];
       save();
-      break;
+      return updateComparison();
     case "savePlan":
       if (
         !state.plans.some(
-          (p) => JSON.stringify(p) === JSON.stringify(state.comp),
+          (plan) => JSON.stringify(plan) === JSON.stringify(state.comp),
         )
-      )
+      ) {
         state.plans.push([...state.comp]);
+        $("#comparisonPlans").innerHTML = savedPlans();
+        revealUpdate($("#comparisonPlans"));
+      }
       if (save()) notify("已保存比较方案");
-      break;
+      return;
     case "saveFilter":
       state.filters = { ...filters };
+      $('[data-action="loadFilter"]').hidden = false;
       if (save()) notify("已保存筛选条件");
-      break;
+      return;
     case "loadFilter":
-      filters = { ...state.filters };
-      break;
+      return changeFilters({ ...defaultFilters, ...state.filters }, true);
     case "clear":
-      filters = { view: filters.view, q: "", city: "", combo: "", year: "" };
-      break;
+      return changeFilters({ ...defaultFilters, view: filters.view }, true);
     case "pref":
       state.city = $("#prefCity").value;
       state.wantCombo = $("#prefCombo").value;
+      $("#decisionResults").innerHTML = decisionResults();
+      revealUpdate($("#decisionResults"));
       if (save()) notify("已保存择校条件");
-      break;
+      return;
     case "backup":
       return download("CS2028-个人备份", { version: 1, state });
     case "exportComp":
       return download(
         "CS2028-项目对比",
-        projects.filter((p) => state.comp.includes(p.id)),
+        projects.filter((project) => state.comp.includes(project.id)),
       );
     case "exportList":
       return download("CS2028-筛选结果", getFiltered());
     case "exportCandidates":
       return download("CS2028-候选项目", matches());
   }
-  render();
 }
-let pointerDestination = "";
-document.addEventListener("click", (e) => {
-  const anchor = e.target.closest("a");
-  if (anchor?.classList.contains("skip")) {
-    e.preventDefault();
-    main.focus();
-    return;
-  }
-  pointerDestination =
-    e.detail > 0 &&
-    !e.metaKey &&
-    !e.ctrlKey &&
-    !e.shiftKey &&
-    !e.altKey &&
-    anchor?.getAttribute("href")?.startsWith("#") &&
-    anchor.hash !== location.hash
-      ? anchor.hash
-      : "";
-  const b = e.target.closest("[data-action]");
-  if (b) act(b.dataset.action, b.dataset.id);
-  if (
-    document.body.classList.contains("open") &&
-    !e.target.closest("#menu") &&
-    (!e.target.closest("#rail") || e.target.closest("a"))
-  )
-    document.body.classList.remove("open");
+
+document.addEventListener("input", (event) => {
+  if (event.target.id !== "filterQ") return;
+  filters.q = event.target.value;
+  listPage = 1;
+  storeBrowserState();
+  clearTimeout(filterTimer);
+  if (!event.isComposing) filterTimer = setTimeout(updateResults, 100);
 });
-document.addEventListener("input", (e) => {
-  if (e.target.id === "filterQ") {
-    filters.q = e.target.value;
-    $("#results").innerHTML = results();
-  }
+document.addEventListener("compositionend", (event) => {
+  if (event.target.id === "filterQ") updateResults();
 });
 function validState(v) {
   const strings = (a) =>
       Array.isArray(a) && a.every((x) => typeof x === "string"),
     ids = (a) =>
-      strings(a) &&
-      a.length <= 5 &&
-      a.every((id) => projects.some((p) => p.id === id));
+      strings(a) && a.length <= 5 && a.every((id) => projectById.has(id));
   return (
     v &&
     strings(v.fav) &&
@@ -894,16 +1100,15 @@ function validState(v) {
 }
 document.addEventListener("change", async (e) => {
   let t = e.target;
-  if (["year", "city", "combo"].includes(t.id)) {
-    filters[t.id] = t.value;
-    $("#results").innerHTML = results();
-  }
+  if (["year", "city", "combo", "sort"].includes(t.id))
+    changeFilters({ [t.id]: t.value });
   if (t.dataset.note) {
     state.notes[t.dataset.note] = t.value;
     if (save()) notify("已保存备注");
   }
   if (t.id === "addProject" && t.value) {
-    act("comp", t.value);
+    toggleComparison(t.value);
+    t.value = "";
   }
   if (t.id === "restore" && t.files.length) {
     try {
@@ -912,7 +1117,6 @@ document.addEventListener("change", async (e) => {
       if (confirm("用所选备份替换当前个人设置？")) {
         state = doc.state;
         if (save()) notify("已恢复备份");
-        render();
       }
     } catch {
       notify("文件格式或关联记录无效，原设置已保留");
@@ -931,7 +1135,117 @@ document.addEventListener("submit", (e) => {
       " 分";
   }
 });
-$("#menu").onclick = () => document.body.classList.toggle("open");
+const searchDialog = $("#searchDialog");
+const previewDialog = $("#previewDialog");
+const searchInput = $("#searchInput");
+const searchResults = $("#searchResults");
+let previewItems = [];
+let previewIndex = 0;
+
+function preview(project) {
+  const cutoff =
+    project.history
+      ?.filter(({ cutoff }) => cutoff != null)
+      .map(({ year, cutoff }) => `${year} 届 ${cutoff}`)
+      .join(" / ") || project.cutoff;
+  return `<h2 id="previewTitle" tabindex="-1">${esc(project.school)}</h2>
+    <p class="preview-college">${esc(project.college)}</p>
+    <div class="actions">${fav("project", project.id)}${compBtn(project.id)}
+      ${link("project", "查看完整详情", project.id, "button btn")}
+    </div>
+    <section class="panel">${sect("招生信息")}
+      ${facts([
+        ["专业", `${project.code} ${project.major}`],
+        ["研究方向", project.direction],
+        ["招生年度", project.year],
+        ["考试组合", project.combo],
+        ["招生计划", project.planned],
+        ["统考录取人数", project.admitted],
+        ["报录比", project.applicationRatio],
+        ["复录比", project.interviewRatio],
+        ["历年复试线", cutoff],
+        ["录取中位数", project.median],
+        ["学费", project.tuition],
+        ["学制", project.duration],
+      ])}
+    </section>
+    <section class="panel">${sect("招生计划口径与原始资料")}
+      <p>${esc(project.description)}</p><p class="source">${source(project)}</p>
+    </section>`;
+}
+
+function updatePreview(animate = false) {
+  const body = $("#previewBody");
+  body.innerHTML = preview(previewItems[previewIndex]);
+  $("#previewPosition").textContent =
+    `${previewIndex + 1} / ${previewItems.length}`;
+  $('[data-action="previewStep"][data-id="-1"]').setAttribute(
+    "aria-disabled",
+    String(previewIndex === 0),
+  );
+  $('[data-action="previewStep"][data-id="1"]').setAttribute(
+    "aria-disabled",
+    String(previewIndex === previewItems.length - 1),
+  );
+  $("#previewNotice").textContent = "";
+  previewDialog.scrollTop = 0;
+  if (animate) revealUpdate(body);
+}
+
+let previewOpener;
+function openPreview(id, opener) {
+  const items = getFiltered();
+  const index = items.findIndex((project) => project.id === id);
+  if (index === -1) return;
+  previewItems = items;
+  previewIndex = index;
+  updatePreview();
+  if (!previewDialog.open) {
+    previewOpener = opener;
+    delete previewDialog.dataset.instant;
+    previewDialog.showModal();
+  }
+}
+function stepPreview(delta) {
+  previewIndex += delta;
+  updatePreview(true);
+}
+
+function setMenu(open, restoreFocus = false) {
+  document.body.classList.toggle("open", open);
+  $("#menu").setAttribute("aria-expanded", String(open));
+  if (restoreFocus) $("#menu").focus();
+}
+$("#menu").onclick = () => {
+  const open = !document.body.classList.contains("open");
+  setMenu(open);
+  if (open) ($("#rail [aria-current]") || $("#rail a")).focus();
+};
+
+function closeOverlay(dialog, immediate = false) {
+  if (!dialog.open) return;
+  if (immediate) dialog.dataset.instant = "";
+  dialog.close();
+}
+for (const dialog of [searchDialog, previewDialog]) {
+  dialog.addEventListener("pointerdown", (event) => {
+    dialog.pointerOnBackdrop = event.target === dialog;
+  });
+  dialog.addEventListener("click", (event) => {
+    if (dialog.pointerOnBackdrop && event.target === dialog)
+      closeOverlay(dialog);
+    dialog.pointerOnBackdrop = false;
+  });
+}
+$("#closePreview").onclick = () => closeOverlay(previewDialog);
+previewDialog.addEventListener("close", () => {
+  if (previewDialog.open) return;
+  if (!("instant" in previewDialog.dataset) && previewOpener?.isConnected) {
+    previewOpener.focus({ preventScroll: true });
+  }
+  previewOpener = undefined;
+});
+
 function searchRows() {
   return [
     ...schools.map((s) => ["school", s.name, s.name + " · " + s.city]),
@@ -947,74 +1261,194 @@ function searchRows() {
   ];
 }
 function search() {
-  const q = $("#searchInput")
-    .value.trim()
-    .replace(/武大/g, "武汉大学")
-    .replace(/华科/g, "华中科技大学");
-  $("#searchResults").innerHTML = q
-    ? searchRows()
-        .filter((r) => r[2].includes(q))
-        .map(
-          ([p, id, t]) =>
-            '<div class="listrow">' +
-            (p === "external" ? out(id, t) : link(p, t, id)) +
-            "</div>",
-        )
-        .join("") || empty("没有匹配的记录。")
-    : "";
+  const query = normalizeQuery(searchInput.value);
+  if (!query || !searchIndex) {
+    searchResults.replaceChildren();
+    return;
+  }
+  const matches = [];
+  for (const { row, text } of searchIndex) {
+    if (text.includes(query)) matches.push(row);
+    if (matches.length === 30) break;
+  }
+  searchResults.innerHTML =
+    matches
+      .map(
+        ([type, id, title]) =>
+          '<div class="listrow">' +
+          (type === "external" ? out(id, title) : link(type, title, id)) +
+          "</div>",
+      )
+      .join("") || empty("没有匹配的记录。");
 }
 function openSearch() {
-  $("#searchDialog").showModal();
-  $("#searchInput").focus();
+  if (searchDialog.open) return;
+  closeOverlay(previewDialog, true);
+  if (document.body.classList.contains("open")) setMenu(false, true);
+  delete searchDialog.dataset.instant;
+  searchDialog.showModal();
   search();
 }
 $("#searchOpen").onclick = openSearch;
-$("#searchInput").oninput = search;
-$("#closeSearch").onclick = () => $("#searchDialog").close();
-$("#searchResults").onclick = (e) => {
-  if (e.target.closest("a")) $("#searchDialog").close();
+searchInput.oninput = (event) => {
+  if (!event.isComposing) search();
 };
-document.addEventListener("keydown", (e) => {
-  if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
-    e.preventDefault();
-    if (!$("#searchDialog").open) openSearch();
-  }
-  if (e.key === "Escape") document.body.classList.remove("open");
-});
-const positions = new Map();
-const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
-let previous = "";
-let pageEntrance;
-function navigate() {
-  const raw = location.hash.slice(1) || "home";
-  if (raw === previous) {
-    pointerDestination = "";
+searchInput.oncompositionend = search;
+$("#closeSearch").onclick = () => closeOverlay(searchDialog);
+searchDialog.addEventListener("keydown", (event) => {
+  if (
+    event.isComposing ||
+    !["ArrowUp", "ArrowDown", "Enter"].includes(event.key)
+  )
+    return;
+  const results = [...searchResults.querySelectorAll("a")];
+  if (!results.length) return;
+  if (event.key === "Enter") {
+    if (event.target !== searchInput) return;
+    event.preventDefault();
+    results[0].click();
     return;
   }
-  const animate =
-    previous && pointerDestination === location.hash && !reduceMotion.matches;
-  pointerDestination = "";
-  pageEntrance?.cancel();
-  if (previous) positions.set(previous, scrollY);
-  const [p, v = ""] = raw.split("/");
-  page = p;
-  try {
-    arg = decodeURIComponent(v);
-  } catch {
-    arg = "";
+  event.preventDefault();
+  const index = results.indexOf(document.activeElement);
+  const next = index + (event.key === "ArrowDown" ? 1 : -1);
+  (next < 0
+    ? index < 0
+      ? results.at(-1)
+      : searchInput
+    : results[Math.min(next, results.length - 1)]
+  ).focus();
+});
+
+document.addEventListener("keydown", (event) => {
+  if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+    event.preventDefault();
+    openSearch();
   }
-  previous = raw;
-  updateNavigation();
-  render();
-  main.focus({ preventScroll: true });
-  scrollTo(0, positions.get(raw) || 0);
-  if (animate) {
-    pageEntrance = main.animate([{ opacity: 0.72 }, { opacity: 1 }], {
-      duration: 150,
-      easing: "cubic-bezier(0.23, 1, 0.32, 1)",
-    });
+  if (event.key === "Escape" && document.body.classList.contains("open"))
+    setMenu(false, true);
+});
+
+document.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-action]");
+  if (button) act(button);
+  const anchor = event.target.closest("a");
+  if (
+    document.body.classList.contains("open") &&
+    !event.target.closest("#menu") &&
+    (!event.target.closest("#rail") || anchor)
+  ) {
+    setMenu(false, !!anchor && anchor.hash === location.hash);
   }
+  if (
+    !anchor ||
+    event.defaultPrevented ||
+    event.button !== 0 ||
+    event.metaKey ||
+    event.ctrlKey ||
+    event.shiftKey ||
+    event.altKey
+  )
+    return;
+  if (anchor.classList.contains("skip")) {
+    event.preventDefault();
+    main.focus();
+    return;
+  }
+  if (!anchor.getAttribute("href")?.startsWith("#")) {
+    if (searchDialog.contains(anchor)) closeOverlay(searchDialog);
+    return;
+  }
+  if (!projectById) return;
+  event.preventDefault();
+  closeOverlay(searchDialog, true);
+  closeOverlay(previewDialog, true);
+  if (anchor.hash === location.hash) return;
+  rememberScroll();
+  history.pushState({ cs2028Entry: newEntryId() }, "", anchor.hash);
+  navigate(event.detail > 0);
+});
+
+const positions = new Map(Object.entries(browserState.positions || {}));
+let scrollTimer;
+let activeEntry;
+let routeRequest = 0;
+history.scrollRestoration = "manual";
+
+function newEntryId() {
+  return Math.random().toString(36).slice(2);
 }
+function rememberScroll(persist = false) {
+  if (!activeEntry) return;
+  positions.delete(activeEntry);
+  positions.set(activeEntry, scrollY);
+  if (positions.size > 30) {
+    const oldest = positions.keys().next().value;
+    positions.delete(oldest);
+    delete browserState.directoryEntries[oldest];
+  }
+  if (!persist) return;
+  browserState.positions = Object.fromEntries(positions);
+  storeBrowserState();
+}
+addEventListener(
+  "scroll",
+  () => {
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => rememberScroll(true), 120);
+  },
+  { passive: true },
+);
+addEventListener("pagehide", () => rememberScroll(true));
+
+function navigate(animate = false) {
+  let entry = history.state?.cs2028Entry;
+  if (!entry) {
+    entry = newEntryId();
+    history.replaceState({ ...history.state, cs2028Entry: entry }, "");
+  }
+  if (entry === activeEntry) {
+    // Still invalidate any callback for a destination the user has just left.
+    routeRequest++;
+    changePage(main, () => false, false);
+    return;
+  }
+  rememberScroll();
+  clearTimeout(scrollTimer);
+  closeOverlay(searchDialog, true);
+  closeOverlay(previewDialog, true);
+  setMenu(false);
+  const destination = location.hash.slice(1) || "home";
+  const request = ++routeRequest;
+  const previousEntry = activeEntry;
+  const destinationScroll = positions.get(entry) || 0;
+  changePage(
+    main,
+    () => {
+      if (request !== routeRequest) return false;
+      const [name, value = ""] = destination.split("/");
+      page = name;
+      try {
+        arg = decodeURIComponent(value);
+      } catch {
+        arg = "";
+      }
+      activeEntry = entry;
+      const directoryEntry = browserState.directoryEntries[entry];
+      if (page === "schools" && directoryEntry) {
+        filters = { ...defaultFilters, ...directoryEntry.filters };
+        listPage = directoryEntry.listPage;
+      }
+      updateNavigation();
+      render();
+      main.focus({ preventScroll: true });
+      scrollTo(0, destinationScroll);
+      return true;
+    },
+    animate && !!previousEntry,
+  );
+}
+
 async function start() {
   try {
     [schools, projects, news, trends] = await Promise.all(
@@ -1024,8 +1458,13 @@ async function start() {
         return r.json();
       }),
     );
+    indexData();
     navigate();
-    window.addEventListener("hashchange", navigate);
+    const syncRoute = () => {
+      if (history.state?.cs2028Entry !== activeEntry) navigate();
+    };
+    window.addEventListener("hashchange", syncRoute);
+    window.addEventListener("popstate", () => navigate());
   } catch {
     main.innerHTML =
       heading("数据库读取失败") + '<button id="retry">重新读取</button>';
