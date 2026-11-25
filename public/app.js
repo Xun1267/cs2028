@@ -1,3 +1,4 @@
+import { byLatest, containsWords, groupBy, projectTree } from "./browse.js";
 import { createInsights } from "./insights.js";
 import {
   cancelPageEntrance,
@@ -69,7 +70,6 @@ const defaultFilters = {
   sort: "",
   status: "",
   major: "",
-  view: "招生项目",
 };
 const pageSize = 20;
 const browserStateKey = "cs2028-browser-v2";
@@ -97,7 +97,12 @@ let schools,
 let projectHistory, schoolById, majorById, careerById, careerByMajor;
 let filters = { ...defaultFilters, ...browserState.filters };
 let listPage = browserState.listPage || 1;
-let projectById, projectsBySchool, indexedSchools, indexedProjects, searchIndex;
+let projectById,
+  projectsBySchool,
+  allBySchool,
+  indexedSchools,
+  indexedProjects,
+  searchIndex;
 let cities, years, research, researchById, dataInsights;
 const statuses = {
   current: "已核验",
@@ -203,6 +208,7 @@ function indexData(data) {
       ...projects.map((p) => p.annual.examCombo).filter(Boolean),
     ]),
   ].sort();
+  allBySchool = groupBy(projects, (project) => project.schoolId);
   indexedSchools = schools.map((record) => ({
     record,
     text: normalizeQuery(
@@ -264,21 +270,14 @@ function heading(t, subtitle = "") {
 function sect(t, action = "") {
   return '<div class="section"><h2>' + esc(t) + "</h2>" + action + "</div>";
 }
-function facts(pairs) {
-  return (
-    '<dl class="facts">' +
-    pairs
-      .map(
-        ([a, b]) =>
-          "<div><dt>" +
-          esc(a) +
-          "</dt><dd>" +
-          esc(b === "" || b == null ? "暂未取得" : b) +
-          "</dd></div>",
-      )
-      .join("") +
-    "</dl>"
+const present = (value) =>
+  value != null && value !== "" && value !== "—" && value !== "暂未取得";
+function facts(pairs, required = []) {
+  const rows = pairs.filter(
+    ([label, value]) => present(value) || required.includes(label),
   );
+  if (!rows.length) return "";
+  return `<dl class="facts">${rows.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(show(value))}</dd></div>`).join("")}</dl>`;
 }
 function button(action, title, value = "", className = "", pressed) {
   const toggleState = pressed === undefined ? "" : ` aria-pressed="${pressed}"`;
@@ -326,27 +325,60 @@ function table(cols, rows, className = "") {
   );
 }
 const empty = (s) => '<p class="empty">' + esc(s) + "</p>";
-const show = (value, unit = "") =>
-  value == null || value === "" ? "暂未取得" : value + unit;
-const source = (record) =>
-  record ? out(record.url, record.title) : "暂未取得";
+const show = (value, unit = "") => (present(value) ? value + unit : "—");
+function referenceKey(raw) {
+  try {
+    const url = new URL(raw);
+    if (!/^https?:$/.test(url.protocol)) return "";
+    url.hash = "";
+    for (const key of [...url.searchParams.keys()])
+      if (/^utm_|^(gclid|fbclid)$/i.test(key)) url.searchParams.delete(key);
+    url.searchParams.sort();
+    return url.href.replace(/\/$/, "");
+  } catch {
+    return "";
+  }
+}
 function sources(records = []) {
-  if (!records.length) return "";
-  return `<ul class="data-sources">${records
+  return records
+    .filter((record) => referenceKey(record?.url))
     .map(
       (record) =>
-        `<li>${source(record)}${[
-          record.publisher,
-          record.year && `${record.year} 届`,
-          record.scope,
-          record.publishedDate,
-          evidenceType(record.sourceType),
-        ]
-          .filter(Boolean)
-          .map((value) => ` <span>${esc(value)}</span>`)
-          .join("")}</li>`,
+        `<template data-reference="${esc(record.url)}" data-title="${esc(record.title || record.url)}" data-publisher="${esc(record.publisher || "")}"></template>`,
     )
-    .join("")}</ul>`;
+    .join("");
+}
+function refreshReferences(root) {
+  const panel = root.querySelector("[data-related-sources]");
+  const wasOpen = panel?.open;
+  panel?.remove();
+  const seen = new Set();
+  for (const anchor of root.querySelectorAll("a[href^='http']")) {
+    const key = referenceKey(anchor.href);
+    if (!key) continue;
+    if (seen.has(key))
+      anchor.replaceWith(
+        document.createTextNode(anchor.textContent.replace(/ ↗$/, "")),
+      );
+    else seen.add(key);
+  }
+  const items = [];
+  for (const mark of root.querySelectorAll("template[data-reference]")) {
+    const { reference, title, publisher } = mark.dataset;
+    const key = referenceKey(reference);
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    items.push(
+      `<li>${out(reference, title)}${publisher ? ` <span>${esc(publisher)}</span>` : ""}</li>`,
+    );
+  }
+  if (items.length)
+    root.insertAdjacentHTML(
+      "beforeend",
+      `<details class="record-disclosure related-sources" data-related-sources ${wasOpen ? "open" : ""}>
+    <summary>相关资料 <span class="small">${items.length} 份</span></summary>
+    <div><ul class="data-sources">${items.join("")}</ul></div></details>`,
+    );
 }
 function projectTable(records, quickPreview = false) {
   return records.length
@@ -434,6 +466,7 @@ function lineChart(title, unit, entries) {
 function articleSections(article) {
   return (
     (article.sections || [])
+      .filter((section) => !/^(调查|核验|维护)/.test(section.title || ""))
       .map(
         (section) => `<section class="panel">
     ${sect(section.title)}
@@ -442,7 +475,14 @@ function articleSections(article) {
       section.table
         ? table(
             section.table.headers.map(esc),
-            section.table.rows.map((row) => row.map((cell) => esc(show(cell)))),
+            section.table.rows
+              .filter(
+                (row) =>
+                  !/^(资料口径|学历证据|城市证据|薪资证据|调查|核验)/.test(
+                    row[0],
+                  ),
+              )
+              .map((row) => row.map((cell) => esc(show(cell)))),
           )
         : ""
     }
@@ -563,78 +603,136 @@ function home() {
 let cachedQuery = "";
 let cachedResults = [];
 function getFiltered() {
-  const { q, city, combo, year, view, sort, status, major } = filters;
+  const { q, city, combo, year, sort, status, major } = filters;
   const query = normalizeQuery(q);
-  const key = JSON.stringify([
-    query,
-    city,
-    combo,
-    year,
-    view,
-    sort,
-    status,
-    major,
-  ]);
+  const key = JSON.stringify([query, city, combo, year, sort, status, major]);
   if (key === cachedQuery) return cachedResults;
-
-  const directoryMode = view === "院校名录";
-  const index = directoryMode ? indexedSchools : indexedProjects;
-  const rows = index
-    .filter(
-      ({ record, text }) =>
-        (!city || record.city === city) &&
-        text.includes(query) &&
-        (directoryMode ||
-          ((!combo || record.annual.examCombo === combo) &&
-            (!year || String(record.year) === year) &&
-            (!status || record.annual.status === status) &&
-            (!major || record.majorId === major))),
-    )
-    .map(({ record }) => record);
-  if (sort === "school") {
-    rows.sort((a, b) =>
-      collator.compare(a.name || a.school.name, b.name || b.school.name),
-    );
-  } else if (sort === "year" && !directoryMode) {
-    rows.sort((a, b) => b.year - a.year);
-  } else if (sort === "cutoff" && !directoryMode) {
-    rows.sort(
-      (a, b) => (b.admission?.cutoff ?? -1) - (a.admission?.cutoff ?? -1),
-    );
-  }
-  if (!sort && !directoryMode) {
-    const priority = { current: 0, pending: 1, historical: 2, excluded: 3 };
-    rows.sort(
-      (a, b) =>
-        (priority[a.annual.status] ?? 9) - (priority[b.annual.status] ?? 9) ||
-        b.year - a.year,
-    );
+  const matches = groupBy(
+    indexedProjects
+      .filter(
+        ({ record, text }) =>
+          (!city || record.city === city) &&
+          containsWords(text, query) &&
+          (!combo || record.annual.examCombo === combo) &&
+          (!year || String(record.year) === year) &&
+          (!status || record.annual.status === status) &&
+          (!major || record.majorId === major),
+      )
+      .map(({ record }) => record),
+    (record) => record.schoolId,
+  );
+  const projectFilter = combo || year || status || major;
+  const rows = indexedSchools.flatMap(({ record: school, text }) => {
+    const records = matches.get(school.id) || [];
+    return records.length ||
+      (!projectFilter &&
+        (!city || school.city === city) &&
+        containsWords(text, query))
+      ? [{ school, records, count: new Set(records.map((r) => r.id)).size }]
+      : [];
+  });
+  if (sort === "school")
+    rows.sort((a, b) => collator.compare(a.school.name, b.school.name));
+  const rank =
+    sort === "year"
+      ? (p) => p.year
+      : sort === "cutoff"
+        ? (p) => p.admission?.cutoff
+        : null;
+  if (rank) {
+    const metric = ({ records }) =>
+      Math.max(-1, ...records.map((record) => rank(record) ?? -1));
+    rows.sort((a, b) => metric(b) - metric(a));
   }
   cachedQuery = key;
   cachedResults = rows;
   return rows;
 }
 
-function resultTable(rows) {
-  if (filters.view !== "院校名录") return projectTable(rows, true);
-  if (!rows.length) return empty("没有符合条件的院校。");
-  return table(
-    ["院校", "省份", "城市", "已收录项目"],
-    rows.map((school) => [
-      link("school", school.name, school.id),
-      esc(school.province),
-      esc(school.city),
-      String(projectsBySchool.get(school.id)?.length || 0),
-    ]),
-    "school-table",
-  );
+function assessment(school) {
+  const result = school.computingAssessment;
+  return result?.grade ? `${result.grade} · 第${result.round}轮` : "—";
 }
+function projectRowControls(project) {
+  return `<span class="small">${esc(project.annual.examCombo || "—")} · ${statusTag(project)}</span>
+    <div class="actions">${button("preview", "快速预览", project.ref)}${link("project", "详情 →", project.ref, "button")}${compBtn(project.ref)}</div>`;
+}
+function groupedProjects(records) {
+  if (!records.length) return empty("暂无符合条件的招生项目。");
+  return projectTree(records)
+    .map(
+      ({ college, majors }) => `<details class="college-group">
+    <summary>${esc(college)} <span class="small">${majors.length} 个专业</span></summary>
+    <div>${majors
+      .map(
+        ({ id, title, projects }) => `<section class="major-group">
+      <h3>${esc(title)} <span class="small num">${esc(id)}</span></h3>
+      ${projects
+        .map((years) => {
+          const current = years[0];
+          return `<div class="group-project" data-group-project="${esc(current.id)}"><div>
+          <span>${esc(current.direction || (current.majorLabel !== title ? current.majorLabel : "") || "未细分方向")}</span>
+          ${
+            years.length > 1
+              ? `<label class="small">年度 <select data-browse-year="${esc(current.id)}">${opts(
+                  years.map((p) => p.year),
+                  current.year,
+                  null,
+                )}</select></label>`
+              : `<span class="num small">${current.year} 届</span>`
+          }
+          </div><div data-row-controls>${projectRowControls(current)}</div></div>`;
+        })
+        .join("")}</section>`,
+      )
+      .join("")}</div></details>`,
+    )
+    .join("");
+}
+const expandedSchools = new Set();
+function resultTable(rows) {
+  if (!rows.length) return empty("没有符合条件的院校。");
+  return rows
+    .map(
+      ({ school, count }) => `<article class="school-row">
+    <div class="school-summary">
+      <h2>${link("school", school.name, school.id)}</h2>
+      <span>${esc(school.city)}</span>
+      <span class="small"><span class="field-caption">计算机学科评估 </span>${esc(assessment(school))}</span>
+      <span class="small"><span class="num">${count}</span> 个项目</span>
+    </div>
+    <details data-browse-school="${esc(school.id)}" ${expandedSchools.has(school.id) ? "open" : ""}>
+      <summary>查看匹配项目</summary><div data-browse-content></div>
+    </details>
+  </article>`,
+    )
+    .join("");
+}
+function fillSchoolProjects(details) {
+  const target = details.querySelector("[data-browse-content]");
+  if (target && !target.hasChildNodes()) {
+    const row = getFiltered().find(
+      ({ school }) => school.id === details.dataset.browseSchool,
+    );
+    if (row) target.innerHTML = groupedProjects(row.records);
+  }
+}
+document.addEventListener(
+  "toggle",
+  (event) => {
+    const details = event.target;
+    if (!details.matches?.("[data-browse-school]") || !details.isConnected)
+      return;
+    if (details.open) {
+      expandedSchools.add(details.dataset.browseSchool);
+      fillSchoolProjects(details);
+    } else expandedSchools.delete(details.dataset.browseSchool);
+  },
+  true,
+);
 
 function directory() {
   return `${heading("院校数据库")}
-    <div class="actions" aria-label="列表模式">${["招生项目", "院校名录"]
-      .map((mode) => button("view", mode, mode, "", filters.view === mode))
-      .join("")}</div>
     <div class="filters">
       <label>关键词<input id="filterQ" placeholder="学校、学院或专业"></label>
       <label>城市<select id="city">${opts(cities)}</select></label>
@@ -667,20 +765,6 @@ function syncDirectoryControls() {
   for (const field of ["city", "combo", "year", "sort", "status", "major"])
     $("#" + field).value = filters[field] || "";
   $("#filterQ").value = filters.q;
-  const projectMode = filters.view === "招生项目";
-  for (const field of ["combo", "year", "status", "major"])
-    $("#" + field + "Field").hidden = !projectMode;
-  $('#sort option[value="year"]').disabled = $(
-    '#sort option[value="cutoff"]',
-  ).disabled = !projectMode;
-  if (!projectMode && ["year", "cutoff"].includes(filters.sort))
-    $("#sort").value = "";
-  for (const control of document.querySelectorAll('[data-action="view"]')) {
-    control.setAttribute(
-      "aria-pressed",
-      String(control.dataset.id === filters.view),
-    );
-  }
   $('[data-action="loadFilter"]').hidden = !state.filters;
 }
 
@@ -703,12 +787,15 @@ function updateResults(animate = false) {
     );
     if (target.querySelector(".scroll"))
       target.querySelector(".scroll").scrollLeft = horizontal;
+    target
+      .querySelectorAll("[data-browse-school][open]")
+      .forEach(fillSchoolProjects);
     if (animate) revealUpdate(target);
   }
   displayedRows = rows;
   displayedListPage = listPage;
 
-  const count = `${filters.view} · ${rows.length} 条`;
+  const count = `院校 · ${rows.length} 所`;
   if ($("#resultCount").textContent !== count)
     $("#resultCount").textContent = count;
   $("#pager").hidden = totalPages <= 1;
@@ -733,29 +820,75 @@ function changeFilters(patch, syncControls = false) {
   updateResults(true);
 }
 
-function evidenceType(type) {
-  if (/third|secondary|platform|community|recruiter/i.test(type || ""))
-    return "非官方资料";
-  if (/official|government|官方/i.test(type || "")) return "官方资料";
-  return "";
-}
-function planMetric(project, key) {
-  if (project.annual[key] != null) return show(project.annual[key], " 人");
-  const values = project.sharedGroups.filter((group) => group[key] != null);
-  if (values.length === 1) return show(values[0][key], " 人（共享）");
-  return values.length ? "见各统计组" : "暂未取得";
-}
 function publishedSources(project) {
-  const items = [
+  return [
     ...project.annual.sources,
     ...(project.admission?.sources || []),
     ...(project.training?.sources || []),
+    ...project.sharedGroups.flatMap((group) => group.sources),
   ];
+}
+const usefulText = (text) =>
+  String(text || "")
+    .split(/[。；;\n]+/)
+    .map((v) => v.trim())
+    .filter(
+      (v) =>
+        v &&
+        !/访问失败|核验过程|本轮|字段清单|历史对应|未获得|未成功|尚未核实|暂未取得|仍待核查|本数据库|页面打不开|供维护/.test(
+          v,
+        ),
+    );
+function compactNotes(...values) {
+  const kept = [];
+  const normalize = (value) =>
+    value
+      .normalize("NFKC")
+      .toLowerCase()
+      .replace(/[^\p{L}\p{N}]/gu, "")
+      .replace(
+        /(统计口径|数据口径|合计统计|合并统计|按原文公布范围|详见原文|以原文为准)/g,
+        "",
+      );
+  for (const line of values.flatMap(usefulText)) {
+    const key = normalize(line);
+    if (
+      !key ||
+      kept.some(
+        (x) =>
+          x.key === key ||
+          (Math.min(key.length, x.key.length) >= 9 &&
+            (key.includes(x.key) || x.key.includes(key))),
+      )
+    )
+      continue;
+    kept.push({ key, line });
+  }
+  return kept.map((x) => x.line).join("；");
+}
+function admissionScope(admission) {
+  if (!admission) return "";
+  const text = admission.scope || "";
+  const thirdParty =
+    /第三方|码砖|平台样本/.test(text) ||
+    (admission.sources?.length &&
+      admission.sources.every((source) =>
+        /third|secondary/i.test(source.sourceType || ""),
+      ));
   return [
-    ...new Map(
-      items.map((record) => [record.url + "_" + (record.scope || ""), record]),
-    ).values(),
-  ];
+    thirdParty ? "第三方名单或样本统计" : "",
+    /排除|剔除|不含/.test(text) && /专项|调剂/.test(text)
+      ? "范围以来源中的专项及调剂说明为准"
+      : "",
+    admission.observedMinimum != null
+      ? "名单所见最低分与项目复试线分别列示"
+      : "",
+  ]
+    .filter(Boolean)
+    .join(" · ");
+}
+function scopeNote(text) {
+  return text ? `<p class="measure-note small">${esc(text)}</p>` : "";
 }
 function readable(value) {
   if (value === true || value === false) return value ? "是" : "否";
@@ -781,11 +914,6 @@ function readable(value) {
       .join("；");
   return value == null ? "" : String(value);
 }
-function detailsFacts(values) {
-  return facts(
-    Object.entries(values || {}).map(([key, value]) => [key, readable(value)]),
-  );
-}
 function distributionTable(admission) {
   const bins = admission?.scoreDistribution;
   if (!bins?.length) return "";
@@ -810,7 +938,7 @@ function fiveNumber(admission) {
     : null;
 }
 function scoreBox(values, low, high) {
-  if (!values) return "暂未取得";
+  if (!values) return "—";
   const [min, q1, median, q3, max] = values.map(
     (v) => 8 + (184 * (v - low)) / (high - low || 1),
   );
@@ -842,34 +970,43 @@ function individualScoreBox(admission) {
   return values ? scoreBox(values, values[0], values.at(-1)) : "";
 }
 function sharedDetails(groups) {
-  if (!groups.length) return "";
-  return `<section>${sect("共享计划及合并统计")}
-    <p class="measure-note">下列数值按统计组公布，同一组不能按方向重复计入。独立公布的方向数据列在上方。</p>
-    ${groups
-      .map(
-        (
-          group,
-        ) => `<details class="record-disclosure"><summary>${esc(group.scope)}</summary>
-      <div>${facts([
-        ...[
-          ["planned", "拟招总人数"],
-          ["examPlanned", "计划统考"],
-          ["promotionPlanned", "计划推免"],
-        ]
-          .filter(([key]) => group[key] != null)
-          .map(([key, label]) => [label, show(group[key], " 人")]),
-        ...[
-          ["examAdmissions", "普通统考录取人数"],
-          ["applicants", "报名人数"],
-          ["interviewees", "复试人数"],
-        ]
-          .filter(([key]) => group.admission?.[key] != null)
-          .map(([key, label]) => [label, show(group.admission[key], " 人")]),
-        ...outcomeFacts(group.admission),
-      ])}${detailsFacts(group.details)}${distributionTable(group.admission)}${individualScoreBox(group.admission)}${sources(group.sources)}</div></details>`,
-      )
-      .join("")}
-    </section>`;
+  const listed = [
+    ...new Map(groups.map((g) => [g.id + "-" + g.year, g])).values(),
+  ];
+  if (!listed.length) return "";
+  return `<section class="panel">${sect("共享计划及合并统计")}
+    <p class="measure-note">人数按统计组公布，同组不能按方向累加。</p>
+    ${listed
+      .map((group) => {
+        const label = compactNotes(group.scope);
+        const head = label.length > 85 ? label.slice(0, 82) + "…" : label;
+        return `<details class="record-disclosure shared-group" data-shared-group="${esc(group.id + "-" + group.year)}">
+        <summary>${esc(group.year + " 届 · " + (head || "共享统计组"))}</summary>
+        <div>${label.length > 85 ? scopeNote(label) : ""}${facts([
+          ...[
+            ["planned", "拟招总人数"],
+            ["examPlanned", "计划统考"],
+            ["promotionPlanned", "计划推免"],
+          ].map(([key, label]) => [label, show(group[key], " 人")]),
+          ...[
+            ["examAdmissions", "普通统考录取人数"],
+            ["applicants", "报名人数"],
+            ["interviewees", "复试人数"],
+          ].map(([key, label]) => [label, show(group.admission?.[key], " 人")]),
+          ...outcomeFacts(group.admission),
+          ...[
+            "目录统考计划",
+            "目录考试计划",
+            "包含目录口径的统考计划",
+            "专项计划",
+            "联合培养计划",
+            "专项录取",
+            "调剂录取",
+          ].map((key) => [key, readable(group.details?.[key])]),
+        ])}${distributionTable(group.admission)}${individualScoreBox(group.admission)}${sources(group.sources)}</div>
+      </details>`;
+      })
+      .join("")}</section>`;
 }
 function annualActions(project) {
   return (
@@ -878,196 +1015,384 @@ function annualActions(project) {
     link("compare", "查看对比", "", "button")
   );
 }
+function sectionWith(title, body) {
+  return body ? `<section class="panel">${sect(title)}${body}</section>` : "";
+}
 function annualDetail(project) {
-  const { annual, admission, training, sharedGroups } = project;
-  const box = fiveNumber(admission);
-  return `<div class="columns"><section class="panel">
-    ${sect("招生与考试")}
-    ${facts([
-      ["招生年度", project.year],
-      ["核验状态", statuses[project.annual.status]],
-      ["报考类别", project.eligibility],
-      [
-        "招生专业",
-        project.major.id + " " + (project.majorLabel || project.major.title),
-      ],
-      ["研究方向", project.direction],
-      [
-        "学位及学习方式",
-        [project.degree, project.studyMode].filter(Boolean).join(" · "),
-      ],
-      ["考试组合", annual.examCombo],
-      [
-        "初试科目",
-        annual.subjects.map(({ code, name }) => `${code} ${name}`).join("、"),
-      ],
-      ["拟招总人数", planMetric(project, "planned")],
-      ["计划推免", planMetric(project, "promotionPlanned")],
-      ["计划统考", planMetric(project, "examPlanned")],
-      ["实际推免", show(admission?.promotionAdmissions, " 人")],
-    ])}
-    </section><section class="panel">${sect("录取与培养")}
-    ${facts([
-      ["普通统考报考人数", show(admission?.applicants, " 人")],
-      ["普通统考录取人数", show(admission?.examAdmissions, " 人")],
-      ["参加复试人数", show(admission?.interviewees, " 人")],
-      ["报录比", show(admission?.applicationRatio, "∶1")],
-      ["复录比", show(admission?.interviewRatio, "∶1")],
-      ["复试线", show(admission?.cutoff, " 分")],
-      ...outcomeFacts(admission).filter(([k]) => k !== "项目复试线"),
-      ["学费总额", show(training?.tuitionTotal, " 元")],
-      ["年学费", show(training?.tuitionPerYear, " 元/年")],
-      ["学制", show(training?.durationYears, " 年")],
-      ["实际培养地点", training?.location],
-    ])}</section></div>
-    ${admission?.interviewRequirements ? `<section>${sect("复试要求")}<p class="article">${esc(admission.interviewRequirements)}</p></section>` : ""}
-    ${
-      admission?.scoreDistribution?.length || box
-        ? `<section>${sect("录取成绩分布")}
-      ${distributionTable(admission)}${box ? scoreBox(box, box[0], box.at(-1)) : ""}</section>`
-        : ""
-    }
-    ${
-      annual.details || training?.details
-        ? `<details class="record-disclosure"><summary>其他招生与培养信息</summary>
-      <div>${detailsFacts(annual.details)}${detailsFacts(training?.details)}</div></details>`
-        : ""
-    }
-    ${sharedDetails(sharedGroups)}
-    <section>${sect("统计口径与原始资料")}
-      ${[
-        annual.scope,
-        admission?.scope,
-        training?.scope,
-        annual.note,
-        training?.note,
-      ]
-        .filter(Boolean)
-        .map((note) => `<p class="article">${esc(note)}</p>`)
-        .join("")}
-      ${sources(publishedSources(project))}
-    </section>`;
+  const { annual, admission, training } = project;
+  const trainingExtra = { ...annual.details, ...training?.details };
+  const trainingBody = facts([
+    ["学费总额", show(training?.tuitionTotal, " 元")],
+    ["年学费", show(training?.tuitionPerYear, " 元/年")],
+    ["学制", show(training?.durationYears, " 年")],
+    ["培养地点", training?.location],
+    ...["住宿", "课程", "导师选择", "企业实践", "实习", "毕业要求"].map(
+      (key) => [key, readable(trainingExtra[key])],
+    ),
+  ]);
+  const examRequirements = compactNotes(admission?.interviewRequirements);
+  const retestBody =
+    (examRequirements
+      ? `<p class="article">${esc(examRequirements)}</p>`
+      : "") +
+    facts(
+      ["上机可用语言", "综合分公式", "复试合格要求", "笔试"].flatMap((key) => {
+        const value = readable(annual.details?.[key]);
+        return value && !examRequirements.includes(value) ? [[key, value]] : [];
+      }),
+    );
+  return (
+    sectionWith(
+      "招生目录",
+      facts(
+        [
+          ["研究方向", project.direction],
+          [
+            "学位及学习方式",
+            [project.degree, project.studyMode].filter(Boolean).join(" · "),
+          ],
+          ["核验状态", statuses[annual.status]],
+          ["报考类别", project.eligibility],
+          ["考试组合", annual.examCombo || "—"],
+          [
+            "初试科目",
+            annual.subjects
+              .map(({ code, name }) => code + " " + name)
+              .join("、"),
+          ],
+        ],
+        ["考试组合"],
+      ),
+    ) +
+    sectionWith(
+      "招生计划",
+      facts([
+        ["拟招总人数", show(annual.planned, " 人")],
+        ["计划推免", show(annual.promotionPlanned, " 人")],
+        ["计划统考", show(annual.examPlanned, " 人")],
+      ]) + scopeNote(compactNotes(annual.scope)),
+    ) +
+    sectionWith("复试要求", retestBody) +
+    sectionWith("培养条件", trainingBody) +
+    sources(publishedSources(project))
+  );
 }
 
-function historyDetail(records) {
-  const metrics = [
-    [
-      "拟招总人数",
-      (p) =>
-        p.annual.planned ??
-        p.sharedGroups.find((g) => g.planned != null)?.planned,
-      "planned",
-    ],
-    [
-      "计划推免",
-      (p) =>
-        p.annual.promotionPlanned ??
-        p.sharedGroups.find((g) => g.promotionPlanned != null)
-          ?.promotionPlanned,
-      "promotionPlanned",
-    ],
-    [
-      "计划统考",
-      (p) =>
-        p.annual.examPlanned ??
-        p.sharedGroups.find((g) => g.examPlanned != null)?.examPlanned,
-      "examPlanned",
-    ],
-    ["普通统考报考", (p) => p.admission?.applicants],
-    ["实际推免", (p) => p.admission?.promotionAdmissions],
-    ["普通统考录取", (p) => p.admission?.examAdmissions],
-    ["报录比", (p) => p.admission?.applicationRatio],
-    ["复录比", (p) => p.admission?.interviewRatio],
-    ["复试线", (p) => p.admission?.cutoff],
-    ["录取最低分", (p) => p.admission?.minimum],
-    ["录取最高分", (p) => p.admission?.maximum],
-    ["录取均分", (p) => p.admission?.average],
-    ["录取中位数", (p) => p.admission?.median],
-  ].filter(([, read]) => records.some((record) => read(record) != null));
-  const chartFields = [
-    ["录取中位数走势", "分", (p) => p.admission?.median],
-    ["录取均分走势", "分", (p) => p.admission?.average],
-    ["拟招总人数变化", "人", (p) => p.annual.planned],
-    ["复试线变化", "分", (p) => p.admission?.cutoff],
-    ["普通统考录取人数变化", "人", (p) => p.admission?.examAdmissions],
-    ["计划统考人数变化", "人", (p) => p.annual.examPlanned],
-  ];
-  const byYear = new Map(records.map((record) => [record.year, record]));
-  const charts = chartFields
-    .map(([title, unit, read]) => {
-      const known = records.filter((record) => read(record) != null);
+const historyMetrics = [
+  ["普通统考报考人数", " 人", (p) => p.admission?.applicants],
+  ["参加复试人数", " 人", (p) => p.admission?.interviewees],
+  ["普通统考录取人数", " 人", (p) => p.admission?.examAdmissions],
+  ["实际推免", " 人", (p) => p.admission?.promotionAdmissions],
+  ["报录比", "∶1", (p) => p.admission?.applicationRatio],
+  ["复录比", "∶1", (p) => p.admission?.interviewRatio],
+  ...Object.entries(outcomeFields).map(([key, [label, unit]]) => [
+    label,
+    unit,
+    (p) => p.admission?.[key],
+  ]),
+];
+function hasOutcome(record) {
+  return [record, ...record.sharedGroups].some(
+    (entry) =>
+      entry.admission?.scoreDistribution?.length ||
+      historyMetrics.some(([, , read]) => read(entry) != null),
+  );
+}
+function historyTrends(records) {
+  if (records.length < 2) return "";
+  const metrics = historyMetrics.filter(([, , read]) =>
+    records.some((p) => read(p) != null),
+  );
+  if (!metrics.length) return "";
+  const charts = metrics
+    .filter(([label]) =>
+      ["项目复试线", "录取均分", "录取中位数", "普通统考录取人数"].includes(
+        label,
+      ),
+    )
+    .map(([label, unit, read]) => {
+      const known = records.filter((p) => read(p) != null);
       if (known.length < 2) return "";
+      const byYear = new Map(known.map((p) => [p.year, read(p)]));
       const start = known.at(-1).year;
-      const points = Array.from(
-        { length: known[0].year - start + 1 },
-        (_, index) => {
-          const year = start + index;
-          const record = byYear.get(year);
-          return { label: year, value: record ? read(record) : null };
-        },
+      return lineChart(
+        label,
+        unit.trim(),
+        Array.from({ length: known[0].year - start + 1 }, (_, i) => ({
+          label: start + i,
+          value: byYear.get(start + i),
+        })),
       );
-      return lineChart(title, unit, points);
     })
     .join("");
-  return `<section>${sect("历年数据")}
-    ${table(
-      ["年度", "考试组合", ...metrics.map(([label]) => label)],
-      records.map((record) => [
-        esc(record.year),
-        esc(show(record.annual.examCombo)),
-        ...metrics.map(([, read, planKey]) =>
-          esc(planKey ? planMetric(record, planKey) : show(read(record))),
-        ),
-      ]),
-    )}
-    <p class="small">共享名额按公布口径列出，不能按方向相加。<br>趋势图仅使用已取得的年度数据。</p>
-    ${charts || empty("暂无可绘制趋势的两个或以上年度数据。")}</section>`;
+  return `<details class="record-disclosure"><summary>多年对照与趋势</summary><div>${table(
+    ["年度", ...metrics.map(([label]) => label)],
+    records.map((p) => [
+      p.year,
+      ...metrics.map(([, , read]) => esc(show(read(p)))),
+    ]),
+  )}${charts}</div></details>`;
 }
-
+function historyOutcome(project) {
+  return (
+    facts(
+      historyMetrics.map(([label, unit, read]) => [
+        label,
+        show(read(project), unit),
+      ]),
+    ) +
+    scopeNote(admissionScope(project.admission)) +
+    distributionTable(project.admission) +
+    individualScoreBox(project.admission) +
+    sources(project.admission?.sources)
+  );
+}
+function historyDetail(records) {
+  const outcomes = records.filter(hasOutcome);
+  if (!outcomes.length) return "";
+  const recent = outcomes[0];
+  return `<section class="panel">${sect("历史录取分析")}
+    <div class="filters"><label>录取年度<select id="historyYear" data-project="${esc(recent.id)}">${opts(
+      outcomes.map((p) => p.year),
+      recent.year,
+      null,
+    )}</select></label></div>
+    <div id="historyOutcome">${historyOutcome(recent)}</div>
+    ${historyTrends(outcomes)}${sources(outcomes.flatMap((p) => p.admission?.sources || []))}
+    </section>`;
+}
 function detail(project) {
   const records = projectHistory.get(project.id);
-  return `${heading(project.school.name + " · " + project.major.title, project.college)}
+  const recent = records.find(hasOutcome);
+  return `${heading(project.school.name + " · " + (project.majorLabel || project.major.title), project.college)}
     <div id="projectActions" class="actions">${annualActions(project)}</div>
-    <div class="filters"><label>招生年度<select id="projectYear" data-project="${esc(project.id)}">
-      ${opts(
-        records.map(({ year }) => year),
-        project.year,
-        null,
-      )}
-    </select></label></div>
+    <div class="filters"><label>招生年度<select id="projectYear" data-project="${esc(project.id)}">${opts(
+      records.map((p) => p.year),
+      project.year,
+      null,
+    )}</select></label></div>
     <div id="projectAnnual">${annualDetail(project)}</div>
-    ${historyDetail(records)}${dataInsights.projectEmployment(project)}
-    <div class="actions">${link("school", "院校档案 →", project.schoolId, "button")}
-      ${link("major", "专业详情 →", project.majorId, "button")}</div>`;
+    ${historyDetail(records)}<div id="projectShared">${sharedDetails([...project.sharedGroups, ...(recent?.sharedGroups || [])])}</div>
+    <div class="actions">${link("school", "院校档案与就业 →", project.schoolId, "button")}${link("major", "专业详情 →", project.majorId, "button")}</div>`;
+}
+function updateProjectSections() {
+  const catalog = $("#projectYear"),
+    historySelect = $("#historyYear");
+  if (!catalog) return;
+  const current = projectById.get(
+    projectRef(catalog.dataset.project, catalog.value),
+  );
+  const history =
+    historySelect &&
+    projectById.get(
+      projectRef(historySelect.dataset.project, historySelect.value),
+    );
+  $("#projectShared").innerHTML = sharedDetails([
+    ...current.sharedGroups,
+    ...(history?.sharedGroups || []),
+  ]);
+  refreshReferences(pageContent);
 }
 function school(record) {
+  const info = Object.fromEntries(
+    (record.sections || [])
+      .flatMap((section) => section.table?.rows || [])
+      .filter(([label]) => ["研究优势", "双一流学科"].includes(label))
+      .map(([label, value]) => [
+        label,
+        String(value).replace(/^year：\d+；round：\d+；disciplines：/, ""),
+      ]),
+  );
   return `${heading(record.name, record.province + " · " + record.city)}
     <div class="actions">${fav("school", record.id)}</div>
-    <div class="article">${articleSections(record)}</div>
-    ${sect("已收录招生项目")}${projectTable(projectsBySchool.get(record.id) || [])}${dataInsights.schoolEmployment(record.id)}`;
+    ${sectionWith("院校概况", facts([["计算机学科评估", record.computingAssessment ? assessment(record) : null], ...Object.entries(info)]))}
+    ${sectionWith("招生项目", groupedProjects(allBySchool.get(record.id) || []))}
+    ${dataInsights.schoolEmployment(record.id)}
+    ${sources([...(record.computingAssessment?.sources || []), ...(record.sections || []).flatMap((s) => s.sources || []), ...(record.sources || [])])}`;
 }
-function compareOptions() {
-  return (
-    '<option value="">选择项目</option>' +
-    projects
-      .filter((project) => !state.comp.includes(project.ref))
-      .map(
-        (project) =>
-          `<option value="${esc(project.ref)}">${esc(
-            [
-              project.school.name,
-              project.college,
-              project.majorLabel || project.major.title,
-              project.direction,
-              project.year,
-              statuses[project.annual.status],
-            ]
-              .filter(Boolean)
-              .join(" · "),
-          )}</option>`,
+const compareFields = ["school", "college", "major", "project", "year"];
+const emptyCompareDraft = () => ({
+  school: "",
+  college: "",
+  major: "",
+  project: "",
+  year: "",
+  editing: "",
+});
+let compareDraft = emptyCompareDraft();
+function comparisonChooser() {
+  return `<section class="comparison-chooser" aria-label="选择对比项目">
+    <div class="filters">
+      <label>搜索院校<input id="compareSearch" placeholder="校名或简称" autocomplete="off"></label>
+      <label>院校<select data-compare-field="school"></select></label>
+      <label>招生学院<select data-compare-field="college"></select></label>
+      <label>招生专业<select data-compare-field="major"></select></label>
+      <label id="compareDirection">研究方向<select data-compare-field="project"></select></label>
+      <label>招生年度<select data-compare-field="year"></select></label>
+      ${button("addComparison", "加入对比", "", "btn")}${button("cancelComparisonEdit", "取消修改")}
+    </div>
+    <p id="comparisonHint" class="small" role="status"></p>
+    </section>`;
+}
+function compareSelect(field, choices, label, preferRecent = false) {
+  const node = document.querySelector(`[data-compare-field="${field}"]`);
+  const existing = compareDraft[field];
+  const value = choices.some(([id]) => id === existing)
+    ? existing
+    : choices.length === 1 || preferRecent
+      ? choices[0]?.[0] || ""
+      : "";
+  compareDraft[field] = value;
+  const options =
+    (choices.length === 1 ? "" : `<option value="">${label}</option>`) +
+    choices
+      .map(([id, text]) => `<option value="${esc(id)}">${esc(text)}</option>`)
+      .join("");
+  if (node.dataset.options !== options) {
+    node.innerHTML = options;
+    node.dataset.options = options;
+  }
+  node.value = value;
+  node.disabled = !choices.length;
+  return value;
+}
+function selectedCompareItem() {
+  const { project, year } = compareDraft;
+  return project && year ? projectById.get(projectRef(project, year)) : null;
+}
+function syncCompareChooser() {
+  const query = normalizeQuery($("#compareSearch").value);
+  const school = compareSelect(
+    "school",
+    indexedSchools
+      .filter(
+        ({ record, text }) =>
+          projectsBySchool.has(record.id) && containsWords(text, query),
       )
-      .join("")
+      .map(({ record }) => [record.id, record.name]),
+    "选择院校",
   );
+  const tree = projectTree(projectsBySchool.get(school) || []);
+  const college = compareSelect(
+    "college",
+    tree.map(({ college }) => [college, college]),
+    "选择学院",
+  );
+  const majors = tree.find((row) => row.college === college)?.majors || [];
+  const major = compareSelect(
+    "major",
+    majors.map(({ id, title }) => [id, `${id} ${title}`]),
+    "选择专业",
+  );
+  const tracks = majors.find((row) => row.id === major)?.projects || [];
+  const labels = tracks.map(
+    ([p]) => p.direction || p.majorLabel || "未细分方向",
+  );
+  const project = compareSelect(
+    "project",
+    tracks.map(([p], i) => [
+      p.id,
+      labels.filter((label) => label === labels[i]).length > 1
+        ? [labels[i], p.studyMode, p.training?.location, p.id]
+            .filter(Boolean)
+            .join(" · ")
+        : labels[i],
+    ]),
+    "选择方向",
+  );
+  $("#compareDirection").hidden =
+    tracks.length < 2 && !tracks[0]?.[0]?.direction;
+  compareSelect(
+    "year",
+    (projectHistory.get(project) || []).map((p) => [
+      String(p.year),
+      `${p.year} 届`,
+    ]),
+    "选择年度",
+    true,
+  );
+  const candidate = selectedCompareItem();
+  const duplicate =
+    candidate &&
+    state.comp.some(
+      (ref) =>
+        ref !== compareDraft.editing &&
+        projectById.get(ref)?.ref === candidate.ref,
+    );
+  const add = $('[data-action="addComparison"]');
+  add.disabled =
+    !candidate ||
+    duplicate ||
+    (!compareDraft.editing && state.comp.length >= 5);
+  add.textContent = compareDraft.editing ? "更新对比" : "加入对比";
+  $('[data-action="cancelComparisonEdit"]').hidden = !compareDraft.editing;
+  $("#comparisonHint").textContent = duplicate
+    ? "该项目年度已在对比中。"
+    : query && !school && $('[data-compare-field="school"]').disabled
+      ? "没有匹配的院校。"
+      : "";
+}
+function comparisonItems() {
+  return state.comp
+    .map((ref) => {
+      const p = projectById.get(ref);
+      if (!p) return "";
+      const years = projectHistory.get(p.id);
+      return `<article class="compare-item">
+      <h3>${link("project", p.school.name, p.ref)}</h3>
+      <p>${esc([p.college, p.majorLabel || p.major.title, p.direction].filter(Boolean).join(" · "))}</p>
+      <div class="actions">
+        <label>年度 <select aria-label="${esc(p.school.name + " " + p.major.title + "的对比年度")}" data-comp-year="${esc(ref)}">
+          ${opts(
+            years.map(({ year }) => year),
+            p.year,
+            null,
+          )}</select></label>
+        ${button("editComparison", "修改", ref)}
+        ${button("comp", "删除", ref)}
+      </div></article>`;
+    })
+    .join("");
+}
+function editComparison(ref) {
+  const p = projectById.get(ref);
+  if (!p) return;
+  compareDraft = {
+    school: p.schoolId,
+    college: p.college,
+    major: p.majorId,
+    project: p.id,
+    year: String(p.year),
+    editing: ref,
+  };
+  $("#compareSearch").value = "";
+  syncCompareChooser();
+  $('[data-compare-field="school"]').focus();
+}
+function replaceComparison(from, to) {
+  const index = state.comp.indexOf(from);
+  if (index < 0 || !projectById.has(to)) return false;
+  if (
+    state.comp.some(
+      (ref, i) =>
+        i !== index && projectById.get(ref)?.ref === projectById.get(to).ref,
+    )
+  ) {
+    notify("该项目年度已在对比中");
+    return false;
+  }
+  state.comp[index] = to;
+  for (const ref of [from, to])
+    updateToggle("comp", ref, state.comp.includes(ref), "移出对比", "加入对比");
+  save();
+  return true;
+}
+function comparePlanValue(p, key) {
+  return p.annual[key] != null
+    ? show(p.annual[key], " 人")
+    : p.sharedGroups.some((group) => group[key] != null)
+      ? "见共享组"
+      : "—";
 }
 function compareTable() {
   const items = state.comp.map((id) => projectById.get(id)).filter(Boolean);
@@ -1085,8 +1410,8 @@ function compareTable() {
     ["专业代码", (p) => p.major.id],
     ["培养地点", (p) => p.training?.location],
     ["考试组合", (p) => p.annual.examCombo],
-    ["拟招总人数", (p) => planMetric(p, "planned")],
-    ["计划统考人数", (p) => planMetric(p, "examPlanned")],
+    ["拟招总人数", (p) => comparePlanValue(p, "planned")],
+    ["计划统考人数", (p) => comparePlanValue(p, "examPlanned")],
     ["统考录取人数", (p) => show(p.admission?.examAdmissions, " 人")],
     ["复试线", (p) => show(p.admission?.cutoff, " 分")],
     ["录取中位数", (p) => show(p.admission?.median, " 分")],
@@ -1103,10 +1428,12 @@ function compareTable() {
     table(
       ["比较指标", ...items.map((p) => link("project", p.school.name, p.ref))],
       [
-        ...metrics.map(([label, read]) => [
-          label,
-          ...items.map((p) => esc(show(read(p)))),
-        ]),
+        ...metrics
+          .filter(([, read]) => items.some((p) => present(read(p))))
+          .map(([label, read]) => [
+            label,
+            ...items.map((p) => esc(show(read(p)))),
+          ]),
         ...(complete.length
           ? [
               [
@@ -1119,14 +1446,20 @@ function compareTable() {
           "相关就业资料",
           ...items.map((p) => dataInsights.comparisonEmployment(p)),
         ],
-        ["原始文件", ...items.map((p) => source(p.annual.sources[0]))],
-        ["操作", ...items.map((p) => compBtn(p.ref))],
       ],
       "compare-table",
     ) +
     (new Set(items.map((project) => project.annual.examCombo)).size > 1
       ? "<p>各项目考试组合不同，原始分数的可比性有限。</p>"
-      : "")
+      : "") +
+    sharedDetails([
+      ...new Map(
+        items
+          .flatMap((p) => p.sharedGroups)
+          .map((g) => [g.id + "-" + g.year, g]),
+      ).values(),
+    ]) +
+    sources(items.flatMap((p) => publishedSources(p)))
   );
 }
 function savedPlans() {
@@ -1145,43 +1478,55 @@ function savedPlans() {
   );
 }
 function compare() {
-  return `${heading("院校对比", "选择 2—5 个招生项目，按相应年度并列查看。")}
-    <div class="filters"><label>添加招生项目<select id="addProject">${compareOptions()}</select></label>
-    <span id="comparisonCount" class="small" role="status">已选 ${state.comp.length} / 5 项</span></div>
+  compareDraft = emptyCompareDraft();
+  return `${heading("院校对比")}${comparisonChooser()}
+    <div class="section"><h2>已选项目</h2><span id="comparisonCount" class="small" role="status">已选 ${state.comp.length} / 5 项</span></div>
+    <div id="comparisonItems" class="compare-items">${comparisonItems()}</div>
     <div id="comparisonTable">${compareTable()}</div>
     <div id="comparisonActions" class="actions" ${state.comp.length < 2 ? "hidden" : ""}>
       ${button("savePlan", "保存此方案")}${button("exportComp", "导出对比")}
-    </div>
-    ${sect("已保存方案")}<div id="comparisonPlans">${savedPlans()}</div>`;
+    </div>${sect("已保存方案")}<div id="comparisonPlans">${savedPlans()}</div>`;
 }
-function updateComparison() {
+function updateComparison(focusRef) {
   const target = $("#comparisonTable");
   if (!target) return;
-  const focusWasInTable = target.contains(document.activeElement);
+  const focused = document.activeElement;
+  const inSelection = $("#comparisonItems").contains(focused);
+  const activeRef =
+    focusRef || focused.dataset?.id || focused.dataset?.compYear;
   const horizontal = target.querySelector(".scroll")?.scrollLeft || 0;
+  $("#comparisonItems").innerHTML = comparisonItems();
   target.innerHTML = compareTable();
   const scroll = target.querySelector(".scroll");
   if (scroll) scroll.scrollLeft = horizontal;
   $("#comparisonActions").hidden = state.comp.length < 2;
   $("#comparisonCount").textContent = `已选 ${state.comp.length} / 5 项`;
-  $("#addProject").innerHTML = compareOptions();
-  if (focusWasInTable)
-    (target.querySelector('[data-action="comp"]') || $("#addProject")).focus({
-      preventScroll: true,
-    });
+  if (compareDraft.editing && !state.comp.includes(compareDraft.editing))
+    compareDraft.editing = "";
+  syncCompareChooser();
+  refreshReferences(pageContent);
+  if (inSelection) {
+    const next = [...document.querySelectorAll("[data-comp-year]")].find(
+      (node) => node.dataset.compYear === activeRef,
+    );
+    (next || $("#compareSearch")).focus({ preventScroll: true });
+  }
   revealUpdate(target);
 }
-
 function major(record) {
   return `${heading(record.title, record.id + " · " + record.degree)}
     <div class="actions">${fav("major", record.id)}</div>
     <div class="article">${articleSections(record)}${directionLinks(record)}
-    <section>${sect("关联职业")}${record.careerIds
-      .map(
-        (id) =>
-          `<div class="listrow">${link("job", careerById.get(id).title + " →", id)}</div>`,
-      )
-      .join("")}</section></div>
+    ${
+      record.careerIds.length
+        ? `<section>${sect("关联职业")}${record.careerIds
+            .map(
+              (id) =>
+                `<div class="listrow">${link("job", careerById.get(id).title + " →", id)}</div>`,
+            )
+            .join("")}</section>`
+        : ""
+    }</div>
     <section>${sect("已收录招生项目")}${projectTable(latestProjects.filter((p) => p.majorId === record.id))}</section>`;
 }
 function job(record) {
@@ -1486,11 +1831,12 @@ function render() {
     trend: () =>
       heading("全国考研报名人数", trends.scope) +
       table(
-        ["招生年度", "报名人数（" + esc(trends.unit) + "）", "资料来源"],
+        ["招生年度", "报名人数（" + esc(trends.unit) + "）"],
         [...trends.series]
           .reverse()
-          .map((r) => [esc(r.year), esc(show(r.value)), sources(r.sources)]),
-      ),
+          .map((r) => [esc(r.year), esc(show(r.value))]),
+      ) +
+      sources(trends.series.flatMap((r) => r.sources)),
   };
   try {
     pageContent.innerHTML = pages[page]
@@ -1500,6 +1846,8 @@ function render() {
       syncDirectoryControls();
       updateResults();
     }
+    if (page === "compare") syncCompareChooser();
+    refreshReferences(pageContent);
     document.title =
       (main.querySelector("h1")?.textContent || "首页") + " · CS 2028";
   } catch (e) {
@@ -1531,6 +1879,7 @@ function updateToggle(action, id, selected, selectedLabel, defaultLabel) {
 }
 
 function toggleComparison(id) {
+  id = projectById.get(id)?.ref || id;
   if (!state.comp.includes(id) && state.comp.length >= 5)
     return notify("最多可选择 5 个项目");
   state.comp = toggle(state.comp, id);
@@ -1548,9 +1897,6 @@ function act(control) {
       return openPreview(id, control);
     case "previewStep":
       return stepPreview(Number(id));
-    case "view":
-      if (filters.view !== id) changeFilters({ view: id }, true);
-      return;
     case "paginate":
       listPage += Number(id);
       return updateResults(true);
@@ -1577,6 +1923,24 @@ function act(control) {
     }
     case "comp":
       return toggleComparison(id);
+    case "editComparison":
+      return editComparison(id);
+    case "cancelComparisonEdit":
+      compareDraft.editing = "";
+      return syncCompareChooser();
+    case "addComparison": {
+      const project = selectedCompareItem();
+      if (!project) return;
+      if (compareDraft.editing) {
+        if (replaceComparison(compareDraft.editing, project.ref)) {
+          compareDraft.editing = "";
+          updateComparison(project.ref);
+          notify("已更新对比项目");
+        }
+      } else if (!state.comp.includes(project.ref))
+        toggleComparison(project.ref);
+      return;
+    }
     case "plan":
       state.comp = [...state.plans[Number(id)]];
       save();
@@ -1601,7 +1965,7 @@ function act(control) {
     case "loadFilter":
       return changeFilters({ ...defaultFilters, ...state.filters }, true);
     case "clear":
-      return changeFilters({ ...defaultFilters, view: filters.view }, true);
+      return changeFilters({ ...defaultFilters }, true);
     case "pref":
       state.city = $("#prefCity").value;
       state.wantCombo = $("#prefCombo").value;
@@ -1620,13 +1984,23 @@ function act(control) {
         state.comp.map((ref) => projectById.get(ref)).filter(Boolean),
       );
     case "exportList":
-      return download("CS2028-筛选结果", getFiltered());
+      return download(
+        "CS2028-筛选结果",
+        getFiltered().map(({ school, records }) => ({
+          school: school.name,
+          projects: records,
+        })),
+      );
     case "exportCandidates":
       return download("CS2028-候选项目", matches());
   }
 }
 
 document.addEventListener("input", (event) => {
+  if (event.target.id === "compareSearch") {
+    if (!event.isComposing) syncCompareChooser();
+    return;
+  }
   if (event.target.id !== "filterQ") return;
   filters.q = event.target.value;
   listPage = 1;
@@ -1636,6 +2010,7 @@ document.addEventListener("input", (event) => {
 });
 document.addEventListener("compositionend", (event) => {
   if (event.target.id === "filterQ") updateResults();
+  if (event.target.id === "compareSearch") syncCompareChooser();
 });
 function validState(v) {
   const strings = (a) =>
@@ -1656,16 +2031,24 @@ function validState(v) {
     typeof v.city === "string" &&
     (!v.wantCombo || typeof v.wantCombo === "string") &&
     (!v.filters ||
-      (["院校名录", "招生项目"].includes(v.filters.view) &&
-        ["q", "city", "combo", "year"].every(
-          (k) => typeof v.filters[k] === "string",
-        )))
+      ["q", "city", "combo", "year"].every(
+        (k) => typeof v.filters[k] === "string",
+      ))
   );
 }
 document.addEventListener("change", async (e) => {
   let t = e.target;
   if (["year", "city", "combo", "sort", "status", "major"].includes(t.id))
     changeFilters({ [t.id]: t.value });
+  if (t.dataset.browseYear) {
+    const project = projectById.get(projectRef(t.dataset.browseYear, t.value));
+    if (project)
+      t
+        .closest("[data-group-project]")
+        .querySelector("[data-row-controls]").innerHTML =
+        projectRowControls(project);
+    return;
+  }
   if (t.id === "projectYear") {
     const record = projectById.get(projectRef(t.dataset.project, t.value));
     if (record) {
@@ -1674,16 +2057,37 @@ document.addEventListener("change", async (e) => {
       $("#projectActions").innerHTML = annualActions(record);
       const annual = $("#projectAnnual");
       annual.innerHTML = annualDetail(record);
+      updateProjectSections();
       revealUpdate(annual);
+    }
+  }
+  if (t.id === "historyYear") {
+    const record = projectById.get(projectRef(t.dataset.project, t.value));
+    if (record) {
+      const target = $("#historyOutcome");
+      target.innerHTML = historyOutcome(record);
+      updateProjectSections();
+      revealUpdate(target);
     }
   }
   if (t.dataset.note) {
     state.notes[t.dataset.note] = t.value;
     if (save()) notify("已保存备注");
   }
-  if (t.id === "addProject" && t.value) {
-    toggleComparison(t.value);
-    t.value = "";
+  if (t.dataset.compareField) {
+    const field = t.dataset.compareField;
+    compareDraft[field] = t.value;
+    for (const later of compareFields.slice(compareFields.indexOf(field) + 1))
+      compareDraft[later] = "";
+    syncCompareChooser();
+    return;
+  }
+  if (t.dataset.compYear) {
+    const project = projectById.get(t.dataset.compYear);
+    const ref = projectRef(project.id, t.value);
+    if (replaceComparison(t.dataset.compYear, ref)) updateComparison(ref);
+    else t.value = String(project.year);
+    return;
   }
   if (t.id === "restore" && t.files.length) {
     try {
@@ -1718,41 +2122,38 @@ let previewItems = [];
 let previewIndex = 0;
 
 function preview(project) {
-  const cutoff = projectHistory
+  const recent = projectHistory
     .get(project.id)
-    .filter((p) => p.admission?.cutoff != null)
-    .map((p) => `${p.year} 届 ${p.admission.cutoff} 分`)
-    .join(" / ");
+    .find((p) => p.admission?.cutoff != null);
   return `<h2 id="previewTitle" tabindex="-1">${esc(project.school.name)}</h2>
     <p class="preview-college">${esc(project.college)}</p>
-    <div class="actions">${fav("project", project.ref)}${compBtn(project.ref)}
-      ${link("project", "查看完整详情", project.ref, "button btn")}
-    </div>
-    <section class="panel">${sect("招生信息")}
-      ${facts([
-        ["专业", `${project.major.id} ${project.major.title}`],
+    <div class="actions">${fav("project", project.ref)}${compBtn(project.ref)}${link("project", "查看完整详情", project.ref, "button btn")}</div>
+    ${sectionWith(
+      "招生信息",
+      facts([
+        [
+          "专业",
+          project.major.id + " " + (project.majorLabel || project.major.title),
+        ],
         ["研究方向", project.direction],
         ["招生年度", project.year],
-        ["核验状态", statuses[project.annual.status]],
         ["考试组合", project.annual.examCombo],
-        ["拟招总人数", planMetric(project, "planned")],
-        ["计划统考", planMetric(project, "examPlanned")],
-        ["统考录取人数", show(project.admission?.examAdmissions, " 人")],
-        ["报录比", show(project.admission?.applicationRatio, "∶1")],
-        ["复录比", show(project.admission?.interviewRatio, "∶1")],
-        ["历年复试线", cutoff],
-        ["录取中位数", show(project.admission?.median, " 分")],
+        ["拟招总人数", show(project.annual.planned, " 人")],
+        ["计划统考", show(project.annual.examPlanned, " 人")],
+        [
+          "最近项目复试线",
+          recent ? `${recent.year} 届 · ${recent.admission.cutoff} 分` : "—",
+        ],
         ["年学费", show(project.training?.tuitionPerYear, " 元/年")],
         ["学制", show(project.training?.durationYears, " 年")],
-      ])}</section>
-    <section class="panel">${sect("招生计划口径与原始资料")}
-      <p>${esc(project.sharedGroups.map((g) => g.scope).join("；") || project.annual.note)}</p>${sources(publishedSources(project))}
-    </section>`;
+      ]) + scopeNote(compactNotes(project.annual.scope)),
+    )}
+    ${sharedDetails(project.sharedGroups)}${sources(publishedSources(project))}`;
 }
-
 function updatePreview(animate = false) {
   const body = $("#previewBody");
   body.innerHTML = preview(previewItems[previewIndex]);
+  refreshReferences(body);
   $("#previewPosition").textContent =
     `${previewIndex + 1} / ${previewItems.length}`;
   $('[data-action="previewStep"][data-id="-1"]').setAttribute(
@@ -1770,11 +2171,21 @@ function updatePreview(animate = false) {
 
 let previewOpener;
 function openPreview(id, opener) {
-  const items = page === "decide" ? matches().slice(0, 30) : getFiltered();
-  const index = items.findIndex((project) => project.ref === id);
-  if (index === -1) return;
+  const selected = projectById.get(id);
+  if (!selected) return;
+  const candidates =
+    page === "decide"
+      ? matches().slice(0, 30)
+      : page === "schools"
+        ? getFiltered().find(({ school }) => school.id === selected.schoolId)
+            ?.records || []
+        : allBySchool.get(selected.schoolId) || [];
+  const items = byLatest(candidates).map((rows) =>
+    rows[0].id === selected.id ? selected : rows[0],
+  );
+  if (!items.some((project) => project.ref === id)) items.unshift(selected);
   previewItems = items;
-  previewIndex = index;
+  previewIndex = items.findIndex((project) => project.ref === id);
   updatePreview();
   if (!previewDialog.open) {
     previewOpener = opener;
@@ -1896,19 +2307,61 @@ function search() {
     return;
   }
   const matches = [];
+  const seen = new Set();
   for (const { row, text } of searchIndex) {
-    if (text.includes(query)) matches.push(row);
+    if (!containsWords(text, query)) continue;
+    const [type, id] = row;
+    const key =
+      type === "project"
+        ? "project/" + projectById.get(id)?.id
+        : type === "external"
+          ? referenceKey(id)
+          : type + "/" + id;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    matches.push(row);
     if (matches.length === 30) break;
   }
+  const projectResults = matches.filter(([type]) => type === "project");
+  const bySchool = groupBy(
+    projectResults,
+    ([, id]) => projectById.get(id).schoolId,
+  );
+  const renderRow = ([type, id, title]) =>
+    `<div class="listrow">${type === "external" ? out(id, title) : link(type, title, id)}</div>`;
   searchResults.innerHTML =
     matches
-      .map(
-        ([type, id, title]) =>
-          '<div class="listrow">' +
-          (type === "external" ? out(id, title) : link(type, title, id)) +
-          "</div>",
+      .filter(
+        ([type, id]) =>
+          type !== "project" && !(type === "school" && bySchool.has(id)),
       )
-      .join("") || empty("没有匹配的记录。");
+      .map(renderRow)
+      .join("") +
+      [...bySchool]
+        .map(
+          ([
+            schoolId,
+            rows,
+          ]) => `<section class="search-school"><h3>${link("school", schoolById.get(schoolId).name, schoolId)}</h3>
+      ${rows
+        .map(([, id]) => {
+          const p = projectById.get(id);
+          return renderRow([
+            "project",
+            id,
+            [
+              p.college,
+              p.majorLabel || p.major.title,
+              p.direction,
+              p.year + " 届",
+            ]
+              .filter(Boolean)
+              .join(" · "),
+          ]);
+        })
+        .join("")}</section>`,
+        )
+        .join("") || empty("没有匹配的记录。");
 }
 function openSearch() {
   if (searchDialog.open) return;

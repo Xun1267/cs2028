@@ -19,7 +19,7 @@ python3 -m http.server 8028 --bind 127.0.0.1 --directory public
 
 | 文件 | 结构和用途 |
 | --- | --- |
-| `schools.json` | 院校数组。保留 `id`，用 `name`、`city`、`province` 和 `aliases` 提供名称及搜索别名。可添加 `sections`、`sources`。 |
+| `schools.json` | 院校数组。保留 `id`，用 `name`、`city`、`province` 和 `aliases` 提供名称及搜索别名。计算机学科评估可填 `computingAssessment`，包含 `grade`、`round`、`year` 和 `sources`。可添加 `sections`、`sources`。 |
 | `projects.json` | 包含 `projects` 和 `sharedPlans` 两个数组。项目通过 `schoolId`、`majorId` 关联院校和专业，在 `years` 中逐年补充考试与计划。 |
 | `admissions.json` | 按 `projectId` 和 `year` 记录实际报名、复试、录取、报录比、复录比、成绩与复试要求。 |
 | `training.json` | 按 `projectId` 和 `year` 记录 `tuitionPerYear`（元/年）、`durationYears`（年）、`location`（地点）、`city`（用于筛选）及 `note`。 |

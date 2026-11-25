@@ -208,7 +208,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "A+",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估结果出炉：计算机科学与技术",
+          "url": "https://kaoyan.eol.cn/nnews/201712/t20171228_1577243.shtml",
+          "publisher": "中国教育在线"
+        }
+      ]
+    }
   },
   {
     "id": "中国人民大学",
@@ -282,7 +294,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "B+",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估结果出炉：计算机科学与技术",
+          "url": "https://kaoyan.eol.cn/nnews/201712/t20171228_1577243.shtml",
+          "publisher": "中国教育在线"
+        }
+      ]
+    }
   },
   {
     "id": "清华大学",
@@ -390,7 +414,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "A+",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估结果出炉：计算机科学与技术",
+          "url": "https://kaoyan.eol.cn/nnews/201712/t20171228_1577243.shtml",
+          "publisher": "中国教育在线"
+        }
+      ]
+    }
   },
   {
     "id": "北京航空航天大学",
@@ -475,7 +511,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "A",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估结果出炉：计算机科学与技术",
+          "url": "https://kaoyan.eol.cn/nnews/201712/t20171228_1577243.shtml",
+          "publisher": "中国教育在线"
+        }
+      ]
+    }
   },
   {
     "id": "北京理工大学",
@@ -557,7 +605,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "A-",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估结果出炉：计算机科学与技术",
+          "url": "https://kaoyan.eol.cn/nnews/201712/t20171228_1577243.shtml",
+          "publisher": "中国教育在线"
+        }
+      ]
+    }
   },
   {
     "id": "中国农业大学",
@@ -632,7 +692,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "B-",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估结果出炉：计算机科学与技术",
+          "url": "https://kaoyan.eol.cn/nnews/201712/t20171228_1577243.shtml",
+          "publisher": "中国教育在线"
+        }
+      ]
+    }
   },
   {
     "id": "北京师范大学",
@@ -705,7 +777,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "B",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估结果出炉：计算机科学与技术",
+          "url": "https://kaoyan.eol.cn/nnews/201712/t20171228_1577243.shtml",
+          "publisher": "中国教育在线"
+        }
+      ]
+    }
   },
   {
     "id": "中央民族大学",
@@ -1899,7 +1983,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "B+",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+          "url": "https://www.xdf.cn/611/202608/15347167.html",
+          "publisher": "新东方网"
+        }
+      ]
+    }
   },
   {
     "id": "山东大学",
@@ -2149,7 +2245,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "B+",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+          "url": "https://www.xdf.cn/611/202608/15347167.html",
+          "publisher": "新东方网"
+        }
+      ]
+    }
   },
   {
     "id": "中南大学",
@@ -2227,7 +2335,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "A-",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+          "url": "https://www.xdf.cn/611/202608/15347167.html",
+          "publisher": "新东方网"
+        }
+      ]
+    }
   },
   {
     "id": "国防科技大学",
@@ -2305,7 +2425,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "A+",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+          "url": "https://www.xdf.cn/611/202608/15347167.html",
+          "publisher": "新东方网"
+        }
+      ]
+    }
   },
   {
     "id": "中山大学",
@@ -2405,7 +2537,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "B+",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+          "url": "https://www.xdf.cn/611/202608/15347167.html",
+          "publisher": "新东方网"
+        }
+      ]
+    }
   },
   {
     "id": "华南理工大学",
@@ -2490,7 +2634,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "B+",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+          "url": "https://www.xdf.cn/611/202608/15347167.html",
+          "publisher": "新东方网"
+        }
+      ]
+    }
   },
   {
     "id": "四川大学",
@@ -2830,7 +2986,19 @@
           }
         ]
       }
-    ]
+    ],
+    "computingAssessment": {
+      "grade": "C",
+      "round": 4,
+      "year": 2017,
+      "sources": [
+        {
+          "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+          "url": "https://www.gkzs.net/xkpg4/school/10712.html",
+          "publisher": "高考雷达"
+        }
+      ]
+    }
   },
   {
     "id": "兰州大学",

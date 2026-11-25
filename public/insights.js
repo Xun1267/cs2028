@@ -157,7 +157,7 @@ export function createInsights(data, ui) {
       return `≥ ${row.min.toLocaleString("zh-CN")} ${unit(row.unit) || "元（计薪周期未标明）"}`;
     if (row?.max != null)
       return `≤ ${row.max.toLocaleString("zh-CN")} ${unit(row.unit) || "元（计薪周期未标明）"}`;
-    return "暂未取得";
+    return "—";
   };
   const formatType = (type) => salaryTypes[type] || type || "来源未分类";
   const links = (ids, item) => (ids || []).map(item).join(" · ");
@@ -202,18 +202,19 @@ export function createInsights(data, ui) {
         details(
           `${type}（${rows.length}）`,
           table(
-            ["指标／样本", "金额", "人群与口径", "资料"],
+            ["指标／样本", "金额", "年份与人群"],
             rows.map((record) => [
               link("salary", record.name, record.id),
               esc(amount(record)),
               esc(
-                [record.year, record.population, record.education, record.notes]
-                  .filter(Boolean)
-                  .join(" · "),
-              ),
-              record.sources?.[0]
-                ? out(record.sources[0].url, record.sources[0].title)
-                : "暂未取得",
+                [
+                  ...new Set(
+                    [record.year, record.population, record.education].filter(
+                      Boolean,
+                    ),
+                  ),
+                ].join(" · "),
+              ) + sourceSummary(record),
             ]),
           ),
         ),
@@ -234,7 +235,7 @@ export function createInsights(data, ui) {
         esc(show(record.cohort)),
         esc(
           (record.cityIds ?? []).map((id) => name("cities", id)).join("、") ||
-            "暂未取得",
+            "—",
         ),
         esc(amount(recruitmentAmount(record.salary))),
       ]),
@@ -304,21 +305,20 @@ export function createInsights(data, ui) {
     const scale = Math.max(1, ...comparable.map(([, v]) => v.max));
     return custom(
       "分学历与工龄参考薪资",
-      table(
-        ["群体", "参考区间", "范围", "年份与依据"],
-        rows.map(([key, v]) => [
-          esc(careerBands[key] || key),
-          esc(amount(v)),
-          v.unit === "CNY/month"
-            ? `<span class="range-scale"><i style="left:${(v.min / scale) * 100}%;right:${100 - (v.max / scale) * 100}%"></i></span>`
-            : "—",
-          esc(
-            [v.year, formatType(v.dataType), v.notes]
-              .filter(Boolean)
-              .join(" · "),
-          ) + sourceSummary(v),
-        ]),
-      ),
+      note(
+        "金额为择业预算参考，按资料所列工龄和学历分组。实际工资、招聘报价及个人样本见薪资资料。",
+      ) +
+        table(
+          ["群体", "参考区间", "范围", "年份"],
+          rows.map(([key, v]) => [
+            esc(careerBands[key] || key),
+            esc(amount(v)),
+            v.unit === "CNY/month"
+              ? `<span class="range-scale"><i style="left:${(v.min / scale) * 100}%;right:${100 - (v.max / scale) * 100}%"></i></span>`
+              : "—",
+            esc(show(v.year)) + sourceSummary(v),
+          ]),
+        ),
     );
   }
   function cityRows() {
@@ -329,7 +329,7 @@ export function createInsights(data, ui) {
         esc(cityMarketPay(city)),
         esc(
           city.rent?.average == null
-            ? "暂未取得"
+            ? "—"
             : `${city.rent.average} 元/平方米/月 · ${city.rent.period || "时期未标示"}`,
         ),
         esc(amount(city.livingCosts?.sharedHousingTotalMonthlyBudget)),
@@ -345,7 +345,7 @@ export function createInsights(data, ui) {
           max: range[1],
           unit: city.cityMarketSalaryReference.unit,
         })
-      : "暂未取得";
+      : "—";
   }
   function marketIndex(key) {
     if (key === "schoolEmployment") {
@@ -407,7 +407,6 @@ export function createInsights(data, ui) {
           ["工龄", r.experienceYears?.join("–")],
           ["税费口径", r.taxBasis],
         ]) +
-        note(r.notes) +
         categoryLinks(r) +
         sourceSummary(r)
       );
@@ -429,7 +428,6 @@ export function createInsights(data, ui) {
           ],
         ]) +
         note(r.details) +
-        note(r.salary?.notes) +
         marketSections(r) +
         custom("关联企业", marketLink("employers", r.employerId)) +
         sourceSummary(r)
@@ -468,7 +466,7 @@ export function createInsights(data, ui) {
       facts(cityData) +
       note(r.development || r.recentDevelopment) +
       (r.officialRecruitmentUrl
-        ? custom("招聘入口", out(r.officialRecruitmentUrl, "企业招聘官网"))
+        ? sources([{ url: r.officialRecruitmentUrl, title: "企业招聘官网" }])
         : "") +
       sourceSummary(r.rent) +
       sourceSummary(r.livingCosts) +
@@ -486,6 +484,9 @@ export function createInsights(data, ui) {
     if (!objectRows.length) return "";
     const rate = objectRows.every((row) => row.rate != null);
     const count = objectRows.every((row) => row.count != null);
+    if (objectRows.every((row) => row.count == null && row.rate == null)) {
+      return `<h3>${esc(label)}</h3><p>${esc([...new Set(objectRows.map((row) => row.name))].join("、"))}</p>`;
+    }
     const key = rate ? "rate" : count ? "count" : null;
     const max = rate
       ? 100
@@ -534,7 +535,6 @@ export function createInsights(data, ui) {
       (record.representativeEmployers?.length
         ? note("原文列举单位包括" + record.representativeEmployers.join("、"))
         : "") +
-      note(record.notes) +
       sourceSummary(record)
     );
   }
@@ -554,16 +554,14 @@ export function createInsights(data, ui) {
               ),
             )
             .join("")
-        : empty("暂未收录可展示的就业统计。")) +
+        : "") +
         (cases.length
           ? `<h3>就业去向案例</h3>${cases.map((r) => details([r.graduationYear, r.college, r.major].filter(Boolean).join(" · ") || "去向案例", note(r.description) + sourceSummary(r))).join("")}`
           : "") +
         (partnerships.length
           ? `<h3>校企合作与培养资料</h3>${partnerships.map((r) => details(r.projectName, note(r.description) + sourceSummary(r))).join("")}`
           : "") +
-        items.schools
-          .map((r) => details("就业调查范围", note(r.notes) + sourceSummary(r)))
-          .join(""),
+        "",
     );
   }
   function forProject(project) {
@@ -577,21 +575,6 @@ export function createInsights(data, ui) {
             r.major === project.majorLabel ||
             r.major.includes(project.majorId)),
       );
-  }
-  function projectEmployment(project) {
-    const rows = forProject(project);
-    return custom(
-      "就业资料",
-      rows
-        .map((r) =>
-          details(
-            `${r.graduationYear ? r.graduationYear + " 届 · " : ""}${scope(r)}`,
-            employmentRecord(r),
-          ),
-        )
-        .join("") +
-        link("school", "查看院校就业资料 →", project.schoolId, "jump"),
-    );
   }
   function comparisonEmployment(project) {
     const rows = forProject(project);
@@ -652,7 +635,6 @@ export function createInsights(data, ui) {
     marketIndex,
     marketDetail,
     schoolEmployment,
-    projectEmployment,
     comparisonEmployment,
     searchRows,
   };
