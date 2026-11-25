@@ -949,3 +949,107 @@ html:has(.overlay[open]) {
 #projectAnnual > section + section {
   margin-block-start: 1.25rem;
 }
+
+.data-status {
+  display: inline-block;
+  width: max-content;
+  padding: 1px 6px;
+  border: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+.data-status[data-status="current"] {
+  color: #952f12;
+  border-color: #dcac98;
+  background: #f4e2d6;
+}
+.project-table td:nth-child(4) .data-status {
+  display: block;
+}
+.record-disclosure {
+  border-block-end: 1px solid var(--rule);
+}
+.record-disclosure > summary {
+  padding: 12px 4px;
+  min-height: 44px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.record-disclosure > div {
+  padding: 4px 6px 18px;
+  min-width: 0;
+}
+.record-disclosure .panel,
+.record-disclosure h3 {
+  margin-block-start: 16px;
+}
+.record-disclosure .scroll {
+  margin-block: 8px 14px;
+}
+.related-links a,
+.data-sources a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.related-links {
+  overflow-wrap: anywhere;
+}
+.measure-note {
+  margin-block: 10px 14px;
+  color: var(--muted);
+}
+.range-scale {
+  display: block;
+  position: relative;
+  min-width: 7rem;
+  height: 6px;
+  background: var(--rule);
+}
+.range-scale i {
+  position: absolute;
+  inset-block: 0;
+  background: var(--orange);
+}
+.score-box {
+  margin: 10px 0;
+  min-width: 12rem;
+  max-width: 23rem;
+}
+.score-box svg {
+  width: 100%;
+  display: block;
+}
+.score-box path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+.score-box rect {
+  fill: #f4e2d6;
+  stroke: var(--ink);
+}
+.score-box .score-median {
+  stroke: #a93916;
+  stroke-width: 2;
+}
+meter {
+  width: 7rem;
+  height: 0.75em;
+  accent-color: var(--orange);
+}
+.market-table {
+  min-width: 600px;
+}
+@media (max-width: 650px) {
+  .record-disclosure {
+    overflow-wrap: anywhere;
+  }
+  .record-disclosure td {
+    white-space: normal;
+    min-width: 5.5rem;
+  }
+  .market-table td {
+    white-space: normal;
+  }
+}

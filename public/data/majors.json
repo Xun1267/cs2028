@@ -2,308 +2,1458 @@
   {
     "id": "081200",
     "title": "计算机科学与技术",
-    "degree": "学硕",
-    "summary": "计算理论、体系结构与计算机系统",
+    "degree": "学术学位",
+    "summary": "研究计算机计算、信息处理和系统实现的理论与方法，覆盖算法、软件与硬件系统。",
     "careerIds": [
       "系统研发",
-      "后端开发"
+      "后端开发",
+      "career_frontend",
+      "career_fullstack",
+      "career_client",
+      "软件测试",
+      "数据工程",
+      "career_bigdata",
+      "career_analyst",
+      "career_db",
+      "机器学习算法",
+      "career_nlp",
+      "career_llm",
+      "career_aiapp",
+      "career_rec",
+      "career_cv",
+      "career_infra",
+      "career_cloud",
+      "career_devops",
+      "安全研发",
+      "career_embedded",
+      "career_auto",
+      "career_quant",
+      "career_fintech",
+      "career_publicit",
+      "career_gameengine",
+      "career_industrial"
+    ],
+    "researchIds": [
+      "r-algorithm",
+      "r-systems",
+      "r-os",
+      "r-database",
+      "r-distributed",
+      "r-ai",
+      "r-network",
+      "r-graphics",
+      "r-hpc",
+      "r-ml",
+      "r-deep",
+      "r-nlp",
+      "r-llm",
+      "r-vision",
+      "r-multimodal",
+      "r-mining",
+      "r-recsys",
+      "r-cloud",
+      "r-software",
+      "r-program",
+      "r-security",
+      "r-crypto",
+      "r-embedded",
+      "r-robotics",
+      "r-mlsys"
+    ],
+    "relatedMajorIds": [
+      "085400",
+      "085404",
+      "085405",
+      "085410",
+      "085411",
+      "085412"
     ],
     "sections": [
       {
-        "title": "专业与研究方向",
-        "table": {
-          "headers": [
-            "项目",
-            "说明"
-          ],
-          "rows": [
-            [
-              "培养内容",
-              "计算理论、体系结构与计算机系统"
-            ],
-            [
-              "能力基础",
-              "算法分析、系统设计与实验方法"
-            ]
-          ]
-        }
+        "title": "专业定义",
+        "paragraphs": [
+          "研究计算机计算、信息处理和系统实现的理论与方法，覆盖算法、软件与硬件系统。"
+        ]
+      },
+      {
+        "title": "培养目标",
+        "paragraphs": [
+          "培养独立提出研究问题、设计方法并验证结果的能力。"
+        ]
+      },
+      {
+        "title": "典型课程（非全国统一课表）",
+        "paragraphs": [
+          "高级算法；计算机体系结构；高级操作系统；数据库；机器学习（视方向选修）"
+        ]
+      },
+      {
+        "title": "数学及编程基础",
+        "paragraphs": [
+          "离散数学、概率统计、线性代数；C/C++、Python及Linux"
+        ]
+      },
+      {
+        "title": "研究与工程实践",
+        "paragraphs": [
+          "算法研究；系统性能实验；论文复现与方法改进"
+        ]
+      },
+      {
+        "title": "典型就业岗位（示例）",
+        "paragraphs": [
+          "算法与系统研发；基础软件；后端开发；研究助理"
+        ]
+      },
+      {
+        "title": "适合的本科背景",
+        "paragraphs": [
+          "计算机科学、软件工程、数学、电子信息"
+        ]
+      },
+      {
+        "title": "专业区别",
+        "paragraphs": [
+          "与085404相比通常更强调研究方法及论文训练；研究方向仍可能高度重合。"
+        ]
+      },
+      {
+        "title": "院校培养方案",
+        "paragraphs": [
+          "下方来源为具体院校实例，课程、方向、学制与毕业要求按实际学校和年度核对。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "研究生教育学科专业目录（2022年）",
+        "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220913/2293267493.html",
+        "publisher": "国务院学位委员会、教育部",
+        "scope": "学科门类、一级学科及专业学位类别",
+        "sourceType": "官方",
+        "publishedDate": "2022-09-13"
+      },
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "计算机课程知识领域",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "相关职业类型（美国，非中国就业预测）",
+        "sourceType": "境外官方职业统计"
+      },
+      {
+        "title": "学术学位各学科研究生培养方案（2025版）",
+        "url": "https://gradschool.ustc.edu.cn/article/3397",
+        "publisher": "中国科学技术大学研究生院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "学术学位各学科研究生培养方案（2025版）",
+        "url": "https://gradschool.ustc.edu.cn/article/3397"
       }
     ]
   },
   {
     "id": "083500",
     "title": "软件工程",
-    "degree": "学硕",
-    "summary": "软件构造、软件分析与质量保障",
+    "degree": "学术学位",
+    "summary": "研究软件开发、演化、质量保障与大规模软件系统的理论及方法。",
     "careerIds": [
       "后端开发",
       "软件测试"
     ],
+    "researchIds": [
+      "r-software",
+      "r-program",
+      "r-systems",
+      "r-distributed",
+      "r-security",
+      "r-cloud",
+      "r-algorithm"
+    ],
+    "relatedMajorIds": [
+      "085400",
+      "085404",
+      "085405",
+      "085410",
+      "085411",
+      "085412"
+    ],
     "sections": [
       {
-        "title": "专业与研究方向",
-        "table": {
-          "headers": [
-            "项目",
-            "说明"
-          ],
-          "rows": [
-            [
-              "培养内容",
-              "软件构造、软件分析与质量保障"
-            ],
-            [
-              "能力基础",
-              "程序分析、软件体系结构与测试"
-            ]
-          ]
-        }
+        "title": "专业定义",
+        "paragraphs": [
+          "研究软件开发、演化、质量保障与大规模软件系统的理论及方法。"
+        ]
+      },
+      {
+        "title": "培养目标",
+        "paragraphs": [
+          "培养可分析软件复杂性、设计可靠方法并开展实证研究的人才。"
+        ]
+      },
+      {
+        "title": "典型课程（非全国统一课表）",
+        "paragraphs": [
+          "软件体系结构；形式化方法；软件测试；程序分析；软件项目管理"
+        ]
+      },
+      {
+        "title": "数学及编程基础",
+        "paragraphs": [
+          "离散数学、逻辑、概率统计；Java/C++/Python及版本控制"
+        ]
+      },
+      {
+        "title": "研究与工程实践",
+        "paragraphs": [
+          "软件缺陷预测；程序验证；开发工具与软件仓库研究"
+        ]
+      },
+      {
+        "title": "典型就业岗位（示例）",
+        "paragraphs": [
+          "软件研发；测试开发；开发工具研发；程序分析研究"
+        ]
+      },
+      {
+        "title": "适合的本科背景",
+        "paragraphs": [
+          "计算机、软件工程、信息安全"
+        ]
+      },
+      {
+        "title": "专业区别",
+        "paragraphs": [
+          "与085405相比更强调软件工程理论、方法及研究验证；与081200相比关注软件生命周期及质量。"
+        ]
+      },
+      {
+        "title": "院校培养方案",
+        "paragraphs": [
+          "下方来源为具体院校实例，课程、方向、学制与毕业要求按实际学校和年度核对。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "研究生教育学科专业目录（2022年）",
+        "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220913/2293267493.html",
+        "publisher": "国务院学位委员会、教育部",
+        "scope": "学科门类、一级学科及专业学位类别",
+        "sourceType": "官方",
+        "publishedDate": "2022-09-13"
+      },
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "计算机课程知识领域",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "相关职业类型（美国，非中国就业预测）",
+        "sourceType": "境外官方职业统计"
+      },
+      {
+        "title": "软件工程硕士研究生培养方案",
+        "url": "https://cs.xidian.edu.cn/info/1241/23214.htm",
+        "publisher": "西安电子科技大学计算机科学与技术学院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "软件工程硕士研究生培养方案",
+        "url": "https://cs.xidian.edu.cn/info/1241/23214.htm"
       }
     ]
   },
   {
     "id": "083900",
     "title": "网络空间安全",
-    "degree": "学硕",
-    "summary": "网络、数据与系统安全",
+    "degree": "学术学位",
+    "summary": "研究信息系统、网络和数据安全，以及攻击防御、密码理论和可信计算。",
     "careerIds": [
       "安全研发"
     ],
+    "researchIds": [
+      "r-security",
+      "r-crypto",
+      "r-network",
+      "r-program",
+      "r-os",
+      "r-privacy"
+    ],
+    "relatedMajorIds": [
+      "085400",
+      "085404",
+      "085405",
+      "085410",
+      "085411",
+      "085412"
+    ],
     "sections": [
       {
-        "title": "专业与研究方向",
-        "table": {
-          "headers": [
-            "项目",
-            "说明"
-          ],
-          "rows": [
-            [
-              "培养内容",
-              "网络、数据与系统安全"
-            ],
-            [
-              "能力基础",
-              "密码学基础、网络协议与安全审计"
-            ]
-          ]
-        }
+        "title": "专业定义",
+        "paragraphs": [
+          "研究信息系统、网络和数据安全，以及攻击防御、密码理论和可信计算。"
+        ]
+      },
+      {
+        "title": "培养目标",
+        "paragraphs": [
+          "培养识别安全问题、构造防护方法并评估安全性的研究能力。"
+        ]
+      },
+      {
+        "title": "典型课程（非全国统一课表）",
+        "paragraphs": [
+          "现代密码学；网络安全；系统安全；安全协议；安全分析"
+        ]
+      },
+      {
+        "title": "数学及编程基础",
+        "paragraphs": [
+          "离散数学、数论、概率；C/C++、Python、操作系统和网络"
+        ]
+      },
+      {
+        "title": "研究与工程实践",
+        "paragraphs": [
+          "协议验证；漏洞检测与修复研究；安全测评；隐私保护"
+        ]
+      },
+      {
+        "title": "典型就业岗位（示例）",
+        "paragraphs": [
+          "安全研究员；系统安全研发；密码工程；安全分析"
+        ]
+      },
+      {
+        "title": "适合的本科背景",
+        "paragraphs": [
+          "计算机、信息安全、网络空间安全、数学、通信"
+        ]
+      },
+      {
+        "title": "专业区别",
+        "paragraphs": [
+          "与085412相比偏重安全理论及方法研究；与密码学相比范围更广。"
+        ]
+      },
+      {
+        "title": "院校培养方案",
+        "paragraphs": [
+          "下方来源为具体院校实例，课程、方向、学制与毕业要求按实际学校和年度核对。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "研究生教育学科专业目录（2022年）",
+        "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220913/2293267493.html",
+        "publisher": "国务院学位委员会、教育部",
+        "scope": "学科门类、一级学科及专业学位类别",
+        "sourceType": "官方",
+        "publishedDate": "2022-09-13"
+      },
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "计算机课程知识领域",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "相关职业类型（美国，非中国就业预测）",
+        "sourceType": "境外官方职业统计"
+      },
+      {
+        "title": "网络空间安全硕士研究生培养方案",
+        "url": "https://cst.buaa.edu.cn/info/1125/4728.htm",
+        "publisher": "北京航空航天大学网络空间安全学院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "网络空间安全硕士研究生培养方案",
+        "url": "https://cst.buaa.edu.cn/info/1125/4728.htm"
       }
     ]
   },
   {
     "id": "140500",
     "title": "智能科学与技术",
-    "degree": "学硕",
-    "summary": "智能系统的建模与学习",
+    "degree": "学术学位",
+    "summary": "研究智能的计算理论、感知、推理、学习及智能系统，与控制、认知等学科交叉。",
     "careerIds": [
       "机器学习算法"
     ],
+    "researchIds": [
+      "r-ai",
+      "r-ml",
+      "r-deep",
+      "r-vision",
+      "r-nlp",
+      "r-robotics",
+      "r-multimodal",
+      "r-llm"
+    ],
+    "relatedMajorIds": [
+      "085400",
+      "085404",
+      "085405",
+      "085410",
+      "085411",
+      "085412"
+    ],
     "sections": [
       {
-        "title": "专业与研究方向",
-        "table": {
-          "headers": [
-            "项目",
-            "说明"
-          ],
-          "rows": [
-            [
-              "培养内容",
-              "智能系统的建模与学习"
-            ],
-            [
-              "能力基础",
-              "数学建模、机器学习与实验评估"
-            ]
-          ]
-        }
+        "title": "专业定义",
+        "paragraphs": [
+          "研究智能的计算理论、感知、推理、学习及智能系统，与控制、认知等学科交叉。"
+        ]
+      },
+      {
+        "title": "培养目标",
+        "paragraphs": [
+          "培养在智能理论与交叉应用中开展研究和系统设计的能力。"
+        ]
+      },
+      {
+        "title": "典型课程（非全国统一课表）",
+        "paragraphs": [
+          "机器学习；智能感知；优化；智能系统；机器人相关课程"
+        ]
+      },
+      {
+        "title": "数学及编程基础",
+        "paragraphs": [
+          "线性代数、概率统计、优化；Python、C++、深度学习框架"
+        ]
+      },
+      {
+        "title": "研究与工程实践",
+        "paragraphs": [
+          "算法建模；智能感知实验；多智能体或人机交互研究"
+        ]
+      },
+      {
+        "title": "典型就业岗位（示例）",
+        "paragraphs": [
+          "算法研发；智能系统研发；机器人感知；应用研究"
+        ]
+      },
+      {
+        "title": "适合的本科背景",
+        "paragraphs": [
+          "计算机、人工智能、自动化、数学、电子信息"
+        ]
+      },
+      {
+        "title": "专业区别",
+        "paragraphs": [
+          "与085410相比强调交叉学科研究；具体授予学位门类以学校授权为准。"
+        ]
+      },
+      {
+        "title": "院校培养方案",
+        "paragraphs": [
+          "下方来源为具体院校实例，课程、方向、学制与毕业要求按实际学校和年度核对。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "研究生教育学科专业目录（2022年）",
+        "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220913/2293267493.html",
+        "publisher": "国务院学位委员会、教育部",
+        "scope": "学科门类、一级学科及专业学位类别",
+        "sourceType": "官方",
+        "publishedDate": "2022-09-13"
+      },
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "计算机课程知识领域",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "相关职业类型（美国，非中国就业预测）",
+        "sourceType": "境外官方职业统计"
+      },
+      {
+        "title": "学术学位各学科研究生培养方案（2025版）",
+        "url": "https://gradschool.ustc.edu.cn/article/3397",
+        "publisher": "中国科学技术大学研究生院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "2026级智能科学与技术培养方案",
+        "url": "https://seee.sues.edu.cn/8c/99/c27252a298137/page.htm",
+        "publisher": "上海工程技术大学",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "学术学位各学科研究生培养方案（2025版）",
+        "url": "https://gradschool.ustc.edu.cn/article/3397"
+      },
+      {
+        "title": "2026级智能科学与技术培养方案",
+        "url": "https://seee.sues.edu.cn/8c/99/c27252a298137/page.htm"
       }
     ]
   },
   {
     "id": "085400",
     "title": "电子信息",
-    "degree": "专硕",
-    "summary": "电子信息系统与工程实践",
+    "degree": "专业学位",
+    "summary": "覆盖计算机、软件、通信、电子、控制等多个工程领域的专业学位类别；部分高校以类别代码招生。",
     "careerIds": [
       "系统研发",
-      "数据工程"
+      "数据工程",
+      "career_cv",
+      "career_infra",
+      "安全研发",
+      "career_embedded",
+      "career_auto",
+      "career_industrial"
+    ],
+    "researchIds": [
+      "r-systems",
+      "r-software",
+      "r-ai",
+      "r-network",
+      "r-embedded",
+      "r-database",
+      "r-hpc",
+      "r-mlsys"
+    ],
+    "relatedMajorIds": [
+      "081200",
+      "083500",
+      "083900",
+      "140500",
+      "085404",
+      "085405",
+      "085410",
+      "085411",
+      "085412"
     ],
     "sections": [
       {
-        "title": "专业与研究方向",
-        "table": {
-          "headers": [
-            "项目",
-            "说明"
-          ],
-          "rows": [
-            [
-              "培养内容",
-              "电子信息系统与工程实践"
-            ],
-            [
-              "能力基础",
-              "按招生单位和方向核对课程及培养要求"
-            ]
-          ]
-        }
+        "title": "专业定义",
+        "paragraphs": [
+          "覆盖计算机、软件、通信、电子、控制等多个工程领域的专业学位类别；部分高校以类别代码招生。"
+        ]
+      },
+      {
+        "title": "培养目标",
+        "paragraphs": [
+          "培养能够设计、实现和验证电子信息工程系统的应用人才。"
+        ]
+      },
+      {
+        "title": "典型课程（非全国统一课表）",
+        "paragraphs": [
+          "工程数学；专业技术课程；工程伦理；专业实践（按领域设置）"
+        ]
+      },
+      {
+        "title": "数学及编程基础",
+        "paragraphs": [
+          "由具体方向决定；计算机方向通常需算法、编程、系统基础"
+        ]
+      },
+      {
+        "title": "研究与工程实践",
+        "paragraphs": [
+          "工程项目开发；系统集成；实际问题研究及成果报告"
+        ]
+      },
+      {
+        "title": "典型就业岗位（示例）",
+        "paragraphs": [
+          "软件开发；算法应用；数据工程；电子与通信相关岗位（视方向）"
+        ]
+      },
+      {
+        "title": "适合的本科背景",
+        "paragraphs": [
+          "计算机、软件工程、电子信息、自动化等"
+        ]
+      },
+      {
+        "title": "专业区别",
+        "paragraphs": [
+          "085400可包含085404等方向，但也可包含与计算机无关领域；按目录区分，不能仅按类别名称判断。"
+        ]
+      },
+      {
+        "title": "院校培养方案",
+        "paragraphs": [
+          "下方来源为具体院校实例，课程、方向、学制与毕业要求按实际学校和年度核对。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "研究生教育学科专业目录（2022年）",
+        "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220913/2293267493.html",
+        "publisher": "国务院学位委员会、教育部",
+        "scope": "学科门类、一级学科及专业学位类别",
+        "sourceType": "官方",
+        "publishedDate": "2022-09-13"
+      },
+      {
+        "title": "关于部分专业学位类别领域设置的通知",
+        "url": "https://gradschool.ustc.edu.cn/article/3517",
+        "publisher": "中国科学技术大学研究生院",
+        "scope": "电子信息领域设置",
+        "sourceType": "官方"
+      },
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "计算机课程知识领域",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "相关职业类型（美国，非中国就业预测）",
+        "sourceType": "境外官方职业统计"
+      },
+      {
+        "title": "专业学位各类别研究生培养方案（2025版）",
+        "url": "https://gradschool.ustc.edu.cn/article/3398",
+        "publisher": "中国科学技术大学研究生院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "电子信息全日制专业型硕士培养方案",
+        "url": "https://rse.buaa.edu.cn/info/1066/4376.htm",
+        "publisher": "北京航空航天大学可靠性与系统工程学院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "专业学位各类别研究生培养方案（2025版）",
+        "url": "https://gradschool.ustc.edu.cn/article/3398"
+      },
+      {
+        "title": "电子信息全日制专业型硕士培养方案",
+        "url": "https://rse.buaa.edu.cn/info/1066/4376.htm"
       }
     ]
   },
   {
     "id": "085404",
     "title": "计算机技术",
-    "degree": "专硕",
-    "summary": "计算机系统的设计、实现与应用",
+    "degree": "专业学位",
+    "summary": "面向计算机软硬件系统、应用软件和信息系统的设计与工程实现。",
     "careerIds": [
       "后端开发",
       "系统研发",
-      "数据工程"
+      "数据工程",
+      "career_frontend",
+      "career_fullstack",
+      "career_client",
+      "软件测试",
+      "career_bigdata",
+      "career_db",
+      "机器学习算法",
+      "career_nlp",
+      "career_llm",
+      "career_aiapp",
+      "career_cv",
+      "career_infra",
+      "career_cloud",
+      "career_devops",
+      "安全研发",
+      "career_embedded",
+      "career_auto",
+      "career_quant",
+      "career_fintech",
+      "career_publicit",
+      "career_gameengine",
+      "career_industrial"
+    ],
+    "researchIds": [
+      "r-systems",
+      "r-os",
+      "r-database",
+      "r-distributed",
+      "r-software",
+      "r-ai",
+      "r-network",
+      "r-embedded",
+      "r-deep",
+      "r-llm",
+      "r-vision",
+      "r-cloud",
+      "r-security",
+      "r-graphics",
+      "r-hpc",
+      "r-algorithm",
+      "r-robotics",
+      "r-mlsys"
+    ],
+    "relatedMajorIds": [
+      "081200",
+      "083500",
+      "083900",
+      "140500",
+      "085400",
+      "085405",
+      "085410",
+      "085411",
+      "085412"
     ],
     "sections": [
       {
-        "title": "专业与研究方向",
-        "table": {
-          "headers": [
-            "项目",
-            "说明"
-          ],
-          "rows": [
-            [
-              "培养内容",
-              "计算机系统的设计、实现与应用"
-            ],
-            [
-              "能力基础",
-              "算法实现、系统设计与工程验证"
-            ]
-          ]
-        }
+        "title": "专业定义",
+        "paragraphs": [
+          "面向计算机软硬件系统、应用软件和信息系统的设计与工程实现。"
+        ]
+      },
+      {
+        "title": "培养目标",
+        "paragraphs": [
+          "培养能够分析工程需求、实现计算机系统并进行测试与维护的人才。"
+        ]
+      },
+      {
+        "title": "典型课程（非全国统一课表）",
+        "paragraphs": [
+          "高级程序设计；算法；数据库；系统架构；机器学习或网络相关选修"
+        ]
+      },
+      {
+        "title": "数学及编程基础",
+        "paragraphs": [
+          "数据结构、计算机组成、操作系统；C++/Java/Python、Linux"
+        ]
+      },
+      {
+        "title": "研究与工程实践",
+        "paragraphs": [
+          "系统开发；性能测试；数据处理；校企工程实践"
+        ]
+      },
+      {
+        "title": "典型就业岗位（示例）",
+        "paragraphs": [
+          "后端开发；系统研发；算法工程；基础软件；数据工程"
+        ]
+      },
+      {
+        "title": "适合的本科背景",
+        "paragraphs": [
+          "计算机科学、软件工程、网络工程、电子信息"
+        ]
+      },
+      {
+        "title": "专业区别",
+        "paragraphs": [
+          "相比085405覆盖更多系统及硬件相关工程；相比081200通常更重视应用和专业实践。"
+        ]
+      },
+      {
+        "title": "院校培养方案",
+        "paragraphs": [
+          "下方来源为具体院校实例，课程、方向、学制与毕业要求按实际学校和年度核对。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "研究生教育学科专业目录（2022年）",
+        "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220913/2293267493.html",
+        "publisher": "国务院学位委员会、教育部",
+        "scope": "学科门类、一级学科及专业学位类别",
+        "sourceType": "官方",
+        "publishedDate": "2022-09-13"
+      },
+      {
+        "title": "关于部分专业学位类别领域设置的通知",
+        "url": "https://gradschool.ustc.edu.cn/article/3517",
+        "publisher": "中国科学技术大学研究生院",
+        "scope": "电子信息领域设置",
+        "sourceType": "官方"
+      },
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "计算机课程知识领域",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "相关职业类型（美国，非中国就业预测）",
+        "sourceType": "境外官方职业统计"
+      },
+      {
+        "title": "计算机技术领域专业学位硕士培养方案",
+        "url": "https://cs.xidian.edu.cn/info/1241/23174.htm",
+        "publisher": "西安电子科技大学计算机科学与技术学院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "计算机学院2026级电子信息专业研究生培养方案（计算机技术&大数据技术与工程）",
+        "url": "https://cse.sysu.edu.cn/article/3700",
+        "publisher": "中山大学计算机学院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "计算机技术领域专业学位硕士培养方案",
+        "url": "https://cs.xidian.edu.cn/info/1241/23174.htm"
+      },
+      {
+        "title": "计算机学院2026级电子信息专业研究生培养方案（计算机技术&大数据技术与工程）",
+        "url": "https://cse.sysu.edu.cn/article/3700"
       }
     ]
   },
   {
     "id": "085405",
     "title": "软件工程",
-    "degree": "专硕",
-    "summary": "软件产品的开发、交付和维护",
+    "degree": "专业学位",
+    "summary": "面向复杂软件系统的需求、架构、开发、测试及持续维护。",
     "careerIds": [
       "后端开发",
-      "软件测试"
+      "软件测试",
+      "career_frontend",
+      "career_fullstack",
+      "career_client",
+      "数据工程",
+      "career_db",
+      "career_aiapp",
+      "系统研发",
+      "career_cloud",
+      "career_devops",
+      "career_embedded",
+      "career_fintech",
+      "career_publicit",
+      "career_gameengine",
+      "career_industrial"
+    ],
+    "researchIds": [
+      "r-software",
+      "r-program",
+      "r-distributed",
+      "r-cloud",
+      "r-database",
+      "r-systems",
+      "r-graphics"
+    ],
+    "relatedMajorIds": [
+      "081200",
+      "083500",
+      "083900",
+      "140500",
+      "085400",
+      "085404",
+      "085410",
+      "085411",
+      "085412"
     ],
     "sections": [
       {
-        "title": "专业与研究方向",
-        "table": {
-          "headers": [
-            "项目",
-            "说明"
-          ],
-          "rows": [
-            [
-              "培养内容",
-              "软件产品的开发、交付和维护"
-            ],
-            [
-              "能力基础",
-              "需求分析、架构设计与软件测试"
-            ]
-          ]
-        }
+        "title": "专业定义",
+        "paragraphs": [
+          "面向复杂软件系统的需求、架构、开发、测试及持续维护。"
+        ]
+      },
+      {
+        "title": "培养目标",
+        "paragraphs": [
+          "培养能够在真实项目中承担软件设计、开发和质量保障的人才。"
+        ]
+      },
+      {
+        "title": "典型课程（非全国统一课表）",
+        "paragraphs": [
+          "软件架构；软件测试；项目管理；分布式系统；开发工具"
+        ]
+      },
+      {
+        "title": "数学及编程基础",
+        "paragraphs": [
+          "离散数学、算法、数据库；Java/C++/Python、Git及工程工具"
+        ]
+      },
+      {
+        "title": "研究与工程实践",
+        "paragraphs": [
+          "企业项目实现；接口设计；持续集成；软件质量评价"
+        ]
+      },
+      {
+        "title": "典型就业岗位（示例）",
+        "paragraphs": [
+          "后端开发；客户端开发；测试开发；DevOps；软件架构相关岗位"
+        ]
+      },
+      {
+        "title": "适合的本科背景",
+        "paragraphs": [
+          "软件工程、计算机科学、信息管理相关工科"
+        ]
+      },
+      {
+        "title": "专业区别",
+        "paragraphs": [
+          "与085404相较侧重软件生命周期；与083500相较更侧重工程实践及项目成果。"
+        ]
+      },
+      {
+        "title": "院校培养方案",
+        "paragraphs": [
+          "下方来源为具体院校实例，课程、方向、学制与毕业要求按实际学校和年度核对。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "研究生教育学科专业目录（2022年）",
+        "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220913/2293267493.html",
+        "publisher": "国务院学位委员会、教育部",
+        "scope": "学科门类、一级学科及专业学位类别",
+        "sourceType": "官方",
+        "publishedDate": "2022-09-13"
+      },
+      {
+        "title": "关于部分专业学位类别领域设置的通知",
+        "url": "https://gradschool.ustc.edu.cn/article/3517",
+        "publisher": "中国科学技术大学研究生院",
+        "scope": "电子信息领域设置",
+        "sourceType": "官方"
+      },
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "计算机课程知识领域",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "相关职业类型（美国，非中国就业预测）",
+        "sourceType": "境外官方职业统计"
+      },
+      {
+        "title": "软件工程招生简章（2026年）",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/index_9.shtml",
+        "publisher": "中国科学技术大学",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "电子信息全日制专业型硕士培养方案",
+        "url": "https://rse.buaa.edu.cn/info/1066/4376.htm",
+        "publisher": "北京航空航天大学可靠性与系统工程学院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "软件工程招生简章（2026年）",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/index_9.shtml"
+      },
+      {
+        "title": "电子信息全日制专业型硕士培养方案",
+        "url": "https://rse.buaa.edu.cn/info/1066/4376.htm"
       }
     ]
   },
   {
     "id": "085410",
     "title": "人工智能",
-    "degree": "专硕",
-    "summary": "智能算法与应用系统",
+    "degree": "专业学位",
+    "summary": "面向机器学习、智能感知、语言理解与智能应用系统的工程实现。",
     "careerIds": [
-      "机器学习算法"
+      "机器学习算法",
+      "career_fullstack",
+      "career_nlp",
+      "career_llm",
+      "career_aiapp",
+      "career_rec",
+      "career_cv",
+      "career_infra",
+      "career_auto",
+      "career_fintech",
+      "career_publicit"
+    ],
+    "researchIds": [
+      "r-ai",
+      "r-ml",
+      "r-deep",
+      "r-nlp",
+      "r-llm",
+      "r-vision",
+      "r-multimodal",
+      "r-robotics",
+      "r-mlsys",
+      "r-mining",
+      "r-recsys",
+      "r-privacy"
+    ],
+    "relatedMajorIds": [
+      "081200",
+      "083500",
+      "083900",
+      "140500",
+      "085400",
+      "085404",
+      "085405",
+      "085411",
+      "085412"
     ],
     "sections": [
       {
-        "title": "专业与研究方向",
-        "table": {
-          "headers": [
-            "项目",
-            "说明"
-          ],
-          "rows": [
-            [
-              "培养内容",
-              "智能算法与应用系统"
-            ],
-            [
-              "能力基础",
-              "线性代数、概率统计、模型训练与部署"
-            ]
-          ]
-        }
+        "title": "专业定义",
+        "paragraphs": [
+          "面向机器学习、智能感知、语言理解与智能应用系统的工程实现。"
+        ]
+      },
+      {
+        "title": "培养目标",
+        "paragraphs": [
+          "培养能从数据、建模到部署评价完成智能工程项目的技术人才。"
+        ]
+      },
+      {
+        "title": "典型课程（非全国统一课表）",
+        "paragraphs": [
+          "机器学习；深度学习；计算机视觉；自然语言处理；优化；AI工程"
+        ]
+      },
+      {
+        "title": "数学及编程基础",
+        "paragraphs": [
+          "线性代数、概率统计、微积分、优化；Python、PyTorch；部分岗位需C++/CUDA"
+        ]
+      },
+      {
+        "title": "研究与工程实践",
+        "paragraphs": [
+          "数据清洗；模型训练与评测；推理部署；应用系统开发"
+        ]
+      },
+      {
+        "title": "典型就业岗位（示例）",
+        "paragraphs": [
+          "算法工程师；机器学习工程师；AI应用研发；模型部署工程师"
+        ]
+      },
+      {
+        "title": "适合的本科背景",
+        "paragraphs": [
+          "计算机、人工智能、自动化、数学、电子信息"
+        ]
+      },
+      {
+        "title": "专业区别",
+        "paragraphs": [
+          "相比140500更侧重专业工程训练；与085411相比更强调智能模型设计与应用。"
+        ]
+      },
+      {
+        "title": "院校培养方案",
+        "paragraphs": [
+          "下方来源为具体院校实例，课程、方向、学制与毕业要求按实际学校和年度核对。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "研究生教育学科专业目录（2022年）",
+        "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220913/2293267493.html",
+        "publisher": "国务院学位委员会、教育部",
+        "scope": "学科门类、一级学科及专业学位类别",
+        "sourceType": "官方",
+        "publishedDate": "2022-09-13"
+      },
+      {
+        "title": "关于部分专业学位类别领域设置的通知",
+        "url": "https://gradschool.ustc.edu.cn/article/3517",
+        "publisher": "中国科学技术大学研究生院",
+        "scope": "电子信息领域设置",
+        "sourceType": "官方"
+      },
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "计算机课程知识领域",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "相关职业类型（美国，非中国就业预测）",
+        "sourceType": "境外官方职业统计"
+      },
+      {
+        "title": "2026级全日制专业学位硕士085410 人工智能培养方案",
+        "url": "https://ce.szu.edu.cn/info/4591/74131.htm",
+        "publisher": "深圳大学",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "专业学位各类别研究生培养方案（2025版）",
+        "url": "https://gradschool.ustc.edu.cn/article/3398",
+        "publisher": "中国科学技术大学研究生院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "2026级全日制专业学位硕士085410 人工智能培养方案",
+        "url": "https://ce.szu.edu.cn/info/4591/74131.htm"
+      },
+      {
+        "title": "专业学位各类别研究生培养方案（2025版）",
+        "url": "https://gradschool.ustc.edu.cn/article/3398"
       }
     ]
   },
   {
     "id": "085411",
     "title": "大数据技术与工程",
-    "degree": "专硕",
-    "summary": "数据处理、存储与分析",
+    "degree": "专业学位",
+    "summary": "面向大规模数据采集、存储、处理、分析及数据治理。",
     "careerIds": [
       "数据工程",
-      "后端开发"
+      "后端开发",
+      "career_bigdata",
+      "career_analyst",
+      "career_db",
+      "机器学习算法",
+      "career_rec",
+      "career_cloud",
+      "career_quant",
+      "career_fintech",
+      "career_publicit"
+    ],
+    "researchIds": [
+      "r-database",
+      "r-distributed",
+      "r-mining",
+      "r-recsys",
+      "r-ml",
+      "r-cloud",
+      "r-privacy"
+    ],
+    "relatedMajorIds": [
+      "081200",
+      "083500",
+      "083900",
+      "140500",
+      "085400",
+      "085404",
+      "085405",
+      "085410",
+      "085412"
     ],
     "sections": [
       {
-        "title": "专业与研究方向",
-        "table": {
-          "headers": [
-            "项目",
-            "说明"
-          ],
-          "rows": [
-            [
-              "培养内容",
-              "数据处理、存储与分析"
-            ],
-            [
-              "能力基础",
-              "数据库、分布式计算与数据质量"
-            ]
-          ]
-        }
+        "title": "专业定义",
+        "paragraphs": [
+          "面向大规模数据采集、存储、处理、分析及数据治理。"
+        ]
+      },
+      {
+        "title": "培养目标",
+        "paragraphs": [
+          "培养能够设计数据处理系统、构建分析流程并保证数据质量的人才。"
+        ]
+      },
+      {
+        "title": "典型课程（非全国统一课表）",
+        "paragraphs": [
+          "数据库；分布式计算；数据挖掘；统计学习；数据治理"
+        ]
+      },
+      {
+        "title": "数学及编程基础",
+        "paragraphs": [
+          "概率统计、线性代数、算法；SQL、Python、Java或Scala"
+        ]
+      },
+      {
+        "title": "研究与工程实践",
+        "paragraphs": [
+          "构建数据流水线；数据质量检测；处理性能优化；分析模型部署"
+        ]
+      },
+      {
+        "title": "典型就业岗位（示例）",
+        "paragraphs": [
+          "数据工程师；大数据开发；数据仓库开发；数据分析；推荐研发"
+        ]
+      },
+      {
+        "title": "适合的本科背景",
+        "paragraphs": [
+          "计算机、数据科学、软件工程、统计学"
+        ]
+      },
+      {
+        "title": "专业区别",
+        "paragraphs": [
+          "与085410相比更侧重数据工程、系统及分析流程；部分项目也重视机器学习。"
+        ]
+      },
+      {
+        "title": "院校培养方案",
+        "paragraphs": [
+          "下方来源为具体院校实例，课程、方向、学制与毕业要求按实际学校和年度核对。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "研究生教育学科专业目录（2022年）",
+        "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220913/2293267493.html",
+        "publisher": "国务院学位委员会、教育部",
+        "scope": "学科门类、一级学科及专业学位类别",
+        "sourceType": "官方",
+        "publishedDate": "2022-09-13"
+      },
+      {
+        "title": "关于部分专业学位类别领域设置的通知",
+        "url": "https://gradschool.ustc.edu.cn/article/3517",
+        "publisher": "中国科学技术大学研究生院",
+        "scope": "电子信息领域设置",
+        "sourceType": "官方"
+      },
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "计算机课程知识领域",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "相关职业类型（美国，非中国就业预测）",
+        "sourceType": "境外官方职业统计"
+      },
+      {
+        "title": "计算机学院2026级电子信息专业研究生培养方案（计算机技术&大数据技术与工程）",
+        "url": "https://cse.sysu.edu.cn/article/3700",
+        "publisher": "中山大学计算机学院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "电子信息全日制专业型硕士培养方案",
+        "url": "https://rse.buaa.edu.cn/info/1066/4376.htm",
+        "publisher": "北京航空航天大学可靠性与系统工程学院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "计算机学院2026级电子信息专业研究生培养方案（计算机技术&大数据技术与工程）",
+        "url": "https://cse.sysu.edu.cn/article/3700"
+      },
+      {
+        "title": "电子信息全日制专业型硕士培养方案",
+        "url": "https://rse.buaa.edu.cn/info/1066/4376.htm"
       }
     ]
   },
   {
     "id": "085412",
     "title": "网络与信息安全",
-    "degree": "专硕",
-    "summary": "网络与信息系统的安全防护",
+    "degree": "专业学位",
+    "summary": "面向网络、软件、数据和信息系统的安全工程及运维防护。",
     "careerIds": [
-      "安全研发"
+      "安全研发",
+      "career_fintech",
+      "career_publicit"
+    ],
+    "researchIds": [
+      "r-security",
+      "r-crypto",
+      "r-network",
+      "r-os",
+      "r-program",
+      "r-privacy"
+    ],
+    "relatedMajorIds": [
+      "081200",
+      "083500",
+      "083900",
+      "140500",
+      "085400",
+      "085404",
+      "085405",
+      "085410",
+      "085411"
     ],
     "sections": [
       {
-        "title": "专业与研究方向",
-        "table": {
-          "headers": [
-            "项目",
-            "说明"
-          ],
-          "rows": [
-            [
-              "培养内容",
-              "网络与信息系统的安全防护"
-            ],
-            [
-              "能力基础",
-              "协议分析、系统安全与风险评估"
-            ]
-          ]
-        }
+        "title": "专业定义",
+        "paragraphs": [
+          "面向网络、软件、数据和信息系统的安全工程及运维防护。"
+        ]
+      },
+      {
+        "title": "培养目标",
+        "paragraphs": [
+          "培养能够开展安全设计、风险分析、合规评估与防护系统实现的人才。"
+        ]
+      },
+      {
+        "title": "典型课程（非全国统一课表）",
+        "paragraphs": [
+          "网络安全；密码学；系统安全；安全工程；数据安全"
+        ]
+      },
+      {
+        "title": "数学及编程基础",
+        "paragraphs": [
+          "网络、操作系统、离散数学；Python、C/C++、Linux"
+        ]
+      },
+      {
+        "title": "研究与工程实践",
+        "paragraphs": [
+          "安全系统设计；授权环境安全测试；日志分析；风险评估及修复"
+        ]
+      },
+      {
+        "title": "典型就业岗位（示例）",
+        "paragraphs": [
+          "安全工程师；安全运营；安全研发；应用安全；数据安全"
+        ]
+      },
+      {
+        "title": "适合的本科背景",
+        "paragraphs": [
+          "网络空间安全、信息安全、计算机、通信"
+        ]
+      },
+      {
+        "title": "专业区别",
+        "paragraphs": [
+          "与083900相比更侧重工程设计和实施；实际研究课题仍可能重合。"
+        ]
+      },
+      {
+        "title": "院校培养方案",
+        "paragraphs": [
+          "下方来源为具体院校实例，课程、方向、学制与毕业要求按实际学校和年度核对。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "研究生教育学科专业目录（2022年）",
+        "url": "https://yz.chsi.com.cn/kyzx/jybzc/202209/20220913/2293267493.html",
+        "publisher": "国务院学位委员会、教育部",
+        "scope": "学科门类、一级学科及专业学位类别",
+        "sourceType": "官方",
+        "publishedDate": "2022-09-13"
+      },
+      {
+        "title": "关于部分专业学位类别领域设置的通知",
+        "url": "https://gradschool.ustc.edu.cn/article/3517",
+        "publisher": "中国科学技术大学研究生院",
+        "scope": "电子信息领域设置",
+        "sourceType": "官方"
+      },
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "计算机课程知识领域",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "相关职业类型（美国，非中国就业预测）",
+        "sourceType": "境外官方职业统计"
+      },
+      {
+        "title": "电子信息全日制专业型硕士培养方案",
+        "url": "https://rse.buaa.edu.cn/info/1066/4376.htm",
+        "publisher": "北京航空航天大学可靠性与系统工程学院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "专业学位各类别研究生培养方案（2025版）",
+        "url": "https://gradschool.ustc.edu.cn/article/3398",
+        "publisher": "中国科学技术大学研究生院",
+        "scope": "培养方案或招生介绍，作为具体院校例证",
+        "sourceType": "官方"
+      },
+      {
+        "title": "电子信息全日制专业型硕士培养方案",
+        "url": "https://rse.buaa.edu.cn/info/1066/4376.htm"
+      },
+      {
+        "title": "专业学位各类别研究生培养方案（2025版）",
+        "url": "https://gradschool.ustc.edu.cn/article/3398"
       }
     ]
+  },
+  {
+    "id": "145200",
+    "title": "密码",
+    "degree": "专业学位",
+    "summary": "招生目录所列专业。",
+    "careerIds": []
+  },
+  {
+    "id": "085500",
+    "title": "机械",
+    "degree": "专业学位",
+    "summary": "招生目录所列专业。",
+    "careerIds": []
+  },
+  {
+    "id": "095136",
+    "title": "农业工程与信息技术",
+    "degree": "专业学位",
+    "summary": "招生目录所列专业。",
+    "careerIds": []
   }
 ]

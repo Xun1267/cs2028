@@ -1,1 +1,4195 @@
-[]
+[
+  {
+    "projectId": "uestc-028-085404",
+    "year": 2027,
+    "location": "深圳",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yzbm.uestc.edu.cn/zsml/sszsml/zsmlZy/2027/028",
+        "year": 2027,
+        "publisher": "电子科技大学",
+        "scope": "2027/028，085404专业总人数",
+        "sourceType": "official"
+      },
+      {
+        "title": "电子科技大学2026年硕士研究生招生考试初试科目调整公告（一）",
+        "url": "https://yz.uestc.edu.cn/info/1081/5487.htm",
+        "year": 2027,
+        "publisher": "电子科技大学",
+        "scope": "2026调整表，计算机和软件专业",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "uestc-028-085405",
+    "year": 2027,
+    "location": "深圳",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yzbm.uestc.edu.cn/zsml/sszsml/zsmlZy/2027/028",
+        "year": 2027,
+        "publisher": "电子科技大学",
+        "scope": "2027/028，085405专业总人数",
+        "sourceType": "official"
+      },
+      {
+        "title": "电子科技大学2026年硕士研究生招生考试初试科目调整公告（一）",
+        "url": "https://yz.uestc.edu.cn/info/1081/5487.htm",
+        "year": 2027,
+        "publisher": "电子科技大学",
+        "scope": "2026调整表，计算机和软件专业",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "tuitionPerYear": 18000,
+    "durationYears": 3,
+    "projectId": "lzu-016-085404",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第4—5页；016/085404",
+        "sourceType": "official"
+      },
+      {
+        "title": "兰州大学2027年硕士研究生招生章程",
+        "url": "https://app.xinhuanet.com/news/article.html?articleId=20261015822dcba2dce4477084aba4e6df2ff7be",
+        "year": 2027,
+        "publisher": "新华网转载兰州大学",
+        "scope": "学费标准：电子信息计算机技术/软件工程",
+        "sourceType": "official_reprint"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "lzu-016-085404-02",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第4—5页；016/085404",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "lzu-016-085404-03",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第4—5页；016/085404",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "tuitionPerYear": 18000,
+    "durationYears": 3,
+    "projectId": "lzu-016-085405",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第4—5页；016/085405",
+        "sourceType": "official"
+      },
+      {
+        "title": "兰州大学2027年硕士研究生招生章程",
+        "url": "https://app.xinhuanet.com/news/article.html?articleId=20261015822dcba2dce4477084aba4e6df2ff7be",
+        "year": 2027,
+        "publisher": "新华网转载兰州大学",
+        "scope": "学费标准：电子信息计算机技术/软件工程",
+        "sourceType": "official_reprint"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "lzu-016-085405-02",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第4—5页；016/085405",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "lzu-016-085405-03",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第4—5页；016/085405",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "lzu-016-145200",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第4—5页；016/145200",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "tuitionPerYear": 18000,
+    "durationYears": 3,
+    "projectId": "lzu-017-085404",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第6—7页；017/085404",
+        "sourceType": "official"
+      },
+      {
+        "title": "兰州大学2027年硕士研究生招生章程",
+        "url": "https://app.xinhuanet.com/news/article.html?articleId=20261015822dcba2dce4477084aba4e6df2ff7be",
+        "year": 2027,
+        "publisher": "新华网转载兰州大学",
+        "scope": "学费标准：电子信息计算机技术/软件工程",
+        "sourceType": "official_reprint"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "lzu-017-085404-02",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第6—7页；017/085404",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "lzu-017-085404-03",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第6—7页；017/085404",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "tuitionPerYear": 18000,
+    "durationYears": 3,
+    "projectId": "lzu-017-085405",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第6—7页；017/085405",
+        "sourceType": "official"
+      },
+      {
+        "title": "兰州大学2027年硕士研究生招生章程",
+        "url": "https://app.xinhuanet.com/news/article.html?articleId=20261015822dcba2dce4477084aba4e6df2ff7be",
+        "year": 2027,
+        "publisher": "新华网转载兰州大学",
+        "scope": "学费标准：电子信息计算机技术/软件工程",
+        "sourceType": "official_reprint"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "lzu-017-085405-02",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第6—7页；017/085405",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "lzu-017-085405-03",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第6—7页；017/085405",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "lzu-017-145200",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第6—7页；017/145200",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "10001-017-085400-01",
+    "year": 2027,
+    "location": "北京市大兴校区",
+    "city": "北京",
+    "sources": [
+      {
+        "title": "北京大学2027年硕士招生专业目录（院系017）",
+        "url": "https://admission.pku.edu.cn/zsxx/sszs/zyml/2027/yx/zsml_ss_yx_00017.pdf",
+        "year": 2027,
+        "publisher": "北京大学研究生招生办公室",
+        "scope": "PDF第1页；专业表及备注",
+        "sourceType": "official"
+      },
+      {
+        "title": "软件与微电子学院2027年硕士招生相关说明",
+        "url": "https://ss.pku.edu.cn/zsxx/zstz/56b3c3a23adf41d493db0e9f9bb91647.htm",
+        "year": 2027,
+        "publisher": "北京大学软件与微电子学院",
+        "scope": "培养与住宿说明",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京大学2027年硕士研究生招生简章",
+        "url": "https://yzst.chsi.com.cn/zsgs/zsjz/detail.action?schCode=10001&zsgsId=3552089905",
+        "year": 2027,
+        "publisher": "北京大学（研招网发布）",
+        "scope": "学费表",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京大学软件与微电子学院2027年电子信息专业硕士研究生招生说明",
+        "url": "https://ss.pku.edu.cn/zsxx/zstz/56b3c3a23adf41d493db0e9f9bb91647.htm",
+        "year": 2027,
+        "publisher": "北京大学软件与微电子学院",
+        "scope": "第一节方向招生表；第三节住宿说明",
+        "sourceType": "official",
+        "publishedDate": "2026-10-12"
+      }
+    ],
+    "tuitionTotal": 90000,
+    "durationYears": 3,
+    "details": {
+      "住宿": "第一年协助安排，后续申请，费用自理"
+    },
+    "note": "软件与微电子学院电子信息全日制；培养主要在大兴校区，代招项目实际地点另核。"
+  },
+  {
+    "projectId": "10001-017-085400-02",
+    "year": 2027,
+    "location": "北京市大兴校区",
+    "city": "北京",
+    "sources": [
+      {
+        "title": "北京大学2027年硕士招生专业目录（院系017）",
+        "url": "https://admission.pku.edu.cn/zsxx/sszs/zyml/2027/yx/zsml_ss_yx_00017.pdf",
+        "year": 2027,
+        "publisher": "北京大学研究生招生办公室",
+        "scope": "PDF第1页；专业表及备注",
+        "sourceType": "official"
+      },
+      {
+        "title": "软件与微电子学院2027年硕士招生相关说明",
+        "url": "https://ss.pku.edu.cn/zsxx/zstz/56b3c3a23adf41d493db0e9f9bb91647.htm",
+        "year": 2027,
+        "publisher": "北京大学软件与微电子学院",
+        "scope": "培养与住宿说明",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京大学2027年硕士研究生招生简章",
+        "url": "https://yzst.chsi.com.cn/zsgs/zsjz/detail.action?schCode=10001&zsgsId=3552089905",
+        "year": 2027,
+        "publisher": "北京大学（研招网发布）",
+        "scope": "学费表",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京大学软件与微电子学院2027年电子信息专业硕士研究生招生说明",
+        "url": "https://ss.pku.edu.cn/zsxx/zstz/56b3c3a23adf41d493db0e9f9bb91647.htm",
+        "year": 2027,
+        "publisher": "北京大学软件与微电子学院",
+        "scope": "第一节方向招生表；第三节住宿说明",
+        "sourceType": "official",
+        "publishedDate": "2026-10-12"
+      }
+    ],
+    "tuitionTotal": 90000,
+    "durationYears": 3,
+    "details": {
+      "住宿": "第一年协助安排，后续申请，费用自理"
+    },
+    "note": "软件与微电子学院电子信息全日制；培养主要在大兴校区，代招项目实际地点另核。"
+  },
+  {
+    "projectId": "10003-024-085400-01",
+    "year": 2027,
+    "location": "北京市",
+    "city": "北京",
+    "sources": [
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=024",
+        "year": 2027,
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系024，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10003-410-085405-01",
+    "year": 2027,
+    "location": "北京市",
+    "city": "北京",
+    "sources": [
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=410",
+        "year": 2027,
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系410，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10003-412-085400-01",
+    "year": 2027,
+    "location": "北京市",
+    "city": "北京",
+    "sources": [
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=412",
+        "year": 2027,
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系412，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10003-599-085400-03",
+    "year": 2027,
+    "location": "广东省深圳市",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=599",
+        "year": 2027,
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系599，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10003-599-085400-11",
+    "year": 2027,
+    "location": "广东省深圳市",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=599",
+        "year": 2027,
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系599，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10003-599-085400-16",
+    "year": 2027,
+    "location": "广东省深圳市",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=599",
+        "year": 2027,
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系599，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10003-599-085404-01",
+    "year": 2027,
+    "location": "广东省深圳市",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=599",
+        "year": 2027,
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系599，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10003-599-085411-01",
+    "year": 2027,
+    "location": "广东省深圳市",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=599",
+        "year": 2027,
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系599，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10002-387-085400-00",
+    "year": 2027,
+    "location": "江苏省苏州市",
+    "city": "苏州",
+    "sources": [
+      {
+        "title": "中国人民大学2027年硕士研究生招生专业目录",
+        "url": "https://kaoyan.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=245838",
+        "year": 2027,
+        "publisher": "圣才考研网",
+        "scope": "166、387院系专业方向表",
+        "sourceType": "secondary_republication"
+      }
+    ],
+    "tuitionPerYear": 20000,
+    "tuitionTotal": 60000,
+    "durationYears": 3
+  },
+  {
+    "projectId": "10007-zhuhai-085404-unknown",
+    "year": 2027,
+    "location": "广东省珠海市",
+    "city": "珠海",
+    "sources": [
+      {
+        "title": "北京理工大学珠海2027年接收推荐免试研究生相关通知",
+        "url": "https://grd.bitzh.edu.cn/zsgz/zsxx/df2e267bf06242d4952f2ac7ab9af27f.htm",
+        "year": 2027,
+        "publisher": "北京理工大学珠海",
+        "scope": "085404及085410专业学位",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京理工大学2027年硕士研究生招生专业目录",
+        "url": "https://grd.bit.edu.cn/zsgz/ssyjs/bslc_ss/3f58f00b45a24926bc5ba25f9682e0b3.htm",
+        "year": 2027,
+        "publisher": "北京理工大学研究生院",
+        "scope": "XLS附件未能读取",
+        "sourceType": "official",
+        "publishedDate": "2026-10-09"
+      },
+      {
+        "title": "2027考研择校数据汇总（2026届考情）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2027,
+        "publisher": "N诺考研",
+        "scope": "对应学校、学院和专业表",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "projectId": "10007-zhuhai-085410-unknown",
+    "year": 2027,
+    "location": "广东省珠海市",
+    "city": "珠海",
+    "sources": [
+      {
+        "title": "北京理工大学珠海2027年接收推荐免试研究生相关通知",
+        "url": "https://grd.bitzh.edu.cn/zsgz/zsxx/df2e267bf06242d4952f2ac7ab9af27f.htm",
+        "year": 2027,
+        "publisher": "北京理工大学珠海",
+        "scope": "085404及085410专业学位",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京理工大学2027年硕士研究生招生专业目录",
+        "url": "https://grd.bit.edu.cn/zsgz/ssyjs/bslc_ss/3f58f00b45a24926bc5ba25f9682e0b3.htm",
+        "year": 2027,
+        "publisher": "北京理工大学研究生院",
+        "scope": "XLS附件未能读取",
+        "sourceType": "official",
+        "publishedDate": "2026-10-09"
+      },
+      {
+        "title": "2027考研择校数据汇总（2026届考情）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2027,
+        "publisher": "N诺考研",
+        "scope": "对应学校、学院和专业表",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "projectId": "10019-308-085404-00",
+    "year": 2027,
+    "location": "北京市",
+    "city": "北京",
+    "sources": [
+      {
+        "title": "中国农业大学2027年硕士研究生招生专业目录",
+        "url": "https://kaoyan.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=246832",
+        "year": 2027,
+        "publisher": "圣才考研网",
+        "scope": "308表，085404及095136行",
+        "sourceType": "secondary_republication"
+      },
+      {
+        "title": "信息与电气工程学院2027年研究生招生相关通知",
+        "url": "https://ciee.cau.edu.cn/art/2026/6/22/art_50390_1119305.html",
+        "year": 2027,
+        "publisher": "中国农业大学信息与电气工程学院",
+        "scope": "考试科目调整相关专业",
+        "sourceType": "official",
+        "publishedDate": "2026-06-22"
+      },
+      {
+        "title": "中国农业大学2027年硕士研究生招生简章",
+        "url": "https://yz.cau.edu.cn/art/2026/10/8/art_41740_1139718.html",
+        "year": 2027,
+        "publisher": "中国农业大学研究生招生办公室",
+        "scope": "培养地点、住宿、招生目录附件",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "中国农业大学发布2027年硕士研究生招生目录",
+        "url": "https://jixun.iqihang.com/zixun/jianzhang/2026807246.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "信息与电气工程学院085404行",
+        "sourceType": "secondary_republication"
+      }
+    ],
+    "durationYears": 3,
+    "details": {
+      "住宿": "非定向全日制专硕一般安排一年，专项可能不同"
+    }
+  },
+  {
+    "projectId": "10006-057-085404-unknown",
+    "year": 2027,
+    "location": "浙江省杭州市",
+    "city": "杭州",
+    "sources": [
+      {
+        "title": "2027考研择校数据汇总（2026届考情）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2027,
+        "publisher": "N诺考研",
+        "scope": "对应学校、学院和专业表",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "projectId": "10007-241-085404-unknown",
+    "year": 2027,
+    "location": "北京市",
+    "city": "北京",
+    "sources": [
+      {
+        "title": "录取分数统计：院校汇总数据",
+        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-录取分数统计/data/schools/13.json",
+        "year": 2027,
+        "publisher": "CodeBrick码砖（考研408资料库转载）",
+        "scope": "programs / stats / years；bandGrids",
+        "sourceType": "secondary"
+      },
+      {
+        "title": "2027考研择校数据汇总（2026届考情）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2027,
+        "publisher": "N诺考研",
+        "scope": "对应学校、学院和专业表",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "projectId": "10007-ai-085410-unknown",
+    "year": 2027,
+    "location": "北京市",
+    "city": "北京",
+    "sources": [
+      {
+        "title": "2027考研择校数据汇总（2026届考情）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2027,
+        "publisher": "N诺考研",
+        "scope": "对应学校、学院和专业表",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "projectId": "10006-valencia-085404-unknown",
+    "year": 2027,
+    "location": "浙江省杭州市",
+    "city": "杭州",
+    "sources": [
+      {
+        "title": "2027考研择校数据汇总（2026届考情）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2027,
+        "publisher": "N诺考研",
+        "scope": "对应学校、学院和专业表",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "projectId": "10006-valencia-085410-unknown",
+    "year": 2027,
+    "location": "浙江省杭州市",
+    "city": "杭州",
+    "sources": [
+      {
+        "title": "2027考研择校数据汇总（2026届考情）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2027,
+        "publisher": "N诺考研",
+        "scope": "对应学校、学院和专业表",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionPerYear": 20000,
+    "tuitionTotal": 60000,
+    "durationYears": 3,
+    "details": {
+      "住宿": "全日制安排住宿；实际校区未明确"
+    },
+    "projectId": "10002-159-085400-01",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国人民大学信息学院2027年硕士研究生招生相关说明",
+        "url": "https://info.ruc.edu.cn/rcpy/gcss/zsxx2/9d2d066935a849a79dd0e4a34139765c.htm",
+        "year": 2027,
+        "publisher": "中国人民大学信息学院",
+        "scope": "电子信息专业学位招生说明",
+        "sourceType": "official",
+        "publishedDate": "2026-10-22"
+      },
+      {
+        "title": "中国人民大学2027年招生专业目录整理",
+        "url": "https://ymmd.cn/guide/ruc-notice-f7af66023928a1280c9e",
+        "year": 2027,
+        "publisher": "第三方招生信息站",
+        "scope": "159、166院系专业方向表",
+        "sourceType": "secondary"
+      },
+      {
+        "title": "中国人民大学2027年硕士研究生招生简章",
+        "url": "https://yz.chsi.com.cn/zsgs/zsjz/detail.action?schCode=10002&zsgsId=3551120189",
+        "year": 2027,
+        "publisher": "中国人民大学（研招网发布）",
+        "scope": "学习方式、学费和住宿",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "tuitionPerYear": 20000,
+    "tuitionTotal": 60000,
+    "durationYears": 3,
+    "details": {
+      "住宿": "全日制安排住宿；实际校区未明确"
+    },
+    "projectId": "10002-159-085400-03",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国人民大学信息学院2027年硕士研究生招生相关说明",
+        "url": "https://info.ruc.edu.cn/rcpy/gcss/zsxx2/9d2d066935a849a79dd0e4a34139765c.htm",
+        "year": 2027,
+        "publisher": "中国人民大学信息学院",
+        "scope": "电子信息专业学位招生说明",
+        "sourceType": "official",
+        "publishedDate": "2026-10-22"
+      },
+      {
+        "title": "中国人民大学2027年招生专业目录整理",
+        "url": "https://ymmd.cn/guide/ruc-notice-f7af66023928a1280c9e",
+        "year": 2027,
+        "publisher": "第三方招生信息站",
+        "scope": "159、166院系专业方向表",
+        "sourceType": "secondary"
+      },
+      {
+        "title": "中国人民大学2027年硕士研究生招生简章",
+        "url": "https://yz.chsi.com.cn/zsgs/zsjz/detail.action?schCode=10002&zsgsId=3551120189",
+        "year": 2027,
+        "publisher": "中国人民大学（研招网发布）",
+        "scope": "学习方式、学费和住宿",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "tuitionPerYear": 20000,
+    "tuitionTotal": 60000,
+    "durationYears": 3,
+    "details": {
+      "住宿": "全日制安排住宿；实际校区未明确"
+    },
+    "projectId": "10002-159-085400-05",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国人民大学信息学院2027年硕士研究生招生相关说明",
+        "url": "https://info.ruc.edu.cn/rcpy/gcss/zsxx2/9d2d066935a849a79dd0e4a34139765c.htm",
+        "year": 2027,
+        "publisher": "中国人民大学信息学院",
+        "scope": "电子信息专业学位招生说明",
+        "sourceType": "official",
+        "publishedDate": "2026-10-22"
+      },
+      {
+        "title": "中国人民大学2027年招生专业目录整理",
+        "url": "https://ymmd.cn/guide/ruc-notice-f7af66023928a1280c9e",
+        "year": 2027,
+        "publisher": "第三方招生信息站",
+        "scope": "159、166院系专业方向表",
+        "sourceType": "secondary"
+      },
+      {
+        "title": "中国人民大学2027年硕士研究生招生简章",
+        "url": "https://yz.chsi.com.cn/zsgs/zsjz/detail.action?schCode=10002&zsgsId=3551120189",
+        "year": 2027,
+        "publisher": "中国人民大学（研招网发布）",
+        "scope": "学习方式、学费和住宿",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "tuitionPerYear": 20000,
+    "tuitionTotal": 60000,
+    "durationYears": 3,
+    "projectId": "10002-166-085400-00",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国人民大学2027年硕士研究生招生专业目录",
+        "url": "https://kaoyan.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=245838",
+        "year": 2027,
+        "publisher": "圣才考研网",
+        "scope": "166、387院系专业方向表",
+        "sourceType": "secondary_republication"
+      },
+      {
+        "title": "高瓴人工智能学院2027年接收推荐免试研究生相关通知",
+        "url": "https://ai.ruc.edu.cn/xwgg/xygg/20260623106.html",
+        "year": 2027,
+        "publisher": "中国人民大学高瓴人工智能学院",
+        "scope": "专业学位硕士及学制",
+        "sourceType": "official",
+        "publishedDate": "2026-06-23"
+      }
+    ]
+  },
+  {
+    "details": {
+      "导师选择": "双向选择"
+    },
+    "note": "全日制专业学位按专项录取；特殊计划单列",
+    "projectId": "10019-308-085404-00",
+    "year": 2026,
+    "sources": [
+      {
+        "title": "信息与电气工程学院2026年硕士研究生招生复试录取实施细则",
+        "url": "https://ciee.cau.edu.cn/art/2026/3/24/art_50390_1104031.html",
+        "year": 2026,
+        "publisher": "中国农业大学信息与电气工程学院",
+        "scope": "复试线、复试形式及录取原则",
+        "sourceType": "official",
+        "publishedDate": "2026-03-24"
+      },
+      {
+        "title": "录取分数统计：院校汇总数据",
+        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-录取分数统计/data/schools/25.json",
+        "year": 2026,
+        "publisher": "CodeBrick码砖（考研408资料库转载）",
+        "scope": "programs / stats / years；bandGrids",
+        "sourceType": "secondary"
+      },
+      {
+        "title": "2027考研择校数据汇总（2026届考情）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2026,
+        "publisher": "N诺考研",
+        "scope": "对应学校、学院和专业表",
+        "sourceType": "secondary"
+      },
+      {
+        "title": "信息与电气工程学院2026年硕士研究生复试工作实施细则",
+        "url": "https://ciee.cau.edu.cn/art/2026/3/24/art_50390_1104031.html",
+        "year": 2026,
+        "publisher": "中国农业大学信息与电气工程学院",
+        "scope": "复试程序、录取规则",
+        "sourceType": "official",
+        "publishedDate": "2026-03-24"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "details": {
+      "住宿": "非定向全日制专硕一般安排一年，专项可能不同"
+    },
+    "projectId": "10019-308-095136-00",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国农业大学2027年硕士研究生招生专业目录",
+        "url": "https://kaoyan.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=246832",
+        "year": 2027,
+        "publisher": "圣才考研网",
+        "scope": "308表，085404及095136行",
+        "sourceType": "secondary_republication"
+      },
+      {
+        "title": "信息与电气工程学院2027年研究生招生相关通知",
+        "url": "https://ciee.cau.edu.cn/art/2026/6/22/art_50390_1119305.html",
+        "year": 2027,
+        "publisher": "中国农业大学信息与电气工程学院",
+        "scope": "考试科目调整相关专业",
+        "sourceType": "official",
+        "publishedDate": "2026-06-22"
+      },
+      {
+        "title": "中国农业大学2027年硕士研究生招生简章",
+        "url": "https://yz.cau.edu.cn/art/2026/10/8/art_41740_1139718.html",
+        "year": 2027,
+        "publisher": "中国农业大学研究生招生办公室",
+        "scope": "培养地点、住宿、招生目录附件",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "中国农业大学发布2027年硕士研究生招生目录",
+        "url": "https://jixun.iqihang.com/zixun/jianzhang/2026807246.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "信息与电气工程学院085404行",
+        "sourceType": "secondary_republication"
+      }
+    ]
+  },
+  {
+    "details": {
+      "导师选择": "双向选择"
+    },
+    "note": "全日制专业学位按专项录取；特殊计划单列",
+    "projectId": "10019-308-095136-00",
+    "year": 2026,
+    "sources": [
+      {
+        "title": "信息与电气工程学院2026年硕士研究生招生复试录取实施细则",
+        "url": "https://ciee.cau.edu.cn/art/2026/3/24/art_50390_1104031.html",
+        "year": 2026,
+        "publisher": "中国农业大学信息与电气工程学院",
+        "scope": "复试线、复试形式及录取原则",
+        "sourceType": "official",
+        "publishedDate": "2026-03-24"
+      }
+    ]
+  },
+  {
+    "projectId": "seu-h-085-085404",
+    "year": 2027,
+    "location": "南京九龙湖校区",
+    "city": "南京",
+    "sources": [
+      {
+        "title": "东南大学雷恩研究生学院2027年硕士研究生招生简章",
+        "url": "https://yzb.seu.edu.cn/2026/1010/c6679a585467/page.htm",
+        "year": 2027,
+        "publisher": "东南大学",
+        "scope": "培养与学位",
+        "sourceType": "official"
+      }
+    ],
+    "tuitionPerYear": 45000,
+    "tuitionTotal": 135000,
+    "durationYears": 3
+  },
+  {
+    "projectId": "zju-soft-085400-01",
+    "year": 2027,
+    "location": "浙江宁波",
+    "city": "杭州",
+    "sources": [
+      {
+        "title": "浙江大学2027年硕士研究生招生专业目录（转载）",
+        "url": "https://kaoyan.100xuexi.com/WebDoctor/EnrolDetailD.aspx?id=245545",
+        "year": 2027,
+        "publisher": "圣才考研",
+        "scope": "计算机科学与技术学院、软件学院、海洋学院、工程师学院专业方向表",
+        "sourceType": "secondary"
+      }
+    ],
+    "tuitionTotal": 80000
+  },
+  {
+    "projectId": "zju-soft-085400-02",
+    "year": 2027,
+    "location": "浙江宁波",
+    "city": "杭州",
+    "sources": [
+      {
+        "title": "浙江大学2027年硕士研究生招生专业目录（转载）",
+        "url": "https://kaoyan.100xuexi.com/WebDoctor/EnrolDetailD.aspx?id=245545",
+        "year": 2027,
+        "publisher": "圣才考研",
+        "scope": "计算机科学与技术学院、软件学院、海洋学院、工程师学院专业方向表",
+        "sourceType": "secondary"
+      }
+    ],
+    "tuitionTotal": 80000
+  },
+  {
+    "projectId": "zju-ocean-085400-03",
+    "year": 2027,
+    "location": "浙江舟山",
+    "city": "杭州",
+    "sources": [
+      {
+        "title": "浙江大学2027年硕士研究生招生专业目录（转载）",
+        "url": "https://kaoyan.100xuexi.com/WebDoctor/EnrolDetailD.aspx?id=245545",
+        "year": 2027,
+        "publisher": "圣才考研",
+        "scope": "计算机科学与技术学院、软件学院、海洋学院、工程师学院专业方向表",
+        "sourceType": "secondary"
+      }
+    ],
+    "tuitionTotal": 40000
+  },
+  {
+    "projectId": "nju-071-085410-01",
+    "year": 2027,
+    "location": "江苏苏州",
+    "city": "苏州",
+    "sources": [
+      {
+        "title": "南京大学2027年硕士研究生招生专业目录",
+        "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
+        "year": 2027,
+        "publisher": "南京大学研究生招生办公室",
+        "scope": "目录附件入口，原始表格未提取",
+        "sourceType": "official"
+      },
+      {
+        "title": "南京大学2027年硕士研究生招生专业目录（转载）",
+        "url": "https://kaoyan.xdf.cn/202610/15430106.html",
+        "year": 2027,
+        "publisher": "新东方考研",
+        "scope": "转载目录第51页，071 085410 01，拟招收总人数全日制专业学位列",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "projectId": "nju-072-085405-01",
+    "year": 2027,
+    "location": "江苏苏州",
+    "city": "苏州",
+    "sources": [
+      {
+        "title": "南京大学2027年硕士研究生招生专业目录",
+        "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
+        "year": 2027,
+        "publisher": "南京大学研究生招生办公室",
+        "scope": "目录附件入口，原始表格未提取",
+        "sourceType": "official"
+      },
+      {
+        "title": "南京大学2027年硕士研究生招生专业目录（转载）",
+        "url": "https://kaoyan.xdf.cn/202610/15430106.html",
+        "year": 2027,
+        "publisher": "新东方考研",
+        "scope": "转载目录第52页，072 085405 01，拟招收总人数全日制专业学位列",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionTotal": 90000,
+    "durationYears": 3,
+    "projectId": "ecnu-h-135-085404-01",
+    "year": 2026,
+    "sources": [
+      {
+        "title": "2026年硕士研究生招生专业目录：计算机技术",
+        "url": "https://yjszs-ks.ecnu.edu.cn/zsml/sszsml/zsmlYjfx/2026/135/085404?ksfs=21",
+        "year": 2026,
+        "publisher": "华东师范大学",
+        "scope": "2026/135/085404/考试方式21；01及68方向",
+        "sourceType": "official"
+      },
+      {
+        "title": "码砖录取分数统计（GitHub归档）",
+        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/30.json",
+        "year": 2026,
+        "publisher": "CodeBrick码砖 / kaoyan408-share",
+        "scope": "计算机科学与技术学院 计算机技术",
+        "sourceType": "secondary"
+      },
+      {
+        "title": "2027考研择校数据汇总（2026录取）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2026,
+        "publisher": "N诺考研",
+        "scope": "计算机科学与技术学院",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionTotal": 40000,
+    "durationYears": 3,
+    "projectId": "zju-600-085400-53",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "浙江大学工程师学院2027年工程类专业学位硕士研究生招生信息",
+        "url": "https://pi.zju.edu.cn/2026/1008/c67821a3211889/page.htm",
+        "year": 2027,
+        "publisher": "浙江大学工程师学院",
+        "scope": "专业方向、统考招生计划、学费、培养地点与住宿说明",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "浙江大学2027年硕士研究生招生专业目录（转载）",
+        "url": "https://kaoyan.100xuexi.com/WebDoctor/EnrolDetailD.aspx?id=245545",
+        "year": 2027,
+        "publisher": "圣才考研",
+        "scope": "计算机科学与技术学院、软件学院、海洋学院、工程师学院专业方向表",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionTotal": 40000,
+    "durationYears": 3,
+    "projectId": "zju-600-085400-57",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "浙江大学工程师学院2027年工程类专业学位硕士研究生招生信息",
+        "url": "https://pi.zju.edu.cn/2026/1008/c67821a3211889/page.htm",
+        "year": 2027,
+        "publisher": "浙江大学工程师学院",
+        "scope": "专业方向、统考招生计划、学费、培养地点与住宿说明",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "浙江大学2027年硕士研究生招生专业目录（转载）",
+        "url": "https://kaoyan.100xuexi.com/WebDoctor/EnrolDetailD.aspx?id=245545",
+        "year": 2027,
+        "publisher": "圣才考研",
+        "scope": "计算机科学与技术学院、软件学院、海洋学院、工程师学院专业方向表",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionTotal": 120000,
+    "durationYears": 2.5,
+    "projectId": "zju-600-085400-58",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "浙江大学工程师学院2027年工程类专业学位硕士研究生招生信息",
+        "url": "https://pi.zju.edu.cn/2026/1008/c67821a3211889/page.htm",
+        "year": 2027,
+        "publisher": "浙江大学工程师学院",
+        "scope": "专业方向、统考招生计划、学费、培养地点与住宿说明",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "浙江大学2027年硕士研究生招生专业目录（转载）",
+        "url": "https://kaoyan.100xuexi.com/WebDoctor/EnrolDetailD.aspx?id=245545",
+        "year": 2027,
+        "publisher": "圣才考研",
+        "scope": "计算机科学与技术学院、软件学院、海洋学院、工程师学院专业方向表",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionTotal": 150000,
+    "durationYears": 3,
+    "projectId": "zju-600-085400-59",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "浙江大学工程师学院2027年工程类专业学位硕士研究生招生信息",
+        "url": "https://pi.zju.edu.cn/2026/1008/c67821a3211889/page.htm",
+        "year": 2027,
+        "publisher": "浙江大学工程师学院",
+        "scope": "专业方向、统考招生计划、学费、培养地点与住宿说明",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "浙江大学2027年硕士研究生招生专业目录（转载）",
+        "url": "https://kaoyan.100xuexi.com/WebDoctor/EnrolDetailD.aspx?id=245545",
+        "year": 2027,
+        "publisher": "圣才考研",
+        "scope": "计算机科学与技术学院、软件学院、海洋学院、工程师学院专业方向表",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionTotal": 80000,
+    "projectId": "zju-cs-085400-01",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "浙江大学2027年硕士研究生招生专业目录（转载）",
+        "url": "https://kaoyan.100xuexi.com/WebDoctor/EnrolDetailD.aspx?id=245545",
+        "year": 2027,
+        "publisher": "圣才考研",
+        "scope": "计算机科学与技术学院、软件学院、海洋学院、工程师学院专业方向表",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionTotal": 80000,
+    "projectId": "zju-cs-085400-02",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "浙江大学2027年硕士研究生招生专业目录（转载）",
+        "url": "https://kaoyan.100xuexi.com/WebDoctor/EnrolDetailD.aspx?id=245545",
+        "year": 2027,
+        "publisher": "圣才考研",
+        "scope": "计算机科学与技术学院、软件学院、海洋学院、工程师学院专业方向表",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionPerYear": 8000,
+    "projectId": "ustc-h-cs-085400",
+    "year": 2026,
+    "sources": [
+      {
+        "title": "计算机科学与技术学院历年硕士研究生复试分数线",
+        "url": "https://cs.ustc.edu.cn/_t1744/2023/0319/c20160a595630/pagem.psp",
+        "year": 2026,
+        "publisher": "中国科学技术大学计算机科学与技术学院",
+        "scope": "2023—2026电子信息行",
+        "sourceType": "official"
+      },
+      {
+        "title": "计算机科学与技术学院2026年硕士研究生复试工作方案",
+        "url": "https://cs.ustc.edu.cn/2026/0317/c22510a723299/page.htm",
+        "year": 2026,
+        "publisher": "中国科学技术大学计算机科学与技术学院",
+        "scope": "复试方式、成绩计算",
+        "sourceType": "official",
+        "publishedDate": "2026-03-17"
+      },
+      {
+        "title": "计算机科学与技术学院2026年硕士研究生拟录取名单",
+        "url": "https://cs.ustc.edu.cn/2025/0326/c22510a724302/page.htm",
+        "year": 2026,
+        "publisher": "中国科学技术大学计算机科学与技术学院",
+        "scope": "表内序号26—103，085400电子信息；未列初试成绩",
+        "sourceType": "official"
+      },
+      {
+        "title": "2026招生专业一览、拟招生人数及联系方式",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/cksm4.html",
+        "year": 2026,
+        "publisher": "中国科学技术大学研究生院招生处",
+        "scope": "表头：拟接收统考、拟接收推免硕士、学费；院系215、218、221、225、229行",
+        "sourceType": "official"
+      },
+      {
+        "title": "215计算机科学与技术学院2026年招生简章",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/index_8.shtml",
+        "year": 2026,
+        "publisher": "中国科学技术大学研究生院招生处",
+        "scope": "085400电子信息，第三至十二节",
+        "sourceType": "official"
+      },
+      {
+        "title": "码砖录取分数统计（GitHub归档）",
+        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/7.json",
+        "year": 2026,
+        "publisher": "CodeBrick码砖 / kaoyan408-share",
+        "scope": "计算机科学与技术学院 计算机技术",
+        "sourceType": "secondary"
+      },
+      {
+        "title": "2027考研择校数据汇总（2026录取）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2026,
+        "publisher": "N诺考研",
+        "scope": "计算机科学与技术学院 计算机技术",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionTotal": 60000,
+    "durationYears": 3,
+    "projectId": "ustc-h-225-085405-01",
+    "year": 2026,
+    "sources": [
+      {
+        "title": "2026招生专业一览、拟招生人数及联系方式",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/cksm4.html",
+        "year": 2026,
+        "publisher": "中国科学技术大学研究生院招生处",
+        "scope": "表头：拟接收统考、拟接收推免硕士、学费；院系215、218、221、225、229行",
+        "sourceType": "official"
+      },
+      {
+        "title": "225软件学院2026年招生简章",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/index_9.shtml",
+        "year": 2026,
+        "publisher": "中国科学技术大学研究生院招生处",
+        "scope": "常规班，培养方式及考试、学费、办学地点各节",
+        "sourceType": "official"
+      },
+      {
+        "title": "码砖录取分数统计（GitHub归档）",
+        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/7.json",
+        "year": 2026,
+        "publisher": "CodeBrick码砖 / kaoyan408-share",
+        "scope": "软件学院 常规班",
+        "sourceType": "secondary"
+      },
+      {
+        "title": "2027考研择校数据汇总（2026录取）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2026,
+        "publisher": "N诺考研",
+        "scope": "软件学院 常规班",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionPerYear": 8000,
+    "projectId": "ustc-h-229-085400-01",
+    "year": 2026,
+    "sources": [
+      {
+        "title": "2026招生专业一览、拟招生人数及联系方式",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/cksm4.html",
+        "year": 2026,
+        "publisher": "中国科学技术大学研究生院招生处",
+        "scope": "表头：拟接收统考、拟接收推免硕士、学费；院系215、218、221、225、229行",
+        "sourceType": "official"
+      },
+      {
+        "title": "229人工智能与数据科学学院2026年招生简章",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/index_4.shtml",
+        "year": 2026,
+        "publisher": "中国科学技术大学研究生院招生处",
+        "scope": "085400电子信息初试、复试、学费、办学地点",
+        "sourceType": "official"
+      },
+      {
+        "title": "2027考研择校数据汇总（2026录取）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2026,
+        "publisher": "N诺考研",
+        "scope": "人工智能与数据科学学院 大数据技术与工程",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionPerYear": 8000,
+    "projectId": "ustc-h-229-085400-02",
+    "year": 2026,
+    "sources": [
+      {
+        "title": "2026招生专业一览、拟招生人数及联系方式",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/cksm4.html",
+        "year": 2026,
+        "publisher": "中国科学技术大学研究生院招生处",
+        "scope": "表头：拟接收统考、拟接收推免硕士、学费；院系215、218、221、225、229行",
+        "sourceType": "official"
+      },
+      {
+        "title": "229人工智能与数据科学学院2026年招生简章",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/index_4.shtml",
+        "year": 2026,
+        "publisher": "中国科学技术大学研究生院招生处",
+        "scope": "085400电子信息初试、复试、学费、办学地点",
+        "sourceType": "official"
+      },
+      {
+        "title": "2027考研择校数据汇总（2026录取）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2026,
+        "publisher": "N诺考研",
+        "scope": "人工智能与数据科学学院 人工智能",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionTotal": 40000,
+    "projectId": "ustc-h-218-085400-03",
+    "year": 2026,
+    "sources": [
+      {
+        "title": "2026招生专业一览、拟招生人数及联系方式",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/cksm4.html",
+        "year": 2026,
+        "publisher": "中国科学技术大学研究生院招生处",
+        "scope": "表头：拟接收统考、拟接收推免硕士、学费；院系215、218、221、225、229行",
+        "sourceType": "official"
+      },
+      {
+        "title": "2027考研择校数据汇总（2026录取）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2026,
+        "publisher": "N诺考研",
+        "scope": "先进技术研究院 计算机技术",
+        "sourceType": "secondary"
+      },
+      {
+        "title": "码砖录取分数统计（GitHub归档）",
+        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/7.json",
+        "year": 2026,
+        "publisher": "CodeBrick码砖 / kaoyan408-share",
+        "scope": "计算机技术",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionTotal": 60000,
+    "projectId": "ustc-h-218-085400-04",
+    "year": 2026,
+    "sources": [
+      {
+        "title": "2026招生专业一览、拟招生人数及联系方式",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/cksm4.html",
+        "year": 2026,
+        "publisher": "中国科学技术大学研究生院招生处",
+        "scope": "表头：拟接收统考、拟接收推免硕士、学费；院系215、218、221、225、229行",
+        "sourceType": "official"
+      },
+      {
+        "title": "2027考研择校数据汇总（2026录取）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2026,
+        "publisher": "N诺考研",
+        "scope": "先进技术研究院 软件工程",
+        "sourceType": "secondary"
+      },
+      {
+        "title": "码砖录取分数统计（GitHub归档）",
+        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/7.json",
+        "year": 2026,
+        "publisher": "CodeBrick码砖 / kaoyan408-share",
+        "scope": "软件工程",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "tuitionPerYear": 8000,
+    "projectId": "ustc-h-221-085400-01",
+    "year": 2026,
+    "sources": [
+      {
+        "title": "2026招生专业一览、拟招生人数及联系方式",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/cksm4.html",
+        "year": 2026,
+        "publisher": "中国科学技术大学研究生院招生处",
+        "scope": "表头：拟接收统考、拟接收推免硕士、学费；院系215、218、221、225、229行",
+        "sourceType": "official"
+      },
+      {
+        "title": "2027考研择校数据汇总（2026录取）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2026,
+        "publisher": "N诺考研",
+        "scope": "网络空间安全学院 网络与信息安全",
+        "sourceType": "secondary"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-11",
+    "year": 2027,
+    "location": "哈尔滨",
+    "city": "哈尔滨",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/11；所标原件PDF第16页表第3行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-12",
+    "year": 2027,
+    "location": "哈尔滨",
+    "city": "哈尔滨",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/12；所标原件PDF第16页表第4行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-14",
+    "year": 2027,
+    "location": "哈尔滨",
+    "city": "哈尔滨",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/14；所标原件PDF第16页表第6行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-24",
+    "year": 2027,
+    "location": "威海",
+    "city": "威海",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/24；所标原件PDF第16页表第7行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-26",
+    "year": 2027,
+    "location": "威海",
+    "city": "威海",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/26；所标原件PDF第16页表第8行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-27",
+    "year": 2027,
+    "location": "威海",
+    "city": "威海",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/27；所标原件PDF第16页表第9行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-28",
+    "year": 2027,
+    "location": "青岛基地",
+    "city": "青岛",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/28；所标原件PDF第16页表第10行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-31",
+    "year": 2027,
+    "location": "深圳",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/31；所标原件PDF第16页表第11行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-37",
+    "year": 2027,
+    "location": "深圳",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/37；所标原件PDF第16页表第12行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-41",
+    "year": 2027,
+    "location": "郑州基地",
+    "city": "哈尔滨",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/41；所标原件PDF第17页表第2行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-51",
+    "year": 2027,
+    "location": "重庆基地",
+    "city": "哈尔滨",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/51；所标原件PDF第17页表第3行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-52",
+    "year": 2027,
+    "location": "重庆基地",
+    "city": "哈尔滨",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/52；所标原件PDF第17页表第4行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-61",
+    "year": 2027,
+    "location": "苏州基地",
+    "city": "苏州",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/61；所标原件PDF第17页表第5行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-91",
+    "year": 2027,
+    "location": "深圳",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/91；所标原件PDF第17页表第6行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-92",
+    "year": 2027,
+    "location": "深圳",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/92；所标原件PDF第17页表第7行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10213-013-085400-96",
+    "year": 2027,
+    "location": "深圳",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "工科专业采集与核验记录：哈工大2027目录转录",
+        "url": "https://lzs2007.github.io/xiaoyuzhong-kaoyan/schools/collected",
+        "year": 2027,
+        "publisher": "小语种考研信息网",
+        "scope": "013/085400/96；所标原件PDF第17页表第8行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-009-085405-01",
+    "year": 2027,
+    "location": "沈阳",
+    "city": "沈阳",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405/01",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-009-085405-02",
+    "year": 2027,
+    "location": "沈阳",
+    "city": "沈阳",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405/02",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-009-085405-03",
+    "year": 2027,
+    "location": "沈阳",
+    "city": "沈阳",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405/03",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-009-085405-04",
+    "year": 2027,
+    "location": "沈阳",
+    "city": "沈阳",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405/04",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-009-085405-05",
+    "year": 2027,
+    "location": "沈阳",
+    "city": "沈阳",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405/05",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-009-085405-06",
+    "year": 2027,
+    "location": "沈阳",
+    "city": "沈阳",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405/06",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-009-085405-07",
+    "year": 2027,
+    "location": "佛山",
+    "city": "佛山",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405/07",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "009/085405",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-017-085404-01",
+    "year": 2027,
+    "location": "沈阳",
+    "city": "沈阳",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404/01",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      },
+      {
+        "title": "东北大学关于调整2025年硕士研究生部分招生专业及初试科目的通知",
+        "url": "https://yz.neu.edu.cn/2024/0612/c5932a256861/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "计算机科学与工程学院085404、085410",
+        "sourceType": "official",
+        "publishedDate": "2024-06-12"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-017-085404-02",
+    "year": 2027,
+    "location": "沈阳",
+    "city": "沈阳",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404/02",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      },
+      {
+        "title": "东北大学关于调整2025年硕士研究生部分招生专业及初试科目的通知",
+        "url": "https://yz.neu.edu.cn/2024/0612/c5932a256861/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "计算机科学与工程学院085404、085410",
+        "sourceType": "official",
+        "publishedDate": "2024-06-12"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-017-085404-03",
+    "year": 2027,
+    "location": "沈阳",
+    "city": "沈阳",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404/03",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      },
+      {
+        "title": "东北大学关于调整2025年硕士研究生部分招生专业及初试科目的通知",
+        "url": "https://yz.neu.edu.cn/2024/0612/c5932a256861/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "计算机科学与工程学院085404、085410",
+        "sourceType": "official",
+        "publishedDate": "2024-06-12"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-017-085404-04",
+    "year": 2027,
+    "location": "沈阳",
+    "city": "沈阳",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404/04",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      },
+      {
+        "title": "东北大学关于调整2025年硕士研究生部分招生专业及初试科目的通知",
+        "url": "https://yz.neu.edu.cn/2024/0612/c5932a256861/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "计算机科学与工程学院085404、085410",
+        "sourceType": "official",
+        "publishedDate": "2024-06-12"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-017-085404-05",
+    "year": 2027,
+    "location": "沈阳",
+    "city": "沈阳",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404/05",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      },
+      {
+        "title": "东北大学关于调整2025年硕士研究生部分招生专业及初试科目的通知",
+        "url": "https://yz.neu.edu.cn/2024/0612/c5932a256861/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "计算机科学与工程学院085404、085410",
+        "sourceType": "official",
+        "publishedDate": "2024-06-12"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-017-085404-06",
+    "year": 2027,
+    "location": "秦皇岛",
+    "city": "沈阳",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404/06",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      },
+      {
+        "title": "东北大学关于调整2025年硕士研究生部分招生专业及初试科目的通知",
+        "url": "https://yz.neu.edu.cn/2024/0612/c5932a256861/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "计算机科学与工程学院085404、085410",
+        "sourceType": "official",
+        "publishedDate": "2024-06-12"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-017-085404-07",
+    "year": 2027,
+    "location": "佛山",
+    "city": "佛山",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404/07",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085404",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      },
+      {
+        "title": "东北大学关于调整2025年硕士研究生部分招生专业及初试科目的通知",
+        "url": "https://yz.neu.edu.cn/2024/0612/c5932a256861/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "计算机科学与工程学院085404、085410",
+        "sourceType": "official",
+        "publishedDate": "2024-06-12"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-017-085410-01",
+    "year": 2027,
+    "location": "沈阳",
+    "city": "沈阳",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085410/01",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085410",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      },
+      {
+        "title": "东北大学关于调整2025年硕士研究生部分招生专业及初试科目的通知",
+        "url": "https://yz.neu.edu.cn/2024/0612/c5932a256861/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "计算机科学与工程学院085404、085410",
+        "sourceType": "official",
+        "publishedDate": "2024-06-12"
+      }
+    ]
+  },
+  {
+    "projectId": "10145-017-085410-02",
+    "year": 2027,
+    "location": "佛山",
+    "city": "佛山",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085410/02",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2025年硕士研究生招生专业目录及2026年目录对照",
+        "url": "https://yz.neu.edu.cn/2024/1001/c5933a269652/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "017/085410",
+        "sourceType": "official",
+        "publishedDate": "2024-10-01"
+      },
+      {
+        "title": "东北大学关于调整2025年硕士研究生部分招生专业及初试科目的通知",
+        "url": "https://yz.neu.edu.cn/2024/0612/c5932a256861/pagem.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "计算机科学与工程学院085404、085410",
+        "sourceType": "official",
+        "publishedDate": "2024-06-12"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-216-085400-01",
+    "year": 2027,
+    "location": "天津",
+    "city": "天津",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第5页，216/085400/01",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-218-085400-01",
+    "year": 2027,
+    "location": "天津",
+    "city": "天津",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第5页，218/085400/01",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-229-085400-04",
+    "year": 2027,
+    "location": "天津",
+    "city": "天津",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第6页，229/085400/04",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-255-085400-04",
+    "year": 2027,
+    "location": "天津",
+    "city": "天津",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第9页，255/085400/04",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-257-085400-01",
+    "year": 2027,
+    "location": "天津",
+    "city": "天津",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第10页，257/085400/01",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-258-085400-01",
+    "year": 2027,
+    "location": "天津",
+    "city": "天津",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第10页，258/085400/01",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-439-085400-06",
+    "year": 2027,
+    "location": "福州",
+    "city": "福州",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第10页，439/085400/06",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-439-085400-07",
+    "year": 2027,
+    "location": "福州",
+    "city": "福州",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第10页，439/085400/07",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-439-085400-08",
+    "year": 2027,
+    "location": "福州",
+    "city": "福州",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第10页，439/085400/08",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-439-085400-09",
+    "year": 2027,
+    "location": "福州",
+    "city": "福州",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第10页，439/085400/09",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-445-085400-01",
+    "year": 2027,
+    "location": "深圳",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第11页，445/085400/01",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-445-085400-02",
+    "year": 2027,
+    "location": "深圳",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第11页，445/085400/02",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-445-085400-06",
+    "year": 2027,
+    "location": "深圳",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第11页，445/085400/06",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-445-085400-10",
+    "year": 2027,
+    "location": "深圳",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "天津大学2027年全日制硕士研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第11页，445/085400/10",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10423-002-085404-02",
+    "year": 2027,
+    "location": "三亚",
+    "city": "青岛",
+    "sources": [
+      {
+        "title": "中国海洋大学2027年硕士研究生招生专业目录（转录）",
+        "url": "https://jixun.iqihang.com/schoolzyml/20269801.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "002/085404/02行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "中国海洋大学2027年硕士研究生招生章程",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31752a538356/page.htm",
+        "year": 2027,
+        "publisher": "中国海洋大学",
+        "scope": "学制相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ],
+    "durationYears": 3
+  },
+  {
+    "projectId": "10423-002-085410-02",
+    "year": 2027,
+    "location": "三亚",
+    "city": "青岛",
+    "sources": [
+      {
+        "title": "中国海洋大学2027年硕士研究生招生专业目录（转录）",
+        "url": "https://jixun.iqihang.com/schoolzyml/20269801.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "002/085410/02行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "中国海洋大学2027年硕士研究生招生章程",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31752a538356/page.htm",
+        "year": 2027,
+        "publisher": "中国海洋大学",
+        "scope": "学制相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ],
+    "durationYears": 3
+  },
+  {
+    "projectId": "10183-pending-085404-unspecified",
+    "year": 2027,
+    "location": "长春",
+    "city": "长春",
+    "sources": [
+      {
+        "title": "吉林大学关于调整2026年硕士研究生招生考试初试科目的通知",
+        "url": "https://yzb.jlu.edu.cn/info/1046/2922.htm",
+        "year": 2027,
+        "publisher": "吉林大学",
+        "scope": "计算机科学与技术学院、软件学院、人工智能学院相关专业",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "10183-pending-085405-unspecified",
+    "year": 2027,
+    "location": "长春",
+    "city": "长春",
+    "sources": [
+      {
+        "title": "吉林大学关于调整2026年硕士研究生招生考试初试科目的通知",
+        "url": "https://yzb.jlu.edu.cn/info/1046/2922.htm",
+        "year": 2027,
+        "publisher": "吉林大学",
+        "scope": "计算机科学与技术学院、软件学院、人工智能学院相关专业",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "10183-pending-085410-unspecified",
+    "year": 2027,
+    "location": "长春",
+    "city": "长春",
+    "sources": [
+      {
+        "title": "吉林大学关于调整2026年硕士研究生招生考试初试科目的通知",
+        "url": "https://yzb.jlu.edu.cn/info/1046/2922.htm",
+        "year": 2027,
+        "publisher": "吉林大学",
+        "scope": "计算机科学与技术学院、软件学院、人工智能学院相关专业",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "10183-historical-61-085404",
+    "year": 2027,
+    "location": "珠海",
+    "city": "珠海",
+    "sources": [
+      {
+        "title": "吉林大学专业官方公示数据（第三方汇编）",
+        "url": "https://www.yikaoyan.com/official/10183/085404",
+        "year": 2027,
+        "publisher": "易考研",
+        "scope": "2026拟录取名单各学院分项",
+        "sourceType": "third_party"
+      }
+    ]
+  },
+  {
+    "projectId": "10183-historical-63-085405",
+    "year": 2027,
+    "location": "珠海",
+    "city": "珠海",
+    "sources": [
+      {
+        "title": "吉林大学专业官方公示数据（第三方汇编）",
+        "url": "https://www.yikaoyan.com/official/10183/085405",
+        "year": 2027,
+        "publisher": "易考研",
+        "scope": "2026拟录取名单各学院分项",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "2027考研择校数据汇总（2026届考情）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2027,
+        "publisher": "N诺考研",
+        "scope": "吉林大学珠海研究院085405统考停招",
+        "sourceType": "third_party_statistics"
+      }
+    ]
+  },
+  {
+    "projectId": "10183-historical-64-085405",
+    "year": 2027,
+    "location": "珠海",
+    "city": "珠海",
+    "sources": [
+      {
+        "title": "吉林大学专业官方公示数据（第三方汇编）",
+        "url": "https://www.yikaoyan.com/official/10183/085405",
+        "year": 2027,
+        "publisher": "易考研",
+        "scope": "2026拟录取名单各学院分项",
+        "sourceType": "third_party"
+      }
+    ]
+  },
+  {
+    "projectId": "10183-historical-65-085410",
+    "year": 2027,
+    "location": "珠海",
+    "city": "珠海",
+    "sources": [
+      {
+        "title": "吉林大学专业官方公示数据（第三方汇编）",
+        "url": "https://www.yikaoyan.com/official/10183/085410",
+        "year": 2027,
+        "publisher": "易考研",
+        "scope": "2026拟录取名单各学院分项",
+        "sourceType": "third_party"
+      }
+    ]
+  },
+  {
+    "projectId": "10056-245-085400-01",
+    "year": 2027,
+    "location": "天津",
+    "city": "天津",
+    "sources": [
+      {
+        "title": "天津大学2027年硕士学位研究生招生专业目录",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "year": 2027,
+        "publisher": "天津大学",
+        "scope": "PDF第8页，245/085400/01",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10422-pending-085404-unspecified",
+    "year": 2027,
+    "location": "青岛",
+    "city": "青岛",
+    "sources": [
+      {
+        "title": "关于调整2026年硕士研究生招生考试（初试）考试科目的通知",
+        "url": "https://yz.sdu.edu.cn/info/1022/1130.htm",
+        "year": 2027,
+        "publisher": "山东大学",
+        "scope": "第2项",
+        "sourceType": "official",
+        "publishedDate": "2025-05-08"
+      },
+      {
+        "title": "计算机科学与技术学院2026年硕士研究生招生考试复试方案",
+        "url": "https://www.cs.sdu.edu.cn/info/1068/6778.htm",
+        "year": 2027,
+        "publisher": "山东大学计算机科学与技术学院",
+        "scope": "第四部分复试内容",
+        "sourceType": "official",
+        "publishedDate": "2026-03-23"
+      },
+      {
+        "title": "计算机科学与技术学院2026年硕士研究生一志愿复试名单公示",
+        "url": "https://www.cs.sdu.edu.cn/info/1068/6777.htm",
+        "year": 2027,
+        "publisher": "山东大学计算机科学与技术学院",
+        "scope": "正文全日制专业学位计划说明",
+        "sourceType": "official",
+        "publishedDate": "2026-03-23"
+      }
+    ]
+  },
+  {
+    "projectId": "10422-pending-085405-unspecified",
+    "year": 2027,
+    "location": "济南",
+    "city": "济南",
+    "sources": [
+      {
+        "title": "关于调整2026年硕士研究生招生考试（初试）考试科目的通知",
+        "url": "https://yz.sdu.edu.cn/info/1022/1130.htm",
+        "year": 2027,
+        "publisher": "山东大学",
+        "scope": "第2项",
+        "sourceType": "official",
+        "publishedDate": "2025-05-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10422-pending-085410-unspecified",
+    "year": 2027,
+    "location": "济南",
+    "city": "济南",
+    "sources": [
+      {
+        "title": "关于调整2026年硕士研究生招生考试（初试）考试科目的通知",
+        "url": "https://yz.sdu.edu.cn/info/1022/1130.htm",
+        "year": 2027,
+        "publisher": "山东大学",
+        "scope": "第2项",
+        "sourceType": "official",
+        "publishedDate": "2025-05-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10422-pending-ai-085410-unspecified",
+    "year": 2027,
+    "location": "济南",
+    "city": "济南",
+    "sources": [
+      {
+        "title": "关于调整2026年硕士研究生招生考试（初试）考试科目的通知",
+        "url": "https://yz.sdu.edu.cn/info/1022/1130.htm",
+        "year": 2027,
+        "publisher": "山东大学",
+        "scope": "第2项",
+        "sourceType": "official",
+        "publishedDate": "2025-05-08"
+      }
+    ]
+  },
+  {
+    "projectId": "10141-610-085404-unspecified",
+    "year": 2027,
+    "location": "大连",
+    "city": "大连",
+    "sources": [
+      {
+        "title": "计算机科学与技术学院2026年硕士研究生复试录取办法",
+        "url": "https://cs.dlut.edu.cn/info/1256/6000.htm",
+        "year": 2027,
+        "publisher": "大连理工大学计算机科学与技术学院",
+        "scope": "第一部分（一）统考招生计划与分数线；第（六）及第四部分",
+        "sourceType": "official",
+        "publishedDate": "2026-03-20"
+      }
+    ]
+  },
+  {
+    "projectId": "10141-610-085410-01",
+    "year": 2027,
+    "location": "大连",
+    "city": "大连",
+    "sources": [
+      {
+        "title": "计算机科学与技术学院2026年硕士研究生复试录取办法",
+        "url": "https://cs.dlut.edu.cn/info/1256/6000.htm",
+        "year": 2027,
+        "publisher": "大连理工大学计算机科学与技术学院",
+        "scope": "第一部分（一）统考招生计划与分数线；第（六）及第四部分",
+        "sourceType": "official",
+        "publishedDate": "2026-03-20"
+      }
+    ]
+  },
+  {
+    "projectId": "10141-610-085410-02",
+    "year": 2027,
+    "location": "大连",
+    "city": "大连",
+    "sources": [
+      {
+        "title": "计算机科学与技术学院2026年硕士研究生复试录取办法",
+        "url": "https://cs.dlut.edu.cn/info/1256/6000.htm",
+        "year": 2027,
+        "publisher": "大连理工大学计算机科学与技术学院",
+        "scope": "第一部分（一）统考招生计划与分数线；第（六）及第四部分",
+        "sourceType": "official",
+        "publishedDate": "2026-03-20"
+      }
+    ]
+  },
+  {
+    "projectId": "10055-pending-085400-unspecified",
+    "year": 2027,
+    "location": "天津",
+    "city": "天津",
+    "sources": [
+      {
+        "title": "南开大学计算机学院、密码与网络空间安全学院2027年推免预报名通知",
+        "url": "https://cc.nankai.edu.cn/2026/0709/c13297a600172/page.htm",
+        "year": 2027,
+        "publisher": "南开大学计算机学院",
+        "scope": "专业学位招生类型",
+        "sourceType": "official",
+        "publishedDate": "2026-07-09"
+      }
+    ],
+    "durationYears": 3
+  },
+  {
+    "durationYears": 3,
+    "projectId": "10423-002-085404-01",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国海洋大学2027年硕士研究生招生专业目录（转录）",
+        "url": "https://jixun.iqihang.com/schoolzyml/20269801.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "002/085404/01行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "中国海洋大学2027年硕士研究生招生章程",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31752a538356/page.htm",
+        "year": 2027,
+        "publisher": "中国海洋大学",
+        "scope": "学制相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "10423-002-085404-03",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国海洋大学2027年硕士研究生招生专业目录（转录）",
+        "url": "https://jixun.iqihang.com/schoolzyml/20269801.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "002/085404/03行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "中国海洋大学2027年硕士研究生招生章程",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31752a538356/page.htm",
+        "year": 2027,
+        "publisher": "中国海洋大学",
+        "scope": "学制相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "10423-002-085404-04",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国海洋大学2027年硕士研究生招生专业目录（转录）",
+        "url": "https://jixun.iqihang.com/schoolzyml/20269801.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "002/085404/04行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "中国海洋大学2027年硕士研究生招生章程",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31752a538356/page.htm",
+        "year": 2027,
+        "publisher": "中国海洋大学",
+        "scope": "学制相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "10423-002-085405-00",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国海洋大学2027年硕士研究生招生专业目录（转录）",
+        "url": "https://jixun.iqihang.com/schoolzyml/20269801.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "002/085405/00行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "中国海洋大学2027年硕士研究生招生章程",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31752a538356/page.htm",
+        "year": 2027,
+        "publisher": "中国海洋大学",
+        "scope": "学制相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "10423-002-085410-01",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国海洋大学2027年硕士研究生招生专业目录（转录）",
+        "url": "https://jixun.iqihang.com/schoolzyml/20269801.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "002/085410/01行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "中国海洋大学2027年硕士研究生招生章程",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31752a538356/page.htm",
+        "year": 2027,
+        "publisher": "中国海洋大学",
+        "scope": "学制相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "10423-002-085411-00",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国海洋大学2027年硕士研究生招生专业目录（转录）",
+        "url": "https://jixun.iqihang.com/schoolzyml/20269801.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "002/085411/00行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "中国海洋大学2027年硕士研究生招生章程",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31752a538356/page.htm",
+        "year": 2027,
+        "publisher": "中国海洋大学",
+        "scope": "学制相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "10423-002-085412-00",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国海洋大学2027年硕士研究生招生专业目录（转录）",
+        "url": "https://jixun.iqihang.com/schoolzyml/20269801.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "002/085412/00行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "中国海洋大学2027年硕士研究生招生章程",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31752a538356/page.htm",
+        "year": 2027,
+        "publisher": "中国海洋大学",
+        "scope": "学制相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "10423-033-085404-00",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国海洋大学2027年硕士研究生招生专业目录（转录）",
+        "url": "https://jixun.iqihang.com/schoolzyml/20269801.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "033/085404/00行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "中国海洋大学2027年硕士研究生招生章程",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31752a538356/page.htm",
+        "year": 2027,
+        "publisher": "中国海洋大学",
+        "scope": "学制相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "10423-033-085410-00",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国海洋大学2027年硕士研究生招生专业目录（转录）",
+        "url": "https://jixun.iqihang.com/schoolzyml/20269801.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "033/085410/00行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "中国海洋大学2027年硕士研究生招生章程",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31752a538356/page.htm",
+        "year": 2027,
+        "publisher": "中国海洋大学",
+        "scope": "学制相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "durationYears": 3,
+    "projectId": "10423-033-085411-00",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "中国海洋大学2027年硕士研究生招生专业目录（转录）",
+        "url": "https://jixun.iqihang.com/schoolzyml/20269801.html",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "033/085411/00行",
+        "sourceType": "third_party_transcription"
+      },
+      {
+        "title": "中国海洋大学2027年硕士研究生招生章程",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31752a538356/page.htm",
+        "year": 2027,
+        "publisher": "中国海洋大学",
+        "scope": "学制相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "sysu-670-085404",
+    "year": 2027,
+    "location": "广州",
+    "city": "广州",
+    "sources": [
+      {
+        "title": "计算机学院2027年硕士研究生招生信息",
+        "url": "https://cse.sysu.edu.cn/article/3663",
+        "year": 2027,
+        "publisher": "中山大学计算机学院",
+        "scope": "670学院，085404、085410",
+        "sourceType": "official",
+        "publishedDate": "2026-09-29"
+      }
+    ],
+    "tuitionPerYear": 16000,
+    "durationYears": 3
+  },
+  {
+    "projectId": "sysu-670-085410-nf",
+    "year": 2027,
+    "location": "广州",
+    "city": "广州",
+    "sources": [
+      {
+        "title": "计算机学院2027年硕士研究生招生信息",
+        "url": "https://cse.sysu.edu.cn/article/3663",
+        "year": 2027,
+        "publisher": "中山大学计算机学院",
+        "scope": "670学院，085404、085410",
+        "sourceType": "official",
+        "publishedDate": "2026-09-29"
+      }
+    ],
+    "tuitionPerYear": 40000,
+    "durationYears": 3
+  },
+  {
+    "projectId": "sysu-soft",
+    "year": 2027,
+    "location": "珠海",
+    "city": "珠海",
+    "sources": [
+      {
+        "title": "软件工程学院2027年硕士研究生招生相关公告",
+        "url": "https://sse.sysu.edu.cn/article/1136",
+        "year": 2027,
+        "publisher": "中山大学软件工程学院",
+        "scope": "公告图像内招生计划未取得",
+        "sourceType": "official",
+        "publishedDate": "2026-10-19"
+      }
+    ]
+  },
+  {
+    "projectId": "sysu-net",
+    "year": 2027,
+    "location": "深圳",
+    "city": "深圳",
+    "sources": [
+      {
+        "title": "网络空间安全学院2027年推免招生相关公告",
+        "url": "https://scst.sysu.edu.cn/article/502",
+        "year": 2027,
+        "publisher": "中山大学网络空间安全学院",
+        "scope": "推免招生专业，不能独立证明统考",
+        "sourceType": "official"
+      },
+      {
+        "title": "网络空间安全学院2027年招收硕士研究生Q&A",
+        "url": "https://scst.sysu.edu.cn/article/527",
+        "year": 2027,
+        "publisher": "中山大学网络空间安全学院",
+        "scope": "二、学院2027年统招硕士研究生招生计划；正文403，数字未核实",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "sysu-systems",
+    "year": 2027,
+    "location": "广州",
+    "city": "广州",
+    "sources": [
+      {
+        "title": "系统科学与工程学院2027年推免招生相关公告",
+        "url": "https://ssse.sysu.edu.cn/article/1532",
+        "year": 2027,
+        "publisher": "中山大学系统科学与工程学院",
+        "scope": "085404、69；推免",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "scut-cs",
+    "year": 2027,
+    "location": "广州",
+    "city": "广州",
+    "sources": [
+      {
+        "title": "华南理工大学计算机技术招生数据",
+        "url": "https://www.yikaoyan.com/official/10561/085404",
+        "year": 2027,
+        "publisher": "易考研",
+        "scope": "2027及2026专业汇总，未拆分特殊类别",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "华南理工大学2027年硕士研究生招生章程及招生专业目录",
+        "url": "https://yz.scut.edu.cn/2026/0930/c30108a636831/page.htm",
+        "year": 2027,
+        "publisher": "华南理工大学研究生招生办公室",
+        "scope": "动态目录需登录；另有在职单独考试项目",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "scut-se",
+    "year": 2027,
+    "location": "广州",
+    "city": "广州",
+    "sources": [
+      {
+        "title": "华南理工大学软件工程招生数据",
+        "url": "https://www.yikaoyan.com/official/10561/085405",
+        "year": 2027,
+        "publisher": "易考研",
+        "scope": "2027及2026专业汇总",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "华南理工大学2027年硕士研究生招生章程及招生专业目录",
+        "url": "https://yz.scut.edu.cn/2026/0930/c30108a636831/page.htm",
+        "year": 2027,
+        "publisher": "华南理工大学研究生招生办公室",
+        "scope": "动态目录需登录；另有在职单独考试项目",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "projectId": "xmu-131-085404",
+    "year": 2027,
+    "location": "厦门",
+    "city": "厦门",
+    "sources": [
+      {
+        "title": "厦门大学2027年硕士研究生招生专业目录",
+        "url": "https://zs.xmu.edu.cn/info/1056/36842.htm",
+        "year": 2027,
+        "publisher": "厦门大学招生办公室",
+        "scope": "附件表格入口",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "厦门大学2027年硕士研究生招生计划",
+        "url": "https://sc.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=245797",
+        "year": 2027,
+        "publisher": "圣才学习网",
+        "scope": "招生计划转载表；计划包含推免与否未独立核实",
+        "sourceType": "third_party"
+      }
+    ]
+  },
+  {
+    "projectId": "xmu-135-085410",
+    "year": 2027,
+    "location": "厦门",
+    "city": "厦门",
+    "sources": [
+      {
+        "title": "厦门大学2027年硕士研究生招生专业目录",
+        "url": "https://zs.xmu.edu.cn/info/1056/36842.htm",
+        "year": 2027,
+        "publisher": "厦门大学招生办公室",
+        "scope": "附件表格入口",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "厦门大学2027年硕士研究生招生计划",
+        "url": "https://sc.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=245797",
+        "year": 2027,
+        "publisher": "圣才学习网",
+        "scope": "招生计划转载表；计划包含推免与否未独立核实",
+        "sourceType": "third_party"
+      }
+    ]
+  },
+  {
+    "projectId": "xmu-137-085405",
+    "year": 2027,
+    "location": "厦门",
+    "city": "厦门",
+    "sources": [
+      {
+        "title": "厦门大学2027年硕士研究生招生专业目录",
+        "url": "https://zs.xmu.edu.cn/info/1056/36842.htm",
+        "year": 2027,
+        "publisher": "厦门大学招生办公室",
+        "scope": "附件表格入口",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "厦门大学2027年硕士研究生招生计划",
+        "url": "https://sc.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=245797",
+        "year": 2027,
+        "publisher": "圣才学习网",
+        "scope": "招生计划转载表；计划包含推免与否未独立核实",
+        "sourceType": "third_party"
+      }
+    ]
+  },
+  {
+    "projectId": "xmu-360-085410",
+    "year": 2027,
+    "location": "厦门",
+    "city": "厦门",
+    "sources": [
+      {
+        "title": "厦门大学2027年硕士研究生招生专业目录",
+        "url": "https://zs.xmu.edu.cn/info/1056/36842.htm",
+        "year": 2027,
+        "publisher": "厦门大学招生办公室",
+        "scope": "附件表格入口",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "厦门大学2027年硕士研究生招生计划",
+        "url": "https://sc.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=245797",
+        "year": 2027,
+        "publisher": "圣才学习网",
+        "scope": "招生计划转载表；计划包含推免与否未独立核实",
+        "sourceType": "third_party"
+      }
+    ]
+  },
+  {
+    "projectId": "xmu-390-085405",
+    "year": 2027,
+    "location": "厦门",
+    "city": "厦门",
+    "sources": [
+      {
+        "title": "厦门大学2027年硕士研究生招生专业目录",
+        "url": "https://zs.xmu.edu.cn/info/1056/36842.htm",
+        "year": 2027,
+        "publisher": "厦门大学招生办公室",
+        "scope": "附件表格入口",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "厦门大学2027年硕士研究生招生计划",
+        "url": "https://sc.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=245797",
+        "year": 2027,
+        "publisher": "圣才学习网",
+        "scope": "招生计划转载表；计划包含推免与否未独立核实",
+        "sourceType": "third_party"
+      }
+    ]
+  },
+  {
+    "projectId": "xmu-131-085412-nf",
+    "year": 2027,
+    "location": "厦门",
+    "city": "厦门",
+    "sources": [
+      {
+        "title": "厦门大学2027年硕士研究生招生计划",
+        "url": "https://sc.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=245797",
+        "year": 2027,
+        "publisher": "圣才学习网",
+        "scope": "招生计划转载表；计划包含推免与否未独立核实",
+        "sourceType": "third_party"
+      }
+    ]
+  },
+  {
+    "projectId": "hnu-cs",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "湖南大学研招网在线咨询",
+        "url": "https://yz.chsi.com.cn/zxdy/forum--method-listDefault%2Cforumid-453607%2Cyear-2026%2Cstart-120.dhtml",
+        "year": 2027,
+        "publisher": "中国研究生招生信息网/湖南大学",
+        "scope": "学校回复计算机与网安085400均考408",
+        "sourceType": "official"
+      },
+      {
+        "title": "信息科学与工程学院2027年推免招生相关公告",
+        "url": "https://csee.hnu.edu.cn/info/1062/14218.htm",
+        "year": 2027,
+        "publisher": "湖南大学信息科学与工程学院",
+        "scope": "085400计算机技术",
+        "sourceType": "official"
+      },
+      {
+        "title": "2027考研择校数据汇总（含2026届考情）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2027,
+        "publisher": "N诺计算机考研",
+        "scope": "湖南大学信息科学与工程学院2027考试科目",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "湖南大学在线咨询（2027研考）",
+        "url": "https://yz.chsi.com.cn/zxdy/forum--forumid-453607,method-listDefault,year-2014,start-105.dhtml",
+        "year": 2027,
+        "publisher": "湖南大学/研招网",
+        "scope": "关于2027年电子信息专硕的补充提问",
+        "sourceType": "official",
+        "publishedDate": "2026-09-28"
+      }
+    ]
+  },
+  {
+    "projectId": "hnu-cy",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "湖南大学研招网在线咨询",
+        "url": "https://yz.chsi.com.cn/zxdy/forum--method-listDefault%2Cforumid-453607%2Cyear-2026%2Cstart-120.dhtml",
+        "year": 2027,
+        "publisher": "中国研究生招生信息网/湖南大学",
+        "scope": "学校回复计算机与网安085400均考408",
+        "sourceType": "official"
+      },
+      {
+        "title": "网络空间安全学院2027年硕士研究生招生考试科目调整公告",
+        "url": "https://cst.hnu.edu.cn/info/1053/1255.htm",
+        "year": 2027,
+        "publisher": "湖南大学网络空间安全学院",
+        "scope": "866调整为408",
+        "sourceType": "official",
+        "publishedDate": "2026-05-19"
+      },
+      {
+        "title": "2027考研择校数据汇总（含2026届考情）",
+        "url": "https://noobdream.com/zexiao/",
+        "year": 2027,
+        "publisher": "N诺计算机考研",
+        "scope": "湖南大学网络空间安全学院2027考试科目",
+        "sourceType": "third_party"
+      }
+    ]
+  },
+  {
+    "projectId": "csu-043-085400-01",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "中南大学2027年硕士研究生招生专业目录",
+        "url": "https://yzzyml.csu.edu.cn/news/MasterView.aspx?d=0ca8c9df-fe1f-4692-afba-bdcacd2f9eef",
+        "year": 2027,
+        "publisher": "中南大学",
+        "scope": "043、047学院085400全日制",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "中南大学2027年硕士研究生招生简章",
+        "url": "https://yz.csu.edu.cn/info/1011/1541.htm",
+        "year": 2027,
+        "publisher": "中南大学研究生招生办公室",
+        "scope": "目录计划不含推免、含国家专项",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "csu-043-085400-02",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "中南大学2027年硕士研究生招生专业目录",
+        "url": "https://yzzyml.csu.edu.cn/news/MasterView.aspx?d=0ca8c9df-fe1f-4692-afba-bdcacd2f9eef",
+        "year": 2027,
+        "publisher": "中南大学",
+        "scope": "043、047学院085400全日制",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "中南大学2027年硕士研究生招生简章",
+        "url": "https://yz.csu.edu.cn/info/1011/1541.htm",
+        "year": 2027,
+        "publisher": "中南大学研究生招生办公室",
+        "scope": "目录计划不含推免、含国家专项",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "csu-043-085400-03",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "中南大学2027年硕士研究生招生专业目录",
+        "url": "https://yzzyml.csu.edu.cn/news/MasterView.aspx?d=0ca8c9df-fe1f-4692-afba-bdcacd2f9eef",
+        "year": 2027,
+        "publisher": "中南大学",
+        "scope": "043、047学院085400全日制",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "中南大学2027年硕士研究生招生简章",
+        "url": "https://yz.csu.edu.cn/info/1011/1541.htm",
+        "year": 2027,
+        "publisher": "中南大学研究生招生办公室",
+        "scope": "目录计划不含推免、含国家专项",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "csu-047-085400-01",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "中南大学2027年硕士研究生招生专业目录",
+        "url": "https://yzzyml.csu.edu.cn/news/MasterView.aspx?d=0ca8c9df-fe1f-4692-afba-bdcacd2f9eef",
+        "year": 2027,
+        "publisher": "中南大学",
+        "scope": "043、047学院085400全日制",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "中南大学2027年硕士研究生招生简章",
+        "url": "https://yz.csu.edu.cn/info/1011/1541.htm",
+        "year": 2027,
+        "publisher": "中南大学研究生招生办公室",
+        "scope": "目录计划不含推免、含国家专项",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "csu-047-085400-02",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "中南大学2027年硕士研究生招生专业目录",
+        "url": "https://yzzyml.csu.edu.cn/news/MasterView.aspx?d=0ca8c9df-fe1f-4692-afba-bdcacd2f9eef",
+        "year": 2027,
+        "publisher": "中南大学",
+        "scope": "043、047学院085400全日制",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "中南大学2027年硕士研究生招生简章",
+        "url": "https://yz.csu.edu.cn/info/1011/1541.htm",
+        "year": 2027,
+        "publisher": "中南大学研究生招生办公室",
+        "scope": "目录计划不含推免、含国家专项",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "csu-047-085400-03",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "中南大学2027年硕士研究生招生专业目录",
+        "url": "https://yzzyml.csu.edu.cn/news/MasterView.aspx?d=0ca8c9df-fe1f-4692-afba-bdcacd2f9eef",
+        "year": 2027,
+        "publisher": "中南大学",
+        "scope": "043、047学院085400全日制",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "中南大学2027年硕士研究生招生简章",
+        "url": "https://yz.csu.edu.cn/info/1011/1541.htm",
+        "year": 2027,
+        "publisher": "中南大学研究生招生办公室",
+        "scope": "目录计划不含推免、含国家专项",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "csu-047-085400-04",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "中南大学2027年硕士研究生招生专业目录",
+        "url": "https://yzzyml.csu.edu.cn/news/MasterView.aspx?d=0ca8c9df-fe1f-4692-afba-bdcacd2f9eef",
+        "year": 2027,
+        "publisher": "中南大学",
+        "scope": "043、047学院085400全日制",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "中南大学2027年硕士研究生招生简章",
+        "url": "https://yz.csu.edu.cn/info/1011/1541.htm",
+        "year": 2027,
+        "publisher": "中南大学研究生招生办公室",
+        "scope": "目录计划不含推免、含国家专项",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "csu-047-085400-05",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "中南大学2027年硕士研究生招生专业目录",
+        "url": "https://yzzyml.csu.edu.cn/news/MasterView.aspx?d=0ca8c9df-fe1f-4692-afba-bdcacd2f9eef",
+        "year": 2027,
+        "publisher": "中南大学",
+        "scope": "043、047学院085400全日制",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "中南大学2027年硕士研究生招生简章",
+        "url": "https://yz.csu.edu.cn/info/1011/1541.htm",
+        "year": 2027,
+        "publisher": "中南大学研究生招生办公室",
+        "scope": "目录计划不含推免、含国家专项",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "projectId": "nudt-cs-085400-01",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "国防科技大学2027年硕士研究生招生简章及专业目录",
+        "url": "https://yjszs.nudt.edu.cn/attached/file/20261015/20261015180152_597.pdf",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "印刷页3、6、8、10、17及地方硕士电子对抗学院目录",
+        "sourceType": "official",
+        "publishedDate": "2026-10-15"
+      },
+      {
+        "title": "国防科技大学2027年地方硕士研究生考试招生计划",
+        "url": "https://yjszs.nudt.edu.cn/zsmh/pubweb/homePageList/detailed.view?keyId=14971",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "地方硕士计算机学院085400及电子对抗学院085400",
+        "sourceType": "official"
+      }
+    ],
+    "tuitionPerYear": 12000
+  },
+  {
+    "projectId": "nudt-cs-085400-02",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "国防科技大学2027年硕士研究生招生简章及专业目录",
+        "url": "https://yjszs.nudt.edu.cn/attached/file/20261015/20261015180152_597.pdf",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "印刷页3、6、8、10、17及地方硕士电子对抗学院目录",
+        "sourceType": "official",
+        "publishedDate": "2026-10-15"
+      },
+      {
+        "title": "国防科技大学2027年地方硕士研究生考试招生计划",
+        "url": "https://yjszs.nudt.edu.cn/zsmh/pubweb/homePageList/detailed.view?keyId=14971",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "地方硕士计算机学院085400及电子对抗学院085400",
+        "sourceType": "official"
+      }
+    ],
+    "tuitionPerYear": 12000
+  },
+  {
+    "projectId": "nudt-cs-085400-03",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "国防科技大学2027年硕士研究生招生简章及专业目录",
+        "url": "https://yjszs.nudt.edu.cn/attached/file/20261015/20261015180152_597.pdf",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "印刷页3、6、8、10、17及地方硕士电子对抗学院目录",
+        "sourceType": "official",
+        "publishedDate": "2026-10-15"
+      },
+      {
+        "title": "国防科技大学2027年地方硕士研究生考试招生计划",
+        "url": "https://yjszs.nudt.edu.cn/zsmh/pubweb/homePageList/detailed.view?keyId=14971",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "地方硕士计算机学院085400及电子对抗学院085400",
+        "sourceType": "official"
+      }
+    ],
+    "tuitionPerYear": 12000
+  },
+  {
+    "projectId": "nudt-cs-085400-04",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "国防科技大学2027年硕士研究生招生简章及专业目录",
+        "url": "https://yjszs.nudt.edu.cn/attached/file/20261015/20261015180152_597.pdf",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "印刷页3、6、8、10、17及地方硕士电子对抗学院目录",
+        "sourceType": "official",
+        "publishedDate": "2026-10-15"
+      },
+      {
+        "title": "国防科技大学2027年地方硕士研究生考试招生计划",
+        "url": "https://yjszs.nudt.edu.cn/zsmh/pubweb/homePageList/detailed.view?keyId=14971",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "地方硕士计算机学院085400及电子对抗学院085400",
+        "sourceType": "official"
+      }
+    ],
+    "tuitionPerYear": 12000
+  },
+  {
+    "projectId": "nudt-cs-085400-05",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "国防科技大学2027年硕士研究生招生简章及专业目录",
+        "url": "https://yjszs.nudt.edu.cn/attached/file/20261015/20261015180152_597.pdf",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "印刷页3、6、8、10、17及地方硕士电子对抗学院目录",
+        "sourceType": "official",
+        "publishedDate": "2026-10-15"
+      },
+      {
+        "title": "国防科技大学2027年地方硕士研究生考试招生计划",
+        "url": "https://yjszs.nudt.edu.cn/zsmh/pubweb/homePageList/detailed.view?keyId=14971",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "地方硕士计算机学院085400及电子对抗学院085400",
+        "sourceType": "official"
+      }
+    ],
+    "tuitionPerYear": 12000
+  },
+  {
+    "projectId": "nudt-cs-085400-06",
+    "year": 2027,
+    "location": "长沙",
+    "city": "长沙",
+    "sources": [
+      {
+        "title": "国防科技大学2027年硕士研究生招生简章及专业目录",
+        "url": "https://yjszs.nudt.edu.cn/attached/file/20261015/20261015180152_597.pdf",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "印刷页3、6、8、10、17及地方硕士电子对抗学院目录",
+        "sourceType": "official",
+        "publishedDate": "2026-10-15"
+      },
+      {
+        "title": "国防科技大学2027年地方硕士研究生考试招生计划",
+        "url": "https://yjszs.nudt.edu.cn/zsmh/pubweb/homePageList/detailed.view?keyId=14971",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "地方硕士计算机学院085400及电子对抗学院085400",
+        "sourceType": "official"
+      }
+    ],
+    "tuitionPerYear": 12000
+  },
+  {
+    "projectId": "nudt-ec-085400",
+    "year": 2027,
+    "location": "合肥",
+    "city": "合肥",
+    "sources": [
+      {
+        "title": "国防科技大学2027年硕士研究生招生简章及专业目录",
+        "url": "https://yjszs.nudt.edu.cn/attached/file/20261015/20261015180152_597.pdf",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "印刷页3、6、8、10、17及地方硕士电子对抗学院目录",
+        "sourceType": "official",
+        "publishedDate": "2026-10-15"
+      },
+      {
+        "title": "国防科技大学2027年地方硕士研究生考试招生计划",
+        "url": "https://yjszs.nudt.edu.cn/zsmh/pubweb/homePageList/detailed.view?keyId=14971",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "地方硕士计算机学院085400及电子对抗学院085400",
+        "sourceType": "official"
+      }
+    ],
+    "tuitionPerYear": 12000
+  },
+  {
+    "projectId": "nwafu-cs",
+    "year": 2027,
+    "location": "杨凌",
+    "city": "杨凌",
+    "sources": [
+      {
+        "title": "西北农林科技大学2027年硕士研究生招生简章",
+        "url": "https://yz.nwafu.edu.cn/zsxx/ssszs/00589b8649ae41f2b1004198998e567f.htm",
+        "year": 2027,
+        "publisher": "西北农林科技大学研究生院",
+        "scope": "专业学位学制、学费",
+        "sourceType": "official"
+      },
+      {
+        "title": "西北农林科技大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.nwsuaf.edu.cn/wbtlm/5e47dc936430432f8d54917264e43599.htm",
+        "year": 2027,
+        "publisher": "西北农林科技大学研究生院",
+        "scope": "PDF嵌入目录未完整提取",
+        "sourceType": "official",
+        "publishedDate": "2026-10-01"
+      },
+      {
+        "title": "信息工程学院2027年招收优秀应届本科毕业生免试攻读研究生工作的通知",
+        "url": "https://cie.nwafu.edu.cn/dtytz/tzgg/604d4eff03074dff9cbaf0f992a5fd3e.htm",
+        "year": 2027,
+        "publisher": "西北农林科技大学信息工程学院",
+        "scope": "全日制专业学位硕士招生专业",
+        "sourceType": "official"
+      }
+    ],
+    "tuitionPerYear": 12000,
+    "durationYears": 3
+  },
+  {
+    "projectId": "nwafu-ai",
+    "year": 2027,
+    "location": "杨凌",
+    "city": "杨凌",
+    "sources": [
+      {
+        "title": "西北农林科技大学2027年硕士研究生招生简章",
+        "url": "https://yz.nwafu.edu.cn/zsxx/ssszs/00589b8649ae41f2b1004198998e567f.htm",
+        "year": 2027,
+        "publisher": "西北农林科技大学研究生院",
+        "scope": "专业学位学制、学费",
+        "sourceType": "official"
+      },
+      {
+        "title": "西北农林科技大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.nwsuaf.edu.cn/wbtlm/5e47dc936430432f8d54917264e43599.htm",
+        "year": 2027,
+        "publisher": "西北农林科技大学研究生院",
+        "scope": "PDF嵌入目录未完整提取",
+        "sourceType": "official",
+        "publishedDate": "2026-10-01"
+      },
+      {
+        "title": "信息工程学院2027年招收优秀应届本科毕业生免试攻读研究生工作的通知",
+        "url": "https://cie.nwafu.edu.cn/dtytz/tzgg/604d4eff03074dff9cbaf0f992a5fd3e.htm",
+        "year": 2027,
+        "publisher": "西北农林科技大学信息工程学院",
+        "scope": "全日制专业学位硕士招生专业",
+        "sourceType": "official"
+      }
+    ],
+    "tuitionPerYear": 12000,
+    "durationYears": 3
+  }
+]

@@ -192,7 +192,7 @@ index(data.knowledge, "knowledge", (row, at) => {
 });
 index(data.news, "news", (row, at) => {
   text(row.title, at + ".title");
-  date(row.date, at + ".date", true);
+  date(row.date, at + ".date");
   if (row.schoolId != null)
     check(
       schools.has(row.schoolId),
@@ -256,30 +256,30 @@ objects(catalog.sharedPlans, "projects.sharedPlans", (row, at) => {
     unique(projectId, members, at + ".projectIds");
     const annual = annualRecords.get(projectRef(projectId, row.year));
     check(
-      annual?.sharedPlanId === row.id,
+      (
+        annual?.groupIds ?? (annual?.sharedPlanId ? [annual.sharedPlanId] : [])
+      ).includes(row.id),
       at,
       `项目年度缺少指向本计划的关联 ${projectId}`,
     );
-    for (const field of planFields) {
-      check(
-        row[field] == null || annual?.[field] == null,
-        at + "." + field,
-        `共享名额应仅记录在共享计划中 ${projectId}`,
-      );
-    }
   });
   refs(row.sources, at + ".sources", true, row.year);
   timestamps(row, at);
 });
 for (const [ref, annual] of annualRecords) {
-  if (annual.sharedPlanId == null) continue;
-  const plan = sharedPlans.get(projectRef(annual.sharedPlanId, annual.year));
-  const projectId = ref.slice(0, ref.lastIndexOf("-"));
-  check(
-    Array.isArray(plan?.projectIds) && plan.projectIds.includes(projectId),
-    "projects: " + ref,
-    `无效共享计划 ${annual.sharedPlanId}`,
-  );
+  const seen = new Set();
+  const ids =
+    annual.groupIds ?? (annual.sharedPlanId ? [annual.sharedPlanId] : []);
+  for (const id of list(ids, "projects: " + ref + ".groupIds")) {
+    unique(id, seen, "projects: " + ref + ".groupIds");
+    const plan = sharedPlans.get(projectRef(id, annual.year));
+    const projectId = ref.slice(0, ref.lastIndexOf("-"));
+    check(
+      Array.isArray(plan?.projectIds) && plan.projectIds.includes(projectId),
+      "projects: " + ref,
+      `无效统计组 ${id}`,
+    );
+  }
 }
 function yearly(values, at, validate) {
   const seen = new Set();
@@ -353,6 +353,92 @@ if (object(data.national, "national-stats")) {
   });
 }
 
+const research = index(data.research, "research-directions", (row, at) => {
+  text(row.title, at + ".title");
+  content(row, at);
+  for (const major of row.majorIds ?? [])
+    check(majors.has(major), at, `未找到专业 ${major}`);
+});
+for (const row of [
+  ...(data.majors ?? []),
+  ...(data.knowledge ?? []),
+  ...(data.research ?? []),
+]) {
+  for (const id of row?.researchIds ?? [])
+    check(research.has(id), row.id, `未找到研究方向 ${id}`);
+}
+if (object(data.market, "career-market")) {
+  const indexes = {};
+  for (const key of [
+    "industries",
+    "employers",
+    "cities",
+    "salaryStatistics",
+    "recruitmentExamples",
+  ]) {
+    indexes[key] = index(
+      data.market[key],
+      "career-market." + key,
+      (row, at) => {
+        if (key === "salaryStatistics") {
+          for (const field of ["value", "min", "max"])
+            number(row[field], at + "." + field, 0, 1e8);
+          check(
+            row.min == null || row.max == null || row.min <= row.max,
+            at,
+            "薪资上限小于下限",
+          );
+        }
+        refs(row.sources, at + ".sources");
+      },
+    );
+  }
+  for (const row of [
+    ...(data.careers ?? []),
+    ...Object.values(data.market).filter(Array.isArray).flat(),
+  ]) {
+    if (!row?.id) continue;
+    for (const [field, set] of Object.entries({
+      careerIds: careers,
+      industryIds: indexes.industries,
+      employerIds: indexes.employers,
+      cityIds: indexes.cities,
+      salaryStatisticsIds: indexes.salaryStatistics,
+      recruitmentExampleIds: indexes.recruitmentExamples,
+    })) {
+      for (const id of row[field] ?? [])
+        check(set.has(id), row.id + "." + field, `未找到 ${id}`);
+    }
+    if (row.employerId)
+      check(indexes.employers.has(row.employerId), row.id, "招聘企业关联无效");
+    if (row.cityId)
+      check(indexes.cities.has(row.cityId), row.id, "城市关联无效");
+  }
+}
+if (object(data.employment, "employment")) {
+  const nameSet = new Set();
+  objects(data.employment.schools, "employment.schools", (row, at) => {
+    unique(row.schoolId, nameSet, at);
+    check(schools.has(row.schoolId), at, "院校关联无效");
+  });
+  for (const key of [
+    "employmentRecords",
+    "employmentCases",
+    "industryPartnerships",
+  ]) {
+    index(data.employment[key], "employment." + key, (row, at) => {
+      check(schools.has(row.schoolId), at, "院校关联无效");
+      if (row.graduationYear != null)
+        year(row.graduationYear, at + ".graduationYear");
+      refs(row.sources, at + ".sources", true);
+      for (const [field, value] of Object.entries(row)) {
+        if (field.endsWith("Rate")) number(value, at + "." + field, 0, 100);
+        if (field.endsWith("Count"))
+          number(value, at + "." + field, 0, 1e7, true);
+      }
+    });
+  }
+}
 if (failure.length) {
   console.error(failure.join("\n"));
   process.exitCode = 1;

@@ -11,10 +11,42 @@
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027招生目录或招生入口",
+        "url": "https://gs.whu.edu.cn/zsgz/sszs/a2027n.htm",
+        "publisher": "武汉大学",
+        "scope": "2027硕士招生",
+        "sourceType": "official"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "2027分学院官方目录已定位，计算机、网安、人工智能、卓工、前沿交叉页面返回403；历史按汇总口径保留。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://gs.whu.edu.cn/zsgz/sszs/a2027n.htm"
+          }
+        ]
       }
     ]
   },
@@ -31,10 +63,42 @@
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027招生目录或招生入口",
+        "url": "https://yanzhao.hust.edu.cn/Master/Zsml_View.aspx",
+        "publisher": "华中科技大学",
+        "scope": "2027硕士招生",
+        "sourceType": "official"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "2027动态目录访问超时；软件工程通过目录转录核实，其他项目以历史记录列为待核。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yanzhao.hust.edu.cn/Master/Zsml_View.aspx"
+          }
+        ]
       }
     ]
   },
@@ -43,15 +107,106 @@
     "name": "北京大学",
     "city": "北京",
     "province": "北京",
-    "aliases": [],
+    "aliases": [
+      "北大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "北京大学2027年硕士研究生招生专业目录（按院系）",
+        "url": "https://admission.pku.edu.cn/zsxx/sszs/zyml/2027/yx/zsml_ss_yx.html",
+        "publisher": "北京大学研究生招生办公室",
+        "scope": "院系索引",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "北京大学2027年硕士招生专业目录（院系017）",
+        "url": "https://admission.pku.edu.cn/zsxx/sszs/zyml/2027/yx/zsml_ss_yx_00017.pdf",
+        "publisher": "北京大学研究生招生办公室",
+        "scope": "PDF第1页；专业表及备注",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京大学深圳研究生院2027年硕士研究生招生专业目录",
+        "url": "https://admission.pkusz.edu.cn/info/1006/1384.htm",
+        "publisher": "北京大学深圳研究生院",
+        "scope": "信息工程学院、科学智能学院及其他院系",
+        "sourceType": "official",
+        "publishedDate": "2026-10-09"
+      },
+      {
+        "title": "北京大学2027年硕士招生专业目录（院系101）",
+        "url": "https://admission.pku.edu.cn/zsxx/sszs/zyml/2027/yx/zsml_ss_yx_00101.pdf",
+        "publisher": "北京大学研究生招生办公室",
+        "scope": "PDF第1页；专业表及备注",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京大学2027年硕士招生专业目录（院系106）",
+        "url": "https://admission.pku.edu.cn/zsxx/sszs/zyml/2027/yx/zsml_ss_yx_00106.pdf",
+        "publisher": "北京大学研究生招生办公室",
+        "scope": "PDF第1页；专业表及备注",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京大学2027年硕士招生专业目录（院系240）",
+        "url": "https://admission.pku.edu.cn/zsxx/sszs/zyml/2027/yx/zsml_ss_yx_00240.pdf",
+        "publisher": "北京大学研究生招生办公室",
+        "scope": "PDF第1页；专业表及备注",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京大学2027年拟录取推荐免试硕士研究生公示名单（校本部）",
+        "url": "https://admission.pku.edu.cn/docs/20261020165327499114.pdf",
+        "publisher": "北京大学研究生招生办公室",
+        "scope": "PDF第6—13页：第6页23条、第7—12页各29条、第13页24条；按拟录取院系和专业计数，不提取个人信息",
+        "sourceType": "official",
+        "publishedDate": "2026-10-20"
+      },
+      {
+        "title": "北京大学软件与微电子学院2027年电子信息专业硕士研究生招生说明",
+        "url": "https://ss.pku.edu.cn/zsxx/zstz/56b3c3a23adf41d493db0e9f9bb91647.htm",
+        "publisher": "北京大学软件与微电子学院",
+        "scope": "第一节方向招生表；第三节住宿说明",
+        "sourceType": "official",
+        "publishedDate": "2026-10-12"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "101计算机学院及106智能学院的目录为学硕；深圳信息工程、科学智能为学硕。；软件与微电子学院2027的05—07仅推免；其他非408方向排除。；未计数2027实际推免；尚未完整遍历所有非典型跨学科单位。；全专业推免公示计数221，方向未公布，因此408方向实际推免人数仍未知。；未取得的年份不生成虚构记录；缺失项目不代表未招生。"
+            ],
+            [
+              "研究优势",
+              "软件开发、云计算与服务工程；人工智能、智能系统、自然语言处理"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://admission.pku.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -60,15 +215,72 @@
     "name": "中国人民大学",
     "city": "北京",
     "province": "北京",
-    "aliases": [],
+    "aliases": [
+      "人大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "中国人民大学信息学院2027年硕士研究生招生相关说明",
+        "url": "https://info.ruc.edu.cn/rcpy/gcss/zsxx2/9d2d066935a849a79dd0e4a34139765c.htm",
+        "publisher": "中国人民大学信息学院",
+        "scope": "电子信息专业学位招生说明",
+        "sourceType": "official",
+        "publishedDate": "2026-10-22"
+      },
+      {
+        "title": "中国人民大学2027年硕士研究生招生专业目录",
+        "url": "https://kaoyan.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=245838",
+        "publisher": "圣才考研网",
+        "scope": "166、387院系专业方向表",
+        "sourceType": "secondary_republication"
+      },
+      {
+        "title": "中国人民大学2027年硕士研究生招生简章",
+        "url": "https://yz.chsi.com.cn/zsgs/zsjz/detail.action?schCode=10002&zsgsId=3551120189",
+        "publisher": "中国人民大学（研招网发布）",
+        "scope": "学习方式、学费和住宿",
+        "sourceType": "official"
+      },
+      {
+        "title": "高瓴人工智能学院2027年接收推荐免试研究生相关通知",
+        "url": "https://ai.ruc.edu.cn/xwgg/xygg/20260623106.html",
+        "publisher": "中国人民大学高瓴人工智能学院",
+        "scope": "专业学位硕士及学制",
+        "sourceType": "official",
+        "publishedDate": "2026-06-23"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "各学院具体培养地点和实际统考计划待核；高瓴、智慧治理的2027专业目录目前来自辅助来源。；未取得的年份不生成虚构记录；缺失项目不代表未招生。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://pgs.ruc.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -77,15 +289,106 @@
     "name": "清华大学",
     "city": "北京",
     "province": "北京",
-    "aliases": [],
+    "aliases": [
+      "清华"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yz.tsinghua.edu.cn/zsxx/sszs/jzml.htm",
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "2027目录索引",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=024",
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系024，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=410",
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系410，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=412",
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系412，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=599",
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系599，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=025",
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系025，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=047",
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系047，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "清华大学2027年硕士研究生招生专业目录_统招(含招生人数)",
+        "url": "https://yzbm.tsinghua.edu.cn/publish/s02/s0203/detail/c0fb8664-255f-4d6f-bf40-a5893e3343ec?ksfs=&yxsdm=601",
+        "publisher": "清华大学研究生招生办公室",
+        "scope": "年度2027，院系601，专业及方向行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "已查025自动化系相关方向非408，047交叉信息研究院未列相关项目，601全球创新学院408为学硕。；未取得的年份不生成虚构记录；缺失项目不代表未招生。；已补入历史统考样本数据，部分年份自命题代码与现年不同；实际推免人数仍缺。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.tsinghua.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -94,15 +397,83 @@
     "name": "北京航空航天大学",
     "city": "北京",
     "province": "北京",
-    "aliases": [],
+    "aliases": [
+      "北航"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "北京航空航天大学硕士研究生招生专业目录查询",
+        "url": "https://yzb.buaa.edu.cn/xlss/zymlcx.htm",
+        "publisher": "北京航空航天大学研究生招生办公室",
+        "scope": "2027动态查询；院系选项未能完整提取",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京航空航天大学2027年硕士研究生招生简章",
+        "url": "https://news.buaa.edu.cn/info/1002/69943.htm",
+        "publisher": "北京航空航天大学",
+        "scope": "招生计划及报考条件",
+        "sourceType": "official"
+      },
+      {
+        "title": "人工智能学院2027年硕士研究生招生考试科目调整公告",
+        "url": "https://iai.buaa.edu.cn/info/1168/1502.htm",
+        "publisher": "北京航空航天大学人工智能学院",
+        "scope": "科目调整正文",
+        "sourceType": "official",
+        "publishedDate": "2026-06-16"
+      },
+      {
+        "title": "网络空间安全学院2027年硕士研究生招生考试科目调整公告",
+        "url": "https://cst.buaa.edu.cn/info/1058/1310.htm",
+        "publisher": "北京航空航天大学网络空间安全学院",
+        "scope": "科目调整正文",
+        "sourceType": "official",
+        "publishedDate": "2026-06-09"
+      },
+      {
+        "title": "人工智能学院2027年接收推荐免试研究生相关通知",
+        "url": "https://iai.buaa.edu.cn/info/1168/1796.htm",
+        "publisher": "北京航空航天大学人工智能学院",
+        "scope": "085410专业学位全日制；硕博计划口径需核",
+        "sourceType": "official"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "异地培养及联合培养项目待核。；未取得的年份不生成虚构记录；缺失项目不代表未招生。；2027动态目录尚未完整提取；部分项目由改考公告和第三方考情确认历史存在，正式招生名额未核实。；2026复试通知给出部分校区和专项名额；不得把2026培养单位名额用于2027。"
+            ],
+            [
+              "双一流学科",
+              "计算机科学与技术；软件工程；控制科学与工程"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yzb.buaa.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -111,15 +482,80 @@
     "name": "北京理工大学",
     "city": "北京",
     "province": "北京",
-    "aliases": [],
+    "aliases": [
+      "北理工"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "北京理工大学2027年硕士研究生招生专业目录",
+        "url": "https://grd.bit.edu.cn/zsgz/ssyjs/bslc_ss/3f58f00b45a24926bc5ba25f9682e0b3.htm",
+        "publisher": "北京理工大学研究生院",
+        "scope": "XLS附件未能读取",
+        "sourceType": "official",
+        "publishedDate": "2026-10-09"
+      },
+      {
+        "title": "北京理工大学2027年硕士研究生招生考试科目调整公告",
+        "url": "https://grd.bit.edu.cn/zsgz/zsxx/b09aa8505207404abedad0c4be2f5bce.htm",
+        "publisher": "北京理工大学研究生院",
+        "scope": "085405方向00考试科目调整",
+        "sourceType": "official",
+        "publishedDate": "2026-07-06"
+      },
+      {
+        "title": "计算机学院2026年硕士研究生招生复试录取工作方案",
+        "url": "https://cs.bit.edu.cn/tzgg/73af61ff989544648c966d7f9b8155ad.htm",
+        "publisher": "北京理工大学计算机学院",
+        "scope": "复试分数线及招生计划表，复试方式和综合成绩",
+        "sourceType": "official",
+        "publishedDate": "2026-03-19"
+      },
+      {
+        "title": "北京理工大学珠海2027年接收推荐免试研究生相关通知",
+        "url": "https://grd.bitzh.edu.cn/zsgz/zsxx/df2e267bf06242d4952f2ac7ab9af27f.htm",
+        "publisher": "北京理工大学珠海",
+        "scope": "085404及085410专业学位",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京理工大学2027年硕士研究生招生简章",
+        "url": "https://grd.bit.edu.cn/zsgz/ssyjs/gzzd_ss/256b73c5ca7d41b5b279b8f34dd39192.htm",
+        "publisher": "北京理工大学研究生院",
+        "scope": "招生目录名额为统考计划，不含推免",
+        "sourceType": "official"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "2027官方XLS附件无法读取，不能确认完整目录。；2026异地计划仅作为历史组记录，不代表2027名额。；未取得的年份不生成虚构记录；缺失项目不代表未招生。；2027正式目录仍待读取；新增医学与人工智能候选项目，历史数据不代表2027招生资格。；2026复试通知给出部分校区和专项名额；不得把2026培养单位名额用于2027。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://grd.bit.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -128,15 +564,73 @@
     "name": "中国农业大学",
     "city": "北京",
     "province": "北京",
-    "aliases": [],
+    "aliases": [
+      "中国农大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "中国农业大学2027年硕士研究生招生简章",
+        "url": "https://yz.cau.edu.cn/art/2026/10/8/art_41740_1139718.html",
+        "publisher": "中国农业大学研究生招生办公室",
+        "scope": "培养地点、住宿、招生目录附件",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "信息与电气工程学院2027年研究生招生相关通知",
+        "url": "https://ciee.cau.edu.cn/art/2026/6/22/art_50390_1119305.html",
+        "publisher": "中国农业大学信息与电气工程学院",
+        "scope": "考试科目调整相关专业",
+        "sourceType": "official",
+        "publishedDate": "2026-06-22"
+      },
+      {
+        "title": "中国农业大学2027年硕士研究生招生专业目录",
+        "url": "https://kaoyan.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=246832",
+        "publisher": "圣才考研网",
+        "scope": "308表，085404及095136行",
+        "sourceType": "secondary_republication"
+      },
+      {
+        "title": "信息与电气工程学院2026年硕士研究生招生复试录取实施细则",
+        "url": "https://ciee.cau.edu.cn/art/2026/3/24/art_50390_1104031.html",
+        "publisher": "中国农业大学信息与电气工程学院",
+        "scope": "复试线、复试形式及录取原则",
+        "sourceType": "official",
+        "publishedDate": "2026-03-24"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "2027专业目录官方附件未提取；转载目录给出的计划须复核。；095136使用314数学（农），仅作为跨学科备选。；未取得的年份不生成虚构记录；缺失项目不代表未招生。；2027目录转载给出计算机技术100人、拟推免23人；2026码砖与N诺录取人数不一致，分开记录。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.cau.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -145,15 +639,71 @@
     "name": "北京师范大学",
     "city": "北京",
     "province": "北京",
-    "aliases": [],
+    "aliases": [
+      "北师大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "北京师范大学2027年硕士研究生招生专业目录：人工智能学院",
+        "url": "https://yz.bnu.edu.cn/content/zyml/2027/ssxx_yxsm-040.html",
+        "publisher": "北京师范大学研究生招生办公室",
+        "scope": "040；085404及085410方向表",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京师范大学2027年硕士研究生招生专业目录：未来技术学院",
+        "url": "https://yz.bnu.edu.cn/content/zyml/2027/ssxx_yxsm-051.html",
+        "publisher": "北京师范大学研究生招生办公室",
+        "scope": "051；专业目录",
+        "sourceType": "official"
+      },
+      {
+        "title": "北京师范大学2023年硕士研究生招生专业目录：人工智能学院",
+        "url": "https://yz.bnu.edu.cn/content/zyml/2023/ssxx_yxsm-040.html",
+        "publisher": "北京师范大学研究生招生办公室",
+        "scope": "040专业目录及方向",
+        "sourceType": "official"
+      },
+      {
+        "title": "2026年硕士复试成绩、拟录取名单公示",
+        "url": "https://yz.bnu.edu.cn/detail/af923bd4-34ae-45ac-90ca-6486731d9d29",
+        "publisher": "北京师范大学研究生招生办公室",
+        "scope": "三批名单公示期限均已结束；仅个人查询",
+        "sourceType": "official",
+        "publishedDate": "2026-09-20"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "2023年040目录未列电子信息专硕；2024—2026历史大类与2027专业不可直接分配。；2027推免实际人数与具体培养地点未核实。；未取得的年份不生成虚构记录；缺失项目不代表未招生。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.bnu.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -162,15 +712,64 @@
     "name": "中央民族大学",
     "city": "北京",
     "province": "北京",
-    "aliases": [],
+    "aliases": [
+      "中央民大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "中央民族大学2027年硕士研究生招生专业目录",
+        "url": "https://grs.muc.edu.cn/info/1178/8294.htm",
+        "publisher": "中央民族大学研究生院",
+        "scope": "全校目录，017信息工程学院及其他院系",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "中央民族大学2027年硕士研究生招生简章",
+        "url": "https://grs.muc.edu.cn/info/1178/8274.htm",
+        "publisher": "中央民族大学研究生院",
+        "scope": "学习方式及招生计划",
+        "sourceType": "official"
+      },
+      {
+        "title": "中央民族大学2027年硕士研究生招生专业目录",
+        "url": "https://grs.muc.edu.cn/yjsyzsw/info/1062/6149.htm",
+        "publisher": "中央民族大学研究生招生网",
+        "scope": "信息工程学院085404、085410行",
+        "sourceType": "official"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "2027官方目录：017信息工程学院085404及085410均为853数据结构，085401为855；081200及083500的408为学硕。085404单独考试亦非408。；未发现符合全日制计算机类专硕408条件的项目；历史录取不作为当前项目比较。；未取得的年份不生成虚构记录；缺失项目不代表未招生。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://grs.muc.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -179,15 +778,78 @@
     "name": "南开大学",
     "city": "天津",
     "province": "天津",
-    "aliases": [],
+    "aliases": [
+      "南开"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027年硕士研究生招生目录或发布入口",
+        "url": "https://yzb.nankai.edu.cn/2026/1008/c5509a603818/page.htm",
+        "publisher": "南开大学",
+        "scope": "2027年度目录入口",
+        "sourceType": "official",
+        "publishedDate": "2026-10-15"
+      },
+      {
+        "title": "2027年工程硕博士培养改革专项接收推免生预报名通知",
+        "url": "https://cee.nankai.edu.cn/2026/0821/c37068a602145/page.htm",
+        "publisher": "南开大学",
+        "scope": "085400相关方向；仅推免依据",
+        "sourceType": "official",
+        "publishedDate": "2026-08-21"
+      },
+      {
+        "title": "南开大学计算机学院、密码与网络空间安全学院2027年推免预报名通知",
+        "url": "https://cc.nankai.edu.cn/2026/0709/c13297a600172/page.htm",
+        "publisher": "南开大学计算机学院",
+        "scope": "专业学位招生类型",
+        "sourceType": "official",
+        "publishedDate": "2026-07-09"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://zhuanti.sdut.edu.cn/2022/0224/c3137a452803/page.htm",
+        "publisher": "山东理工大学转载教育部名单",
+        "scope": "南开大学条目",
+        "sourceType": "official_university_republication",
+        "publishedDate": "2022-02-24"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "官方目录正文未取得；推免公告及考试调整线索不足以确认全日制统考；本轮增加第三方历年录取统计，2027项目仍有未穷尽的部分。"
+            ],
+            [
+              "双一流学科",
+              "应用经济学；世界史；数学；化学；统计学；材料科学与工程"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yzb.nankai.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -196,15 +858,62 @@
     "name": "天津大学",
     "city": "天津",
     "province": "天津",
-    "aliases": [],
+    "aliases": [
+      "天大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027年硕士研究生招生目录或发布入口",
+        "url": "https://yzb.tju.edu.cn/xwzx/tkss_xw/202610/P020261008544956535039.pdf",
+        "publisher": "天津大学",
+        "scope": "2027年度目录入口",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://zhuanti.sdut.edu.cn/2022/0224/c3137a452803/page.htm",
+        "publisher": "山东理工大学转载教育部名单",
+        "scope": "天津大学条目",
+        "sourceType": "official_university_republication",
+        "publishedDate": "2022-02-24"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "已核对2027目录有关页；统考拟招人数为学院总计。医学和新媒体交叉方向单独标记。；本轮增加第三方历年录取统计，2027项目仍有未穷尽的部分。"
+            ],
+            [
+              "双一流学科",
+              "化学；材料科学与工程；动力工程及工程热物理；化学工程与技术；管理科学与工程"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yzb.tju.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -213,15 +922,84 @@
     "name": "大连理工大学",
     "city": "大连",
     "province": "辽宁",
-    "aliases": [],
+    "aliases": [
+      "大工"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027年硕士研究生招生目录或发布入口",
+        "url": "https://yjszs.dlut.edu.cn/zsbm/zsml/sszsml/index/2027",
+        "publisher": "大连理工大学",
+        "scope": "2027年度目录入口",
+        "sourceType": "official"
+      },
+      {
+        "title": "大连理工大学2027年硕士研究生招生章程",
+        "url": "https://gs.dlut.edu.cn/info/1172/51892.htm",
+        "publisher": "大连理工大学",
+        "scope": "招生章程",
+        "sourceType": "official",
+        "publishedDate": "2026-09-28"
+      },
+      {
+        "title": "大连理工大学2027年单独考试硕士研究生招生章程",
+        "url": "https://gs.dlut.edu.cn/info/1157/51942.htm",
+        "publisher": "大连理工大学",
+        "scope": "610/085404/06、085410/02均为非全日制，排除",
+        "sourceType": "official"
+      },
+      {
+        "title": "计算机科学与技术学院2026年硕士研究生复试录取办法",
+        "url": "https://cs.dlut.edu.cn/info/1256/6000.htm",
+        "publisher": "大连理工大学计算机科学与技术学院",
+        "scope": "第一部分（一）统考招生计划与分数线；第（六）及第四部分",
+        "sourceType": "official",
+        "publishedDate": "2026-03-20"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://zhuanti.sdut.edu.cn/2022/0224/c3137a452803/page.htm",
+        "publisher": "山东理工大学转载教育部名单",
+        "scope": "大连理工大学条目",
+        "sourceType": "official_university_republication",
+        "publishedDate": "2022-02-24"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "动态目录超时；需复核全部校区与2027考试科目；本轮增加第三方历年录取统计，2027项目仍有未穷尽的部分。"
+            ],
+            [
+              "双一流学科",
+              "力学；机械工程；化学工程与技术"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://gs.dlut.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -230,15 +1008,78 @@
     "name": "东北大学",
     "city": "沈阳",
     "province": "辽宁",
-    "aliases": [],
+    "aliases": [
+      "东大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027年硕士研究生招生目录或发布入口",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480171/pagem.htm",
+        "publisher": "东北大学",
+        "scope": "2027年度目录入口",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "东北大学2027年硕士研究生招生章程",
+        "url": "https://yz.neu.edu.cn/2026/0930/c5933a480167/page.htm",
+        "publisher": "东北大学",
+        "scope": "培养校区及中美双学位条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://zhuanti.sdut.edu.cn/2022/0224/c3137a452803/page.htm",
+        "publisher": "山东理工大学转载教育部名单",
+        "scope": "东北大学条目",
+        "sourceType": "official_university_republication",
+        "publishedDate": "2022-02-24"
+      },
+      {
+        "title": "东北大学关于调整2025年硕士研究生部分招生专业及初试科目的通知",
+        "url": "https://yz.neu.edu.cn/2024/0612/c5932a256861/pagem.htm",
+        "publisher": "东北大学",
+        "scope": "计算机科学与工程学院085404、085410",
+        "sourceType": "official",
+        "publishedDate": "2024-06-12"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "官方2027目录可读取；已摘录软件学院与计算机科学与工程学院408方向；本轮增加第三方历年录取统计，2027项目仍有未穷尽的部分。"
+            ],
+            [
+              "双一流学科",
+              "冶金工程；控制科学与工程"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.neu.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -247,15 +1088,62 @@
     "name": "吉林大学",
     "city": "长春",
     "province": "吉林",
-    "aliases": [],
+    "aliases": [
+      "吉大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027年硕士研究生招生目录或发布入口",
+        "url": "https://yzb.jlu.edu.cn/info/1047/3678.htm",
+        "publisher": "吉林大学",
+        "scope": "2027年度目录入口",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://zhuanti.sdut.edu.cn/2022/0224/c3137a452803/page.htm",
+        "publisher": "山东理工大学转载教育部名单",
+        "scope": "吉林大学条目",
+        "sourceType": "official_university_republication",
+        "publishedDate": "2022-02-24"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "2027全日制目录附件未取得；2026改考公告及历史学院分项可作线索；本轮增加第三方历年录取统计，2027项目仍有未穷尽的部分。"
+            ],
+            [
+              "双一流学科",
+              "考古学；数学；物理学；化学；生物学；材料科学与工程"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yzb.jlu.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -264,15 +1152,70 @@
     "name": "哈尔滨工业大学",
     "city": "哈尔滨",
     "province": "黑龙江",
-    "aliases": [],
+    "aliases": [
+      "哈工大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027年硕士研究生招生目录或发布入口",
+        "url": "https://yzb.hit.edu.cn/2026/0924/c22281a401989/page.htm",
+        "publisher": "哈尔滨工业大学",
+        "scope": "2027年度目录入口",
+        "sourceType": "official",
+        "publishedDate": "2026-09-24"
+      },
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "publisher": "哈尔滨工业大学",
+        "scope": "培养与录取相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://zhuanti.sdut.edu.cn/2022/0224/c3137a452803/page.htm",
+        "publisher": "山东理工大学转载教育部名单",
+        "scope": "哈尔滨工业大学条目",
+        "sourceType": "official_university_republication",
+        "publishedDate": "2022-02-24"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "已核对第三方逐方向目录转录；官方PDF请求超时，其他学院未穷尽；本轮增加第三方历年录取统计，2027项目仍有未穷尽的部分。"
+            ],
+            [
+              "双一流学科",
+              "力学；机械工程；材料科学与工程；控制科学与工程；计算机科学与技术；土木工程；航空宇航科学与技术；环境科学与工程"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yzb.hit.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -281,15 +1224,65 @@
     "name": "复旦大学",
     "city": "上海",
     "province": "上海",
-    "aliases": [],
+    "aliases": [
+      "复旦"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "复旦大学2027年硕士研究生招生专业目录",
+        "url": "https://gsas.fudan.edu.cn/sszsml2027/index.html",
+        "publisher": "复旦大学",
+        "scope": "动态目录；未成功取得项目行",
+        "sourceType": "official"
+      },
+      {
+        "title": "计算与智能创新学院2026年硕士研究生招生复试实施细则",
+        "url": "https://cs.fudan.edu.cn/cb/e2/c23787a773090/page.htm",
+        "publisher": "复旦大学计算与智能创新学院",
+        "scope": "招生计划、复试内容及成绩计算各节",
+        "sourceType": "official",
+        "publishedDate": "2026-03-20"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查覆盖",
+              "已补充码砖、N诺等公开统计；2027年度仍仅展示已取得项目或明确标记待核项目，未完整核实全部目录。"
+            ],
+            [
+              "资料缺口",
+              "部分年份没有完整的报名、复试实际到场、普通统考/专项拆分或成绩分布；第三方公示样本与官方实际人数可能不同。"
+            ],
+            [
+              "历史覆盖年度",
+              "2024；2025；2026"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://gsao.fudan.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -298,15 +1291,65 @@
     "name": "同济大学",
     "city": "上海",
     "province": "上海",
-    "aliases": [],
+    "aliases": [
+      "同济"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "同济大学2027年硕士研究生招生专业目录",
+        "url": "https://yzbm.tongji.edu.cn/zsml/sszsml/index/2027",
+        "publisher": "同济大学",
+        "scope": "动态目录，项目行未取得",
+        "sourceType": "official"
+      },
+      {
+        "title": "中意工程创新学院2027年推免招生通知",
+        "url": "https://sicei.tongji.edu.cn/info/1095/1380.htm",
+        "publisher": "同济大学中意工程创新学院",
+        "scope": "信息通信与具身智能专业相关内容",
+        "sourceType": "official",
+        "publishedDate": "2026-07-28"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查覆盖",
+              "已补充码砖、N诺等公开统计；2027年度仍仅展示已取得项目或明确标记待核项目，未完整核实全部目录。"
+            ],
+            [
+              "资料缺口",
+              "部分年份没有完整的报名、复试实际到场、普通统考/专项拆分或成绩分布；第三方公示样本与官方实际人数可能不同。"
+            ],
+            [
+              "历史覆盖年度",
+              "2026"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.tongji.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -315,15 +1358,74 @@
     "name": "上海交通大学",
     "city": "上海",
     "province": "上海",
-    "aliases": [],
+    "aliases": [
+      "上海交大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "上海交通大学2027年硕士研究生招生专业目录",
+        "url": "https://yzb.sjtu.edu.cn/post/3772",
+        "publisher": "上海交通大学研究生招生办公室",
+        "scope": "学院033、370、531；085400各方向",
+        "sourceType": "official",
+        "publishedDate": "2026-09-21"
+      },
+      {
+        "title": "2027年硕士研究生招生统考计划",
+        "url": "https://yzb.sjtu.edu.cn/post/3808",
+        "publisher": "上海交通大学研究生招生办公室",
+        "scope": "033、370、531电子信息行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-15"
+      },
+      {
+        "title": "2027年硕士研究生招生相关项目资料",
+        "url": "https://yzb.sjtu.edu.cn/post/3803",
+        "publisher": "上海交通大学研究生招生办公室",
+        "scope": "项目资料索引",
+        "sourceType": "official",
+        "publishedDate": "2026-10-14"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查覆盖",
+              "已补充码砖、N诺等公开统计；2027年度仍仅展示已取得项目或明确标记待核项目，未完整核实全部目录。"
+            ],
+            [
+              "资料缺口",
+              "部分年份没有完整的报名、复试实际到场、普通统考/专项拆分或成绩分布；第三方公示样本与官方实际人数可能不同。"
+            ],
+            [
+              "历史覆盖年度",
+              "2026"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yzb.sjtu.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -332,15 +1434,78 @@
     "name": "华东师范大学",
     "city": "上海",
     "province": "上海",
-    "aliases": [],
+    "aliases": [
+      "华东师大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "华东师范大学2027年硕士研究生招生专业目录",
+        "url": "https://yjszs-ks.ecnu.edu.cn/zsml/sszsml/index/2027",
+        "publisher": "华东师范大学",
+        "scope": "动态目录，2027项目行未取得",
+        "sourceType": "official"
+      },
+      {
+        "title": "2026年硕士研究生招生专业目录：计算机技术",
+        "url": "https://yjszs-ks.ecnu.edu.cn/zsml/sszsml/zsmlYjfx/2026/135/085404?ksfs=21",
+        "publisher": "华东师范大学",
+        "scope": "2026/135/085404/考试方式21；01及68方向",
+        "sourceType": "official"
+      },
+      {
+        "title": "智能交互学院推免招生信息",
+        "url": "https://sii.ecnu.edu.cn/d2/63/c52126a774755/page.htm",
+        "publisher": "华东师范大学智能交互学院",
+        "scope": "085404、085405",
+        "sourceType": "official"
+      },
+      {
+        "title": "卓越工程师学院2027年推免生综合考核实施细则",
+        "url": "https://yjsy.ecnu.edu.cn/db/94/c42082a777108/page.htm",
+        "publisher": "华东师范大学卓越工程师学院",
+        "scope": "专业与企业培养专项表，仅推免材料",
+        "sourceType": "official"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查覆盖",
+              "已补充码砖、N诺等公开统计；2027年度仍仅展示已取得项目或明确标记待核项目，未完整核实全部目录。"
+            ],
+            [
+              "资料缺口",
+              "部分年份没有完整的报名、复试实际到场、普通统考/专项拆分或成绩分布；第三方公示样本与官方实际人数可能不同。"
+            ],
+            [
+              "历史覆盖年度",
+              "2024；2025；2026"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yjszs.ecnu.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -349,15 +1514,75 @@
     "name": "南京大学",
     "city": "南京",
     "province": "江苏",
-    "aliases": [],
+    "aliases": [
+      "南大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "南京大学2027年硕士研究生招生专业目录",
+        "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
+        "publisher": "南京大学研究生招生办公室",
+        "scope": "目录附件入口，原始表格未提取",
+        "sourceType": "official"
+      },
+      {
+        "title": "南京大学2027年硕士研究生招生专业目录（转载）",
+        "url": "https://kaoyan.xdf.cn/202610/15430106.html",
+        "publisher": "新东方考研",
+        "scope": "033计算机学院专业行",
+        "sourceType": "secondary"
+      },
+      {
+        "title": "南京大学2027年接收推荐免试研究生人数统计",
+        "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+        "publisher": "南京大学研究生招生办公室",
+        "scope": "统计图片入口，人数未取得",
+        "sourceType": "official"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查覆盖",
+              "已补充码砖、N诺等公开统计；2027年度仍仅展示已取得项目或明确标记待核项目，未完整核实全部目录。"
+            ],
+            [
+              "资料缺口",
+              "部分年份没有完整的报名、复试实际到场、普通统考/专项拆分或成绩分布；第三方公示样本与官方实际人数可能不同。"
+            ],
+            [
+              "双一流学科",
+              "verifiedRelevantDisciplines：计算机科学与技术；scope：转载目录注明为双一流建设学科，具体轮次及其他学科待核实。"
+            ],
+            [
+              "历史覆盖年度",
+              "2024；2025；2026"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yzb.nju.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -366,15 +1591,65 @@
     "name": "东南大学",
     "city": "南京",
     "province": "江苏",
-    "aliases": [],
+    "aliases": [
+      "东南"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "东南大学2027年硕士研究生招生专业目录",
+        "url": "https://gsas.seu.edu.cn/ssmlcx2027/pages/index.html",
+        "publisher": "东南大学",
+        "scope": "动态目录，项目行未取得",
+        "sourceType": "official"
+      },
+      {
+        "title": "东南大学2027年硕士研究生招生章程",
+        "url": "https://yzb.seu.edu.cn/2026/1008/c6667a585158/page.htm",
+        "publisher": "东南大学研究生招生办公室",
+        "scope": "招生计划、学制、住宿、专项及培养地点说明",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查覆盖",
+              "已补充码砖、N诺等公开统计；2027年度仍仅展示已取得项目或明确标记待核项目，未完整核实全部目录。"
+            ],
+            [
+              "资料缺口",
+              "部分年份没有完整的报名、复试实际到场、普通统考/专项拆分或成绩分布；第三方公示样本与官方实际人数可能不同。"
+            ],
+            [
+              "历史覆盖年度",
+              "2023；2024；2025；2026"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yzb.seu.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -383,15 +1658,65 @@
     "name": "浙江大学",
     "city": "杭州",
     "province": "浙江",
-    "aliases": [],
+    "aliases": [
+      "浙大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "浙江大学工程师学院2027年工程类专业学位硕士研究生招生信息",
+        "url": "https://pi.zju.edu.cn/2026/1008/c67821a3211889/page.htm",
+        "publisher": "浙江大学工程师学院",
+        "scope": "专业方向、统考招生计划、学费、培养地点与住宿说明",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "浙江大学2027年硕士研究生招生专业目录（转载）",
+        "url": "https://kaoyan.100xuexi.com/WebDoctor/EnrolDetailD.aspx?id=245545",
+        "publisher": "圣才考研",
+        "scope": "计算机科学与技术学院、软件学院、海洋学院、工程师学院专业方向表",
+        "sourceType": "secondary"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查覆盖",
+              "已补充码砖、N诺等公开统计；2027年度仍仅展示已取得项目或明确标记待核项目，未完整核实全部目录。"
+            ],
+            [
+              "资料缺口",
+              "部分年份没有完整的报名、复试实际到场、普通统考/专项拆分或成绩分布；第三方公示样本与官方实际人数可能不同。"
+            ],
+            [
+              "历史覆盖年度",
+              "2024；2025；2026"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://grs.zju.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -400,15 +1725,94 @@
     "name": "中国科学技术大学",
     "city": "合肥",
     "province": "安徽",
-    "aliases": [],
+    "aliases": [
+      "中科大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "中国科学技术大学研究生招生在线：硕士招生",
+        "url": "https://yz.ustc.edu.cn/column/179",
+        "publisher": "中国科学技术大学",
+        "scope": "2027招生目录与简章入口，具体行未取得",
+        "sourceType": "official"
+      },
+      {
+        "title": "计算机科学与技术学院历年硕士研究生复试分数线",
+        "url": "https://cs.ustc.edu.cn/_t1744/2023/0319/c20160a595630/pagem.psp",
+        "publisher": "中国科学技术大学计算机科学与技术学院",
+        "scope": "2023—2026电子信息行",
+        "sourceType": "official"
+      },
+      {
+        "title": "计算机科学与技术学院2026年硕士研究生复试工作方案",
+        "url": "https://cs.ustc.edu.cn/2026/0317/c22510a723299/page.htm",
+        "publisher": "中国科学技术大学计算机科学与技术学院",
+        "scope": "复试方式、成绩计算",
+        "sourceType": "official",
+        "publishedDate": "2026-03-17"
+      },
+      {
+        "title": "计算机科学与技术学院2026年硕士研究生拟录取名单",
+        "url": "https://cs.ustc.edu.cn/2025/0326/c22510a724302/page.htm",
+        "publisher": "中国科学技术大学计算机科学与技术学院",
+        "scope": "表内序号26—103，085400电子信息；未列初试成绩",
+        "sourceType": "official"
+      },
+      {
+        "title": "2026招生专业一览、拟招生人数及联系方式",
+        "url": "https://yz1.ustc.edu.cn/sszs_2026/cksm4.html",
+        "publisher": "中国科学技术大学研究生院招生处",
+        "scope": "表头：拟接收统考、拟接收推免硕士、学费；院系215、218、221、225、229行",
+        "sourceType": "official"
+      },
+      {
+        "title": "环境科学与光电技术学院 2027年硕士研究生招生考试初试科目调整通知",
+        "url": "https://env.ustc.edu.cn/2026/0603/c9558a742464/page.htm",
+        "publisher": "中国科学技术大学环境科学与光电技术学院",
+        "scope": "调整内容：217/085400/02",
+        "sourceType": "official",
+        "publishedDate": "2026-06-03"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查覆盖",
+              "已补充码砖、N诺等公开统计；2027年度仍仅展示已取得项目或明确标记待核项目，未完整核实全部目录。"
+            ],
+            [
+              "资料缺口",
+              "部分年份没有完整的报名、复试实际到场、普通统考/专项拆分或成绩分布；第三方公示样本与官方实际人数可能不同。"
+            ],
+            [
+              "历史覆盖年度",
+              "2024；2025；2026"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.ustc.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -417,15 +1821,83 @@
     "name": "厦门大学",
     "city": "厦门",
     "province": "福建",
-    "aliases": [],
+    "aliases": [
+      "厦大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "厦门大学2027年硕士研究生招生专业目录",
+        "url": "https://zs.xmu.edu.cn/info/1056/36842.htm",
+        "publisher": "厦门大学招生办公室",
+        "scope": "附件表格入口",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "厦门大学2027年硕士研究生招生计划",
+        "url": "https://sc.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=245797",
+        "publisher": "圣才学习网",
+        "scope": "招生计划转载表；计划包含推免与否未独立核实",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "厦门大学2027年少数民族高层次骨干人才计划",
+        "url": "https://zs.xmu.edu.cn/info/1174/36992.htm",
+        "publisher": "厦门大学招生办公室",
+        "scope": "学院计划；不直接分配专业",
+        "sourceType": "official"
+      },
+      {
+        "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+        "url": "https://www.xdf.cn/611/202608/15347167.html",
+        "publisher": "新东方网",
+        "scope": "2017年第四轮结果转载",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://www.moe.gov.cn/srcsite/a22/s7065/202202/w020220214318455516037.pdf",
+        "publisher": "教育部、财政部、国家发展改革委",
+        "scope": "附件1，按学校名称查找",
+        "sourceType": "official",
+        "publishedDate": "2022-02-14"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "2027学院代码、专业计划来自转载，考试组合尚需官方附件确认。"
+            ],
+            [
+              "双一流学科",
+              "year：2022；round：2；disciplines：教育学；化学；海洋科学；生物学；生态学；统计学"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://zs.xmu.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -434,15 +1906,77 @@
     "name": "山东大学",
     "city": "济南",
     "province": "山东",
-    "aliases": [],
+    "aliases": [
+      "山大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027年硕士研究生招生目录或发布入口",
+        "url": "https://yz.sdu.edu.cn/info/1004/1487.htm",
+        "publisher": "山东大学",
+        "scope": "2027年度目录入口",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "山东大学085404官方公示数据（第三方汇编）",
+        "url": "https://www.yikaoyan.com/official/10422/085404",
+        "publisher": "易考研",
+        "scope": "三学院合计，不导入混合计划数",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "关于调整2026年硕士研究生招生考试（初试）考试科目的通知",
+        "url": "https://yz.sdu.edu.cn/info/1022/1130.htm",
+        "publisher": "山东大学",
+        "scope": "第2项",
+        "sourceType": "official",
+        "publishedDate": "2025-05-08"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://zhuanti.sdut.edu.cn/2022/0224/c3137a452803/page.htm",
+        "publisher": "山东理工大学转载教育部名单",
+        "scope": "山东大学条目",
+        "sourceType": "official_university_republication",
+        "publishedDate": "2022-02-24"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "官方动态目录正文未取得；第三方专业汇总跨学院，不能作分项目统计；本轮增加第三方历年录取统计，2027项目仍有未穷尽的部分。"
+            ],
+            [
+              "双一流学科",
+              "中国语言文学；数学；化学；临床医学"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.sdu.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -451,15 +1985,77 @@
     "name": "中国海洋大学",
     "city": "青岛",
     "province": "山东",
-    "aliases": [],
+    "aliases": [
+      "中国海大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027年硕士研究生招生目录或发布入口",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31641a538388/page.htm",
+        "publisher": "中国海洋大学",
+        "scope": "2027年度目录入口",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "中国海洋大学2027年硕士研究生招生章程",
+        "url": "https://yz.ouc.edu.cn/2026/0930/c31752a538356/page.htm",
+        "publisher": "中国海洋大学",
+        "scope": "学制相关条款",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "2027年调整统考招生计划附件",
+        "url": "https://yz.ouc.edu.cn/_upload/article/files/79/b0/978e5b234b09aa3953d04d21ffe7/3a8f408c-f172-4f2f-8a96-6a9e1495a2dd.xls",
+        "publisher": "中国海洋大学",
+        "scope": "XLS未能下载；仅作复核入口",
+        "sourceType": "official"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://zhuanti.sdut.edu.cn/2022/0224/c3137a452803/page.htm",
+        "publisher": "山东理工大学转载教育部名单",
+        "scope": "中国海洋大学条目",
+        "sourceType": "official_university_republication",
+        "publishedDate": "2022-02-24"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "官方目录XLS未能读取；第三方逐方向转录待原表复核；本轮增加第三方历年录取统计，2027项目仍有未穷尽的部分。"
+            ],
+            [
+              "双一流学科",
+              "海洋科学；水产"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.ouc.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -468,15 +2064,90 @@
     "name": "湖南大学",
     "city": "长沙",
     "province": "湖南",
-    "aliases": [],
+    "aliases": [
+      "湖大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "湖南大学2027年硕士研究生招生专业目录",
+        "url": "https://gra.hnu.edu.cn/info/1075/10620.htm",
+        "publisher": "湖南大学研究生院",
+        "scope": "附件未完整提取",
+        "sourceType": "official"
+      },
+      {
+        "title": "湖南大学研招网在线咨询",
+        "url": "https://yz.chsi.com.cn/zxdy/forum--method-listDefault%2Cforumid-453607%2Cyear-2026%2Cstart-120.dhtml",
+        "publisher": "中国研究生招生信息网/湖南大学",
+        "scope": "学校回复计算机与网安085400均考408",
+        "sourceType": "official"
+      },
+      {
+        "title": "网络空间安全学院2027年硕士研究生招生考试科目调整公告",
+        "url": "https://cst.hnu.edu.cn/info/1053/1255.htm",
+        "publisher": "湖南大学网络空间安全学院",
+        "scope": "866调整为408",
+        "sourceType": "official",
+        "publishedDate": "2026-05-19"
+      },
+      {
+        "title": "信息科学与工程学院2027年推免招生相关公告",
+        "url": "https://csee.hnu.edu.cn/info/1062/14218.htm",
+        "publisher": "湖南大学信息科学与工程学院",
+        "scope": "085400计算机技术",
+        "sourceType": "official"
+      },
+      {
+        "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+        "url": "https://www.xdf.cn/611/202608/15347167.html",
+        "publisher": "新东方网",
+        "scope": "2017年第四轮结果转载",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://www.moe.gov.cn/srcsite/a22/s7065/202202/w020220214318455516037.pdf",
+        "publisher": "教育部、财政部、国家发展改革委",
+        "scope": "附件1，按学校名称查找",
+        "sourceType": "official",
+        "publishedDate": "2022-02-14"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "408科目获官方确认；计划和细分方向未完整提取。"
+            ],
+            [
+              "双一流学科",
+              "year：2022；round：2；disciplines：化学；机械工程；电气工程"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://gra.hnu.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -485,15 +2156,76 @@
     "name": "中南大学",
     "city": "长沙",
     "province": "湖南",
-    "aliases": [],
+    "aliases": [
+      "中南"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "中南大学2027年硕士研究生招生专业目录",
+        "url": "https://yzzyml.csu.edu.cn/news/MasterView.aspx?d=0ca8c9df-fe1f-4692-afba-bdcacd2f9eef",
+        "publisher": "中南大学",
+        "scope": "043、047学院085400全日制",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "title": "中南大学2027年硕士研究生招生简章",
+        "url": "https://yz.csu.edu.cn/info/1011/1541.htm",
+        "publisher": "中南大学研究生招生办公室",
+        "scope": "目录计划不含推免、含国家专项",
+        "sourceType": "official"
+      },
+      {
+        "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+        "url": "https://www.xdf.cn/611/202608/15347167.html",
+        "publisher": "新东方网",
+        "scope": "2017年第四轮结果转载",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://www.moe.gov.cn/srcsite/a22/s7065/202202/w020220214318455516037.pdf",
+        "publisher": "教育部、财政部、国家发展改革委",
+        "scope": "附件1，按学校名称查找",
+        "sourceType": "official",
+        "publishedDate": "2022-02-14"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "已核对目录两个符合目标的招生单位；历史独立单位与2027方向对应关系未确认。"
+            ],
+            [
+              "双一流学科",
+              "year：2022；round：2；disciplines：数学；材料科学与工程；冶金工程；矿业工程；交通运输工程"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.csu.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -502,15 +2234,76 @@
     "name": "国防科技大学",
     "city": "长沙",
     "province": "湖南",
-    "aliases": [],
+    "aliases": [
+      "国防科大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "国防科技大学2027年硕士研究生招生简章及专业目录",
+        "url": "https://yjszs.nudt.edu.cn/attached/file/20261015/20261015180152_597.pdf",
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "印刷页3、6、8、10、17及地方硕士电子对抗学院目录",
+        "sourceType": "official",
+        "publishedDate": "2026-10-15"
+      },
+      {
+        "title": "国防科技大学2027年地方硕士研究生考试招生计划",
+        "url": "https://yjszs.nudt.edu.cn/zsmh/pubweb/homePageList/detailed.view?keyId=14971",
+        "publisher": "国防科技大学研究生招生办公室",
+        "scope": "地方硕士计算机学院085400及电子对抗学院085400",
+        "sourceType": "official"
+      },
+      {
+        "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+        "url": "https://www.xdf.cn/611/202608/15347167.html",
+        "publisher": "新东方网",
+        "scope": "2017年第四轮结果转载",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://www.moe.gov.cn/srcsite/a22/s7065/202202/w020220214318455516037.pdf",
+        "publisher": "教育部、财政部、国家发展改革委",
+        "scope": "附件1，按学校名称查找",
+        "sourceType": "official",
+        "publishedDate": "2022-02-14"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "地方硕士允许符合条件的普通本科应届毕业生报考，录取无军籍。军人硕士目录不能作为普通地方考生项目。"
+            ],
+            [
+              "双一流学科",
+              "year：2022；round：2；disciplines：信息与通信工程；计算机科学与技术；航空宇航科学与技术；软件工程；管理科学与工程"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yjszs.nudt.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -519,15 +2312,98 @@
     "name": "中山大学",
     "city": "广州",
     "province": "广东",
-    "aliases": [],
+    "aliases": [
+      "中大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "中山大学2027年硕士研究生招生章程及招生目录",
+        "url": "https://graduate.sysu.edu.cn/zsw/article/541",
+        "publisher": "中山大学研究生院",
+        "scope": "目录入口；正文访问受限",
+        "sourceType": "official"
+      },
+      {
+        "title": "计算机学院2027年硕士研究生招生信息",
+        "url": "https://cse.sysu.edu.cn/article/3663",
+        "publisher": "中山大学计算机学院",
+        "scope": "670学院，085404、085410",
+        "sourceType": "official",
+        "publishedDate": "2026-09-29"
+      },
+      {
+        "title": "软件工程学院2027年硕士研究生招生相关公告",
+        "url": "https://sse.sysu.edu.cn/article/1136",
+        "publisher": "中山大学软件工程学院",
+        "scope": "公告图像内招生计划未取得",
+        "sourceType": "official",
+        "publishedDate": "2026-10-19"
+      },
+      {
+        "title": "网络空间安全学院2027年推免招生相关公告",
+        "url": "https://scst.sysu.edu.cn/article/502",
+        "publisher": "中山大学网络空间安全学院",
+        "scope": "推免招生专业，不能独立证明统考",
+        "sourceType": "official"
+      },
+      {
+        "title": "系统科学与工程学院2027年推免招生相关公告",
+        "url": "https://ssse.sysu.edu.cn/article/1532",
+        "publisher": "中山大学系统科学与工程学院",
+        "scope": "085404、69；推免",
+        "sourceType": "official"
+      },
+      {
+        "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+        "url": "https://www.xdf.cn/611/202608/15347167.html",
+        "publisher": "新东方网",
+        "scope": "2017年第四轮结果转载",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://www.moe.gov.cn/srcsite/a22/s7065/202202/w020220214318455516037.pdf",
+        "publisher": "教育部、财政部、国家发展改革委",
+        "scope": "附件1，按学校名称查找",
+        "sourceType": "official",
+        "publishedDate": "2022-02-14"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "计算机学院目录核实；其他学院目录图像或动态网页未完整读取，不能判定全部项目。"
+            ],
+            [
+              "双一流学科",
+              "year：2022；round：2；disciplines：哲学；数学；化学；生物学；生态学；材料科学与工程；电子科学与技术；基础医学；临床医学；药学；工商管理"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://graduate.sysu.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -536,15 +2412,83 @@
     "name": "华南理工大学",
     "city": "广州",
     "province": "广东",
-    "aliases": [],
+    "aliases": [
+      "华工"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "华南理工大学2027年硕士研究生招生章程及招生专业目录",
+        "url": "https://yz.scut.edu.cn/2026/0930/c30108a636831/page.htm",
+        "publisher": "华南理工大学研究生招生办公室",
+        "scope": "动态目录需登录；另有在职单独考试项目",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "title": "华南理工大学计算机技术招生数据",
+        "url": "https://www.yikaoyan.com/official/10561/085404",
+        "publisher": "易考研",
+        "scope": "2027及2026专业汇总，未拆分特殊类别",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "华南理工大学软件工程招生数据",
+        "url": "https://www.yikaoyan.com/official/10561/085405",
+        "publisher": "易考研",
+        "scope": "2027及2026专业汇总",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+        "url": "https://www.xdf.cn/611/202608/15347167.html",
+        "publisher": "新东方网",
+        "scope": "2017年第四轮结果转载",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://www.moe.gov.cn/srcsite/a22/s7065/202202/w020220214318455516037.pdf",
+        "publisher": "教育部、财政部、国家发展改革委",
+        "scope": "附件1，按学校名称查找",
+        "sourceType": "official",
+        "publishedDate": "2022-02-14"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "动态目录跳转认证；人工智能、国际校区、其他学院完整目录未取得。"
+            ],
+            [
+              "双一流学科",
+              "year：2022；round：2；disciplines：化学；材料科学与工程；轻工技术与工程；食品科学与工程"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.scut.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -553,15 +2497,49 @@
     "name": "四川大学",
     "city": "成都",
     "province": "四川",
-    "aliases": [],
+    "aliases": [
+      "川大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027招生目录或招生入口",
+        "url": "https://yz.scu.edu.cn/sszyml/index",
+        "publisher": "四川大学",
+        "scope": "2027硕士招生",
+        "sourceType": "official"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "2027动态目录未逐项取得；保留历史项目及人工智能学院待核项目，注意学院调整。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.scu.edu.cn/sszyml/index"
+          }
+        ]
       }
     ]
   },
@@ -570,15 +2548,49 @@
     "name": "电子科技大学",
     "city": "成都",
     "province": "四川",
-    "aliases": [],
+    "aliases": [
+      "成电"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027招生目录或招生入口",
+        "url": "https://yzbm.uestc.edu.cn/zsml/sszsml/index/2027",
+        "publisher": "电子科技大学",
+        "scope": "2027硕士招生",
+        "sourceType": "official"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "已获取008、009、021、028专业级拟招生数；部分方向、学习方式及090、数学学院、通信抗干扰实验室的2027项目细节未取得。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yzbm.uestc.edu.cn/zsml/sszsml/index/2027"
+          }
+        ]
       }
     ]
   },
@@ -587,15 +2599,49 @@
     "name": "重庆大学",
     "city": "重庆",
     "province": "重庆",
-    "aliases": [],
+    "aliases": [
+      "重大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027招生目录或招生入口",
+        "url": "https://yz.cqu.edu.cn/sszyml/2027/",
+        "publisher": "重庆大学",
+        "scope": "2027硕士招生",
+        "sourceType": "official"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "已核实计算机、大数据与软件、卓越工程师三个学院2027目录；尚未完成其他学院穷尽排查。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.cqu.edu.cn/sszyml/2027/"
+          }
+        ]
       }
     ]
   },
@@ -604,15 +2650,56 @@
     "name": "西安交通大学",
     "city": "西安",
     "province": "陕西",
-    "aliases": [],
+    "aliases": [
+      "西交"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027招生目录或招生入口",
+        "url": "https://yz.xjtu.edu.cn/index/sszs.htm",
+        "publisher": "西安交通大学",
+        "scope": "2027硕士招生",
+        "sourceType": "official"
+      },
+      {
+        "title": "硕士招生专业目录动态查询入口",
+        "url": "https://yzbm.xjtu.edu.cn/zsml/sszsml/detailtk/Ppu8Tbrbt8BWT%207TDfLD%40g%3D%3D",
+        "publisher": "西安交通大学",
+        "scope": "动态目录，访问失败（HTTP 502）",
+        "sourceType": "official"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "目录入口已定位；计算机与网安改考信息来自第三方转录，细分培养项目未全面核实。 2027动态目录具体查询链接访问返回502。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.xjtu.edu.cn/index/sszs.htm"
+          }
+        ]
       }
     ]
   },
@@ -621,15 +2708,49 @@
     "name": "西北工业大学",
     "city": "西安",
     "province": "陕西",
-    "aliases": [],
+    "aliases": [
+      "西工大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027招生目录或招生入口",
+        "url": "https://yzb.nwpu.edu.cn/info/1174/10498.htm",
+        "publisher": "西北工业大学",
+        "scope": "2027硕士招生",
+        "sourceType": "official"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "计算机技术2027卷型由第三方报道核实，其他研究院2027项目待核。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yzb.nwpu.edu.cn/info/1174/10498.htm"
+          }
+        ]
       }
     ]
   },
@@ -638,15 +2759,76 @@
     "name": "西北农林科技大学",
     "city": "杨凌",
     "province": "陕西",
-    "aliases": [],
+    "aliases": [
+      "西农"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "西北农林科技大学2027年硕士研究生招生简章",
+        "url": "https://yz.nwafu.edu.cn/zsxx/ssszs/00589b8649ae41f2b1004198998e567f.htm",
+        "publisher": "西北农林科技大学研究生院",
+        "scope": "专业学位学制、学费",
+        "sourceType": "official"
+      },
+      {
+        "title": "西北农林科技大学2027年硕士研究生招生专业目录",
+        "url": "https://yz.nwsuaf.edu.cn/wbtlm/5e47dc936430432f8d54917264e43599.htm",
+        "publisher": "西北农林科技大学研究生院",
+        "scope": "PDF嵌入目录未完整提取",
+        "sourceType": "official",
+        "publishedDate": "2026-10-01"
+      },
+      {
+        "title": "全国第四轮学科评估计算机科学与技术结果汇总",
+        "url": "https://www.gkzs.net/xkpg4/school/10712.html",
+        "publisher": "高考雷达",
+        "scope": "2017年第四轮结果转载",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "第二轮“双一流”建设高校及建设学科名单",
+        "url": "https://www.moe.gov.cn/srcsite/a22/s7065/202202/w020220214318455516037.pdf",
+        "publisher": "教育部、财政部、国家发展改革委",
+        "scope": "附件1，按学校名称查找",
+        "sourceType": "official",
+        "publishedDate": "2022-02-14"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "2027嵌入目录未完整取得，计算机、人工智能为2026历史项目；其他学院仍需核对。"
+            ],
+            [
+              "双一流学科",
+              "year：2022；round：2；disciplines：植物保护；畜牧学"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.nwafu.edu.cn/"
+          }
+        ]
       }
     ]
   },
@@ -655,15 +2837,49 @@
     "name": "兰州大学",
     "city": "兰州",
     "province": "甘肃",
-    "aliases": [],
+    "aliases": [
+      "兰大"
+    ],
     "sources": [
       {
         "title": "教育部 985 工程高校名单",
         "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
-        "year": null,
         "scope": "院校名录",
-        "publisher": "教育部",
-        "verifiedOn": null
+        "publisher": "教育部"
+      },
+      {
+        "title": "2027招生目录或招生入口",
+        "url": "https://yz.lzu.edu.cn/",
+        "publisher": "兰州大学",
+        "scope": "2027硕士招生",
+        "sourceType": "official"
+      }
+    ],
+    "updatedAt": "2026-11-25",
+    "sections": [
+      {
+        "title": "院校调查",
+        "table": {
+          "headers": [
+            "项目",
+            "说明"
+          ],
+          "rows": [
+            [
+              "调查说明",
+              "官方2027全校目录已取得，核实016及017普通及推免限定方向；历史只关联016，不把旧学院人数分配给017。"
+            ]
+          ]
+        }
+      },
+      {
+        "title": "招生入口",
+        "sources": [
+          {
+            "title": "研究生招生官网",
+            "url": "https://yz.lzu.edu.cn/"
+          }
+        ]
       }
     ]
   }

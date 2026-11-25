@@ -1,0 +1,5464 @@
+{
+  "schools": [
+    {
+      "officialDomain": "pku.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2024,
+      "latestIdentifiedReportYear": 2024,
+      "sources": [
+        {
+          "title": "北京大学2024—2025学年度信息公开工作报告",
+          "url": "https://xxgk.pku.edu.cn/docs/2025-11/06afdbf397a548af9ffa167e907d69ed.pdf",
+          "year": 2024,
+          "scope": "第18—19页，3.1—3.3",
+          "sourceType": "official"
+        },
+        {
+          "title": "关于2020-2024年《学位授权点年度建设报告》公示的通知",
+          "url": "https://cs.pku.edu.cn/info/1031/3648.htm",
+          "year": 2024,
+          "scope": "附件：计算机科学与技术",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 2,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "北京大学"
+    },
+    {
+      "officialDomain": "tsinghua.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2025,
+      "sources": [
+        {
+          "title": "2025届清华毕业生选择去哪儿？",
+          "url": "https://www.tsinghua.edu.cn/info/1182/124428.htm",
+          "year": 2025,
+          "scope": "正文第1—5段",
+          "sourceType": "official_republication",
+          "publishedDate": "2026-03-03"
+        },
+        {
+          "title": "数据显示，超九成2024届清华毕业生留在国内",
+          "url": "https://www.tsinghua.edu.cn/info/1182/116434.htm",
+          "year": 2024,
+          "scope": "正文就业及深造段落",
+          "sourceType": "official"
+        },
+        {
+          "title": "清华大学2025届毕业研究生专业、预计参加就业人数情况表",
+          "url": "https://career.tsinghua.edu.cn/info/1017/5105.htm",
+          "year": 2025,
+          "scope": "各院系专业行及表下注释",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 2,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "清华大学"
+    },
+    {
+      "officialDomain": "ruc.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2022,
+      "sources": [
+        {
+          "title": "信息公开：教学质量",
+          "url": "https://xxgk.ruc.edu.cn/gksx/jxzl/zyszdnxzzytzzymd/index.htm",
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "优秀辅导员工作室建设成果展示丨杜忠朝辅导员工作室",
+          "url": "https://xsc.ruc.edu.cn/info/1022/5120.htm",
+          "year": 2022,
+          "scope": "2022届就业成效段",
+          "sourceType": "official"
+        },
+        {
+          "title": "优秀毕业生专访 I 闫旭：知行合一，笃行致远",
+          "url": "https://se-office.ruc.edu.cn/xwdt/0f211153219e4c6e9a9921ab77f03d1e.htm",
+          "year": 2026,
+          "scope": "正文首段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "中国人民大学"
+    },
+    {
+      "officialDomain": "buaa.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "sources": [
+        {
+          "title": "北京航空航天大学：招生政策三大亮点，专业有多项调整",
+          "url": "https://gaokao.chsi.com.cn/gkxx/zbzrft/zx/202606/20260622/2293835021.html",
+          "year": 2026,
+          "scope": "招生办访谈，毕业生就业段",
+          "sourceType": "official_interview"
+        },
+        {
+          "title": "人民网：350余家企业带来1.97万余岗位！北航开启“春招”首场双选会",
+          "url": "https://news.buaa.edu.cn/info/1006/64904.htm",
+          "year": 2025,
+          "scope": "正文双选会及阶段性录用情况",
+          "sourceType": "official"
+        },
+        {
+          "title": "北京航空航天大学杭州创新研究院-北京航空航天大学软件学院-华为杭州研究院非全日制研究生联合培养方案",
+          "url": "https://hzii.buaa.edu.cn/info/1023/1159.htm",
+          "year": 2021,
+          "scope": "三、培养方案",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "北京航空航天大学"
+    },
+    {
+      "officialDomain": "bit.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "sources": [
+        {
+          "title": "研究生毕业去向",
+          "url": "https://cs.bit.edu.cn/zsjy/yjsbyqx/index.htm",
+          "scope": "正文",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "北京理工大学"
+    },
+    {
+      "officialDomain": "bnu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2025,
+      "sources": [
+        {
+          "title": "北京师范大学2025届毕业生就业质量报告",
+          "url": "https://xxgk.bnu.edu.cn/docs/2026-10/e700c0d18dd84aee9300161332f4f7bc.pdf",
+          "year": 2025,
+          "scope": "PDF第1—2页，一、二",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "北京师范大学"
+    },
+    {
+      "officialDomain": "cau.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "qualitative_or_case_verified",
+      "latestVerifiedGraduationYear": 2025,
+      "sources": [
+        {
+          "title": "2025年硕士研究生招生章程",
+          "url": "https://yz.cau.edu.cn/art/2024/10/8/art_41740_1039879.html",
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "信息与电气工程学院教师主页：毕业学生去向",
+          "url": "https://faculty.cau.edu.cn/wy_9157/list.htm",
+          "scope": "毕业学生去向",
+          "sourceType": "official_faculty_profile"
+        },
+        {
+          "title": "信息与电气工程学院教师主页",
+          "url": "https://faculty.cau.edu.cn/mq/list.htm",
+          "scope": "联合培养基地导师任职",
+          "sourceType": "official_faculty_profile"
+        },
+        {
+          "title": "中国农业大学教师主页：已毕业的研究生",
+          "url": "https://faculty.cau.edu.cn/xym/",
+          "scope": "已毕业的研究生（按列示毕业年份）",
+          "sourceType": "official_faculty_profile"
+        },
+        {
+          "title": "中国农业大学教师主页：联合实验室任职",
+          "url": "https://faculty.cau.edu.cn/xym/",
+          "scope": "个人简介及联合实验室任职",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 5,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 5,
+        "salaryRecords": 0
+      },
+      "schoolId": "中国农业大学"
+    },
+    {
+      "officialDomain": "muc.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "qualitative_or_case_verified",
+      "sources": [
+        {
+          "title": "中央民族大学本科招生网：常见问题",
+          "url": "https://zb.muc.edu.cn/content/zs/9cd9e98e-f0db-11ee-a4af-00163e36a0b0.htm",
+          "scope": "毕业生就业情况",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "中央民族大学"
+    },
+    {
+      "officialDomain": "nankai.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2024,
+      "sources": [
+        {
+          "title": "毕业生就业质量年度报告栏目",
+          "url": "https://xxgk.nankai.edu.cn/2927/list.htm",
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "软件工程学位授权点2024年建设年度报告",
+          "url": "https://graduate.nankai.edu.cn/_upload/article/files/d6/1f/6e6dba7c475fbfcb2295b026eade/17a73148-c316-4087-a43a-c536d071511b.pdf",
+          "year": 2024,
+          "scope": "PDF第3页，三、研究生招生在读毕业学位授予及就业基本状况",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "南开大学"
+    },
+    {
+      "officialDomain": "tju.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "qualitative_or_case_verified",
+      "sources": [
+        {
+          "title": "关于开展2020届-2025届毕业生及用人单位评价的通知",
+          "url": "https://eqa.tju.edu.cn/info/1017/1212.htm",
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "学生工作",
+          "url": "https://cic.tju.edu.cn/xsgz.htm",
+          "scope": "毕业生就业段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "天津大学"
+    },
+    {
+      "officialDomain": "dlut.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "sources": [
+        {
+          "title": "高质量就业与未来发展：计算机科学与技术学院2026级迎新介绍",
+          "url": "https://yx.dlut.edu.cn/info/10092/90457.htm",
+          "year": 2026,
+          "scope": "高质量就业与未来发展段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "大连理工大学"
+    },
+    {
+      "officialDomain": "neu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2023,
+      "sources": [
+        {
+          "title": "东北大学未来技术学院2024级东大-华为数通未来菁英研究生实验班选拔方案",
+          "url": "https://sft.neu.edu.cn/2025/0410/c8187a281401/page.htm",
+          "year": 2025,
+          "scope": "实验班培养及选拔范围",
+          "sourceType": "official"
+        },
+        {
+          "title": "精华版｜985东北大学2023就业质量报告",
+          "url": "https://www.sohu.com/a/778264798_121931941",
+          "year": 2023,
+          "scope": "毕业生规模及去向落实率",
+          "sourceType": "third_party_summary"
+        },
+        {
+          "title": "茹敬雨教师主页：招生情况",
+          "url": "https://faculty-card.neu.edu.cn/rujingyu/zh_CN/zdylm/311526/list/index.htm",
+          "scope": "就业去向",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 1,
+        "salaryRecords": 0
+      },
+      "schoolId": "东北大学"
+    },
+    {
+      "officialDomain": "jlu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2024,
+      "latestIdentifiedReportYear": 2024,
+      "sources": [
+        {
+          "title": "2024届毕业生的规模、结构、就业率、就业流向栏目",
+          "url": "https://gongkai.jlu.edu.cn/gksx/jxzlxx/bysdgm_jg_jyl_jylx.htm",
+          "year": 2024,
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "吉林大学2024届毕业生就业质量年度报告",
+          "url": "https://pdf.gk100.com/employment/report/2024/20250412/b46c391ecbe52bd3.pdf",
+          "year": 2024,
+          "scope": "表2院系分布；附表分学院毕业去向落实率",
+          "sourceType": "third_party_hosted_official_report"
+        },
+        {
+          "title": "杨博教师主页：研究组毕业生",
+          "url": "https://ccst.jlu.edu.cn/info/1193/19355.htm",
+          "scope": "研究组毕业生概况（截至2026年9月）",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 2,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 1,
+        "salaryRecords": 0
+      },
+      "schoolId": "吉林大学"
+    },
+    {
+      "officialDomain": "hit.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2025,
+      "sources": [
+        {
+          "title": "学生“缺”什么 就业工作就“补”什么——哈尔滨工业大学让海量岗位围着学生“转”",
+          "url": "https://www.chinaafse.cn/info/1092/2779.htm",
+          "year": 2025,
+          "scope": "正文就业落实率段",
+          "sourceType": "third_party_association"
+        },
+        {
+          "title": "哈工大（深圳）-腾讯2027级「大模型与通用人工智能系统」校企联合培养专项招生简介",
+          "url": "https://cist.hitsz.edu.cn/info/1038/2807.htm",
+          "year": 2027,
+          "scope": "三、招生专业与计划；四、学习方式",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "哈尔滨工业大学"
+    },
+    {
+      "officialDomain": "fudan.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "qualitative_or_case_verified",
+      "sources": [
+        {
+          "title": "计算机科学技术学院本科教育教学",
+          "url": "https://news.fudan.edu.cn/2024/1016/c31a142550/page.htm",
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "学院简介",
+          "url": "https://cs.fudan.edu.cn/_t4218/xygk/list.psp",
+          "scope": "毕业生就业段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "复旦大学"
+    },
+    {
+      "officialDomain": "tongji.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2025,
+      "sources": [
+        {
+          "title": "同济大学官网",
+          "url": "https://www.tongji.edu.cn/",
+          "year": 2025,
+          "scope": "学校概况数据",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "同济大学"
+    },
+    {
+      "officialDomain": "sjtu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2023,
+      "sources": [
+        {
+          "title": "上海交通大学2023年就业质量报告",
+          "url": "https://gk.sjtu.edu.cn/Assets/userfiles/sys_eb538c1c-65ff-4e82-8e6a-a1ef01127fed/files/20241125/20241125135303680.pdf",
+          "year": 2023,
+          "scope": "印刷页3—5，表1-1、表1-2及毕业生规模",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 4,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "上海交通大学"
+    },
+    {
+      "officialDomain": "ecnu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2026,
+      "sources": [
+        {
+          "title": "计算机科学与技术学院简介",
+          "url": "https://cs.ecnu.edu.cn/xyjj/listm.htm",
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "2025届毕业生规模、结构、就业率、就业流向",
+          "url": "https://xxgk.ecnu.edu.cn/fb/44/c29049a785220/page.htm",
+          "year": 2025,
+          "scope": "一、毕业生规模及结构；二、毕业生去向落实情况",
+          "sourceType": "official"
+        },
+        {
+          "title": "华东师范大学数据科学与工程学院教师主页：毕业生去向",
+          "url": "https://faculty.ecnu.edu.cn/_s37/xc/main.psp",
+          "year": 2026,
+          "scope": "毕业生去向逐届名单",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 9,
+        "recordsWithEmployerLists": 8,
+        "recordsWithEmployerCounts": 7,
+        "researchGroupRecords": 7,
+        "salaryRecords": 0
+      },
+      "schoolId": "华东师范大学"
+    },
+    {
+      "officialDomain": "nju.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2025,
+      "latestIdentifiedReportYear": 2025,
+      "sources": [
+        {
+          "title": "南京大学2025届毕业生就业质量报告",
+          "url": "https://xxgk.nju.edu.cn/b3/3b/c16401a832315/page.htm",
+          "year": 2025,
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "南京大学软件学院2020年就业质量报告",
+          "url": "https://software.nju.edu.cn/DFS/file/2021/11/23/20211123211747741w4bnxp.pdf",
+          "year": 2020,
+          "scope": "第二部分：第5、8页及就业地区、行业图表；第四部分重点单位入职；第一部分第4页毕业生概况",
+          "sourceType": "official"
+        },
+        {
+          "title": "南京大学人工智能学院2024届毕业生就业质量报告",
+          "url": "https://app.gaokaozhitongche.com/newsguide/h/KXW1yEYG",
+          "year": 2024,
+          "scope": "01毕业生结构、02就业落实率、03就业质量分析",
+          "sourceType": "third_party_republication"
+        },
+        {
+          "title": "南京大学人工智能学院2025毕业去向",
+          "url": "https://www.sohu.com/a/1018527165_122393606",
+          "year": 2025,
+          "scope": "正文毕业人数、就业单位及城市",
+          "sourceType": "third_party_summary"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 5,
+        "recordsWithEmployerLists": 3,
+        "recordsWithEmployerCounts": 3,
+        "researchGroupRecords": 0,
+        "salaryRecords": 1
+      },
+      "schoolId": "南京大学"
+    },
+    {
+      "officialDomain": "seu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2025,
+      "sources": [
+        {
+          "title": "东南大学2025年春季校园招聘工作安排",
+          "url": "https://xsc.seu.edu.cn/2025/1203/c64952a547590/page.htm",
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "东南大学2025年春季校园招聘工作安排",
+          "url": "https://xsc.seu.edu.cn/2025/1203/c64952a547590/page.htm",
+          "year": 2025,
+          "scope": "一、2025届毕业生生源信息",
+          "sourceType": "official"
+        },
+        {
+          "title": "计算机科学与工程学院、软件学院、人工智能学院2023届毕业生去向报告",
+          "url": "https://www.sohu.com/a/776739446_121124214",
+          "year": 2023,
+          "scope": "PART TWO—FOUR，硕士去向、行业与单位分布、重点区域",
+          "sourceType": "third_party_republication"
+        },
+        {
+          "title": "计算机科学与工程学院、软件学院、人工智能学院2022届毕业生去向报告",
+          "url": "https://www.sohu.com/a/681248519_121124214",
+          "year": 2022,
+          "scope": "毕业生基本情况、硕士研究生毕业去向、重点行业",
+          "sourceType": "third_party_republication"
+        },
+        {
+          "title": "计算机科学与工程学院、软件学院、人工智能学院2022届毕业生去向报告",
+          "url": "https://www.sohu.com/a/710909120_121124217",
+          "year": 2022,
+          "scope": "重点企业就业",
+          "sourceType": "third_party_republication"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 4,
+        "recordsWithEmployerLists": 2,
+        "recordsWithEmployerCounts": 1,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "东南大学"
+    },
+    {
+      "officialDomain": "zju.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2024,
+      "sources": [
+        {
+          "title": "浙江大学2025年答考生问",
+          "url": "https://zdzsc.zju.edu.cn/2024/0621/c87334a2937730/page.htm",
+          "year": 2024,
+          "scope": "第九问毕业生发展前景",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "浙江大学"
+    },
+    {
+      "officialDomain": "ustc.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "qualitative_or_case_verified",
+      "sources": [
+        {
+          "title": "党建引领促就业，人生逐梦正当时",
+          "url": "https://cs.ustc.edu.cn/2024/0624/c20179a644731/pagem.htm",
+          "year": 2024,
+          "scope": "就业经验交流会正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "2025年硕士招生简章",
+          "url": "https://yz1.ustc.edu.cn/sszs_2025/index_8.shtml",
+          "year": 2025,
+          "scope": "计算机技术专业硕士毕业后主要去向",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "中国科学技术大学"
+    },
+    {
+      "officialDomain": "xmu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2024,
+      "sources": [
+        {
+          "title": "厦门大学2024届毕业生就业质量报告",
+          "url": "https://gk.xmu.edu.cn/virtual_attach_file.vsb?afc=bUmTE7MzCDUNn2oezvPnz9anmv4L4vyDM47YnNUYM7lPLmC0gihFp2hmCIa0n1yan1ybL1hknzvZLzrVn7UYoRNDMRG4o77sL4vsMzlioR6FM7C4M8nVoznFM467nmL4lZMz-Jqdhnx&e=.pdf&nid=35852&oid=1831381815&tid=1061",
+          "year": 2024,
+          "scope": "印刷页1—2，表1-1；第4页第二章",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "厦门大学"
+    },
+    {
+      "officialDomain": "sdu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "sources": [
+        {
+          "title": "计算机科学与技术学院本科生招生信息",
+          "url": "https://www.cs.sdu.edu.cn/zsxx/bks.htm",
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "徐东亮教师主页",
+          "url": "https://faculty.sdu.edu.cn/xudongliang/zh_CN/index.htm",
+          "scope": "毕业生去向",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 1,
+        "salaryRecords": 0
+      },
+      "schoolId": "山东大学"
+    },
+    {
+      "officialDomain": "ouc.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "sources": [
+        {
+          "title": "毕业生就业情况栏目",
+          "url": "https://dxb.ouc.edu.cn/xxgk/6412/list.htm",
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "信息安全实验室：人才培养",
+          "url": "https://security.ouc.edu.cn/_upload/tpl/06/36/1590/template1590/training.html",
+          "scope": "就业小节",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 1,
+        "researchGroupRecords": 1,
+        "salaryRecords": 0
+      },
+      "schoolId": "中国海洋大学"
+    },
+    {
+      "officialDomain": "whu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2026,
+      "sources": [
+        {
+          "title": "学校部署2026届毕业生就业工作",
+          "url": "https://news.whu.edu.cn/info/1013/486077.htm",
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "陈震中教师主页：毕业生信息",
+          "url": "https://jszy.whu.edu.cn/zzchen/",
+          "year": 2024,
+          "scope": "硕博生去向统计2024—2026",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 6,
+        "recordsWithEmployerLists": 6,
+        "recordsWithEmployerCounts": 6,
+        "researchGroupRecords": 6,
+        "salaryRecords": 0
+      },
+      "schoolId": "武汉大学"
+    },
+    {
+      "officialDomain": "hust.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2021,
+      "latestIdentifiedReportYear": 2025,
+      "sources": [
+        {
+          "title": "华中科技大学2025年毕业生就业质量年度报告发布页",
+          "url": "https://xxgk.hust.edu.cn/info/1155/3969.htm",
+          "year": 2025,
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "就业工作典型案例：计算机科学与技术学院",
+          "url": "https://student.hust.edu.cn/info/1119/1113.htm",
+          "year": 2021,
+          "scope": "2021年就业成效段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "华中科技大学"
+    },
+    {
+      "officialDomain": "hnu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "sources": [
+        {
+          "title": "毕业与就业情况第三方调研",
+          "url": "https://asserts.tina.chat/share/files/sUWIZ1WGN7k0nFlvp3VWsg.html",
+          "scope": "报告栏目或正文",
+          "sourceType": "third_party_unverified_lead"
+        },
+        {
+          "title": "贺旭教师主页",
+          "url": "https://csee.hnu.edu.cn/people/hexu",
+          "scope": "目前研究生就业主要包括",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 1,
+        "salaryRecords": 0
+      },
+      "schoolId": "湖南大学"
+    },
+    {
+      "officialDomain": "csu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "qualitative_or_case_verified",
+      "sources": [
+        {
+          "title": "电子信息学院研究生招生指南",
+          "url": "https://ei.csu.edu.cn/info/1147/1118.htm",
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "软件工程专业介绍",
+          "url": "https://cse.csu.edu.cn/info/1052/1365.htm",
+          "scope": "主要就业流向",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "中南大学"
+    },
+    {
+      "officialDomain": "nudt.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "source_identified",
+      "sources": [
+        {
+          "title": "研究生招生信息网：无军籍研究生常见问题",
+          "url": "https://yjszs.nudt.edu.cn/pubweb/homePageList/detailed.view?keyId=777",
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "历史招生问答涉及无军籍硕士就业，未取得目标年度就业统计。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。 本轮仍未取得计算机相关实际毕业就业去向；招生政策不作为就业结果。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "国防科技大学"
+    },
+    {
+      "officialDomain": "sysu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "sources": [
+        {
+          "title": "回眸“十四五”丨中山大学软件工程学院研究生培养专项报告",
+          "url": "https://sse.sysu.edu.cn/article/1039",
+          "year": 2025,
+          "scope": "2024及2025届硕博就业去向段（搜索索引可见，正文访问超时）",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "中山大学"
+    },
+    {
+      "officialDomain": "scut.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2021,
+      "sources": [
+        {
+          "title": "计算机科学与工程学院召开2026届毕业生就业动员大会",
+          "url": "https://www2.scut.edu.cn/cs/_t2382/2025/1215/c22307a615262/page.psp",
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "华南理工大学2021届毕业生就业质量年度报告",
+          "url": "https://xxgk.scut.edu.cn/_upload/article/files/59/af/bb7cffff436dbc4a208c292705d7/6eecd6cd-6784-46c8-bb9d-8b55f4d969d6.pdf",
+          "year": 2021,
+          "scope": "印刷页6表1-4，页9表1-8，页10—11表1-9",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 1,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "华南理工大学"
+    },
+    {
+      "officialDomain": "scu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "sources": [
+        {
+          "title": "招生就业概况",
+          "url": "https://www.scu.edu.cn/zsjy/zsjygk.htm",
+          "year": 2026,
+          "scope": "就业工作段，截至2026年6月30日",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "四川大学"
+    },
+    {
+      "officialDomain": "uestc.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2023,
+      "latestIdentifiedReportYear": 2024,
+      "sources": [
+        {
+          "title": "电子科技大学2024届毕业生就业质量年度报告",
+          "url": "https://xxgkw.uestc.edu.cn/info/1078/6257.htm",
+          "year": 2024,
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "电子科技大学2023届毕业生就业质量年度报告",
+          "url": "https://free.eol.cn/download/eol/jiuye/uestc2023.pdf",
+          "year": 2023,
+          "scope": "印刷页5，第二部分毕业生就业情况",
+          "sourceType": "third_party_hosted_official_report"
+        },
+        {
+          "title": "电子科技大学2022届毕业生就业质量年度报告",
+          "url": "https://xxgkw.uestc.edu.cn/__local/D/9D/84/4B8A492896DE5B5FE60A06784B7_D212AFFD_56DD4.pdf",
+          "year": 2022,
+          "scope": "表2.1；表2.8",
+          "sourceType": "official"
+        },
+        {
+          "title": "电子科技大学2022届毕业生就业质量年度报告",
+          "url": "https://xxgkw.uestc.edu.cn/__local/D/9D/84/4B8A492896DE5B5FE60A06784B7_D212AFFD_56DD4.pdf",
+          "year": 2022,
+          "scope": "表2.5—2.6；就业地域及重点单位就业统计",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 2,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "电子科技大学"
+    },
+    {
+      "officialDomain": "cqu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "qualitative_or_case_verified",
+      "latestIdentifiedReportYear": 2020,
+      "sources": [
+        {
+          "title": "高校毕业生就业质量年度报告栏目",
+          "url": "https://gongkai.cqu.edu.cn/xxgkqd/jxzlxx/gxbysjyzlndbg.htm",
+          "year": 2020,
+          "scope": "报告栏目或正文",
+          "sourceType": "official"
+        },
+        {
+          "title": "学院概况",
+          "url": "https://cs.cqu.edu.cn/xygk.htm",
+          "scope": "人才培养与校友段",
+          "sourceType": "official"
+        },
+        {
+          "title": "计算机学院师生赴深圳开展重庆大学第八届“使命行”就业实践活动",
+          "url": "https://cs.cqu.edu.cn/info/1560/11454.htm",
+          "year": 2025,
+          "scope": "正文",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原记录保留；本轮增加实际统计、已披露去向或历史定性信息，详见对应记录的scope、sources及notes。第三方摘要和团队样本不得视作全院专硕统计；null仍表示未核实。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "重庆大学"
+    },
+    {
+      "officialDomain": "xjtu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2025,
+      "sources": [
+        {
+          "title": "2024年学位授权点建设年度报告（计算机科学与技术）",
+          "url": "https://www.cs.xjtu.edu.cn/info/1233/3539.htm",
+          "year": 2024,
+          "scope": "二、年度建设取得的成绩，学位授予及就业情况",
+          "sourceType": "official"
+        },
+        {
+          "title": "西安交通大学举行2025年研究生毕业典礼暨学位授予仪式",
+          "url": "https://news.xjtu.edu.cn/info/1033/223068.htm",
+          "year": 2025,
+          "scope": "正文截至6月19日统计段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "西安交通大学"
+    },
+    {
+      "officialDomain": "nwpu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2025,
+      "sources": [
+        {
+          "title": "2025年就业工作领导小组扩大会",
+          "url": "https://www.nwpu.edu.cn/info/1198/117388.htm",
+          "year": 2025,
+          "scope": "正文就业工作汇报段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 0,
+        "recordsWithEmployerLists": 0,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "西北工业大学"
+    },
+    {
+      "officialDomain": "nwsuaf.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2024,
+      "sources": [
+        {
+          "title": "西北农林科技大学2024年计算机科学与技术学位授权点建设年度报告",
+          "url": "https://yjshy.nwsuaf.edu.cn/docs/2025-04/da0be5fdf344412da0951c623419c83a.pdf",
+          "year": 2024,
+          "scope": "印刷页22（PDF第25页），三（八）就业发展",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "西北农林科技大学"
+    },
+    {
+      "officialDomain": "lzu.edu.cn",
+      "surveyDate": "2026-11-25",
+      "targetGraduationYears": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "partial_statistics_verified",
+      "latestVerifiedGraduationYear": 2023,
+      "sources": [
+        {
+          "title": "兰州大学2023年度计算机科学与技术学位授权点建设年度报告",
+          "url": "https://xxxy.lzu.edu.cn/xxxynew/upload/files/20240722/a6c5239a16d0415b8f8669cc793f3951.pdf",
+          "year": 2023,
+          "scope": "印刷页3—4，1.3—1.4",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "已提取部分统计；未核实字段保留null，需按统计口径使用。 2026届完整数据、专硕细分数据及薪资等尚需继续核验；本轮并非穷尽检索。",
+      "verifiedComputerProfessionalMasterOutcome": false,
+      "surveyCompleteness": "partial",
+      "rateUnit": "percent_0_to_100",
+      "missingValueMeaning": "null表示本轮未核实，不代表0或学校未公开。",
+      "employmentEvidenceSummary": {
+        "recordsWithNumericalOutcomes": 1,
+        "recordsWithEmployerLists": 1,
+        "recordsWithEmployerCounts": 0,
+        "researchGroupRecords": 0,
+        "salaryRecords": 0
+      },
+      "schoolId": "兰州大学"
+    }
+  ],
+  "employmentRecords": [
+    {
+      "id": "ER0001",
+      "graduationYear": 2025,
+      "degreeLevel": "all",
+      "scope": "school",
+      "overseasFurtherStudyRate": 8.5,
+      "employmentRegions": [
+        {
+          "name": "京外",
+          "rate": 56.3,
+          "denominator": "就业毕业生（原文京外就业率）"
+        }
+      ],
+      "representativeEmployers": [
+        "华为",
+        "比亚迪",
+        "字节跳动",
+        "腾讯",
+        "国家电网",
+        "美团",
+        "阿里巴巴",
+        "中国核工业集团",
+        "中国兵器工业集团"
+      ],
+      "sources": [
+        {
+          "title": "2025届清华毕业生选择去哪儿？",
+          "url": "https://www.tsinghua.edu.cn/info/1182/124428.htm",
+          "year": 2025,
+          "scope": "正文第1—5段",
+          "sourceType": "official_republication",
+          "publishedDate": "2026-03-03"
+        }
+      ],
+      "notes": "重点单位就业率超过86%；下界为严格大于。代表单位为签约人数居前的示例，非完整排名。",
+      "keySectorEmploymentRateLowerBound": 86,
+      "schoolId": "清华大学"
+    },
+    {
+      "id": "ER0002",
+      "graduationYear": 2025,
+      "degreeLevel": "master",
+      "scope": "school_degree",
+      "overseasFurtherStudyRate": 6.6,
+      "sources": [
+        {
+          "title": "2025届清华毕业生选择去哪儿？",
+          "url": "https://www.tsinghua.edu.cn/info/1182/124428.htm",
+          "year": 2025,
+          "scope": "正文第1—5段",
+          "sourceType": "official_republication",
+          "publishedDate": "2026-03-03"
+        }
+      ],
+      "schoolId": "清华大学"
+    },
+    {
+      "id": "ER0003",
+      "graduationYear": 2024,
+      "degreeLevel": "all",
+      "scope": "school",
+      "employmentRegions": [
+        {
+          "name": "京外",
+          "rate": 56.2,
+          "denominator": "就业毕业生"
+        }
+      ],
+      "sources": [
+        {
+          "title": "数据显示，超九成2024届清华毕业生留在国内",
+          "url": "https://www.tsinghua.edu.cn/info/1182/116434.htm",
+          "year": 2024,
+          "scope": "正文就业及深造段落",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "重要领域重点单位就业率超过85%。",
+      "keySectorEmploymentRateLowerBound": 85,
+      "schoolId": "清华大学"
+    },
+    {
+      "id": "ER0004",
+      "graduationYear": 2024,
+      "degreeLevel": "master",
+      "scope": "school_degree",
+      "overseasFurtherStudyRate": 7.3,
+      "sources": [
+        {
+          "title": "数据显示，超九成2024届清华毕业生留在国内",
+          "url": "https://www.tsinghua.edu.cn/info/1182/116434.htm",
+          "year": 2024,
+          "scope": "正文就业及深造段落",
+          "sourceType": "official"
+        }
+      ],
+      "schoolId": "清华大学"
+    },
+    {
+      "id": "ER0005",
+      "college": "计算机系",
+      "major": "计算机科学与技术",
+      "graduationYear": 2025,
+      "degreeLevel": "master",
+      "degreeType": "academic",
+      "scope": "major",
+      "sources": [
+        {
+          "title": "清华大学2025届毕业研究生专业、预计参加就业人数情况表",
+          "url": "https://career.tsinghua.edu.cn/info/1017/5105.htm",
+          "year": 2025,
+          "scope": "各院系专业行及表下注释",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "仅预计参加就业人数，非实际毕业人数、就业人数或就业率；不参与就业质量比较。",
+      "expectedJobSeekingCount": 33,
+      "schoolId": "清华大学"
+    },
+    {
+      "id": "ER0006",
+      "college": "软件学院",
+      "major": "软件工程",
+      "graduationYear": 2025,
+      "degreeLevel": "master",
+      "degreeType": "academic",
+      "scope": "major",
+      "sources": [
+        {
+          "title": "清华大学2025届毕业研究生专业、预计参加就业人数情况表",
+          "url": "https://career.tsinghua.edu.cn/info/1017/5105.htm",
+          "year": 2025,
+          "scope": "各院系专业行及表下注释",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "仅预计参加就业人数，非实际毕业人数、就业人数或就业率；不参与就业质量比较。",
+      "expectedJobSeekingCount": 65,
+      "schoolId": "清华大学"
+    },
+    {
+      "id": "ER0007",
+      "college": "网络研究院",
+      "major": "网络空间安全",
+      "graduationYear": 2025,
+      "degreeLevel": "master",
+      "degreeType": "academic",
+      "scope": "major",
+      "sources": [
+        {
+          "title": "清华大学2025届毕业研究生专业、预计参加就业人数情况表",
+          "url": "https://career.tsinghua.edu.cn/info/1017/5105.htm",
+          "year": 2025,
+          "scope": "各院系专业行及表下注释",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "仅预计参加就业人数，非实际毕业人数、就业人数或就业率；不参与就业质量比较。",
+      "expectedJobSeekingCount": 21,
+      "schoolId": "清华大学"
+    },
+    {
+      "id": "ER0008",
+      "college": "交叉信息院",
+      "major": "计算机科学与技术",
+      "graduationYear": 2025,
+      "degreeLevel": "master",
+      "degreeType": "academic",
+      "scope": "major",
+      "sources": [
+        {
+          "title": "清华大学2025届毕业研究生专业、预计参加就业人数情况表",
+          "url": "https://career.tsinghua.edu.cn/info/1017/5105.htm",
+          "year": 2025,
+          "scope": "各院系专业行及表下注释",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "仅预计参加就业人数，非实际毕业人数、就业人数或就业率；不参与就业质量比较。",
+      "expectedJobSeekingCount": 4,
+      "schoolId": "清华大学"
+    },
+    {
+      "id": "ER0009",
+      "college": "国际研究生院",
+      "major": "计算机技术",
+      "graduationYear": 2025,
+      "degreeLevel": "master",
+      "degreeType": "professional",
+      "scope": "major",
+      "sources": [
+        {
+          "title": "清华大学2025届毕业研究生专业、预计参加就业人数情况表",
+          "url": "https://career.tsinghua.edu.cn/info/1017/5105.htm",
+          "year": 2025,
+          "scope": "各院系专业行及表下注释",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "仅预计参加就业人数，非实际毕业人数、就业人数或就业率；不参与就业质量比较。",
+      "expectedJobSeekingCount": 44,
+      "schoolId": "清华大学"
+    },
+    {
+      "id": "ER0010",
+      "college": "国际研究生院",
+      "major": "大数据技术与工程",
+      "graduationYear": 2025,
+      "degreeLevel": "master",
+      "degreeType": "professional",
+      "scope": "major",
+      "sources": [
+        {
+          "title": "清华大学2025届毕业研究生专业、预计参加就业人数情况表",
+          "url": "https://career.tsinghua.edu.cn/info/1017/5105.htm",
+          "year": 2025,
+          "scope": "各院系专业行及表下注释",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "仅预计参加就业人数，非实际毕业人数、就业人数或就业率；不参与就业质量比较。",
+      "expectedJobSeekingCount": 35,
+      "schoolId": "清华大学"
+    },
+    {
+      "id": "ER0011",
+      "graduationYear": 2024,
+      "degreeLevel": "all",
+      "scope": "school",
+      "graduateCount": 11983,
+      "sources": [
+        {
+          "title": "北京大学2024—2025学年度信息公开工作报告",
+          "url": "https://xxgk.pku.edu.cn/docs/2025-11/06afdbf397a548af9ffa167e907d69ed.pdf",
+          "year": 2024,
+          "scope": "第18—19页，3.1—3.3",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "毕业人数含医学部；校本部落实率另存。",
+      "schoolId": "北京大学"
+    },
+    {
+      "id": "ER0012",
+      "graduationYear": 2024,
+      "degreeLevel": "all",
+      "sampleSize": 9826,
+      "scope": "school_main_campus",
+      "graduateCount": 9826,
+      "destinationResolutionRate": 97.05,
+      "sources": [
+        {
+          "title": "北京大学2024—2025学年度信息公开工作报告",
+          "url": "https://xxgk.pku.edu.cn/docs/2025-11/06afdbf397a548af9ffa167e907d69ed.pdf",
+          "year": 2024,
+          "scope": "第18—19页，3.1—3.3",
+          "sourceType": "official"
+        }
+      ],
+      "schoolId": "北京大学"
+    },
+    {
+      "id": "ER0013",
+      "graduationYear": 2024,
+      "degreeLevel": "all",
+      "scope": "school_report_unspecified_campus",
+      "industries": [
+        {
+          "name": "教育",
+          "rate": 20.5,
+          "denominator": "报告就业行业分布样本，人数未披露"
+        },
+        {
+          "name": "金融业",
+          "rate": 18.42,
+          "denominator": "报告就业行业分布样本，人数未披露"
+        },
+        {
+          "name": "信息传输、软件和信息技术服务业",
+          "rate": 17.21,
+          "denominator": "报告就业行业分布样本，人数未披露"
+        },
+        {
+          "name": "公共管理、社会保障和社会组织",
+          "rate": 14.47,
+          "denominator": "报告就业行业分布样本，人数未披露"
+        },
+        {
+          "name": "科学研究和技术服务业",
+          "rate": 9.62,
+          "denominator": "报告就业行业分布样本，人数未披露"
+        },
+        {
+          "name": "制造业",
+          "rate": 6.83,
+          "denominator": "报告就业行业分布样本，人数未披露"
+        }
+      ],
+      "employmentRegions": [
+        {
+          "name": "北京",
+          "count": 1965,
+          "rate": 42.18,
+          "denominator": "报告就业地域分布样本"
+        },
+        {
+          "name": "广东",
+          "count": 652,
+          "rate": 13.99,
+          "denominator": "报告就业地域分布样本"
+        },
+        {
+          "name": "上海",
+          "count": 537,
+          "rate": 11.53,
+          "denominator": "报告就业地域分布样本"
+        },
+        {
+          "name": "浙江",
+          "count": 260,
+          "rate": 5.58,
+          "denominator": "报告就业地域分布样本"
+        },
+        {
+          "name": "四川",
+          "count": 167,
+          "rate": 3.58,
+          "denominator": "报告就业地域分布样本"
+        },
+        {
+          "name": "江苏",
+          "count": 142,
+          "rate": 3.05,
+          "denominator": "报告就业地域分布样本"
+        },
+        {
+          "name": "山东",
+          "count": 114,
+          "rate": 2.45,
+          "denominator": "报告就业地域分布样本"
+        },
+        {
+          "name": "福建",
+          "count": 84,
+          "rate": 1.8,
+          "denominator": "报告就业地域分布样本"
+        },
+        {
+          "name": "辽宁",
+          "count": 75,
+          "rate": 1.61,
+          "denominator": "报告就业地域分布样本"
+        },
+        {
+          "name": "重庆",
+          "count": 65,
+          "rate": 1.4,
+          "denominator": "报告就业地域分布样本"
+        }
+      ],
+      "sources": [
+        {
+          "title": "北京大学2024—2025学年度信息公开工作报告",
+          "url": "https://xxgk.pku.edu.cn/docs/2025-11/06afdbf397a548af9ffa167e907d69ed.pdf",
+          "year": 2024,
+          "scope": "第18—19页，3.1—3.3",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原文行业及地区段未明确是否包含医学部；仅列部分行业和地区。",
+      "schoolId": "北京大学"
+    },
+    {
+      "id": "ER0014",
+      "graduationYear": 2025,
+      "degreeLevel": "all",
+      "sampleSize": 8551,
+      "scope": "school_beijing_student_registration",
+      "graduateCount": 8551,
+      "destinationResolutionRate": 95,
+      "sources": [
+        {
+          "title": "北京师范大学2025届毕业生就业质量报告",
+          "url": "https://xxgk.bnu.edu.cn/docs/2026-10/e700c0d18dd84aee9300161332f4f7bc.pdf",
+          "year": 2025,
+          "scope": "PDF第1—2页，一、二",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "仅含北京校区和珠海校区北京学籍毕业生；落实率约95%。",
+      "destinationResolutionRateQualifier": "approximate",
+      "asOf": "2025-10-31",
+      "schoolId": "北京师范大学"
+    },
+    {
+      "id": "ER0015",
+      "graduationYear": 2025,
+      "degreeLevel": "master",
+      "scope": "school_beijing_student_registration_degree",
+      "employerTypes": [
+        {
+          "name": "事业单位"
+        },
+        {
+          "name": "企业"
+        }
+      ],
+      "sources": [
+        {
+          "title": "北京师范大学2025届毕业生就业质量报告",
+          "url": "https://xxgk.bnu.edu.cn/docs/2026-10/e700c0d18dd84aee9300161332f4f7bc.pdf",
+          "year": 2025,
+          "scope": "PDF第1—2页，一、二",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "仅定性说明硕士就业集中于事业单位和企业。",
+      "schoolId": "北京师范大学"
+    },
+    {
+      "id": "ER0016",
+      "college": "计算机科学与技术学院",
+      "major": "计算机科学与技术",
+      "graduationYear": 2024,
+      "degreeLevel": "postgraduate",
+      "degreeType": "academic",
+      "scope": "major",
+      "employmentRate": 100,
+      "employmentRateDefinition": "原文称本授权点毕业研究生就业率保持100%，未说明统计细则",
+      "sources": [
+        {
+          "title": "2024年学位授权点建设年度报告（计算机科学与技术）",
+          "url": "https://www.cs.xjtu.edu.cn/info/1233/3539.htm",
+          "year": 2024,
+          "scope": "二、年度建设取得的成绩，学位授予及就业情况",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "硕博合计就业率；学位授予人数不能视作就业统计分母。",
+      "schoolId": "西安交通大学"
+    },
+    {
+      "id": "ER0017",
+      "college": "计算机科学与技术学院",
+      "major": "计算机科学与技术",
+      "graduationYear": 2024,
+      "degreeLevel": "master",
+      "degreeType": "academic",
+      "scope": "major",
+      "degreeAwardedCount": 78,
+      "sources": [
+        {
+          "title": "2024年学位授权点建设年度报告（计算机科学与技术）",
+          "url": "https://www.cs.xjtu.edu.cn/info/1233/3539.htm",
+          "year": 2024,
+          "scope": "二、年度建设取得的成绩，学位授予及就业情况",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "学位授予人数，未单列该学历就业率。",
+      "schoolId": "西安交通大学"
+    },
+    {
+      "id": "ER0018",
+      "college": "计算机科学与技术学院",
+      "major": "计算机科学与技术",
+      "graduationYear": 2024,
+      "degreeLevel": "doctorate",
+      "degreeType": "academic",
+      "scope": "major",
+      "degreeAwardedCount": 34,
+      "sources": [
+        {
+          "title": "2024年学位授权点建设年度报告（计算机科学与技术）",
+          "url": "https://www.cs.xjtu.edu.cn/info/1233/3539.htm",
+          "year": 2024,
+          "scope": "二、年度建设取得的成绩，学位授予及就业情况",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "学位授予人数，未单列该学历就业率。",
+      "schoolId": "西安交通大学"
+    },
+    {
+      "id": "ER0019",
+      "college": "信息工程学院",
+      "major": "计算机科学与技术",
+      "graduationYear": 2024,
+      "degreeLevel": "master",
+      "degreeType": "academic",
+      "sampleSize": 26,
+      "scope": "major",
+      "graduateCount": 26,
+      "mastersGraduateCount": 26,
+      "destinationResolvedCount": 26,
+      "destinationResolutionRate": 100,
+      "directEmploymentCount": 22,
+      "signedEmploymentCount": 22,
+      "signedEmploymentRate": 84.62,
+      "furtherStudyCount": 4,
+      "furtherStudyRate": 15.38,
+      "employerTypes": [
+        {
+          "name": "国有企业",
+          "count": 14,
+          "denominator": 22
+        },
+        {
+          "name": "民营企业",
+          "count": 4,
+          "denominator": 22
+        },
+        {
+          "name": "党政机关、事业单位",
+          "count": 4,
+          "denominator": 22
+        }
+      ],
+      "representativeEmployers": [
+        "公安部大数据中心",
+        "中国邮政储蓄银行"
+      ],
+      "stateOwnedEmployerCount": 14,
+      "sources": [
+        {
+          "title": "西北农林科技大学2024年计算机科学与技术学位授权点建设年度报告",
+          "url": "https://yjshy.nwsuaf.edu.cn/docs/2025-04/da0be5fdf344412da0951c623419c83a.pdf",
+          "year": 2024,
+          "scope": "印刷页22（PDF第25页），三（八）就业发展",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "签约单位性质以22名签约者为分母；未披露企业逐家人数比例。",
+      "schoolId": "西北农林科技大学"
+    },
+    {
+      "id": "ER0020",
+      "college": "信息科学与工程学院",
+      "major": "计算机科学与技术",
+      "graduationYear": 2023,
+      "degreeLevel": "master",
+      "degreeType": "academic",
+      "sampleSize": 46,
+      "scope": "major",
+      "graduateCount": 46,
+      "mastersGraduateCount": 46,
+      "employmentRate": 100,
+      "employmentRateDefinition": "报告将签约就业和继续读博一并计入整体就业率",
+      "directEmploymentCount": 40,
+      "signedEmploymentCount": 40,
+      "signedEmploymentRate": 86.96,
+      "furtherStudyCount": 6,
+      "furtherStudyRate": 13.04,
+      "domesticFurtherStudyCount": 6,
+      "employerTypes": [
+        {
+          "name": "高等教育单位",
+          "count": 1,
+          "denominator": 40
+        },
+        {
+          "name": "国有企业",
+          "count": 12,
+          "denominator": 40
+        },
+        {
+          "name": "科研设计单位",
+          "count": 9,
+          "denominator": 40
+        },
+        {
+          "name": "其他企业（含华为、大疆）",
+          "count": 7,
+          "denominator": 40
+        },
+        {
+          "name": "其他事业单位",
+          "count": 3,
+          "denominator": 40
+        },
+        {
+          "name": "三资企业",
+          "count": 8,
+          "denominator": 40
+        }
+      ],
+      "representativeEmployers": [
+        "华为",
+        "大疆"
+      ],
+      "stateOwnedEmployerCount": 12,
+      "researchInstituteEmployerCount": 9,
+      "sources": [
+        {
+          "title": "兰州大学2023年度计算机科学与技术学位授权点建设年度报告",
+          "url": "https://xxxy.lzu.edu.cn/xxxynew/upload/files/20240722/a6c5239a16d0415b8f8669cc793f3951.pdf",
+          "year": 2023,
+          "scope": "印刷页3—4，1.3—1.4",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "科研设计单位为原报告分类；不能等同全部科研院所。",
+      "asOf": "2023-10",
+      "schoolId": "兰州大学"
+    },
+    {
+      "id": "ER0021",
+      "graduationYear": 2023,
+      "degreeLevel": "all",
+      "scope": "school",
+      "graduateCount": 12003,
+      "sources": [
+        {
+          "title": "上海交通大学2023年就业质量报告",
+          "url": "https://gk.sjtu.edu.cn/Assets/userfiles/sys_eb538c1c-65ff-4e82-8e6a-a1ef01127fed/files/20241125/20241125135303680.pdf",
+          "year": 2023,
+          "scope": "印刷页3—5，表1-1、表1-2及毕业生规模",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "含医学院及全日制、非全日制，不含港澳台、来华留学生及硕博连读转博学生。",
+      "asOf": "2023-11-30",
+      "schoolId": "上海交通大学"
+    },
+    {
+      "id": "ER0022",
+      "graduationYear": 2023,
+      "degreeLevel": "all",
+      "sampleSize": 10347,
+      "scope": "school_full_time",
+      "graduateCount": 10347,
+      "mastersGraduateCount": 4608,
+      "doctorateGraduateCount": 1866,
+      "bachelorGraduateCount": 3873,
+      "destinationResolutionRate": 97.87,
+      "directEmploymentCount": 6777,
+      "directEmploymentRate": 65.5,
+      "signedEmploymentCount": 6382,
+      "signedEmploymentRate": 61.68,
+      "flexibleEmploymentCount": 395,
+      "unresolvedCount": 220,
+      "sources": [
+        {
+          "title": "上海交通大学2023年就业质量报告",
+          "url": "https://gk.sjtu.edu.cn/Assets/userfiles/sys_eb538c1c-65ff-4e82-8e6a-a1ef01127fed/files/20241125/20241125135303680.pdf",
+          "year": 2023,
+          "scope": "印刷页3—5，表1-1、表1-2及毕业生规模",
+          "sourceType": "official"
+        }
+      ],
+      "asOf": "2023-11-30",
+      "schoolId": "上海交通大学"
+    },
+    {
+      "id": "ER0023",
+      "graduationYear": 2023,
+      "degreeLevel": "master",
+      "sampleSize": 4608,
+      "scope": "school_full_time_degree",
+      "graduateCount": 4608,
+      "mastersGraduateCount": 4608,
+      "destinationResolutionRate": 98.31,
+      "directEmploymentCount": 3979,
+      "directEmploymentRate": 86.35,
+      "signedEmploymentCount": 3883,
+      "signedEmploymentRate": 84.27,
+      "flexibleEmploymentCount": 96,
+      "overseasFurtherStudyCount": 156,
+      "overseasFurtherStudyRate": 3.39,
+      "unresolvedCount": 78,
+      "sources": [
+        {
+          "title": "上海交通大学2023年就业质量报告",
+          "url": "https://gk.sjtu.edu.cn/Assets/userfiles/sys_eb538c1c-65ff-4e82-8e6a-a1ef01127fed/files/20241125/20241125135303680.pdf",
+          "year": 2023,
+          "scope": "印刷页3—5，表1-1、表1-2及毕业生规模",
+          "sourceType": "official"
+        }
+      ],
+      "asOf": "2023-11-30",
+      "schoolId": "上海交通大学"
+    },
+    {
+      "id": "ER0024",
+      "graduationYear": 2023,
+      "degreeLevel": "master",
+      "sampleSize": 3619,
+      "scope": "school_main_campus_full_time_degree",
+      "graduateCount": 3619,
+      "mastersGraduateCount": 3619,
+      "destinationResolutionRate": 98.95,
+      "directEmploymentCount": 3276,
+      "directEmploymentRate": 90.52,
+      "signedEmploymentCount": 3189,
+      "signedEmploymentRate": 88.12,
+      "flexibleEmploymentCount": 87,
+      "furtherStudyCount": 305,
+      "domesticFurtherStudyCount": 189,
+      "overseasFurtherStudyCount": 116,
+      "unresolvedCount": 38,
+      "sources": [
+        {
+          "title": "上海交通大学2023年就业质量报告",
+          "url": "https://gk.sjtu.edu.cn/Assets/userfiles/sys_eb538c1c-65ff-4e82-8e6a-a1ef01127fed/files/20241125/20241125135303680.pdf",
+          "year": 2023,
+          "scope": "印刷页3—5，表1-1、表1-2及毕业生规模",
+          "sourceType": "official"
+        }
+      ],
+      "asOf": "2023-11-30",
+      "schoolId": "上海交通大学"
+    },
+    {
+      "id": "ER0025",
+      "graduationYear": 2023,
+      "degreeLevel": "all",
+      "sampleSize": 7993,
+      "scope": "school_main_campus_full_time",
+      "graduateCount": 7993,
+      "mastersGraduateCount": 3619,
+      "doctorateGraduateCount": 1130,
+      "bachelorGraduateCount": 3244,
+      "destinationResolutionRate": 98.51,
+      "directEmploymentCount": 5200,
+      "directEmploymentRate": 65.06,
+      "signedEmploymentCount": 4819,
+      "signedEmploymentRate": 60.29,
+      "flexibleEmploymentCount": 381,
+      "furtherStudyCount": 2674,
+      "domesticFurtherStudyCount": 1906,
+      "overseasFurtherStudyCount": 768,
+      "unresolvedCount": 119,
+      "sources": [
+        {
+          "title": "上海交通大学2023年就业质量报告",
+          "url": "https://gk.sjtu.edu.cn/Assets/userfiles/sys_eb538c1c-65ff-4e82-8e6a-a1ef01127fed/files/20241125/20241125135303680.pdf",
+          "year": 2023,
+          "scope": "印刷页3—5，表1-1、表1-2及毕业生规模",
+          "sourceType": "official"
+        }
+      ],
+      "asOf": "2023-11-30",
+      "schoolId": "上海交通大学"
+    },
+    {
+      "id": "ER0026",
+      "graduationYear": 2024,
+      "degreeLevel": "all",
+      "scope": "school",
+      "graduateCount": 11662,
+      "sources": [
+        {
+          "title": "厦门大学2024届毕业生就业质量报告",
+          "url": "https://gk.xmu.edu.cn/virtual_attach_file.vsb?afc=bUmTE7MzCDUNn2oezvPnz9anmv4L4vyDM47YnNUYM7lPLmC0gihFp2hmCIa0n1yan1ybL1hknzvZLzrVn7UYoRNDMRG4o77sL4vsMzlioR6FM7C4M8nVoznFM467nmL4lZMz-Jqdhnx&e=.pdf&nid=35852&oid=1831381815&tid=1061",
+          "year": 2024,
+          "scope": "印刷页1—2，表1-1；第4页第二章",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "全校总体毕业人数；质量分析另用9881人。",
+      "schoolId": "厦门大学"
+    },
+    {
+      "id": "ER0027",
+      "graduationYear": 2024,
+      "degreeLevel": "all",
+      "sampleSize": 9881,
+      "scope": "school_analysis_population",
+      "sources": [
+        {
+          "title": "厦门大学2024届毕业生就业质量报告",
+          "url": "https://gk.xmu.edu.cn/virtual_attach_file.vsb?afc=bUmTE7MzCDUNn2oezvPnz9anmv4L4vyDM47YnNUYM7lPLmC0gihFp2hmCIa0n1yan1ybL1hknzvZLzrVn7UYoRNDMRG4o77sL4vsMzlioR6FM7C4M8nVoznFM467nmL4lZMz-Jqdhnx&e=.pdf&nid=35852&oid=1831381815&tid=1061",
+          "year": 2024,
+          "scope": "印刷页1—2，表1-1；第4页第二章",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "分析样本排除港澳台195人、外籍192人及马来西亚分校1394人。",
+      "schoolId": "厦门大学"
+    },
+    {
+      "id": "ER0028",
+      "college": "信息学院",
+      "graduationYear": 2024,
+      "degreeLevel": "all",
+      "sampleSize": 919,
+      "scope": "college",
+      "graduateCount": 919,
+      "sources": [
+        {
+          "title": "厦门大学2024届毕业生就业质量报告",
+          "url": "https://gk.xmu.edu.cn/virtual_attach_file.vsb?afc=bUmTE7MzCDUNn2oezvPnz9anmv4L4vyDM47YnNUYM7lPLmC0gihFp2hmCIa0n1yan1ybL1hknzvZLzrVn7UYoRNDMRG4o77sL4vsMzlioR6FM7C4M8nVoznFM467nmL4lZMz-Jqdhnx&e=.pdf&nid=35852&oid=1831381815&tid=1061",
+          "year": 2024,
+          "scope": "印刷页1—2，表1-1；第4页第二章",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "来自报告分析样本的院系毕业生总数，未分学历及专业。",
+      "schoolId": "厦门大学"
+    },
+    {
+      "id": "ER0029",
+      "graduationYear": 2025,
+      "degreeLevel": "all",
+      "scope": "school",
+      "sources": [
+        {
+          "title": "2025年就业工作领导小组扩大会",
+          "url": "https://www.nwpu.edu.cn/info/1198/117388.htm",
+          "year": 2025,
+          "scope": "正文就业工作汇报段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原文两项均为“超”，仅保存严格下界。",
+      "destinationResolutionRateLowerBound": 97,
+      "keySectorEmploymentRateLowerBound": 88,
+      "schoolId": "西北工业大学"
+    },
+    {
+      "id": "ER0030",
+      "graduationYear": 2025,
+      "degreeLevel": "all",
+      "scope": "school",
+      "destinationResolutionRate": 99.34,
+      "sources": [
+        {
+          "title": "学生“缺”什么 就业工作就“补”什么——哈尔滨工业大学让海量岗位围着学生“转”",
+          "url": "https://www.chinaafse.cn/info/1092/2779.htm",
+          "year": 2025,
+          "scope": "正文就业落实率段",
+          "sourceType": "third_party_association"
+        }
+      ],
+      "notes": "高校毕业生就业协会发布的学校整体数据，未分校区和专业。",
+      "schoolId": "哈尔滨工业大学"
+    },
+    {
+      "id": "ER0031",
+      "college": "计算机科学与技术学院",
+      "degreeLevel": "mixed",
+      "scope": "college",
+      "employerTypes": [
+        {
+          "name": "央企国企及事业单位",
+          "rate": 42,
+          "denominator": "本、研选择就业者"
+        },
+        {
+          "name": "互联网公司（原文分类）",
+          "rate": 53,
+          "denominator": "本、研选择就业者"
+        }
+      ],
+      "employmentRegions": [
+        {
+          "name": "辽宁",
+          "rate": 17,
+          "denominator": "本、研就业者"
+        },
+        {
+          "name": "北京",
+          "denominator": "本、研就业者"
+        },
+        {
+          "name": "上海",
+          "denominator": "本、研就业者"
+        },
+        {
+          "name": "浙江",
+          "denominator": "本、研就业者"
+        },
+        {
+          "name": "广东",
+          "denominator": "本、研就业者"
+        }
+      ],
+      "representativeEmployers": [
+        "中国电子科技集团",
+        "中国航空工业集团",
+        "华为",
+        "字节跳动",
+        "阿里巴巴",
+        "腾讯",
+        "海康威视"
+      ],
+      "sources": [
+        {
+          "title": "高质量就业与未来发展：计算机科学与技术学院2026级迎新介绍",
+          "url": "https://yx.dlut.edu.cn/info/10092/90457.htm",
+          "year": 2026,
+          "scope": "高质量就业与未来发展段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "2026迎新材料，毕业年度区间及样本数未明；本、研合计，不能视为硕士或专硕数据。",
+      "schoolId": "大连理工大学"
+    },
+    {
+      "id": "ER0032",
+      "college": "计算机学院",
+      "degreeLevel": "postgraduate",
+      "scope": "college",
+      "employmentCities": [
+        "北京",
+        "上海",
+        "深圳"
+      ],
+      "representativeEmployers": [
+        "中国航天科工集团",
+        "中国航天科技集团",
+        "中国人寿",
+        "中国电信",
+        "腾讯",
+        "美团",
+        "华为",
+        "字节跳动",
+        "中国银行",
+        "工商银行",
+        "农业银行"
+      ],
+      "sources": [
+        {
+          "title": "研究生毕业去向",
+          "url": "https://cs.bit.edu.cn/zsjy/yjsbyqx/index.htm",
+          "scope": "正文",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "未注明毕业年度及样本数量，仅列定性去向及代表单位。",
+      "schoolId": "北京理工大学"
+    },
+    {
+      "id": "ER0033",
+      "college": "软件工程学院",
+      "degreeLevel": "postgraduate",
+      "scope": "college",
+      "representativeEmployers": [
+        "腾讯",
+        "华为",
+        "比亚迪",
+        "阿里巴巴",
+        "广东电网"
+      ],
+      "sources": [
+        {
+          "title": "回眸“十四五”丨中山大学软件工程学院研究生培养专项报告",
+          "url": "https://sse.sysu.edu.cn/article/1039",
+          "year": 2025,
+          "scope": "2024及2025届硕博就业去向段（搜索索引可见，正文访问超时）",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "2024—2025届硕博混合去向，正文访问超时，索引片段显示代表性单位，未有比例。",
+      "graduationYearStart": 2024,
+      "graduationYearEnd": 2025,
+      "schoolId": "中山大学"
+    },
+    {
+      "id": "ER0034",
+      "graduationYear": 2025,
+      "degreeLevel": "postgraduate",
+      "scope": "school_degree",
+      "graduateCount": 7374,
+      "sources": [
+        {
+          "title": "西安交通大学举行2025年研究生毕业典礼暨学位授予仪式",
+          "url": "https://news.xjtu.edu.cn/info/1033/223068.htm",
+          "year": 2025,
+          "scope": "正文截至6月19日统计段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "含205名国际学生；硕博合计。",
+      "asOf": "2025-06-19",
+      "schoolId": "西安交通大学"
+    },
+    {
+      "id": "ER0035",
+      "graduationYear": 2025,
+      "degreeLevel": "all",
+      "scope": "school",
+      "destinationResolutionRate": 98.07,
+      "sources": [
+        {
+          "title": "同济大学官网",
+          "url": "https://www.tongji.edu.cn/",
+          "year": 2025,
+          "scope": "学校概况数据",
+          "sourceType": "official"
+        }
+      ],
+      "schoolId": "同济大学"
+    },
+    {
+      "id": "ER0036",
+      "graduationYear": 2024,
+      "degreeLevel": "all",
+      "scope": "school",
+      "employmentRegions": [
+        {
+          "name": "浙江"
+        },
+        {
+          "name": "上海"
+        },
+        {
+          "name": "广东"
+        },
+        {
+          "name": "北京"
+        }
+      ],
+      "sources": [
+        {
+          "title": "浙江大学2025年答考生问",
+          "url": "https://zdzsc.zju.edu.cn/2024/0621/c87334a2937730/page.htm",
+          "year": 2024,
+          "scope": "第九问毕业生发展前景",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "同比增长率，非就业占比。",
+      "centralEnterpriseEmploymentYoYGrowthRate": 16.44,
+      "keyTechnologyEmploymentYoYGrowthRate": 12.43,
+      "schoolId": "浙江大学"
+    },
+    {
+      "id": "ER0037",
+      "degreeLevel": "all",
+      "scope": "school",
+      "employmentRegions": [
+        {
+          "name": "北京",
+          "rate": 51.91,
+          "denominator": "近年来就业毕业生（报告未明确年度）"
+        }
+      ],
+      "sources": [
+        {
+          "title": "北京航空航天大学：招生政策三大亮点，专业有多项调整",
+          "url": "https://gaokao.chsi.com.cn/gkxx/zbzrft/zx/202606/20260622/2293835021.html",
+          "year": 2026,
+          "scope": "招生办访谈，毕业生就业段",
+          "sourceType": "official_interview"
+        }
+      ],
+      "notes": "近年总体落实率95%以上，非2026届最终统计。",
+      "destinationResolutionRateLowerBound": 95,
+      "schoolId": "北京航空航天大学"
+    },
+    {
+      "id": "ER0038",
+      "degreeLevel": "all",
+      "scope": "school",
+      "employmentCities": [
+        "成都",
+        "深圳",
+        "重庆",
+        "北京",
+        "上海"
+      ],
+      "employmentRegions": [
+        {
+          "name": "西部地区",
+          "denominator": "近年毕业生"
+        }
+      ],
+      "sources": [
+        {
+          "title": "招生就业概况",
+          "url": "https://www.scu.edu.cn/zsjy/zsjygk.htm",
+          "year": 2026,
+          "scope": "就业工作段，截至2026年6月30日",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "多年概况，统计截至2026-06-30，未指定毕业届别；西部就业保持60%以上，重点单位约85%。",
+      "westernEmploymentRateLowerBound": 60,
+      "keySectorEmploymentRateApproximate": 85,
+      "schoolId": "四川大学"
+    },
+    {
+      "id": "ER0039",
+      "graduationYear": 2025,
+      "degreeLevel": "all",
+      "scope": "school",
+      "sources": [
+        {
+          "title": "东南大学2025年春季校园招聘工作安排",
+          "url": "https://xsc.seu.edu.cn/2025/1203/c64952a547590/page.htm",
+          "year": 2025,
+          "scope": "一、2025届毕业生生源信息",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "预计毕业生规模，不是实际毕业人数。",
+      "expectedGraduateCount": 11410,
+      "expectedMastersGraduateCount": 5915,
+      "expectedBachelorGraduateCount": 4071,
+      "expectedDoctorateGraduateCount": 1424,
+      "schoolId": "东南大学"
+    },
+    {
+      "id": "ER0040",
+      "college": "计算机科学与工程学院、软件学院、人工智能学院",
+      "graduationYear": 2023,
+      "degreeLevel": "master",
+      "sampleSize": 231,
+      "scope": "college_group_degree",
+      "graduateCount": 231,
+      "mastersGraduateCount": 231,
+      "destinationResolutionRate": 99.13,
+      "signedEmploymentCount": 217,
+      "signedEmploymentRate": 93.94,
+      "furtherStudyCount": 12,
+      "domesticFurtherStudyCount": 6,
+      "overseasFurtherStudyCount": 6,
+      "employerTypes": [
+        {
+          "name": "国有企业",
+          "rate": 35.02,
+          "denominator": "硕士就业人数"
+        },
+        {
+          "name": "民营企业",
+          "rate": 28.57,
+          "denominator": "硕士就业人数"
+        },
+        {
+          "name": "三资企业",
+          "rate": 19.35,
+          "denominator": "硕士就业人数"
+        }
+      ],
+      "industries": [
+        {
+          "name": "信息传输、软件和信息技术服务业",
+          "rate": 42.86,
+          "denominator": "硕士就业人数"
+        },
+        {
+          "name": "制造业",
+          "denominator": "硕士就业人数"
+        },
+        {
+          "name": "金融业",
+          "denominator": "硕士就业人数"
+        },
+        {
+          "name": "科学研究和技术服务业",
+          "denominator": "硕士就业人数"
+        }
+      ],
+      "stateOwnedEmployerRate": 35.02,
+      "sources": [
+        {
+          "title": "计算机科学与工程学院、软件学院、人工智能学院2023届毕业生去向报告",
+          "url": "https://www.sohu.com/a/776739446_121124214",
+          "year": 2023,
+          "scope": "PART TWO—FOUR，硕士去向、行业与单位分布、重点区域",
+          "sourceType": "third_party_republication"
+        }
+      ],
+      "notes": "截至2024-03-20；三院合计，学位类别未细分；转载未独立核实原公众号。",
+      "schoolId": "东南大学"
+    },
+    {
+      "id": "ER0041",
+      "college": "计算机科学与工程学院、软件学院、人工智能学院",
+      "graduationYear": 2023,
+      "degreeLevel": "all",
+      "sampleSize": 511,
+      "scope": "college_group",
+      "graduateCount": 511,
+      "mastersGraduateCount": 231,
+      "doctorateGraduateCount": 20,
+      "bachelorGraduateCount": 260,
+      "destinationResolutionRate": 96.09,
+      "employmentCities": [
+        {
+          "name": "南京",
+          "rate": 42.48,
+          "denominator": "原文就业毕业生；比例按原文保留，不强制加总"
+        },
+        {
+          "name": "上海",
+          "rate": 19.93,
+          "denominator": "原文就业毕业生；比例按原文保留，不强制加总"
+        },
+        {
+          "name": "北京",
+          "rate": 10.78,
+          "denominator": "原文就业毕业生；比例按原文保留，不强制加总"
+        },
+        {
+          "name": "杭州",
+          "rate": 10.13,
+          "denominator": "原文就业毕业生；比例按原文保留，不强制加总"
+        },
+        {
+          "name": "苏州",
+          "rate": 7.84,
+          "denominator": "原文就业毕业生；比例按原文保留，不强制加总"
+        },
+        {
+          "name": "深圳",
+          "rate": 6.54,
+          "denominator": "原文就业毕业生；比例按原文保留，不强制加总"
+        }
+      ],
+      "employmentRegions": [
+        {
+          "name": "江苏",
+          "count": 172,
+          "rate": 56.21,
+          "denominator": "原文就业毕业生；比例按原文保留"
+        },
+        {
+          "name": "上海",
+          "count": 61,
+          "rate": 19.93,
+          "denominator": "原文就业毕业生；比例按原文保留"
+        },
+        {
+          "name": "浙江",
+          "rate": 11.76,
+          "denominator": "原文就业毕业生；比例按原文保留"
+        },
+        {
+          "name": "北京",
+          "rate": 10.78,
+          "denominator": "原文就业毕业生；比例按原文保留"
+        },
+        {
+          "name": "广东",
+          "rate": 8.82,
+          "denominator": "原文就业毕业生；比例按原文保留"
+        }
+      ],
+      "representativeEmployers": [
+        "字节跳动",
+        "阿里巴巴",
+        "腾讯",
+        "百度",
+        "网易",
+        "京东",
+        "米哈游",
+        "快手",
+        "小红书",
+        "哔哩哔哩",
+        "华为",
+        "中兴",
+        "荣耀",
+        "蔚来",
+        "比亚迪",
+        "小米",
+        "国家电网",
+        "中国移动",
+        "中国电信",
+        "中国联通",
+        "中国人民银行",
+        "国家开发银行",
+        "华泰证券",
+        "中国银行",
+        "中国工商银行",
+        "中国电科",
+        "中国航天科技",
+        "中国航天科工"
+      ],
+      "sources": [
+        {
+          "title": "计算机科学与工程学院、软件学院、人工智能学院2023届毕业生去向报告",
+          "url": "https://www.sohu.com/a/776739446_121124214",
+          "year": 2023,
+          "scope": "PART TWO—FOUR，硕士去向、行业与单位分布、重点区域",
+          "sourceType": "third_party_republication"
+        }
+      ],
+      "notes": "三院本硕博；互联网近50%、智能制造50余人、战略基础行业40余人、金融40余人、国防科研10余人；原文区间与行业可能交叉，不作精确统计。",
+      "schoolId": "东南大学"
+    },
+    {
+      "id": "ER0042",
+      "college": "计算机科学与工程学院、软件学院、人工智能学院",
+      "graduationYear": 2022,
+      "degreeLevel": "master",
+      "sampleSize": 230,
+      "scope": "college_group_degree",
+      "graduateCount": 230,
+      "mastersGraduateCount": 230,
+      "destinationResolutionRate": 100,
+      "signedEmploymentCount": 212,
+      "signedEmploymentRate": 92.17,
+      "furtherStudyCount": 11,
+      "domesticFurtherStudyCount": 7,
+      "overseasFurtherStudyCount": 4,
+      "sources": [
+        {
+          "title": "计算机科学与工程学院、软件学院、人工智能学院2022届毕业生去向报告",
+          "url": "https://www.sohu.com/a/681248519_121124214",
+          "year": 2022,
+          "scope": "毕业生基本情况、硕士研究生毕业去向、重点行业",
+          "sourceType": "third_party_republication"
+        }
+      ],
+      "notes": "截至2022-12-31；计算机技术、计算机科学与技术、软件工程；基层选调4人，学硕专硕未分列。",
+      "schoolId": "东南大学"
+    },
+    {
+      "id": "ER0043",
+      "college": "计算机科学与工程学院、软件学院、人工智能学院",
+      "graduationYear": 2022,
+      "degreeLevel": "all",
+      "sampleSize": 545,
+      "scope": "college_group",
+      "graduateCount": 545,
+      "mastersGraduateCount": 230,
+      "doctorateGraduateCount": 19,
+      "bachelorGraduateCount": 296,
+      "destinationResolutionRate": 97.72,
+      "employmentRegions": [
+        {
+          "name": "长江经济带",
+          "rate": 80.85,
+          "denominator": "签约就业，区域可能重叠"
+        },
+        {
+          "name": "一带一路沿线",
+          "rate": 45.35,
+          "denominator": "签约就业，区域可能重叠"
+        },
+        {
+          "name": "京津冀",
+          "rate": 10.14,
+          "denominator": "签约就业，区域可能重叠"
+        },
+        {
+          "name": "粤港澳大湾区",
+          "rate": 6.48,
+          "denominator": "签约就业，区域可能重叠"
+        },
+        {
+          "name": "黄河流域",
+          "rate": 2.25,
+          "denominator": "签约就业，区域可能重叠"
+        }
+      ],
+      "representativeEmployers": [
+        "华为",
+        "阿里巴巴旗下企业",
+        "腾讯",
+        "国家电网"
+      ],
+      "sources": [
+        {
+          "title": "计算机科学与工程学院、软件学院、人工智能学院2022届毕业生去向报告",
+          "url": "https://www.sohu.com/a/681248519_121124214",
+          "year": 2022,
+          "scope": "毕业生基本情况、硕士研究生毕业去向、重点行业",
+          "sourceType": "third_party_republication"
+        },
+        {
+          "title": "计算机科学与工程学院、软件学院、人工智能学院2022届毕业生去向报告",
+          "url": "https://www.sohu.com/a/710909120_121124217",
+          "year": 2022,
+          "scope": "重点企业就业",
+          "sourceType": "third_party_republication"
+        }
+      ],
+      "notes": "三院本硕博合计；企业人数来自同一报告另一个转载页面。",
+      "employerCounts": [
+        {
+          "name": "华为",
+          "count": 42
+        },
+        {
+          "name": "阿里巴巴旗下企业",
+          "count": 24
+        },
+        {
+          "name": "腾讯",
+          "count": 19
+        },
+        {
+          "name": "国家电网",
+          "count": 6
+        }
+      ],
+      "schoolId": "东南大学"
+    },
+    {
+      "id": "ER0044",
+      "college": "计算机科学与技术学院",
+      "graduationYear": 2021,
+      "degreeLevel": "postgraduate",
+      "scope": "college_degree",
+      "destinationResolutionRate": 98.98,
+      "sources": [
+        {
+          "title": "就业工作典型案例：计算机科学与技术学院",
+          "url": "https://student.hust.edu.cn/info/1119/1113.htm",
+          "year": 2021,
+          "scope": "2021年就业成效段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "研究生硕博合计，未公布分母。",
+      "schoolId": "华中科技大学"
+    },
+    {
+      "id": "ER0045",
+      "college": "计算机科学与技术学院",
+      "graduationYear": 2021,
+      "degreeLevel": "all",
+      "scope": "college",
+      "representativeEmployers": [
+        "华为",
+        "腾讯",
+        "阿里巴巴",
+        "字节跳动"
+      ],
+      "sources": [
+        {
+          "title": "就业工作典型案例：计算机科学与技术学院",
+          "url": "https://student.hust.edu.cn/info/1119/1113.htm",
+          "year": 2021,
+          "scope": "2021年就业成效段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "总体去向落实率超过97%；协议就业学生中近65%进入一流IT互联网企业，超过20%进入党政机关、事业单位、国有企业和部队；仅为本硕博合计近似比例。",
+      "destinationResolutionRateLowerBound": 97,
+      "industryApproximateShares": [
+        {
+          "name": "一流IT互联网企业",
+          "approximateRate": 65,
+          "denominator": "协议就业毕业生"
+        }
+      ],
+      "employerTypeRateLowerBounds": [
+        {
+          "name": "党政机关、事业单位、国有企业和部队",
+          "lowerBound": 20,
+          "denominator": "协议就业毕业生"
+        }
+      ],
+      "schoolId": "华中科技大学"
+    },
+    {
+      "id": "ER0046",
+      "college": "软件学院",
+      "major": "软件工程",
+      "graduationYear": 2020,
+      "degreeLevel": "master",
+      "sampleSize": 337,
+      "scope": "college_degree",
+      "graduateCount": 337,
+      "mastersGraduateCount": 337,
+      "employmentRate": 100,
+      "employmentRateDefinition": "报告含签约、升学、出国、自由职业和创业",
+      "signedEmploymentCount": 325,
+      "signedEmploymentRate": 96.44,
+      "furtherStudyCount": 8,
+      "domesticFurtherStudyCount": 5,
+      "overseasFurtherStudyCount": 3,
+      "sources": [
+        {
+          "title": "南京大学软件学院2020年就业质量报告",
+          "url": "https://software.nju.edu.cn/DFS/file/2021/11/23/20211123211747741w4bnxp.pdf",
+          "year": 2020,
+          "scope": "第二部分：第5、8页及就业地区、行业图表；第四部分重点单位入职；第一部分第4页毕业生概况",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "硕士独立数据；原报告研究生平均入职年薪28.4万元为硕博合计，另存。",
+      "schoolId": "南京大学"
+    },
+    {
+      "id": "ER0047",
+      "college": "软件学院",
+      "graduationYear": 2020,
+      "degreeLevel": "postgraduate",
+      "sampleSize": 340,
+      "scope": "college_degree",
+      "graduateCount": 340,
+      "mastersGraduateCount": 337,
+      "doctorateGraduateCount": 3,
+      "employmentRate": 100,
+      "employmentRateDefinition": "含升学等落实去向",
+      "signedEmploymentCount": 328,
+      "industries": [
+        {
+          "name": "信息传输、软件和信息技术服务业",
+          "rate": 74.39,
+          "denominator": "签约研究生328人"
+        },
+        {
+          "name": "金融业",
+          "rate": 12.8,
+          "denominator": "签约研究生328人"
+        },
+        {
+          "name": "电力、热力、燃气及水生产和供应业",
+          "rate": 3.35,
+          "denominator": "签约研究生328人"
+        }
+      ],
+      "employmentRegions": [
+        {
+          "name": "东部",
+          "count": 319,
+          "denominator": "签约研究生328人"
+        },
+        {
+          "name": "中部",
+          "count": 6,
+          "denominator": "签约研究生328人"
+        },
+        {
+          "name": "西部",
+          "count": 3,
+          "denominator": "签约研究生328人"
+        }
+      ],
+      "salary": {
+        "averageAnnualCNY": 284000,
+        "definition": "报告第一部分毕业生概况所述研究生平均入职年薪，未说明样本或统计周期"
+      },
+      "sources": [
+        {
+          "title": "南京大学软件学院2020年就业质量报告",
+          "url": "https://software.nju.edu.cn/DFS/file/2021/11/23/20211123211747741w4bnxp.pdf",
+          "year": 2020,
+          "scope": "第二部分：第5、8页及就业地区、行业图表；第四部分重点单位入职；第一部分第4页毕业生概况",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "研究生包含3名博士；世界500强102人、中国500强60人、其他重点单位166人，按原文类别。",
+      "keyEmployerDistribution": [
+        {
+          "name": "世界500强",
+          "count": 102,
+          "denominator": "签约研究生328人"
+        },
+        {
+          "name": "中国500强",
+          "count": 60,
+          "denominator": "签约研究生328人"
+        },
+        {
+          "name": "其他重点单位",
+          "count": 166,
+          "denominator": "签约研究生328人"
+        }
+      ],
+      "schoolId": "南京大学"
+    },
+    {
+      "id": "ER0048",
+      "college": "软件学院",
+      "graduationYear": 2020,
+      "degreeLevel": "all",
+      "sampleSize": 552,
+      "scope": "college",
+      "graduateCount": 552,
+      "mastersGraduateCount": 337,
+      "doctorateGraduateCount": 3,
+      "bachelorGraduateCount": 212,
+      "employmentRate": 100,
+      "employmentRateDefinition": "含升学等落实去向",
+      "signedEmploymentCount": 435,
+      "domesticFurtherStudyCount": 81,
+      "overseasFurtherStudyCount": 31,
+      "industries": [
+        {
+          "name": "信息传输、软件和信息技术服务业",
+          "count": 326,
+          "rate": 74.94,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "金融业",
+          "count": 49,
+          "rate": 11.26,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "科学研究和技术服务业",
+          "count": 13,
+          "rate": 2.99,
+          "denominator": "签约435人"
+        }
+      ],
+      "representativeEmployers": [
+        "华为",
+        "字节跳动",
+        "阿里巴巴",
+        "拼多多",
+        "腾讯",
+        "普联",
+        "美团点评",
+        "中兴",
+        "星环科技",
+        "华泰证券",
+        "微软",
+        "小米",
+        "招商银行",
+        "国网江苏省电力",
+        "蚂蚁金服",
+        "百度",
+        "携程",
+        "中国银行",
+        "中国电科",
+        "中国农业银行",
+        "京东",
+        "网易"
+      ],
+      "sources": [
+        {
+          "title": "南京大学软件学院2020年就业质量报告",
+          "url": "https://software.nju.edu.cn/DFS/file/2021/11/23/20211123211747741w4bnxp.pdf",
+          "year": 2020,
+          "scope": "第二部分：第5、8页及就业地区、行业图表；第四部分重点单位入职；第一部分第4页毕业生概况",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "企业人数为学院全学历；节选，不代表完整企业列表。",
+      "employerCounts": [
+        {
+          "name": "华为",
+          "count": 52,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "字节跳动",
+          "count": 40,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "阿里巴巴",
+          "count": 18,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "拼多多",
+          "count": 15,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "腾讯",
+          "count": 13,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "普联",
+          "count": 12,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "美团点评",
+          "count": 10,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "中兴",
+          "count": 10,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "星环科技",
+          "count": 10,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "华泰证券",
+          "count": 9,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "微软",
+          "count": 7,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "小米",
+          "count": 7,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "招商银行",
+          "count": 6,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "国网江苏省电力",
+          "count": 5,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "蚂蚁金服",
+          "count": 5,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "百度",
+          "count": 4,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "携程",
+          "count": 4,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "中国银行",
+          "count": 4,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "中国电科",
+          "count": 3,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "中国农业银行",
+          "count": 3,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "京东",
+          "count": 2,
+          "denominator": "签约435人"
+        },
+        {
+          "name": "网易",
+          "count": 2,
+          "denominator": "签约435人"
+        }
+      ],
+      "schoolId": "南京大学"
+    },
+    {
+      "id": "ER0049",
+      "college": "人工智能学院",
+      "graduationYear": 2024,
+      "degreeLevel": "all",
+      "sampleSize": 155,
+      "scope": "college",
+      "graduateCount": 155,
+      "mastersGraduateCount": 56,
+      "doctorateGraduateCount": 6,
+      "bachelorGraduateCount": 93,
+      "industries": [
+        {
+          "name": "信息传输、软件和信息技术服务业",
+          "rate": 58.11,
+          "denominator": "就业毕业生"
+        },
+        {
+          "name": "制造业",
+          "count": 10,
+          "denominator": "就业毕业生"
+        },
+        {
+          "name": "科学研究和技术服务业",
+          "count": 5,
+          "denominator": "就业毕业生"
+        },
+        {
+          "name": "金融业",
+          "count": 5,
+          "denominator": "就业毕业生"
+        }
+      ],
+      "employmentRegions": [
+        {
+          "name": "上海",
+          "rate": 25.68,
+          "denominator": "签约就业毕业生；省份与大区不同分组"
+        },
+        {
+          "name": "北京",
+          "rate": 20.27,
+          "denominator": "签约就业毕业生；省份与大区不同分组"
+        },
+        {
+          "name": "广东",
+          "rate": 16.22,
+          "denominator": "签约就业毕业生；省份与大区不同分组"
+        },
+        {
+          "name": "浙江",
+          "rate": 14.86,
+          "denominator": "签约就业毕业生；省份与大区不同分组"
+        },
+        {
+          "name": "江苏",
+          "rate": 13.51,
+          "denominator": "签约就业毕业生；省份与大区不同分组"
+        },
+        {
+          "name": "东部",
+          "rate": 91.9,
+          "denominator": "签约就业毕业生；省份与大区不同分组"
+        },
+        {
+          "name": "中部",
+          "rate": 1.35,
+          "denominator": "签约就业毕业生；省份与大区不同分组"
+        },
+        {
+          "name": "西部",
+          "rate": 4.05,
+          "denominator": "签约就业毕业生；省份与大区不同分组"
+        },
+        {
+          "name": "东北",
+          "rate": 2.7,
+          "denominator": "签约就业毕业生；省份与大区不同分组"
+        }
+      ],
+      "representativeEmployers": [
+        "阿里系",
+        "华为",
+        "腾讯",
+        "字节跳动",
+        "京东",
+        "中国航空工业集团"
+      ],
+      "sources": [
+        {
+          "title": "南京大学人工智能学院2024届毕业生就业质量报告",
+          "url": "https://app.gaokaozhitongche.com/newsguide/h/KXW1yEYG",
+          "year": 2024,
+          "scope": "01毕业生结构、02就业落实率、03就业质量分析",
+          "sourceType": "third_party_republication"
+        }
+      ],
+      "notes": "世界500强企业签约36人。原文硕士升学9.68%与56名硕士分母不符，可能为硕博合计，故不录入硕士升学率。",
+      "employerCounts": [
+        {
+          "name": "阿里系",
+          "count": 11
+        },
+        {
+          "name": "华为",
+          "count": 8
+        },
+        {
+          "name": "腾讯",
+          "count": 6
+        },
+        {
+          "name": "字节跳动",
+          "count": 7
+        },
+        {
+          "name": "京东",
+          "count": 2
+        },
+        {
+          "name": "中国航空工业集团",
+          "count": 2
+        }
+      ],
+      "schoolId": "南京大学"
+    },
+    {
+      "id": "ER0050",
+      "college": "人工智能学院",
+      "graduationYear": 2025,
+      "degreeLevel": "all",
+      "sampleSize": 174,
+      "scope": "college",
+      "graduateCount": 174,
+      "mastersGraduateCount": 64,
+      "doctorateGraduateCount": 10,
+      "bachelorGraduateCount": 100,
+      "directEmploymentCount": 95,
+      "furtherStudyCount": 79,
+      "employmentCities": [
+        {
+          "name": "上海",
+          "count": 27,
+          "denominator": "就业95人"
+        },
+        {
+          "name": "北京",
+          "count": 19,
+          "denominator": "就业95人"
+        },
+        {
+          "name": "杭州",
+          "count": 15,
+          "denominator": "就业95人"
+        },
+        {
+          "name": "南京",
+          "count": 7,
+          "denominator": "就业95人"
+        },
+        {
+          "name": "苏州",
+          "count": 4,
+          "denominator": "就业95人"
+        },
+        {
+          "name": "深圳",
+          "count": 3,
+          "denominator": "就业95人"
+        }
+      ],
+      "representativeEmployers": [
+        "阿里系",
+        "华为",
+        "字节跳动",
+        "腾讯",
+        "京东",
+        "比亚迪",
+        "中国工商银行",
+        "中国电信",
+        "中兴通讯",
+        "月之暗面",
+        "小红书",
+        "快手",
+        "哔哩哔哩"
+      ],
+      "sources": [
+        {
+          "title": "南京大学人工智能学院2025毕业去向",
+          "url": "https://www.sohu.com/a/1018527165_122393606",
+          "year": 2025,
+          "scope": "正文毕业人数、就业单位及城市",
+          "sourceType": "third_party_summary"
+        }
+      ],
+      "notes": "第三方摘要，未独立核对公众号原文。",
+      "employerCounts": [
+        {
+          "name": "阿里系",
+          "count": 18
+        },
+        {
+          "name": "华为",
+          "count": 14
+        },
+        {
+          "name": "字节跳动",
+          "count": 10
+        }
+      ],
+      "schoolId": "南京大学"
+    },
+    {
+      "id": "ER0051",
+      "college": "软件学院",
+      "major": "软件工程学位点",
+      "graduationYear": 2024,
+      "degreeLevel": "master",
+      "scope": "degree_authorization_point",
+      "degreeAwardedCount": 126,
+      "employmentRate": 100,
+      "employmentRateDefinition": "报告未定义就业率分母及统计截止日",
+      "representativeEmployers": [
+        "华为",
+        "腾讯",
+        "阿里巴巴",
+        "中国工商银行",
+        "中国建设银行",
+        "中国银行"
+      ],
+      "sources": [
+        {
+          "title": "软件工程学位授权点2024年建设年度报告",
+          "url": "https://graduate.nankai.edu.cn/_upload/article/files/d6/1f/6e6dba7c475fbfcb2295b026eade/17a73148-c316-4087-a43a-c536d071511b.pdf",
+          "year": 2024,
+          "scope": "PDF第3页，三、研究生招生在读毕业学位授予及就业基本状况",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "报告同时说明硕士有行政事业单位就业和读博。126为授位数（88学硕含68援外留学生，38专硕含10非全），不能当作就业统计分母。",
+      "schoolId": "南开大学"
+    },
+    {
+      "id": "ER0052",
+      "college": "软件学院",
+      "major": "软件工程学位点",
+      "graduationYear": 2024,
+      "degreeLevel": "master",
+      "degreeType": "professional",
+      "scope": "degree_authorization_point",
+      "degreeAwardedCount": 38,
+      "sources": [
+        {
+          "title": "软件工程学位授权点2024年建设年度报告",
+          "url": "https://graduate.nankai.edu.cn/_upload/article/files/d6/1f/6e6dba7c475fbfcb2295b026eade/17a73148-c316-4087-a43a-c536d071511b.pdf",
+          "year": 2024,
+          "scope": "PDF第3页，三、研究生招生在读毕业学位授予及就业基本状况",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "全日制28、非全10；报告未按学位类型公布就业结果。",
+      "fullTimeDegreeAwardedCount": 28,
+      "partTimeDegreeAwardedCount": 10,
+      "schoolId": "南开大学"
+    },
+    {
+      "id": "ER0053",
+      "college": "计算机科学与技术学院",
+      "graduationYear": 2024,
+      "degreeLevel": "master",
+      "sampleSize": 214,
+      "scope": "college_degree",
+      "graduateCount": 214,
+      "mastersGraduateCount": 214,
+      "destinationResolutionRate": 98.6,
+      "sources": [
+        {
+          "title": "吉林大学2024届毕业生就业质量年度报告",
+          "url": "https://pdf.gk100.com/employment/report/2024/20250412/b46c391ecbe52bd3.pdf",
+          "year": 2024,
+          "scope": "报告印刷第4页表2；分学院毕业去向落实率附表",
+          "sourceType": "third_party_hosted_official_report"
+        }
+      ],
+      "notes": "学院硕士，学硕专硕合计；报告镜像。",
+      "schoolId": "吉林大学"
+    },
+    {
+      "id": "ER0054",
+      "college": "软件学院",
+      "graduationYear": 2024,
+      "degreeLevel": "master",
+      "sampleSize": 88,
+      "scope": "college_degree",
+      "graduateCount": 88,
+      "mastersGraduateCount": 88,
+      "destinationResolutionRate": 97.73,
+      "sources": [
+        {
+          "title": "吉林大学2024届毕业生就业质量年度报告",
+          "url": "https://pdf.gk100.com/employment/report/2024/20250412/b46c391ecbe52bd3.pdf",
+          "year": 2024,
+          "scope": "报告印刷第4页表2；分学院毕业去向落实率附表",
+          "sourceType": "third_party_hosted_official_report"
+        }
+      ],
+      "notes": "学院硕士，学硕专硕未分列。",
+      "schoolId": "吉林大学"
+    },
+    {
+      "id": "ER0055",
+      "college": "计算机科学与技术学院",
+      "degreeLevel": "master",
+      "scope": "research_group",
+      "representativeEmployers": [
+        "阿里巴巴",
+        "腾讯",
+        "百度",
+        "华为",
+        "字节跳动",
+        "滴滴",
+        "小米",
+        "一汽",
+        "国家电网",
+        "中国移动",
+        "银联"
+      ],
+      "sources": [
+        {
+          "title": "杨博教师主页：研究组毕业生",
+          "url": "https://ccst.jlu.edu.cn/info/1193/19355.htm",
+          "scope": "研究组毕业生概况（截至2026年9月）",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "累计毕业硕士80余名，科技企业30余名，国企事业单位20余名，读博20余名；跨届且起始年份未知，不用于年度或学院统计。",
+      "coverageEndYear": 2026,
+      "graduateCountLowerBound": 80,
+      "majorTechEmployerCountLowerBound": 30,
+      "furtherStudyCountLowerBound": 20,
+      "schoolId": "吉林大学"
+    },
+    {
+      "id": "ER0056",
+      "graduationYear": 2025,
+      "degreeLevel": "master",
+      "sampleSize": 3801,
+      "scope": "school_full_time_degree",
+      "graduateCount": 3801,
+      "mastersGraduateCount": 3801,
+      "destinationResolutionRate": 97,
+      "sources": [
+        {
+          "title": "2025届毕业生规模、结构、就业率、就业流向",
+          "url": "https://xxgk.ecnu.edu.cn/fb/44/c29049a785220/page.htm",
+          "year": 2025,
+          "scope": "一、毕业生规模及结构；二、毕业生去向落实情况",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "全日制全校硕士，非计算机专业专属。",
+      "schoolId": "华东师范大学"
+    },
+    {
+      "id": "ER0057",
+      "graduationYear": 2025,
+      "degreeLevel": "all",
+      "sampleSize": 10010,
+      "scope": "school",
+      "graduateCount": 10010,
+      "destinationResolutionRate": 96.47,
+      "employerTypes": [
+        {
+          "name": "事业单位",
+          "rate": 52.72,
+          "denominator": "就业毕业生"
+        },
+        {
+          "name": "企业",
+          "rate": 40.14,
+          "denominator": "就业毕业生"
+        },
+        {
+          "name": "党政机关",
+          "count": 315,
+          "rate": 5.64,
+          "denominator": "就业毕业生"
+        }
+      ],
+      "industries": [
+        {
+          "name": "教育",
+          "rate": 51.81,
+          "denominator": "就业毕业生"
+        },
+        {
+          "name": "信息行业",
+          "rate": 16.96,
+          "denominator": "就业毕业生"
+        },
+        {
+          "name": "公共管理",
+          "rate": 7.64,
+          "denominator": "就业毕业生"
+        },
+        {
+          "name": "金融业",
+          "rate": 4.08,
+          "denominator": "就业毕业生"
+        }
+      ],
+      "employmentRegions": [
+        {
+          "name": "长三角",
+          "count": 3498,
+          "rate": 62.58,
+          "denominator": "就业毕业生"
+        },
+        {
+          "name": "粤港澳大湾区",
+          "count": 329,
+          "rate": 5.89,
+          "denominator": "就业毕业生"
+        },
+        {
+          "name": "京津冀",
+          "count": 230,
+          "rate": 4.11,
+          "denominator": "就业毕业生"
+        },
+        {
+          "name": "中西部",
+          "count": 1287,
+          "rate": 23.02,
+          "denominator": "就业毕业生"
+        }
+      ],
+      "representativeEmployers": [
+        "华为",
+        "字节跳动",
+        "美团",
+        "腾讯"
+      ],
+      "sources": [
+        {
+          "title": "2025届毕业生规模、结构、就业率、就业流向",
+          "url": "https://xxgk.ecnu.edu.cn/fb/44/c29049a785220/page.htm",
+          "year": 2025,
+          "scope": "一、毕业生规模及结构；二、毕业生去向落实情况",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "截至2025-10-31；全校含非全日制。",
+      "schoolId": "华东师范大学"
+    },
+    {
+      "id": "ER0058",
+      "college": "数据科学与工程学院",
+      "graduationYear": 2026,
+      "degreeLevel": "master",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "宽德投资",
+        "百度",
+        "虾皮",
+        "拼多多"
+      ],
+      "sources": [
+        {
+          "title": "华东师范大学数据科学与工程学院教师主页：毕业生去向",
+          "url": "https://faculty.ecnu.edu.cn/_s37/xc/main.psp",
+          "year": 2026,
+          "scope": "毕业生去向逐届名单",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "教师主页逐届披露的硕士去向；仅名单中明确标注硕士者，不推断组内总体人数；2023拓数派两人后分别转至美团、OceanBase，首去向按原文箭头左端。",
+      "employerCounts": [
+        {
+          "name": "宽德投资",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        },
+        {
+          "name": "百度",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        },
+        {
+          "name": "虾皮",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        },
+        {
+          "name": "拼多多",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        }
+      ],
+      "reportedDestinationCount": 4,
+      "schoolId": "华东师范大学"
+    },
+    {
+      "id": "ER0059",
+      "college": "数据科学与工程学院",
+      "graduationYear": 2025,
+      "degreeLevel": "master",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "华为",
+        "荣耀",
+        "联通"
+      ],
+      "sources": [
+        {
+          "title": "华东师范大学数据科学与工程学院教师主页：毕业生去向",
+          "url": "https://faculty.ecnu.edu.cn/_s37/xc/main.psp",
+          "year": 2025,
+          "scope": "毕业生去向逐届名单",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "教师主页逐届披露的硕士去向；仅名单中明确标注硕士者，不推断组内总体人数；2023拓数派两人后分别转至美团、OceanBase，首去向按原文箭头左端。",
+      "employerCounts": [
+        {
+          "name": "华为",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        },
+        {
+          "name": "荣耀",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        },
+        {
+          "name": "联通",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        }
+      ],
+      "reportedDestinationCount": 3,
+      "schoolId": "华东师范大学"
+    },
+    {
+      "id": "ER0060",
+      "college": "数据科学与工程学院",
+      "graduationYear": 2024,
+      "degreeLevel": "master",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "字节跳动",
+        "小红书"
+      ],
+      "sources": [
+        {
+          "title": "华东师范大学数据科学与工程学院教师主页：毕业生去向",
+          "url": "https://faculty.ecnu.edu.cn/_s37/xc/main.psp",
+          "year": 2024,
+          "scope": "毕业生去向逐届名单",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "教师主页逐届披露的硕士去向；仅名单中明确标注硕士者，不推断组内总体人数；2023拓数派两人后分别转至美团、OceanBase，首去向按原文箭头左端。",
+      "employerCounts": [
+        {
+          "name": "字节跳动",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        },
+        {
+          "name": "小红书",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        }
+      ],
+      "reportedDestinationCount": 2,
+      "schoolId": "华东师范大学"
+    },
+    {
+      "id": "ER0061",
+      "college": "数据科学与工程学院",
+      "graduationYear": 2023,
+      "degreeLevel": "master",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "华为",
+        "携程",
+        "拓数派",
+        "杭州二中"
+      ],
+      "sources": [
+        {
+          "title": "华东师范大学数据科学与工程学院教师主页：毕业生去向",
+          "url": "https://faculty.ecnu.edu.cn/_s37/xc/main.psp",
+          "year": 2023,
+          "scope": "毕业生去向逐届名单",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "教师主页逐届披露的硕士去向；仅名单中明确标注硕士者，不推断组内总体人数；2023拓数派两人后分别转至美团、OceanBase，首去向按原文箭头左端。",
+      "employerCounts": [
+        {
+          "name": "华为",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        },
+        {
+          "name": "携程",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        },
+        {
+          "name": "拓数派",
+          "count": 2,
+          "denominator": "教师披露的硕士去向名单"
+        },
+        {
+          "name": "杭州二中",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        }
+      ],
+      "reportedDestinationCount": 5,
+      "schoolId": "华东师范大学"
+    },
+    {
+      "id": "ER0062",
+      "college": "数据科学与工程学院",
+      "graduationYear": 2022,
+      "degreeLevel": "master",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "华为",
+        "OceanBase"
+      ],
+      "sources": [
+        {
+          "title": "华东师范大学数据科学与工程学院教师主页：毕业生去向",
+          "url": "https://faculty.ecnu.edu.cn/_s37/xc/main.psp",
+          "year": 2022,
+          "scope": "毕业生去向逐届名单",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "教师主页逐届披露的硕士去向；仅名单中明确标注硕士者，不推断组内总体人数；2023拓数派两人后分别转至美团、OceanBase，首去向按原文箭头左端。",
+      "employerCounts": [
+        {
+          "name": "华为",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        },
+        {
+          "name": "OceanBase",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        }
+      ],
+      "reportedDestinationCount": 2,
+      "schoolId": "华东师范大学"
+    },
+    {
+      "id": "ER0063",
+      "college": "数据科学与工程学院",
+      "graduationYear": 2021,
+      "degreeLevel": "master",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "快手",
+        "华为"
+      ],
+      "sources": [
+        {
+          "title": "华东师范大学数据科学与工程学院教师主页：毕业生去向",
+          "url": "https://faculty.ecnu.edu.cn/_s37/xc/main.psp",
+          "year": 2021,
+          "scope": "毕业生去向逐届名单",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "教师主页逐届披露的硕士去向；仅名单中明确标注硕士者，不推断组内总体人数；2023拓数派两人后分别转至美团、OceanBase，首去向按原文箭头左端。",
+      "employerCounts": [
+        {
+          "name": "快手",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        },
+        {
+          "name": "华为",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        }
+      ],
+      "reportedDestinationCount": 2,
+      "schoolId": "华东师范大学"
+    },
+    {
+      "id": "ER0064",
+      "college": "数据科学与工程学院",
+      "graduationYear": 2020,
+      "degreeLevel": "master",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "达梦"
+      ],
+      "sources": [
+        {
+          "title": "华东师范大学数据科学与工程学院教师主页：毕业生去向",
+          "url": "https://faculty.ecnu.edu.cn/_s37/xc/main.psp",
+          "year": 2020,
+          "scope": "毕业生去向逐届名单",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "教师主页逐届披露的硕士去向；仅名单中明确标注硕士者，不推断组内总体人数；2023拓数派两人后分别转至美团、OceanBase，首去向按原文箭头左端。",
+      "employerCounts": [
+        {
+          "name": "达梦",
+          "count": 1,
+          "denominator": "教师披露的硕士去向名单"
+        }
+      ],
+      "reportedDestinationCount": 1,
+      "schoolId": "华东师范大学"
+    },
+    {
+      "id": "ER0065",
+      "graduationYear": 2024,
+      "degreeLevel": "master",
+      "degreeType": "academic",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "百度",
+        "阿里巴巴",
+        "腾讯",
+        "长安福特"
+      ],
+      "sources": [
+        {
+          "title": "陈震中教师主页：毕业生信息",
+          "url": "https://jszy.whu.edu.cn/zzchen/",
+          "year": 2024,
+          "scope": "硕博生去向统计2024—2026",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "教师团队名单，非全院样本；2026学硕另1人赴香港理工大学读博。",
+      "employerCounts": [
+        {
+          "name": "百度",
+          "count": 1,
+          "denominator": "教师主页披露名单"
+        },
+        {
+          "name": "阿里巴巴",
+          "count": 2,
+          "denominator": "教师主页披露名单"
+        },
+        {
+          "name": "腾讯",
+          "count": 1,
+          "denominator": "教师主页披露名单"
+        },
+        {
+          "name": "长安福特",
+          "count": 1,
+          "denominator": "教师主页披露名单"
+        }
+      ],
+      "reportedDestinationCount": 5,
+      "schoolId": "武汉大学"
+    },
+    {
+      "id": "ER0066",
+      "graduationYear": 2024,
+      "degreeLevel": "master",
+      "degreeType": "professional",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "中国农业银行"
+      ],
+      "sources": [
+        {
+          "title": "陈震中教师主页：毕业生信息",
+          "url": "https://jszy.whu.edu.cn/zzchen/",
+          "year": 2024,
+          "scope": "硕博生去向统计2024—2026",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "教师团队名单，非全院样本；2026学硕另1人赴香港理工大学读博。",
+      "employerCounts": [
+        {
+          "name": "中国农业银行",
+          "count": 1,
+          "denominator": "教师主页披露名单"
+        }
+      ],
+      "reportedDestinationCount": 1,
+      "schoolId": "武汉大学"
+    },
+    {
+      "id": "ER0067",
+      "graduationYear": 2025,
+      "degreeLevel": "master",
+      "degreeType": "academic",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "腾讯",
+        "快手",
+        "阿里巴巴"
+      ],
+      "sources": [
+        {
+          "title": "陈震中教师主页：毕业生信息",
+          "url": "https://jszy.whu.edu.cn/zzchen/",
+          "year": 2025,
+          "scope": "硕博生去向统计2024—2026",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "教师团队名单，非全院样本；2026学硕另1人赴香港理工大学读博。",
+      "employerCounts": [
+        {
+          "name": "腾讯",
+          "count": 1,
+          "denominator": "教师主页披露名单"
+        },
+        {
+          "name": "快手",
+          "count": 2,
+          "denominator": "教师主页披露名单"
+        },
+        {
+          "name": "阿里巴巴",
+          "count": 1,
+          "denominator": "教师主页披露名单"
+        }
+      ],
+      "reportedDestinationCount": 4,
+      "schoolId": "武汉大学"
+    },
+    {
+      "id": "ER0068",
+      "graduationYear": 2025,
+      "degreeLevel": "master",
+      "degreeType": "professional",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "阿里巴巴"
+      ],
+      "sources": [
+        {
+          "title": "陈震中教师主页：毕业生信息",
+          "url": "https://jszy.whu.edu.cn/zzchen/",
+          "year": 2025,
+          "scope": "硕博生去向统计2024—2026",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "教师团队名单，非全院样本；2026学硕另1人赴香港理工大学读博。",
+      "employerCounts": [
+        {
+          "name": "阿里巴巴",
+          "count": 1,
+          "denominator": "教师主页披露名单"
+        }
+      ],
+      "reportedDestinationCount": 1,
+      "schoolId": "武汉大学"
+    },
+    {
+      "id": "ER0069",
+      "graduationYear": 2026,
+      "degreeLevel": "master",
+      "degreeType": "academic",
+      "scope": "research_group_reported_list",
+      "furtherStudyCount": 1,
+      "representativeEmployers": [
+        "阿里巴巴",
+        "腾讯"
+      ],
+      "sources": [
+        {
+          "title": "陈震中教师主页：毕业生信息",
+          "url": "https://jszy.whu.edu.cn/zzchen/",
+          "year": 2026,
+          "scope": "硕博生去向统计2024—2026",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "教师团队名单，非全院样本；2026学硕另1人赴香港理工大学读博。",
+      "employerCounts": [
+        {
+          "name": "阿里巴巴",
+          "count": 1,
+          "denominator": "教师主页披露名单"
+        },
+        {
+          "name": "腾讯",
+          "count": 1,
+          "denominator": "教师主页披露名单"
+        }
+      ],
+      "reportedDestinationCount": 3,
+      "schoolId": "武汉大学"
+    },
+    {
+      "id": "ER0070",
+      "graduationYear": 2026,
+      "degreeLevel": "master",
+      "degreeType": "professional",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "海康研究院"
+      ],
+      "sources": [
+        {
+          "title": "陈震中教师主页：毕业生信息",
+          "url": "https://jszy.whu.edu.cn/zzchen/",
+          "year": 2026,
+          "scope": "硕博生去向统计2024—2026",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "教师团队名单，非全院样本；2026学硕另1人赴香港理工大学读博。",
+      "employerCounts": [
+        {
+          "name": "海康研究院",
+          "count": 1,
+          "denominator": "教师主页披露名单"
+        }
+      ],
+      "reportedDestinationCount": 1,
+      "schoolId": "武汉大学"
+    },
+    {
+      "id": "ER0071",
+      "college": "信息学院",
+      "graduationYear": 2022,
+      "degreeLevel": "master",
+      "scope": "college_degree",
+      "employmentRate": 100,
+      "employmentRateDefinition": "原文就业率，未说明分母及是否含升学",
+      "sources": [
+        {
+          "title": "优秀辅导员工作室建设成果展示丨杜忠朝辅导员工作室",
+          "url": "https://xsc.ruc.edu.cn/info/1022/5120.htm",
+          "year": 2022,
+          "scope": "2022届就业成效段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "原文硕博就业率均为100%；本科就业单位比例不移用。",
+      "schoolId": "中国人民大学"
+    },
+    {
+      "id": "ER0072",
+      "graduationYear": 2023,
+      "degreeLevel": "all",
+      "sampleSize": 10786,
+      "scope": "school",
+      "graduateCount": 10786,
+      "mastersGraduateCount": 5812,
+      "doctorateGraduateCount": 448,
+      "bachelorGraduateCount": 4499,
+      "employerTypes": [
+        {
+          "name": "民营企业"
+        },
+        {
+          "name": "国有企业"
+        },
+        {
+          "name": "三资企业"
+        }
+      ],
+      "industries": [
+        {
+          "name": "信息传输、软件和信息技术服务业"
+        },
+        {
+          "name": "科学研究和技术服务业"
+        },
+        {
+          "name": "制造业"
+        }
+      ],
+      "employmentRegions": [
+        {
+          "name": "川渝"
+        },
+        {
+          "name": "长三角"
+        },
+        {
+          "name": "粤港澳大湾区"
+        },
+        {
+          "name": "京津冀"
+        }
+      ],
+      "sources": [
+        {
+          "title": "电子科技大学2023届毕业生就业质量年度报告",
+          "url": "https://free.eol.cn/download/eol/jiuye/uestc2023.pdf",
+          "year": 2023,
+          "scope": "印刷页5，第二部分毕业生就业情况",
+          "sourceType": "third_party_hosted_official_report"
+        }
+      ],
+      "notes": "全校；另有第二学士学位27人；研究生以协议及合同就业为主，国家重点单位就业超过50%。",
+      "destinationResolutionRateLowerBound": 96,
+      "schoolId": "电子科技大学"
+    },
+    {
+      "id": "ER0073",
+      "graduationYear": 2021,
+      "degreeLevel": "master",
+      "sampleSize": 4788,
+      "scope": "school_degree",
+      "graduateCount": 4788,
+      "mastersGraduateCount": 4788,
+      "destinationResolutionRate": 99.19,
+      "directEmploymentCount": 4567,
+      "directEmploymentRate": 95.38,
+      "furtherStudyCount": 182,
+      "furtherStudyRate": 3.8,
+      "unresolvedCount": 39,
+      "representativeEmployers": [
+        "华为",
+        "中国南方电网",
+        "腾讯",
+        "普联",
+        "今日头条科技",
+        "网易（广州博冠）",
+        "中国建设银行",
+        "中国电信",
+        "中兴通讯",
+        "阿里巴巴",
+        "国家电网",
+        "中国农业银行",
+        "vivo",
+        "美团",
+        "小米",
+        "中国工商银行",
+        "招商银行",
+        "深信服",
+        "中国联通"
+      ],
+      "sources": [
+        {
+          "title": "华南理工大学2021届毕业生就业质量年度报告",
+          "url": "https://xxgk.scut.edu.cn/_upload/article/files/59/af/bb7cffff436dbc4a208c292705d7/6eecd6cd-6784-46c8-bb9d-8b55f4d969d6.pdf",
+          "year": 2021,
+          "scope": "印刷页6表1-4，页9表1-8，页10—11表1-9",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "全校硕士；协议及合同就业占90.69%；主要单位为全校招录总人数≥20的单位，非计算机硕士。",
+      "employerCounts": [
+        {
+          "name": "华为",
+          "count": 259,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "中国南方电网",
+          "count": 131,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "腾讯",
+          "count": 124,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "普联",
+          "count": 34,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "今日头条科技",
+          "count": 34,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "网易（广州博冠）",
+          "count": 39,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "中国建设银行",
+          "count": 9,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "中国电信",
+          "count": 30,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "中兴通讯",
+          "count": 38,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "阿里巴巴",
+          "count": 38,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "国家电网",
+          "count": 38,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "中国农业银行",
+          "count": 19,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "vivo",
+          "count": 29,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "美团",
+          "count": 23,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "小米",
+          "count": 30,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "中国工商银行",
+          "count": 16,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "招商银行",
+          "count": 16,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "深信服",
+          "count": 13,
+          "denominator": "全校硕士；主要单位节选"
+        },
+        {
+          "name": "中国联通",
+          "count": 10,
+          "denominator": "全校硕士；主要单位节选"
+        }
+      ],
+      "agreementOrContractEmploymentRate": 90.69,
+      "keyEmployerDistribution": [
+        {
+          "name": "世界500强",
+          "count": 1087,
+          "rate": 32.84,
+          "denominator": "企业就业硕士；两种榜单可重叠"
+        },
+        {
+          "name": "中国500强",
+          "count": 1022,
+          "rate": 30.88,
+          "denominator": "企业就业硕士；两种榜单可重叠"
+        }
+      ],
+      "schoolId": "华南理工大学"
+    },
+    {
+      "id": "ER0074",
+      "graduationYear": 2023,
+      "degreeLevel": "postgraduate",
+      "sampleSize": 5331,
+      "scope": "school_degree",
+      "graduateCount": 5331,
+      "mastersGraduateCount": 4742,
+      "doctorateGraduateCount": 589,
+      "destinationResolutionRate": 95.2,
+      "furtherStudyRate": 7.7,
+      "sources": [
+        {
+          "title": "精华版｜985东北大学2023就业质量报告",
+          "url": "https://www.sohu.com/a/778264798_121931941",
+          "year": 2023,
+          "scope": "毕业生规模及去向落实率",
+          "sourceType": "third_party_summary"
+        }
+      ],
+      "notes": "全校硕博合计，第三方摘录。",
+      "schoolId": "东北大学"
+    },
+    {
+      "id": "ER0075",
+      "degreeLevel": "master",
+      "scope": "research_group",
+      "representativeEmployers": [
+        "宇树",
+        "智元",
+        "大疆",
+        "华为",
+        "美团",
+        "滴滴",
+        "腾讯",
+        "601所",
+        "中国科学院沈阳自动化研究所"
+      ],
+      "sources": [
+        {
+          "title": "茹敬雨教师主页：招生情况",
+          "url": "https://faculty-card.neu.edu.cn/rujingyu/zh_CN/zdylm/311526/list/index.htm",
+          "scope": "就业去向",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "机器人、智能驾驶、互联网、国企和研究所；以算法和软件开发岗位为主；相关交叉学科导师团队，年份及人数未知。",
+      "schoolId": "东北大学"
+    },
+    {
+      "id": "ER0076",
+      "college": "计算机科学技术学院",
+      "degreeLevel": "mixed",
+      "scope": "college_historical",
+      "representativeEmployers": [
+        "谷歌",
+        "微软",
+        "阿里巴巴",
+        "腾讯",
+        "百度"
+      ],
+      "sources": [
+        {
+          "title": "学院简介",
+          "url": "https://cs.fudan.edu.cn/_t4218/xygk/list.psp",
+          "scope": "毕业生就业段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "历年毕业生有进入科研机构、政府、事业单位与金融业者；研究生就业率长期接近100%，无明确年度与分母；企业名单未分学历。",
+      "actualOutcomeType": "qualitative_historical",
+      "schoolId": "复旦大学"
+    },
+    {
+      "id": "ER0077",
+      "college": "智能与计算学部",
+      "degreeLevel": "mixed",
+      "scope": "college_historical",
+      "representativeEmployers": [
+        "百度",
+        "微软",
+        "三星",
+        "IBM",
+        "华为",
+        "小米",
+        "淘宝",
+        "京东",
+        "美团",
+        "中国联通",
+        "中国移动",
+        "国有四大银行",
+        "航天科工研究院"
+      ],
+      "sources": [
+        {
+          "title": "学生工作",
+          "url": "https://cic.tju.edu.cn/xsgz.htm",
+          "scope": "毕业生就业段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "学部历年去向，学历与年度未披露；不将历年98%以上就业率视作硕士率。",
+      "actualOutcomeType": "qualitative_historical",
+      "schoolId": "天津大学"
+    },
+    {
+      "id": "ER0078",
+      "college": "信息科学与工程学院",
+      "degreeLevel": "postgraduate",
+      "scope": "research_group",
+      "representativeEmployers": [
+        "华为",
+        "华大九天",
+        "概伦电子",
+        "国家电网"
+      ],
+      "sources": [
+        {
+          "title": "贺旭教师主页",
+          "url": "https://csee.hnu.edu.cn/people/hexu",
+          "scope": "目前研究生就业主要包括",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "导师团队研究生去向，硕博未分列，故以下以研究生记录保存。",
+      "actualOutcomeType": "qualitative_historical",
+      "schoolId": "湖南大学"
+    },
+    {
+      "id": "ER0079",
+      "degreeLevel": "postgraduate",
+      "scope": "research_group",
+      "representativeEmployers": [
+        "百度",
+        "腾讯",
+        "阿里巴巴",
+        "华为",
+        "字节跳动"
+      ],
+      "sources": [
+        {
+          "title": "徐东亮教师主页",
+          "url": "https://faculty.sdu.edu.cn/xudongliang/zh_CN/index.htm",
+          "scope": "毕业生去向",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "导师研究方向包括人工智能与网络安全；学硕专硕及博士未区分。",
+      "actualOutcomeType": "qualitative_historical",
+      "schoolId": "山东大学"
+    },
+    {
+      "id": "ER0080",
+      "college": "计算机科学与技术学院",
+      "degreeLevel": "master",
+      "scope": "program_prospectus",
+      "sources": [
+        {
+          "title": "2025年硕士招生简章",
+          "url": "https://yz1.ustc.edu.cn/sszs_2025/index_8.shtml",
+          "year": 2025,
+          "scope": "计算机技术专业硕士毕业后主要去向",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "招生宣传所述主要去向为科研院所、国内外IT企业、国家公务员、金融证券和电力通信大型国企；未给出年度毕业结果或人数。",
+      "actualOutcomeType": "prospectus_not_cohort_statistics",
+      "schoolId": "中国科学技术大学"
+    },
+    {
+      "id": "ER0081",
+      "college": "计算机学院",
+      "degreeLevel": "mixed",
+      "scope": "college_historical",
+      "representativeEmployers": [
+        "微软",
+        "华为",
+        "腾讯"
+      ],
+      "sources": [
+        {
+          "title": "学院概况",
+          "url": "https://cs.cqu.edu.cn/xygk.htm",
+          "scope": "人才培养与校友段",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "历年校友代表性任职单位；包含军工、政府、高校科研机构；非近期毕业签约统计。",
+      "actualOutcomeType": "qualitative_historical",
+      "schoolId": "重庆大学"
+    },
+    {
+      "id": "ER0082",
+      "degreeLevel": "postgraduate",
+      "scope": "research_group",
+      "representativeEmployers": [
+        "国家电网",
+        "中国移动",
+        "中国联通",
+        "中国电信",
+        "百度",
+        "阿里巴巴",
+        "腾讯",
+        "360",
+        "长亭科技",
+        "华为",
+        "青岛海信",
+        "诺基亚",
+        "京东",
+        "微博",
+        "滴滴",
+        "中兴",
+        "爱立信",
+        "IBM",
+        "中国工商银行",
+        "招商银行",
+        "民生银行",
+        "浙商银行",
+        "青岛银行",
+        "外交部",
+        "中国地震局",
+        "青岛市保密局",
+        "中国海洋大学",
+        "山东大学",
+        "青岛海洋地质研究所"
+      ],
+      "sources": [
+        {
+          "title": "信息安全实验室：人才培养",
+          "url": "https://security.ouc.edu.cn/_upload/tpl/06/36/1590/template1590/training.html",
+          "scope": "就业小节",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "实验室就业清单，未说明毕业年份、总数及学位分层；页面同时展示2017—2020生源，不能视作就业年份。",
+      "employerCounts": [
+        {
+          "name": "国家电网",
+          "count": 6
+        },
+        {
+          "name": "中国移动",
+          "count": 3
+        },
+        {
+          "name": "中国联通",
+          "count": 3
+        },
+        {
+          "name": "中国电信",
+          "count": 2
+        },
+        {
+          "name": "百度",
+          "count": 4
+        },
+        {
+          "name": "阿里巴巴",
+          "count": 3
+        },
+        {
+          "name": "腾讯",
+          "count": 3
+        },
+        {
+          "name": "360",
+          "count": 3
+        },
+        {
+          "name": "长亭科技",
+          "count": 2
+        },
+        {
+          "name": "华为",
+          "count": 8
+        },
+        {
+          "name": "青岛海信",
+          "count": 6
+        },
+        {
+          "name": "诺基亚",
+          "count": 4
+        }
+      ],
+      "schoolId": "中国海洋大学"
+    },
+    {
+      "id": "ER0083",
+      "degreeLevel": "all",
+      "scope": "school_historical",
+      "sources": [
+        {
+          "title": "中央民族大学本科招生网：常见问题",
+          "url": "https://zb.muc.edu.cn/content/zs/9cd9e98e-f0db-11ee-a4af-00163e36a0b0.htm",
+          "scope": "毕业生就业情况",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "学校近年来总体就业落实率92%以上；无具体年份及计算机层次。",
+      "destinationResolutionRateLowerBound": 92,
+      "schoolId": "中央民族大学"
+    },
+    {
+      "id": "ER0084",
+      "college": "计算机学院",
+      "major": "软件工程",
+      "degreeLevel": "bachelor",
+      "scope": "major_historical",
+      "representativeEmployers": [
+        "华为",
+        "淘宝",
+        "中兴软创",
+        "腾讯",
+        "OPPO",
+        "中国移动",
+        "天猫",
+        "网易",
+        "软通动力",
+        "百度"
+      ],
+      "sources": [
+        {
+          "title": "软件工程专业介绍",
+          "url": "https://cse.csu.edu.cn/info/1052/1365.htm",
+          "scope": "主要就业流向",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "2019年发布的本科专业介绍，实际毕业年份未说明，仅历史定性参考，不纳入2020—2026年度统计。",
+      "schoolId": "中南大学"
+    },
+    {
+      "id": "ER0085",
+      "college": "信息与电气工程学院",
+      "graduationYear": 2020,
+      "degreeLevel": "postgraduate",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "工商银行业务研发中心",
+        "中国电信北京研究院",
+        "国家电网合肥电力公司信息研究院"
+      ],
+      "sources": [
+        {
+          "title": "中国农业大学教师主页：已毕业的研究生",
+          "url": "https://faculty.cau.edu.cn/xym/",
+          "scope": "已毕业的研究生（按列示毕业年份）",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "计算机相关导师主页所列毕业学生去向；学历未逐一明确，名单完整性与首次就业时间未核实，不代表学院总体。",
+      "schoolId": "中国农业大学"
+    },
+    {
+      "id": "ER0086",
+      "college": "信息与电气工程学院",
+      "graduationYear": 2021,
+      "degreeLevel": "postgraduate",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "北京中电华大电子设计有限公司",
+        "北京华虹集成电路设计有限责任公司"
+      ],
+      "sources": [
+        {
+          "title": "中国农业大学教师主页：已毕业的研究生",
+          "url": "https://faculty.cau.edu.cn/xym/",
+          "scope": "已毕业的研究生（按列示毕业年份）",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "计算机相关导师主页所列毕业学生去向；学历未逐一明确，名单完整性与首次就业时间未核实，不代表学院总体。",
+      "schoolId": "中国农业大学"
+    },
+    {
+      "id": "ER0087",
+      "college": "信息与电气工程学院",
+      "graduationYear": 2022,
+      "degreeLevel": "postgraduate",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "百度时代网络技术北京有限公司",
+        "上海商汤智能科技有限公司",
+        "北京中电华大电子设计有限公司",
+        "小红书北京科技有限公司"
+      ],
+      "sources": [
+        {
+          "title": "中国农业大学教师主页：已毕业的研究生",
+          "url": "https://faculty.cau.edu.cn/xym/",
+          "scope": "已毕业的研究生（按列示毕业年份）",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "计算机相关导师主页所列毕业学生去向；学历未逐一明确，名单完整性与首次就业时间未核实，不代表学院总体。另列一人于复旦大学计算机科学与技术学院任博士后，因初次毕业去向不明，未纳入企业名单。",
+      "schoolId": "中国农业大学"
+    },
+    {
+      "id": "ER0088",
+      "college": "信息与电气工程学院",
+      "graduationYear": 2023,
+      "degreeLevel": "postgraduate",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "中国卫通集团股份有限公司",
+        "国家电网河南省电力公司"
+      ],
+      "sources": [
+        {
+          "title": "中国农业大学教师主页：已毕业的研究生",
+          "url": "https://faculty.cau.edu.cn/xym/",
+          "scope": "已毕业的研究生（按列示毕业年份）",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "计算机相关导师主页所列毕业学生去向；学历未逐一明确，名单完整性与首次就业时间未核实，不代表学院总体。另列一人在中国农业大学攻读博士。",
+      "schoolId": "中国农业大学"
+    },
+    {
+      "id": "ER0089",
+      "college": "信息与电气工程学院",
+      "graduationYear": 2025,
+      "degreeLevel": "postgraduate",
+      "scope": "research_group_reported_list",
+      "representativeEmployers": [
+        "国家电网河南省电力公司"
+      ],
+      "sources": [
+        {
+          "title": "中国农业大学教师主页：已毕业的研究生",
+          "url": "https://faculty.cau.edu.cn/xym/",
+          "scope": "已毕业的研究生（按列示毕业年份）",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "notes": "计算机相关导师主页所列毕业学生去向；学历未逐一明确，名单完整性与首次就业时间未核实，不代表学院总体。",
+      "schoolId": "中国农业大学"
+    },
+    {
+      "id": "ER0090",
+      "graduationYear": 2022,
+      "degreeLevel": "postgraduate",
+      "sampleSize": 5426,
+      "scope": "school_degree",
+      "graduateCount": 5426,
+      "destinationResolvedCount": 5318,
+      "destinationResolutionRate": 98.01,
+      "signedEmploymentCount": 5096,
+      "signedEmploymentRate": 93.92,
+      "flexibleEmploymentCount": 35,
+      "furtherStudyCount": 187,
+      "domesticFurtherStudyCount": 128,
+      "overseasFurtherStudyCount": 59,
+      "unresolvedCount": 108,
+      "representativeEmployers": [
+        "华为",
+        "中国电子科技集团",
+        "中兴通讯",
+        "TP-LINK",
+        "腾讯",
+        "阿里巴巴",
+        "海光信息",
+        "中国航空工业集团",
+        "电子科技大学",
+        "中国航天科工集团"
+      ],
+      "sources": [
+        {
+          "title": "电子科技大学2022届毕业生就业质量年度报告",
+          "url": "https://xxgkw.uestc.edu.cn/__local/D/9D/84/4B8A492896DE5B5FE60A06784B7_D212AFFD_56DD4.pdf",
+          "year": 2022,
+          "scope": "表2.1；表2.8",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "全校硕博合计；表2.8为研究生就业单位前十，未列各单位人数。落实率按(5426−108)/5426计算。",
+      "schoolId": "电子科技大学"
+    },
+    {
+      "id": "ER0091",
+      "graduationYear": 2022,
+      "degreeLevel": "postgraduate",
+      "sampleSize": 5092,
+      "scope": "school_degree_signed_nondirected",
+      "employerTypes": [
+        {
+          "name": "国家重点单位",
+          "count": 2706,
+          "rate": 53.14,
+          "denominator": "非定向协议及合同就业研究生5092人"
+        },
+        {
+          "name": "国防军工单位",
+          "count": 585,
+          "rate": 11.49,
+          "denominator": "非定向协议及合同就业研究生5092人"
+        }
+      ],
+      "employmentRegions": [
+        {
+          "name": "川渝",
+          "count": 2204,
+          "rate": 43.28,
+          "denominator": "非定向协议及合同就业研究生5092人"
+        },
+        {
+          "name": "江浙沪",
+          "count": 898,
+          "rate": 17.64,
+          "denominator": "非定向协议及合同就业研究生5092人"
+        },
+        {
+          "name": "广东",
+          "count": 870,
+          "rate": 17.09,
+          "denominator": "非定向协议及合同就业研究生5092人"
+        },
+        {
+          "name": "京津冀",
+          "count": 608,
+          "rate": 11.94,
+          "denominator": "非定向协议及合同就业研究生5092人"
+        },
+        {
+          "name": "其他",
+          "count": 512,
+          "rate": 10.05,
+          "denominator": "非定向协议及合同就业研究生5092人"
+        }
+      ],
+      "sources": [
+        {
+          "title": "电子科技大学2022届毕业生就业质量年度报告",
+          "url": "https://xxgkw.uestc.edu.cn/__local/D/9D/84/4B8A492896DE5B5FE60A06784B7_D212AFFD_56DD4.pdf",
+          "year": 2022,
+          "scope": "表2.5—2.6；就业地域及重点单位就业统计",
+          "sourceType": "official"
+        }
+      ],
+      "notes": "全校非定向协议及合同就业研究生样本；重点单位与国防军工可能重叠，不得加总；正文与表2.6比例有细微差异，以表中值为准。",
+      "schoolId": "电子科技大学"
+    }
+  ],
+  "employmentCases": [
+    {
+      "id": "EC0001",
+      "college": "信息工程学院",
+      "graduationYear": 2024,
+      "degreeLevel": "master",
+      "caseType": "actual_destination",
+      "description": "计算机科学与技术硕士毕业生分别入职公安部大数据中心、中国邮政储蓄银行，另有毕业生赴西北工业大学读博。",
+      "sources": [
+        {
+          "title": "西北农林科技大学2024年计算机科学与技术学位授权点建设年度报告",
+          "url": "https://yjshy.nwsuaf.edu.cn/docs/2025-04/da0be5fdf344412da0951c623419c83a.pdf",
+          "year": 2024,
+          "scope": "印刷页22（PDF第25页），三（八）就业发展",
+          "sourceType": "official"
+        }
+      ],
+      "employers": [
+        "公安部大数据中心",
+        "中国邮政储蓄银行"
+      ],
+      "furtherStudyInstitutions": [
+        "西北工业大学"
+      ],
+      "actualEmploymentEvidence": true,
+      "schoolId": "西北农林科技大学"
+    },
+    {
+      "id": "EC0002",
+      "college": "计算机科学与技术学院",
+      "graduationYear": 2024,
+      "degreeLevel": "postgraduate",
+      "caseType": "reported_destination",
+      "description": "研究生就业交流会披露一名毕业生选择福建引进生。",
+      "sources": [
+        {
+          "title": "党建引领促就业，人生逐梦正当时",
+          "url": "https://cs.ustc.edu.cn/2024/0624/c20179a644731/pagem.htm",
+          "year": 2024,
+          "scope": "就业经验交流会正文",
+          "sourceType": "official"
+        }
+      ],
+      "actualEmploymentEvidence": false,
+      "notes": "报道的是毕业去向，未核实实际入职。",
+      "schoolId": "中国科学技术大学"
+    },
+    {
+      "id": "EC0003",
+      "graduationYear": 2025,
+      "degreeLevel": "master",
+      "caseType": "recruitment_event",
+      "description": "春招双选会；报道时约85%的硕士毕业生已获得录用通知或完成签约。",
+      "sources": [
+        {
+          "title": "人民网：350余家企业带来1.97万余岗位！北航开启“春招”首场双选会",
+          "url": "https://news.buaa.edu.cn/info/1006/64904.htm",
+          "year": 2025,
+          "scope": "正文双选会及阶段性录用情况",
+          "sourceType": "official"
+        }
+      ],
+      "actualEmploymentEvidence": false,
+      "notes": "阶段性录用或签约合并指标，不作最终落实率。",
+      "schoolId": "北京航空航天大学"
+    },
+    {
+      "id": "EC0004",
+      "college": "信息学院",
+      "major": "计算机系统结构",
+      "graduationYear": 2026,
+      "degreeLevel": "master",
+      "caseType": "reported_destination",
+      "description": "计算机系统结构硕士毕业去向为中国农业银行山东省分行。",
+      "employers": [
+        "中国农业银行山东省分行"
+      ],
+      "sources": [
+        {
+          "title": "优秀毕业生专访 I 闫旭：知行合一，笃行致远",
+          "url": "https://se-office.ruc.edu.cn/xwdt/0f211153219e4c6e9a9921ab77f03d1e.htm",
+          "year": 2026,
+          "scope": "正文首段",
+          "sourceType": "official"
+        }
+      ],
+      "actualEmploymentEvidence": true,
+      "schoolId": "中国人民大学"
+    },
+    {
+      "id": "EC0005",
+      "college": "信息与电气工程学院",
+      "major": "计算机技术",
+      "degreeLevel": "master",
+      "degreeType": "professional",
+      "caseType": "reported_destination",
+      "description": "2019级计算机技术硕士毕业去向为北京银行；入学年已知，毕业年未知。",
+      "employers": [
+        "北京银行"
+      ],
+      "sources": [
+        {
+          "title": "信息与电气工程学院教师主页：毕业学生去向",
+          "url": "https://faculty.cau.edu.cn/wy_9157/list.htm",
+          "scope": "毕业学生去向",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "actualEmploymentEvidence": true,
+      "entryYear": 2019,
+      "schoolId": "中国农业大学"
+    },
+    {
+      "id": "EC0006",
+      "college": "信息与电气工程学院",
+      "major": "计算机科学与技术",
+      "degreeLevel": "master",
+      "caseType": "reported_destination",
+      "description": "2019级计算机科学与技术硕士毕业去向为腾讯（北京）；毕业年份未披露。",
+      "employers": [
+        "腾讯（北京）"
+      ],
+      "sources": [
+        {
+          "title": "信息与电气工程学院教师主页：毕业学生去向",
+          "url": "https://faculty.cau.edu.cn/wy_9157/list.htm",
+          "scope": "毕业学生去向",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "actualEmploymentEvidence": true,
+      "entryYear": 2019,
+      "schoolId": "中国农业大学"
+    }
+  ],
+  "industryPartnerships": [
+    {
+      "id": "IP0001",
+      "college": "深圳校区信息学部计算机科学与技术学院",
+      "projectYear": 2027,
+      "projectName": "大模型与通用人工智能系统校企联合培养专项",
+      "partners": [
+        "腾讯"
+      ],
+      "description": "三年制全日制专硕，第一学年校内学习，第二及第三学年赴腾讯进行课题研究和论文或实践成果工作，双导师。",
+      "actualEmploymentEvidence": false,
+      "sources": [
+        {
+          "title": "哈工大（深圳）-腾讯2027级「大模型与通用人工智能系统」校企联合培养专项招生简介",
+          "url": "https://cist.hitsz.edu.cn/info/1038/2807.htm",
+          "year": 2027,
+          "scope": "三、招生专业与计划；四、学习方式",
+          "sourceType": "official"
+        }
+      ],
+      "degreeLevel": "master",
+      "degreeType": "professional",
+      "major": "电子信息（085400）计算机技术",
+      "plannedEnrollment": 22,
+      "admissionType": "推免",
+      "status": "announced_2027_intake",
+      "schoolId": "哈尔滨工业大学"
+    },
+    {
+      "id": "IP0002",
+      "college": "未来技术学院",
+      "projectYear": 2025,
+      "projectName": "东大-华为数通未来菁英研究生实验班",
+      "partners": [
+        "华为"
+      ],
+      "description": "面向2024级信息、计算机、软件、机器人等学院在籍研究生，采取校企双师制、产业课题实践。",
+      "actualEmploymentEvidence": false,
+      "sources": [
+        {
+          "title": "东北大学未来技术学院2024级东大-华为数通未来菁英研究生实验班选拔方案",
+          "url": "https://sft.neu.edu.cn/2025/0410/c8187a281401/page.htm",
+          "year": 2025,
+          "scope": "实验班培养及选拔范围",
+          "sourceType": "official"
+        }
+      ],
+      "degreeLevel": "postgraduate",
+      "status": "selection_announced",
+      "schoolId": "东北大学"
+    },
+    {
+      "id": "IP0003",
+      "college": "软件学院、杭州创新研究院",
+      "projectYear": 2021,
+      "projectName": "华为杭州研究院联合培养",
+      "partners": [
+        "华为杭州研究院"
+      ],
+      "description": "2021级非全日制研究生为主要对象，方案也列软件工程全日制研究生；华为承担通识培训、专业实践与岗位实习。",
+      "actualEmploymentEvidence": false,
+      "sources": [
+        {
+          "title": "北京航空航天大学杭州创新研究院-北京航空航天大学软件学院-华为杭州研究院非全日制研究生联合培养方案",
+          "url": "https://hzii.buaa.edu.cn/info/1023/1159.htm",
+          "year": 2021,
+          "scope": "三、培养方案",
+          "sourceType": "official"
+        }
+      ],
+      "degreeLevel": "master",
+      "status": "historical_plan_current_status_unverified",
+      "plannedEnrollmentUpperBound": 50,
+      "schoolId": "北京航空航天大学"
+    },
+    {
+      "id": "IP0004",
+      "college": "软件学院",
+      "projectYear": 2020,
+      "projectName": "软件学院企业实习基地与就业实习合作",
+      "description": "报告记载159家企业实习基地，其中79家签订就业实习合作协议，当年新增或续签30家。",
+      "actualEmploymentEvidence": false,
+      "sources": [
+        {
+          "title": "南京大学软件学院2020年就业质量报告",
+          "url": "https://software.nju.edu.cn/DFS/file/2021/11/23/20211123211747741w4bnxp.pdf",
+          "year": 2020,
+          "scope": "第三部分 二、招聘服务",
+          "sourceType": "official"
+        }
+      ],
+      "status": "reported_operating",
+      "degreeLevel": "mixed",
+      "internshipBaseCount": 159,
+      "signedAgreementCount": 79,
+      "schoolId": "南京大学"
+    },
+    {
+      "id": "IP0005",
+      "college": "信息与电气工程学院",
+      "projectName": "研究生联合培养基地",
+      "partners": [
+        "内蒙古自治区五原县气象局",
+        "巴彦淖尔市沙漠综合治理中心"
+      ],
+      "description": "教师主页列示两个联合培养基地及企业导师任职；具体参与人数未知。",
+      "actualEmploymentEvidence": false,
+      "sources": [
+        {
+          "title": "信息与电气工程学院教师主页",
+          "url": "https://faculty.cau.edu.cn/mq/list.htm",
+          "scope": "联合培养基地导师任职",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "status": "reported_existing",
+      "degreeLevel": "postgraduate",
+      "schoolId": "中国农业大学"
+    },
+    {
+      "id": "IP0006",
+      "college": "计算机学院",
+      "projectYear": 2025,
+      "projectName": "第八届使命行就业实践活动",
+      "partners": [
+        "深信服",
+        "比亚迪",
+        "华为"
+      ],
+      "description": "2025年7月8—11日深圳企业参访和交流；不等同于实习录用或正式联合培养。",
+      "actualEmploymentEvidence": false,
+      "sources": [
+        {
+          "title": "计算机学院师生赴深圳开展重庆大学第八届“使命行”就业实践活动",
+          "url": "https://cs.cqu.edu.cn/info/1560/11454.htm",
+          "year": 2025,
+          "scope": "正文",
+          "sourceType": "official"
+        }
+      ],
+      "status": "completed_company_visit",
+      "degreeLevel": "mixed",
+      "schoolId": "重庆大学"
+    },
+    {
+      "id": "IP0007",
+      "college": "信息与电气工程学院",
+      "projectName": "中国农大信电学院-华大半导体联合实验室",
+      "partners": [
+        "华大半导体"
+      ],
+      "description": "教师官方主页列明联合实验室主任任职；未披露学生参与或就业人数。",
+      "actualEmploymentEvidence": false,
+      "sources": [
+        {
+          "title": "中国农业大学教师主页：联合实验室任职",
+          "url": "https://faculty.cau.edu.cn/xym/",
+          "scope": "个人简介及联合实验室任职",
+          "sourceType": "official_faculty_profile"
+        }
+      ],
+      "status": "joint_lab_identified",
+      "schoolId": "中国农业大学"
+    }
+  ]
+}

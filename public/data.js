@@ -8,6 +8,9 @@ export const dataFiles = {
   knowledge: "knowledge",
   news: "news",
   national: "national-stats",
+  research: "research-directions",
+  market: "career-market",
+  employment: "employment",
 };
 
 export const projectRef = (id, year) => `${id}-${year}`;
@@ -29,7 +32,7 @@ export function latestDataDate(value) {
   let latest = null;
   for (const [key, child] of Object.entries(value)) {
     const date =
-      ["updatedAt", "verifiedOn", "date"].includes(key) &&
+      ["updatedAt", "verifiedOn", "date", "surveyDate"].includes(key) &&
       typeof child === "string" &&
       /^\d{4}-\d{2}-\d{2}$/.test(child)
         ? child
@@ -71,7 +74,12 @@ export function admissionRecords(data) {
           city: trainingRecord?.city ?? school.city,
           admission: admissions.get(ref),
           training: trainingRecord,
-          sharedPlan: shared.get(projectRef(annual.sharedPlanId, annual.year)),
+          sharedGroups: (
+            annual.groupIds ??
+            (annual.sharedPlanId ? [annual.sharedPlanId] : [])
+          )
+            .map((id) => shared.get(projectRef(id, annual.year)))
+            .filter(Boolean),
         };
         delete result.years;
         byRef.set(ref, result);

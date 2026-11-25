@@ -34,7 +34,7 @@ python3 -m http.server 8028 --bind 127.0.0.1 --directory public
 - 先查招生单位、主管部门或用人单位的原始资料。日期写 `YYYY-MM-DD`，年度写整数，例如 `2027`。人数、分数、费用和比值写数字，未知值写 `null`。专业代码和科目代码保留字符串形式，例如 `"085404"`。
 - 纠错时直接修改对应记录，并填写或更新 `updatedAt`。可用 `sources[].verifiedOn` 记录最近核对原文的日期。首页从记录日期、核验日期和公告日期中取最近一天。
 - 同一院校、学院、专业、方向和学习方式的项目保持原 `id`。新增年度在该项目 `years` 追加，项目 ID 自身不带年份。在院校和专业页展示最近一个有记录的年度，院校筛选和对比也可选历史年度。项目链接 `#project/项目ID` 打开最新记录，`#project/项目ID-年度` 打开指定年度。已有链接和浏览器收藏仍可使用。
-- 如果多个方向共享名额，在 `sharedPlans` 中按年度记录一份，填 `projectIds` 和具体 `scope`。成员年度只填同一 `sharedPlanId`，对应的共享名额字段留 `null`。尚未建档的方向写入 `scope`。页面给共享数值加标识，各方向的共享名额不能相加。
+- 如果多个方向共享名额，在 `sharedPlans` 中按年度记录一份，填 `projectIds` 和具体 `scope`。成员年度在 `groupIds` 关联该统计组，对应的共享名额字段留 `null`。尚未建档的方向写入 `scope`。页面给共享数值加标识，各方向的共享名额不能相加。
 
 项目 `years` 中的一条年度记录示例，完整项目和共享计划见 [projects.json](public/data/projects.json)。
 
@@ -51,7 +51,7 @@ python3 -m http.server 8028 --bind 127.0.0.1 --directory public
   "planned": null,
   "promotionPlanned": null,
   "examPlanned": null,
-  "sharedPlanId": "whu-211-085404-full-time",
+  "groupIds": ["whu-211-085404-full-time"],
   "updatedAt": "2026-11-25",
   "sources": [{
     "title": "211计算机学院（2027年）",
@@ -85,3 +85,17 @@ python3 -m http.server 8028 --bind 127.0.0.1 --directory public
 修正或补充 JSON 后运行校验，检查网页，再提交至 GitHub。生产项目在 Vercel 使用仓库根目录，`vercel.json` 直接发布 `public/`。在项目的 Git 设置连接 `Xun1267/cs2028` 并选择 `main` 作为 Production Branch 后，合入 `main` 会触发生产部署。
 
 收藏、备注和对比方案存放在当前浏览器。可从数据管理页导出或恢复个人 JSON 备份。
+
+## 调查数据补充
+
+`projects.json` 的项目和年度使用 `status` 标记核验状态。取值包括 `current`（已核验目录）、`historical`（历史资料）、`pending`（待核验）和 `excluded`（专项、推免等范围外项目）。目录状态与录取资料来源分别核对。普通统考实际录取填 `examAdmissions`，口径未明确的资料所列人数填 `reportedAdmissions`，名单所见最低分填 `observedMinimum`。箱线图需要 `minimum`、`q1`、`median`、`q3`、`maximum` 五个同口径分数。
+
+同一项目年度可填写 `groupIds` 关联多条 `sharedPlans` 统计组。填写每组的 `projectIds`、`scope`、`sources` 和组级人数；组级录取成绩及人数放在 `admission`。同组数值不可按方向相加。方向独立公布、且口径不同的数据可以留在项目年度或 `admissions.json`。培养总学费用 `tuitionTotal`（元），已公布的年学费用 `tuitionPerYear`（元/年）。
+
+| 文件 | 用途 |
+| --- | --- |
+| `research-directions.json` | 研究专题文章。用 `majorIds` 及 `researchIds` 关联专业和其他研究方向。 |
+| `career-market.json` | 行业、企业、就业城市、薪资记录及招聘案例。薪资保留 `dataType`、`unit`、`population`、时间、样本及来源。工资统计、招聘报价、个人 Offer 与参考区间分开录入。城市挂牌租金以元/平方米/月记录，生活预算注明假设。 |
+| `employment.json` | 高校就业覆盖、毕业统计、去向案例、校企合作。按 `schoolId` 关联院校，按 `scope`、`college`、`major`、`graduationYear` 区分样本。各类比例使用 0–100 的数值，分布记录注明 `denominator`。合作计划与毕业去向分开。 |
+
+新增或修正数据后运行校验。历史记录、待核验记录及第三方统计可以保留真实信息与出处，未知的年度或数值留空，资料完全缺失的占位记录无需录入。

@@ -10,8 +10,7 @@
         "url": "https://gs.whu.edu.cn/info/1062/109151.htm",
         "year": 2027,
         "scope": "2027 届硕士招生公告",
-        "publisher": "武汉大学研究生院",
-        "verifiedOn": null
+        "publisher": "武汉大学研究生院"
       }
     ]
   },
@@ -26,8 +25,7 @@
         "url": "https://gszs.hust.edu.cn/info/1106/4160.htm",
         "year": 2027,
         "scope": "2027 届硕士招生公告",
-        "publisher": "华中科技大学研究生院招生办公室",
-        "verifiedOn": null
+        "publisher": "华中科技大学研究生院招生办公室"
       }
     ]
   },
@@ -42,8 +40,528 @@
         "url": "https://gszs.hust.edu.cn/info/1106/4162.htm",
         "year": 2027,
         "scope": "2027 届硕士招生公告",
-        "publisher": "华中科技大学研究生院招生办公室",
-        "verifiedOn": null
+        "publisher": "华中科技大学研究生院招生办公室"
+      }
+    ]
+  },
+  {
+    "id": "uestc-change-2026",
+    "title": "电子科技大学2026年硕士研究生招生考试初试科目调整公告（一）",
+    "schoolId": "电子科技大学",
+    "year": 2026,
+    "summary": "计算机相关原820、软件相关原860改为408；涉及多个学院与异地研究院。",
+    "projectIds": [
+      "uestc-008-085404",
+      "uestc-009-085405",
+      "uestc-008-145200",
+      "uestc-090-085404",
+      "uestc-021-085400",
+      "uestc-028-085404",
+      "uestc-028-085405"
+    ],
+    "sources": [
+      {
+        "title": "电子科技大学2026年硕士研究生招生考试初试科目调整公告（一）",
+        "url": "https://yz.uestc.edu.cn/info/1081/5487.htm",
+        "year": 2026,
+        "publisher": "电子科技大学",
+        "scope": "2026调整表，计算机和软件专业",
+        "sourceType": "official"
+      }
+    ],
+    "date": null
+  },
+  {
+    "id": "lzu-change-2027",
+    "title": "兰州大学关于2027年硕士研究生招生考试部分专业初试自命题科目调整的公告",
+    "date": "2026-06-17",
+    "schoolId": "兰州大学",
+    "year": 2027,
+    "summary": "信息科学与工程学院计算机科学与技术、计算机技术、软件工程改为408。",
+    "projectIds": [
+      "lzu-016-085404",
+      "lzu-016-085405"
+    ],
+    "sources": [
+      {
+        "title": "兰州大学关于2027年硕士研究生招生考试部分专业初试自命题科目调整的公告",
+        "url": "https://kaoyan.xdf.cn/202606/15243198.html",
+        "year": 2027,
+        "publisher": "新东方网转载",
+        "scope": "信息科学与工程学院对应专业",
+        "sourceType": "third_party"
+      },
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.lzu.edu.cn/yz/upload/files/20261010/ec0cfdfa89c64a66b1d95e18bf9cf797.pdf",
+        "year": 2027,
+        "publisher": "兰州大学",
+        "scope": "PDF第4—5页",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "id": "nwpu-cs-2027-change",
+    "title": "西北工业大学计算机考研考什么（2027科目调整报道）",
+    "schoolId": "西北工业大学",
+    "year": 2027,
+    "summary": "计算机技术由英语二、数学二调整为英语一、数学一，408不变。",
+    "projectIds": [
+      "nwpu-cs-085404"
+    ],
+    "sources": [
+      {
+        "title": "西北工业大学计算机考研考什么",
+        "url": "https://jixun.iqihang.com/index.php?a=show&c=index&catid=265&id=815173&m=content",
+        "year": 2027,
+        "publisher": "启航考研",
+        "scope": "2027计算机技术考试科目",
+        "sourceType": "third_party"
+      }
+    ],
+    "date": null
+  },
+  {
+    "id": "cqu-se-2027-change",
+    "title": "大数据与软件学院2027年硕士招生专业目录",
+    "schoolId": "重庆大学",
+    "year": 2027,
+    "summary": "软件工程专硕目录为22408；2026录取资料为自命题，2027改考408。",
+    "projectIds": [
+      "cqu-024-085405"
+    ],
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://yz.cqu.edu.cn/sszyml/2027/24.html",
+        "year": 2027,
+        "publisher": "重庆大学",
+        "scope": "085405",
+        "sourceType": "official"
+      },
+      {
+        "title": "重庆大学 408 考研录取分数（历年）",
+        "url": "https://www.codebrick.tech/school/chongqing/",
+        "year": 2027,
+        "publisher": "CodeBrick码砖",
+        "scope": "2026校内对位表软件工程",
+        "sourceType": "third_party"
+      }
+    ],
+    "date": null
+  },
+  {
+    "id": "xjtu-ai-2027-change",
+    "title": "人工智能学院关于调整2027年硕士研究生招生考试专业课科目的公告",
+    "schoolId": "西安交通大学",
+    "year": 2027,
+    "summary": "官方公告涉及人工智能专业调整；可取得的目录转录中部分人工智能方向为850数字信号处理，不能视作408项目。",
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生专业目录",
+        "url": "https://www.aiar.xjtu.edu.cn/info/1028/4274.htm",
+        "year": 2027,
+        "publisher": "西安交通大学",
+        "scope": "公告搜索摘要",
+        "sourceType": "official"
+      },
+      {
+        "title": "西安交通大学2027年硕士研究生招生专业目录（普通招考）",
+        "url": "https://kaoyan.100xuexi.com/WebSpecF/EnrolDetail.aspx?id=246847",
+        "year": 2027,
+        "publisher": "圣才考研网",
+        "scope": "人工智能相关方向",
+        "sourceType": "third_party"
+      }
+    ],
+    "date": null
+  },
+  {
+    "id": "10003-2026-07-01-1",
+    "title": "清华大学深圳国际研究生院2027年硕士研究生招生考试科目调整公告",
+    "date": "2026-07-01",
+    "schoolId": "清华大学",
+    "year": 2027,
+    "summary": "大模型科学与工程原826、大数据技术与工程原827，2027调整为408。",
+    "projectIds": [
+      "10003-599-085400-11",
+      "10003-599-085411-01"
+    ],
+    "sources": [
+      {
+        "title": "清华大学深圳国际研究生院2027年硕士研究生招生考试科目调整公告",
+        "url": "https://www.sigs.tsinghua.edu.cn/2026/0630/c7770a291822/page.htm",
+        "year": 2027,
+        "publisher": "清华大学深圳国际研究生院",
+        "scope": "调整科目表",
+        "sourceType": "official",
+        "publishedDate": "2026-07-01"
+      }
+    ]
+  },
+  {
+    "id": "10006-2026-06-16-2",
+    "title": "人工智能学院2027年硕士研究生招生考试科目调整公告",
+    "date": "2026-06-16",
+    "schoolId": "北京航空航天大学",
+    "year": 2027,
+    "summary": "学院发布408科目调整；完整公共课组合及方向待核。",
+    "projectIds": [
+      "10006-unknown-085410-unknown"
+    ],
+    "sources": [
+      {
+        "title": "人工智能学院2027年硕士研究生招生考试科目调整公告",
+        "url": "https://iai.buaa.edu.cn/info/1168/1502.htm",
+        "year": 2027,
+        "publisher": "北京航空航天大学人工智能学院",
+        "scope": "科目调整正文",
+        "sourceType": "official",
+        "publishedDate": "2026-06-16"
+      }
+    ]
+  },
+  {
+    "id": "10006-2026-06-09-3",
+    "title": "网络空间安全学院2027年硕士研究生招生考试科目调整公告",
+    "date": "2026-06-09",
+    "schoolId": "北京航空航天大学",
+    "year": 2027,
+    "summary": "网络空间安全学院发布408调整；全日制专业和方向适用范围待核。",
+    "projectIds": [
+      "10006-039-085412-unknown"
+    ],
+    "sources": [
+      {
+        "title": "网络空间安全学院2027年硕士研究生招生考试科目调整公告",
+        "url": "https://cst.buaa.edu.cn/info/1058/1310.htm",
+        "year": 2027,
+        "publisher": "北京航空航天大学网络空间安全学院",
+        "scope": "科目调整正文",
+        "sourceType": "official",
+        "publishedDate": "2026-06-09"
+      }
+    ]
+  },
+  {
+    "id": "10007-2026-07-06-4",
+    "title": "北京理工大学2027年硕士研究生招生考试科目调整公告",
+    "date": "2026-07-06",
+    "schoolId": "北京理工大学",
+    "year": 2027,
+    "summary": "085405方向00调整为101、201、302、408，原专业课885。",
+    "projectIds": [
+      "10007-unknown-085405-00"
+    ],
+    "sources": [
+      {
+        "title": "北京理工大学2027年硕士研究生招生考试科目调整公告",
+        "url": "https://grd.bit.edu.cn/zsgz/zsxx/b09aa8505207404abedad0c4be2f5bce.htm",
+        "year": 2027,
+        "publisher": "北京理工大学研究生院",
+        "scope": "085405方向00考试科目调整",
+        "sourceType": "official",
+        "publishedDate": "2026-07-06"
+      }
+    ]
+  },
+  {
+    "id": "SJTU-N-2027-plan",
+    "title": "2027年硕士研究生招生统考计划",
+    "date": "2026-10-15",
+    "schoolId": "上海交通大学",
+    "year": 2027,
+    "summary": "公布专业统考招生计划，方向不得重复累计。",
+    "projectIds": [
+      "sjtu-033-085400-01",
+      "sjtu-033-085400-02",
+      "sjtu-033-085400-03",
+      "sjtu-033-085400-04",
+      "sjtu-033-085400-05",
+      "sjtu-033-085400-06",
+      "sjtu-033-085400-07",
+      "sjtu-033-085400-08",
+      "sjtu-033-085400-09",
+      "sjtu-033-085400-11",
+      "sjtu-033-085400-12",
+      "sjtu-033-085400-13",
+      "sjtu-033-085400-14",
+      "sjtu-033-085400-15",
+      "sjtu-531-085400-01",
+      "sjtu-531-085400-02",
+      "sjtu-370-085400-01"
+    ],
+    "sources": [
+      {
+        "title": "2027年硕士研究生招生统考计划",
+        "url": "https://yzb.sjtu.edu.cn/post/3808",
+        "year": 2027,
+        "publisher": "上海交通大学研究生招生办公室",
+        "scope": "033、370、531电子信息行",
+        "sourceType": "official",
+        "publishedDate": "2026-10-15"
+      }
+    ]
+  },
+  {
+    "id": "USTC-N-217-2027",
+    "title": "环境科学与光电技术学院 2027年硕士研究生招生考试初试科目调整通知",
+    "date": "2026-06-03",
+    "schoolId": "中国科学技术大学",
+    "year": 2027,
+    "summary": "新增085400电子信息02人工智能，全日制，22408；以最终招生简章为准。",
+    "projectIds": [
+      "ustc-217-085400-02"
+    ],
+    "sources": [
+      {
+        "title": "环境科学与光电技术学院 2027年硕士研究生招生考试初试科目调整通知",
+        "url": "https://env.ustc.edu.cn/2026/0603/c9558a742464/page.htm",
+        "year": 2027,
+        "publisher": "中国科学技术大学环境科学与光电技术学院",
+        "scope": "调整内容：217/085400/02",
+        "sourceType": "official",
+        "publishedDate": "2026-06-03"
+      }
+    ]
+  },
+  {
+    "id": "TJ-N-2027-2",
+    "title": "同济大学计算机科学与技术学院2027年两年制专业学位硕士“具身智能特色班”招生简章",
+    "date": "2026-10-23",
+    "schoolId": "同济大学",
+    "year": 2027,
+    "summary": "公布两年制具身智能特色班招生简章；正文为未解析附件，考试科目及名额待确认。",
+    "projectIds": [
+      "tj-h-085404",
+      "tj-h-085405"
+    ],
+    "sources": [
+      {
+        "title": "同济大学计算机科学与技术学院2027年两年制专业学位硕士“具身智能特色班”招生简章",
+        "url": "https://yz.tongji.edu.cn/info/1013/4268.htm",
+        "year": 2027,
+        "publisher": "高校研究生招生网",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "id": "SEU-N-2027-3",
+    "title": "东南大学雷恩研究生学院2027年硕士研究生招生简章",
+    "date": "2026-10-10",
+    "schoolId": "东南大学",
+    "year": 2027,
+    "summary": "计算机技术全日制统考，三年制，每年4.5万元，中法联合培养，法方课程英文授课。",
+    "projectIds": [
+      "seu-h-085-085404"
+    ],
+    "sources": [
+      {
+        "title": "东南大学雷恩研究生学院2027年硕士研究生招生简章",
+        "url": "https://yzb.seu.edu.cn/2026/1010/c6679a585467/page.htm",
+        "year": 2027,
+        "publisher": "高校研究生招生网",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "id": "10213-news-1",
+    "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+    "date": "2026-09-30",
+    "schoolId": "哈尔滨工业大学",
+    "year": 2027,
+    "summary": "威海、深圳方向单列招生计划；基地校企联合培养实行1+2；部分深圳联合培养方向不接收少干及士兵专项。",
+    "sources": [
+      {
+        "title": "哈尔滨工业大学2027年硕士研究生招生章程",
+        "url": "https://yzb.hit.edu.cn/2026/0930/c22272a402325/page.htm",
+        "year": 2027,
+        "publisher": "哈尔滨工业大学",
+        "scope": "正文",
+        "sourceType": "official",
+        "publishedDate": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "id": "10145-news-2",
+    "title": "东北大学2027年硕士研究生招生考试网上报名相关说明",
+    "date": "2026-10-09",
+    "schoolId": "东北大学",
+    "year": 2027,
+    "summary": "研招网显示的专业人数为全专业参考统考规模，非方向独立名额；以实际下达计划为准。",
+    "sources": [
+      {
+        "title": "东北大学2027年硕士研究生招生考试网上报名相关说明",
+        "url": "https://yz.neu.edu.cn/2026/1009/c5932a480258/page.htm",
+        "year": 2027,
+        "publisher": "东北大学",
+        "scope": "正文",
+        "sourceType": "official",
+        "publishedDate": "2026-10-09"
+      }
+    ]
+  },
+  {
+    "id": "10183-news-3",
+    "title": "吉林大学2026年硕士研究生招生考试初试科目调整通知",
+    "schoolId": "吉林大学",
+    "year": 2026,
+    "summary": "计算机技术、软件工程、人工智能相关专业改用408；具体学院见原公告。",
+    "sources": [
+      {
+        "title": "吉林大学2026年硕士研究生招生考试初试科目调整通知",
+        "url": "https://yzb.jlu.edu.cn/info/1046/2922.htm",
+        "year": 2026,
+        "publisher": "吉林大学",
+        "scope": "正文",
+        "sourceType": "official"
+      }
+    ],
+    "date": null
+  },
+  {
+    "id": "10055-news-4",
+    "title": "南开大学人工智能学院关于拟调整2027年硕士研究生招生考试初试自命题科目的温馨提示",
+    "date": "2026-06-09",
+    "schoolId": "南开大学",
+    "year": 2027,
+    "summary": "081100控制科学与工程业务课二拟统一为自动控制原理；该公告不证明专业硕士改考408。",
+    "sources": [
+      {
+        "title": "南开大学人工智能学院关于拟调整2027年硕士研究生招生考试初试自命题科目的温馨提示",
+        "url": "https://ai.nankai.edu.cn/info/1024/6588.htm",
+        "year": 2027,
+        "publisher": "南开大学",
+        "scope": "正文",
+        "sourceType": "official",
+        "publishedDate": "2026-06-09"
+      }
+    ]
+  },
+  {
+    "id": "10422-news-2026-exam",
+    "title": "关于调整2026年硕士研究生招生考试（初试）考试科目的通知",
+    "date": "2025-05-08",
+    "schoolId": "山东大学",
+    "year": 2026,
+    "summary": "085404、085405及软件学院和人工智能学院085410业务课二改为408。",
+    "projectIds": [
+      "10422-pending-085404-unspecified",
+      "10422-pending-085405-unspecified",
+      "10422-pending-085410-unspecified",
+      "10422-pending-ai-085410-unspecified"
+    ],
+    "sources": [
+      {
+        "title": "关于调整2026年硕士研究生招生考试（初试）考试科目的通知",
+        "url": "https://yz.sdu.edu.cn/info/1022/1130.htm",
+        "year": 2026,
+        "publisher": "山东大学",
+        "scope": "第2项",
+        "sourceType": "official",
+        "publishedDate": "2025-05-08"
+      }
+    ]
+  },
+  {
+    "id": "hnu-cy-408",
+    "title": "网络空间安全学院2027年硕士研究生招生考试科目调整公告",
+    "date": "2026-05-19",
+    "schoolId": "湖南大学",
+    "year": 2027,
+    "summary": "专业课由866调整为408。",
+    "projectIds": [
+      "hnu-cy"
+    ],
+    "sources": [
+      {
+        "title": "网络空间安全学院2027年硕士研究生招生考试科目调整公告",
+        "url": "https://cst.hnu.edu.cn/info/1053/1255.htm",
+        "year": 2027,
+        "publisher": "湖南大学网络空间安全学院",
+        "sourceType": "official",
+        "publishedDate": "2026-05-19"
+      }
+    ]
+  },
+  {
+    "id": "sysu-2027-directory",
+    "title": "计算机学院2027年硕士研究生招生信息",
+    "date": "2026-09-29",
+    "schoolId": "中山大学",
+    "year": 2027,
+    "summary": "公布2027招生计划及学习方式。",
+    "projectIds": [
+      "sysu-670-085404",
+      "sysu-670-085410-nf"
+    ],
+    "sources": [
+      {
+        "title": "计算机学院2027年硕士研究生招生信息",
+        "url": "https://cse.sysu.edu.cn/article/3663",
+        "year": 2027,
+        "publisher": "中山大学计算机学院",
+        "sourceType": "official",
+        "publishedDate": "2026-09-29"
+      }
+    ]
+  },
+  {
+    "id": "csu-2027-directory",
+    "title": "中南大学2027年硕士研究生招生专业目录",
+    "date": "2026-10-08",
+    "schoolId": "中南大学",
+    "year": 2027,
+    "summary": "公布043和047电子信息各方向共享招生计划。",
+    "projectIds": [
+      "csu-043-085400-01",
+      "csu-043-085400-02",
+      "csu-043-085400-03",
+      "csu-047-085400-01",
+      "csu-047-085400-02",
+      "csu-047-085400-03",
+      "csu-047-085400-04",
+      "csu-047-085400-05"
+    ],
+    "sources": [
+      {
+        "title": "中南大学2027年硕士研究生招生专业目录",
+        "url": "https://yzzyml.csu.edu.cn/news/MasterView.aspx?d=0ca8c9df-fe1f-4692-afba-bdcacd2f9eef",
+        "year": 2027,
+        "publisher": "中南大学",
+        "sourceType": "official",
+        "publishedDate": "2026-10-08"
+      }
+    ]
+  },
+  {
+    "id": "nudt-2027-directory",
+    "title": "国防科技大学2027年硕士研究生招生简章及专业目录",
+    "date": "2026-10-15",
+    "schoolId": "国防科技大学",
+    "year": 2027,
+    "summary": "公布地方硕士招生资格、专业目录和复试科目。",
+    "projectIds": [
+      "nudt-cs-085400-01",
+      "nudt-cs-085400-02",
+      "nudt-cs-085400-03",
+      "nudt-cs-085400-04",
+      "nudt-cs-085400-05",
+      "nudt-cs-085400-06",
+      "nudt-ec-085400"
+    ],
+    "sources": [
+      {
+        "title": "国防科技大学2027年硕士研究生招生简章及专业目录",
+        "url": "https://yjszs.nudt.edu.cn/attached/file/20261015/20261015180152_597.pdf",
+        "year": 2027,
+        "publisher": "国防科技大学研究生招生办公室",
+        "sourceType": "official",
+        "publishedDate": "2026-10-15"
       }
     ]
   }

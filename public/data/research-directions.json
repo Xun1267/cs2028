@@ -1,0 +1,2351 @@
+[
+  {
+    "id": "r-ai",
+    "title": "人工智能",
+    "summary": "构建能够感知、学习、推理、规划和辅助决策的计算系统。",
+    "category": "智能计算",
+    "majorIds": [
+      "081200",
+      "140500",
+      "085404",
+      "085410",
+      "085400"
+    ],
+    "researchIds": [
+      "r-ml",
+      "r-deep",
+      "r-nlp",
+      "r-vision",
+      "r-robotics"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "构建能够感知、学习、推理、规划和辅助决策的计算系统。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何在不完整信息下决策？怎样提高智能系统的可靠性及适应能力？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "搜索与规划、知识表示、机器学习、强化学习；Python、PyTorch"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "线性代数、概率、离散数学和优化；Python算法实现"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "实现算法基线，设计任务和评价指标，分析错误并对比不同方法"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "智能客服、机器人、工业检测、决策支持"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "AI工程师、算法工程师、智能系统研发"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "AI Index 2026持续跟踪模型能力、成本、部署及治理。值得关注模型评估、计算效率与可靠性；报告中的全球趋势不能直接换算为国内校招岗位。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "The 2026 AI Index Report",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+        "publisher": "Stanford HAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "研究报告"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-ml",
+    "title": "机器学习",
+    "summary": "从样本中估计规律并对未知数据进行预测或决策。",
+    "category": "智能计算",
+    "majorIds": [
+      "081200",
+      "140500",
+      "085410",
+      "085411"
+    ],
+    "researchIds": [
+      "r-deep",
+      "r-mining",
+      "r-recsys",
+      "r-mlsys"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "从样本中估计规律并对未知数据进行预测或决策。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "怎样提高泛化能力？样本不足、分布改变或标签有误时如何稳定学习？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "监督学习、无监督学习、强化学习、集成学习；scikit-learn、PyTorch"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "概率统计、线性代数、优化；Python及实验设计"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "清洗数据、划分训练验证测试集，调参，做消融与误差分析"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "风控、预测、搜索排序、异常检测"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "机器学习工程师、算法工程师、数据科学相关岗位"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "AI Index 2026记录AI研究与应用；关注数据质量、泛化及分布变化。基础机器学习仍是比较复杂模型的必要基准。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "The 2026 AI Index Report",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+        "publisher": "Stanford HAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "研究报告"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-deep",
+    "title": "深度学习",
+    "summary": "利用多层神经网络学习表示与复杂映射。",
+    "category": "智能计算",
+    "majorIds": [
+      "081200",
+      "140500",
+      "085410",
+      "085404"
+    ],
+    "researchIds": [
+      "r-ml",
+      "r-llm",
+      "r-vision",
+      "r-multimodal",
+      "r-mlsys"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "利用多层神经网络学习表示与复杂映射。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何在算力有限时训练更好的模型？怎样提高鲁棒性和样本效率？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "CNN、Transformer、自动微分、正则化、优化器；PyTorch、JAX"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "微积分、线性代数、概率；Python、GPU训练基础"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "复现网络、改进模块，控制训练预算，进行消融及可重复性验证"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "图像识别、文本处理、语音、生成模型"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "深度学习算法工程师、模型训练及部署研发"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "AI Index 2026关注训练计算和模型性能；效率、评测与工程复现仍是重要问题。具体岗位需求依地区与行业而异。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "The 2026 AI Index Report",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+        "publisher": "Stanford HAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "研究报告"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-nlp",
+    "title": "自然语言处理",
+    "summary": "使计算机分析、理解和生成自然语言。",
+    "category": "智能计算",
+    "majorIds": [
+      "081200",
+      "140500",
+      "085410"
+    ],
+    "researchIds": [
+      "r-llm",
+      "r-multimodal",
+      "r-recsys"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "使计算机分析、理解和生成自然语言。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何减少语义歧义、错误事实和跨语言性能差异？怎样评价生成结果？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "分词、词向量、Transformer、信息抽取、检索、生成评估；Hugging Face、PyTorch"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "概率统计、线性代数；Python、文本数据处理"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "建立语料及基线，微调模型，评价分类、抽取或生成质量，人工复核错误"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "搜索、翻译、客服、文档处理"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "NLP算法、搜索算法、AI应用研发"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "AI Index 2026可用于追踪语言模型及能力评价；研究还需考虑多语种、领域迁移与事实核验。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "The 2026 AI Index Report",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+        "publisher": "Stanford HAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "研究报告"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-llm",
+    "title": "大语言模型",
+    "summary": "研究大规模语言模型的训练、适配、推理和评价，以及基于模型构建的应用。",
+    "category": "智能计算",
+    "majorIds": [
+      "081200",
+      "140500",
+      "085410",
+      "085404"
+    ],
+    "researchIds": [
+      "r-nlp",
+      "r-multimodal",
+      "r-mlsys",
+      "r-deep"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究大规模语言模型的训练、适配、推理和评价，以及基于模型构建的应用。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何降低幻觉、推理成本与时延？怎样验证工具调用、长上下文和检索增强效果？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "Transformer、预训练、指令微调、LoRA、RAG、量化；PyTorch、Transformers、vLLM"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "线性代数、概率、优化；Python，系统方向需C++及GPU基础"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "构建数据和评测集，比较检索或微调方案，测量准确性、吞吐量及资源消耗"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "知识问答、代码辅助、文档分析、智能办公"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "LLM应用工程、算法工程、推理系统研发、评测工程"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "AI Index 2026记录生成式AI进展及采用情况；成本、可靠性和安全评价具有现实需求。不能据此承诺就业或薪资。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "The 2026 AI Index Report",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+        "publisher": "Stanford HAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "研究报告"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-vision",
+    "title": "计算机视觉",
+    "summary": "从图像、视频或三维感知数据提取信息、识别对象并估计空间结构。",
+    "category": "智能计算",
+    "majorIds": [
+      "081200",
+      "140500",
+      "085410",
+      "085404"
+    ],
+    "researchIds": [
+      "r-multimodal",
+      "r-robotics",
+      "r-graphics"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "从图像、视频或三维感知数据提取信息、识别对象并估计空间结构。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "怎样在遮挡、光照变化或新场景下稳定识别？如何兼顾实时性与准确率？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "检测、分割、跟踪、三维重建、视觉Transformer；OpenCV、PyTorch"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "线性代数、几何、概率；Python/C++，图像处理"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "整理标注数据，训练或迁移视觉模型，比较精度和速度，分析失败样例"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "工业质检、医疗影像、自动驾驶感知、视频分析"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "视觉算法、图像处理、感知研发"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "AI Index 2026及CS2023反映视觉是成熟研究领域；实际项目需核对具体数据与部署约束。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "The 2026 AI Index Report",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+        "publisher": "Stanford HAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "研究报告"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-multimodal",
+    "title": "多模态学习",
+    "summary": "联合文本、图像、音频、视频等不同类型的信息进行理解与生成。",
+    "category": "智能计算",
+    "majorIds": [
+      "081200",
+      "140500",
+      "085410"
+    ],
+    "researchIds": [
+      "r-vision",
+      "r-nlp",
+      "r-llm"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "联合文本、图像、音频、视频等不同类型的信息进行理解与生成。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何实现模态对齐？模态缺失、噪声或相互矛盾时怎样处理？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "跨模态注意力、对比学习、视觉语言模型、融合与检索；PyTorch、Transformers"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "线性代数、概率、优化；Python、数据预处理"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "构建图文或音视频数据集，训练对齐模型，比较检索、问答和生成质量"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "图文搜索、视频理解、辅助诊断、交互式AI"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "多模态算法、视觉语言模型研发、AI应用开发"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "AI Index 2026持续评价模型能力；多模态评测应单独检验跨模态理解及数据质量。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "The 2026 AI Index Report",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+        "publisher": "Stanford HAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "研究报告"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-mining",
+    "title": "数据挖掘",
+    "summary": "从大量数据中提取模式、关系和可用于预测的特征。",
+    "category": "数据计算",
+    "majorIds": [
+      "081200",
+      "085410",
+      "085411"
+    ],
+    "researchIds": [
+      "r-ml",
+      "r-database",
+      "r-recsys"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "从大量数据中提取模式、关系和可用于预测的特征。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何识别少数类、异常和隐藏群体？怎样避免数据泄漏及虚假关联？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "聚类、关联规则、分类、异常检测；SQL、pandas、scikit-learn、Spark"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "统计、线代、算法；Python和SQL"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "构建数据集、比较模型与特征、评估稳定性并解释业务结果"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "风控、用户分析、工业监测、科研数据分析"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "数据挖掘算法、数据分析、数据科学"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023将数据科学内容分布于AI、数据管理和数学统计领域；研究需结合数据质量与问题设定。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computer Science Curricula 2023",
+        "url": "https://csed.acm.org/wp-content/uploads/2025/11/CS2023-Report.htm",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-recsys",
+    "title": "推荐系统",
+    "summary": "根据用户行为、内容及场景对候选对象进行检索和排序。",
+    "category": "数据计算",
+    "majorIds": [
+      "081200",
+      "085410",
+      "085411"
+    ],
+    "researchIds": [
+      "r-mining",
+      "r-ml",
+      "r-database"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "根据用户行为、内容及场景对候选对象进行检索和排序。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何处理冷启动、反馈偏差和长尾内容？怎样让离线指标与真实使用结果一致？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "协同过滤、向量召回、排序模型、序列推荐、A/B测试；Python、SQL、PyTorch、向量索引"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "概率、统计实验、优化；Python、SQL、数据工程"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "构建召回排序基线，做离线评估，分析偏差与时序泄漏；具备条件时开展线上实验"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "电商、内容平台、广告、个性化搜索"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "推荐算法、搜索排序算法、数据科学、机器学习工程"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023的AI和数据管理知识可作为基础；推荐岗位受具体平台和业务影响，当前资料不支持国内岗位增速预测。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computer Science Curricula 2023",
+        "url": "https://csed.acm.org/wp-content/uploads/2025/11/CS2023-Report.htm",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-systems",
+    "title": "计算机系统",
+    "summary": "研究软硬件协同、资源管理、运行效率和系统可靠性。",
+    "category": "系统与基础设施",
+    "majorIds": [
+      "081200",
+      "085404",
+      "085400",
+      "083500",
+      "085405"
+    ],
+    "researchIds": [
+      "r-os",
+      "r-database",
+      "r-distributed",
+      "r-hpc"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究软硬件协同、资源管理、运行效率和系统可靠性。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "怎样减少系统延迟、内存开销和能耗？如何在不同硬件上获得稳定性能？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "性能分析、体系结构、系统软件、并发；Linux、C/C++、perf、虚拟化工具"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "离散数学、算法与计算机体系结构；C/C++和Linux"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "实现原型、设计微基准及真实负载，记录吞吐、延迟、资源消耗与可重复性"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "服务器、基础软件、存储、云基础设施"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "系统研发、基础软件、性能优化、基础架构工程"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023设置体系结构、系统基础与并行计算知识领域；云原生调查提供基础设施应用背景，不能推断各岗位数量。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "CNCF Annual Cloud Native Survey",
+        "url": "https://www.cncf.io/reports/the-cncf-annual-cloud-native-survey/",
+        "publisher": "CNCF",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "行业调查"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-os",
+    "title": "操作系统",
+    "summary": "研究内核、进程线程、内存、文件与设备资源的抽象和管理。",
+    "category": "系统与基础设施",
+    "majorIds": [
+      "081200",
+      "085404",
+      "085412",
+      "083900"
+    ],
+    "researchIds": [
+      "r-systems",
+      "r-cloud",
+      "r-embedded",
+      "r-security"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究内核、进程线程、内存、文件与设备资源的抽象和管理。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "怎样在多核并发下减少争用？如何改进内存分配、隔离与调度？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "内核、同步、虚拟内存、文件系统、调度；Linux、C、Rust、QEMU"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "体系结构、数据结构、并发；C、汇编基础和调试"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "修改内核或教学系统，复现性能问题，使用追踪工具与基准进行实验"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "服务器、移动设备、嵌入式、容器运行时"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "内核研发、系统软件、嵌入式软件、性能工程"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023将OS列为独立知识领域；容器、异构硬件和隔离技术使资源管理持续具有研究价值，尚无本调查的岗位预测。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computer Science Curricula 2023",
+        "url": "https://csed.acm.org/wp-content/uploads/2025/11/CS2023-Report.htm",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-database",
+    "title": "数据库",
+    "summary": "研究数据模型、存储索引、查询处理、事务与一致性。",
+    "category": "系统与基础设施",
+    "majorIds": [
+      "081200",
+      "085404",
+      "085405",
+      "085411",
+      "085400"
+    ],
+    "researchIds": [
+      "r-distributed",
+      "r-mining",
+      "r-systems"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究数据模型、存储索引、查询处理、事务与一致性。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "怎样降低复杂查询代价？如何提高并发事务性能并保证一致性与恢复？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "SQL、索引、查询优化、事务、存储引擎；PostgreSQL、DuckDB、MySQL、C++"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "算法、离散数学、概率；SQL、C/C++或Java"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "实现存储或执行模块，构建工作负载，测量吞吐、尾延迟及正确性"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "交易、数据仓库、分析平台、搜索"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "数据库内核研发、数据库工程、数据平台、后端研发"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023数据管理领域涵盖数据库基础；分析与事务负载的差异仍是系统设计问题。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computer Science Curricula 2023",
+        "url": "https://csed.acm.org/wp-content/uploads/2025/11/CS2023-Report.htm",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-distributed",
+    "title": "分布式系统",
+    "summary": "研究多个计算节点通过网络协同完成存储、计算和服务。",
+    "category": "系统与基础设施",
+    "majorIds": [
+      "081200",
+      "085404",
+      "085405",
+      "085411",
+      "083500"
+    ],
+    "researchIds": [
+      "r-cloud",
+      "r-database",
+      "r-network"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究多个计算节点通过网络协同完成存储、计算和服务。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "网络或节点失效时如何维持服务？一致性、可用性和延迟如何权衡？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "共识、复制、分片、RPC、容错、消息队列；Go、Java、Rust、gRPC"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "算法、并发、概率、网络；Go/Java/C++"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "实现分布式组件，模拟网络故障和负载，测量一致性、延迟与恢复时间"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "分布式数据库、微服务、大数据平台"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "分布式系统研发、后端、存储研发、基础架构"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CNCF年度调查提供云原生分布式基础设施应用证据；调查对象为社区样本，不能代表国内全体企业。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "CNCF Annual Cloud Native Survey",
+        "url": "https://www.cncf.io/reports/the-cncf-annual-cloud-native-survey/",
+        "publisher": "CNCF",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "行业调查"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-cloud",
+    "title": "云计算与云原生",
+    "summary": "将计算、存储和网络资源通过虚拟化与自动化管理提供给应用。",
+    "category": "系统与基础设施",
+    "majorIds": [
+      "081200",
+      "085404",
+      "085405",
+      "085411",
+      "083500"
+    ],
+    "researchIds": [
+      "r-distributed",
+      "r-systems",
+      "r-mlsys"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "将计算、存储和网络资源通过虚拟化与自动化管理提供给应用。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何实现弹性扩缩容、资源隔离和故障恢复？怎样减少部署及运行成本？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "容器、编排、虚拟化、服务治理、可观测性；Kubernetes、Docker、Prometheus、Terraform"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "网络、操作系统、分布式基础；Go、Python、Shell"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "搭建集群，比较调度策略，测试服务故障与恢复，监测资源利用"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "企业云平台、在线服务、AI训练与推理平台"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "云平台研发、SRE、DevOps、基础架构"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CNCF 2025年度调查反映其样本中容器编排与AI基础设施受到关注；不宜将社区采用率解释为全国企业采用率。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "CNCF Annual Cloud Native Survey",
+        "url": "https://www.cncf.io/reports/the-cncf-annual-cloud-native-survey/",
+        "publisher": "CNCF",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "行业调查"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-software",
+    "title": "软件工程",
+    "summary": "研究高质量软件的设计、开发、测试、维护与协作方法。",
+    "category": "软件与编程",
+    "majorIds": [
+      "081200",
+      "083500",
+      "085404",
+      "085405",
+      "085400"
+    ],
+    "researchIds": [
+      "r-program",
+      "r-cloud",
+      "r-systems"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究高质量软件的设计、开发、测试、维护与协作方法。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "怎样降低缺陷与维护成本？如何评估自动生成代码或测试的真实质量？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "需求工程、软件架构、测试、持续集成、软件度量；Git、CI、JUnit、pytest"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "离散数学、软件设计、统计；Java/C++/Python及工程实践"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "分析代码库和缺陷数据，开发测试或开发工具，设计对照实验"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "企业应用、工业软件、金融系统、移动应用"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "软件研发、测试开发、研发效能、软件质量工程"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023软件工程知识领域与美国BLS职业分类可说明软件开发的专业基础和岗位类型；不用于推断中国就业增长。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-program",
+    "title": "程序分析与编程语言",
+    "summary": "研究程序语义、类型、静态动态分析、编译及自动验证方法。",
+    "category": "软件与编程",
+    "majorIds": [
+      "081200",
+      "083500",
+      "085405",
+      "083900",
+      "085412"
+    ],
+    "researchIds": [
+      "r-software",
+      "r-security",
+      "r-algorithm"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究程序语义、类型、静态动态分析、编译及自动验证方法。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "怎样发现缺陷且减少误报？如何证明优化保持语义？怎样提升编译效率？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "抽象解释、数据流分析、符号执行、类型系统、IR；LLVM、Clang、Z3"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "逻辑、离散数学、算法；C/C++、Rust或函数式语言"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "实现分析器或编译优化，构造测试程序，对比覆盖率、误报率和性能"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "编译器、IDE、静态检查、软件安全"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "编译器研发、程序分析、开发工具、安全研发"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023包含编程语言基础和软件工程领域；自动化分析及代码验证是持续研究方向，岗位集中度取决于行业。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computer Science Curricula 2023",
+        "url": "https://csed.acm.org/wp-content/uploads/2025/11/CS2023-Report.htm",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-security",
+    "title": "网络与系统安全",
+    "summary": "研究计算机系统、网络和应用在威胁下的安全属性、风险与防护。",
+    "category": "安全与隐私",
+    "majorIds": [
+      "081200",
+      "083900",
+      "085404",
+      "085412",
+      "083500"
+    ],
+    "researchIds": [
+      "r-crypto",
+      "r-network",
+      "r-privacy",
+      "r-program"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究计算机系统、网络和应用在威胁下的安全属性、风险与防护。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何发现及修复漏洞？如何检测异常并控制误报？怎样评估防护措施？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "访问控制、隔离、漏洞分析、安全监测、威胁建模；Linux、Python、安全测试框架"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "操作系统、网络、离散数学；C/C++、Python"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "在授权环境复现实验、构造防护原型，评价检测效果并验证修复"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "企业安全、云安全、工业安全、数据保护"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "安全研发、安全运营、应用安全、安全工程"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023安全领域及BLS职业分类提供研究与岗位依据。境外就业统计不代表中国市场，实际工作需遵循授权与法律。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-crypto",
+    "title": "密码学",
+    "summary": "研究信息保密、完整性、身份认证及相关数学安全保证。",
+    "category": "安全与隐私",
+    "majorIds": [
+      "083900",
+      "085412",
+      "081200"
+    ],
+    "researchIds": [
+      "r-security",
+      "r-privacy"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究信息保密、完整性、身份认证及相关数学安全保证。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "怎样在明确威胁假设下证明安全？怎样提高协议效率并避免实现缺陷？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "对称与公钥密码、签名、安全协议、零知识证明、后量子密码；SageMath、OpenSSL"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "数论、代数、概率、复杂性；Python/C/C++或Rust"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "阅读安全定义和证明，实现标准算法的实验原型，分析性能与安全假设"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "通信安全、身份认证、电子签名、隐私计算"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "密码工程、密码研究、协议安全研发"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "NIST于2024年发布首批三项后量子密码标准，后续迁移文件提供标准化与工程验证依据；国内部署须核对适用标准。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "NIST Releases First 3 Finalized Post-Quantum Encryption Standards",
+        "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+        "publisher": "NIST",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "官方",
+        "publishedDate": "2024-08-13"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      },
+      {
+        "title": "Transition to Post-Quantum Cryptography Standards",
+        "url": "https://csrc.nist.gov/pubs/ir/8547/final",
+        "publisher": "NIST",
+        "scope": "迁移标准及建议",
+        "sourceType": "官方"
+      }
+    ]
+  },
+  {
+    "id": "r-network",
+    "title": "计算机网络",
+    "summary": "研究计算机间数据通信、路由、传输、网络资源与服务质量。",
+    "category": "系统与基础设施",
+    "majorIds": [
+      "081200",
+      "083900",
+      "085404",
+      "085412",
+      "085400"
+    ],
+    "researchIds": [
+      "r-distributed",
+      "r-security",
+      "r-cloud"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究计算机间数据通信、路由、传输、网络资源与服务质量。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "怎样控制拥塞、降低延迟？怎样在不同网络条件下提高可靠性及可观测性？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "TCP/IP、QUIC、路由、SDN、网络测量；Wireshark、ns-3、Mininet"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "概率、图算法、网络协议；C/C++、Python"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "模拟或搭建网络，采集流量和性能数据，比较协议或调度算法"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "数据中心、互联网服务、工业物联网、通信网络"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "网络研发、网络基础设施、网络性能、安全工程"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023将网络与通信列为知识领域，云原生调查提供数据中心应用背景；协议性能须通过明确负载验证。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "CNCF Annual Cloud Native Survey",
+        "url": "https://www.cncf.io/reports/the-cncf-annual-cloud-native-survey/",
+        "publisher": "CNCF",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "行业调查"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-embedded",
+    "title": "嵌入式系统",
+    "summary": "研究运行在资源受限设备中的软件、硬件接口和实时控制。",
+    "category": "硬件与智能设备",
+    "majorIds": [
+      "081200",
+      "085404",
+      "085400"
+    ],
+    "researchIds": [
+      "r-os",
+      "r-robotics",
+      "r-systems"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究运行在资源受限设备中的软件、硬件接口和实时控制。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "怎样满足实时、功耗和可靠性约束？如何协调传感器、驱动与计算任务？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "MCU、RTOS、驱动、通信总线、边缘推理；C/C++、FreeRTOS、Zephyr、交叉编译工具"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "数字逻辑、体系结构、控制基础；C/C++、硬件调试"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "开发设备固件和驱动，测量执行时序、功耗、内存及故障恢复"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "智能硬件、汽车电子、工业控制、物联网"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "嵌入式软件、驱动研发、边缘计算、实时系统"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023专用平台开发和体系结构领域支持其知识要求；边缘设备约束因产品不同，不能以通用AI报告预测就业。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computer Science Curricula 2023",
+        "url": "https://csed.acm.org/wp-content/uploads/2025/11/CS2023-Report.htm",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-graphics",
+    "title": "计算机图形学",
+    "summary": "研究计算机生成、处理和显示二维及三维图形的方法。",
+    "category": "视觉与交互",
+    "majorIds": [
+      "081200",
+      "085404",
+      "085405"
+    ],
+    "researchIds": [
+      "r-vision",
+      "r-hpc"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究计算机生成、处理和显示二维及三维图形的方法。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何在有限计算预算下获得高质量渲染？怎样高效处理复杂几何？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "几何建模、光栅化、光线追踪、物理渲染；C++、OpenGL、Vulkan、Blender"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "线性代数、几何、数值方法；C++与GPU编程基础"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "实现渲染器或几何算法，比较视觉质量、帧率与内存消耗"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "游戏、动画、数字孪生、仿真、工业设计"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "图形研发、渲染工程、引擎开发、仿真软件"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023图形及交互技术知识领域提供专业依据；实时渲染与计算效率是可研究问题，岗位取决于行业需求。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computer Science Curricula 2023",
+        "url": "https://csed.acm.org/wp-content/uploads/2025/11/CS2023-Report.htm",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-hpc",
+    "title": "高性能计算",
+    "summary": "研究利用并行硬件及高效算法加速大规模科学和工程计算。",
+    "category": "系统与基础设施",
+    "majorIds": [
+      "081200",
+      "085404",
+      "085400"
+    ],
+    "researchIds": [
+      "r-systems",
+      "r-mlsys",
+      "r-graphics"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究利用并行硬件及高效算法加速大规模科学和工程计算。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何提高并行效率、降低通信开销？怎样适配异构计算设备？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "MPI、OpenMP、CUDA、并行算法、数值计算；C/C++、Fortran、性能分析工具"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "数值分析、线性代数、算法、体系结构；C/C++及并行编程"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "移植并优化计算任务，比较强弱扩展性、吞吐和能效"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "科学模拟、气象、工程仿真、AI训练"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "HPC研发、GPU计算、性能优化、科学计算软件"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023并行与分布式计算领域支持知识范围；AI Index的训练算力讨论为异构计算提供应用背景。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "The 2026 AI Index Report",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+        "publisher": "Stanford HAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "研究报告"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-algorithm",
+    "title": "算法与计算理论",
+    "summary": "研究问题的可计算性、算法设计、复杂度及正确性。",
+    "category": "理论计算",
+    "majorIds": [
+      "081200",
+      "083500",
+      "085404"
+    ],
+    "researchIds": [
+      "r-ml",
+      "r-program",
+      "r-network"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究问题的可计算性、算法设计、复杂度及正确性。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "给定资源限制能否得到更优算法？问题的复杂性下界是什么？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "图算法、动态规划、随机算法、近似算法、复杂性理论；C++、Python、数学证明"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "离散数学、概率、组合数学、证明；算法编程"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "提出算法，证明性质，进行复杂度分析与实验比较"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "优化调度、搜索、网络分析、基础算法库"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "算法研发、优化算法、科研；也可迁移至软件开发"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023明确算法基础领域；数学证明和高效实现可迁移至多个计算方向，岗位标签不一定称为理论算法。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computer Science Curricula 2023",
+        "url": "https://csed.acm.org/wp-content/uploads/2025/11/CS2023-Report.htm",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-robotics",
+    "title": "机器人与具身智能",
+    "summary": "研究具有传感与行动能力的机器人如何感知环境、规划并控制动作。",
+    "category": "智能计算",
+    "majorIds": [
+      "140500",
+      "081200",
+      "085410",
+      "085404"
+    ],
+    "researchIds": [
+      "r-vision",
+      "r-embedded",
+      "r-multimodal"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究具有传感与行动能力的机器人如何感知环境、规划并控制动作。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何在动态环境中定位及规划？怎样从仿真迁移到真实设备？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "SLAM、运动规划、控制、强化学习、视觉感知；ROS 2、Gazebo、PyTorch"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "线代、几何、概率、控制；Python/C++"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "搭建仿真或实体实验，训练感知策略，测量成功率、安全性、时延"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "工业机器人、移动机器人、自动驾驶、服务机器人"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "机器人算法、感知定位、运动规划、机器人软件"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "AI Index 2026可提供智能系统研究背景；机器人结果需结合硬件与安全约束，不应将仿真成功率等同实际能力。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "The 2026 AI Index Report",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+        "publisher": "Stanford HAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "研究报告"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-privacy",
+    "title": "隐私计算与数据安全",
+    "summary": "研究在限制敏感信息暴露的条件下开展数据处理、共享和学习。",
+    "category": "安全与隐私",
+    "majorIds": [
+      "083900",
+      "085412",
+      "085411",
+      "085410"
+    ],
+    "researchIds": [
+      "r-security",
+      "r-crypto",
+      "r-ml"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究在限制敏感信息暴露的条件下开展数据处理、共享和学习。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何量化隐私泄露风险？如何平衡隐私、精度与计算开销？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "差分隐私、联邦学习、安全多方计算、同态加密；Python、PyTorch、密码库"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "概率统计、密码学、优化；Python及系统编程"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "设定威胁模型，比较隐私预算、预测质量和运行成本，核查数据使用授权"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "医疗联合分析、金融风控、跨组织数据分析"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "隐私计算研发、数据安全、机器学习安全"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "CS2023安全和数据管理领域提供知识基础；实际应用受数据法规及合规条件约束，无直接国内就业增长证据。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computer Science Curricula 2023",
+        "url": "https://csed.acm.org/wp-content/uploads/2025/11/CS2023-Report.htm",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      }
+    ]
+  },
+  {
+    "id": "r-mlsys",
+    "title": "机器学习系统与AI基础设施",
+    "summary": "研究机器学习训练和推理的系统实现、资源管理及计算优化。",
+    "category": "系统与基础设施",
+    "majorIds": [
+      "081200",
+      "085404",
+      "085410",
+      "085400"
+    ],
+    "researchIds": [
+      "r-hpc",
+      "r-cloud",
+      "r-deep",
+      "r-llm"
+    ],
+    "sections": [
+      {
+        "title": "研究内容",
+        "paragraphs": [
+          "研究机器学习训练和推理的系统实现、资源管理及计算优化。"
+        ]
+      },
+      {
+        "title": "典型研究问题",
+        "paragraphs": [
+          "如何降低模型服务延迟与显存占用？怎样提高分布式训练效率？"
+        ]
+      },
+      {
+        "title": "主要技术与工具",
+        "paragraphs": [
+          "模型并行、量化、算子优化、GPU调度；CUDA、PyTorch、Triton、vLLM"
+        ]
+      },
+      {
+        "title": "数学及编程要求",
+        "paragraphs": [
+          "线代、并行计算、系统基础；Python/C++、GPU编程"
+        ]
+      },
+      {
+        "title": "研究生阶段可能开展的工作",
+        "paragraphs": [
+          "设计并实现算子或服务策略，比较吞吐、尾延迟、成本和正确性"
+        ]
+      },
+      {
+        "title": "产业应用",
+        "paragraphs": [
+          "模型服务、AI云平台、大规模训练"
+        ]
+      },
+      {
+        "title": "相关就业岗位（示例）",
+        "paragraphs": [
+          "AI基础架构、推理优化、GPU研发、机器学习平台"
+        ]
+      },
+      {
+        "title": "发展情况与证据边界",
+        "paragraphs": [
+          "AI Index 2026和CNCF年度调查提供训练、推理及基础设施背景；不能据此保证特定岗位的招聘规模。"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "CS2023 Knowledge Areas",
+        "url": "https://csed.acm.org/knowledge-areas/",
+        "publisher": "ACM / IEEE-CS / AAAI",
+        "scope": "相关计算机知识领域；研究问题及工具为编辑性举例",
+        "sourceType": "专业学会课程指南"
+      },
+      {
+        "title": "The 2026 AI Index Report",
+        "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+        "publisher": "Stanford HAI",
+        "scope": "发展依据；不构成中国岗位预测",
+        "sourceType": "研究报告"
+      },
+      {
+        "title": "Computers and Information Technology: occupational skills",
+        "url": "https://www.bls.gov/emp/skills/computers-and-information-technology.htm",
+        "publisher": "美国劳工统计局",
+        "scope": "职业分类及技能背景（美国）",
+        "sourceType": "境外官方职业统计"
+      },
+      {
+        "title": "CNCF Annual Cloud Native Survey",
+        "url": "https://www.cncf.io/reports/the-cncf-annual-cloud-native-survey/",
+        "publisher": "CNCF",
+        "scope": "AI基础设施行业调查",
+        "sourceType": "行业调查"
+      }
+    ]
+  }
+]
