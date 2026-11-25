@@ -1,7 +1,12 @@
-import { changePage, revealUpdate } from "./motion.js";
+import {
+  cancelPageEntrance,
+  playPageEntrance,
+  revealUpdate,
+} from "./motion.js";
 import { majors, careers, topics } from "./content.js";
 const $ = (s) => document.querySelector(s),
-  main = $("#main");
+  main = $("#main"),
+  pageContent = $("#page-content");
 const esc = (v) =>
   String(v ?? "").replace(
     /[&<>"']/g,
@@ -932,7 +937,7 @@ function render() {
       ),
   };
   try {
-    main.innerHTML = pages[page]
+    pageContent.innerHTML = pages[page]
       ? pages[page]()
       : heading("未找到该记录") + link("home", "返回首页");
     if (page === "schools") {
@@ -943,7 +948,7 @@ function render() {
       (main.querySelector("h1")?.textContent || "首页") + " · CS 2028";
   } catch (e) {
     console.error(e);
-    main.innerHTML = heading("未找到该记录") + link("home", "返回首页");
+    pageContent.innerHTML = heading("未找到该记录") + link("home", "返回首页");
   }
 }
 function download(name, obj) {
@@ -1372,7 +1377,6 @@ document.addEventListener("click", (event) => {
 const positions = new Map(Object.entries(browserState.positions || {}));
 let scrollTimer;
 let activeEntry;
-let routeRequest = 0;
 history.scrollRestoration = "manual";
 
 function newEntryId() {
@@ -1407,46 +1411,33 @@ function navigate(animate = false) {
     entry = newEntryId();
     history.replaceState({ ...history.state, cs2028Entry: entry }, "");
   }
-  if (entry === activeEntry) {
-    // Still invalidate any callback for a destination the user has just left.
-    routeRequest++;
-    changePage(main, () => false, false);
-    return;
-  }
+  if (entry === activeEntry) return;
+  cancelPageEntrance();
   rememberScroll();
   clearTimeout(scrollTimer);
   closeOverlay(searchDialog, true);
   closeOverlay(previewDialog, true);
   setMenu(false);
-  const destination = location.hash.slice(1) || "home";
-  const request = ++routeRequest;
-  const previousEntry = activeEntry;
+  const shouldAnimate = animate && activeEntry !== undefined;
   const destinationScroll = positions.get(entry) || 0;
-  changePage(
-    main,
-    () => {
-      if (request !== routeRequest) return false;
-      const [name, value = ""] = destination.split("/");
-      page = name;
-      try {
-        arg = decodeURIComponent(value);
-      } catch {
-        arg = "";
-      }
-      activeEntry = entry;
-      const directoryEntry = browserState.directoryEntries[entry];
-      if (page === "schools" && directoryEntry) {
-        filters = { ...defaultFilters, ...directoryEntry.filters };
-        listPage = directoryEntry.listPage;
-      }
-      updateNavigation();
-      render();
-      main.focus({ preventScroll: true });
-      scrollTo(0, destinationScroll);
-      return true;
-    },
-    animate && !!previousEntry,
-  );
+  const [name, value = ""] = (location.hash.slice(1) || "home").split("/");
+  page = name;
+  try {
+    arg = decodeURIComponent(value);
+  } catch {
+    arg = "";
+  }
+  activeEntry = entry;
+  const directoryEntry = browserState.directoryEntries[entry];
+  if (page === "schools" && directoryEntry) {
+    filters = { ...defaultFilters, ...directoryEntry.filters };
+    listPage = directoryEntry.listPage;
+  }
+  updateNavigation();
+  render();
+  main.focus({ preventScroll: true });
+  scrollTo(0, destinationScroll);
+  if (shouldAnimate) playPageEntrance(pageContent);
 }
 
 async function start() {
@@ -1466,7 +1457,7 @@ async function start() {
     window.addEventListener("hashchange", syncRoute);
     window.addEventListener("popstate", () => navigate());
   } catch {
-    main.innerHTML =
+    pageContent.innerHTML =
       heading("数据库读取失败") + '<button id="retry">重新读取</button>';
     $("#retry").onclick = start;
   }
