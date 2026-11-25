@@ -1,0 +1,670 @@
+[
+  {
+    "id": "武汉大学",
+    "name": "武汉大学",
+    "city": "武汉",
+    "province": "湖北",
+    "aliases": [
+      "武大"
+    ],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "华中科技大学",
+    "name": "华中科技大学",
+    "city": "武汉",
+    "province": "湖北",
+    "aliases": [
+      "华科",
+      "华中大"
+    ],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "北京大学",
+    "name": "北京大学",
+    "city": "北京",
+    "province": "北京",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "中国人民大学",
+    "name": "中国人民大学",
+    "city": "北京",
+    "province": "北京",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "清华大学",
+    "name": "清华大学",
+    "city": "北京",
+    "province": "北京",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "北京航空航天大学",
+    "name": "北京航空航天大学",
+    "city": "北京",
+    "province": "北京",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "北京理工大学",
+    "name": "北京理工大学",
+    "city": "北京",
+    "province": "北京",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "中国农业大学",
+    "name": "中国农业大学",
+    "city": "北京",
+    "province": "北京",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "北京师范大学",
+    "name": "北京师范大学",
+    "city": "北京",
+    "province": "北京",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "中央民族大学",
+    "name": "中央民族大学",
+    "city": "北京",
+    "province": "北京",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "南开大学",
+    "name": "南开大学",
+    "city": "天津",
+    "province": "天津",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "天津大学",
+    "name": "天津大学",
+    "city": "天津",
+    "province": "天津",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "大连理工大学",
+    "name": "大连理工大学",
+    "city": "大连",
+    "province": "辽宁",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "东北大学",
+    "name": "东北大学",
+    "city": "沈阳",
+    "province": "辽宁",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "吉林大学",
+    "name": "吉林大学",
+    "city": "长春",
+    "province": "吉林",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "哈尔滨工业大学",
+    "name": "哈尔滨工业大学",
+    "city": "哈尔滨",
+    "province": "黑龙江",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "复旦大学",
+    "name": "复旦大学",
+    "city": "上海",
+    "province": "上海",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "同济大学",
+    "name": "同济大学",
+    "city": "上海",
+    "province": "上海",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "上海交通大学",
+    "name": "上海交通大学",
+    "city": "上海",
+    "province": "上海",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "华东师范大学",
+    "name": "华东师范大学",
+    "city": "上海",
+    "province": "上海",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "南京大学",
+    "name": "南京大学",
+    "city": "南京",
+    "province": "江苏",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "东南大学",
+    "name": "东南大学",
+    "city": "南京",
+    "province": "江苏",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "浙江大学",
+    "name": "浙江大学",
+    "city": "杭州",
+    "province": "浙江",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "中国科学技术大学",
+    "name": "中国科学技术大学",
+    "city": "合肥",
+    "province": "安徽",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "厦门大学",
+    "name": "厦门大学",
+    "city": "厦门",
+    "province": "福建",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "山东大学",
+    "name": "山东大学",
+    "city": "济南",
+    "province": "山东",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "中国海洋大学",
+    "name": "中国海洋大学",
+    "city": "青岛",
+    "province": "山东",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "湖南大学",
+    "name": "湖南大学",
+    "city": "长沙",
+    "province": "湖南",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "中南大学",
+    "name": "中南大学",
+    "city": "长沙",
+    "province": "湖南",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "国防科技大学",
+    "name": "国防科技大学",
+    "city": "长沙",
+    "province": "湖南",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "中山大学",
+    "name": "中山大学",
+    "city": "广州",
+    "province": "广东",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "华南理工大学",
+    "name": "华南理工大学",
+    "city": "广州",
+    "province": "广东",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "四川大学",
+    "name": "四川大学",
+    "city": "成都",
+    "province": "四川",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "电子科技大学",
+    "name": "电子科技大学",
+    "city": "成都",
+    "province": "四川",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "重庆大学",
+    "name": "重庆大学",
+    "city": "重庆",
+    "province": "重庆",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "西安交通大学",
+    "name": "西安交通大学",
+    "city": "西安",
+    "province": "陕西",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "西北工业大学",
+    "name": "西北工业大学",
+    "city": "西安",
+    "province": "陕西",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "西北农林科技大学",
+    "name": "西北农林科技大学",
+    "city": "杨凌",
+    "province": "陕西",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "兰州大学",
+    "name": "兰州大学",
+    "city": "兰州",
+    "province": "甘肃",
+    "aliases": [],
+    "sources": [
+      {
+        "title": "教育部 985 工程高校名单",
+        "url": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html",
+        "year": null,
+        "scope": "院校名录",
+        "publisher": "教育部",
+        "verifiedOn": null
+      }
+    ]
+  }
+]

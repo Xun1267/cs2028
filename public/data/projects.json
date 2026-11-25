@@ -1,0 +1,128 @@
+{
+  "projects": [
+    {
+      "id": "whu-211-085404-01",
+      "schoolId": "武汉大学",
+      "majorId": "085404",
+      "college": "计算机学院",
+      "direction": "01 计算机技术",
+      "degree": "专业学位",
+      "studyMode": "全日制",
+      "years": [
+        {
+          "year": 2027,
+          "examCombo": "22408",
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "204",
+              "name": "英语二"
+            },
+            {
+              "code": "302",
+              "name": "数学二"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "planned": null,
+          "promotionPlanned": null,
+          "examPlanned": null,
+          "sharedPlanId": "whu-211-085404-full-time",
+          "scope": null,
+          "note": "方向 01 为全日制计算机技术。",
+          "updatedAt": "2026-11-25",
+          "sources": [
+            {
+              "title": "211计算机学院（2027年）",
+              "url": "https://gs.whu.edu.cn/info/2581/108911.htm",
+              "year": 2027,
+              "scope": "武汉大学计算机学院 085404 全日制方向 01 和方向 02 合计。方向 01 名额未单列。",
+              "publisher": "武汉大学",
+              "verifiedOn": "2026-11-25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hust-210-085404-00",
+      "schoolId": "华中科技大学",
+      "majorId": "085404",
+      "college": "计算机科学与技术学院",
+      "direction": "00 不区分研究方向",
+      "degree": "专业学位",
+      "studyMode": "全日制",
+      "years": [
+        {
+          "year": 2027,
+          "examCombo": "11408",
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语一"
+            },
+            {
+              "code": "301",
+              "name": "数学一"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "planned": 201,
+          "promotionPlanned": null,
+          "examPlanned": null,
+          "sharedPlanId": null,
+          "scope": "华中科技大学计算机科学与技术学院 085404 拟招总人数，含推免、国家卓越工程师学院“卓越项目”计划及武汉光电国家研究中心招生计划。",
+          "note": "在招生目录中选择 2027 年、院系 210、全日制，查看计算机技术方向 00。本项目不招收同等学力考生。",
+          "updatedAt": "2026-11-25",
+          "sources": [
+            {
+              "title": "华中科技大学2027年硕士研究生招生专业目录",
+              "url": "https://yanzhao.hust.edu.cn/Master/Zsml_View.aspx",
+              "year": 2027,
+              "scope": "华中科技大学计算机科学与技术学院 085404 拟招总人数，含推免、国家卓越工程师学院“卓越项目”计划及武汉光电国家研究中心招生计划。",
+              "publisher": "华中科技大学",
+              "verifiedOn": "2026-11-25"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sharedPlans": [
+    {
+      "id": "whu-211-085404-full-time",
+      "year": 2027,
+      "projectIds": [
+        "whu-211-085404-01"
+      ],
+      "planned": null,
+      "promotionPlanned": 28,
+      "examPlanned": 37,
+      "scope": "武汉大学计算机学院 085404 全日制方向 01 和方向 02 合计。方向 01 名额未单列。",
+      "updatedAt": "2026-11-25",
+      "sources": [
+        {
+          "title": "211计算机学院（2027年）",
+          "url": "https://gs.whu.edu.cn/info/2581/108911.htm",
+          "year": 2027,
+          "scope": "武汉大学计算机学院 085404 全日制方向 01 和方向 02 合计。方向 01 名额未单列。",
+          "publisher": "武汉大学",
+          "verifiedOn": "2026-11-25"
+        }
+      ]
+    }
+  ]
+}

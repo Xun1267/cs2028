@@ -1,0 +1,31 @@
+[
+  {
+    "projectId": "whu-211-085404-01",
+    "year": 2027,
+    "applicants": null,
+    "interviewees": null,
+    "examAdmissions": null,
+    "applicationRatio": null,
+    "interviewRatio": null,
+    "cutoff": null,
+    "minimum": null,
+    "maximum": null,
+    "average": null,
+    "median": null,
+    "scoreDistribution": [],
+    "interviewRequirements": "复试含编程测试，按 0854 电子信息专硕大类排名录取。",
+    "scope": "招生目录公开的复试与排名要求。",
+    "updatedAt": "2026-11-25",
+    "sources": [
+      {
+        "title": "211计算机学院（2027年）",
+        "url": "https://gs.whu.edu.cn/info/2581/108911.htm",
+        "year": 2027,
+        "scope": "方向 01 的复试与排名要求",
+        "publisher": "武汉大学",
+        "verifiedOn": "2026-11-25"
+      }
+    ],
+    "promotionAdmissions": null
+  }
+]

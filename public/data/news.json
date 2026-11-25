@@ -1,0 +1,50 @@
+[
+  {
+    "id": "whu-2027-exam-registration",
+    "title": "武汉大学2027年硕士研究生考试报名工作公告",
+    "date": "2026-10-08",
+    "schoolId": "武汉大学",
+    "sources": [
+      {
+        "title": "武汉大学2027年硕士研究生考试报名工作公告",
+        "url": "https://gs.whu.edu.cn/info/1062/109151.htm",
+        "year": 2027,
+        "scope": "2027 届硕士招生公告",
+        "publisher": "武汉大学研究生院",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "hust-2027-admissions-guide",
+    "title": "华中科技大学2027年硕士研究生招生简章",
+    "date": "2026-10-08",
+    "schoolId": "华中科技大学",
+    "sources": [
+      {
+        "title": "华中科技大学2027年硕士研究生招生简章",
+        "url": "https://gszs.hust.edu.cn/info/1106/4160.htm",
+        "year": 2027,
+        "scope": "2027 届硕士招生公告",
+        "publisher": "华中科技大学研究生院招生办公室",
+        "verifiedOn": null
+      }
+    ]
+  },
+  {
+    "id": "hust-2027-exam-subject-changes",
+    "title": "华中科技大学2027年硕士研究生招生考试科目调整情况汇总（仅显示有变化的单元）",
+    "date": "2026-10-08",
+    "schoolId": "华中科技大学",
+    "sources": [
+      {
+        "title": "华中科技大学2027年硕士研究生招生考试科目调整情况汇总（仅显示有变化的单元）",
+        "url": "https://gszs.hust.edu.cn/info/1106/4162.htm",
+        "year": 2027,
+        "scope": "2027 届硕士招生公告",
+        "publisher": "华中科技大学研究生院招生办公室",
+        "verifiedOn": null
+      }
+    ]
+  }
+]

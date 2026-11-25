@@ -1,39 +1,87 @@
-# CS 2028 本机交互原型
+# CS 2028
 
-本轮为设计确认阶段。首页、院校名录、项目详情、对比、专业、职业和择校页面共用同一套样式。正式招生调查首批覆盖武汉大学和华中科技大学 2027 年全日制计算机技术专业各一个方向。
+面向计算机考研的静态信息网站。维护时直接编辑 `public/data/` 的 JSON，网页会读取并关联这些记录。
 
-## 预览
+## 本机运行
 
-在本目录运行以下命令，打开 http://127.0.0.1:8028 。需要 Python 3。
+需要 Python 3 和 Node.js 22.7 或更新版本。网站本身无需安装依赖。
 
 ```sh
+node scripts/check-data.mjs
 python3 -m http.server 8028 --bind 127.0.0.1 --directory public
 ```
 
-前端直接读取同源 JSON，需通过 HTTP 预览。浏览器以 hash 记录页面，可直接分享项目详情的完整网址。
+使用 [本机预览](http://127.0.0.1:8028/)核对数据和来源。校验脚本检查 JSON 解析、重复 ID 和年度、关联、数值范围及共享计划的重复记录。来源的真实性和数据口径需查阅原文。
 
-## Vercel 部署
+## 数据文件
 
-导入 GitHub 仓库 `Xun1267/cs2028`，Root Directory 使用仓库根目录。根目录的 `vercel.json` 设置 Other 预设，直接发布 `public/`，其中 `index.html` 为首页。该网站无需安装依赖或运行构建命令。如果已有 Vercel 项目曾将 Root Directory 设为 `site`，请改为仓库根目录后重新部署。
+以下路径均相对于 `public/data/`。
 
-## 数据与维护
-
-| 文件 | 内容及口径 |
+| 文件 | 结构和用途 |
 | --- | --- |
-| public/schools.json | 39 所院校的名录，城市表示校本部所在地 |
-| public/projects.json | 按招生单位、专业、研究方向、年度收录，保留实际培养地、初试科目及原始文件 |
-| public/news.json | 公告标题、发布日期、发布机构及链接 |
-| public/trends.json | 按招生年度统计的全国报名人数，单位为万人，每条记录附来源 |
-| public/content.js | 专业、职业和考研概念的首批阅读材料 |
+| `schools.json` | 院校数组。保留 `id`，用 `name`、`city`、`province` 和 `aliases` 提供名称及搜索别名。可添加 `sections`、`sources`。 |
+| `projects.json` | 包含 `projects` 和 `sharedPlans` 两个数组。项目通过 `schoolId`、`majorId` 关联院校和专业，在 `years` 中逐年补充考试与计划。 |
+| `admissions.json` | 按 `projectId` 和 `year` 记录实际报名、复试、录取、报录比、复录比、成绩与复试要求。 |
+| `training.json` | 按 `projectId` 和 `year` 记录 `tuitionPerYear`（元/年）、`durationYears`（年）、`location`（地点）、`city`（用于筛选）及 `note`。 |
+| `majors.json` | 专业数组。专业代码作为字符串 `id`，另有 `title`、`degree`、`summary`、`careerIds` 和 `sections`。 |
+| `careers.json` | 职业数组。使用稳定的 `id`、`title`、`summary`、`industry` 和 `sections`。专业与职业的关联由专业的 `careerIds` 生成。 |
+| `knowledge.json` | 知识条目数组。每条包含 `id`、`title`、`summary` 和 `sections`。 |
+| `news.json` | 公告数组。每条包含 `id`、`title`、`date`、`schoolId` 和 `sources`。全国性公告的 `schoolId` 可用 `null`。 |
+| `national-stats.json` | 全国报名统计。含 `title`、`unit`、`scope`、报考目标 `target` 和按年度记录的 `series`。 |
 
-新增年度请追加项目记录，保持现有 ID 稳定。院校名称与名录一致，专业代码对应专业库。保留缺失字段为空，前端显示“暂未取得”。目录中未列出方向名额时，仅在口径说明里记录大类计划。本站目前提供只读公共数据和本地个人设置，维护人可编辑上述源文件。
+## 填写规则与示例
 
-收藏、备注、筛选、偏好和对比方案保存在当前浏览器 localStorage。可在数据管理页下载和恢复个人 JSON 备份。从本机切换到新的部署地址时，需要手动导入备份。
+- 先查招生单位、主管部门或用人单位的原始资料。日期写 `YYYY-MM-DD`，年度写整数，例如 `2027`。人数、分数、费用和比值写数字，未知值写 `null`。专业代码和科目代码保留字符串形式，例如 `"085404"`。
+- 纠错时直接修改对应记录，并填写或更新 `updatedAt`。可用 `sources[].verifiedOn` 记录最近核对原文的日期。首页从记录日期、核验日期和公告日期中取最近一天。
+- 同一院校、学院、专业、方向和学习方式的项目保持原 `id`。新增年度在该项目 `years` 追加，项目 ID 自身不带年份。在院校和专业页展示最近一个有记录的年度，院校筛选和对比也可选历史年度。项目链接 `#project/项目ID` 打开最新记录，`#project/项目ID-年度` 打开指定年度。已有链接和浏览器收藏仍可使用。
+- 如果多个方向共享名额，在 `sharedPlans` 中按年度记录一份，填 `projectIds` 和具体 `scope`。成员年度只填同一 `sharedPlanId`，对应的共享名额字段留 `null`。尚未建档的方向写入 `scope`。页面给共享数值加标识，各方向的共享名额不能相加。
 
-## 交互核验
+项目 `years` 中的一条年度记录示例，完整项目和共享计划见 [projects.json](public/data/projects.json)。
 
-已使用本机 Chrome 无头模式检查 1440×1000 桌面和 390×844 移动布局。验证了首页数据载入、39 校名录、简称搜索、学院详情、收藏、加入对比、保存方案、城市条件无结果、综合成绩试算、专业及职业详情、全站搜索、手机菜单及页面宽度。测试没有测量真实网络下的性能指标。
+```json
+{
+  "year": 2027,
+  "examCombo": "22408",
+  "subjects": [
+    {"code": "101", "name": "思想政治理论"},
+    {"code": "204", "name": "英语二"},
+    {"code": "302", "name": "数学二"},
+    {"code": "408", "name": "计算机学科专业基础"}
+  ],
+  "planned": null,
+  "promotionPlanned": null,
+  "examPlanned": null,
+  "sharedPlanId": "whu-211-085404-full-time",
+  "updatedAt": "2026-11-25",
+  "sources": [{
+    "title": "211计算机学院（2027年）",
+    "url": "https://gs.whu.edu.cn/info/2581/108911.htm",
+    "year": 2027,
+    "scope": "085404 全日制方向 01 和 02 合计",
+    "publisher": "武汉大学"
+  }]
+}
+```
 
-## 后续建设范围
+`admissions.json` 的人数使用 `applicants`、`interviewees`、`examAdmissions`、`promotionAdmissions`。普通统考报录比、复录比使用 `applicationRatio`、`interviewRatio`，例如 `3.5` 表示 3.5∶1。分数使用 `cutoff`、`minimum`、`maximum`、`average`、`median`，分段用 `scoreDistribution: [{"min": 340, "max": 349, "count": 8}]`。用 `interviewRequirements` 记录复试要求，用 `scope` 注明具体统计范围，并提供适用年度对应的 `sources`。以上分段数值仅演示格式。
 
-正式数据层仍需拆分招生项目与年度记录，并接入历史录取数据、跨年统计、复试与培养条件。就业库和知识库为首批内容。权限管理、后台审核导入与回滚、个人偏好加权及跨设备同步仍待开发。本轮采用本机预览确认页面设计，尚未发布线上版本。
+文章的 `sections` 可包含多个对象。每节使用 `title`，按需要填写 `paragraphs`（每段一个字符串）、`table`、`chart` 和 `sources`。表格和图表示例：
+
+```json
+{
+  "title": "统计表阅读示例",
+  "paragraphs": ["先核对招生年度、考试科目与统计范围。"],
+  "table": {"headers": ["年度", "人数"], "rows": [[2026, 12], [2027, null]]},
+  "chart": {
+    "title": "年度人数示例",
+    "unit": "人",
+    "points": [{"label": "2025", "value": 10}, {"label": "2026", "value": 12}]
+  }
+}
+```
+
+## 提交与发布
+
+修正或补充 JSON 后运行校验，检查网页，再提交至 GitHub。生产项目在 Vercel 使用仓库根目录，`vercel.json` 直接发布 `public/`。在项目的 Git 设置连接 `Xun1267/cs2028` 并选择 `main` 作为 Production Branch 后，合入 `main` 会触发生产部署。
+
+收藏、备注和对比方案存放在当前浏览器。可从数据管理页导出或恢复个人 JSON 备份。
