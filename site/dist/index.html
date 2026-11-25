@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f6f5f0" />
+    <title>CS 2028 · 考研总览</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">跳至正文</a>
+    <aside id="rail"></aside>
+    <div class="shell">
+      <header>
+        <button class="mobile" id="menu" aria-label="打开导航">☰</button>
+        <div id="crumb">CS 2028 <span>/</span> <b></b></div>
+        <button class="search" id="searchOpen" aria-label="全站搜索"></button>
+      </header>
+      <main id="main" tabindex="-1"><p>正在读取数据库…</p></main>
+      <footer>CS 2028 <span>计算机考研与职业发展决策平台</span></footer>
+    </div>
+    <dialog id="searchDialog">
+      <div class="section">
+        <h2>全站搜索</h2>
+        <button id="closeSearch" aria-label="关闭搜索">关闭</button>
+      </div>
+      <input
+        id="searchInput"
+        placeholder="输入院校、专业代码、岗位或公告"
+        aria-label="搜索关键词"
+      />
+      <div id="searchResults"></div>
+    </dialog>
+    <div id="notice" role="status"></div>
+  </body>
+</html>

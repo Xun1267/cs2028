@@ -1,0 +1,236 @@
+[
+  {
+    "name": "武汉大学",
+    "city": "武汉",
+    "province": "湖北",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "华中科技大学",
+    "city": "武汉",
+    "province": "湖北",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "北京大学",
+    "city": "北京",
+    "province": "北京",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "中国人民大学",
+    "city": "北京",
+    "province": "北京",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "清华大学",
+    "city": "北京",
+    "province": "北京",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "北京航空航天大学",
+    "city": "北京",
+    "province": "北京",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "北京理工大学",
+    "city": "北京",
+    "province": "北京",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "中国农业大学",
+    "city": "北京",
+    "province": "北京",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "北京师范大学",
+    "city": "北京",
+    "province": "北京",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "中央民族大学",
+    "city": "北京",
+    "province": "北京",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "南开大学",
+    "city": "天津",
+    "province": "天津",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "天津大学",
+    "city": "天津",
+    "province": "天津",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "大连理工大学",
+    "city": "大连",
+    "province": "辽宁",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "东北大学",
+    "city": "沈阳",
+    "province": "辽宁",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "吉林大学",
+    "city": "长春",
+    "province": "吉林",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "哈尔滨工业大学",
+    "city": "哈尔滨",
+    "province": "黑龙江",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "复旦大学",
+    "city": "上海",
+    "province": "上海",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "同济大学",
+    "city": "上海",
+    "province": "上海",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "上海交通大学",
+    "city": "上海",
+    "province": "上海",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "华东师范大学",
+    "city": "上海",
+    "province": "上海",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "南京大学",
+    "city": "南京",
+    "province": "江苏",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "东南大学",
+    "city": "南京",
+    "province": "江苏",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "浙江大学",
+    "city": "杭州",
+    "province": "浙江",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "中国科学技术大学",
+    "city": "合肥",
+    "province": "安徽",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "厦门大学",
+    "city": "厦门",
+    "province": "福建",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "山东大学",
+    "city": "济南",
+    "province": "山东",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "中国海洋大学",
+    "city": "青岛",
+    "province": "山东",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "湖南大学",
+    "city": "长沙",
+    "province": "湖南",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "中南大学",
+    "city": "长沙",
+    "province": "湖南",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "国防科技大学",
+    "city": "长沙",
+    "province": "湖南",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "中山大学",
+    "city": "广州",
+    "province": "广东",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "华南理工大学",
+    "city": "广州",
+    "province": "广东",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "四川大学",
+    "city": "成都",
+    "province": "四川",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "电子科技大学",
+    "city": "成都",
+    "province": "四川",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "重庆大学",
+    "city": "重庆",
+    "province": "重庆",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "西安交通大学",
+    "city": "西安",
+    "province": "陕西",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "西北工业大学",
+    "city": "西安",
+    "province": "陕西",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "西北农林科技大学",
+    "city": "杨凌",
+    "province": "陕西",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  },
+  {
+    "name": "兰州大学",
+    "city": "兰州",
+    "province": "甘肃",
+    "source": "https://www.moe.gov.cn/srcsite/A22/s7065/200612/t20061206_128833.html"
+  }
+]
