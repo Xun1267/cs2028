@@ -7,20 +7,24 @@
 在本目录运行以下命令，打开 http://127.0.0.1:8028 。需要 Python 3。
 
 ```sh
-python3 -m http.server 8028 --bind 127.0.0.1 --directory dist
+python3 -m http.server 8028 --bind 127.0.0.1 --directory public
 ```
 
-前端直接读取同源 JSON，需通过 HTTP 预览。静态发布目录为 `site/dist`。如在 Vercel 选择 `site` 为项目根目录，可使用 Other 预设、无构建命令、输出目录 `dist`。浏览器以 hash 记录页面，可直接分享项目详情的完整网址。
+前端直接读取同源 JSON，需通过 HTTP 预览。浏览器以 hash 记录页面，可直接分享项目详情的完整网址。
+
+## Vercel 部署
+
+导入 GitHub 仓库 `Xun1267/cs2028`，Root Directory 使用仓库根目录。根目录的 `vercel.json` 设置 Other 预设，直接发布 `public/`，其中 `index.html` 为首页。该网站无需安装依赖或运行构建命令。如果已有 Vercel 项目曾将 Root Directory 设为 `site`，请改为仓库根目录后重新部署。
 
 ## 数据与维护
 
 | 文件 | 内容及口径 |
 | --- | --- |
-| dist/schools.json | 39 所院校的名录，城市表示校本部所在地 |
-| dist/projects.json | 按招生单位、专业、研究方向、年度收录，保留实际培养地、初试科目及原始文件 |
-| dist/news.json | 公告标题、发布日期、发布机构及链接 |
-| dist/trends.json | 按招生年度统计的全国报名人数，单位为万人，每条记录附来源 |
-| dist/content.js | 专业、职业和考研概念的首批阅读材料 |
+| public/schools.json | 39 所院校的名录，城市表示校本部所在地 |
+| public/projects.json | 按招生单位、专业、研究方向、年度收录，保留实际培养地、初试科目及原始文件 |
+| public/news.json | 公告标题、发布日期、发布机构及链接 |
+| public/trends.json | 按招生年度统计的全国报名人数，单位为万人，每条记录附来源 |
+| public/content.js | 专业、职业和考研概念的首批阅读材料 |
 
 新增年度请追加项目记录，保持现有 ID 稳定。院校名称与名录一致，专业代码对应专业库。保留缺失字段为空，前端显示“暂未取得”。目录中未列出方向名额时，仅在口径说明里记录大类计划。本站目前提供只读公共数据和本地个人设置，维护人可编辑上述源文件。
 
