@@ -94,6 +94,8 @@ python3 -m http.server 8028 --bind 127.0.0.1 --directory public
 
 同一项目年度可填写 `groupIds` 关联多条 `sharedPlans` 统计组。填写每组的 `projectIds`、`scope`、`sources` 和组级人数；组级录取成绩及人数放在 `admission`。同组数值不可按方向相加。方向独立公布、且口径不同的数据可以留在项目年度或 `admissions.json`。培养总学费用 `tuitionTotal`（元），已公布的年学费用 `tuitionPerYear`（元/年）。
 
+历史大类用独立项目保存，由后续项目的 `historicalPredecessorIds` 引用。年度的 `officialMajorCode` 保留当年代码。录取人数有细分时，`examAdmissionsTotal` 填统考总人数，`examAdmissions` 填已明确的普通统考人数，专项和调剂分别用 `specialPlanAdmissions`、`transferAdmissions`。同一分段的复试及录取数用 `scoreBandOutcomes`，每项包含 `min`、`max`、`interviewees`、`admitted`。开放上限可加 `openEnded: true`。
+
 | 文件 | 用途 |
 | --- | --- |
 | `research-directions.json` | 研究专题文章。用 `majorIds` 及 `researchIds` 关联专业和其他研究方向。 |

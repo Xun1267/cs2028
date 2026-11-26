@@ -1,5 +1,6 @@
 import { scoreRangeChart } from "./admission-charts.js";
 import {
+  admissionBreakdownFields,
   hasCatalog,
   numbers,
   planFields,
@@ -242,6 +243,10 @@ function projectTerms(record) {
     record.city,
     record.school.province,
     record.annual.examCombo,
+    record.annual.officialMajorCode,
+    record.annual.historicalDirection,
+    record.annual.professionalSubject?.code,
+    record.annual.professionalSubject?.name,
     record.direction,
     record.year,
   ];
@@ -627,7 +632,7 @@ function getFiltered() {
           containsWords(text, query) &&
           (!combo || record.annual.examCombo === combo) &&
           (!year || String(record.year) === year) &&
-          (!major || record.majorId === major),
+          (!major || record.majorId === major || record.annual.officialMajorCode === major),
       )
       .map(({ record }) => record),
     (record) => record.schoolId,
@@ -667,6 +672,7 @@ function assessment(school) {
 function projectRowControls(project) {
   const exam =
     project.annual.examCombo ||
+    project.annual.professionalSubject?.code ||
     (project.year >= trends.target.year && !hasCatalog(project)
       ? "招生信息待确认"
       : "—");
@@ -838,7 +844,7 @@ const usefulText = (text) =>
     .filter(
       (v) =>
         v &&
-        !/访问失败|核验过程|本轮|字段清单|历史对应|未获得|未成功|尚未核实|暂未取得|仍待核查|本数据库|页面打不开|供维护|待核|未核实|关联方向为参考|未建独立项目|不能分配至|不得分配至/.test(
+        !/访问失败|本轮|字段清单|历史对应|未获得|未成功|尚未核实|暂未取得|仍待核查|本数据库|页面打不开|供维护|待核|未核实|关联方向为参考|未建独立项目|不能分配至|不得分配至|不(?:得|可)重复|不得分摊|统考计划为普通计划口径|已(?:核验|匹配|更新)|逐人匹配|匹配过程|核验过程|数据提取|考生编号|非报名人数/.test(
           v,
         ),
     );
@@ -877,7 +883,11 @@ function readable(value) {
   if (Array.isArray(value)) return value.map(readable).join("、");
   if (value && typeof value === "object")
     return Object.entries(value)
-      .filter(([, v]) => v != null)
+      .filter(
+        ([key, v]) =>
+          v != null &&
+          !["n", "sampleSize", "populationScope", "sourceType"].includes(key),
+      )
       .map(
         ([key, v]) =>
           (({
@@ -888,7 +898,6 @@ function readable(value) {
             mean: "均分",
             q1: "第一四分位",
             q3: "第三四分位",
-            n: "样本量",
           })[key] || key) +
           " " +
           readable(v),
@@ -923,12 +932,21 @@ const projectViews = createProjectViews({
   annualActions,
   projectEmployment: (project) => dataInsights.projectEmployment(project),
 });
+function predecessorHistory(project) {
+  return (project.historicalPredecessorIds || [])
+    .map((id) => projectHistory.get(id))
+    .filter((records) => records?.length);
+}
 function detail(project) {
   return projectViews.page(
     project,
     projectHistory.get(project.id),
     trends.target.year,
     arg === project.ref,
+    predecessorHistory(project),
+    (project.historicalSuccessorIds || [])
+      .map((id) => projectById.get(id))
+      .filter(Boolean),
   );
 }
 function school(record) {
@@ -1160,12 +1178,14 @@ function compareTable() {
     fields
       .filter(([, read]) => items.some((p) => present(read(p))))
       .map(([label, read]) => [label, ...items.map((p) => esc(show(read(p))))]);
-  const values = (fields) =>
-    fields
+  const values = (fields, positive = false) => {
+    const recorded = (r, key) =>
+      positive ? r[key] > 0 : Number.isFinite(r[key]);
+    return fields
       .filter(
         ([key]) =>
-          rows.some((r) => Number.isFinite(r[key])) ||
-          groups.some((g) => Number.isFinite(numbers(g)[key])),
+          rows.some((r) => recorded(r, key)) ||
+          groups.some((g) => recorded(numbers(g), key)),
       )
       .map(([key, label]) => [
         label,
@@ -1173,11 +1193,9 @@ function compareTable() {
           const note =
             key === "examAdmissions"
               ? r.admissionScope
-              : key === "examPlanned"
-                ? r.examPlanScope
-                : key === "examAttendees"
-                  ? r.attendanceScope
-                  : "";
+              : key === "interviewRatio"
+                ? r.interviewRatioScope
+                : "";
           return Number.isFinite(r[key])
             ? esc(r[key] + (key.endsWith("Ratio") ? "∶1" : "")) +
                 (note ? `<small class="metric-scope">${esc(note)}</small>` : "")
@@ -1188,6 +1206,7 @@ function compareTable() {
               : "—";
         }),
       ]);
+  };
   const columnTable = (values) =>
     values.length
       ? table(columns, values, "compare-table admission-compare")
@@ -1195,8 +1214,10 @@ function compareTable() {
   const requirements = compareRows([
     ["学院", (p) => p.college],
     ["专业", (p) => p.majorLabel || p.major.title],
+    ["专业代码", (p) => p.annual.officialMajorCode || p.majorId],
     ["研究方向", (p) => p.direction],
     ["考试组合", (p) => p.annual.examCombo],
+    ["专业课", (p) => p.annual.professionalSubject?.name],
   ]);
   const costs = compareRows([
     ["培养地点", (p) => p.training?.location],
@@ -1208,6 +1229,7 @@ function compareTable() {
     ...new Map([
       ...scaleFields,
       ...competitionFields,
+      ...admissionBreakdownFields,
       ...ratioFields,
       ...scoreFields,
     ]).entries(),
@@ -1217,13 +1239,14 @@ function compareTable() {
     rows.map((r, i) => ({ ...r, label: `${i + 1} · ${r.project.year}` })),
     true,
   );
-  const outcomeRows = columnTable(
-    values([
+  const outcomeRows = columnTable([
+    ...values([
       ["promotionAdmissions", "实际推免人数"],
       ...competitionFields,
       ...ratioFields,
     ]),
-  );
+    ...values(admissionBreakdownFields, true),
+  ]);
   const scores = columnTable(values(scoreFields));
   const history = items.flatMap((p) => references(p, "history"));
   const job = items.map((p) => dataInsights.comparisonEmployment(p));
@@ -1863,12 +1886,29 @@ document.addEventListener("change", async (e) => {
   }
   if (t.id === "catalogYear" || t.id === "historyRange") {
     const records = projectHistory.get(t.dataset.project);
-    const target = t.id === "catalogYear" ? $("#catalogDocument") : $("#projectHistory");
-    target.innerHTML = t.id === "catalogYear"
-      ? projectViews.planBody(records.find((record) => record.year === Number(t.value)))
-      : projectViews.history(records, t.value);
+    const target =
+      t.id === "catalogYear" ? $("#catalogDocument") : $("#projectHistory");
+    target.innerHTML =
+      t.id === "catalogYear"
+        ? projectViews.planBody(
+            records.find((record) => record.year === Number(t.value)),
+          )
+        : projectViews.history(
+            records,
+            t.value,
+            predecessorHistory(records[0]),
+          );
     refreshReferences(pageContent);
     revealUpdate(target);
+    return;
+  }
+  if (t.hasAttribute("data-band-year")) {
+    const panel = t.closest("[data-band-panel]");
+    const target = panel.querySelector("[data-band-content]");
+    const template = [
+      ...panel.querySelectorAll("template[data-band-template]"),
+    ].find((entry) => entry.dataset.bandTemplate === t.value);
+    if (template) target.replaceChildren(template.content.cloneNode(true));
     return;
   }
   if (t.dataset.note) {

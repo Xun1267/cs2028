@@ -203,9 +203,26 @@ index(data.news, "news", (row, at) => {
   timestamps(row, at);
 });
 
-const planFields = ["planned", "promotionPlanned", "examPlanned"];
+const planFields = [
+  "planned",
+  "promotionPlanned",
+  "examPlanned",
+  "regularExamPlanned",
+  "specialPlanPlanned",
+];
 const counts = (record, at, fields) =>
   fields.forEach((key) => number(record[key], at + "." + key, 0, 1e7, true));
+const admissionCounts = [
+  "applicants",
+  "examAttendees",
+  "interviewees",
+  "interviewEligible",
+  "examAdmissions",
+  "examAdmissionsTotal",
+  "promotionAdmissions",
+  "specialPlanAdmissions",
+  "transferAdmissions",
+];
 const annualRecords = new Map();
 const sharedPlans = new Map();
 const catalog = object(data.catalog, "projects") ? data.catalog : {};
@@ -238,11 +255,30 @@ const projectIds = index(catalog.projects, "projects.projects", (row, at) => {
     timestamps(annual, key);
   });
 });
+const projectsById = new Map((catalog.projects || []).map((r) => [r.id, r]));
+for (const project of projectsById.values()) {
+  for (const key of ["historicalPredecessorIds", "historicalSuccessorIds"]) {
+    if (project[key] == null) continue;
+    const at = `projects: ${project.id}.${key}`;
+    const seen = new Set();
+    for (const id of list(project[key], at)) {
+      unique(id, seen, at);
+      check(
+        id !== project.id &&
+          projectsById.get(id)?.schoolId === project.schoolId,
+        at,
+        `无效历史项目 ${id}`,
+      );
+    }
+  }
+}
 objects(catalog.sharedPlans, "projects.sharedPlans", (row, at) => {
   id(row.id, at + ".id");
   year(row.year, at + ".year");
   text(row.scope, at + ".scope");
   counts(row, at, planFields);
+  if (row.admission && object(row.admission, at + ".admission"))
+    counts(row.admission, at + ".admission", admissionCounts);
   const key = projectRef(row.id, row.year);
   check(!sharedPlans.has(key), at, `重复共享计划 ${key}`);
   sharedPlans.set(key, row);
@@ -298,14 +334,7 @@ function yearly(values, at, validate) {
   });
 }
 yearly(data.admissions, "admissions", (row, at) => {
-  counts(row, at, [
-    "applicants",
-    "examAttendees",
-    "interviewees",
-    "interviewEligible",
-    "examAdmissions",
-    "promotionAdmissions",
-  ]);
+  counts(row, at, admissionCounts);
   for (const key of [
     "applicationRatio",
     "examAttendanceRatio",
@@ -330,6 +359,27 @@ yearly(data.admissions, "admissions", (row, at) => {
         number(bin.count, key + ".count", 0, 1e7, true, false);
         check(bin.min <= bin.max, key, "分段最低分不得高于最高分");
       });
+  if (row.scoreBandOutcomes != null) {
+    let lastMax = -1;
+    objects(row.scoreBandOutcomes, at + ".scoreBandOutcomes", (bin, key) => {
+      number(bin.min, key + ".min", 0, 500, true, false);
+      number(bin.max, key + ".max", 0, 500, true, false);
+      counts(bin, key, ["interviewees", "admitted"]);
+      check(
+        bin.min <= bin.max && bin.min > lastMax,
+        key,
+        "分数段须从低到高且不重叠",
+      );
+      check(
+        bin.interviewees == null ||
+          bin.admitted == null ||
+          bin.admitted <= bin.interviewees,
+        key,
+        "录取人数超过复试人数",
+      );
+      lastMax = bin.max;
+    });
+  }
 });
 yearly(data.training, "training", (row, at) => {
   number(row.tuitionPerYear, at + ".tuitionPerYear", 0, 1e6);

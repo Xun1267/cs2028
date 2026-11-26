@@ -2,6 +2,7 @@ import { projectRef } from "./data.js";
 import { annualChart, scoreRangeChart } from "./admission-charts.js";
 import {
   admitSeries,
+  admissionBreakdownFields,
   competitionFields,
   hasCatalog,
   numbers,
@@ -140,12 +141,7 @@ export function createProjectViews({
         ["初试科目", subjects],
       ]) +
       metricFacts(planFields, metric) +
-      scopeNote(
-        compactNotes(
-          record.annual.planScope || record.annual.scope,
-          metric.examPlanScope,
-        ),
-      ) +
+      scopeNote(compactNotes(record.annual.planScope || record.annual.scope)) +
       record.sharedGroups
         .filter((group) => hasNumber(numbers(group), planFields))
         .map(
@@ -172,11 +168,9 @@ export function createProjectViews({
       const alignment =
         key === "examAdmissions"
           ? "admissionScope"
-          : key === "examAttendees"
-            ? "attendanceScope"
-            : key === "examPlanned"
-              ? "examPlanScope"
-              : "";
+          : key === "interviewRatio"
+            ? "interviewRatioScope"
+            : "";
       const note = scopeKeys.includes(alignment) ? r[alignment] : "";
       return (
         esc(fmt.format(r[key])) +
@@ -192,7 +186,33 @@ export function createProjectViews({
       ],
       rows
         .filter((r) => hasNumber(r, used))
-        .map((r) => [esc(r.year), ...used.map(([key]) => read(r, key))]),
+        .map((r) => {
+          const {
+            officialMajorCode,
+            historicalDirection,
+            professionalSubject,
+          } = r.record?.annual || {};
+          const legacyCode =
+            officialMajorCode !== r.record?.majorId ? officialMajorCode : null;
+          const context = [
+            legacyCode,
+            legacyCode && historicalDirection,
+            professionalSubject &&
+              professionalSubject.code + " " + professionalSubject.name,
+          ]
+            .filter(Boolean)
+            .join(" · ");
+          return [
+            esc(r.year) +
+              (r.subject
+                ? `<small class="metric-scope">${esc(r.subject)}</small>`
+                : "") +
+              (context
+                ? `<small class="metric-scope">${esc(context)}</small>`
+                : ""),
+            ...used.map(([key]) => read(r, key)),
+          ];
+        }),
       "history-table",
     );
   }
@@ -209,109 +229,159 @@ export function createProjectViews({
       }))
       .filter(({ bins }) => bins.length);
     if (!distributions.length) return "";
-    const charts = [];
-    const fields = [
-      ["interview", "进入复试"],
-      ["admitted", "录取"],
-    ];
-    const comparable = distributions.every(({ bins }) =>
-      bins.every((bin) => bin.high - bin.low === 9 && bin.low % 10 === 0),
-    );
-    if (distributions.length > 1 && comparable) {
-      const byScore = new Map();
-      for (const { year, bins } of distributions)
-        for (const bin of bins) {
-          if (!byScore.has(bin.low))
-            byScore.set(bin.low, { label: `${bin.low}–${bin.high}` });
-          for (const [key] of fields)
-            byScore.get(bin.low)[`${year}-${key}`] = bin[key];
-        }
-      const rows = [...byScore].sort(([a], [b]) => a - b).map(([, row]) => row);
-      // Pair the two observed populations by year when both were published.
-      for (const [key, label] of fields)
-        charts.push(
-          annualChart(
-            `初试总分 · ${label}人数`,
-            "人",
-            rows,
-            distributions.map(({ year }) => [`${year}-${key}`, `${year} 年`]),
-            { bars: true },
-          ),
-        );
-    }
-    for (const { year, bins } of distributions) {
-      const paired =
-        bins.some((bin) => bin.interview != null) &&
-        bins.some((bin) => bin.admitted != null);
-      if (!comparable || distributions.length === 1 || paired)
-        charts.push(
-          annualChart(
-            `${year} 年初试总分分布`,
-            "人",
-            bins.map((bin) => ({ ...bin, label: `${bin.low}–${bin.high}` })),
-            fields.map(([key, label]) => [key, `${label}人数`]),
-            { bars: true },
-          ),
-        );
-    }
-    return `<div class="admission-chart-grid">${charts.join("")}</div>`;
+    const first = distributions[0];
+    const panel = ({ year, bins }) => {
+      const records = bins.map((bin) => ({
+        ...bin,
+        label: bin.openEnded ? `${bin.low}+` : `${bin.low}–${bin.high}`,
+      }));
+      const fields = [
+        ["interview", "进入复试人数"],
+        ["admitted", "录取人数"],
+      ];
+      const used = fields.filter(([key]) =>
+        records.some((r) => Number.isFinite(r[key])),
+      );
+      const paired = records.some(
+        ({ interview, admitted }) => interview > 0 && Number.isFinite(admitted),
+      );
+      return (
+        annualChart(year + " 年初试总分分布", "人", records, used, {
+          bars: true,
+        }) +
+        table(
+          [
+            "初试分数段",
+            ...used.map(([, label]) => label),
+            ...(paired ? ["录取比例"] : []),
+          ],
+          records.map((row) => [
+            row.label,
+            ...used.map(([key]) => show(row[key])),
+            ...(paired
+              ? [
+                  row.interview > 0 && Number.isFinite(row.admitted)
+                    ? fmt.format((row.admitted / row.interview) * 100) + "%"
+                    : "—",
+                ]
+              : []),
+          ]),
+          "history-table",
+        )
+      );
+    };
+    return `<details class="record-disclosure"><summary>分数段录取情况</summary>
+      <div data-band-panel>${
+        distributions.length > 1
+          ? `<label>年度 <select data-band-year>${opts(
+              distributions.map(({ year }) => year),
+              first.year,
+              null,
+            )}</select></label>`
+          : ""
+      }
+      <div data-band-content>${panel(first)}</div>
+      ${distributions.map((entry) => `<template data-band-template="${entry.year}">${panel(entry)}</template>`).join("")}</div></details>`;
   }
 
-  function historicalScale({ rows, group }) {
+  function seriesHeading({ group, predecessor }) {
+    if (group) return `<h3>${esc(sharedTitle(group))}</h3>`;
+    if (predecessor)
+      return `<h3>${link("project", predecessor.historyScope || "原招生项目", predecessor.id)}</h3>`;
+    return "";
+  }
+
+  function historicalScale(series) {
+    const { rows } = series;
     const first = rows[0]?.record;
     if (!first) return "";
     const fields = [
       ...scaleFields,
       ...competitionFields.filter(([key]) => key !== "examAdmissions"),
+      ...admissionBreakdownFields.filter(([key]) =>
+        rows.some((row) => row[key] > 0),
+      ),
       ...ratioFields,
     ];
     const exact = timeTable(
       rows,
       fields,
       (key) => (key.endsWith("Ratio") ? "（∶1）" : "（人）"),
-      ["admissionScope", "examPlanScope", "attendanceScope"],
+      ["admissionScope", "interviewRatioScope"],
     );
     if (!exact) return "";
     const chartData = chartRows(rows);
     return (
-      (group ? `<h3>共享范围</h3>${scopeNote(sharedTitle(group))}` : "") +
+      seriesHeading(series) +
       `<div class="admission-chart-grid">
-      ${annualChart("招生规模", "人", chartData, scaleFields, { zero: true })}
+      ${annualChart(
+        "招生规模",
+        "人",
+        chartData,
+        scaleFields.filter(([key]) => key !== "specialPlanPlanned"),
+        { zero: true },
+      )}
       ${annualChart("报考与复试人数", "人", chartData, competitionFields, { bars: true })}
       ${annualChart("录取竞争比值", "∶1", chartData, ratioFields, { zero: true })}
     </div>${exact}`
     );
   }
 
-  function historicalScores({ rows, group }) {
+  function historicalScores(series) {
+    const { rows } = series;
     const exact = timeTable(rows, scoreTrends, "（分）");
     const distribution = scoreDistribution(rows);
-    const subjects = [...subjectSeries(rows)]
-      .map(([title, series]) => rangeMarkup(series, title))
-      .filter(Boolean);
-    if (!exact && !distribution && !subjects.length) return "";
+    const stats = scoreTrends
+      .filter(([key]) => !["cutoff", "schoolCutoff"].includes(key))
+      .map(([key, label]) => [key, label.replace("录取", "")]);
+    const subjects = [...subjectSeries(rows)].map(([title, scores]) => {
+      const ordered = scores.slice().sort((a, b) => b.year - a.year);
+      return `<div><h3>${esc(title)}</h3>${rangeMarkup(ordered, title)}${timeTable(ordered, stats, "（分）")}</div>`;
+    });
+    const interview = rows
+      .filter((r) => r.record.admission?.interviewScoreStats)
+      .map(({ year, record }) => ({
+        year,
+        ...record.admission.interviewScoreStats,
+      }));
+    if (!exact && !distribution && !subjects.length && !interview.length)
+      return "";
     return (
-      (group ? `<h3>共享范围</h3>${scopeNote(sharedTitle(group))}` : "") +
+      seriesHeading(series) +
       `<div class="admission-chart-grid">
         ${annualChart("复试线与录取成绩", "分", chartRows(rows), scoreTrends)}
         ${rangeMarkup(rows)}
       </div>${exact}${distribution}` +
       (subjects.length
-        ? `<details class="record-disclosure"><summary>初试各科成绩区间</summary><div class="admission-chart-grid">${subjects.join("")}</div></details>`
+        ? `<details class="record-disclosure"><summary>录取考生初试各科成绩</summary><div class="admission-chart-grid individual-subjects">${subjects.join("")}</div></details>`
+        : "") +
+      (interview.length
+        ? `<details class="record-disclosure"><summary>复试考生初试总分</summary><div>${rangeMarkup(interview, "复试考生初试总分区间")}${timeTable(interview, stats, "（分）")}</div></details>`
         : "")
     );
   }
 
-  function availableRows(records, range) {
-    const latest = records[0]?.year;
-    return range === "all"
-      ? records
-      : records.filter((r) => r.year > latest - Number(range));
-  }
-
-  function history(records, range) {
-    const selected = availableRows(records, range);
-    const series = admitSeries(selected);
+  function history(records, range, predecessors = []) {
+    const latest =
+      records.find(
+        (record) =>
+          record.admission || record.sharedGroups.some((g) => g.admission),
+      )?.year ?? records[0]?.year;
+    const select = (items) =>
+      range === "all"
+        ? items
+        : items.filter((r) => r.year > latest - Number(range));
+    const series = [
+      ...admitSeries(select(records)),
+      ...predecessors.flatMap((items) =>
+        items?.length
+          ? admitSeries(select(items)).map((set) => ({
+              ...set,
+              predecessor: items[0],
+            }))
+          : [],
+      ),
+    ];
     const render = (callback) => series.map(callback).filter(Boolean).join("");
     const scale = render(historicalScale);
     const scores = render(historicalScores);
@@ -327,7 +397,10 @@ export function createProjectViews({
         scale +
           (scale
             ? sources(
-                [...original.filter((s) => !isScoreSource(s)), ...plans],
+                [
+                  ...original.filter((s) => !scores || !isScoreSource(s)),
+                  ...plans,
+                ],
                 40,
               )
             : ""),
@@ -469,7 +542,14 @@ export function createProjectViews({
       : "";
   }
 
-  function page(project, records, cohort, explicitYear) {
+  function page(
+    project,
+    records,
+    cohort,
+    explicitYear,
+    predecessors = [],
+    successors = [],
+  ) {
     const latest = records.find(hasCatalog);
     const mostRecent = records[0];
     const pending =
@@ -494,13 +574,31 @@ export function createProjectViews({
       )}</select></label>
       <div id="catalogDocument">${planBody(requested || years[1])}</div></div></details>`
         : "";
+    const oldest = Math.min(
+      records.at(-1).year,
+      ...predecessors.map((items) => items.at(-1).year),
+    );
+    const defaultRange =
+      predecessors.length ||
+      records.some(
+        (r) =>
+          r.annual.officialMajorCode &&
+          r.annual.officialMajorCode !== project.majorId,
+      )
+        ? "all"
+        : "5";
     const range =
-      records[0].year - records.at(-1).year > 2
-        ? `<div class="history-toolbar">
-      <label for="historyRange">历史范围</label><select id="historyRange" data-project="${esc(project.id)}">
-      <option value="3">近三年</option><option value="5" selected>近五年</option><option value="all">全部年份</option></select></div>`
+      records[0].year - oldest > 2
+        ? `<div class="history-toolbar"><label for="historyRange">历史范围</label><select id="historyRange" data-project="${esc(project.id)}">
+        <option value="3">近三年</option><option value="5" ${defaultRange === "5" ? "selected" : ""}>近五年</option>
+        <option value="all" ${defaultRange === "all" ? "selected" : ""}>全部年份</option></select></div>`
         : "";
-    const historical = history(records, "5");
+    const relations = predecessors.length
+      ? `<p class="related-links small">${esc(project.historyTransition || "早期招生大类单独列示")}</p>`
+      : successors.length
+        ? `<p class="related-links small">后续独立招生项目 ${successors.map((next) => link("project", next.majorLabel || next.major.title, next.id)).join(" · ")}</p>`
+        : "";
+    const historical = history(records, defaultRange, predecessors);
     return `${heading(project.school.name + " · " + (project.majorLabel || project.major.title), project.college)}
       <div id="projectActions" class="actions">${annualActions(project)}${explicitYear && project.year !== mostRecent.year ? `<span class="section-year">${project.year} 年项目</span>` : ""}</div>
       ${sectionWith(
@@ -527,7 +625,7 @@ export function createProjectViews({
           chooser +
           policyChanges(records),
       )}
-      ${historical ? range : ""}<div id="projectHistory">${historical}</div>
+      ${relations}${historical ? range : ""}<div id="projectHistory">${historical}</div>
       ${retest(records)}${training(records)}${sectionWith("相关就业情况", projectEmployment(project))}
       <div class="actions">${link("school", "院校档案 →", project.schoolId, "button")}${link("major", "专业详情 →", project.majorId, "button")}</div>`;
   }

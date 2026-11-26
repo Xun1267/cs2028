@@ -3678,12 +3678,12 @@
     "minimum": 341,
     "maximum": 393,
     "average": 362.87,
-    "median": 360,
-    "q1": 351,
-    "q3": 373,
+    "median": 360.0,
+    "q1": 351.0,
+    "q3": 373.0,
     "sampleSize": 23,
     "reportedAdmissions": 23,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "官方最终拟录取名单与初试成绩逐人匹配；排除退役大学生计划，含统一招考的联合培养专项。复试人数为复试名单人数（排除退役大学生计划），未确认实际到场。",
     "sources": [
       {
         "title": "东南大学2024年硕士研究生考试录取情况汇总",
@@ -3713,20 +3713,31 @@
         "kind": "scores"
       },
       {
-        "title": "计算机科学与工程学院2024年复试录取工作细则",
+        "title": "2024年复试录取工作细则",
         "shortTitle": "2024 年复试细则",
         "url": "https://yzb.seu.edu.cn/2024/0323/c6689a484879/page.htm",
         "year": 2024,
         "sourceType": "official",
-        "kind": "retest"
+        "kind": "retest",
+        "publisher": "东南大学"
       },
       {
-        "title": "2024年计算机科学与工程学院复试名单",
-        "shortTitle": "2024 年复试名单",
+        "title": "2024年硕士研究生复试名单",
+        "shortTitle": "2024年硕士研究生复试名单",
         "url": "https://yzb.seu.edu.cn/2024/0323/c6689a484880/page.htm",
         "year": 2024,
         "sourceType": "official",
-        "kind": "scores"
+        "kind": "scores",
+        "publisher": "东南大学"
+      },
+      {
+        "title": "东南大学2024年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/e9/19/7e94adc04a0aaa0c0466e2e1d346/1dadfff7-8186-4c9a-b874-db6fc910f711.pdf",
+        "year": 2024,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2024 年拟录取名单",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 132,
@@ -3735,6 +3746,126 @@
     "updatedAt": "2026-11-26",
     "attendanceScope": "一志愿",
     "metricScope": "含专项",
+    "interviewEligible": 28,
+    "cutoffSource": "official",
+    "specialPlanAdmissions": 0,
+    "interviewListCount": 28,
+    "reportedInterviewees": 28,
+    "reportedInterviewRatio": 1.2174,
+    "scoreDistribution": [
+      {
+        "min": 340,
+        "max": 349,
+        "count": 6
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 5
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 4
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 4
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 3
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 1
+      }
+    ],
+    "examAdmissionsTotal": 23,
+    "interviewRatio": 1.2174,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 56,
+        "maximum": 78,
+        "average": 69.65,
+        "median": 70.0,
+        "q1": 68.0,
+        "q3": 71.5
+      },
+      "foreignLanguage": {
+        "minimum": 67,
+        "maximum": 85,
+        "average": 78.26,
+        "median": 80.0,
+        "q1": 76.5,
+        "q3": 82.0
+      },
+      "subject1": {
+        "minimum": 85,
+        "maximum": 134,
+        "average": 111.7,
+        "median": 109.0,
+        "q1": 105.5,
+        "q3": 120.0
+      },
+      "subject2": {
+        "minimum": 84,
+        "maximum": 126,
+        "average": 103.26,
+        "median": 105.0,
+        "q1": 96.0,
+        "q3": 111.0
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 341,
+      "maximum": 393,
+      "average": 359.96,
+      "median": 357.0,
+      "q1": 348.75,
+      "q3": 371.25
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 10,
+        "admitted": 6
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 6,
+        "admitted": 5
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 4,
+        "admitted": 4
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 4,
+        "admitted": 4
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
     "interviewScoreDistribution": [
       {
         "min": 340,
@@ -3766,15 +3897,14 @@
         "max": 399,
         "count": 1
       }
-    ],
-    "interviewEligible": 28
+    ]
   },
   {
     "projectId": "seu-h-009-085404",
     "year": 2025,
     "promotionAdmissions": 23,
     "reportedAdmissions": 18,
-    "scope": "一志愿考试人数/统考录取人数为公布口径；普通统考与专项未分离，不作为严格普通统考实考录取比。",
+    "scope": "按最终拟录取名单与复试结果考生编号匹配；按公示中可识别类别统计。",
     "sources": [
       {
         "title": "东南大学2025年硕士研究生考试录取情况汇总",
@@ -3802,6 +3932,24 @@
         "year": 2025,
         "sourceType": "official",
         "kind": "retest"
+      },
+      {
+        "title": "东南大学2025年硕士研究生拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/2025/0526/c10823a528820/page.htm",
+        "year": 2025,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2025 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2025年硕士研究生复试结果公示",
+        "url": "https://cs.seu.edu.cn/2025/0403/c49475a523920/page.htm",
+        "year": 2025,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2025年硕士研究生复试结果公示",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 91,
@@ -3810,7 +3958,86 @@
     "metricScope": "含专项",
     "updatedAt": "2026-11-26",
     "attendanceScope": "一志愿",
-    "cutoff": 335
+    "cutoff": 335,
+    "cutoffSource": "official",
+    "interviewees": 22,
+    "interviewListCount": 22,
+    "interviewRatio": 1.2222,
+    "minimum": 338,
+    "maximum": 382,
+    "average": 348.78,
+    "median": 345.0,
+    "q1": 341.0,
+    "q3": 353.75,
+    "scoreDistribution": [
+      {
+        "min": 330,
+        "max": 339,
+        "count": 3
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 9
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 3
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 2
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 1
+      }
+    ],
+    "examAdmissionsTotal": 18,
+    "interviewEligible": 22,
+    "interviewScoreStats": {
+      "minimum": 338,
+      "average": 347.36,
+      "median": 344.0,
+      "q1": 339.25,
+      "q3": 349.5,
+      "maximum": 382
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 6,
+        "admitted": 3
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 10,
+        "admitted": 9
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ]
   },
   {
     "projectId": "seu-h-009-085404",
@@ -3819,9 +4046,9 @@
     "cutoff": 344,
     "minimum": 355,
     "maximum": 406,
-    "average": 373,
+    "average": 372.95,
     "reportedAdmissions": 20,
-    "scope": "一志愿考试人数/统考录取人数为公布口径；普通统考与专项未分离，不作为严格普通统考实考录取比。；N诺表头为预计招生人数，录取分数可参考，预计人数单列；不作为普通实际录取",
+    "scope": "按官方复试名单普通计划及最终拟录取名单同院系同专业全日制记录匹配；复试人数为进入复试名单人数，未确认实际到场。",
     "sources": [
       {
         "title": "东南大学2026年硕士研究生考试录取情况汇总",
@@ -3850,16 +4077,167 @@
         "publisher": "N诺考研",
         "scope": "计算机科学与工程学院 计算机技术",
         "sourceType": "secondary"
+      },
+      {
+        "title": "东南大学2026年硕士研究生全国统考拟录取名单公示",
+        "url": "https://xxgk.seu.edu.cn/2026/0525/c10807a568643/page.htm",
+        "year": 2026,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2026 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2026年硕士研究生复试名单",
+        "url": "https://yzb.seu.edu.cn/_s117/2026/0324/c6689a559181/page.psp",
+        "year": 2026,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2026年硕士研究生复试名单",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 113,
     "examAdmissions": 20,
     "examAttendanceRatio": 5.65,
-    "metricScope": "含专项",
+    "metricScope": "",
     "updatedAt": "2026-11-26",
     "attendanceScope": "一志愿",
     "interviewPlanComplete": true,
-    "interviewRequirements": "现场笔试与面试。面试包含个人展示、英语考核和综合问答，通常至少 20 分钟。按专业排名，综合分相同按 408 成绩排序。"
+    "interviewRequirements": "现场笔试与面试。面试包含个人展示、英语考核和综合问答，通常至少 20 分钟。按专业排名，综合分相同按 408 成绩排序。",
+    "interviewListCount": 23,
+    "median": 370.0,
+    "q1": 363.75,
+    "q3": 378.5,
+    "scoreDistribution": [
+      {
+        "min": 340,
+        "max": 349,
+        "count": 0
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 3
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 7
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 5
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 2
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 1
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "count": 2
+      }
+    ],
+    "reportedInterviewees": 23,
+    "reportedInterviewRatio": 1.15,
+    "specialPlanAdmissions": 0,
+    "examAdmissionsTotal": 20,
+    "interviewEligible": 23,
+    "interviewRatio": 1.15,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 58,
+        "maximum": 72,
+        "average": 65.55,
+        "median": 65.0,
+        "q1": 62.0,
+        "q3": 70.25
+      },
+      "foreignLanguage": {
+        "minimum": 67,
+        "maximum": 83,
+        "average": 73.6,
+        "median": 73.0,
+        "q1": 70.0,
+        "q3": 75.25
+      },
+      "subject1": {
+        "minimum": 109,
+        "maximum": 150,
+        "average": 122.9,
+        "median": 121.0,
+        "q1": 118.0,
+        "q3": 127.25
+      },
+      "subject2": {
+        "minimum": 94,
+        "maximum": 126,
+        "average": 110.9,
+        "median": 111.5,
+        "q1": 105.0,
+        "q3": 118.0
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 344,
+      "maximum": 406,
+      "average": 370.35,
+      "median": 365.0,
+      "q1": 361.0,
+      "q3": 376.5
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 1,
+        "admitted": 0
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 4,
+        "admitted": 3
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 8,
+        "admitted": 7
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 5,
+        "admitted": 5
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "interviewees": 2,
+        "admitted": 2
+      }
+    ]
   },
   {
     "projectId": "seu-h-009-085410",
@@ -3871,7 +4249,7 @@
     "average": 324.29,
     "sampleSize": 7,
     "reportedAdmissions": 7,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "官方最终拟录取名单与初试成绩逐人匹配；排除退役大学生计划，含统一招考的联合培养专项。复试人数为复试名单人数（排除退役大学生计划），未确认实际到场。",
     "sources": [
       {
         "title": "东南大学2024年硕士研究生考试录取情况汇总",
@@ -3901,20 +4279,31 @@
         "kind": "scores"
       },
       {
-        "title": "计算机科学与工程学院2024年复试录取工作细则",
+        "title": "2024年复试录取工作细则",
         "shortTitle": "2024 年复试细则",
         "url": "https://yzb.seu.edu.cn/2024/0323/c6689a484879/page.htm",
         "year": 2024,
         "sourceType": "official",
-        "kind": "retest"
+        "kind": "retest",
+        "publisher": "东南大学"
       },
       {
-        "title": "2024年计算机科学与工程学院复试名单",
-        "shortTitle": "2024 年复试名单",
+        "title": "2024年硕士研究生复试名单",
+        "shortTitle": "2024年硕士研究生复试名单",
         "url": "https://yzb.seu.edu.cn/2024/0323/c6689a484880/page.htm",
         "year": 2024,
         "sourceType": "official",
-        "kind": "scores"
+        "kind": "scores",
+        "publisher": "东南大学"
+      },
+      {
+        "title": "东南大学2024年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/e9/19/7e94adc04a0aaa0c0466e2e1d346/1dadfff7-8186-4c9a-b874-db6fc910f711.pdf",
+        "year": 2024,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2024 年拟录取名单",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 49,
@@ -3922,6 +4311,107 @@
     "examAttendanceRatio": 7,
     "updatedAt": "2026-11-26",
     "attendanceScope": "一志愿",
+    "interviewEligible": 8,
+    "cutoffSource": "official",
+    "specialPlanAdmissions": 0,
+    "interviewListCount": 8,
+    "reportedInterviewees": 8,
+    "reportedInterviewRatio": 1.1429,
+    "median": 323.0,
+    "q1": 318.0,
+    "q3": 329.0,
+    "scoreDistribution": [
+      {
+        "min": 310,
+        "max": 319,
+        "count": 2
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "count": 3
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "count": 1
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 1
+      }
+    ],
+    "examAdmissionsTotal": 7,
+    "interviewRatio": 1.1429,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 56,
+        "maximum": 76,
+        "average": 66.43,
+        "median": 69.0,
+        "q1": 61.5,
+        "q3": 70.5
+      },
+      "foreignLanguage": {
+        "minimum": 58,
+        "maximum": 80,
+        "average": 72.71,
+        "median": 73.0,
+        "q1": 71.5,
+        "q3": 77.5
+      },
+      "subject1": {
+        "minimum": 72,
+        "maximum": 104,
+        "average": 89.71,
+        "median": 91.0,
+        "q1": 81.0,
+        "q3": 99.5
+      },
+      "subject2": {
+        "minimum": 87,
+        "maximum": 106,
+        "average": 95.43,
+        "median": 96.0,
+        "q1": 90.0,
+        "q3": 99.5
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 311,
+      "maximum": 342,
+      "average": 323.5,
+      "median": 321.5,
+      "q1": 317.5,
+      "q3": 326.0
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 310,
+        "max": 319,
+        "interviewees": 3,
+        "admitted": 2
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
     "interviewScoreDistribution": [
       {
         "min": 310,
@@ -3943,15 +4433,14 @@
         "max": 349,
         "count": 1
       }
-    ],
-    "interviewEligible": 8
+    ]
   },
   {
     "projectId": "seu-h-009-085410",
     "year": 2025,
     "promotionAdmissions": 33,
     "reportedAdmissions": 9,
-    "scope": "一志愿考试人数/统考录取人数为公布口径；普通统考与专项未分离，不作为严格普通统考实考录取比。",
+    "scope": "按最终拟录取名单与复试结果考生编号匹配；按公示中可识别类别统计。复试名单12人，1人未参加复试。",
     "sources": [
       {
         "title": "东南大学2025年硕士研究生考试录取情况汇总",
@@ -3979,6 +4468,24 @@
         "year": 2025,
         "sourceType": "official",
         "kind": "retest"
+      },
+      {
+        "title": "东南大学2025年硕士研究生拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/2025/0526/c10823a528820/page.htm",
+        "year": 2025,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2025 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2025年硕士研究生复试结果公示",
+        "url": "https://cs.seu.edu.cn/2025/0403/c49475a523920/page.htm",
+        "year": 2025,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2025年硕士研究生复试结果公示",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 94,
@@ -3987,7 +4494,75 @@
     "metricScope": "含专项",
     "updatedAt": "2026-11-26",
     "attendanceScope": "一志愿",
-    "cutoff": 325
+    "cutoff": 325,
+    "cutoffSource": "official",
+    "interviewees": 11,
+    "interviewListCount": 12,
+    "interviewRatio": 1.2222,
+    "minimum": 328,
+    "maximum": 355,
+    "average": 342.78,
+    "median": 343.0,
+    "q1": 338.0,
+    "q3": 346.0,
+    "scoreDistribution": [
+      {
+        "min": 320,
+        "max": 329,
+        "count": 1
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "count": 2
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 4
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 2
+      }
+    ],
+    "examAdmissionsTotal": 9,
+    "interviewEligible": 12,
+    "interviewScoreStats": {
+      "minimum": 328,
+      "average": 341.27,
+      "median": 340.0,
+      "q1": 336.5,
+      "q3": 345.5,
+      "maximum": 355
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 320,
+        "max": 329,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 4,
+        "admitted": 2
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 4,
+        "admitted": 4
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 2,
+        "admitted": 2
+      }
+    ]
   },
   {
     "projectId": "seu-h-009-085410",
@@ -3996,9 +4571,9 @@
     "cutoff": 347,
     "minimum": 349,
     "maximum": 407,
-    "average": 376,
+    "average": 375.53,
     "reportedAdmissions": 19,
-    "scope": "一志愿考试人数/统考录取人数为公布口径；普通统考与专项未分离，不作为严格普通统考实考录取比。；N诺表头为预计招生人数，录取分数可参考，预计人数单列；不作为普通实际录取",
+    "scope": "按官方复试名单普通计划及最终拟录取名单同院系同专业全日制记录匹配；复试人数为进入复试名单人数，未确认实际到场。",
     "sources": [
       {
         "title": "东南大学2026年硕士研究生考试录取情况汇总",
@@ -4027,23 +4602,174 @@
         "publisher": "N诺考研",
         "scope": "计算机科学与工程学院 人工智能",
         "sourceType": "secondary"
+      },
+      {
+        "title": "东南大学2026年硕士研究生全国统考拟录取名单公示",
+        "url": "https://xxgk.seu.edu.cn/2026/0525/c10807a568643/page.htm",
+        "year": 2026,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2026 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2026年硕士研究生复试名单",
+        "url": "https://yzb.seu.edu.cn/_s117/2026/0324/c6689a559181/page.psp",
+        "year": 2026,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2026年硕士研究生复试名单",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 134,
     "examAdmissions": 19,
     "examAttendanceRatio": 7.05,
-    "metricScope": "含专项",
+    "metricScope": "",
     "updatedAt": "2026-11-26",
     "attendanceScope": "一志愿",
     "interviewPlanComplete": true,
-    "interviewRequirements": "现场笔试与面试。面试包含个人展示、英语考核和综合问答，通常至少 20 分钟。按专业排名，综合分相同按 408 成绩排序。"
+    "interviewRequirements": "现场笔试与面试。面试包含个人展示、英语考核和综合问答，通常至少 20 分钟。按专业排名，综合分相同按 408 成绩排序。",
+    "interviewListCount": 23,
+    "median": 370.0,
+    "q1": 362.5,
+    "q3": 393.5,
+    "scoreDistribution": [
+      {
+        "min": 340,
+        "max": 349,
+        "count": 1
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 3
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 5
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 3
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 1
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 3
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "count": 3
+      }
+    ],
+    "reportedInterviewees": 23,
+    "reportedInterviewRatio": 1.2105,
+    "specialPlanAdmissions": 0,
+    "examAdmissionsTotal": 19,
+    "interviewEligible": 23,
+    "interviewRatio": 1.2105,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 60,
+        "maximum": 70,
+        "average": 65.47,
+        "median": 66.0,
+        "q1": 63.5,
+        "q3": 68.0
+      },
+      "foreignLanguage": {
+        "minimum": 56,
+        "maximum": 85,
+        "average": 71.42,
+        "median": 74.0,
+        "q1": 66.5,
+        "q3": 76.0
+      },
+      "subject1": {
+        "minimum": 99,
+        "maximum": 150,
+        "average": 129.26,
+        "median": 130.0,
+        "q1": 123.5,
+        "q3": 138.5
+      },
+      "subject2": {
+        "minimum": 92,
+        "maximum": 124,
+        "average": 109.37,
+        "median": 106.0,
+        "q1": 103.0,
+        "q3": 116.0
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 347,
+      "maximum": 407,
+      "average": 371.57,
+      "median": 366.0,
+      "q1": 355.5,
+      "q3": 388.5
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 2,
+        "admitted": 1
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 6,
+        "admitted": 3
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 5,
+        "admitted": 5
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "interviewees": 3,
+        "admitted": 3
+      }
+    ]
   },
   {
     "projectId": "seu-h-009-085400-2023-catalog",
     "year": 2023,
     "promotionAdmissions": 39,
     "reportedAdmissions": 32,
-    "scope": "2023大类口径，不强行分配到后续085404和085410。",
+    "scope": "2023年官方复试名单与最终拟录取名单按专业核对考生编号末五位（组内唯一），排除士兵专项，复试人数为名单人数，未确认实际到场；统考人数含同一专业统一招生联合培养专项。实考人数非报名人数。",
     "sources": [
       {
         "title": "东南大学2023年硕士研究生考试录取情况汇总",
@@ -4055,19 +4781,216 @@
         "publishedDate": "2023-07-26",
         "shortTitle": "2023 年考试录取统计",
         "kind": "history"
+      },
+      {
+        "title": "2023年全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/ad/8f/9588e2bb4802afa6c32edbce0ec8/b1f3faf8-4c08-4944-9e13-675f9fca2c63.pdf",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2023 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年硕士生复试名单",
+        "url": "https://yzb.seu.edu.cn/2023/0329/c6689a440010/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2023年硕士生复试名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年复试录取工作细则",
+        "url": "https://yzb.seu.edu.cn/2023/0329/c6689a440009/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "retest",
+        "shortTitle": "2023 年复试细则",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年硕士研究生考试录取情况汇总",
+        "url": "https://xxgk.seu.edu.cn/2023/0726/c12569a455894/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "history",
+        "shortTitle": "2023 年考试录取统计",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年各院系所复试分数线",
+        "url": "https://yzb.seu.edu.cn/2023/0726/c6674a455893/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2023年各院系所复试分数线",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 238,
-    "examAdmissions": 32,
-    "examAttendanceRatio": 7.44,
+    "examAdmissions": 31,
+    "examAttendanceRatio": 7.4375,
     "updatedAt": "2026-11-26",
-    "attendanceScope": "一志愿"
+    "attendanceScope": "一志愿",
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "specialPlanAdmissions": 1,
+    "interviewListCount": 44,
+    "reportedInterviewees": 43,
+    "reportedInterviewRatio": 1.3871,
+    "cutoff": 345,
+    "minimum": 345,
+    "maximum": 413,
+    "average": 373.94,
+    "median": 370.0,
+    "q1": 362.5,
+    "q3": 382.5,
+    "scoreDistribution": [
+      {
+        "min": 340,
+        "max": 349,
+        "count": 3
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 4
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 6
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 7
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 5
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 3
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "count": 2
+      },
+      {
+        "min": 410,
+        "max": 419,
+        "count": 1
+      }
+    ],
+    "examAdmissionsTotal": 32,
+    "interviewEligible": 44,
+    "interviewRatio": 1.3871,
+    "interviewRatioScope": "普通复试名单 / 普通统考录取",
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 55,
+        "maximum": 73,
+        "average": 66.13,
+        "median": 67.0,
+        "q1": 63.5,
+        "q3": 70.0
+      },
+      "foreignLanguage": {
+        "minimum": 60,
+        "maximum": 85,
+        "average": 74.48,
+        "median": 76.0,
+        "q1": 68.5,
+        "q3": 81.0
+      },
+      "subject1": {
+        "minimum": 90,
+        "maximum": 141,
+        "average": 123.58,
+        "median": 125.0,
+        "q1": 117.0,
+        "q3": 134.0
+      },
+      "subject2": {
+        "minimum": 86,
+        "maximum": 129,
+        "average": 109.74,
+        "median": 112.0,
+        "q1": 103.5,
+        "q3": 115.5
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 345,
+      "maximum": 413,
+      "average": 368.81,
+      "median": 367.0,
+      "q1": 358.0,
+      "q3": 379.0
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 7,
+        "admitted": 3
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 7,
+        "admitted": 4
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 10,
+        "admitted": 6
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 8,
+        "admitted": 7
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 5,
+        "admitted": 5
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 410,
+        "max": 419,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
+    "metricScope": ""
   },
   {
     "projectId": "seu-h-soft-085405",
     "year": 2025,
     "cutoff": 330,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "按最终拟录取名单与复试结果考生编号匹配；普通统考成绩已排除1名退役大学生专项，全部统考拟录取44人。",
     "sources": [
       {
         "title": "东南大学2025年硕士研究生考试录取情况汇总",
@@ -4102,15 +5025,126 @@
         "year": 2025,
         "sourceType": "official",
         "kind": "scores"
+      },
+      {
+        "title": "东南大学2025年硕士研究生拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/2025/0526/c10823a528820/page.htm",
+        "year": 2025,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2025 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2025年硕士研究生复试结果公示",
+        "url": "https://cs.seu.edu.cn/2025/0403/c49475a523919/page.htm",
+        "year": 2025,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2025年硕士研究生复试结果公示",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 189,
     "promotionAdmissions": 86,
-    "examAdmissions": 44,
+    "examAdmissions": 43,
     "examAttendanceRatio": 4.3,
-    "metricScope": "含专项",
+    "metricScope": "",
     "updatedAt": "2026-11-26",
-    "attendanceScope": "一志愿"
+    "attendanceScope": "一志愿",
+    "cutoffSource": "official",
+    "reportedAdmissions": 44,
+    "interviewees": 56,
+    "interviewListCount": 57,
+    "interviewRatio": 1.3023,
+    "minimum": 332,
+    "maximum": 388,
+    "average": 361.02,
+    "median": 359.0,
+    "q1": 354.0,
+    "q3": 370.0,
+    "scoreDistribution": [
+      {
+        "min": 330,
+        "max": 339,
+        "count": 2
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 5
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 15
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 9
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 9
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 3
+      }
+    ],
+    "examAdmissionsTotal": 44,
+    "interviewEligible": 57,
+    "interviewRatioScope": "普通统考口径",
+    "interviewScoreStats": {
+      "minimum": 330,
+      "average": 356.09,
+      "median": 357.0,
+      "q1": 345.0,
+      "q3": 366.5,
+      "maximum": 388
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 11,
+        "admitted": 2
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 8,
+        "admitted": 5
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 16,
+        "admitted": 15
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 9,
+        "admitted": 9
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 9,
+        "admitted": 9
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 3,
+        "admitted": 3
+      }
+    ],
+    "specialPlanAdmissions": 1
   },
   {
     "projectId": "seu-h-soft-085405",
@@ -4119,12 +5153,12 @@
     "minimum": 375,
     "maximum": 424,
     "average": 395.17,
-    "median": 395,
-    "q1": 388,
-    "q3": 404,
+    "median": 395.0,
+    "q1": 388.0,
+    "q3": 404.0,
     "sampleSize": 41,
-    "reportedAdmissions": 41,
-    "scope": "码砖统考公示样本；人数为平台统计，专项或方向调整口径可能不同；复试人数为名单口径；N诺表头为预计招生人数，录取分数可参考，预计人数单列；不作为普通实际录取",
+    "reportedAdmissions": 43,
+    "scope": "按官方复试名单普通计划及最终拟录取名单同院系同专业全日制记录匹配；复试人数为进入复试名单人数，未确认实际到场。",
     "sources": [
       {
         "title": "东南大学2026年硕士研究生考试录取情况汇总",
@@ -4159,16 +5193,154 @@
         "publisher": "N诺考研",
         "scope": "软件学院 软件工程",
         "sourceType": "secondary"
+      },
+      {
+        "title": "东南大学2026年硕士研究生全国统考拟录取名单公示",
+        "url": "https://xxgk.seu.edu.cn/2026/0525/c10807a568643/page.htm",
+        "year": 2026,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2026 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2026年硕士研究生复试名单",
+        "url": "https://yzb.seu.edu.cn/_s117/2026/0324/c6689a559283/page.psp",
+        "year": 2026,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2026年硕士研究生复试名单",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 364,
     "promotionAdmissions": 87,
-    "examAdmissions": 43,
+    "examAdmissions": 41,
     "examAttendanceRatio": 8.47,
-    "metricScope": "含专项",
+    "metricScope": "",
     "updatedAt": "2026-11-26",
     "attendanceScope": "一志愿",
-    "interviewPlanComplete": true
+    "interviewPlanComplete": true,
+    "interviewListCount": 50,
+    "scoreDistribution": [
+      {
+        "min": 370,
+        "max": 379,
+        "count": 3
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 8
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 17
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "count": 9
+      },
+      {
+        "min": 410,
+        "max": 419,
+        "count": 2
+      },
+      {
+        "min": 420,
+        "max": 429,
+        "count": 2
+      }
+    ],
+    "reportedInterviewees": 50,
+    "reportedInterviewRatio": 1.2195,
+    "specialPlanAdmissions": 2,
+    "examAdmissionsTotal": 43,
+    "interviewEligible": 50,
+    "interviewRatio": 1.2195,
+    "interviewRatioScope": "普通复试名单 / 普通统考录取",
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 58,
+        "maximum": 75,
+        "average": 68.0,
+        "median": 68.0,
+        "q1": 66.0,
+        "q3": 71.0
+      },
+      "foreignLanguage": {
+        "minimum": 69,
+        "maximum": 87,
+        "average": 79.1,
+        "median": 79.0,
+        "q1": 76.0,
+        "q3": 82.0
+      },
+      "subject1": {
+        "minimum": 108,
+        "maximum": 150,
+        "average": 131.9,
+        "median": 132.0,
+        "q1": 125.0,
+        "q3": 140.0
+      },
+      "subject2": {
+        "minimum": 105,
+        "maximum": 130,
+        "average": 116.17,
+        "median": 115.0,
+        "q1": 112.0,
+        "q3": 121.0
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 375,
+      "maximum": 424,
+      "average": 392.2,
+      "median": 390.5,
+      "q1": 381.0,
+      "q3": 399.75
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 10,
+        "admitted": 3
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 10,
+        "admitted": 8
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 17,
+        "admitted": 17
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "interviewees": 9,
+        "admitted": 9
+      },
+      {
+        "min": 410,
+        "max": 419,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 420,
+        "max": 429,
+        "interviewees": 2,
+        "admitted": 2
+      }
+    ]
   },
   {
     "projectId": "seu-h-085-085404",
@@ -4177,12 +5349,12 @@
     "minimum": 328,
     "maximum": 397,
     "average": 357.76,
-    "median": 359,
-    "q1": 346,
-    "q3": 369,
+    "median": 359.0,
+    "q1": 346.0,
+    "q3": 369.0,
     "sampleSize": 17,
     "reportedAdmissions": 17,
-    "scope": "码砖统考公示样本；人数为平台统计，专项或方向调整口径可能不同；复试人数为名单口径；N诺表头为预计招生人数，录取分数可参考，预计人数单列；不作为普通实际录取",
+    "scope": "按官方复试名单普通计划及最终拟录取名单同院系同专业全日制记录匹配；复试人数为进入复试名单人数，未确认实际到场。",
     "sources": [
       {
         "title": "东南大学2026年硕士研究生考试录取情况汇总",
@@ -4225,6 +5397,24 @@
         "year": 2026,
         "sourceType": "official",
         "kind": "scores"
+      },
+      {
+        "title": "东南大学2026年硕士研究生全国统考拟录取名单公示",
+        "url": "https://xxgk.seu.edu.cn/2026/0525/c10807a568643/page.htm",
+        "year": 2026,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2026 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2026年硕士研究生复试名单",
+        "url": "https://yzb.seu.edu.cn/_s117/2026/0324/c6689a559318/page.psp",
+        "year": 2026,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2026年硕士研究生复试名单",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 66,
@@ -4232,7 +5422,149 @@
     "examAdmissions": 17,
     "examAttendanceRatio": 3.88,
     "updatedAt": "2026-11-26",
-    "attendanceScope": "一志愿"
+    "attendanceScope": "一志愿",
+    "interviewListCount": 19,
+    "scoreDistribution": [
+      {
+        "min": 320,
+        "max": 329,
+        "count": 1
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "count": 2
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 3
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 3
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 4
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 3
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 0
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 1
+      }
+    ],
+    "reportedInterviewees": 19,
+    "reportedInterviewRatio": 1.1176,
+    "specialPlanAdmissions": 0,
+    "examAdmissionsTotal": 17,
+    "interviewEligible": 19,
+    "interviewRatio": 1.1176,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 52,
+        "maximum": 74,
+        "average": 62.59,
+        "median": 62.0,
+        "q1": 58.0,
+        "q3": 64.0
+      },
+      "foreignLanguage": {
+        "minimum": 62,
+        "maximum": 85,
+        "average": 74.24,
+        "median": 75.0,
+        "q1": 70.0,
+        "q3": 79.0
+      },
+      "subject1": {
+        "minimum": 86,
+        "maximum": 145,
+        "average": 116.35,
+        "median": 117.0,
+        "q1": 107.0,
+        "q3": 124.0
+      },
+      "subject2": {
+        "minimum": 90,
+        "maximum": 115,
+        "average": 104.59,
+        "median": 106.0,
+        "q1": 101.0,
+        "q3": 111.0
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 328,
+      "maximum": 397,
+      "average": 355.42,
+      "median": 357.0,
+      "q1": 340.0,
+      "q3": 368.0
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 320,
+        "max": 329,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 4,
+        "admitted": 2
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 4,
+        "admitted": 4
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 0,
+        "admitted": 0
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
+    "metricScope": ""
   },
   {
     "projectId": "zju-soft-085400-01",
@@ -6056,12 +7388,12 @@
     "minimum": 333,
     "maximum": 408,
     "average": 359.36,
-    "median": 359,
-    "q1": 345,
-    "q3": 367,
+    "median": 359.0,
+    "q1": 345.0,
+    "q3": 367.0,
     "sampleSize": 53,
-    "reportedAdmissions": 53,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "reportedAdmissions": 54,
+    "scope": "官方最终拟录取名单与初试成绩逐人匹配；排除退役大学生计划，含统一招考的联合培养专项。复试人数为复试名单人数（排除退役大学生计划），未确认实际到场。",
     "sources": [
       {
         "title": "东南大学2024年硕士研究生考试录取情况汇总",
@@ -6087,14 +7419,185 @@
         "year": 2024,
         "sourceType": "official",
         "kind": "scores"
+      },
+      {
+        "title": "东南大学2024年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/e9/19/7e94adc04a0aaa0c0466e2e1d346/1dadfff7-8186-4c9a-b874-db6fc910f711.pdf",
+        "year": 2024,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2024 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2024年硕士研究生复试名单",
+        "url": "https://yzb.seu.edu.cn/2024/0324/c6689a484900/pagem.htm",
+        "year": 2024,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2024年硕士研究生复试名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2024年复试录取工作细则",
+        "url": "https://yzb.seu.edu.cn/2024/0324/c6689a484899/page.htm",
+        "year": 2024,
+        "publisher": "东南大学",
+        "kind": "retest",
+        "shortTitle": "2024 年复试细则",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 293,
     "promotionAdmissions": 76,
-    "examAdmissions": 54,
+    "examAdmissions": 53,
     "examAttendanceRatio": 5.43,
     "updatedAt": "2026-11-26",
-    "attendanceScope": "一志愿"
+    "attendanceScope": "一志愿",
+    "cutoffSource": "official",
+    "specialPlanAdmissions": 1,
+    "interviewListCount": 69,
+    "reportedInterviewees": 68,
+    "reportedInterviewRatio": 1.283,
+    "scoreDistribution": [
+      {
+        "min": 330,
+        "max": 339,
+        "count": 5
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 13
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 12
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 12
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 2
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 6
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 2
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "count": 1
+      }
+    ],
+    "examAdmissionsTotal": 54,
+    "interviewEligible": 69,
+    "interviewRatio": 1.283,
+    "interviewRatioScope": "普通复试名单 / 普通统考录取",
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 61,
+        "maximum": 81,
+        "average": 70.96,
+        "median": 71.0,
+        "q1": 68.0,
+        "q3": 74.0
+      },
+      "foreignLanguage": {
+        "minimum": 64,
+        "maximum": 88,
+        "average": 77.0,
+        "median": 77.0,
+        "q1": 73.0,
+        "q3": 82.0
+      },
+      "subject1": {
+        "minimum": 78,
+        "maximum": 141,
+        "average": 106.6,
+        "median": 106.0,
+        "q1": 98.0,
+        "q3": 115.0
+      },
+      "subject2": {
+        "minimum": 90,
+        "maximum": 120,
+        "average": 104.79,
+        "median": 105.0,
+        "q1": 100.0,
+        "q3": 110.0
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 332,
+      "maximum": 408,
+      "average": 355.81,
+      "median": 354.5,
+      "q1": 343.0,
+      "q3": 364.25
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 11,
+        "admitted": 5
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 17,
+        "admitted": 13
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 17,
+        "admitted": 12
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 12,
+        "admitted": 12
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 6,
+        "admitted": 6
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
+    "metricScope": ""
   },
   {
     "projectId": "seu-h-085-085404",
@@ -6142,12 +7645,12 @@
     "minimum": 349,
     "maximum": 407,
     "average": 369.82,
-    "median": 368,
-    "q1": 359,
+    "median": 368.0,
+    "q1": 359.0,
     "q3": 376.5,
     "sampleSize": 22,
     "reportedAdmissions": 22,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "按官方复试名单普通计划及最终拟录取名单同院系同专业全日制记录匹配；复试人数为进入复试名单人数，未确认实际到场。",
     "sources": [
       {
         "title": "码砖录取分数统计（GitHub归档）",
@@ -6172,13 +7675,162 @@
         "year": 2026,
         "sourceType": "official",
         "kind": "history"
+      },
+      {
+        "title": "东南大学2026年硕士研究生全国统考拟录取名单公示",
+        "url": "https://xxgk.seu.edu.cn/2026/0525/c10807a568643/page.htm",
+        "year": 2026,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2026 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2026年硕士研究生复试名单",
+        "url": "https://yzb.seu.edu.cn/_s117/2026/0323/c6689a559088/page.psp",
+        "year": 2026,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2026年硕士研究生复试名单",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 131,
     "promotionAdmissions": 28,
     "examAdmissions": 22,
     "attendanceScope": "一志愿",
-    "examAttendanceRatio": 5.95
+    "examAttendanceRatio": 5.95,
+    "interviewListCount": 28,
+    "scoreDistribution": [
+      {
+        "min": 340,
+        "max": 349,
+        "count": 2
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 5
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 6
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 4
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 2
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 2
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "count": 1
+      }
+    ],
+    "reportedInterviewees": 28,
+    "reportedInterviewRatio": 1.2727,
+    "specialPlanAdmissions": 0,
+    "examAdmissionsTotal": 22,
+    "interviewEligible": 28,
+    "interviewRatio": 1.2727,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 57,
+        "maximum": 74,
+        "average": 65.05,
+        "median": 65.5,
+        "q1": 62.25,
+        "q3": 68.0
+      },
+      "foreignLanguage": {
+        "minimum": 66,
+        "maximum": 86,
+        "average": 74.55,
+        "median": 72.5,
+        "q1": 70.0,
+        "q3": 79.75
+      },
+      "subject1": {
+        "minimum": 101,
+        "maximum": 143,
+        "average": 120.45,
+        "median": 118.5,
+        "q1": 113.0,
+        "q3": 126.0
+      },
+      "subject2": {
+        "minimum": 97,
+        "maximum": 125,
+        "average": 109.77,
+        "median": 109.5,
+        "q1": 106.5,
+        "q3": 114.5
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 349,
+      "maximum": 407,
+      "average": 366.57,
+      "median": 362.0,
+      "q1": 355.0,
+      "q3": 372.75
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 10,
+        "admitted": 5
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 7,
+        "admitted": 6
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 4,
+        "admitted": 4
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
+    "metricScope": ""
   },
   {
     "projectId": "seu-h-suzhou-085404",
@@ -6186,13 +7838,13 @@
     "cutoff": 300,
     "minimum": 306,
     "maximum": 377,
-    "average": 329.06,
-    "median": 327,
-    "q1": 316.5,
-    "q3": 340.5,
+    "average": 329.23,
+    "median": 327.0,
+    "q1": 317.0,
+    "q3": 341.0,
     "sampleSize": 51,
-    "reportedAdmissions": 51,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "reportedAdmissions": 53,
+    "scope": "官方最终拟录取名单与初试成绩逐人匹配；排除退役大学生计划，含统一招考的联合培养专项。苏州2024年为085400电子信息下分方向招生，复试人数按分方向复试结果统计。",
     "sources": [
       {
         "title": "码砖录取分数统计（GitHub归档）",
@@ -6201,6 +7853,185 @@
         "publisher": "CodeBrick码砖 / kaoyan408-share",
         "scope": "苏州联合研究生院（蒙纳士大学苏州联合研究院） 计算机技术",
         "sourceType": "secondary"
+      },
+      {
+        "title": "东南大学2024年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/e9/19/7e94adc04a0aaa0c0466e2e1d346/1dadfff7-8186-4c9a-b874-db6fc910f711.pdf",
+        "year": 2024,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2024 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2024年硕士研究生复试名单",
+        "url": "https://yzb.seu.edu.cn/2024/0325/c6689a485029/page.htm",
+        "year": 2024,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2024年硕士研究生复试名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2024年复试录取工作细则",
+        "url": "https://yzb.seu.edu.cn/2024/0325/c6689a485026/page.htm",
+        "year": 2024,
+        "publisher": "东南大学",
+        "kind": "retest",
+        "shortTitle": "2024 年复试细则",
+        "sourceType": "official"
+      },
+      {
+        "title": "2024年苏州联合研究生院硕士研究生复试结果公示",
+        "url": "https://smjgs.seu.edu.cn/2024/0401/c8471a486085/page.htm",
+        "year": 2024,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2024年苏州联合研究生院硕士研究生复试结果公示",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "examAdmissions": 53,
+    "specialPlanAdmissions": 0,
+    "interviewListCount": 61,
+    "reportedInterviewees": 61,
+    "reportedInterviewRatio": 1.1509,
+    "scoreDistribution": [
+      {
+        "min": 300,
+        "max": 309,
+        "count": 5
+      },
+      {
+        "min": 310,
+        "max": 319,
+        "count": 12
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "count": 11
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "count": 11
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 9
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 3
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 1
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 1
+      }
+    ],
+    "examAdmissionsTotal": 53,
+    "interviewEligible": 61,
+    "interviewRatio": 1.1509,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 56,
+        "maximum": 79,
+        "average": 68.68,
+        "median": 69.0,
+        "q1": 66.0,
+        "q3": 72.0
+      },
+      "foreignLanguage": {
+        "minimum": 61,
+        "maximum": 86,
+        "average": 75.25,
+        "median": 76.0,
+        "q1": 72.0,
+        "q3": 80.0
+      },
+      "subject1": {
+        "minimum": 71,
+        "maximum": 118,
+        "average": 90.25,
+        "median": 88.0,
+        "q1": 83.0,
+        "q3": 97.0
+      },
+      "subject2": {
+        "minimum": 80,
+        "maximum": 110,
+        "average": 95.06,
+        "median": 96.0,
+        "q1": 89.0,
+        "q3": 100.0
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 300,
+      "maximum": 377,
+      "average": 326.11,
+      "median": 323.0,
+      "q1": 312.0,
+      "q3": 338.0
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 300,
+        "max": 309,
+        "interviewees": 11,
+        "admitted": 5
+      },
+      {
+        "min": 310,
+        "max": 319,
+        "interviewees": 14,
+        "admitted": 12
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "interviewees": 11,
+        "admitted": 11
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 11,
+        "admitted": 11
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 9,
+        "admitted": 9
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 1,
+        "admitted": 1
       }
     ]
   },
@@ -6208,7 +8039,7 @@
     "projectId": "seu-h-suzhou-085404",
     "year": 2025,
     "reportedAdmissions": 50,
-    "scope": "依原文公布范围",
+    "scope": "按最终拟录取名单与复试结果考生编号匹配；按公示中可识别类别统计。",
     "sources": [
       {
         "title": "东南大学2025年硕士研究生考试录取情况汇总",
@@ -6226,6 +8057,24 @@
         "publisher": "易考研",
         "scope": "2025各学院录取分项",
         "sourceType": "secondary"
+      },
+      {
+        "title": "东南大学2025年硕士研究生拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/2025/0526/c10823a528820/page.htm",
+        "year": 2025,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2025 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2025年硕士研究生复试结果公示",
+        "url": "https://smjgs.seu.edu.cn/2025/0328/c8471a523410/page.htm",
+        "year": 2025,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2025年硕士研究生复试结果公示",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 387,
@@ -6233,21 +8082,134 @@
     "examAdmissions": 50,
     "examAttendanceRatio": 7.74,
     "updatedAt": "2026-11-26",
-    "attendanceScope": "一志愿"
+    "attendanceScope": "一志愿",
+    "cutoffSource": "official",
+    "interviewees": 65,
+    "interviewListCount": 65,
+    "interviewRatio": 1.3,
+    "cutoff": 325,
+    "minimum": 325,
+    "maximum": 391,
+    "average": 350.74,
+    "median": 350.0,
+    "q1": 342.0,
+    "q3": 359.0,
+    "scoreDistribution": [
+      {
+        "min": 320,
+        "max": 329,
+        "count": 3
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "count": 7
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 14
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 14
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 9
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 1
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 1
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 1
+      }
+    ],
+    "examAdmissionsTotal": 50,
+    "interviewEligible": 65,
+    "interviewScoreStats": {
+      "minimum": 325,
+      "average": 347.91,
+      "median": 346.0,
+      "q1": 338.0,
+      "q3": 359.0,
+      "maximum": 391
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 320,
+        "max": 329,
+        "interviewees": 5,
+        "admitted": 3
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 16,
+        "admitted": 7
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 16,
+        "admitted": 14
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 15,
+        "admitted": 14
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 10,
+        "admitted": 9
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ]
   },
   {
     "projectId": "seu-h-suzhou-085410",
     "year": 2024,
-    "cutoff": 301,
+    "cutoff": 300,
     "minimum": 307,
     "maximum": 392,
     "average": 331.72,
-    "median": 330,
-    "q1": 321,
+    "median": 330.0,
+    "q1": 321.0,
     "q3": 336.5,
     "sampleSize": 39,
     "reportedAdmissions": 39,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "官方最终拟录取名单与初试成绩逐人匹配；排除退役大学生计划，含统一招考的联合培养专项。苏州2024年为085400电子信息下分方向招生，复试人数按分方向复试结果统计。",
     "sources": [
       {
         "title": "码砖录取分数统计（GitHub归档）",
@@ -6256,6 +8218,207 @@
         "publisher": "CodeBrick码砖 / kaoyan408-share",
         "scope": "苏州联合研究生院（蒙纳士大学苏州联合研究院） 人工智能",
         "sourceType": "secondary"
+      },
+      {
+        "title": "东南大学2024年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/e9/19/7e94adc04a0aaa0c0466e2e1d346/1dadfff7-8186-4c9a-b874-db6fc910f711.pdf",
+        "year": 2024,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2024 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2024年硕士研究生复试名单",
+        "url": "https://yzb.seu.edu.cn/2024/0325/c6689a485029/page.htm",
+        "year": 2024,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2024年硕士研究生复试名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2024年复试录取工作细则",
+        "url": "https://yzb.seu.edu.cn/2024/0325/c6689a485026/page.htm",
+        "year": 2024,
+        "publisher": "东南大学",
+        "kind": "retest",
+        "shortTitle": "2024 年复试细则",
+        "sourceType": "official"
+      },
+      {
+        "title": "2024年苏州联合研究生院硕士研究生复试结果公示",
+        "url": "https://smjgs.seu.edu.cn/2024/0401/c8471a486085/page.htm",
+        "year": 2024,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2024年苏州联合研究生院硕士研究生复试结果公示",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "examAdmissions": 39,
+    "specialPlanAdmissions": 0,
+    "interviewListCount": 45,
+    "reportedInterviewees": 45,
+    "reportedInterviewRatio": 1.1538,
+    "scoreDistribution": [
+      {
+        "min": 300,
+        "max": 309,
+        "count": 5
+      },
+      {
+        "min": 310,
+        "max": 319,
+        "count": 4
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "count": 10
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "count": 11
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 4
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 1
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 1
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 2
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 0
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 1
+      }
+    ],
+    "examAdmissionsTotal": 39,
+    "interviewEligible": 45,
+    "interviewRatio": 1.1538,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 56,
+        "maximum": 79,
+        "average": 68.46,
+        "median": 69.0,
+        "q1": 66.0,
+        "q3": 71.0
+      },
+      "foreignLanguage": {
+        "minimum": 60,
+        "maximum": 88,
+        "average": 76.54,
+        "median": 78.0,
+        "q1": 73.5,
+        "q3": 80.0
+      },
+      "subject1": {
+        "minimum": 71,
+        "maximum": 115,
+        "average": 91.28,
+        "median": 91.0,
+        "q1": 85.0,
+        "q3": 99.0
+      },
+      "subject2": {
+        "minimum": 82,
+        "maximum": 125,
+        "average": 95.44,
+        "median": 93.0,
+        "q1": 88.5,
+        "q3": 100.5
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 301,
+      "maximum": 392,
+      "average": 328.58,
+      "median": 326.0,
+      "q1": 315.0,
+      "q3": 335.0
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 300,
+        "max": 309,
+        "interviewees": 9,
+        "admitted": 5
+      },
+      {
+        "min": 310,
+        "max": 319,
+        "interviewees": 5,
+        "admitted": 4
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "interviewees": 11,
+        "admitted": 10
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 11,
+        "admitted": 11
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 4,
+        "admitted": 4
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 0,
+        "admitted": 0
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 1,
+        "admitted": 1
       }
     ]
   },
@@ -6263,7 +8426,7 @@
     "projectId": "seu-h-suzhou-085410",
     "year": 2025,
     "reportedAdmissions": 24,
-    "scope": "依原文公布范围",
+    "scope": "按最终拟录取名单与复试结果考生编号匹配；按公示中可识别类别统计。",
     "sources": [
       {
         "title": "东南大学2025年硕士研究生考试录取情况汇总",
@@ -6281,6 +8444,24 @@
         "publisher": "易考研",
         "scope": "2025各学院录取分项",
         "sourceType": "secondary"
+      },
+      {
+        "title": "东南大学2025年硕士研究生拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/2025/0526/c10823a528820/page.htm",
+        "year": 2025,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2025 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2025年硕士研究生复试结果公示",
+        "url": "https://smjgs.seu.edu.cn/2025/0328/c8471a523410/page.htm",
+        "year": 2025,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2025年硕士研究生复试结果公示",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 153,
@@ -6288,7 +8469,98 @@
     "examAdmissions": 24,
     "examAttendanceRatio": 6.38,
     "updatedAt": "2026-11-26",
-    "attendanceScope": "一志愿"
+    "attendanceScope": "一志愿",
+    "cutoffSource": "official",
+    "interviewees": 36,
+    "interviewListCount": 36,
+    "interviewRatio": 1.5,
+    "cutoff": 300,
+    "minimum": 300,
+    "maximum": 364,
+    "average": 333.38,
+    "median": 334.0,
+    "q1": 319.75,
+    "q3": 345.25,
+    "scoreDistribution": [
+      {
+        "min": 300,
+        "max": 309,
+        "count": 3
+      },
+      {
+        "min": 310,
+        "max": 319,
+        "count": 3
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "count": 2
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "count": 6
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 8
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 2
+      }
+    ],
+    "examAdmissionsTotal": 24,
+    "interviewEligible": 36,
+    "interviewScoreStats": {
+      "minimum": 300,
+      "average": 326.61,
+      "median": 329.5,
+      "q1": 311.0,
+      "q3": 341.0,
+      "maximum": 364
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 300,
+        "max": 309,
+        "interviewees": 8,
+        "admitted": 3
+      },
+      {
+        "min": 310,
+        "max": 319,
+        "interviewees": 8,
+        "admitted": 3
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 7,
+        "admitted": 6
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 9,
+        "admitted": 8
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 2,
+        "admitted": 2
+      }
+    ]
   },
   {
     "projectId": "seu-h-suzhou-085410",
@@ -6296,8 +8568,8 @@
     "cutoff": 353,
     "minimum": 353,
     "maximum": 394,
-    "average": 370,
-    "scope": "N诺表头为预计招生人数",
+    "average": 369.54,
+    "scope": "按官方复试名单普通计划及最终拟录取名单同院系同专业全日制记录匹配；复试人数为进入复试名单人数，未确认实际到场。",
     "sources": [
       {
         "title": "2027考研择校数据汇总（2026录取）",
@@ -6322,13 +8594,144 @@
         "year": 2026,
         "sourceType": "official",
         "kind": "history"
+      },
+      {
+        "title": "东南大学2026年硕士研究生全国统考拟录取名单公示",
+        "url": "https://xxgk.seu.edu.cn/2026/0525/c10807a568643/page.htm",
+        "year": 2026,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2026 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2026年硕士研究生复试名单",
+        "url": "https://yzb.seu.edu.cn/_s117/2026/0323/c6689a559088/page.psp",
+        "year": 2026,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2026年硕士研究生复试名单",
+        "sourceType": "official"
       }
     ],
     "examAttendees": 221,
     "promotionAdmissions": 12,
     "examAdmissions": 28,
     "attendanceScope": "一志愿",
-    "examAttendanceRatio": 7.89
+    "examAttendanceRatio": 7.89,
+    "reportedAdmissions": 28,
+    "interviewListCount": 36,
+    "median": 364.0,
+    "q1": 357.75,
+    "q3": 379.5,
+    "scoreDistribution": [
+      {
+        "min": 350,
+        "max": 359,
+        "count": 10
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 5
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 6
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 4
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 3
+      }
+    ],
+    "reportedInterviewees": 36,
+    "reportedInterviewRatio": 1.2857,
+    "specialPlanAdmissions": 0,
+    "examAdmissionsTotal": 28,
+    "interviewEligible": 36,
+    "interviewRatio": 1.2857,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 50,
+        "maximum": 73,
+        "average": 65.79,
+        "median": 66.5,
+        "q1": 63.75,
+        "q3": 68.25
+      },
+      "foreignLanguage": {
+        "minimum": 61,
+        "maximum": 83,
+        "average": 75.86,
+        "median": 77.0,
+        "q1": 73.5,
+        "q3": 80.0
+      },
+      "subject1": {
+        "minimum": 101,
+        "maximum": 138,
+        "average": 119.79,
+        "median": 120.5,
+        "q1": 109.5,
+        "q3": 133.0
+      },
+      "subject2": {
+        "minimum": 91,
+        "maximum": 124,
+        "average": 108.11,
+        "median": 108.5,
+        "q1": 105.0,
+        "q3": 111.5
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 353,
+      "maximum": 394,
+      "average": 367.42,
+      "median": 361.5,
+      "q1": 356.0,
+      "q3": 378.25
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 15,
+        "admitted": 10
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 7,
+        "admitted": 5
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 6,
+        "admitted": 6
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 5,
+        "admitted": 4
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 3,
+        "admitted": 3
+      }
+    ],
+    "metricScope": ""
   },
   {
     "projectId": "ustc-h-225-085405-01",
@@ -10040,6 +12443,1632 @@
         "publisher": "N诺计算机考研",
         "scope": "厦门大学电影学院",
         "sourceType": "third_party"
+      }
+    ]
+  },
+  {
+    "projectId": "seu-h-009-085400-2023-catalog",
+    "year": 2021,
+    "sources": [
+      {
+        "title": "2021年各院系复试分数线",
+        "url": "https://yzb.seu.edu.cn/2021/0630/c6674a376223/page.htm",
+        "year": 2021,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2021年各院系复试分数线",
+        "sourceType": "official"
+      },
+      {
+        "title": "2021年考试录取情况汇总",
+        "url": "https://yzb.seu.edu.cn/2021/0630/c6675a376225/page.htm",
+        "year": 2021,
+        "publisher": "东南大学",
+        "kind": "history",
+        "shortTitle": "2021 年考试录取统计",
+        "sourceType": "official"
+      },
+      {
+        "title": "2021年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+        "year": 2021,
+        "publisher": "东南大学",
+        "pages": [
+          14
+        ],
+        "kind": "history",
+        "shortTitle": "2021 年拟录取名单",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "departmentCode": "009",
+    "historicalDirection": "计算机技术",
+    "cutoff": 335,
+    "promotionAdmissions": 28,
+    "reportedAdmissions": 36,
+    "totalAdmissions": 64,
+    "scope": "最终拟录取名单已确认方向人数；普通一志愿成绩统计及复试人数尚缺。 招生复试线为不区分方向，最终录取方向为计算机技术；含2名强军计划。",
+    "finalListAdmissions": 36,
+    "finalListSpecialPlanCounts": {
+      "强军计划": 2
+    },
+    "finalListScope": "全日制085400最终拟录取名单按录取方向统计，含调剂及专项；名单无初试成绩。",
+    "specialPlanAdmissions": 2,
+    "examAttendees": 207,
+    "attendanceScope": "一志愿",
+    "examAdmissionsTotal": 36
+  },
+  {
+    "projectId": "seu-h-soft-085405",
+    "year": 2021,
+    "sources": [
+      {
+        "title": "2021年各院系复试分数线",
+        "url": "https://yzb.seu.edu.cn/2021/0630/c6674a376223/page.htm",
+        "year": 2021,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2021年各院系复试分数线",
+        "sourceType": "official"
+      },
+      {
+        "title": "2021年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+        "year": 2021,
+        "publisher": "东南大学",
+        "pages": [
+          43,
+          44
+        ],
+        "kind": "history",
+        "shortTitle": "2021 年拟录取名单",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "departmentCode": "401",
+    "historicalDirection": "软件工程",
+    "cutoff": 340,
+    "officialDirectionCode": "01",
+    "scope": "最终拟录取名单已确认方向人数；普通一志愿成绩统计及复试人数尚缺。 实考、推免人数仍为学院电子信息大类合计，见 sharedHistoricalRecords。",
+    "reportedAdmissions": 95,
+    "finalListAdmissions": 95,
+    "finalListSpecialPlanCounts": {},
+    "finalListScope": "全日制085400最终拟录取名单按录取方向统计，含调剂及专项；名单无初试成绩。",
+    "examAdmissionsTotal": 95,
+    "metricScope": "含调剂"
+  },
+  {
+    "projectId": "seu-h-401-085400-ai-applications",
+    "year": 2021,
+    "sources": [
+      {
+        "title": "2021年各院系复试分数线",
+        "url": "https://yzb.seu.edu.cn/2021/0630/c6674a376223/page.htm",
+        "year": 2021,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2021年各院系复试分数线",
+        "sourceType": "official"
+      },
+      {
+        "title": "2021年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+        "year": 2021,
+        "publisher": "东南大学",
+        "pages": [
+          44,
+          45,
+          46
+        ],
+        "kind": "history",
+        "shortTitle": "2021 年拟录取名单",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "departmentCode": "401",
+    "historicalDirection": "人工智能应用",
+    "cutoff": 310,
+    "officialDirectionCode": "02",
+    "scope": "最终拟录取名单已确认方向人数；普通一志愿成绩统计及复试人数尚缺。 实考、推免人数仍为学院电子信息大类合计，见 sharedHistoricalRecords。",
+    "reportedAdmissions": 179,
+    "finalListAdmissions": 179,
+    "finalListSpecialPlanCounts": {},
+    "finalListScope": "全日制085400最终拟录取名单按录取方向统计，含调剂及专项；名单无初试成绩。",
+    "examAdmissionsTotal": 179,
+    "metricScope": "含调剂"
+  },
+  {
+    "projectId": "seu-h-suzhou-085404",
+    "year": 2021,
+    "sources": [
+      {
+        "title": "2021年各院系复试分数线",
+        "url": "https://yzb.seu.edu.cn/2021/0630/c6674a376223/page.htm",
+        "year": 2021,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2021年各院系复试分数线",
+        "sourceType": "official"
+      },
+      {
+        "title": "2021年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+        "year": 2021,
+        "publisher": "东南大学",
+        "pages": [
+          35,
+          36
+        ],
+        "kind": "history",
+        "shortTitle": "2021 年拟录取名单",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "departmentCode": "084",
+    "historicalDirection": "计算机技术",
+    "cutoff": 300,
+    "scope": "最终拟录取名单已确认方向人数；普通一志愿成绩统计及复试人数尚缺。 实考、推免人数仍为学院电子信息大类合计，见 sharedHistoricalRecords。",
+    "reportedAdmissions": 75,
+    "finalListAdmissions": 75,
+    "finalListSpecialPlanCounts": {},
+    "finalListScope": "全日制085400最终拟录取名单按录取方向统计，含调剂及专项；名单无初试成绩。",
+    "examAdmissionsTotal": 75,
+    "metricScope": "含调剂"
+  },
+  {
+    "projectId": "seu-h-suzhou-085410",
+    "year": 2021,
+    "sources": [
+      {
+        "title": "2021年各院系复试分数线",
+        "url": "https://yzb.seu.edu.cn/2021/0630/c6674a376223/page.htm",
+        "year": 2021,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2021年各院系复试分数线",
+        "sourceType": "official"
+      },
+      {
+        "title": "2021年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+        "year": 2021,
+        "publisher": "东南大学",
+        "pages": [
+          36
+        ],
+        "kind": "history",
+        "shortTitle": "2021 年拟录取名单",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "departmentCode": "084",
+    "historicalDirection": "人工智能",
+    "cutoff": 300,
+    "scope": "最终拟录取名单已确认方向人数；普通一志愿成绩统计及复试人数尚缺。 实考、推免人数仍为学院电子信息大类合计，见 sharedHistoricalRecords。",
+    "reportedAdmissions": 50,
+    "finalListAdmissions": 50,
+    "finalListSpecialPlanCounts": {},
+    "finalListScope": "全日制085400最终拟录取名单按录取方向统计，含调剂及专项；名单无初试成绩。",
+    "examAdmissionsTotal": 50,
+    "metricScope": "含调剂"
+  },
+  {
+    "projectId": "seu-h-009-085400-2023-catalog",
+    "year": 2022,
+    "sources": [
+      {
+        "title": "2022年各院系复试分数线",
+        "url": "https://yzb.seu.edu.cn/2022/0713/c6674a414000/page.htm",
+        "year": 2022,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2022年各院系复试分数线",
+        "sourceType": "official"
+      },
+      {
+        "title": "2022年考试录取情况汇总（原网页）",
+        "url": "https://yzb.seu.edu.cn/2022/0815/c6675a416728/page.htm",
+        "year": 2022,
+        "publisher": "东南大学",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计",
+        "sourceType": "official"
+      },
+      {
+        "title": "2022年考试录取统计转载",
+        "url": "https://jixun.iqihang.com/zixun/gonglue/202240192.html",
+        "year": 2022,
+        "publisher": "启航考研",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计 · 启航考研"
+      },
+      {
+        "title": "2022年考试录取统计转载",
+        "url": "https://www.233.com/kaoyan/blb/202210/12083911871835.html",
+        "year": 2022,
+        "publisher": "233网校",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计 · 233网校"
+      },
+      {
+        "title": "2022届复试及一志愿拟录取分段统计",
+        "url": "https://m.gaodun.com/kaoyan/1368897.html",
+        "year": 2022,
+        "publisher": "高顿教育",
+        "kind": "scores",
+        "shortTitle": "2022届复试及一志愿拟录取分段统计"
+      },
+      {
+        "title": "2022年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+        "year": 2022,
+        "publisher": "东南大学",
+        "pages": [
+          28,
+          29
+        ],
+        "kind": "history",
+        "shortTitle": "2022 年拟录取名单",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "departmentCode": "009",
+    "historicalDirection": "电子信息（不区分方向）",
+    "cutoff": 355,
+    "promotionAdmissions": 16,
+    "reportedAdmissions": 44,
+    "totalAdmissions": 60,
+    "transferAdmissions": 0,
+    "minimum": 356,
+    "maximum": 404,
+    "examAdmissions": 41,
+    "reportedInterviewees": 56,
+    "scoreDistribution": [
+      {
+        "min": 355,
+        "max": 359,
+        "count": 1
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 13
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 11
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 7
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 8
+      },
+      {
+        "min": 400,
+        "max": 500,
+        "count": 1
+      }
+    ],
+    "scoreStatisticsScope": "普通一志愿（排除特殊计划和调剂）",
+    "professionalExamCode": "935",
+    "professionalExamName": "计算机专业基础",
+    "reportedInterviewRatio": 1.3659,
+    "specialPlanAdmissions": 3,
+    "scope": "复试线为官方；报录数为官方统计转载；普通一志愿分数分段由高顿整理，未逐人匹配。44名统考含3名士兵计划。",
+    "finalListAdmissions": 44,
+    "finalListSpecialPlanCounts": {
+      "士兵计划": 3
+    },
+    "finalListScope": "全日制085400最终拟录取名单按录取方向统计，含调剂及专项；名单无初试成绩。",
+    "examAttendees": 420,
+    "attendanceScope": "一志愿",
+    "examAdmissionsTotal": 44,
+    "interviewEligible": 56,
+    "interviewRatio": 1.3659,
+    "interviewRatioScope": "普通复试名单 / 普通统考录取",
+    "scoreBandOutcomes": [
+      {
+        "min": 355,
+        "max": 359,
+        "interviewees": 9,
+        "admitted": 1
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 19,
+        "admitted": 13
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 12,
+        "admitted": 11
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 7,
+        "admitted": 7
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 8,
+        "admitted": 8
+      },
+      {
+        "min": 400,
+        "max": 500,
+        "interviewees": 1,
+        "admitted": 1,
+        "openEnded": true
+      }
+    ],
+    "metricScope": ""
+  },
+  {
+    "projectId": "seu-h-soft-085405",
+    "year": 2022,
+    "sources": [
+      {
+        "title": "2022年各院系复试分数线",
+        "url": "https://yzb.seu.edu.cn/2022/0713/c6674a414000/page.htm",
+        "year": 2022,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2022年各院系复试分数线",
+        "sourceType": "official"
+      },
+      {
+        "title": "2022年考试录取情况汇总（原网页）",
+        "url": "https://yzb.seu.edu.cn/2022/0815/c6675a416728/page.htm",
+        "year": 2022,
+        "publisher": "东南大学",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计",
+        "sourceType": "official"
+      },
+      {
+        "title": "2022年考试录取统计转载",
+        "url": "https://jixun.iqihang.com/zixun/gonglue/202240192.html",
+        "year": 2022,
+        "publisher": "启航考研",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计 · 启航考研"
+      },
+      {
+        "title": "2022年考试录取统计转载",
+        "url": "https://www.233.com/kaoyan/blb/202210/12083911871835.html",
+        "year": 2022,
+        "publisher": "233网校",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计 · 233网校"
+      },
+      {
+        "title": "2022年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+        "year": 2022,
+        "publisher": "东南大学",
+        "pages": [
+          89,
+          90,
+          91
+        ],
+        "kind": "history",
+        "shortTitle": "2022 年拟录取名单",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "departmentCode": "401",
+    "historicalDirection": "软件工程",
+    "cutoff": 360,
+    "officialDirectionCode": "01",
+    "promotionAdmissions": 65,
+    "reportedAdmissions": 65,
+    "totalAdmissions": 130,
+    "transferAdmissions": 0,
+    "scope": "官方统计转载；普通计划及分数分布待查。",
+    "finalListAdmissions": 65,
+    "finalListSpecialPlanCounts": {},
+    "finalListScope": "全日制085400最终拟录取名单按录取方向统计，含调剂及专项；名单无初试成绩。",
+    "examAttendees": 996,
+    "attendanceScope": "一志愿",
+    "examAdmissionsTotal": 65
+  },
+  {
+    "projectId": "seu-h-401-085400-ai-applications",
+    "year": 2022,
+    "sources": [
+      {
+        "title": "2022年各院系复试分数线",
+        "url": "https://yzb.seu.edu.cn/2022/0713/c6674a414000/page.htm",
+        "year": 2022,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2022年各院系复试分数线",
+        "sourceType": "official"
+      },
+      {
+        "title": "2022年考试录取情况汇总（原网页）",
+        "url": "https://yzb.seu.edu.cn/2022/0815/c6675a416728/page.htm",
+        "year": 2022,
+        "publisher": "东南大学",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计",
+        "sourceType": "official"
+      },
+      {
+        "title": "2022年考试录取统计转载",
+        "url": "https://jixun.iqihang.com/zixun/gonglue/202240192.html",
+        "year": 2022,
+        "publisher": "启航考研",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计 · 启航考研"
+      },
+      {
+        "title": "2022年考试录取统计转载",
+        "url": "https://www.233.com/kaoyan/blb/202210/12083911871835.html",
+        "year": 2022,
+        "publisher": "233网校",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计 · 233网校"
+      },
+      {
+        "title": "2022年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+        "year": 2022,
+        "publisher": "东南大学",
+        "pages": [
+          91,
+          92,
+          93,
+          94,
+          95
+        ],
+        "kind": "history",
+        "shortTitle": "2022 年拟录取名单",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "departmentCode": "401",
+    "historicalDirection": "人工智能应用",
+    "cutoff": 310,
+    "officialDirectionCode": "02",
+    "promotionAdmissions": 0,
+    "reportedAdmissions": 161,
+    "totalAdmissions": 161,
+    "transferAdmissions": 140,
+    "scope": "历史方向，未确认对应现有项目及专业课；应作为独立历史记录。161名统考含140名调剂。",
+    "finalListAdmissions": 161,
+    "finalListSpecialPlanCounts": {},
+    "finalListScope": "全日制085400最终拟录取名单按录取方向统计，含调剂及专项；名单无初试成绩。",
+    "examAttendees": 298,
+    "attendanceScope": "一志愿",
+    "examAdmissionsTotal": 161
+  },
+  {
+    "projectId": "seu-h-suzhou-085404",
+    "year": 2022,
+    "sources": [
+      {
+        "title": "2022年各院系复试分数线",
+        "url": "https://yzb.seu.edu.cn/2022/0713/c6674a414000/page.htm",
+        "year": 2022,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2022年各院系复试分数线",
+        "sourceType": "official"
+      },
+      {
+        "title": "2022年考试录取情况汇总（原网页）",
+        "url": "https://yzb.seu.edu.cn/2022/0815/c6675a416728/page.htm",
+        "year": 2022,
+        "publisher": "东南大学",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计",
+        "sourceType": "official"
+      },
+      {
+        "title": "2022年考试录取统计转载",
+        "url": "https://jixun.iqihang.com/zixun/gonglue/202240192.html",
+        "year": 2022,
+        "publisher": "启航考研",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计 · 启航考研"
+      },
+      {
+        "title": "2022年考试录取统计转载",
+        "url": "https://www.233.com/kaoyan/blb/202210/12083911871835.html",
+        "year": 2022,
+        "publisher": "233网校",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计 · 233网校"
+      },
+      {
+        "title": "2022届复试及一志愿拟录取分段统计",
+        "url": "https://m.gaodun.com/kaoyan/1368897.html",
+        "year": 2022,
+        "publisher": "高顿教育",
+        "kind": "scores",
+        "shortTitle": "2022届复试及一志愿拟录取分段统计"
+      },
+      {
+        "title": "2022年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+        "year": 2022,
+        "publisher": "东南大学",
+        "pages": [
+          58,
+          59
+        ],
+        "kind": "history",
+        "shortTitle": "2022 年拟录取名单",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "departmentCode": "084",
+    "historicalDirection": "计算机技术",
+    "cutoff": 300,
+    "officialDirectionCode": "01",
+    "promotionAdmissions": 1,
+    "reportedAdmissions": 49,
+    "totalAdmissions": 50,
+    "transferAdmissions": 0,
+    "minimum": 306,
+    "maximum": 392,
+    "examAdmissions": 49,
+    "reportedInterviewees": 70,
+    "scoreDistribution": [
+      {
+        "min": 300,
+        "max": 309,
+        "count": 2
+      },
+      {
+        "min": 310,
+        "max": 319,
+        "count": 6
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "count": 10
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "count": 5
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 8
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 9
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 4
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 2
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 2
+      },
+      {
+        "min": 390,
+        "max": 500,
+        "count": 1
+      }
+    ],
+    "scoreStatisticsScope": "普通一志愿（排除特殊计划和调剂）",
+    "professionalExamCode": "935",
+    "professionalExamName": "计算机专业基础",
+    "reportedInterviewRatio": 1.4286,
+    "scope": "官方复试线，报录数为官方统计转载，普通一志愿成绩为高顿整理，未逐人匹配。",
+    "finalListAdmissions": 49,
+    "finalListSpecialPlanCounts": {},
+    "finalListScope": "全日制085400最终拟录取名单按录取方向统计，含调剂及专项；名单无初试成绩。",
+    "examAttendees": 226,
+    "attendanceScope": "一志愿",
+    "examAdmissionsTotal": 49,
+    "interviewEligible": 70,
+    "interviewRatio": 1.4286,
+    "scoreBandOutcomes": [
+      {
+        "min": 300,
+        "max": 309,
+        "interviewees": 10,
+        "admitted": 2
+      },
+      {
+        "min": 310,
+        "max": 319,
+        "interviewees": 14,
+        "admitted": 6
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "interviewees": 13,
+        "admitted": 10
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 7,
+        "admitted": 5
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 8,
+        "admitted": 8
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 9,
+        "admitted": 9
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 4,
+        "admitted": 4
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 390,
+        "max": 500,
+        "interviewees": 1,
+        "admitted": 1,
+        "openEnded": true
+      }
+    ]
+  },
+  {
+    "projectId": "seu-h-suzhou-085410",
+    "year": 2022,
+    "sources": [
+      {
+        "title": "2022年各院系复试分数线",
+        "url": "https://yzb.seu.edu.cn/2022/0713/c6674a414000/page.htm",
+        "year": 2022,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2022年各院系复试分数线",
+        "sourceType": "official"
+      },
+      {
+        "title": "2022年考试录取情况汇总（原网页）",
+        "url": "https://yzb.seu.edu.cn/2022/0815/c6675a416728/page.htm",
+        "year": 2022,
+        "publisher": "东南大学",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计",
+        "sourceType": "official"
+      },
+      {
+        "title": "2022年考试录取统计转载",
+        "url": "https://jixun.iqihang.com/zixun/gonglue/202240192.html",
+        "year": 2022,
+        "publisher": "启航考研",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计 · 启航考研"
+      },
+      {
+        "title": "2022年考试录取统计转载",
+        "url": "https://www.233.com/kaoyan/blb/202210/12083911871835.html",
+        "year": 2022,
+        "publisher": "233网校",
+        "kind": "history",
+        "shortTitle": "2022 年考试录取统计 · 233网校"
+      },
+      {
+        "title": "2022届复试及一志愿拟录取分段统计",
+        "url": "https://m.gaodun.com/kaoyan/1368897.html",
+        "year": 2022,
+        "publisher": "高顿教育",
+        "kind": "scores",
+        "shortTitle": "2022届复试及一志愿拟录取分段统计"
+      },
+      {
+        "title": "2022年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+        "year": 2022,
+        "publisher": "东南大学",
+        "pages": [
+          59,
+          60
+        ],
+        "kind": "history",
+        "shortTitle": "2022 年拟录取名单",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "departmentCode": "084",
+    "historicalDirection": "人工智能",
+    "cutoff": 300,
+    "officialDirectionCode": "02",
+    "promotionAdmissions": 1,
+    "reportedAdmissions": 49,
+    "totalAdmissions": 50,
+    "transferAdmissions": 18,
+    "minimum": 310,
+    "maximum": 379,
+    "examAdmissions": 31,
+    "reportedInterviewees": 36,
+    "scoreDistribution": [
+      {
+        "min": 310,
+        "max": 319,
+        "count": 12
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "count": 7
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "count": 3
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 2
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 2
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 2
+      },
+      {
+        "min": 370,
+        "max": 500,
+        "count": 3
+      }
+    ],
+    "scoreStatisticsScope": "普通一志愿（排除特殊计划和调剂）",
+    "professionalExamCode": "935",
+    "professionalExamName": "计算机专业基础",
+    "reportedInterviewRatio": 1.1613,
+    "scope": "49名统考含18名调剂；成绩、复试人数、复录比均只涉及31名普通一志愿录取及其复试名单，不涵盖调剂。未逐人匹配。",
+    "finalListAdmissions": 49,
+    "finalListSpecialPlanCounts": {},
+    "finalListScope": "全日制085400最终拟录取名单按录取方向统计，含调剂及专项；名单无初试成绩。",
+    "examAttendees": 223,
+    "attendanceScope": "一志愿",
+    "examAdmissionsTotal": 49,
+    "interviewEligible": 36,
+    "interviewRatio": 1.1613,
+    "interviewRatioScope": "普通复试名单 / 普通统考录取",
+    "scoreBandOutcomes": [
+      {
+        "min": 300,
+        "max": 309,
+        "interviewees": 3,
+        "admitted": 0
+      },
+      {
+        "min": 310,
+        "max": 319,
+        "interviewees": 14,
+        "admitted": 12
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "interviewees": 7,
+        "admitted": 7
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 370,
+        "max": 500,
+        "interviewees": 3,
+        "admitted": 3,
+        "openEnded": true
+      }
+    ],
+    "metricScope": ""
+  },
+  {
+    "projectId": "seu-h-084-085400-health-data",
+    "year": 2021,
+    "sources": [
+      {
+        "title": "2021年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+        "year": 2021,
+        "publisher": "东南大学",
+        "pages": [
+          36,
+          37
+        ],
+        "kind": "history",
+        "shortTitle": "2021 年拟录取名单",
+        "sourceType": "official"
+      }
+    ],
+    "departmentCode": "084",
+    "officialMajorCode": "085400",
+    "historicalDirection": "健康数据科学",
+    "reportedAdmissions": 62,
+    "scope": "历史方向录取人数，仅用于核对合计；专业课及当前项目关联未核实。",
+    "examAdmissionsTotal": 62
+  },
+  {
+    "projectId": "seu-h-084-085400-health-data",
+    "year": 2022,
+    "sources": [
+      {
+        "title": "2022年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+        "year": 2022,
+        "publisher": "东南大学",
+        "pages": [
+          60,
+          61,
+          62
+        ],
+        "kind": "history",
+        "shortTitle": "2022 年拟录取名单",
+        "sourceType": "official"
+      }
+    ],
+    "departmentCode": "084",
+    "officialMajorCode": "085400",
+    "historicalDirection": "健康数据科学",
+    "reportedAdmissions": 50,
+    "scope": "历史方向录取人数，仅用于核对合计；专业课及当前项目关联未核实。",
+    "examAdmissionsTotal": 50
+  },
+  {
+    "projectId": "seu-h-084-085400-bionano",
+    "year": 2022,
+    "sources": [
+      {
+        "title": "2022年硕士研究生全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+        "year": 2022,
+        "publisher": "东南大学",
+        "pages": [
+          62,
+          63
+        ],
+        "kind": "history",
+        "shortTitle": "2022 年拟录取名单",
+        "sourceType": "official"
+      }
+    ],
+    "departmentCode": "084",
+    "officialMajorCode": "085400",
+    "historicalDirection": "生物纳米技术",
+    "reportedAdmissions": 50,
+    "scope": "历史方向录取人数，仅用于核对合计；专业课及当前项目关联未核实。",
+    "examAdmissionsTotal": 50
+  },
+  {
+    "projectId": "seu-h-soft-085405",
+    "year": 2023,
+    "sources": [
+      {
+        "title": "2023年全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/ad/8f/9588e2bb4802afa6c32edbce0ec8/b1f3faf8-4c08-4944-9e13-675f9fca2c63.pdf",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2023 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年硕士生复试名单",
+        "url": "https://yzb.seu.edu.cn/2023/0329/c6689a440011/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2023年硕士生复试名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年复试录取工作细则",
+        "url": "https://yzb.seu.edu.cn/2023/0329/c6689a440012/pagem.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "retest",
+        "shortTitle": "2023 年复试细则",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年硕士研究生考试录取情况汇总",
+        "url": "https://xxgk.seu.edu.cn/2023/0726/c12569a455894/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "history",
+        "shortTitle": "2023 年考试录取统计",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年各院系所复试分数线",
+        "url": "https://yzb.seu.edu.cn/2023/0726/c6674a455893/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2023年各院系所复试分数线",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "promotionAdmissions": 70,
+    "examAdmissions": 60,
+    "reportedAdmissions": 60,
+    "specialPlanAdmissions": 0,
+    "interviewListCount": 85,
+    "reportedInterviewees": 85,
+    "reportedInterviewRatio": 1.4167,
+    "cutoff": 315,
+    "minimum": 321,
+    "maximum": 398,
+    "average": 351.45,
+    "median": 350.5,
+    "q1": 339.5,
+    "q3": 362.0,
+    "scoreDistribution": [
+      {
+        "min": 310,
+        "max": 319,
+        "count": 0
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "count": 6
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "count": 9
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 13
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 16
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 8
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 3
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 2
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 3
+      }
+    ],
+    "scope": "2023年官方复试名单与最终拟录取名单按专业核对考生编号末五位（组内唯一），排除士兵专项，复试人数为名单人数，未确认实际到场；统考人数含同一专业统一招生联合培养专项。实考人数非报名人数。",
+    "examAttendees": 275,
+    "attendanceScope": "一志愿",
+    "examAttendanceRatio": 4.5833,
+    "examAdmissionsTotal": 60,
+    "interviewEligible": 85,
+    "interviewRatio": 1.4167,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 56,
+        "maximum": 78,
+        "average": 64.92,
+        "median": 64.5,
+        "q1": 62.0,
+        "q3": 67.25
+      },
+      "foreignLanguage": {
+        "minimum": 55,
+        "maximum": 86,
+        "average": 72.02,
+        "median": 73.0,
+        "q1": 66.75,
+        "q3": 78.25
+      },
+      "subject1": {
+        "minimum": 85,
+        "maximum": 139,
+        "average": 109.63,
+        "median": 110.5,
+        "q1": 99.0,
+        "q3": 118.5
+      },
+      "subject2": {
+        "minimum": 87,
+        "maximum": 122,
+        "average": 104.88,
+        "median": 104.5,
+        "q1": 99.75,
+        "q3": 111.0
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 315,
+      "maximum": 398,
+      "average": 344.69,
+      "median": 342.0,
+      "q1": 327.0,
+      "q3": 356.0
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 310,
+        "max": 319,
+        "interviewees": 4,
+        "admitted": 0
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "interviewees": 20,
+        "admitted": 6
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 12,
+        "admitted": 9
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 16,
+        "admitted": 13
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 16,
+        "admitted": 16
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 9,
+        "admitted": 8
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 3,
+        "admitted": 3
+      }
+    ]
+  },
+  {
+    "projectId": "seu-h-suzhou-085404",
+    "year": 2023,
+    "sources": [
+      {
+        "title": "2023年全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/ad/8f/9588e2bb4802afa6c32edbce0ec8/b1f3faf8-4c08-4944-9e13-675f9fca2c63.pdf",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2023 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年硕士生复试名单",
+        "url": "https://yzb.seu.edu.cn/2023/0325/c6689a439629/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2023年硕士生复试名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年复试录取工作细则",
+        "url": "https://yzb.seu.edu.cn/2023/0325/c6689a439627/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "retest",
+        "shortTitle": "2023 年复试细则",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年硕士研究生考试录取情况汇总",
+        "url": "https://xxgk.seu.edu.cn/2023/0726/c12569a455894/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "history",
+        "shortTitle": "2023 年考试录取统计",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年各院系所复试分数线",
+        "url": "https://yzb.seu.edu.cn/2023/0726/c6674a455893/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2023年各院系所复试分数线",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "promotionAdmissions": 5,
+    "examAdmissions": 30,
+    "reportedAdmissions": 30,
+    "specialPlanAdmissions": 0,
+    "interviewListCount": 35,
+    "reportedInterviewees": 35,
+    "reportedInterviewRatio": 1.1667,
+    "cutoff": 300,
+    "minimum": 300,
+    "maximum": 370,
+    "average": 328.87,
+    "median": 324.5,
+    "q1": 311.25,
+    "q3": 345.75,
+    "scoreDistribution": [
+      {
+        "min": 300,
+        "max": 309,
+        "count": 7
+      },
+      {
+        "min": 310,
+        "max": 319,
+        "count": 5
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "count": 6
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "count": 2
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 4
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 3
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 2
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 1
+      }
+    ],
+    "scope": "2023年官方复试名单与最终拟录取名单按专业核对考生编号末五位（组内唯一），排除士兵专项，复试人数为名单人数，未确认实际到场；统考人数含同一专业统一招生联合培养专项。实考人数非报名人数。 苏州当年按085400下的方向招生，匹配到后续相应专硕项目。",
+    "examAttendees": 164,
+    "attendanceScope": "一志愿",
+    "examAttendanceRatio": 5.4667,
+    "examAdmissionsTotal": 30,
+    "interviewEligible": 35,
+    "interviewRatio": 1.1667,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 58,
+        "maximum": 71,
+        "average": 63.5,
+        "median": 63.0,
+        "q1": 60.0,
+        "q3": 66.5
+      },
+      "foreignLanguage": {
+        "minimum": 61,
+        "maximum": 83,
+        "average": 72.3,
+        "median": 72.0,
+        "q1": 68.0,
+        "q3": 77.0
+      },
+      "subject1": {
+        "minimum": 72,
+        "maximum": 121,
+        "average": 94.73,
+        "median": 93.5,
+        "q1": 86.5,
+        "q3": 102.0
+      },
+      "subject2": {
+        "minimum": 74,
+        "maximum": 119,
+        "average": 98.33,
+        "median": 99.5,
+        "q1": 90.0,
+        "q3": 107.0
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 300,
+      "maximum": 370,
+      "average": 327.46,
+      "median": 324.0,
+      "q1": 310.0,
+      "q3": 343.5
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 300,
+        "max": 309,
+        "interviewees": 9,
+        "admitted": 7
+      },
+      {
+        "min": 310,
+        "max": 319,
+        "interviewees": 6,
+        "admitted": 5
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "interviewees": 6,
+        "admitted": 6
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 4,
+        "admitted": 2
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 4,
+        "admitted": 4
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ]
+  },
+  {
+    "projectId": "seu-h-suzhou-085410",
+    "year": 2023,
+    "sources": [
+      {
+        "title": "2023年全国统考拟录取名单",
+        "url": "https://xxgk.seu.edu.cn/_upload/article/files/ad/8f/9588e2bb4802afa6c32edbce0ec8/b1f3faf8-4c08-4944-9e13-675f9fca2c63.pdf",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2023 年拟录取名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年硕士生复试名单",
+        "url": "https://yzb.seu.edu.cn/2023/0325/c6689a439629/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2023年硕士生复试名单",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年复试录取工作细则",
+        "url": "https://yzb.seu.edu.cn/2023/0325/c6689a439627/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "retest",
+        "shortTitle": "2023 年复试细则",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年硕士研究生考试录取情况汇总",
+        "url": "https://xxgk.seu.edu.cn/2023/0726/c12569a455894/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "history",
+        "shortTitle": "2023 年考试录取统计",
+        "sourceType": "official"
+      },
+      {
+        "title": "2023年各院系所复试分数线",
+        "url": "https://yzb.seu.edu.cn/2023/0726/c6674a455893/page.htm",
+        "year": 2023,
+        "publisher": "东南大学",
+        "kind": "scores",
+        "shortTitle": "2023年各院系所复试分数线",
+        "sourceType": "official"
+      }
+    ],
+    "cutoffSource": "official",
+    "officialMajorCode": "085400",
+    "promotionAdmissions": 5,
+    "examAdmissions": 40,
+    "reportedAdmissions": 40,
+    "specialPlanAdmissions": 0,
+    "interviewListCount": 48,
+    "reportedInterviewees": 48,
+    "reportedInterviewRatio": 1.2,
+    "cutoff": 300,
+    "minimum": 304,
+    "maximum": 386,
+    "average": 340.88,
+    "median": 337.5,
+    "q1": 321.75,
+    "q3": 356.5,
+    "scoreDistribution": [
+      {
+        "min": 300,
+        "max": 309,
+        "count": 3
+      },
+      {
+        "min": 310,
+        "max": 319,
+        "count": 6
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "count": 5
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "count": 8
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 4
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 5
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 3
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 2
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 4
+      }
+    ],
+    "scope": "2023年官方复试名单与最终拟录取名单按专业核对考生编号末五位（组内唯一），排除士兵专项，复试人数为名单人数，未确认实际到场；统考人数含同一专业统一招生联合培养专项。实考人数非报名人数。 苏州当年按085400下的方向招生，匹配到后续相应专硕项目。",
+    "examAttendees": 232,
+    "attendanceScope": "一志愿",
+    "examAttendanceRatio": 5.8,
+    "examAdmissionsTotal": 40,
+    "interviewEligible": 48,
+    "interviewRatio": 1.2,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 55,
+        "maximum": 76,
+        "average": 64.2,
+        "median": 65.0,
+        "q1": 62.5,
+        "q3": 67.25
+      },
+      "foreignLanguage": {
+        "minimum": 60,
+        "maximum": 85,
+        "average": 72.0,
+        "median": 72.5,
+        "q1": 67.0,
+        "q3": 77.0
+      },
+      "subject1": {
+        "minimum": 81,
+        "maximum": 137,
+        "average": 105.08,
+        "median": 107.0,
+        "q1": 91.0,
+        "q3": 115.0
+      },
+      "subject2": {
+        "minimum": 78,
+        "maximum": 124,
+        "average": 99.6,
+        "median": 98.5,
+        "q1": 90.75,
+        "q3": 110.25
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 301,
+      "maximum": 386,
+      "average": 335.92,
+      "median": 333.0,
+      "q1": 313.75,
+      "q3": 353.25
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 300,
+        "max": 309,
+        "interviewees": 9,
+        "admitted": 3
+      },
+      {
+        "min": 310,
+        "max": 319,
+        "interviewees": 7,
+        "admitted": 6
+      },
+      {
+        "min": 320,
+        "max": 329,
+        "interviewees": 5,
+        "admitted": 5
+      },
+      {
+        "min": 330,
+        "max": 339,
+        "interviewees": 9,
+        "admitted": 8
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 4,
+        "admitted": 4
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 5,
+        "admitted": 5
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 4,
+        "admitted": 4
       }
     ]
   }

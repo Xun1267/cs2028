@@ -12722,7 +12722,11 @@
           "examPlanned": 15
         }
       ],
-      "status": "current"
+      "status": "current",
+      "historicalPredecessorIds": [
+        "seu-h-009-085400-2023-catalog"
+      ],
+      "historyTransition": "2024 年起，原 085400 电子信息大类中的计算机技术和人工智能分设专业代码。"
     },
     {
       "id": "seu-h-009-085410",
@@ -12893,7 +12897,11 @@
           "examPlanned": 8
         }
       ],
-      "status": "current"
+      "status": "current",
+      "historicalPredecessorIds": [
+        "seu-h-009-085400-2023-catalog"
+      ],
+      "historyTransition": "2024 年起，原 085400 电子信息大类中的计算机技术和人工智能分设专业代码。"
     },
     {
       "id": "seu-h-009-085400-2023-catalog",
@@ -12923,10 +12931,123 @@
             "实际初试人数": 238
           },
           "status": "historical",
-          "subjects": []
+          "subjects": [],
+          "officialMajorCode": "085400"
+        },
+        {
+          "year": 2022,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2022年各院系复试分数线",
+              "url": "https://yzb.seu.edu.cn/2022/0713/c6674a414000/page.htm",
+              "year": 2022,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2022年各院系复试分数线",
+              "sourceType": "official"
+            },
+            {
+              "title": "2022年考试录取情况汇总（原网页）",
+              "url": "https://yzb.seu.edu.cn/2022/0815/c6675a416728/page.htm",
+              "year": 2022,
+              "publisher": "东南大学",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计",
+              "sourceType": "official"
+            },
+            {
+              "title": "2022年考试录取统计转载",
+              "url": "https://jixun.iqihang.com/zixun/gonglue/202240192.html",
+              "year": 2022,
+              "publisher": "启航考研",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计 · 启航考研"
+            },
+            {
+              "title": "2022年考试录取统计转载",
+              "url": "https://www.233.com/kaoyan/blb/202210/12083911871835.html",
+              "year": 2022,
+              "publisher": "233网校",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计 · 233网校"
+            },
+            {
+              "title": "2022届复试及一志愿拟录取分段统计",
+              "url": "https://m.gaodun.com/kaoyan/1368897.html",
+              "year": 2022,
+              "publisher": "高顿教育",
+              "kind": "scores",
+              "shortTitle": "2022届复试及一志愿拟录取分段统计"
+            },
+            {
+              "title": "2022年硕士研究生全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+              "year": 2022,
+              "publisher": "东南大学",
+              "pages": [
+                28,
+                29
+              ],
+              "kind": "history",
+              "shortTitle": "2022 年拟录取名单",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "电子信息（不区分方向）",
+          "professionalSubject": {
+            "code": "935",
+            "name": "计算机专业基础"
+          }
+        },
+        {
+          "year": 2021,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2021年各院系复试分数线",
+              "url": "https://yzb.seu.edu.cn/2021/0630/c6674a376223/page.htm",
+              "year": 2021,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2021年各院系复试分数线",
+              "sourceType": "official"
+            },
+            {
+              "title": "2021年考试录取情况汇总",
+              "url": "https://yzb.seu.edu.cn/2021/0630/c6675a376225/page.htm",
+              "year": 2021,
+              "publisher": "东南大学",
+              "kind": "history",
+              "shortTitle": "2021 年考试录取统计",
+              "sourceType": "official"
+            },
+            {
+              "title": "2021年硕士研究生全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+              "year": 2021,
+              "publisher": "东南大学",
+              "pages": [
+                14
+              ],
+              "kind": "history",
+              "shortTitle": "2021 年拟录取名单",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "计算机技术"
         }
       ],
-      "status": "historical"
+      "status": "historical",
+      "historyScope": "计算机科学与工程学院 085400 电子信息大类",
+      "historicalSuccessorIds": [
+        "seu-h-009-085404",
+        "seu-h-009-085410"
+      ]
     },
     {
       "id": "seu-h-soft-085405",
@@ -13044,7 +13165,8 @@
             "笔试": "现场笔试 2 小时，满分 150 分，90 分合格",
             "复试合格要求": "笔试、面试均须达到 90 分"
           },
-          "status": "historical"
+          "status": "historical",
+          "historicalDirection": "软件工程"
         },
         {
           "year": 2025,
@@ -13090,7 +13212,8 @@
           "details": {
             "达到复试资格人数": 56
           },
-          "status": "historical"
+          "status": "historical",
+          "historicalDirection": "软件工程"
         },
         {
           "year": 2024,
@@ -13109,10 +13232,159 @@
             "达到复试资格人数": 68
           },
           "status": "historical",
-          "subjects": []
+          "subjects": [],
+          "historicalDirection": "软件工程"
+        },
+        {
+          "year": 2023,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2023年全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/ad/8f/9588e2bb4802afa6c32edbce0ec8/b1f3faf8-4c08-4944-9e13-675f9fca2c63.pdf",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2023 年拟录取名单",
+              "sourceType": "official"
+            },
+            {
+              "title": "2023年硕士生复试名单",
+              "url": "https://yzb.seu.edu.cn/2023/0329/c6689a440011/page.htm",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2023年硕士生复试名单",
+              "sourceType": "official"
+            },
+            {
+              "title": "2023年复试录取工作细则",
+              "url": "https://yzb.seu.edu.cn/2023/0329/c6689a440012/pagem.htm",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "retest",
+              "shortTitle": "2023 年复试细则",
+              "sourceType": "official"
+            },
+            {
+              "title": "2023年硕士研究生考试录取情况汇总",
+              "url": "https://xxgk.seu.edu.cn/2023/0726/c12569a455894/page.htm",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "history",
+              "shortTitle": "2023 年考试录取统计",
+              "sourceType": "official"
+            },
+            {
+              "title": "2023年各院系所复试分数线",
+              "url": "https://yzb.seu.edu.cn/2023/0726/c6674a455893/page.htm",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2023年各院系所复试分数线",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "软件工程"
+        },
+        {
+          "year": 2022,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2022年各院系复试分数线",
+              "url": "https://yzb.seu.edu.cn/2022/0713/c6674a414000/page.htm",
+              "year": 2022,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2022年各院系复试分数线",
+              "sourceType": "official"
+            },
+            {
+              "title": "2022年考试录取情况汇总（原网页）",
+              "url": "https://yzb.seu.edu.cn/2022/0815/c6675a416728/page.htm",
+              "year": 2022,
+              "publisher": "东南大学",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计",
+              "sourceType": "official"
+            },
+            {
+              "title": "2022年考试录取统计转载",
+              "url": "https://jixun.iqihang.com/zixun/gonglue/202240192.html",
+              "year": 2022,
+              "publisher": "启航考研",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计 · 启航考研"
+            },
+            {
+              "title": "2022年考试录取统计转载",
+              "url": "https://www.233.com/kaoyan/blb/202210/12083911871835.html",
+              "year": 2022,
+              "publisher": "233网校",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计 · 233网校"
+            },
+            {
+              "title": "2022年硕士研究生全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+              "year": 2022,
+              "publisher": "东南大学",
+              "pages": [
+                89,
+                90,
+                91
+              ],
+              "kind": "history",
+              "shortTitle": "2022 年拟录取名单",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "软件工程",
+          "officialDirectionCode": "01"
+        },
+        {
+          "year": 2021,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2021年各院系复试分数线",
+              "url": "https://yzb.seu.edu.cn/2021/0630/c6674a376223/page.htm",
+              "year": 2021,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2021年各院系复试分数线",
+              "sourceType": "official"
+            },
+            {
+              "title": "2021年硕士研究生全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+              "year": 2021,
+              "publisher": "东南大学",
+              "pages": [
+                43,
+                44
+              ],
+              "kind": "history",
+              "shortTitle": "2021 年拟录取名单",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "软件工程",
+          "officialDirectionCode": "01",
+          "groupIds": [
+            "seu-h-401-085400-total"
+          ]
         }
       ],
-      "status": "current"
+      "status": "current",
+      "collegeCode": "401"
     },
     {
       "id": "seu-h-085-085404",
@@ -17220,7 +17492,8 @@
           "details": {
             "达到复试资格人数": 28
           },
-          "status": "historical"
+          "status": "historical",
+          "historicalDirection": "计算机技术"
         },
         {
           "year": 2025,
@@ -17235,7 +17508,8 @@
             }
           ],
           "status": "historical",
-          "subjects": []
+          "subjects": [],
+          "historicalDirection": "计算机技术"
         },
         {
           "year": 2024,
@@ -17254,10 +17528,170 @@
             "达到复试资格人数": 61
           },
           "status": "historical",
-          "subjects": []
+          "subjects": [],
+          "officialMajorCode": "085400",
+          "historicalDirection": "计算机技术"
+        },
+        {
+          "year": 2023,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2023年全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/ad/8f/9588e2bb4802afa6c32edbce0ec8/b1f3faf8-4c08-4944-9e13-675f9fca2c63.pdf",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2023 年拟录取名单",
+              "sourceType": "official"
+            },
+            {
+              "title": "2023年硕士生复试名单",
+              "url": "https://yzb.seu.edu.cn/2023/0325/c6689a439629/page.htm",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2023年硕士生复试名单",
+              "sourceType": "official"
+            },
+            {
+              "title": "2023年复试录取工作细则",
+              "url": "https://yzb.seu.edu.cn/2023/0325/c6689a439627/page.htm",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "retest",
+              "shortTitle": "2023 年复试细则",
+              "sourceType": "official"
+            },
+            {
+              "title": "2023年硕士研究生考试录取情况汇总",
+              "url": "https://xxgk.seu.edu.cn/2023/0726/c12569a455894/page.htm",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "history",
+              "shortTitle": "2023 年考试录取统计",
+              "sourceType": "official"
+            },
+            {
+              "title": "2023年各院系所复试分数线",
+              "url": "https://yzb.seu.edu.cn/2023/0726/c6674a455893/page.htm",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2023年各院系所复试分数线",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "计算机技术"
+        },
+        {
+          "year": 2022,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2022年各院系复试分数线",
+              "url": "https://yzb.seu.edu.cn/2022/0713/c6674a414000/page.htm",
+              "year": 2022,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2022年各院系复试分数线",
+              "sourceType": "official"
+            },
+            {
+              "title": "2022年考试录取情况汇总（原网页）",
+              "url": "https://yzb.seu.edu.cn/2022/0815/c6675a416728/page.htm",
+              "year": 2022,
+              "publisher": "东南大学",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计",
+              "sourceType": "official"
+            },
+            {
+              "title": "2022年考试录取统计转载",
+              "url": "https://jixun.iqihang.com/zixun/gonglue/202240192.html",
+              "year": 2022,
+              "publisher": "启航考研",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计 · 启航考研"
+            },
+            {
+              "title": "2022年考试录取统计转载",
+              "url": "https://www.233.com/kaoyan/blb/202210/12083911871835.html",
+              "year": 2022,
+              "publisher": "233网校",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计 · 233网校"
+            },
+            {
+              "title": "2022届复试及一志愿拟录取分段统计",
+              "url": "https://m.gaodun.com/kaoyan/1368897.html",
+              "year": 2022,
+              "publisher": "高顿教育",
+              "kind": "scores",
+              "shortTitle": "2022届复试及一志愿拟录取分段统计"
+            },
+            {
+              "title": "2022年硕士研究生全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+              "year": 2022,
+              "publisher": "东南大学",
+              "pages": [
+                58,
+                59
+              ],
+              "kind": "history",
+              "shortTitle": "2022 年拟录取名单",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "计算机技术",
+          "officialDirectionCode": "01",
+          "professionalSubject": {
+            "code": "935",
+            "name": "计算机专业基础"
+          }
+        },
+        {
+          "year": 2021,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2021年各院系复试分数线",
+              "url": "https://yzb.seu.edu.cn/2021/0630/c6674a376223/page.htm",
+              "year": 2021,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2021年各院系复试分数线",
+              "sourceType": "official"
+            },
+            {
+              "title": "2021年硕士研究生全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+              "year": 2021,
+              "publisher": "东南大学",
+              "pages": [
+                35,
+                36
+              ],
+              "kind": "history",
+              "shortTitle": "2021 年拟录取名单",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "计算机技术",
+          "groupIds": [
+            "seu-h-084-085400-total"
+          ]
         }
       ],
-      "status": "current"
+      "status": "current",
+      "collegeCode": "084"
     },
     {
       "id": "seu-h-suzhou-085410",
@@ -17341,7 +17775,8 @@
           "details": {
             "达到复试资格人数": 36
           },
-          "status": "historical"
+          "status": "historical",
+          "historicalDirection": "人工智能"
         },
         {
           "year": 2025,
@@ -17356,7 +17791,8 @@
             }
           ],
           "status": "historical",
-          "subjects": []
+          "subjects": [],
+          "historicalDirection": "人工智能"
         },
         {
           "year": 2024,
@@ -17375,10 +17811,169 @@
             "达到复试资格人数": 45
           },
           "status": "historical",
-          "subjects": []
+          "subjects": [],
+          "officialMajorCode": "085400",
+          "historicalDirection": "人工智能"
+        },
+        {
+          "year": 2023,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2023年全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/ad/8f/9588e2bb4802afa6c32edbce0ec8/b1f3faf8-4c08-4944-9e13-675f9fca2c63.pdf",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2023 年拟录取名单",
+              "sourceType": "official"
+            },
+            {
+              "title": "2023年硕士生复试名单",
+              "url": "https://yzb.seu.edu.cn/2023/0325/c6689a439629/page.htm",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2023年硕士生复试名单",
+              "sourceType": "official"
+            },
+            {
+              "title": "2023年复试录取工作细则",
+              "url": "https://yzb.seu.edu.cn/2023/0325/c6689a439627/page.htm",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "retest",
+              "shortTitle": "2023 年复试细则",
+              "sourceType": "official"
+            },
+            {
+              "title": "2023年硕士研究生考试录取情况汇总",
+              "url": "https://xxgk.seu.edu.cn/2023/0726/c12569a455894/page.htm",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "history",
+              "shortTitle": "2023 年考试录取统计",
+              "sourceType": "official"
+            },
+            {
+              "title": "2023年各院系所复试分数线",
+              "url": "https://yzb.seu.edu.cn/2023/0726/c6674a455893/page.htm",
+              "year": 2023,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2023年各院系所复试分数线",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "人工智能"
+        },
+        {
+          "year": 2022,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2022年各院系复试分数线",
+              "url": "https://yzb.seu.edu.cn/2022/0713/c6674a414000/page.htm",
+              "year": 2022,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2022年各院系复试分数线",
+              "sourceType": "official"
+            },
+            {
+              "title": "2022年考试录取情况汇总（原网页）",
+              "url": "https://yzb.seu.edu.cn/2022/0815/c6675a416728/page.htm",
+              "year": 2022,
+              "publisher": "东南大学",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计",
+              "sourceType": "official"
+            },
+            {
+              "title": "2022年考试录取统计转载",
+              "url": "https://jixun.iqihang.com/zixun/gonglue/202240192.html",
+              "year": 2022,
+              "publisher": "启航考研",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计 · 启航考研"
+            },
+            {
+              "title": "2022年考试录取统计转载",
+              "url": "https://www.233.com/kaoyan/blb/202210/12083911871835.html",
+              "year": 2022,
+              "publisher": "233网校",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计 · 233网校"
+            },
+            {
+              "title": "2022届复试及一志愿拟录取分段统计",
+              "url": "https://m.gaodun.com/kaoyan/1368897.html",
+              "year": 2022,
+              "publisher": "高顿教育",
+              "kind": "scores",
+              "shortTitle": "2022届复试及一志愿拟录取分段统计"
+            },
+            {
+              "title": "2022年硕士研究生全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+              "year": 2022,
+              "publisher": "东南大学",
+              "pages": [
+                59,
+                60
+              ],
+              "kind": "history",
+              "shortTitle": "2022 年拟录取名单",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "人工智能",
+          "officialDirectionCode": "02",
+          "professionalSubject": {
+            "code": "935",
+            "name": "计算机专业基础"
+          }
+        },
+        {
+          "year": 2021,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2021年各院系复试分数线",
+              "url": "https://yzb.seu.edu.cn/2021/0630/c6674a376223/page.htm",
+              "year": 2021,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2021年各院系复试分数线",
+              "sourceType": "official"
+            },
+            {
+              "title": "2021年硕士研究生全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+              "year": 2021,
+              "publisher": "东南大学",
+              "pages": [
+                36
+              ],
+              "kind": "history",
+              "shortTitle": "2021 年拟录取名单",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "人工智能",
+          "groupIds": [
+            "seu-h-084-085400-total"
+          ]
         }
       ],
-      "status": "current"
+      "status": "current",
+      "collegeCode": "084"
     },
     {
       "id": "ustc-h-bio-085400-cs",
@@ -31489,6 +32084,214 @@
         }
       ],
       "status": "pending"
+    },
+    {
+      "id": "seu-h-401-085400-ai-applications",
+      "schoolId": "东南大学",
+      "majorId": "085400",
+      "majorLabel": "电子信息",
+      "college": "软件学院",
+      "collegeCode": "401",
+      "direction": "人工智能应用",
+      "degree": "专业学位",
+      "studyMode": "全日制",
+      "status": "historical",
+      "years": [
+        {
+          "year": 2022,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2022年各院系复试分数线",
+              "url": "https://yzb.seu.edu.cn/2022/0713/c6674a414000/page.htm",
+              "year": 2022,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2022年各院系复试分数线",
+              "sourceType": "official"
+            },
+            {
+              "title": "2022年考试录取情况汇总（原网页）",
+              "url": "https://yzb.seu.edu.cn/2022/0815/c6675a416728/page.htm",
+              "year": 2022,
+              "publisher": "东南大学",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计",
+              "sourceType": "official"
+            },
+            {
+              "title": "2022年考试录取统计转载",
+              "url": "https://jixun.iqihang.com/zixun/gonglue/202240192.html",
+              "year": 2022,
+              "publisher": "启航考研",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计 · 启航考研"
+            },
+            {
+              "title": "2022年考试录取统计转载",
+              "url": "https://www.233.com/kaoyan/blb/202210/12083911871835.html",
+              "year": 2022,
+              "publisher": "233网校",
+              "kind": "history",
+              "shortTitle": "2022 年考试录取统计 · 233网校"
+            },
+            {
+              "title": "2022年硕士研究生全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+              "year": 2022,
+              "publisher": "东南大学",
+              "pages": [
+                91,
+                92,
+                93,
+                94,
+                95
+              ],
+              "kind": "history",
+              "shortTitle": "2022 年拟录取名单",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "人工智能应用",
+          "officialDirectionCode": "02"
+        },
+        {
+          "year": 2021,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2021年各院系复试分数线",
+              "url": "https://yzb.seu.edu.cn/2021/0630/c6674a376223/page.htm",
+              "year": 2021,
+              "publisher": "东南大学",
+              "kind": "scores",
+              "shortTitle": "2021年各院系复试分数线",
+              "sourceType": "official"
+            },
+            {
+              "title": "2021年硕士研究生全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+              "year": 2021,
+              "publisher": "东南大学",
+              "pages": [
+                44,
+                45,
+                46
+              ],
+              "kind": "history",
+              "shortTitle": "2021 年拟录取名单",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "人工智能应用",
+          "officialDirectionCode": "02",
+          "groupIds": [
+            "seu-h-401-085400-total"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seu-h-084-085400-health-data",
+      "schoolId": "东南大学",
+      "majorId": "085400",
+      "majorLabel": "电子信息",
+      "college": "苏州联合研究生院（蒙纳士大学苏州联合研究院）",
+      "collegeCode": "084",
+      "direction": "健康数据科学",
+      "degree": "专业学位",
+      "studyMode": "全日制",
+      "status": "historical",
+      "years": [
+        {
+          "year": 2022,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2022年硕士研究生全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+              "year": 2022,
+              "publisher": "东南大学",
+              "pages": [
+                60,
+                61,
+                62
+              ],
+              "kind": "history",
+              "shortTitle": "2022 年拟录取名单",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "健康数据科学"
+        },
+        {
+          "year": 2021,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2021年硕士研究生全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+              "year": 2021,
+              "publisher": "东南大学",
+              "pages": [
+                36,
+                37
+              ],
+              "kind": "history",
+              "shortTitle": "2021 年拟录取名单",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "健康数据科学",
+          "groupIds": [
+            "seu-h-084-085400-total"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seu-h-084-085400-bionano",
+      "schoolId": "东南大学",
+      "majorId": "085400",
+      "majorLabel": "电子信息",
+      "college": "苏州联合研究生院（蒙纳士大学苏州联合研究院）",
+      "collegeCode": "084",
+      "direction": "生物纳米技术",
+      "degree": "专业学位",
+      "studyMode": "全日制",
+      "status": "historical",
+      "years": [
+        {
+          "year": 2022,
+          "status": "historical",
+          "subjects": [],
+          "sources": [
+            {
+              "title": "2022年硕士研究生全国统考拟录取名单",
+              "url": "https://xxgk.seu.edu.cn/_upload/article/files/30/6a/e0f3141c443fa9f6a9b28a05cbd7/c058c5b2-8474-4c68-9601-83cf67f2712b.pdf",
+              "year": 2022,
+              "publisher": "东南大学",
+              "pages": [
+                62,
+                63
+              ],
+              "kind": "history",
+              "shortTitle": "2022 年拟录取名单",
+              "sourceType": "official"
+            }
+          ],
+          "officialMajorCode": "085400",
+          "historicalDirection": "生物纳米技术"
+        }
+      ]
     }
   ],
   "sharedPlans": [
@@ -34933,6 +35736,96 @@
           "sourceType": "third_party"
         }
       ]
+    },
+    {
+      "id": "seu-h-401-085400-total",
+      "year": 2021,
+      "projectIds": [
+        "seu-h-soft-085405",
+        "seu-h-401-085400-ai-applications"
+      ],
+      "scope": "软件学院 085400 电子信息全日制各方向合计",
+      "sources": [
+        {
+          "title": "2021年考试录取情况汇总",
+          "url": "https://yzb.seu.edu.cn/2021/0630/c6675a376225/page.htm",
+          "year": 2021,
+          "publisher": "东南大学",
+          "kind": "history",
+          "shortTitle": "2021 年考试录取统计",
+          "sourceType": "official"
+        },
+        {
+          "title": "2021年硕士研究生全国统考拟录取名单",
+          "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+          "year": 2021,
+          "publisher": "东南大学",
+          "pages": [
+            43,
+            44,
+            45,
+            46
+          ],
+          "kind": "history",
+          "shortTitle": "2021 年拟录取名单",
+          "sourceType": "official"
+        }
+      ],
+      "admission": {
+        "promotionAdmissions": 35,
+        "reportedAdmissions": 274,
+        "totalAdmissions": 309,
+        "finalListAdmissions": 274,
+        "examAttendees": 496,
+        "attendanceScope": "一志愿",
+        "examAdmissionsTotal": 274,
+        "metricScope": "含调剂"
+      }
+    },
+    {
+      "id": "seu-h-084-085400-total",
+      "year": 2021,
+      "projectIds": [
+        "seu-h-suzhou-085404",
+        "seu-h-suzhou-085410",
+        "seu-h-084-085400-health-data"
+      ],
+      "scope": "苏州联合研究生院 085400 电子信息全日制各方向合计",
+      "sources": [
+        {
+          "title": "2021年考试录取情况汇总",
+          "url": "https://yzb.seu.edu.cn/2021/0630/c6675a376225/page.htm",
+          "year": 2021,
+          "publisher": "东南大学",
+          "kind": "history",
+          "shortTitle": "2021 年考试录取统计",
+          "sourceType": "official"
+        },
+        {
+          "title": "2021年硕士研究生全国统考拟录取名单",
+          "url": "https://xxgk.seu.edu.cn/_upload/article/files/9c/bf/80baae91448899e55b183489e8c0/4a7b7b5d-7be5-45ea-8155-7933414bda99.pdf",
+          "year": 2021,
+          "publisher": "东南大学",
+          "pages": [
+            35,
+            36,
+            37
+          ],
+          "kind": "history",
+          "shortTitle": "2021 年拟录取名单",
+          "sourceType": "official"
+        }
+      ],
+      "admission": {
+        "promotionAdmissions": 0,
+        "reportedAdmissions": 187,
+        "totalAdmissions": 187,
+        "finalListAdmissions": 187,
+        "examAttendees": 351,
+        "attendanceScope": "一志愿",
+        "examAdmissionsTotal": 187,
+        "metricScope": "含调剂"
+      }
     }
   ]
 }

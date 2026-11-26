@@ -4,6 +4,13 @@ export const planFields = [
   ["planned", "计划招生人数"],
   ["promotionPlanned", "计划推免人数"],
   ["examPlanned", "计划统考人数"],
+  ["regularExamPlanned", "普通统考计划"],
+  ["specialPlanPlanned", "专项招生计划"],
+];
+export const admissionBreakdownFields = [
+  ["regularExamAdmissions", "普通统考录取人数"],
+  ["specialPlanAdmissions", "专项录取人数"],
+  ["transferAdmissions", "调剂录取人数"],
 ];
 export const scaleFields = [
   ...planFields,
@@ -61,27 +68,60 @@ export function numbers(record) {
   const { annual = record, admission = {} } = record;
   const details = annual.details || {};
   const scope = admission.scope || "";
+  const specialPlanPlanned = numeric(
+    annual.specialPlanPlanned,
+    details["专项计划"],
+  );
+  const splitPlan =
+    Number.isFinite(annual.examPlanned) && Number.isFinite(specialPlanPlanned);
+  const examAdmissions = numeric(
+    admission.examAdmissionsTotal,
+    admission.examAdmissions,
+    admission.reportedAdmissionsScope === "examAdmissions"
+      ? admission.reportedAdmissions
+      : null,
+  );
+  const hasBreakdown =
+    (Number.isFinite(admission.specialPlanAdmissions) &&
+      admission.specialPlanAdmissions > 0) ||
+    (Number.isFinite(admission.transferAdmissions) &&
+      admission.transferAdmissions > 0);
   const uncertainCutoff =
+    admission.cutoffSource !== "official" &&
     /可能为名单最低分/.test(scope) &&
     !admission.sources?.some(
       (s) => s.sourceType === "official" && /复试.*(?:线|细则)/.test(s.title),
     );
-  const scopeMatched = admission.reportedAdmissionsScope === "examAdmissions";
   return {
     planned: numeric(annual.planned),
     promotionPlanned: numeric(annual.promotionPlanned),
     examPlanned: numeric(
-      annual.examPlanned,
+      splitPlan ? undefined : annual.examPlanned,
       details["目录公布统考计划"],
       details["目录统考计划"],
       details["目录考试计划"],
       details["包含目录口径的统考计划"],
     ),
+    regularExamPlanned: numeric(
+      annual.regularExamPlanned,
+      splitPlan ? annual.examPlanned : undefined,
+    ),
+    specialPlanPlanned,
     promotionAdmissions: numeric(admission.promotionAdmissions),
     // A list sample and forecast do not establish the overall admission count.
-    examAdmissions: numeric(
-      admission.examAdmissions,
-      scopeMatched ? admission.reportedAdmissions : null,
+    examAdmissions,
+    regularExamAdmissions:
+      Number.isFinite(admission.examAdmissionsTotal) &&
+      examAdmissions !== admission.examAdmissions
+        ? numeric(admission.examAdmissions)
+        : undefined,
+    specialPlanAdmissions: numeric(
+      admission.specialPlanAdmissions,
+      details["专项录取"],
+    ),
+    transferAdmissions: numeric(
+      admission.transferAdmissions,
+      details["调剂录取"],
     ),
     applicants: numeric(admission.applicants),
     examAttendees: numeric(admission.examAttendees, details["实际初试人数"]),
@@ -101,15 +141,11 @@ export function numbers(record) {
     median: numeric(admission.median),
     q1: numeric(admission.q1),
     q3: numeric(admission.q3),
-    admissionScope:
-      admission.metricScope ||
-      (Number.isFinite(admission.examAdmissions) ? separateScope(scope) : ""),
-    attendanceScope: admission.attendanceScope || "",
-    examPlanScope:
-      Number.isFinite(annual.examPlanned) &&
-      Number.isFinite(details["专项计划"])
-        ? "统考计划为普通计划口径"
-        : "",
+    admissionScope: hasBreakdown
+      ? ""
+      : admission.metricScope ||
+        (Number.isFinite(examAdmissions) ? separateScope(scope) : ""),
+    interviewRatioScope: admission.interviewRatioScope || "",
   };
 }
 
@@ -160,6 +196,16 @@ export function admitSeries(records) {
 
 export function scoreBins(admission = {}) {
   const normalized = new Map();
+  if (admission.scoreBandOutcomes?.length)
+    return admission.scoreBandOutcomes
+      .map(({ min, max, interviewees, admitted, openEnded }) => ({
+        low: min,
+        high: max,
+        interview: interviewees,
+        admitted,
+        openEnded,
+      }))
+      .sort((a, b) => a.low - b.low);
   const admittedBins = admission.scoreDistribution?.length
     ? admission.scoreDistribution
     : admission.publishedDistribution;
@@ -197,6 +243,9 @@ const subjectNames = {
   mathematics: "数学",
   math: "数学",
   business2: "专业课",
+  foreignLanguage: "外国语",
+  subject1: "业务课一",
+  subject2: "专业课",
   101: "思想政治理论",
   201: "英语一",
   204: "英语二",
@@ -209,6 +258,7 @@ export function subjectSeries(rows) {
   const series = new Map();
   for (const { record, year } of rows) {
     const subjects =
+      record.admission?.subjectScoreStats ||
       (record.annual || record).details?.["分科成绩"] ||
       record.admission?.subjectScores ||
       {};
@@ -217,17 +267,23 @@ export function subjectSeries(rows) {
         {
           politics: "101",
           english: "20",
+          foreignLanguage: "20",
           math: "30",
           mathematics: "30",
           business2: "",
+          subject1: "30",
+          subject2: "",
         }[key] ?? key;
-      const actual = record.annual?.subjects?.find((s) =>
-        code ? s.code.startsWith(code) : s.code === "408",
-      );
-      const label = actual?.name || subjectNames[key] || key;
+      const actual = code
+        ? record.annual?.subjects?.find((s) => s.code.startsWith(code))
+        : record.annual?.subjects?.[3] || record.annual?.professionalSubject;
+      const label = record.admission?.subjectScoreStats
+        ? subjectNames[key] || key
+        : actual?.name || subjectNames[key] || key;
       if (!series.has(label)) series.set(label, []);
       series.get(label).push({
         year,
+        subject: actual?.name,
         minimum: numeric(value.minimum, value.min),
         maximum: numeric(value.maximum, value.max),
         average: numeric(value.average, value.mean),
