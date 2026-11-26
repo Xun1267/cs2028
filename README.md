@@ -65,6 +65,8 @@ python3 -m http.server 8028 --bind 127.0.0.1 --directory public
 
 `admissions.json` 的人数使用 `applicants`、`interviewees`、`examAdmissions`、`promotionAdmissions`。普通统考报录比、复录比使用 `applicationRatio`、`interviewRatio`，例如 `3.5` 表示 3.5∶1。分数使用 `cutoff`、`minimum`、`maximum`、`average`、`median`，分段用 `scoreDistribution: [{"min": 340, "max": 349, "count": 8}]`。用 `interviewRequirements` 记录复试要求，用 `scope` 注明具体统计范围，并提供适用年度对应的 `sources`。以上分段数值仅演示格式。
 
+实考人数使用 `examAttendees`，进入复试名单的人数使用 `interviewEligible`，实际参加复试的人数使用 `interviewees`。实考人数与统考录取人数口径一致时，可以补充 `examAttendanceRatio`。录取分段填 `scoreDistribution`，复试名单分段填 `interviewScoreDistribution`，两者均使用 `min`、`max`、`count`。确认旧 `reportedAdmissions` 与实际统考录取口径一致时，优先填入 `examAdmissions`。同一年度的招生计划、录取结果及成绩资料可分别用来源的 `kind` 指定位置，取值为 `catalog`、`history`、`scores`、`retest` 或 `training`，链接文字可填 `shortTitle`。
+
 文章的 `sections` 可包含多个对象。每节使用 `title`，按需要填写 `paragraphs`（每段一个字符串）、`table`、`chart` 和 `sources`。表格和图表示例：
 
 ```json

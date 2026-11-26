@@ -12560,8 +12560,46 @@
       "collegeCode": "009",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "historical_only_2027_and_408_unverified",
+      "sourceStatus": "official_catalog",
       "years": [
+        {
+          "year": 2027,
+          "sources": [
+            {
+              "title": "东南大学2027年硕士研究生考试招生专业目录",
+              "shortTitle": "2027 年招生目录",
+              "url": "https://gsas.seu.edu.cn/ssmlcx2027/pages/index.html",
+              "year": 2027,
+              "publisher": "东南大学",
+              "sourceType": "official",
+              "kind": "catalog"
+            }
+          ],
+          "examCombo": "11408",
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语一"
+            },
+            {
+              "code": "301",
+              "name": "数学一"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "status": "current",
+          "updatedAt": "2026-11-26",
+          "details": {
+            "复试科目": "553 C++程序设计"
+          }
+        },
         {
           "year": 2026,
           "examCombo": "11408",
@@ -12623,7 +12661,10 @@
               50,
               70,
               70
-            ]
+            ],
+            "笔试": "现场笔试 2 小时，满分 150 分，90 分合格",
+            "复试合格要求": "笔试、面试均须达到 90 分",
+            "综合分公式": "初试按 150 分折算占 60%，复试占 40%"
           },
           "status": "historical"
         },
@@ -12642,10 +12683,12 @@
           ],
           "note": "一志愿考试人数/统考录取人数为公布口径；普通统考与专项未分离，不作为严格普通统考实考录取比。",
           "details": {
-            "实际初试人数": 91
+            "实际初试人数": 91,
+            "专项计划": 4
           },
           "status": "historical",
-          "subjects": []
+          "subjects": [],
+          "examPlanned": 13
         },
         {
           "year": 2024,
@@ -12671,13 +12714,15 @@
           "note": "一志愿考试人数/统考录取人数为公布口径；普通统考与专项未分离，不作为严格普通统考实考录取比。；当年业务课二为自命题；具体科目待补；码砖统考公示样本；人数为平台统计，专项或方向调整口径可能不同；复试人数为名单口径",
           "details": {
             "达到复试资格人数": 28,
-            "实际初试人数": 132
+            "实际初试人数": 132,
+            "专项计划": 7
           },
           "status": "historical",
-          "subjects": []
+          "subjects": [],
+          "examPlanned": 15
         }
       ],
-      "status": "historical"
+      "status": "current"
     },
     {
       "id": "seu-h-009-085410",
@@ -12687,8 +12732,46 @@
       "collegeCode": "009",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "historical_only_2027_and_408_unverified",
+      "sourceStatus": "official_catalog",
       "years": [
+        {
+          "year": 2027,
+          "sources": [
+            {
+              "title": "东南大学2027年硕士研究生考试招生专业目录",
+              "shortTitle": "2027 年招生目录",
+              "url": "https://gsas.seu.edu.cn/ssmlcx2027/pages/index.html",
+              "year": 2027,
+              "publisher": "东南大学",
+              "sourceType": "official",
+              "kind": "catalog"
+            }
+          ],
+          "examCombo": "11408",
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语一"
+            },
+            {
+              "code": "301",
+              "name": "数学一"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "status": "current",
+          "updatedAt": "2026-11-26",
+          "details": {
+            "复试科目": "553 C++程序设计"
+          }
+        },
         {
           "year": 2026,
           "examCombo": "11408",
@@ -12750,7 +12833,10 @@
               50,
               70,
               70
-            ]
+            ],
+            "笔试": "现场笔试 2 小时，满分 150 分，90 分合格",
+            "复试合格要求": "笔试、面试均须达到 90 分",
+            "综合分公式": "初试按 150 分折算占 60%，复试占 40%"
           },
           "status": "historical"
         },
@@ -12769,10 +12855,12 @@
           ],
           "note": "一志愿考试人数/统考录取人数为公布口径；普通统考与专项未分离，不作为严格普通统考实考录取比。",
           "details": {
-            "实际初试人数": 94
+            "实际初试人数": 94,
+            "专项计划": 3
           },
           "status": "historical",
-          "subjects": []
+          "subjects": [],
+          "examPlanned": 6
         },
         {
           "year": 2024,
@@ -12801,10 +12889,11 @@
             "实际初试人数": 49
           },
           "status": "historical",
-          "subjects": []
+          "subjects": [],
+          "examPlanned": 8
         }
       ],
-      "status": "historical"
+      "status": "current"
     },
     {
       "id": "seu-h-009-085400-2023-catalog",
@@ -12846,8 +12935,46 @@
       "college": "软件学院",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "historical_only_2027_unverified",
+      "sourceStatus": "official_catalog",
       "years": [
+        {
+          "year": 2027,
+          "sources": [
+            {
+              "title": "东南大学2027年硕士研究生考试招生专业目录",
+              "shortTitle": "2027 年招生目录",
+              "url": "https://gsas.seu.edu.cn/ssmlcx2027/pages/index.html",
+              "year": 2027,
+              "publisher": "东南大学",
+              "sourceType": "official",
+              "kind": "catalog"
+            }
+          ],
+          "examCombo": "11408",
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语一"
+            },
+            {
+              "code": "301",
+              "name": "数学一"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "status": "current",
+          "updatedAt": "2026-11-26",
+          "details": {
+            "复试科目": "553 C++程序设计"
+          }
+        },
         {
           "year": 2026,
           "examCombo": "11408",
@@ -12909,12 +13036,13 @@
               70,
               70
             ],
-            "综合分公式": "初试成绩折算至150分×60%＋（笔试与面试成绩平均值）×40%",
+            "综合分公式": "初试按 150 分折算占 60%，复试占 40%",
             "导师选择": "双导师制",
             "企业实践": "企业实践至少一年",
             "初试权重": 0.6,
             "复试权重": 0.4,
-            "笔试": "现场笔试2小时，满分150，合格90"
+            "笔试": "现场笔试 2 小时，满分 150 分，90 分合格",
+            "复试合格要求": "笔试、面试均须达到 90 分"
           },
           "status": "historical"
         },
@@ -12984,7 +13112,7 @@
           "subjects": []
         }
       ],
-      "status": "historical"
+      "status": "current"
     },
     {
       "id": "seu-h-085-085404",
@@ -12994,11 +13122,20 @@
       "collegeCode": "085",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "official_2027_program_exam_pending",
+      "sourceStatus": "official_catalog",
       "years": [
         {
           "year": 2027,
           "sources": [
+            {
+              "title": "东南大学2027年硕士研究生考试招生专业目录",
+              "shortTitle": "2027 年招生目录",
+              "url": "https://gsas.seu.edu.cn/ssmlcx2027/pages/index.html",
+              "year": 2027,
+              "publisher": "东南大学",
+              "sourceType": "official",
+              "kind": "catalog"
+            },
             {
               "title": "雷恩研究生学院2026年硕士研究生复试录取工作细则",
               "url": "https://yzb.seu.edu.cn/_s117/2026/0324/c6689a559315/page.psp",
@@ -13018,12 +13155,32 @@
             }
           ],
           "sourceStatus": "official_2027_program_exam_pending",
-          "status": "pending",
+          "status": "current",
           "note": "2027专业与全日制统考已确认，408及科目组合尚需目录核对；不接收士兵、少干、强军等专项",
           "details": {
-            "毕业要求": "完成联合培养学分及论文答辩，满足双方审核条件可获双硕士学位"
+            "毕业要求": "完成联合培养学分及论文答辩，满足双方审核条件可获双硕士学位",
+            "复试科目": "553 C++程序设计"
           },
-          "subjects": []
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语一"
+            },
+            {
+              "code": "301",
+              "name": "数学一"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "examCombo": "11408",
+          "updatedAt": "2026-11-26"
         },
         {
           "year": 2026,
@@ -13133,7 +13290,7 @@
           "status": "historical"
         }
       ],
-      "status": "pending"
+      "status": "current"
     },
     {
       "id": "zju-600-085400-53",
@@ -16988,8 +17145,46 @@
       "college": "苏州联合研究生院（蒙纳士大学苏州联合研究院）",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "historical_only_2027_unverified",
+      "sourceStatus": "official_catalog",
       "years": [
+        {
+          "year": 2027,
+          "sources": [
+            {
+              "title": "东南大学2027年硕士研究生考试招生专业目录",
+              "shortTitle": "2027 年招生目录",
+              "url": "https://gsas.seu.edu.cn/ssmlcx2027/pages/index.html",
+              "year": 2027,
+              "publisher": "东南大学",
+              "sourceType": "official",
+              "kind": "catalog"
+            }
+          ],
+          "examCombo": "11408",
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语一"
+            },
+            {
+              "code": "301",
+              "name": "数学一"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "status": "current",
+          "updatedAt": "2026-11-26",
+          "details": {
+            "复试科目": "553 C++程序设计"
+          }
+        },
         {
           "year": 2026,
           "examCombo": "11408",
@@ -17062,7 +17257,7 @@
           "subjects": []
         }
       ],
-      "status": "historical"
+      "status": "current"
     },
     {
       "id": "seu-h-suzhou-085410",
@@ -17071,8 +17266,46 @@
       "college": "苏州联合研究生院（蒙纳士大学苏州联合研究院）",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "historical_only_2027_unverified",
+      "sourceStatus": "official_catalog",
       "years": [
+        {
+          "year": 2027,
+          "sources": [
+            {
+              "title": "东南大学2027年硕士研究生考试招生专业目录",
+              "shortTitle": "2027 年招生目录",
+              "url": "https://gsas.seu.edu.cn/ssmlcx2027/pages/index.html",
+              "year": 2027,
+              "publisher": "东南大学",
+              "sourceType": "official",
+              "kind": "catalog"
+            }
+          ],
+          "examCombo": "11408",
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语一"
+            },
+            {
+              "code": "301",
+              "name": "数学一"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "status": "current",
+          "updatedAt": "2026-11-26",
+          "details": {
+            "复试科目": "553 C++程序设计"
+          }
+        },
         {
           "year": 2026,
           "examCombo": "11408",
@@ -17145,7 +17378,7 @@
           "subjects": []
         }
       ],
-      "status": "historical"
+      "status": "current"
     },
     {
       "id": "ustc-h-bio-085400-cs",

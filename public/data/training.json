@@ -993,6 +993,15 @@
     "city": "南京",
     "sources": [
       {
+        "title": "东南大学2027年硕士研究生学费标准",
+        "shortTitle": "2027 年学费标准",
+        "url": "https://yzb.seu.edu.cn/2026/1023/c6676a587290/page.htm",
+        "year": 2027,
+        "publisher": "东南大学",
+        "sourceType": "official",
+        "kind": "training"
+      },
+      {
         "title": "东南大学雷恩研究生学院2027年硕士研究生招生简章",
         "url": "https://yzb.seu.edu.cn/2026/1010/c6679a585467/page.htm",
         "year": 2027,
@@ -1003,7 +1012,8 @@
     ],
     "tuitionPerYear": 45000,
     "tuitionTotal": 135000,
-    "durationYears": 3
+    "durationYears": 3,
+    "updatedAt": "2026-11-26"
   },
   {
     "projectId": "zju-soft-085400-01",
@@ -4191,5 +4201,95 @@
     ],
     "tuitionPerYear": 12000,
     "durationYears": 3
+  },
+  {
+    "projectId": "seu-h-009-085404",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "东南大学2027年硕士研究生学费标准",
+        "shortTitle": "2027 年学费标准",
+        "url": "https://yzb.seu.edu.cn/2026/1023/c6676a587290/page.htm",
+        "year": 2027,
+        "publisher": "东南大学",
+        "sourceType": "official",
+        "kind": "training"
+      }
+    ],
+    "tuitionPerYear": 10000,
+    "durationYears": 3,
+    "updatedAt": "2026-11-26"
+  },
+  {
+    "projectId": "seu-h-009-085410",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "东南大学2027年硕士研究生学费标准",
+        "shortTitle": "2027 年学费标准",
+        "url": "https://yzb.seu.edu.cn/2026/1023/c6676a587290/page.htm",
+        "year": 2027,
+        "publisher": "东南大学",
+        "sourceType": "official",
+        "kind": "training"
+      }
+    ],
+    "tuitionPerYear": 10000,
+    "durationYears": 3,
+    "updatedAt": "2026-11-26"
+  },
+  {
+    "projectId": "seu-h-soft-085405",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "东南大学2027年硕士研究生学费标准",
+        "shortTitle": "2027 年学费标准",
+        "url": "https://yzb.seu.edu.cn/2026/1023/c6676a587290/page.htm",
+        "year": 2027,
+        "publisher": "东南大学",
+        "sourceType": "official",
+        "kind": "training"
+      }
+    ],
+    "tuitionTotal": 40000,
+    "durationYears": 3,
+    "updatedAt": "2026-11-26"
+  },
+  {
+    "projectId": "seu-h-suzhou-085404",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "东南大学2027年硕士研究生学费标准",
+        "shortTitle": "2027 年学费标准",
+        "url": "https://yzb.seu.edu.cn/2026/1023/c6676a587290/page.htm",
+        "year": 2027,
+        "publisher": "东南大学",
+        "sourceType": "official",
+        "kind": "training"
+      }
+    ],
+    "tuitionPerYear": 62000,
+    "durationYears": 3,
+    "updatedAt": "2026-11-26"
+  },
+  {
+    "projectId": "seu-h-suzhou-085410",
+    "year": 2027,
+    "sources": [
+      {
+        "title": "东南大学2027年硕士研究生学费标准",
+        "shortTitle": "2027 年学费标准",
+        "url": "https://yzb.seu.edu.cn/2026/1023/c6676a587290/page.htm",
+        "year": 2027,
+        "publisher": "东南大学",
+        "sourceType": "official",
+        "kind": "training"
+      }
+    ],
+    "tuitionPerYear": 62000,
+    "durationYears": 3,
+    "updatedAt": "2026-11-26"
   }
 ]

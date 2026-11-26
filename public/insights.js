@@ -579,8 +579,22 @@ export function createInsights(data, ui) {
   function comparisonEmployment(project) {
     const rows = forProject(project);
     return rows.length
-      ? esc([...new Set(rows.map(scope))].join(" / "))
-      : link("school", "院校就业资料 →", project.schoolId);
+      ? esc([...new Set(rows.map(scope))].join(" / ")) + " · " + employmentLink(project)
+      : employmentLink(project);
+  }
+  function employmentLink(project) {
+    const { employmentRecords, employmentCases, industryPartnerships } = employmentBySchool.get(project.schoolId);
+    return employmentRecords.length || employmentCases.length || industryPartnerships.length
+      ? link("school", "查看院校就业情况 →", project.schoolId) : "";
+  }
+  function projectEmployment(project) {
+    const rows = forProject(project).filter((row) => row.major)
+      .sort((a, b) => (b.graduationYear || 0) - (a.graduationYear || 0));
+    const latest = rows[0];
+    const more = employmentLink(project);
+    return latest
+      ? `<p class="small">${esc([latest.graduationYear && latest.graduationYear + " 届", scope(latest)].filter(Boolean).join(" · "))}</p>${employmentRecord(latest)}<p class="related-links">${more}</p>`
+      : more ? `<p class="related-links">${more}</p>` : "";
   }
   function searchRows() {
     return [
@@ -636,6 +650,7 @@ export function createInsights(data, ui) {
     marketDetail,
     schoolEmployment,
     comparisonEmployment,
+    projectEmployment,
     searchRows,
   };
 }

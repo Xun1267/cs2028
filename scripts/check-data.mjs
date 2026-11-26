@@ -79,7 +79,7 @@ function refs(values, at, required = false, expectedYear) {
         item + ".year",
         "应与记录适用年度一致",
       );
-    for (const key of ["scope", "publisher"])
+    for (const key of ["scope", "publisher", "shortTitle"])
       if (source[key] != null) text(source[key], item + "." + key);
     timestamps(source, item);
   });
@@ -300,11 +300,17 @@ function yearly(values, at, validate) {
 yearly(data.admissions, "admissions", (row, at) => {
   counts(row, at, [
     "applicants",
+    "examAttendees",
     "interviewees",
+    "interviewEligible",
     "examAdmissions",
     "promotionAdmissions",
   ]);
-  for (const key of ["applicationRatio", "interviewRatio"])
+  for (const key of [
+    "applicationRatio",
+    "examAttendanceRatio",
+    "interviewRatio",
+  ])
     number(row[key], at + "." + key, 0, 1e5);
   for (const key of ["cutoff", "minimum", "maximum", "average", "median"]) {
     number(row[key], at + "." + key, 0, 500);
@@ -316,13 +322,14 @@ yearly(data.admissions, "admissions", (row, at) => {
         "分数应在录取最低分和最高分之间",
       );
   }
-  if (row.scoreDistribution != null)
-    objects(row.scoreDistribution, at + ".scoreDistribution", (bin, key) => {
-      number(bin.min, key + ".min", 0, 500, false, false);
-      number(bin.max, key + ".max", 0, 500, false, false);
-      number(bin.count, key + ".count", 0, 1e7, true, false);
-      check(bin.min <= bin.max, key, "分段最低分不得高于最高分");
-    });
+  for (const field of ["scoreDistribution", "interviewScoreDistribution"])
+    if (row[field] != null)
+      objects(row[field], at + "." + field, (bin, key) => {
+        number(bin.min, key + ".min", 0, 500, false, false);
+        number(bin.max, key + ".max", 0, 500, false, false);
+        number(bin.count, key + ".count", 0, 1e7, true, false);
+        check(bin.min <= bin.max, key, "分段最低分不得高于最高分");
+      });
 });
 yearly(data.training, "training", (row, at) => {
   number(row.tuitionPerYear, at + ".tuitionPerYear", 0, 1e6);
