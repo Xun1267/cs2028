@@ -6,6 +6,7 @@ export const dataFiles = {
   majors: "majors",
   careers: "careers",
   knowledge: "knowledge",
+  handbook: "handbook",
   news: "news",
   national: "national-stats",
   research: "research-directions",

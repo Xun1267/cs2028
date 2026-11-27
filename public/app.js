@@ -16,6 +16,7 @@ import {
 } from "./project-page.js";
 import { byLatest, containsWords, groupBy, projectTree } from "./browse.js";
 import { schoolIdentity } from "./school-emblem.js";
+import { createHandbook } from "./handbook.js";
 import { createInsights } from "./insights.js";
 import {
   cancelPageEntrance,
@@ -41,6 +42,7 @@ const esc = (v) =>
   );
 const nav = [
   ["home", "首页", "M3 10l9-7 9 7v10h-6v-7H9v7H3z"],
+  ["handbook", "考研指南", "M5 4h14v16H5z M8 8h8 M8 12h8 M8 16h5"],
   ["guide", "考研概况", "M3 5q5-2 9 1 4-3 9-1v14q-5-2-9 1-4-3-9-1z M12 6v14"],
   ["majors", "专业探索", "M12 3l10 5-10 5L2 8z M6 10v6q6 5 12 0v-6"],
   [
@@ -119,7 +121,7 @@ let projectById,
   indexedSchools,
   indexedProjects,
   searchIndex;
-let cities, years, research, researchById, dataInsights;
+let cities, years, research, researchById, dataInsights, handbook;
 let combos;
 const collator = new Intl.Collator("zh-CN");
 
@@ -178,6 +180,7 @@ function indexData(data) {
   projects = records.all;
   latestProjects = records.latest;
   projectById = records.byRef;
+  handbook = createHandbook(data.handbook, { esc, link, table, projects: projectById, yearRef: projectRef });
   projectHistory = records.historyByProject;
   schoolById = new Map(schools.map((school) => [school.id, school]));
   majorById = new Map(majors.map((major) => [major.id, major]));
@@ -549,7 +552,8 @@ function home() {
   return (
     `<div class="eyebrow"><i class="dot"></i>${esc(trends.target.year)} 届 · 硕士研究生招生</div>
     <div class="hero"><div><h1>计算机考研总览</h1><p>全日制计算机类专业硕士 · 985 高校 · 408 统考</p></div>
-    ${updatedAt ? `<span class="update">资料更新于 <time datetime="${esc(updatedAt)}">${esc(updatedAt.replaceAll("-", "."))}</time></span>` : ""}</div><div class="stats">` +
+    ${updatedAt ? `<span class="update">资料更新于 <time datetime="${esc(updatedAt)}">${esc(updatedAt.replaceAll("-", "."))}</time></span>` : ""}</div>
+    <div class="home-handbook">${link("handbook", "考研指南 →", "", "jump")}</div><div class="stats">` +
     stat(
       "距离预计初试月",
       days,
@@ -1581,15 +1585,15 @@ function mountNavigation() {
   $("#rail").innerHTML =
     '<a class="brand" href="#home"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M1 1h30v7H8v16h23v7H1z M12 12h19v7H12z"/></svg>CS 2028</a><nav class="nav" aria-label="主导航">' +
     nav
-      .slice(0, 9)
+      .filter(([key]) => key !== "data")
       .map(
-        ([k, t, d], i) =>
-          (i === 5 || i === 8 ? "<hr>" : "") +
+        ([k, t, d]) =>
+          (k === "jobs" || k === "saved" ? "<hr>" : "") +
           `<a href="#${k}">${icon(d)}${t}</a>`,
       )
       .join("") +
     '</nav><div class="railfoot"><a href="#data">' +
-    icon(nav[9][2]) +
+    icon(nav.find(([key]) => key === "data")[2]) +
     "数据管理</a></div>";
   $("#searchOpen").innerHTML =
     icon("M16 16l5 5 M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0") +
@@ -1653,6 +1657,7 @@ function render() {
     salary: () => dataInsights.marketDetail("salaryStatistics", arg),
     recruitment: () => dataInsights.marketDetail("recruitmentExamples", arg),
     guide,
+    handbook: () => handbook.page(arg),
     compare,
     decide: decision,
     saved,
@@ -2107,6 +2112,7 @@ function searchRows() {
       s.name + " · " + s.city,
       [...s.aliases, searchableSections(s)].join(" "),
     ]),
+    ...handbook.searchRows(),
     ...projects.map((p) => [
       "project",
       p.ref,
@@ -2316,6 +2322,7 @@ function rememberScroll(persist = false) {
   if (!activeEntry) return;
   positions.delete(activeEntry);
   positions.set(activeEntry, scrollY);
+  if (page === "handbook") handbook.updatePosition(pageContent);
   if (positions.size > 30) {
     const oldest = positions.keys().next().value;
     positions.delete(oldest);
@@ -2349,13 +2356,18 @@ function navigate(animate = false) {
   closeOverlay(previewDialog, true);
   setMenu(false);
   const shouldAnimate = animate && activeEntry !== undefined;
-  const destinationScroll = positions.get(entry) || 0;
+  const savedScroll = positions.get(entry);
   const [name, value = ""] = (location.hash.slice(1) || "home").split("/");
   page = name;
   try {
     arg = decodeURIComponent(value);
   } catch {
     arg = "";
+  }
+  const savedReading = page === "handbook" && !arg && handbook.readPosition();
+  if (page === "handbook" && !handbook.has(arg)) {
+    arg = savedReading?.id || handbook.first;
+    history.replaceState(history.state, "", route("handbook", arg));
   }
   activeEntry = entry;
   const directoryEntry = browserState.directoryEntries[entry];
@@ -2368,9 +2380,14 @@ function navigate(animate = false) {
   main.focus({ preventScroll: true });
   const topic =
     page === "guide" && arg && document.getElementById("knowledge-" + arg);
-  if (topic && !positions.has(entry)) topic.scrollIntoView();
-  else scrollTo(0, destinationScroll);
-  if (shouldAnimate) playPageEntrance(pageContent);
+  if (page === "handbook") {
+    handbook.mount(pageContent, arg, { top: savedScroll, saved: savedReading });
+  } else if (topic && !positions.has(entry)) {
+    topic.scrollIntoView();
+  } else {
+    scrollTo(0, savedScroll || 0);
+  }
+  if (shouldAnimate && page !== "handbook") playPageEntrance(pageContent);
 }
 
 async function start() {

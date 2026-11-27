@@ -190,6 +190,43 @@ index(data.knowledge, "knowledge", (row, at) => {
   text(row.summary, at + ".summary");
   content(row, at);
 });
+const handbookIds = new Set();
+function handbookBlocks(record, at) {
+  for (const [i, block] of list(record.blocks, at + ".blocks").entries()) {
+    const location = `${at}.blocks[${i}]`;
+    if (typeof block === "string") {
+      text(block, location);
+      continue;
+    }
+    if (!object(block, location)) continue;
+    if (block.type === "table") {
+      const headers = list(block.headers, location + ".headers");
+      for (const row of list(block.rows, location + ".rows")) {
+        check(Array.isArray(row) && row.length === headers.length,
+          location, "表格数据列数须与表头一致");
+      }
+    }
+    if (block.type === "graph") {
+      const nodes = list(block.nodes, location + ".nodes");
+      for (const edge of list(block.edges, location + ".edges")) {
+        check(Array.isArray(edge) && nodes[edge[0]] && nodes[edge[1]],
+          location, "流程节点不存在");
+      }
+    }
+  }
+}
+objects(data.handbook, "handbook", (chapter, at) => {
+  id(chapter.id, at + ".id");
+  unique(chapter.id, handbookIds, at + ".id");
+  text(chapter.title, at + ".title");
+  handbookBlocks(chapter, at);
+  objects(chapter.sections, at + ".sections", (section, sub) => {
+    id(section.id, sub + ".id");
+    unique(section.id, handbookIds, sub + ".id");
+    text(section.title, sub + ".title");
+    handbookBlocks(section, sub);
+  });
+});
 index(data.news, "news", (row, at) => {
   text(row.title, at + ".title");
   date(row.date, at + ".date");
