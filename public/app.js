@@ -16,6 +16,7 @@ import {
 } from "./project-page.js";
 import { byLatest, containsWords, groupBy, projectTree } from "./browse.js";
 import { schoolIdentity } from "./school-emblem.js";
+import { bindPrepReport, createPrepViews } from "./prep/views.js";
 import { createHandbook } from "./handbook.js";
 import { createInsights } from "./insights.js";
 import {
@@ -43,6 +44,7 @@ const esc = (v) =>
 const nav = [
   ["home", "首页", "M3 10l9-7 9 7v10h-6v-7H9v7H3z"],
   ["handbook", "考研指南", "M5 4h14v16H5z M8 8h8 M8 12h8 M8 16h5"],
+  ["prep", "备考记录", "M5 4h14v16H5z M8 15l3-4 2 2 3-5"],
   ["guide", "考研概况", "M3 5q5-2 9 1 4-3 9-1v14q-5-2-9 1-4-3-9-1z M12 6v14"],
   ["majors", "专业探索", "M12 3l10 5-10 5L2 8z M6 10v6q6 5 12 0v-6"],
   [
@@ -1614,6 +1616,30 @@ function updateNavigation() {
   $("#crumb b").textContent = label(section) || "页面";
 }
 
+const prepViews = createPrepViews({ esc, heading, sect, link, table, empty });
+
+async function mountPrep(id, entry, top, animate = false) {
+  const isCurrent = () => page === "prep" && activeEntry === entry;
+  try {
+    const content = await prepViews.view(id);
+    if (!isCurrent()) return;
+    pageContent.innerHTML = `<div class="prep-page">${content}</div>`;
+    bindPrepReport(pageContent.firstElementChild);
+    document.title = pageContent.querySelector("h1").textContent + " · CS 2028";
+    scrollTo(0, top);
+    if (animate) playPageEntrance(pageContent);
+  } catch (error) {
+    if (!isCurrent()) return;
+    console.error(error);
+    pageContent.innerHTML = heading("备考记录") + empty("考试记录读取失败") +
+      '<button type="button" id="prepRetryLoad">重新读取</button>';
+    $("#prepRetryLoad").onclick = () => {
+      $("#prepRetryLoad").disabled = true;
+      mountPrep(id, entry, top);
+    };
+  }
+}
+
 function render() {
   let pages = {
     home,
@@ -1658,6 +1684,7 @@ function render() {
     recruitment: () => dataInsights.marketDetail("recruitmentExamples", arg),
     guide,
     handbook: () => handbook.page(arg),
+    prep: () => heading("备考记录") + (prepUnlocked() ? empty("正在读取考试记录…") : ""),
     compare,
     decide: decision,
     saved,
@@ -2091,6 +2118,70 @@ previewDialog.addEventListener("close", () => {
   previewOpener = undefined;
 });
 
+const prepDialog = $("#prepDialog");
+const prepPassword = $("#prepPassword");
+const prepPasswordError = $("#prepPasswordError");
+const prepSessionKey = "cs2028-prep-unlocked";
+let prepVerified = false;
+let prepPrompt;
+
+function prepUnlocked() {
+  try {
+    return prepVerified || sessionStorage.getItem(prepSessionKey) === "yes";
+  } catch {
+    return prepVerified;
+  }
+}
+
+function clearPrepError() {
+  prepPassword.removeAttribute("aria-invalid");
+  prepPasswordError.hidden = true;
+}
+
+function openPrepPrompt(accept, cancel) {
+  prepPrompt = { accept, cancel };
+  prepPassword.value = "";
+  clearPrepError();
+  if (!prepDialog.open) prepDialog.showModal();
+  prepPassword.focus();
+}
+
+function closePrepPrompt() {
+  const prompt = prepPrompt;
+  prepPrompt = undefined;
+  if (prepDialog.open) prepDialog.close();
+  prepPassword.value = "";
+  return prompt;
+}
+
+function cancelPrepPrompt() {
+  closePrepPrompt()?.cancel?.();
+}
+
+$("#prepCancel").onclick = cancelPrepPrompt;
+prepDialog.addEventListener("cancel", (event) => {
+  event.preventDefault();
+  cancelPrepPrompt();
+});
+prepPassword.addEventListener("input", clearPrepError);
+$("#prepUnlock").addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (prepPassword.value !== "ffy") {
+    prepPasswordError.hidden = false;
+    prepPassword.setAttribute("aria-invalid", "true");
+    prepPassword.focus();
+    prepPassword.select();
+    return;
+  }
+  prepVerified = true;
+  try {
+    sessionStorage.setItem(prepSessionKey, "yes");
+  } catch {
+    // Allow navigation in this document when browser storage is unavailable.
+  }
+  closePrepPrompt()?.accept();
+});
+
 function searchableSections(article) {
   return (article.sections || [])
     .flatMap((section) => [
@@ -2264,7 +2355,7 @@ searchDialog.addEventListener("keydown", (event) => {
 document.addEventListener("keydown", (event) => {
   if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
     event.preventDefault();
-    openSearch();
+    if (!prepDialog.open) openSearch();
   }
   if (event.key === "Escape" && document.body.classList.contains("open"))
     setMenu(false, true);
@@ -2305,14 +2396,28 @@ document.addEventListener("click", (event) => {
   closeOverlay(searchDialog, true);
   closeOverlay(previewDialog, true);
   if (anchor.hash === location.hash) return;
-  rememberScroll();
-  history.pushState({ cs2028Entry: newEntryId() }, "", anchor.hash);
-  navigate(event.detail > 0);
+  const hash = anchor.hash;
+  const animate = event.detail > 0;
+  if ((hash === "#prep" || hash.startsWith("#prep/")) && !prepUnlocked()) {
+    openPrepPrompt(() => followHash(hash, animate), () => {
+      const opener = anchor.getClientRects().length ? anchor : $("#menu");
+      opener.focus({ preventScroll: true });
+    });
+    return;
+  }
+  followHash(hash, animate);
 });
+
+function followHash(hash, animate) {
+  rememberScroll();
+  history.pushState({ cs2028Entry: newEntryId() }, "", hash);
+  navigate(animate);
+}
 
 const positions = new Map(Object.entries(browserState.positions || {}));
 let scrollTimer;
 let activeEntry;
+let lastPublicHash = "#home";
 history.scrollRestoration = "manual";
 
 function newEntryId() {
@@ -2350,6 +2455,7 @@ function navigate(animate = false) {
   }
   if (entry === activeEntry) return;
   cancelPageEntrance();
+  closePrepPrompt();
   rememberScroll();
   clearTimeout(scrollTimer);
   closeOverlay(searchDialog, true);
@@ -2362,7 +2468,7 @@ function navigate(animate = false) {
   try {
     arg = decodeURIComponent(value);
   } catch {
-    arg = "";
+    arg = page === "prep" ? value : "";
   }
   const savedReading = page === "handbook" && !arg && handbook.readPosition();
   if (page === "handbook" && !handbook.has(arg)) {
@@ -2370,6 +2476,7 @@ function navigate(animate = false) {
     history.replaceState(history.state, "", route("handbook", arg));
   }
   activeEntry = entry;
+  if (page !== "prep") lastPublicHash = location.hash || "#home";
   const directoryEntry = browserState.directoryEntries[entry];
   if (page === "schools" && directoryEntry) {
     filters = { ...defaultFilters, ...directoryEntry.filters };
@@ -2380,6 +2487,20 @@ function navigate(animate = false) {
   main.focus({ preventScroll: true });
   const topic =
     page === "guide" && arg && document.getElementById("knowledge-" + arg);
+  if (page === "prep") {
+    const id = arg;
+    scrollTo(0, 0);
+    const openReport = () => {
+      mountPrep(id, entry, savedScroll || 0, shouldAnimate);
+      main.focus({ preventScroll: true });
+    };
+    if (prepUnlocked()) openReport();
+    else openPrepPrompt(openReport, () => {
+      history.replaceState({ cs2028Entry: newEntryId() }, "", lastPublicHash);
+      navigate();
+    });
+    return;
+  }
   if (page === "handbook") {
     handbook.mount(pageContent, arg, { top: savedScroll, saved: savedReading });
   } else if (topic && !positions.has(entry)) {

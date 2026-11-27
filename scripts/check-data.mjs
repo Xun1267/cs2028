@@ -1,5 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { dataFiles, projectRef } from "../public/data.js";
+import { validateIndex, validateReport } from "../public/prep/model.mjs";
 
 const failure = [];
 const check = (ok, at, message) => {
@@ -538,11 +539,30 @@ if (object(data.employment, "employment")) {
     });
   }
 }
+const examDirectory = new URL("../public/data/exam-reports/", import.meta.url);
+async function readExamData(name) {
+  return JSON.parse(await readFile(new URL(name + ".json", examDirectory), "utf8"));
+}
+let reportIds = [];
+try {
+  reportIds = validateIndex(await readExamData("index"));
+} catch (error) {
+  failure.push(`exam-reports/index.json: ${error.message}`);
+}
+await Promise.all(reportIds.map(async (id) => {
+  try {
+    const report = validateReport(await readExamData(id));
+    check(report.id === id, `exam-reports/${id}.json`, "报告 ID 应与索引一致");
+  } catch (error) {
+    failure.push(`exam-reports/${id}.json: ${error.message}`);
+  }
+}));
+
 if (failure.length) {
   console.error(failure.join("\n"));
   process.exitCode = 1;
 } else {
   console.log(
-    `数据有效：${schools.size} 所院校，${projectIds.size} 个招生项目，${annualRecords.size} 条年度记录。`,
+    `数据有效：${schools.size} 所院校，${projectIds.size} 个招生项目，${annualRecords.size} 条年度记录，${reportIds.length} 份考试报告。`,
   );
 }

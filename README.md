@@ -82,6 +82,12 @@ python3 -m http.server 8028 --bind 127.0.0.1 --directory public
 }
 ```
 
+## 备考记录
+
+每次作答使用 `public/data/exam-reports/<id>.json`，并将 ID 加到同目录 `index.json` 的 `reports` 数组。以已有报告为格式参考。每个题型通过 `questionNumbers` 关联答题记录，统一权重使用 `pointsPerQuestion`，单题不同权重使用该题的 `maxScore`。填写题型和试卷满分，由页面计算成绩、错题数及趋势。提交前运行 `node scripts/check-data.mjs`。
+
+密码验证只控制页面显示。仓库内的考试报告及部署后的 JSON 均可公开读取。
+
 ## 提交与发布
 
 修正或补充 JSON 后运行校验，检查网页，再提交至 GitHub。生产项目在 Vercel 使用仓库根目录，`vercel.json` 直接发布 `public/`。在项目的 Git 设置连接 `Xun1267/cs2028` 并选择 `main` 作为 Production Branch 后，合入 `main` 会触发生产部署。

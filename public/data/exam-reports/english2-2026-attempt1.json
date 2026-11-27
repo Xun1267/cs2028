@@ -1,0 +1,952 @@
+{
+  "schemaVersion": 1,
+  "id": "english2-2026-attempt1",
+  "subject": "english2",
+  "subjectName": "英语二",
+  "subjectCode": "204",
+  "examYear": 2026,
+  "examType": "历年真题",
+  "attempt": 1,
+  "recordDate": "2026-11-27",
+  "title": "2026年考研英语（二）成绩分析报告",
+  "gradingDate": "2026-11-27",
+  "maxScore": 100,
+  "sections": [
+    {
+      "id": "cloze",
+      "title": "完形填空",
+      "type": "objective",
+      "questionNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "pointsPerQuestion": 0.5,
+      "maxScore": 10
+    },
+    {
+      "id": "reading1",
+      "title": "阅读 Text 1",
+      "type": "objective",
+      "questionNumbers": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "pointsPerQuestion": 2.0,
+      "maxScore": 10
+    },
+    {
+      "id": "reading2",
+      "title": "阅读 Text 2",
+      "type": "objective",
+      "questionNumbers": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "pointsPerQuestion": 2.0,
+      "maxScore": 10
+    },
+    {
+      "id": "reading3",
+      "title": "阅读 Text 3",
+      "type": "objective",
+      "questionNumbers": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "pointsPerQuestion": 2.0,
+      "maxScore": 10
+    },
+    {
+      "id": "reading4",
+      "title": "阅读 Text 4",
+      "type": "objective",
+      "questionNumbers": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "pointsPerQuestion": 2.0,
+      "maxScore": 10
+    },
+    {
+      "id": "newType",
+      "title": "新题型",
+      "type": "objective",
+      "questionNumbers": [
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "pointsPerQuestion": 2.0,
+      "maxScore": 10
+    },
+    {
+      "id": "translation",
+      "title": "翻译",
+      "type": "subjective",
+      "questionNumbers": [
+        46
+      ],
+      "pointsPerQuestion": 15.0,
+      "maxScore": 15
+    },
+    {
+      "id": "shortWriting",
+      "title": "小作文",
+      "type": "subjective",
+      "questionNumbers": [
+        47
+      ],
+      "pointsPerQuestion": 10.0,
+      "maxScore": 10
+    },
+    {
+      "id": "longWriting",
+      "title": "大作文",
+      "type": "subjective",
+      "questionNumbers": [
+        48
+      ],
+      "pointsPerQuestion": 15.0,
+      "maxScore": 15
+    }
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "sectionId": "cloze",
+      "answer": "C",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 2,
+      "sectionId": "cloze",
+      "answer": "A",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 3,
+      "sectionId": "cloze",
+      "answer": "A",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 4,
+      "sectionId": "cloze",
+      "answer": "C",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 5,
+      "sectionId": "cloze",
+      "answer": "A",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 6,
+      "sectionId": "cloze",
+      "answer": "D",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 7,
+      "sectionId": "cloze",
+      "answer": "B",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 8,
+      "sectionId": "cloze",
+      "answer": "D",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 9,
+      "sectionId": "cloze",
+      "answer": "C",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 10,
+      "sectionId": "cloze",
+      "answer": "A",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 11,
+      "sectionId": "cloze",
+      "answer": "D",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 12,
+      "sectionId": "cloze",
+      "answer": "D",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 13,
+      "sectionId": "cloze",
+      "answer": "B",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 14,
+      "sectionId": "cloze",
+      "answer": "D",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 15,
+      "sectionId": "cloze",
+      "answer": "D",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 16,
+      "sectionId": "cloze",
+      "answer": "D",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 17,
+      "sectionId": "cloze",
+      "answer": "A",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 18,
+      "sectionId": "cloze",
+      "answer": "B",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 19,
+      "sectionId": "cloze",
+      "answer": "C",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 20,
+      "sectionId": "cloze",
+      "answer": "D",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 21,
+      "sectionId": "reading1",
+      "answer": "D",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 22,
+      "sectionId": "reading1",
+      "answer": "C",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 23,
+      "sectionId": "reading1",
+      "answer": "A",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 24,
+      "sectionId": "reading1",
+      "answer": "A",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 25,
+      "sectionId": "reading1",
+      "answer": "A",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 26,
+      "sectionId": "reading2",
+      "answer": "B",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 27,
+      "sectionId": "reading2",
+      "answer": "A",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 28,
+      "sectionId": "reading2",
+      "answer": "C",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 29,
+      "sectionId": "reading2",
+      "answer": "C",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 30,
+      "sectionId": "reading2",
+      "answer": "A",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 31,
+      "sectionId": "reading3",
+      "answer": "B",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 32,
+      "sectionId": "reading3",
+      "answer": "C",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 33,
+      "sectionId": "reading3",
+      "answer": "C",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 34,
+      "sectionId": "reading3",
+      "answer": "D",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 35,
+      "sectionId": "reading3",
+      "answer": "B",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 36,
+      "sectionId": "reading4",
+      "answer": "D",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 37,
+      "sectionId": "reading4",
+      "answer": "C",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 38,
+      "sectionId": "reading4",
+      "answer": "A",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 39,
+      "sectionId": "reading4",
+      "answer": "B",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 40,
+      "sectionId": "reading4",
+      "answer": "B",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 41,
+      "sectionId": "newType",
+      "answer": "E",
+      "correctAnswer": "E"
+    },
+    {
+      "number": 42,
+      "sectionId": "newType",
+      "answer": "A",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 43,
+      "sectionId": "newType",
+      "answer": "G",
+      "correctAnswer": "G"
+    },
+    {
+      "number": 44,
+      "sectionId": "newType",
+      "answer": "F",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 45,
+      "sectionId": "newType",
+      "answer": "D",
+      "correctAnswer": "D"
+    }
+  ],
+  "wrongQuestionGroups": [
+    {
+      "title": "（一）完形填空：自尊与认知偏差",
+      "sectionIds": [
+        "cloze"
+      ],
+      "passageSummary": "文章讨论个体如何因个人化解读（personalisation）和读心式推断（mind reading）而产生不必要的自我否定，并建议尝试从他人的立场重新解释事件。"
+    },
+    {
+      "title": "（二）传统阅读理解：第21—40题",
+      "sectionIds": [
+        "reading1",
+        "reading2",
+        "reading3",
+        "reading4"
+      ]
+    },
+    {
+      "title": "（三）新题型：人物观点匹配",
+      "sectionIds": [
+        "newType"
+      ]
+    }
+  ],
+  "wrongQuestions": [
+    {
+      "number": 2,
+      "sectionId": "cloze",
+      "answerComparison": "A risky → B natural",
+      "knowledgePoint": "形容词辨析",
+      "location": "第1段，空格位于 it’s only ... to want to avoid them 结构中。",
+      "correctAnalysis": "前文说明损害自我价值感的评价令人不适，想回避这类体验属于正常心理反应。natural 表示自然的、符合常情的。",
+      "distractorAnalysis": "risky 指有风险的；admirable 指值得赞赏的；foolish 指愚蠢的。文章没有评价回避行为的风险、道德价值或愚蠢程度。",
+      "reviewPoint": "It is only natural to do sth.：做某事是人之常情。先确定句子要表达的是正常反应、风险还是价值评价。"
+    },
+    {
+      "number": 11,
+      "sectionId": "cloze",
+      "answerComparison": "D cleared → B changed",
+      "knowledgePoint": "固定搭配",
+      "location": "第3段，朋友取消聚会的另一种可能解释，空格后为 their minds。",
+      "correctAnalysis": "change one’s mind 意为改变主意。朋友取消聚会可能因为身体不适，也可能是临时改变计划。",
+      "distractorAnalysis": "clear one’s mind 表示使头脑清醒；open one’s mind 指开放思想；train one’s mind 指训练思维，均无法解释取消聚会这一行为。",
+      "reviewPoint": "将 change one’s mind 整体记忆，并结合前面的行为判断搭配是否合理。"
+    },
+    {
+      "number": 13,
+      "sectionId": "cloze",
+      "answerComparison": "B objective → A process",
+      "knowledgePoint": "名词辨析",
+      "location": "第4段，空格后为 at work；随后介绍心理学中的 mind reading。",
+      "correctAnalysis": "读心式推断是一种心理活动，与前面介绍的个人化思维属于同类认知现象，process（过程）适合概括这一活动。",
+      "distractorAnalysis": "objective 是目标；outcome 是结果；background 是背景，均不能准确指称正在发生的认知活动。",
+      "reviewPoint": "be at work 表示正在起作用；留意心理学文章中 process 与 outcome 的区别。"
+    },
+    {
+      "number": 15,
+      "sectionId": "cloze",
+      "answerComparison": "D interfering with → C engaging in",
+      "knowledgePoint": "动词短语辨析",
+      "location": "第5段，avoid 后接动名词，宾语为 personalisation and mind reading。",
+      "correctAnalysis": "engage in 表示从事、参与。此句建议减少这两种消极认知活动，避免进行个人化和读心式推断。",
+      "distractorAnalysis": "argue about 是争论；account for 是解释或占比；interfere with 是干扰。如果选择D，句意变为避免干扰消极思维，和作者建议相反。",
+      "reviewPoint": "avoid doing sth. 与 engage in sth. 结合记忆；将选项代入全文主张判断。"
+    },
+    {
+      "number": 16,
+      "sectionId": "cloze",
+      "answerComparison": "D disappeared → A happened",
+      "knowledgePoint": "上下文语义",
+      "location": "第5段，空格位于 negative assumptions of what’s ... 之后。",
+      "correctAnalysis": "作者建议检验自己对已发生事件所作的消极假设。what’s happened 即 what has happened，指已经发生的事情。",
+      "distractorAnalysis": "continued 是继续；returned 是返回；disappeared 是消失，都无法统摄此前被老板批评、朋友取消聚会等不同事件。",
+      "reviewPoint": "识别 what 引导的名词性从句，并还原 what’s 的具体含义。"
+    },
+    {
+      "number": 17,
+      "sectionId": "cloze",
+      "answerComparison": "A casual → D fundamental",
+      "knowledgePoint": "并列结构",
+      "location": "第5段末，空格前为 deep or。",
+      "correctAnalysis": "fundamental 表示根本的、基础性的。作者提醒读者避免把一次负面事件解释为关于自己人格的深层判断。",
+      "distractorAnalysis": "casual 指随意的，obvious 指明显的，familiar 指熟悉的。与 deep 并列时，fundamental 更符合从人格深处作判断的语义。",
+      "reviewPoint": "遇到 and/or 时，检查并列成分在此处的语义关系，而非仅看词性是否一致。"
+    },
+    {
+      "number": 20,
+      "sectionId": "cloze",
+      "answerComparison": "D valuable → B strong",
+      "knowledgePoint": "语境推断",
+      "location": "第6段末，朋友临时取消约会的例子。",
+      "correctAnalysis": "友谊足够稳固，朋友才可能放心临时取消约会。strong friendship 表示牢固的友谊，和后面的行为构成合理因果关系。",
+      "distractorAnalysis": "strange 是奇怪的；vulnerable 是脆弱的；valuable 是有价值的。友谊值得珍惜不等于它能够承受临时取消约会。",
+      "reviewPoint": "区分 strong 与 valuable 的语义；at late notice 表示临近约定时间才通知。"
+    },
+    {
+      "number": 25,
+      "sectionId": "reading1",
+      "answerComparison": "A → C",
+      "knowledgePoint": "细节题",
+      "location": "最后一段，作者提出全国通用借阅证和儿童自动获得会员资格的建议。",
+      "correctAnalysis": "这些措施使读者能够更方便地借阅图书和使用图书馆服务，C项指提高使用便利性。",
+      "distractorAnalysis": "A征求公众反馈未在末段提出；B资金问题在文章其他位置涉及；D终身会员资格超出自动入会的含义。",
+      "reviewPoint": "题干限定最后一段时，先定位建议，再概括几项建议共同产生的作用。"
+    },
+    {
+      "number": 29,
+      "sectionId": "reading2",
+      "answerComparison": "C → D",
+      "knowledgePoint": "细节题与同义替换",
+      "location": "倒数第二段，作者谈论企业规则、责任意识和AI技术发展。",
+      "correctAnalysis": "企业应制定能够随技术变化而更新的管理政策。adjust management to AI development 与 policies evolve with technology 的含义一致。",
+      "distractorAnalysis": "A涉及数据来源透明度，B涉及AI生成内容的质量，C要求将员工观点纳入规则。原文没有提出这些具体要求。",
+      "reviewPoint": "识别 policies 与 management、evolve with 与 adjust to 的语义联系。"
+    },
+    {
+      "number": 30,
+      "sectionId": "reading2",
+      "answerComparison": "A → D",
+      "knowledgePoint": "因果关系",
+      "location": "最后一段末句，以大量AI产品和广告推广解释人们为何容易受到影响。",
+      "correctAnalysis": "D项表示接触AI过多。产品数量庞大且营销密集，使公众反复接触相关产品，符合原文的直接因果关系。",
+      "distractorAnalysis": "A具有迷惑性，因为文中确实谈及知识和工具，但这是作者提出的应对条件。B低估经济成本、C夸大AI能力均缺少末段的直接依据。",
+      "reviewPoint": "识别 so ... that ... 所表达的原因与结果，不要将作者提出的应对办法直接当作题干要求的原因。"
+    },
+    {
+      "number": 32,
+      "sectionId": "reading3",
+      "answerComparison": "C → A",
+      "knowledgePoint": "例证目的题",
+      "location": "第3段，先说明列车延误日渐频繁，再引用Ferrovie公布的2023年列车晚点比例。",
+      "correctAnalysis": "23%的高速列车晚点这一统计用于说明延误的普遍性，因此A项符合引用目的。",
+      "distractorAnalysis": "C项提到媒体报道，虽然原文也谈到媒体，但晚点统计无法证明报道覆盖面。B铁路网络价值、D运营效率高也不符合数据所支持的结论。",
+      "reviewPoint": "遇到 is quoted to show 等题干，找引用前的观点，再检验数据具体证明了什么。"
+    },
+    {
+      "number": 38,
+      "sectionId": "reading4",
+      "answerComparison": "A → C",
+      "knowledgePoint": "跨段细节题",
+      "location": "第3、4段讨论街区节庆的经济收益、当地商户客流及活动经费。",
+      "correctAnalysis": "街区节庆吸引人流、为本地商户和社区带来收入，C项 contribute to the local economy 概括了共同信息。",
+      "distractorAnalysis": "A关于城市生活方式的表述缺乏指定段落支持；B政府提供资金与段落描述不符；D音乐演出并非这两段的重点。",
+      "reviewPoint": "结合 economic benefits、local businesses、foot traffic 等信息，归纳作者所讨论的经济作用。"
+    },
+    {
+      "number": 44,
+      "sectionId": "newType",
+      "answerComparison": "F → C",
+      "knowledgePoint": "观点归属辨析",
+      "location": "第6段 Pedro Brancalion 的论述。",
+      "correctAnalysis": "全球森林恢复资金往往用于减缓气候变化，但巴西农民更关心水资源；两类参与者的需求存在差别，C准确概括这一观点。",
+      "distractorAnalysis": "F强调森林恢复应服务于谁的利益，主要对应上一段 Daniel Janzen 提出的问题。两人的观点相关，但例子和论证重点不同。",
+      "reviewPoint": "将每位人物的姓名、具体观点、例证分别记录；匹配题的答案必须对应题干指定的人物。"
+    }
+  ],
+  "subjectiveQuestions": [
+    {
+      "number": 46,
+      "sectionId": "translation",
+      "score": 10,
+      "scoreType": "estimated",
+      "assessment": "评分档次：第三档（9—12分）。全篇主要信息基本完整，能够理解服饰与自我认知、情绪和社会文化的关系。首句概念翻译、部分词义和末句从句处理存在问题，中文表达也有逐词对应的痕迹。综合评为10分。",
+      "corrections": [
+        {
+          "originalExpression": "wearables / refers to",
+          "studentExpression": "可穿戴性的影响提及到了",
+          "suggestion": "服饰对心理的影响，是指……。wearables 在本文指所穿服饰；refers to 用于定义。"
+        },
+        {
+          "originalExpression": "self-perception",
+          "studentExpression": "自我观念",
+          "suggestion": "自我认知。原译大意可接受。"
+        },
+        {
+          "originalExpression": "bold, colorful outfits",
+          "studentExpression": "暴露的、颜色丰富的装扮",
+          "suggestion": "大胆鲜艳的服装。bold 指风格大胆，不能直接推出暴露。"
+        },
+        {
+          "originalExpression": "how we want to be perceived",
+          "studentExpression": "我们想怎样被理解",
+          "suggestion": "我们希望别人如何看待自己。perceive 在此侧重他人对自己的印象。"
+        },
+        {
+          "originalExpression": "confidence levels",
+          "studentExpression": "信心的程度",
+          "suggestion": "自信程度。原译基本正确。"
+        },
+        {
+          "originalExpression": "overall mood",
+          "studentExpression": "整体的心情",
+          "suggestion": "整体情绪。原译基本正确。"
+        },
+        {
+          "originalExpression": "norms and expectations regarding dress",
+          "studentExpression": "自己的规章和期望关于衣服",
+          "suggestion": "有关着装的规范和期望。regarding 短语应置于修饰对象之前。"
+        },
+        {
+          "originalExpression": "meanings attributed to them",
+          "studentExpression": "对他们产生的意义",
+          "suggestion": "人们赋予这些服装的含义。them 指衣服，attribute 强调赋予含义。"
+        }
+      ],
+      "referenceAnswer": [
+        "服饰对心理的影响，是指我们的穿着如何影响思想、情感和行为。衣服除了遮盖身体，还对自我认知的形成和与他人的交往具有重要作用。",
+        "自我表达是其中一个方面。我们选择的服装可以反映自己的性格、情绪和身份。无论我们选择大胆鲜艳的服装，还是偏爱低调的穿衣风格，着装都能让别人了解我们是谁，以及我们希望给他人留下怎样的印象。",
+        "穿着也会影响自信程度。穿着让自己感觉舒适、自信的衣服，有助于改善自尊和整体情绪。",
+        "文化和社会因素同样会显著影响着装选择。各文化对服饰有不同的规范和期望，由此影响人们穿着的服装种类以及赋予服饰的含义。"
+      ],
+      "reviewAdvice": "翻译时先确认代词指代和从句修饰对象，再按照现代汉语语序组织句子。对普通词在具体语境中的含义作判断，避免将 wearables、bold 等机械翻译。"
+    },
+    {
+      "number": 47,
+      "sectionId": "shortWriting",
+      "score": 6,
+      "scoreType": "estimated",
+      "assessment": "评分档次：第三档（5—6分）。题目要求给Jack写约100词的邮件，表达看过其家庭中国旅行视频后的感受，并表示希望进一步了解旅行经历。考生完整回应了两项要求，称呼、署名和邮件语气基本合适。多处基础语法及用词错误降低语言准确性，评为6分。",
+      "corrections": [
+        {
+          "studentExpression": "exicted",
+          "suggestedExpression": "excited",
+          "explanation": "单词拼写。"
+        },
+        {
+          "studentExpression": "you share me it",
+          "suggestedExpression": "you shared it with me",
+          "explanation": "share sth. with sb.；已分享的视频采用过去时。"
+        },
+        {
+          "studentExpression": "your family’s travel",
+          "suggestedExpression": "your family’s trip",
+          "explanation": "trip 更适合一次具体旅行；travel 可表示旅行活动。"
+        },
+        {
+          "studentExpression": "cultural campaign",
+          "suggestedExpression": "cultural experiences",
+          "explanation": "campaign 指有组织的活动或运动，旅游体验宜用 experiences。"
+        },
+        {
+          "studentExpression": "impressive ... impressed me",
+          "suggestedExpression": "fascinating ... impressed me",
+          "explanation": "减少同源词重复，表达更自然。"
+        },
+        {
+          "studentExpression": "Which city impress you most",
+          "suggestedExpression": "Which city impressed you most?",
+          "explanation": "询问过去旅行经历，用过去时。"
+        },
+        {
+          "studentExpression": "which food you like most",
+          "suggestedExpression": "Which food did you like most?",
+          "explanation": "直接疑问句需要助动词及正确语序。"
+        },
+        {
+          "studentExpression": "I wonder more interesting thing",
+          "suggestedExpression": "I’d like to hear more interesting stories",
+          "explanation": "wonder 不能按原结构接名词；thing 单复数也需调整。"
+        }
+      ],
+      "studentAnswer": [
+        "Dear Jack,",
+        "I have just watched the video of your family’s travel in China. I’m so exicted that you share me it. The beautiful scenery and impressive cultural campaign impressed me. I can sense how joyful you were during the journey.",
+        "I’m really curious about your travel. Could you tell me more? Which city impress you most or which food you like most? I wonder more interesting thing about your travel. If you could share more stories with me, I would appreciate it.",
+        "Looking forward to your reply.",
+        "Yours,\nLi Ming"
+      ],
+      "referenceAnswer": [
+        "Dear Jack,",
+        "I have just watched the video of your family’s trip to China. Thank you for sharing it with me. The beautiful scenery and fascinating cultural experiences impressed me deeply. I could sense how much your family enjoyed the journey.",
+        "I am curious to learn more about your trip. Which city impressed you most? What was your favorite Chinese dish? Did you experience any interesting local traditions? I would really appreciate it if you could share more stories and photos with me.",
+        "Looking forward to hearing from you!",
+        "Yours,\nLi Ming"
+      ],
+      "reviewAdvice": "集中练习一般过去时、特殊疑问句、常用动词搭配；写完后检查人称、时态、助动词和名词单复数。",
+      "language": "en"
+    },
+    {
+      "number": 48,
+      "sectionId": "longWriting",
+      "score": 8,
+      "scoreType": "estimated",
+      "assessment": "评分档次：第三档（7—9分）。题目要求用约150词描述并解释图表，再给出个人评论。考生写出了四项数据，主题准确，结构完整，但数据比较、解释及评论较为单薄，语言准确性仍有不足，评为8分。",
+      "corrections": [
+        {
+          "studentExpression": "a survey on views of children’s outdoor activities",
+          "suggestedExpression": "a survey of people’s views on children’s outdoor activities",
+          "explanation": "明确谁对户外活动持有看法。"
+        },
+        {
+          "studentExpression": "facilitating the capacity of observation",
+          "suggestedExpression": "developing children’s observational skills",
+          "explanation": "常用搭配更准确、简洁。"
+        },
+        {
+          "studentExpression": "33.2% people",
+          "suggestedExpression": "33.2% of people",
+          "explanation": "百分比后修饰人群需要 of。"
+        },
+        {
+          "studentExpression": "influence many aspects of children",
+          "suggestedExpression": "benefit various aspects of children’s development",
+          "explanation": "明确受到影响的是儿童发展的方面。"
+        },
+        {
+          "studentExpression": "we need support",
+          "suggestedExpression": "we need to support",
+          "explanation": "need 作实义动词时用 need to do。"
+        },
+        {
+          "studentExpression": "children’s outside activities actively",
+          "suggestedExpression": "encourage children to participate in outdoor activities",
+          "explanation": "沿用 outdoor activities，并明确行为。"
+        }
+      ],
+      "studentAnswer": [
+        "The chart shows a survey on views of children’s outdoor activities. 54.60% of people think these activities can satisfy children’s curiosity. 54.5% of people think that these activities play a significant role in facilitating the capacity of observation. 37.2% of people believe that they can help children keep fit. 33.2% people agree they can strengthen the interaction between children and parents.",
+        "It is obvious that most people attach great importance to children’s mental growth and intellectual development.",
+        "In my opinion, outdoor activities can influence many aspects of children. We should view the impacts of outdoor activities on children from multiple perspectives. All in all, we need support children’s outside activities actively."
+      ],
+      "referenceAnswer": [
+        "The chart presents the results of a survey on people’s views of children’s outdoor activities. Satisfying children’s curiosity and developing their observational skills are the two most frequently recognized benefits, accounting for 54.6% and 54.5%, respectively. By comparison, improving physical fitness and strengthening parent-child interaction receive less attention, at 37.2% and 33.2%.",
+        "These figures suggest that many people attach considerable importance to children’s intellectual development. Outdoor activities allow children to explore their surroundings, discover unfamiliar things and acquire knowledge through direct experience. However, the physical and social benefits of such activities also deserve greater attention.",
+        "In my opinion, parents and schools should provide children with more opportunities to participate in outdoor activities. Regular exercise can improve their physical health, while family outings can encourage communication between parents and children. A reasonable balance between classroom learning and outdoor exploration will contribute to children’s overall development."
+      ],
+      "contentAnalysis": [
+        {
+          "title": "数据描述",
+          "text": "四项数据基本准确，但采用四个相近句式逐项列举，缺少横向比较。前两项仅相差0.1个百分点，且明显高于后两项，应明确指出。"
+        },
+        {
+          "title": "图表解释",
+          "text": "第二段只概括了人们重视儿童心理和智力发展，没有说明户外探索为什么有助于好奇心和观察能力。可补充儿童在实际环境中观察、提问和获取经验的过程。"
+        },
+        {
+          "title": "个人评论",
+          "text": "最后一段只提出支持儿童户外活动，缺少具体主体和行动。可从家庭定期安排户外活动、学校提供适当活动机会等方面补充。"
+        },
+        {
+          "title": "篇幅",
+          "text": "约111词，与150词左右的要求存在距离。此次估分主要考虑论述不足与语言错误，不将字数差距机械折算为固定扣分。"
+        }
+      ],
+      "chart": {
+        "type": "bar",
+        "unit": "%",
+        "data": [
+          {
+            "label": "满足儿童好奇心",
+            "value": 54.6
+          },
+          {
+            "label": "促进观察力",
+            "value": 54.5
+          },
+          {
+            "label": "强身健体",
+            "value": 37.2
+          },
+          {
+            "label": "增强亲子互动",
+            "value": 33.2
+          }
+        ]
+      },
+      "language": "en"
+    }
+  ],
+  "diagnosis": {
+    "bySection": [
+      {
+        "title": "完形填空",
+        "sectionIds": [
+          "cloze"
+        ],
+        "mainIssues": "词义辨析、语境推断及常见搭配"
+      },
+      {
+        "title": "传统阅读",
+        "sectionIds": [
+          "reading1",
+          "reading2",
+          "reading3",
+          "reading4"
+        ],
+        "mainIssues": "细节定位、同义替换、例证目的"
+      },
+      {
+        "title": "新题型",
+        "sectionIds": [
+          "newType"
+        ],
+        "mainIssues": "相邻人物观点区分"
+      },
+      {
+        "title": "翻译",
+        "sectionIds": [
+          "translation"
+        ],
+        "mainIssues": "词义、代词指代与汉语语序"
+      },
+      {
+        "title": "小作文",
+        "sectionIds": [
+          "shortWriting"
+        ],
+        "mainIssues": "时态、疑问句、动词搭配"
+      },
+      {
+        "title": "大作文",
+        "sectionIds": [
+          "longWriting"
+        ],
+        "mainIssues": "数据比较、解释与评论不足"
+      }
+    ],
+    "summary": "从本套作答看，传统阅读与新题型合计38/50分，阅读表现较好。大小作文合计14/25分，失分11分，占全卷失分31.5分的34.9%；写作是近期优先训练项目。单套试卷不足以判断长期水平，且本次未提供作答耗时。",
+    "reviewAdvice": [
+      {
+        "title": "客观题训练",
+        "text": "重做本报告13道错题，逐题在原文中标记依据，能够解释错误选项的具体问题。每次真题结束后，将选错的词组和题干中的限制条件单独记录。"
+      },
+      {
+        "title": "翻译训练",
+        "text": "每周练习两篇段落翻译，先自行完成，再对照原文检查主谓关系、指代和修饰语。"
+      },
+      {
+        "title": "作文训练",
+        "text": "每周完成两次小作文及两次大作文。每次优先改正基础错误；大作文按描述数据、解释原因、给出具体建议的任务要求写作，再复查字数与语言。"
+      }
+    ]
+  },
+  "targets": [
+    {
+      "totalScore": 75,
+      "sections": [
+        {
+          "title": "完形填空",
+          "sectionIds": [
+            "cloze"
+          ],
+          "targetScore": 7
+        },
+        {
+          "title": "传统阅读",
+          "sectionIds": [
+            "reading1",
+            "reading2",
+            "reading3",
+            "reading4"
+          ],
+          "targetScore": 32
+        },
+        {
+          "title": "新题型",
+          "sectionIds": [
+            "newType"
+          ],
+          "targetScore": 8
+        },
+        {
+          "title": "翻译",
+          "sectionIds": [
+            "translation"
+          ],
+          "targetScore": 11
+        },
+        {
+          "title": "小作文",
+          "sectionIds": [
+            "shortWriting"
+          ],
+          "targetScore": 7
+        },
+        {
+          "title": "大作文",
+          "sectionIds": [
+            "longWriting"
+          ],
+          "targetScore": 10
+        }
+      ]
+    },
+    {
+      "totalScore": 80,
+      "sections": [
+        {
+          "title": "完形填空",
+          "sectionIds": [
+            "cloze"
+          ],
+          "targetScore": 8
+        },
+        {
+          "title": "传统阅读",
+          "sectionIds": [
+            "reading1",
+            "reading2",
+            "reading3",
+            "reading4"
+          ],
+          "targetScore": 34
+        },
+        {
+          "title": "新题型",
+          "sectionIds": [
+            "newType"
+          ],
+          "targetScore": 10
+        },
+        {
+          "title": "翻译",
+          "sectionIds": [
+            "translation"
+          ],
+          "targetScore": 11
+        },
+        {
+          "title": "小作文",
+          "sectionIds": [
+            "shortWriting"
+          ],
+          "targetScore": 7
+        },
+        {
+          "title": "大作文",
+          "sectionIds": [
+            "longWriting"
+          ],
+          "targetScore": 10
+        }
+      ]
+    }
+  ]
+}

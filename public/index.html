@@ -69,6 +69,20 @@
         <div id="previewNotice" role="status"></div>
       </div>
     </dialog>
+    <dialog id="prepDialog" class="overlay" aria-labelledby="prepDialogTitle">
+      <form id="prepUnlock">
+        <div class="section">
+          <h2 id="prepDialogTitle">备考记录</h2>
+          <button type="button" id="prepCancel">取消</button>
+        </div>
+        <label for="prepPassword">密码</label>
+        <div class="prep-unlock-controls">
+          <input id="prepPassword" type="password" autocomplete="off" required autofocus aria-describedby="prepPasswordError" />
+          <button type="submit">进入</button>
+        </div>
+        <p id="prepPasswordError" role="alert" hidden>密码错误</p>
+      </form>
+    </dialog>
     <div id="notice" role="status"></div>
   </body>
 </html>

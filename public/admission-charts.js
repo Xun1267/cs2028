@@ -104,7 +104,7 @@ export function annualChart(
               : `<circle cx="${px}" cy="${py}" r="3.4"/><circle class="chart-hit" cx="${px}" cy="${py}" r="9"/>`;
             return mark(
               color,
-              `${row.label ?? row.year} · ${label} ${format.format(val)} ${unit}`,
+              `${row.labelDetail ?? row.label ?? row.year} · ${label} ${format.format(val)} ${unit}`,
               shape,
             );
           })
