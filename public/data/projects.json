@@ -12105,7 +12105,6 @@
       "direction": "01 计算机技术",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "secondary_2027_pending_official",
       "years": [
         {
           "year": 2027,
@@ -12130,28 +12129,49 @@
           ],
           "sources": [
             {
-              "title": "南京大学2027年硕士研究生招生专业目录",
+              "title": "南京大学2027年硕士研究生招生目录",
               "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
               "year": 2027,
               "publisher": "南京大学研究生招生办公室",
               "scope": "目录附件入口，原始表格未提取",
-              "sourceType": "official"
+              "sourceType": "official",
+              "kind": "catalog"
             },
             {
-              "title": "南京大学2027年硕士研究生招生专业目录（转载）",
+              "title": "南京大学2027年硕士研究生招生目录（转载）",
               "url": "https://kaoyan.xdf.cn/202610/15430106.html",
               "year": 2027,
               "publisher": "新东方考研",
               "scope": "033计算机学院专业行",
-              "sourceType": "secondary"
+              "sourceType": "secondary",
+              "kind": "catalog"
+            },
+            {
+              "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+              "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+              "sourceType": "official",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027硕士招生剩余统考计划·江苏主要高校（2026-11-26）",
+              "url": "https://yjy.haixueedu.cn/shengyu/index.html",
+              "sourceType": "secondary",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027年接收推荐免试研究生拟录取名单公示",
+              "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+              "kind": "catalog",
+              "year": 2027
             }
           ],
-          "sourceStatus": "secondary_2027_pending_official",
-          "status": "pending",
-          "note": "拟招收总人数口径（含推免及卓工专项），具体统考计划待查；085404方向共享计划在groupRecords。",
+          "status": "current",
           "groupIds": [
             "nju-g033-085404-2027"
-          ]
+          ],
+          "updatedAt": "2026-11-27"
         },
         {
           "year": 2026,
@@ -12176,6 +12196,12 @@
           ],
           "sources": [
             {
+              "title": "计算机学院2026年复试细则（转载PDF）",
+              "url": "https://static.kaoyan.cn/file/2026/03/18/cbb2122e313fb6ca5a56b053dd2d14ca.pdf",
+              "year": 2026,
+              "kind": "retest"
+            },
+            {
               "title": "2027考研择校数据汇总（2026录取）",
               "url": "https://noobdream.com/zexiao/",
               "year": 2026,
@@ -12184,11 +12210,9 @@
               "sourceType": "secondary"
             }
           ],
-          "details": {
-            "专项录取": 1,
-            "达到复试资格人数": 93
-          },
-          "status": "historical"
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examPlanned": 76
         },
         {
           "year": 2025,
@@ -12213,6 +12237,19 @@
           ],
           "sources": [
             {
+              "title": "南京大学2025年招生目录及推免人数统计表（转载PDF）",
+              "url": "https://static.kaoyan.cn/file/2024/10/24/a5f03d7190b352809c3035208d4c6ad4.pdf",
+              "year": 2025,
+              "kind": "catalog"
+            },
+            {
+              "title": "王道在线：2025年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+              "year": 2025,
+              "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+              "kind": "catalog"
+            },
+            {
               "title": "码砖录取分数统计（GitHub归档）",
               "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
               "year": 2025,
@@ -12222,10 +12259,11 @@
             }
           ],
           "note": "仅复试入围名单统计，非录取者",
-          "details": {
-            "达到复试资格人数": 106
-          },
-          "status": "historical"
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "groupIds": [
+            "nju-g033-085404-2025"
+          ]
         },
         {
           "year": 2024,
@@ -12250,6 +12288,13 @@
           ],
           "sources": [
             {
+              "title": "王道在线：2024年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2024
+            },
+            {
               "title": "码砖录取分数统计（GitHub归档）",
               "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
               "year": 2024,
@@ -12259,13 +12304,168 @@
             }
           ],
           "note": "码砖统考公示样本；人数为平台统计，专项或方向调整口径可能不同；复试人数为名单口径",
-          "details": {
-            "达到复试资格人数": 53
-          },
-          "status": "historical"
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "officialMajorCode": "085404",
+          "officialMajorName": "计算机技术",
+          "groupIds": [
+            "nju-g033-085404-2024"
+          ]
+        },
+        {
+          "year": 2023,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语（一）"
+            },
+            {
+              "code": "301",
+              "name": "数学（一）"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2023年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2023
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "11408",
+          "officialMajorCode": "085404",
+          "officialMajorName": "计算机技术",
+          "groupIds": [
+            "nju-g033-085404-2023"
+          ]
+        },
+        {
+          "year": 2022,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语（一）"
+            },
+            {
+              "code": "301",
+              "name": "数学（一）"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2022年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2022
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "11408",
+          "officialMajorCode": "085400",
+          "officialMajorName": "电子信息",
+          "planned": 100,
+          "earlyExamPlanned": 43
+        },
+        {
+          "year": 2021,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语（一）"
+            },
+            {
+              "code": "301",
+              "name": "数学（一）"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2021年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=4&sn=8444966b01072b423944f0847697dea0&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第2页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2021
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "11408",
+          "officialMajorCode": "085400",
+          "officialMajorName": "电子信息",
+          "planned": 110,
+          "earlyExamPlanned": 50
+        },
+        {
+          "year": 2020,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语（一）"
+            },
+            {
+              "code": "301",
+              "name": "数学（一）"
+            },
+            {
+              "code": "845",
+              "name": "自命题"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2020年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=5&sn=05868e5beedb9ed9487326049666df61&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第1页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2020
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "11845",
+          "officialMajorCode": "085400",
+          "officialMajorName": "电子信息",
+          "examPlanned": 70,
+          "professionalSubject": {
+            "code": "845",
+            "name": "自命题"
+          }
         }
       ],
-      "status": "pending"
+      "status": "current"
     },
     {
       "id": "nju-033-085404-02",
@@ -12276,7 +12476,6 @@
       "direction": "02 计算机技术（医学人工智能）",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "secondary_2027_pending_official",
       "years": [
         {
           "year": 2027,
@@ -12301,31 +12500,186 @@
           ],
           "sources": [
             {
-              "title": "南京大学2027年硕士研究生招生专业目录",
+              "title": "南京大学2027年硕士研究生招生目录",
               "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
               "year": 2027,
               "publisher": "南京大学研究生招生办公室",
               "scope": "目录附件入口，原始表格未提取",
-              "sourceType": "official"
+              "sourceType": "official",
+              "kind": "catalog"
             },
             {
-              "title": "南京大学2027年硕士研究生招生专业目录（转载）",
+              "title": "南京大学2027年硕士研究生招生目录（转载）",
               "url": "https://kaoyan.xdf.cn/202610/15430106.html",
               "year": 2027,
               "publisher": "新东方考研",
               "scope": "033计算机学院专业行",
+              "sourceType": "secondary",
+              "kind": "catalog"
+            },
+            {
+              "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+              "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+              "sourceType": "official",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027硕士招生剩余统考计划·江苏主要高校（2026-11-26）",
+              "url": "https://yjy.haixueedu.cn/shengyu/index.html",
+              "sourceType": "secondary",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027年接收推荐免试研究生拟录取名单公示",
+              "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+              "kind": "catalog",
+              "year": 2027
+            }
+          ],
+          "status": "current",
+          "groupIds": [
+            "nju-g033-085404-2027"
+          ],
+          "updatedAt": "2026-11-27"
+        },
+        {
+          "year": 2025,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语（一）"
+            },
+            {
+              "code": "301",
+              "name": "数学（一）"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "sources": [
+            {
+              "title": "南京大学2025年招生目录及推免人数统计表（转载PDF）",
+              "url": "https://static.kaoyan.cn/file/2024/10/24/a5f03d7190b352809c3035208d4c6ad4.pdf",
+              "year": 2025,
+              "kind": "catalog"
+            },
+            {
+              "title": "王道在线：2025年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+              "year": 2025,
+              "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+              "kind": "catalog"
+            },
+            {
+              "title": "码砖录取分数统计（GitHub归档）",
+              "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
+              "year": 2025,
+              "publisher": "CodeBrick码砖 / kaoyan408-share",
+              "scope": "计算机学院 计算机技术",
               "sourceType": "secondary"
             }
           ],
-          "sourceStatus": "secondary_2027_pending_official",
-          "status": "pending",
-          "note": "拟招收总人数口径（含推免及卓工专项），具体统考计划待查；085404方向共享计划在groupRecords。",
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "11408",
           "groupIds": [
-            "nju-g033-085404-2027"
+            "nju-g033-085404-2025"
+          ]
+        },
+        {
+          "year": 2024,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语（一）"
+            },
+            {
+              "code": "301",
+              "name": "数学（一）"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2024年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2024
+            },
+            {
+              "title": "码砖录取分数统计（GitHub归档）",
+              "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
+              "year": 2024,
+              "publisher": "CodeBrick码砖 / kaoyan408-share",
+              "scope": "计算机学院 计算机技术",
+              "sourceType": "secondary"
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "11408",
+          "officialMajorCode": "085404",
+          "officialMajorName": "计算机技术",
+          "groupIds": [
+            "nju-g033-085404-2024"
+          ]
+        },
+        {
+          "year": 2023,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语（一）"
+            },
+            {
+              "code": "301",
+              "name": "数学（一）"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2023年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2023
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "11408",
+          "officialMajorCode": "085404",
+          "officialMajorName": "计算机技术",
+          "groupIds": [
+            "nju-g033-085404-2023"
           ]
         }
       ],
-      "status": "pending"
+      "status": "current"
     },
     {
       "id": "nju-033-085405-01",
@@ -12336,7 +12690,6 @@
       "direction": "01 软件工程",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "secondary_2027_pending_official",
       "years": [
         {
           "year": 2027,
@@ -12361,26 +12714,48 @@
           ],
           "sources": [
             {
-              "title": "南京大学2027年硕士研究生招生专业目录",
+              "title": "南京大学2027年硕士研究生招生目录",
               "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
               "year": 2027,
               "publisher": "南京大学研究生招生办公室",
               "scope": "目录附件入口，原始表格未提取",
-              "sourceType": "official"
+              "sourceType": "official",
+              "kind": "catalog"
             },
             {
-              "title": "南京大学2027年硕士研究生招生专业目录（转载）",
+              "title": "南京大学2027年硕士研究生招生目录（转载）",
               "url": "https://kaoyan.xdf.cn/202610/15430106.html",
               "year": 2027,
               "publisher": "新东方考研",
               "scope": "033计算机学院专业行",
-              "sourceType": "secondary"
+              "sourceType": "secondary",
+              "kind": "catalog"
+            },
+            {
+              "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+              "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+              "sourceType": "official",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027硕士招生剩余统考计划·江苏主要高校（2026-11-26）",
+              "url": "https://yjy.haixueedu.cn/shengyu/index.html",
+              "sourceType": "secondary",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027年接收推荐免试研究生拟录取名单公示",
+              "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+              "kind": "catalog",
+              "year": 2027
             }
           ],
-          "sourceStatus": "secondary_2027_pending_official",
-          "status": "pending",
+          "status": "current",
           "planned": 20,
-          "note": "拟招收总人数口径（含推免及卓工专项），具体统考计划待查；085404方向共享计划在groupRecords。"
+          "updatedAt": "2026-11-27",
+          "estimatedExamPlanned": 10
         },
         {
           "year": 2026,
@@ -12405,6 +12780,12 @@
           ],
           "sources": [
             {
+              "title": "计算机学院2026年复试细则（转载PDF）",
+              "url": "https://static.kaoyan.cn/file/2026/03/18/cbb2122e313fb6ca5a56b053dd2d14ca.pdf",
+              "year": 2026,
+              "kind": "retest"
+            },
+            {
               "title": "2027考研择校数据汇总（2026录取）",
               "url": "https://noobdream.com/zexiao/",
               "year": 2026,
@@ -12413,13 +12794,12 @@
               "sourceType": "secondary"
             }
           ],
-          "details": {
-            "达到复试资格人数": 9
-          },
-          "status": "historical"
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examPlanned": 7
         }
       ],
-      "status": "pending"
+      "status": "current"
     },
     {
       "id": "nju-033-085412-01",
@@ -12430,7 +12810,6 @@
       "direction": "01 网络与信息安全",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "secondary_2027_pending_official",
       "years": [
         {
           "year": 2027,
@@ -12455,26 +12834,48 @@
           ],
           "sources": [
             {
-              "title": "南京大学2027年硕士研究生招生专业目录",
+              "title": "南京大学2027年硕士研究生招生目录",
               "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
               "year": 2027,
               "publisher": "南京大学研究生招生办公室",
               "scope": "目录附件入口，原始表格未提取",
-              "sourceType": "official"
+              "sourceType": "official",
+              "kind": "catalog"
             },
             {
-              "title": "南京大学2027年硕士研究生招生专业目录（转载）",
+              "title": "南京大学2027年硕士研究生招生目录（转载）",
               "url": "https://kaoyan.xdf.cn/202610/15430106.html",
               "year": 2027,
               "publisher": "新东方考研",
               "scope": "033计算机学院专业行",
-              "sourceType": "secondary"
+              "sourceType": "secondary",
+              "kind": "catalog"
+            },
+            {
+              "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+              "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+              "sourceType": "official",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027硕士招生剩余统考计划·江苏主要高校（2026-11-26）",
+              "url": "https://yjy.haixueedu.cn/shengyu/index.html",
+              "sourceType": "secondary",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027年接收推荐免试研究生拟录取名单公示",
+              "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+              "kind": "catalog",
+              "year": 2027
             }
           ],
-          "sourceStatus": "secondary_2027_pending_official",
-          "status": "pending",
+          "status": "current",
           "planned": 10,
-          "note": "拟招收总人数口径（含推免及卓工专项），具体统考计划待查；085404方向共享计划在groupRecords。"
+          "updatedAt": "2026-11-27",
+          "estimatedExamPlanned": 7
         },
         {
           "year": 2026,
@@ -12499,6 +12900,12 @@
           ],
           "sources": [
             {
+              "title": "计算机学院2026年复试细则（转载PDF）",
+              "url": "https://static.kaoyan.cn/file/2026/03/18/cbb2122e313fb6ca5a56b053dd2d14ca.pdf",
+              "year": 2026,
+              "kind": "retest"
+            },
+            {
               "title": "2027考研择校数据汇总（2026录取）",
               "url": "https://noobdream.com/zexiao/",
               "year": 2026,
@@ -12507,10 +12914,9 @@
               "sourceType": "secondary"
             }
           ],
-          "details": {
-            "达到复试资格人数": 11
-          },
-          "status": "historical"
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examPlanned": 9
         },
         {
           "year": 2025,
@@ -12535,6 +12941,19 @@
           ],
           "sources": [
             {
+              "title": "南京大学2025年招生目录及推免人数统计表（转载PDF）",
+              "url": "https://static.kaoyan.cn/file/2024/10/24/a5f03d7190b352809c3035208d4c6ad4.pdf",
+              "year": 2025,
+              "kind": "catalog"
+            },
+            {
+              "title": "王道在线：2025年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+              "year": 2025,
+              "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+              "kind": "catalog"
+            },
+            {
               "title": "码砖录取分数统计（GitHub归档）",
               "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
               "year": 2025,
@@ -12544,13 +12963,88 @@
             }
           ],
           "note": "仅复试入围名单统计，非录取者",
-          "details": {
-            "达到复试资格人数": 11
-          },
-          "status": "historical"
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "planned": 10,
+          "estimatedExamPlanned": 9,
+          "earlyExamPlanned": 9
+        },
+        {
+          "year": 2024,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语（一）"
+            },
+            {
+              "code": "301",
+              "name": "数学（一）"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2024年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2024
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "11408",
+          "officialMajorCode": "085412",
+          "officialMajorName": "网络与信息安全",
+          "planned": 10,
+          "earlyExamPlanned": 8
+        },
+        {
+          "year": 2023,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语（一）"
+            },
+            {
+              "code": "301",
+              "name": "数学（一）"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2023年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2023
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "11408",
+          "officialMajorCode": "085412",
+          "officialMajorName": "网络与信息安全",
+          "planned": 10,
+          "earlyExamPlanned": 8
         }
       ],
-      "status": "pending"
+      "status": "current"
     },
     {
       "id": "seu-h-009-085404",
@@ -14870,7 +15364,6 @@
       "direction": "01 软件工程",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "secondary_2027_pending_official",
       "years": [
         {
           "year": 2027,
@@ -14895,26 +15388,48 @@
           ],
           "sources": [
             {
-              "title": "南京大学2027年硕士研究生招生专业目录",
+              "title": "南京大学2027年硕士研究生招生目录",
               "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
               "year": 2027,
               "publisher": "南京大学研究生招生办公室",
               "scope": "目录附件入口，原始表格未提取",
-              "sourceType": "official"
+              "sourceType": "official",
+              "kind": "catalog"
             },
             {
-              "title": "南京大学2027年硕士研究生招生专业目录（转载）",
+              "title": "南京大学2027年硕士研究生招生目录（转载）",
               "url": "https://kaoyan.xdf.cn/202610/15430106.html",
               "year": 2027,
               "publisher": "新东方考研",
               "scope": "转载目录第41页，032 085405 01，拟招收总人数全日制专业学位列",
-              "sourceType": "secondary"
+              "sourceType": "secondary",
+              "kind": "catalog"
+            },
+            {
+              "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+              "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+              "sourceType": "official",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027硕士招生剩余统考计划·江苏主要高校（2026-11-26）",
+              "url": "https://yjy.haixueedu.cn/shengyu/index.html",
+              "sourceType": "secondary",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027年接收推荐免试研究生拟录取名单公示",
+              "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+              "kind": "catalog",
+              "year": 2027
             }
           ],
-          "sourceStatus": "secondary_2027_pending_official",
-          "status": "pending",
+          "status": "current",
           "planned": 225,
-          "note": "目录拟招收总人数，含推免；卓工专项可能包含在内，独立统考计划尚未取得。"
+          "updatedAt": "2026-11-27",
+          "estimatedExamPlanned": 89
         },
         {
           "year": 2026,
@@ -14947,10 +15462,8 @@
               "sourceType": "secondary"
             }
           ],
-          "details": {
-            "达到复试资格人数": 141
-          },
-          "status": "historical"
+          "status": "historical",
+          "updatedAt": "2026-11-27"
         },
         {
           "year": 2025,
@@ -14975,6 +15488,19 @@
           ],
           "sources": [
             {
+              "title": "南京大学2025年招生目录及推免人数统计表（转载PDF）",
+              "url": "https://static.kaoyan.cn/file/2024/10/24/a5f03d7190b352809c3035208d4c6ad4.pdf",
+              "year": 2025,
+              "kind": "catalog"
+            },
+            {
+              "title": "王道在线：2025年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+              "year": 2025,
+              "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+              "kind": "catalog"
+            },
+            {
               "title": "码砖录取分数统计（GitHub归档）",
               "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
               "year": 2025,
@@ -14984,14 +15510,23 @@
             }
           ],
           "note": "仅复试入围名单统计，非录取者",
-          "details": {
-            "达到复试资格人数": 132
-          },
-          "status": "historical"
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "planned": 227,
+          "examPlanned": 109,
+          "estimatedExamPlanned": 94,
+          "earlyExamPlanned": 101
         },
         {
           "year": 2024,
           "sources": [
+            {
+              "title": "王道在线：2024年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2024
+            },
             {
               "title": "码砖录取分数统计（GitHub归档）",
               "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
@@ -15002,14 +15537,201 @@
             }
           ],
           "note": "当年业务课二为自命题；具体科目待补；码砖统考公示样本；人数为平台统计，专项或方向调整口径可能不同；复试人数为名单口径",
-          "details": {
-            "达到复试资格人数": 136
-          },
           "status": "historical",
-          "subjects": []
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "204",
+              "name": "英语（二）"
+            },
+            {
+              "code": "302",
+              "name": "数学（二）"
+            },
+            {
+              "code": "842",
+              "name": "自命题"
+            }
+          ],
+          "updatedAt": "2026-11-27",
+          "examCombo": "22842",
+          "officialMajorCode": "085405",
+          "officialMajorName": "软件工程",
+          "planned": 227,
+          "earlyExamPlanned": 102,
+          "professionalSubject": {
+            "code": "842",
+            "name": "自命题"
+          }
+        },
+        {
+          "year": 2023,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "204",
+              "name": "英语（二）"
+            },
+            {
+              "code": "302",
+              "name": "数学（二）"
+            },
+            {
+              "code": "842",
+              "name": "自命题"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2023年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2023
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "22842",
+          "officialMajorCode": "085405",
+          "officialMajorName": "软件工程",
+          "planned": 227,
+          "earlyExamPlanned": 95,
+          "professionalSubject": {
+            "code": "842",
+            "name": "自命题"
+          }
+        },
+        {
+          "year": 2022,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "204",
+              "name": "英语（二）"
+            },
+            {
+              "code": "302",
+              "name": "数学（二）"
+            },
+            {
+              "code": "842",
+              "name": "自命题"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2022年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2022
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "22842",
+          "officialMajorCode": "085400",
+          "officialMajorName": "电子信息",
+          "planned": 230,
+          "earlyExamPlanned": 116,
+          "professionalSubject": {
+            "code": "842",
+            "name": "自命题"
+          }
+        },
+        {
+          "year": 2021,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "204",
+              "name": "英语（二）"
+            },
+            {
+              "code": "302",
+              "name": "数学（二）"
+            },
+            {
+              "code": "842",
+              "name": "自命题"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2021年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=4&sn=8444966b01072b423944f0847697dea0&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2021
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "22842",
+          "officialMajorCode": "085400",
+          "officialMajorName": "电子信息",
+          "planned": 240,
+          "earlyExamPlanned": 124,
+          "professionalSubject": {
+            "code": "842",
+            "name": "自命题"
+          }
+        },
+        {
+          "year": 2020,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "204",
+              "name": "英语（二）"
+            },
+            {
+              "code": "302",
+              "name": "数学（二）"
+            },
+            {
+              "code": "842",
+              "name": "自命题"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2020年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=5&sn=05868e5beedb9ed9487326049666df61&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第1页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2020
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "22842",
+          "officialMajorCode": "085400",
+          "officialMajorName": "电子信息",
+          "examPlanned": 140,
+          "professionalSubject": {
+            "code": "842",
+            "name": "自命题"
+          }
         }
       ],
-      "status": "pending"
+      "status": "current"
     },
     {
       "id": "nju-037-085410-01",
@@ -15020,7 +15742,6 @@
       "direction": "01 人工智能",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "secondary_2027_pending_official",
       "years": [
         {
           "year": 2027,
@@ -15045,26 +15766,48 @@
           ],
           "sources": [
             {
-              "title": "南京大学2027年硕士研究生招生专业目录",
+              "title": "南京大学2027年硕士研究生招生目录",
               "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
               "year": 2027,
               "publisher": "南京大学研究生招生办公室",
               "scope": "目录附件入口，原始表格未提取",
-              "sourceType": "official"
+              "sourceType": "official",
+              "kind": "catalog"
             },
             {
-              "title": "南京大学2027年硕士研究生招生专业目录（转载）",
+              "title": "南京大学2027年硕士研究生招生目录（转载）",
               "url": "https://kaoyan.xdf.cn/202610/15430106.html",
               "year": 2027,
               "publisher": "新东方考研",
               "scope": "转载目录第47页，037 085410 01，拟招收总人数全日制专业学位列",
-              "sourceType": "secondary"
+              "sourceType": "secondary",
+              "kind": "catalog"
+            },
+            {
+              "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+              "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+              "sourceType": "official",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027硕士招生剩余统考计划·江苏主要高校（2026-11-26）",
+              "url": "https://yjy.haixueedu.cn/shengyu/index.html",
+              "sourceType": "secondary",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027年接收推荐免试研究生拟录取名单公示",
+              "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+              "kind": "catalog",
+              "year": 2027
             }
           ],
-          "sourceStatus": "secondary_2027_pending_official",
-          "status": "pending",
+          "status": "current",
           "planned": 52,
-          "note": "目录拟招收总人数，含推免；卓工专项可能包含在内，独立统考计划尚未取得。"
+          "updatedAt": "2026-11-27",
+          "estimatedExamPlanned": 15
         },
         {
           "year": 2026,
@@ -15089,6 +15832,12 @@
           ],
           "sources": [
             {
+              "title": "人工智能学院2026年复试细则（转载PDF）",
+              "url": "https://static.kaoyan.cn/file/2026/03/19/a3180bf926d300786c2fa30a63ff1db6.pdf",
+              "year": 2026,
+              "kind": "retest"
+            },
+            {
               "title": "码砖录取分数统计（GitHub归档）",
               "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
               "year": 2026,
@@ -15106,13 +15855,57 @@
             }
           ],
           "note": "码砖统考公示样本；人数为平台统计，专项或方向调整口径可能不同；复试人数为名单口径",
-          "details": {
-            "达到复试资格人数": 6
-          },
-          "status": "historical"
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examPlanned": 5
+        },
+        {
+          "year": 2025,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语（一）"
+            },
+            {
+              "code": "301",
+              "name": "数学（一）"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "sources": [
+            {
+              "title": "南京大学2025年招生目录及推免人数统计表（转载PDF）",
+              "url": "https://static.kaoyan.cn/file/2024/10/24/a5f03d7190b352809c3035208d4c6ad4.pdf",
+              "year": 2025,
+              "kind": "catalog"
+            },
+            {
+              "title": "王道在线：2025年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+              "year": 2025,
+              "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+              "kind": "catalog"
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "11408",
+          "officialMajorCode": "085400",
+          "officialMajorName": "电子信息",
+          "planned": 10,
+          "examPlanned": 6,
+          "estimatedExamPlanned": 6,
+          "earlyExamPlanned": 5
         }
       ],
-      "status": "pending"
+      "status": "current"
     },
     {
       "id": "nju-071-085410-01",
@@ -15123,7 +15916,6 @@
       "direction": "01 人工智能",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "secondary_2027_pending_official",
       "years": [
         {
           "year": 2027,
@@ -15148,26 +15940,48 @@
           ],
           "sources": [
             {
-              "title": "南京大学2027年硕士研究生招生专业目录",
+              "title": "南京大学2027年硕士研究生招生目录",
               "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
               "year": 2027,
               "publisher": "南京大学研究生招生办公室",
               "scope": "目录附件入口，原始表格未提取",
-              "sourceType": "official"
+              "sourceType": "official",
+              "kind": "catalog"
             },
             {
-              "title": "南京大学2027年硕士研究生招生专业目录（转载）",
+              "title": "南京大学2027年硕士研究生招生目录（转载）",
               "url": "https://kaoyan.xdf.cn/202610/15430106.html",
               "year": 2027,
               "publisher": "新东方考研",
               "scope": "转载目录第51页，071 085410 01，拟招收总人数全日制专业学位列",
-              "sourceType": "secondary"
+              "sourceType": "secondary",
+              "kind": "catalog"
+            },
+            {
+              "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+              "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+              "sourceType": "official",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027硕士招生剩余统考计划·江苏主要高校（2026-11-26）",
+              "url": "https://yjy.haixueedu.cn/shengyu/index.html",
+              "sourceType": "secondary",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027年接收推荐免试研究生拟录取名单公示",
+              "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+              "kind": "catalog",
+              "year": 2027
             }
           ],
-          "sourceStatus": "secondary_2027_pending_official",
-          "status": "pending",
+          "status": "current",
           "planned": 85,
-          "note": "目录拟招收总人数，含推免；卓工专项可能包含在内，独立统考计划尚未取得。"
+          "updatedAt": "2026-11-27",
+          "estimatedExamPlanned": 21
         },
         {
           "year": 2026,
@@ -15192,6 +16006,12 @@
           ],
           "sources": [
             {
+              "title": "智能科学与技术学院2026年复试细则",
+              "url": "https://is.nju.edu.cn/_upload/article/files/76/f4/7198658941fb949976ad54dbf1f2/0b78779b-9109-4ae9-8946-88e24b661768.pdf",
+              "year": 2026,
+              "kind": "retest"
+            },
+            {
               "title": "码砖录取分数统计（GitHub归档）",
               "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
               "year": 2026,
@@ -15209,10 +16029,9 @@
             }
           ],
           "note": "码砖统考公示样本；人数为平台统计，专项或方向调整口径可能不同；复试人数为名单口径",
-          "details": {
-            "达到复试资格人数": 17
-          },
-          "status": "historical"
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examPlanned": 14
         },
         {
           "year": 2025,
@@ -15237,6 +16056,19 @@
           ],
           "sources": [
             {
+              "title": "南京大学2025年招生目录及推免人数统计表（转载PDF）",
+              "url": "https://static.kaoyan.cn/file/2024/10/24/a5f03d7190b352809c3035208d4c6ad4.pdf",
+              "year": 2025,
+              "kind": "catalog"
+            },
+            {
+              "title": "王道在线：2025年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+              "year": 2025,
+              "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+              "kind": "catalog"
+            },
+            {
               "title": "码砖录取分数统计（GitHub归档）",
               "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
               "year": 2025,
@@ -15246,14 +16078,22 @@
             }
           ],
           "note": "仅复试入围名单统计，非录取者",
-          "details": {
-            "达到复试资格人数": 46
-          },
-          "status": "historical"
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "planned": 50,
+          "estimatedExamPlanned": 23,
+          "earlyExamPlanned": 25
         },
         {
           "year": 2024,
           "sources": [
+            {
+              "title": "王道在线：2024年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2024
+            },
             {
               "title": "码砖录取分数统计（GitHub归档）",
               "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
@@ -15264,14 +16104,123 @@
             }
           ],
           "note": "当年业务课二为自命题；具体科目待补；码砖统考公示样本；人数为平台统计，专项或方向调整口径可能不同；复试人数为名单口径",
-          "details": {
-            "达到复试资格人数": 22
-          },
           "status": "historical",
-          "subjects": []
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语（一）"
+            },
+            {
+              "code": "301",
+              "name": "数学（一）"
+            },
+            {
+              "code": "855",
+              "name": "自命题"
+            }
+          ],
+          "updatedAt": "2026-11-27",
+          "examCombo": "11855",
+          "officialMajorCode": "085410",
+          "officialMajorName": "人工智能",
+          "planned": 10,
+          "earlyExamPlanned": 10,
+          "professionalSubject": {
+            "code": "855",
+            "name": "自命题"
+          }
+        },
+        {
+          "year": 2023,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语（一）"
+            },
+            {
+              "code": "301",
+              "name": "数学（一）"
+            },
+            {
+              "code": "855",
+              "name": "自命题"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2023年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2023
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "11855",
+          "officialMajorCode": "085410",
+          "officialMajorName": "人工智能",
+          "planned": 10,
+          "earlyExamPlanned": 10,
+          "professionalSubject": {
+            "code": "855",
+            "name": "自命题"
+          }
+        },
+        {
+          "year": 2022,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "201",
+              "name": "英语（一）"
+            },
+            {
+              "code": "301",
+              "name": "数学（一）"
+            },
+            {
+              "code": "855",
+              "name": "自命题"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2022年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2022
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "11855",
+          "officialMajorCode": "085404",
+          "officialMajorName": "计算机技术",
+          "historicalCollege": "苏州校区",
+          "historicalDirection": "人工智能方向",
+          "direction": "人工智能方向",
+          "planned": 10,
+          "earlyExamPlanned": 10,
+          "professionalSubject": {
+            "code": "855",
+            "name": "自命题"
+          }
         }
       ],
-      "status": "pending"
+      "status": "current"
     },
     {
       "id": "nju-072-085405-01",
@@ -15282,7 +16231,6 @@
       "direction": "01 软件工程",
       "degree": "专业学位",
       "studyMode": "全日制",
-      "sourceStatus": "secondary_2027_pending_official",
       "years": [
         {
           "year": 2027,
@@ -15307,26 +16255,48 @@
           ],
           "sources": [
             {
-              "title": "南京大学2027年硕士研究生招生专业目录",
+              "title": "南京大学2027年硕士研究生招生目录",
               "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
               "year": 2027,
               "publisher": "南京大学研究生招生办公室",
               "scope": "目录附件入口，原始表格未提取",
-              "sourceType": "official"
+              "sourceType": "official",
+              "kind": "catalog"
             },
             {
-              "title": "南京大学2027年硕士研究生招生专业目录（转载）",
+              "title": "南京大学2027年硕士研究生招生目录（转载）",
               "url": "https://kaoyan.xdf.cn/202610/15430106.html",
               "year": 2027,
               "publisher": "新东方考研",
               "scope": "转载目录第52页，072 085405 01，拟招收总人数全日制专业学位列",
-              "sourceType": "secondary"
+              "sourceType": "secondary",
+              "kind": "catalog"
+            },
+            {
+              "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+              "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+              "sourceType": "official",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027硕士招生剩余统考计划·江苏主要高校（2026-11-26）",
+              "url": "https://yjy.haixueedu.cn/shengyu/index.html",
+              "sourceType": "secondary",
+              "kind": "catalog",
+              "year": 2027
+            },
+            {
+              "title": "2027年接收推荐免试研究生拟录取名单公示",
+              "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+              "kind": "catalog",
+              "year": 2027
             }
           ],
-          "sourceStatus": "secondary_2027_pending_official",
-          "status": "pending",
+          "status": "current",
           "planned": 65,
-          "note": "目录拟招收总人数，含推免；卓工专项可能包含在内，独立统考计划尚未取得。"
+          "updatedAt": "2026-11-27",
+          "estimatedExamPlanned": 24
         },
         {
           "year": 2026,
@@ -15368,14 +16338,62 @@
             }
           ],
           "note": "码砖统考公示样本；人数为平台统计，专项或方向调整口径可能不同；复试人数为名单口径",
-          "details": {
-            "达到复试资格人数": 4
-          },
-          "status": "historical"
+          "status": "historical",
+          "updatedAt": "2026-11-27"
+        },
+        {
+          "year": 2025,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "204",
+              "name": "英语（二）"
+            },
+            {
+              "code": "302",
+              "name": "数学（二）"
+            },
+            {
+              "code": "408",
+              "name": "计算机学科专业基础"
+            }
+          ],
+          "sources": [
+            {
+              "title": "南京大学2025年招生目录及推免人数统计表（转载PDF）",
+              "url": "https://static.kaoyan.cn/file/2024/10/24/a5f03d7190b352809c3035208d4c6ad4.pdf",
+              "year": 2025,
+              "kind": "catalog"
+            },
+            {
+              "title": "王道在线：2025年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+              "year": 2025,
+              "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+              "kind": "catalog"
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "22408",
+          "planned": 35,
+          "examPlanned": 20,
+          "estimatedExamPlanned": 20,
+          "earlyExamPlanned": 20
         },
         {
           "year": 2024,
           "sources": [
+            {
+              "title": "王道在线：2024年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第5页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2024
+            },
             {
               "title": "码砖录取分数统计（GitHub归档）",
               "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
@@ -15387,10 +16405,122 @@
           ],
           "note": "当年业务课二为自命题；具体科目待补；码砖统考公示样本；人数为平台统计，专项或方向调整口径可能不同；复试人数为名单口径",
           "status": "historical",
-          "subjects": []
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "204",
+              "name": "英语（二）"
+            },
+            {
+              "code": "302",
+              "name": "数学（二）"
+            },
+            {
+              "code": "842",
+              "name": "自命题"
+            }
+          ],
+          "updatedAt": "2026-11-27",
+          "examCombo": "22842",
+          "officialMajorCode": "085405",
+          "officialMajorName": "软件工程",
+          "planned": 10,
+          "earlyExamPlanned": 10,
+          "professionalSubject": {
+            "code": "842",
+            "name": "自命题"
+          }
+        },
+        {
+          "year": 2023,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "204",
+              "name": "英语（二）"
+            },
+            {
+              "code": "302",
+              "name": "数学（二）"
+            },
+            {
+              "code": "842",
+              "name": "自命题"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2023年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第5页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2023
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "22842",
+          "officialMajorCode": "085405",
+          "officialMajorName": "软件工程",
+          "planned": 10,
+          "earlyExamPlanned": 10,
+          "professionalSubject": {
+            "code": "842",
+            "name": "自命题"
+          }
+        },
+        {
+          "year": 2022,
+          "subjects": [
+            {
+              "code": "101",
+              "name": "思想政治理论"
+            },
+            {
+              "code": "204",
+              "name": "英语（二）"
+            },
+            {
+              "code": "302",
+              "name": "数学（二）"
+            },
+            {
+              "code": "842",
+              "name": "自命题"
+            }
+          ],
+          "sources": [
+            {
+              "title": "王道在线：2022年南京大学计算机考研考情分析",
+              "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+              "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+              "kind": "catalog",
+              "year": 2022
+            }
+          ],
+          "status": "historical",
+          "updatedAt": "2026-11-27",
+          "examCombo": "22842",
+          "officialMajorCode": "085405",
+          "officialMajorName": "软件工程",
+          "historicalCollege": "苏州校区",
+          "historicalDirection": "智能化软件工程与技术",
+          "direction": "智能化软件工程与技术",
+          "planned": 10,
+          "earlyExamPlanned": 10,
+          "professionalSubject": {
+            "code": "842",
+            "name": "自命题"
+          }
         }
       ],
-      "status": "pending"
+      "status": "current"
     },
     {
       "id": "ustc-217-085400-02",
@@ -33187,18 +34317,66 @@
         "nju-033-085404-01",
         "nju-033-085404-02"
       ],
-      "scope": "085404拟招收总人数190（含推免及卓工专项），方向共享。",
+      "scope": "计算机技术 01 计算机技术、02 计算机技术（医学人工智能）合计",
       "planned": 190,
       "sources": [
         {
-          "title": "南京大学2027年硕士研究生招生专业目录（转载）",
+          "title": "南京大学2027年硕士研究生招生目录",
+          "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
+          "sourceType": "official",
+          "kind": "catalog",
+          "year": 2027
+        },
+        {
+          "title": "南京大学2027年硕士研究生招生目录（转载）",
           "url": "https://kaoyan.xdf.cn/202610/15430106.html",
           "year": 2027,
           "publisher": "新东方考研",
           "scope": "033计算机学院专业行",
-          "sourceType": "secondary"
+          "sourceType": "secondary",
+          "kind": "catalog"
+        },
+        {
+          "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+          "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+          "sourceType": "official",
+          "kind": "catalog",
+          "year": 2027
+        },
+        {
+          "title": "2027硕士招生剩余统考计划·江苏主要高校（2026-11-26）",
+          "url": "https://yjy.haixueedu.cn/shengyu/index.html",
+          "sourceType": "secondary",
+          "kind": "catalog",
+          "year": 2027
+        },
+        {
+          "title": "2027年接收推荐免试研究生拟录取名单公示",
+          "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+          "kind": "catalog",
+          "year": 2027
         }
-      ]
+      ],
+      "updatedAt": "2026-11-27",
+      "estimatedExamPlanned": 95,
+      "admission": {
+        "promotionAdmissions": 95,
+        "sources": [
+          {
+            "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+            "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+            "sourceType": "official",
+            "kind": "catalog",
+            "year": 2027
+          },
+          {
+            "title": "2027年接收推荐免试研究生拟录取名单公示",
+            "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+            "kind": "catalog",
+            "year": 2027
+          }
+        ]
+      }
     },
     {
       "id": "fdu-g-robot-2026",
@@ -35826,6 +37004,534 @@
         "examAdmissionsTotal": 187,
         "metricScope": "含调剂"
       }
+    },
+    {
+      "id": "nju-g033-085404-2023",
+      "year": 2023,
+      "projectIds": [
+        "nju-033-085404-01",
+        "nju-033-085404-02"
+      ],
+      "scope": "计算机技术 01 计算机技术、02 计算机技术（医学人工智能）合计",
+      "updatedAt": "2026-11-27",
+      "sources": [
+        {
+          "title": "王道在线：2023年南京大学计算机考研考情分析",
+          "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+          "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+          "kind": "catalog",
+          "year": 2023
+        }
+      ],
+      "admission": {
+        "updatedAt": "2026-11-27",
+        "cutoff": 351,
+        "reportedInterviewees": 38,
+        "reportedAdmissions": 37,
+        "minimum": 352,
+        "maximum": 435,
+        "average": 381,
+        "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
+        "reportedInterviewRatio": 1.027,
+        "interviewScoreStats": {
+          "average": 378
+        },
+        "interviewSubjectScoreStats": {
+          "politics": {
+            "average": 66
+          },
+          "english": {
+            "average": 73
+          },
+          "math": {
+            "average": 119
+          },
+          "professional": {
+            "average": 118
+          }
+        },
+        "specialPlanInterviewees": 1,
+        "subjectScoreStats": {
+          "professional": {
+            "average": 120
+          }
+        },
+        "examAdmissions": 37,
+        "interviewEligible": 38,
+        "interviewRatio": 1.027,
+        "metricScope": "普通统考",
+        "interviewRequirements": {
+          "retestMax": 300,
+          "initialWeight": 0.625
+        },
+        "sources": [
+          {
+            "title": "N诺南京大学历年录取情况",
+            "url": "https://noobdream.com/schoolinfo/17/",
+            "kind": "history",
+            "year": 2023
+          },
+          {
+            "title": "王道在线：2023年南京大学计算机考研考情分析",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+            "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+            "kind": "history",
+            "year": 2023
+          },
+          {
+            "title": "王道在线：2023年南京大学计算机考研考情分析",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+            "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+            "kind": "scores",
+            "year": 2023
+          },
+          {
+            "title": "王道在线：2023年南京大学计算机考研考情分析",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+            "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+            "kind": "retest",
+            "year": 2023
+          }
+        ]
+      },
+      "planned": 105,
+      "earlyExamPlanned": 27
+    },
+    {
+      "id": "nju-g033-085404-2024",
+      "year": 2024,
+      "projectIds": [
+        "nju-033-085404-01",
+        "nju-033-085404-02"
+      ],
+      "scope": "计算机技术 01 计算机技术、02 计算机技术（医学人工智能）合计",
+      "updatedAt": "2026-11-27",
+      "sources": [
+        {
+          "title": "王道在线：2024年南京大学计算机考研考情分析",
+          "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+          "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+          "kind": "catalog",
+          "year": 2024
+        }
+      ],
+      "admission": {
+        "cutoff": 359,
+        "minimum": 361,
+        "maximum": 423,
+        "average": 380.82,
+        "median": 379.5,
+        "q1": 370.75,
+        "q3": 389.25,
+        "sampleSize": 44,
+        "reportedAdmissions": 44,
+        "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
+        "sources": [
+          {
+            "title": "N诺南京大学历年录取情况",
+            "url": "https://noobdream.com/schoolinfo/17/",
+            "kind": "history",
+            "year": 2024
+          },
+          {
+            "title": "码砖录取分数统计（GitHub归档）",
+            "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-录取分数统计/data/schools/6.json",
+            "year": 2024,
+            "publisher": "CodeBrick码砖 / kaoyan408-share",
+            "scope": "计算机学院 计算机技术",
+            "sourceType": "secondary",
+            "kind": "scores"
+          },
+          {
+            "title": "王道在线：2024年南京大学计算机考研考情分析",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+            "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+            "kind": "history",
+            "year": 2024
+          },
+          {
+            "title": "王道在线：2024年南京大学计算机考研考情分析",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+            "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+            "kind": "scores",
+            "year": 2024
+          },
+          {
+            "title": "王道在线：2024年南京大学计算机考研考情分析",
+            "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+            "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+            "kind": "retest",
+            "year": 2024
+          }
+        ],
+        "updatedAt": "2026-11-27",
+        "reportedInterviewees": 53,
+        "reportedInterviewRatio": 1.2045,
+        "interviewScoreStats": {
+          "average": 378
+        },
+        "interviewSubjectScoreStats": {
+          "politics": {
+            "average": 71
+          },
+          "english": {
+            "average": 79
+          },
+          "math": {
+            "average": 112
+          },
+          "professional": {
+            "average": 116
+          }
+        },
+        "subjectScoreStats": {
+          "politics": {
+            "minimum": 61,
+            "q1": 68.75,
+            "median": 71.5,
+            "q3": 75,
+            "maximum": 79,
+            "average": 71.57
+          },
+          "english": {
+            "minimum": 70,
+            "q1": 77,
+            "median": 79,
+            "q3": 82,
+            "maximum": 86,
+            "average": 79.02
+          },
+          "math": {
+            "minimum": 88,
+            "q1": 103.5,
+            "median": 111,
+            "q3": 118,
+            "maximum": 146,
+            "average": 112.43
+          },
+          "professional": {
+            "minimum": 100,
+            "q1": 111,
+            "median": 120,
+            "q3": 124,
+            "maximum": 132,
+            "average": 117.8
+          }
+        },
+        "scoreBandOutcomes": [
+          {
+            "min": 350,
+            "max": 359,
+            "interviewees": 1,
+            "admitted": 0
+          },
+          {
+            "min": 360,
+            "max": 369,
+            "interviewees": 16,
+            "admitted": 10
+          },
+          {
+            "min": 370,
+            "max": 379,
+            "interviewees": 13,
+            "admitted": 12
+          },
+          {
+            "min": 380,
+            "max": 389,
+            "interviewees": 12,
+            "admitted": 11
+          },
+          {
+            "min": 390,
+            "max": 399,
+            "interviewees": 7,
+            "admitted": 7
+          },
+          {
+            "min": 400,
+            "max": 409,
+            "interviewees": 2,
+            "admitted": 2
+          },
+          {
+            "min": 410,
+            "max": 419,
+            "interviewees": 1,
+            "admitted": 1
+          },
+          {
+            "min": 420,
+            "max": 429,
+            "interviewees": 1,
+            "admitted": 1
+          }
+        ],
+        "scoreDistribution": [
+          {
+            "min": 360,
+            "max": 369,
+            "count": 10
+          },
+          {
+            "min": 370,
+            "max": 379,
+            "count": 12
+          },
+          {
+            "min": 380,
+            "max": 389,
+            "count": 11
+          },
+          {
+            "min": 390,
+            "max": 399,
+            "count": 7
+          },
+          {
+            "min": 400,
+            "max": 409,
+            "count": 2
+          },
+          {
+            "min": 410,
+            "max": 419,
+            "count": 1
+          },
+          {
+            "min": 420,
+            "max": 429,
+            "count": 1
+          }
+        ],
+        "specialPlanAdmissions": 2,
+        "specialPlanInterviewees": 2,
+        "examAdmissions": 44,
+        "interviewEligible": 53,
+        "interviewRatio": 1.2045,
+        "metricScope": "普通统考",
+        "interviewRequirements": {
+          "retestMax": 300,
+          "initialWeight": 0.625
+        }
+      },
+      "planned": 105,
+      "earlyExamPlanned": 33
+    },
+    {
+      "id": "nju-g033-085404-2025",
+      "year": 2025,
+      "projectIds": [
+        "nju-033-085404-01",
+        "nju-033-085404-02"
+      ],
+      "scope": "计算机技术 01 计算机技术、02 计算机技术（医学人工智能）合计",
+      "updatedAt": "2026-11-27",
+      "sources": [
+        {
+          "title": "南京大学2025年招生目录及推免人数统计表（转载PDF）",
+          "url": "https://static.kaoyan.cn/file/2024/10/24/a5f03d7190b352809c3035208d4c6ad4.pdf",
+          "year": 2025,
+          "kind": "catalog"
+        },
+        {
+          "title": "王道在线：2025年南京大学计算机考研考情分析",
+          "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+          "year": 2025,
+          "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+          "kind": "catalog"
+        }
+      ],
+      "admission": {
+        "cutoff": 353,
+        "scope": "王道在线2025届一志愿普通计划拟录取统计（不含士兵、少数民族专项）；初试总分及408均分、分数段录取人数采用该统计，复试单科统计与录取统计分开保存。未取得全校逐人拟录取名单。分数段按原图371—380等区间保存，末档400以上按相邻区间解释为401—500。9月预计统考名额与复试阶段实际计划分别保存。",
+        "sources": [
+          {
+            "title": "N诺南京大学2025年考情统计",
+            "url": "https://noobdream.com/schoolinfo/17/",
+            "year": 2025,
+            "kind": "history"
+          },
+          {
+            "title": "码砖2025届复试成绩统计（GitHub归档）",
+            "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
+            "year": 2025,
+            "publisher": "CodeBrick码砖 / kaoyan408-share",
+            "scope": "计算机学院 计算机技术",
+            "sourceType": "secondary",
+            "kind": "scores"
+          },
+          {
+            "title": "王道在线：2025年南京大学计算机考研考情分析",
+            "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+            "year": 2025,
+            "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+            "kind": "history"
+          },
+          {
+            "title": "王道在线：2025年南京大学计算机考研考情分析",
+            "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+            "year": 2025,
+            "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+            "kind": "scores"
+          },
+          {
+            "title": "王道在线：2025年南京大学计算机考研考情分析",
+            "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+            "year": 2025,
+            "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+            "kind": "retest"
+          }
+        ],
+        "updatedAt": "2026-11-27",
+        "promotionAdmissions": 78,
+        "reportedAdmissions": 87,
+        "reportedInterviewees": 106,
+        "interviewListCount": 106,
+        "reportedInterviewRatio": 1.2184,
+        "cutoffSubjects": [
+          55,
+          55,
+          85,
+          85
+        ],
+        "minimum": 353,
+        "maximum": 400,
+        "average": 372,
+        "interviewScoreStats": {
+          "minimum": 353,
+          "q1": 358,
+          "median": 367,
+          "q3": 380,
+          "maximum": 400,
+          "average": 369.44
+        },
+        "interviewSubjectScoreStats": {
+          "politics": {
+            "minimum": 57,
+            "q1": 63,
+            "median": 66,
+            "q3": 68,
+            "maximum": 75,
+            "average": 65.63
+          },
+          "english": {
+            "minimum": 55,
+            "q1": 64,
+            "median": 68,
+            "q3": 74,
+            "maximum": 85,
+            "average": 68.85
+          },
+          "math": {
+            "minimum": 96,
+            "q1": 113,
+            "median": 119,
+            "q3": 127.75,
+            "maximum": 141,
+            "average": 119.84
+          },
+          "professional": {
+            "minimum": 85,
+            "q1": 110,
+            "median": 115,
+            "q3": 120,
+            "maximum": 131,
+            "average": 115.12
+          }
+        },
+        "scoreBandOutcomes": [
+          {
+            "min": 351,
+            "max": 360,
+            "interviewees": 34,
+            "admitted": 19
+          },
+          {
+            "min": 361,
+            "max": 370,
+            "interviewees": 29,
+            "admitted": 26
+          },
+          {
+            "min": 371,
+            "max": 380,
+            "interviewees": 20,
+            "admitted": 19
+          },
+          {
+            "min": 381,
+            "max": 390,
+            "interviewees": 14,
+            "admitted": 14
+          },
+          {
+            "min": 391,
+            "max": 400,
+            "interviewees": 9,
+            "admitted": 9
+          }
+        ],
+        "specialPlanInterviewees": 1,
+        "median": 370,
+        "subjectScoreStats": {
+          "professional": {
+            "average": 116.2
+          }
+        },
+        "scoreDistribution": [
+          {
+            "min": 351,
+            "max": 360,
+            "count": 19
+          },
+          {
+            "min": 361,
+            "max": 370,
+            "count": 26
+          },
+          {
+            "min": 371,
+            "max": 380,
+            "count": 19
+          },
+          {
+            "min": 381,
+            "max": 390,
+            "count": 14
+          },
+          {
+            "min": 391,
+            "max": 400,
+            "count": 9
+          }
+        ],
+        "interviewRequirements": {
+          "writtenMax": 150,
+          "writtenMinutes": 180,
+          "writtenSubjects": "编译原理70分、离散数学80分",
+          "computerTestMax": 50,
+          "computerTestMinutes": 120,
+          "computerLanguages": [
+            "C",
+            "C++",
+            "Java"
+          ],
+          "oralMax": 100,
+          "interviewPassingScore": 90,
+          "retestMax": 300,
+          "initialWeight": 0.625,
+          "totalFormula": "初试成绩+复试成绩"
+        },
+        "examAdmissions": 87,
+        "interviewEligible": 106,
+        "interviewRatio": 1.2184,
+        "metricScope": "普通统考"
+      },
+      "planned": 130,
+      "estimatedExamPlanned": 52,
+      "earlyExamPlanned": 58
     }
   ]
 }

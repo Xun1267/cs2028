@@ -15,6 +15,7 @@ import {
   isScoreSource,
 } from "./project-page.js";
 import { byLatest, containsWords, groupBy, projectTree } from "./browse.js";
+import { schoolIdentity } from "./school-emblem.js";
 import { createInsights } from "./insights.js";
 import {
   cancelPageEntrance,
@@ -244,6 +245,8 @@ function projectTerms(record) {
     record.school.province,
     record.annual.examCombo,
     record.annual.officialMajorCode,
+    record.annual.officialMajorName,
+    record.annual.historicalCollege,
     record.annual.historicalDirection,
     record.annual.professionalSubject?.code,
     record.annual.professionalSubject?.name,
@@ -269,10 +272,10 @@ function save() {
     return false;
   }
 }
-function heading(t, subtitle = "") {
+function heading(t, subtitle = "", schoolId) {
   return (
     '<div class="hero"><div><h1>' +
-    esc(t) +
+    schoolIdentity(schoolId, esc(t), "heading") +
     "</h1>" +
     (subtitle ? "<p>" + esc(subtitle) + "</p>" : "") +
     "</div></div>"
@@ -350,10 +353,10 @@ function referenceKey(raw) {
     return "";
   }
 }
-function sources(records = [], priority = 30) {
+function sources(records = [], priority = 30, local = false) {
   const references = records.filter((record) => referenceKey(record?.url));
   return references.length
-    ? `<div class="section-sources" data-reference-list data-priority="${priority}" hidden>${references
+    ? `<div class="section-sources" data-reference-list data-priority="${priority}" ${local ? "data-local-references" : ""} hidden>${references
         .map(
           (record) =>
             `<template data-reference="${esc(record.url)}" data-title="${esc(record.shortTitle || record.title || record.url)}"></template>`,
@@ -363,6 +366,7 @@ function sources(records = [], priority = 30) {
 }
 function refreshReferences(root) {
   const seen = new Set();
+  const localReferences = new Map();
   for (const anchor of root.querySelectorAll(
     "a[href^='http']:not([data-source-link])",
   )) {
@@ -377,13 +381,17 @@ function refreshReferences(root) {
     (a, b) => Number(a.dataset.priority) - Number(b.dataset.priority),
   );
   for (const list of lists) {
+    const area = list.matches("[data-local-references]") &&
+      list.closest(".year-policy, #catalogDocument, .panel");
+    if (area && !localReferences.has(area)) localReferences.set(area, new Set());
+    const references = area ? localReferences.get(area) : seen;
     const links = [
       ...list.querySelectorAll("template[data-reference]"),
     ].flatMap((mark) => {
       const { reference, title } = mark.dataset;
       const key = referenceKey(reference);
-      if (seen.has(key)) return [];
-      seen.add(key);
+      if (references.has(key)) return [];
+      references.add(key);
       return [
         `<li><a data-source-link href="${esc(reference)}" target="_blank" rel="noopener noreferrer">${esc(title)} ↗</a></li>`,
       ];
@@ -406,8 +414,8 @@ function projectTable(records, quickPreview = false) {
     ? table(
         ["学校 / 招生学院", "招生专业", "考试组合", "年度", "详情"],
         records.map((p) => [
-          link("project", p.school.name, p.ref) +
-            `<small>${esc(p.college)}</small>`,
+          schoolIdentity(p.schoolId,
+            link("project", p.school.name, p.ref) + `<small>${esc(p.college)}</small>`),
           esc(p.majorLabel || p.major.title) +
             `<small class="mono">${esc(p.major.id)}</small>`,
           `<span class="mono">${esc(p.annual.examCombo || "—")}</span>`,
@@ -425,7 +433,7 @@ function notices(records) {
     records
       .map(
         (record) => `<div class="listrow">
-    <div><small>${esc(record.sources[0]?.publisher)}</small><br>${out(record.sources[0]?.url, record.title)}</div>
+    <div>${schoolIdentity(record.schoolId, `<small>${esc(record.sources[0]?.publisher)}</small><br>${out(record.sources[0]?.url, record.title)}`)}</div>
     <time>${esc(record.date || (record.year ? record.year + " 届" : "日期未取得"))}</time></div>`,
       )
       .join("") || empty("暂无符合条件的公告。")
@@ -610,7 +618,7 @@ function home() {
       .map(
         (k) =>
           '<div class="listrow">' +
-          link(k.split("/")[0], lookup(k) + " →", k.split("/")[1]) +
+          favoriteLink(k, " →") +
           "</div>",
       )
       .join("") || empty("尚无收藏。可在项目详情中收藏关注的院校和专业。")) +
@@ -718,7 +726,7 @@ function resultTable(rows) {
     .map(
       ({ school, count }) => `<article class="school-row">
     <div class="school-summary">
-      <h2>${link("school", school.name, school.id)}</h2>
+      <h2>${schoolIdentity(school.id, link("school", school.name, school.id), "row")}</h2>
       <span>${esc(school.city)}</span>
       <span class="small"><span class="field-caption">计算机学科评估 </span>${esc(assessment(school))}</span>
       <span class="small"><span class="num">${count}</span> 个项目</span>
@@ -844,7 +852,7 @@ const usefulText = (text) =>
     .filter(
       (v) =>
         v &&
-        !/访问失败|本轮|字段清单|历史对应|未获得|未成功|尚未核实|暂未取得|仍待核查|本数据库|页面打不开|供维护|待核|未核实|关联方向为参考|未建独立项目|不能分配至|不得分配至|不(?:得|可)重复|不得分摊|统考计划为普通计划口径|已(?:核验|匹配|更新)|逐人匹配|匹配过程|核验过程|数据提取|考生编号|非报名人数/.test(
+        !/访问失败|本轮|字段清单|历史对应|未获得|未成功|尚未核实|暂未取得|仍待核查|本数据库|页面打不开|供维护|待核|未核实|关联方向为参考|未建独立项目|不能分配至|不得分配至|不(?:得|可)重复|不得分摊|统考计划为普通计划口径|已(?:核验|匹配|更新)|统计样本|逐人匹配|匹配过程|核验过程|数据提取|考生编号|非报名人数/.test(
           v,
         ),
     );
@@ -923,7 +931,7 @@ const projectViews = createProjectViews({
   table,
   opts,
   link,
-  sources,
+  sources: (records, priority) => sources(records, priority, true),
   sectionWith,
   scopeNote,
   compactNotes,
@@ -959,7 +967,7 @@ function school(record) {
         String(value).replace(/^year：\d+；round：\d+；disciplines：/, ""),
       ]),
   );
-  return `${heading(record.name, record.province + " · " + record.city)}
+  return `${heading(record.name, record.province + " · " + record.city, record.id)}
     <div class="actions">${fav("school", record.id)}</div>
     ${sectionWith(
       "院校概况",
@@ -1108,7 +1116,7 @@ function comparisonItems() {
       if (!p) return "";
       const years = projectHistory.get(p.id);
       return `<article class="compare-item">
-      <h3>${link("project", p.school.name, p.ref)}</h3>
+      <h3>${schoolIdentity(p.schoolId, link("project", p.school.name, p.ref), "row")}</h3>
       <p>${esc([p.college, p.majorLabel || p.major.title, p.direction].filter(Boolean).join(" · "))}</p>
       <div class="actions">
         <label>年度 <select aria-label="${esc(p.school.name + " " + p.major.title + "的对比年度")}" data-comp-year="${esc(ref)}">
@@ -1171,7 +1179,7 @@ function compareTable() {
   const columns = [
     "比较指标",
     ...items.map((p, i) =>
-      link("project", `${i + 1} · ${p.school.name} · ${p.year}`, p.ref),
+      schoolIdentity(p.schoolId, link("project", `${i + 1} · ${p.school.name} · ${p.year}`, p.ref)),
     ),
   ];
   const compareRows = (fields) =>
@@ -1212,10 +1220,10 @@ function compareTable() {
       ? table(columns, values, "compare-table admission-compare")
       : "";
   const requirements = compareRows([
-    ["学院", (p) => p.college],
-    ["专业", (p) => p.majorLabel || p.major.title],
+    ["学院", (p) => p.annual.historicalCollege || p.college],
+    ["专业", (p) => p.annual.officialMajorName || p.majorLabel || p.major.title],
     ["专业代码", (p) => p.annual.officialMajorCode || p.majorId],
-    ["研究方向", (p) => p.direction],
+    ["研究方向", (p) => p.annual.historicalDirection || p.direction],
     ["考试组合", (p) => p.annual.examCombo],
     ["专业课", (p) => p.annual.professionalSubject?.name],
   ]);
@@ -1451,6 +1459,11 @@ function lookup(key) {
   if (p === "job") return careerById.get(id)?.title || id;
   return schoolById.get(id)?.name || id;
 }
+function favoriteLink(key, suffix = "") {
+  const [type, id] = key.split("/");
+  const schoolId = type === "school" ? id : projectById.get(id)?.schoolId;
+  return schoolIdentity(schoolId, link(type, lookup(key) + suffix, id));
+}
 function saved() {
   return (
     heading("我的收藏") +
@@ -1460,7 +1473,7 @@ function saved() {
         const [p, id] = k.split("/");
         return (
           '<article class="item"><div class="section"><h3>' +
-          link(p, lookup(k), id) +
+          favoriteLink(k) +
           "</h3>" +
           fav(p, id) +
           '</div><label>个人备注 <input data-note="' +
@@ -1970,7 +1983,7 @@ function preview(project) {
     .get(project.id)
     .map((record) => ({ record, cutoff: numbers(record).cutoff }))
     .find(({ cutoff }) => cutoff != null);
-  return `<h2 id="previewTitle" tabindex="-1">${esc(project.school.name)}</h2>
+  return `<h2 id="previewTitle" tabindex="-1">${schoolIdentity(project.schoolId, esc(project.school.name), "row")}</h2>
     <p class="preview-college">${esc([project.college, project.majorLabel || project.major.title, project.direction].filter(Boolean).join(" · "))}</p>
     <div class="actions">${fav("project", project.ref)}${compBtn(project.ref)}${link("project", "查看完整详情", project.ref, "button btn")}</div>
     ${catalog ? sectionWith(catalog.year + " 年招生计划", projectViews.planBody(catalog)) : ""}
@@ -2168,7 +2181,7 @@ function search() {
     ([, id]) => projectById.get(id).schoolId,
   );
   const renderRow = ([type, id, title]) =>
-    `<div class="listrow">${type === "external" ? out(id, title) : link(type, title, id)}</div>`;
+    `<div class="listrow">${type === "external" ? out(id, title) : schoolIdentity(type === "school" ? id : undefined, link(type, title, id))}</div>`;
   searchResults.innerHTML =
     matches
       .filter(
@@ -2182,7 +2195,7 @@ function search() {
           ([
             schoolId,
             rows,
-          ]) => `<section class="search-school"><h3>${link("school", schoolById.get(schoolId).name, schoolId)}</h3>
+          ]) => `<section class="search-school"><h3>${schoolIdentity(schoolId, link("school", schoolById.get(schoolId).name, schoolId))}</h3>
       ${rows
         .map(([, id]) => {
           const p = projectById.get(id);

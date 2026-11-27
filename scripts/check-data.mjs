@@ -206,6 +206,8 @@ index(data.news, "news", (row, at) => {
 const planFields = [
   "planned",
   "promotionPlanned",
+  "earlyExamPlanned",
+  "estimatedExamPlanned",
   "examPlanned",
   "regularExamPlanned",
   "specialPlanPlanned",
@@ -217,6 +219,7 @@ const admissionCounts = [
   "examAttendees",
   "interviewees",
   "interviewEligible",
+  "specialPlanInterviewees",
   "examAdmissions",
   "examAdmissionsTotal",
   "promotionAdmissions",
@@ -278,7 +281,7 @@ objects(catalog.sharedPlans, "projects.sharedPlans", (row, at) => {
   text(row.scope, at + ".scope");
   counts(row, at, planFields);
   if (row.admission && object(row.admission, at + ".admission"))
-    counts(row.admission, at + ".admission", admissionCounts);
+    validateAdmission(row.admission, at + ".admission");
   const key = projectRef(row.id, row.year);
   check(!sharedPlans.has(key), at, `重复共享计划 ${key}`);
   sharedPlans.set(key, row);
@@ -333,8 +336,9 @@ function yearly(values, at, validate) {
     validate(row, key);
   });
 }
-yearly(data.admissions, "admissions", (row, at) => {
+function validateAdmission(row, at) {
   counts(row, at, admissionCounts);
+  number(row.observedMinimum, at + ".observedMinimum", 0, 500);
   for (const key of [
     "applicationRatio",
     "examAttendanceRatio",
@@ -380,7 +384,8 @@ yearly(data.admissions, "admissions", (row, at) => {
       lastMax = bin.max;
     });
   }
-});
+}
+yearly(data.admissions, "admissions", validateAdmission);
 yearly(data.training, "training", (row, at) => {
   number(row.tuitionPerYear, at + ".tuitionPerYear", 0, 1e6);
   number(row.durationYears, at + ".durationYears", 0.25, 15);

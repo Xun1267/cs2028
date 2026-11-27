@@ -1611,29 +1611,42 @@
       {
         "title": "南京大学2027年硕士研究生招生专业目录",
         "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
+        "sourceType": "official",
         "publisher": "南京大学研究生招生办公室",
-        "scope": "目录附件入口，原始表格未提取",
-        "sourceType": "official"
+        "scope": "目录附件入口，原始表格未提取"
       },
       {
         "title": "南京大学2027年硕士研究生招生专业目录（转载）",
         "url": "https://kaoyan.xdf.cn/202610/15430106.html",
+        "sourceType": "secondary",
         "publisher": "新东方考研",
-        "scope": "033计算机学院专业行",
-        "sourceType": "secondary"
+        "scope": "033计算机学院专业行"
       },
       {
         "title": "南京大学2027年接收推荐免试研究生人数统计",
         "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+        "sourceType": "official",
         "publisher": "南京大学研究生招生办公室",
-        "scope": "统计图片入口，人数未取得",
-        "sourceType": "official"
+        "scope": "统计图片入口，人数未取得"
+      },
+      {
+        "title": "2027硕士招生剩余统考计划·江苏主要高校（2026-11-26）",
+        "url": "https://yjy.haixueedu.cn/shengyu/index.html",
+        "sourceType": "secondary"
+      },
+      {
+        "title": "2027年硕士研究生学制与培养费用",
+        "url": "https://yzb.nju.edu.cn/e8/d7/c47862a846039/page.htm"
+      },
+      {
+        "title": "2027年接收推荐免试研究生拟录取名单公示",
+        "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm"
       }
     ],
-    "updatedAt": "2026-11-25",
+    "updatedAt": "2026-11-27",
     "sections": [
       {
-        "title": "院校调查",
+        "title": "院校概况",
         "table": {
           "headers": [
             "项目",
@@ -1641,20 +1654,8 @@
           ],
           "rows": [
             [
-              "调查覆盖",
-              "已补充码砖、N诺等公开统计；2027年度仍仅展示已取得项目或明确标记待核项目，未完整核实全部目录。"
-            ],
-            [
-              "资料缺口",
-              "部分年份没有完整的报名、复试实际到场、普通统考/专项拆分或成绩分布；第三方公示样本与官方实际人数可能不同。"
-            ],
-            [
               "双一流学科",
-              "verifiedRelevantDisciplines：计算机科学与技术；scope：转载目录注明为双一流建设学科，具体轮次及其他学科待核实。"
-            ],
-            [
-              "历史覆盖年度",
-              "2024；2025；2026"
+              "计算机科学与技术"
             ]
           ]
         }

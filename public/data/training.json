@@ -1073,6 +1073,12 @@
     "city": "苏州",
     "sources": [
       {
+        "title": "2027年硕士研究生学制与培养费用",
+        "url": "https://yzb.nju.edu.cn/e8/d7/c47862a846039/page.htm",
+        "kind": "training",
+        "year": 2027
+      },
+      {
         "title": "南京大学2027年硕士研究生招生专业目录",
         "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
         "year": 2027,
@@ -1088,7 +1094,8 @@
         "scope": "转载目录第51页，071 085410 01，拟招收总人数全日制专业学位列",
         "sourceType": "secondary"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27"
   },
   {
     "projectId": "nju-072-085405-01",
@@ -1096,6 +1103,12 @@
     "location": "江苏苏州",
     "city": "苏州",
     "sources": [
+      {
+        "title": "2027年硕士研究生学制与培养费用",
+        "url": "https://yzb.nju.edu.cn/e8/d7/c47862a846039/page.htm",
+        "kind": "training",
+        "year": 2027
+      },
       {
         "title": "南京大学2027年硕士研究生招生专业目录",
         "url": "https://yzb.nju.edu.cn/e7/17/c47862a845591/page.htm",
@@ -1112,7 +1125,8 @@
         "scope": "转载目录第52页，072 085405 01，拟招收总人数全日制专业学位列",
         "sourceType": "secondary"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27"
   },
   {
     "tuitionTotal": 90000,
@@ -4291,5 +4305,503 @@
     "tuitionPerYear": 62000,
     "durationYears": 3,
     "updatedAt": "2026-11-26"
+  },
+  {
+    "projectId": "nju-032-085405-01",
+    "year": 2027,
+    "updatedAt": "2026-11-27",
+    "city": "南京",
+    "sources": [
+      {
+        "title": "2027年硕士研究生学制与培养费用",
+        "url": "https://yzb.nju.edu.cn/e8/d7/c47862a846039/page.htm",
+        "kind": "training",
+        "year": 2027
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085404-01",
+    "year": 2027,
+    "updatedAt": "2026-11-27",
+    "city": "南京",
+    "sources": [
+      {
+        "title": "2027年硕士研究生学制与培养费用",
+        "url": "https://yzb.nju.edu.cn/e8/d7/c47862a846039/page.htm",
+        "kind": "training",
+        "year": 2027
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085404-02",
+    "year": 2027,
+    "updatedAt": "2026-11-27",
+    "city": "南京",
+    "sources": [
+      {
+        "title": "2027年硕士研究生学制与培养费用",
+        "url": "https://yzb.nju.edu.cn/e8/d7/c47862a846039/page.htm",
+        "kind": "training",
+        "year": 2027
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085405-01",
+    "year": 2027,
+    "updatedAt": "2026-11-27",
+    "city": "南京",
+    "sources": [
+      {
+        "title": "2027年硕士研究生学制与培养费用",
+        "url": "https://yzb.nju.edu.cn/e8/d7/c47862a846039/page.htm",
+        "kind": "training",
+        "year": 2027
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085412-01",
+    "year": 2027,
+    "updatedAt": "2026-11-27",
+    "city": "南京",
+    "sources": [
+      {
+        "title": "2027年硕士研究生学制与培养费用",
+        "url": "https://yzb.nju.edu.cn/e8/d7/c47862a846039/page.htm",
+        "kind": "training",
+        "year": 2027
+      }
+    ]
+  },
+  {
+    "projectId": "nju-037-085410-01",
+    "year": 2027,
+    "updatedAt": "2026-11-27",
+    "city": "南京",
+    "sources": [
+      {
+        "title": "2027年硕士研究生学制与培养费用",
+        "url": "https://yzb.nju.edu.cn/e8/d7/c47862a846039/page.htm",
+        "kind": "training",
+        "year": 2027
+      }
+    ]
+  },
+  {
+    "projectId": "nju-032-085405-01",
+    "year": 2022,
+    "updatedAt": "2026-11-27",
+    "durationYears": 2,
+    "tuitionPerYear": 20000,
+    "sources": [
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085404-01",
+    "year": 2022,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "sources": [
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "projectId": "nju-071-085410-01",
+    "year": 2022,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "city": "苏州",
+    "location": "江苏苏州",
+    "sources": [
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "projectId": "nju-072-085405-01",
+    "year": 2022,
+    "updatedAt": "2026-11-27",
+    "durationYears": 2,
+    "tuitionPerYear": 20000,
+    "city": "苏州",
+    "location": "江苏苏州",
+    "sources": [
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "projectId": "nju-032-085405-01",
+    "year": 2023,
+    "updatedAt": "2026-11-27",
+    "durationYears": 2,
+    "tuitionPerYear": 20000,
+    "sources": [
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2023
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085404-01",
+    "year": 2023,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "sources": [
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2023
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085404-02",
+    "year": 2023,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "sources": [
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2023
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085412-01",
+    "year": 2023,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "sources": [
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2023
+      }
+    ]
+  },
+  {
+    "projectId": "nju-071-085410-01",
+    "year": 2023,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "city": "苏州",
+    "location": "江苏苏州",
+    "sources": [
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2023
+      }
+    ]
+  },
+  {
+    "projectId": "nju-072-085405-01",
+    "year": 2023,
+    "updatedAt": "2026-11-27",
+    "durationYears": 2,
+    "tuitionPerYear": 20000,
+    "city": "苏州",
+    "location": "江苏苏州",
+    "sources": [
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第5页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2023
+      }
+    ]
+  },
+  {
+    "projectId": "nju-032-085405-01",
+    "year": 2024,
+    "updatedAt": "2026-11-27",
+    "durationYears": 2,
+    "tuitionPerYear": 20000,
+    "sources": [
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2024
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085404-01",
+    "year": 2024,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "sources": [
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2024
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085404-02",
+    "year": 2024,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "sources": [
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2024
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085412-01",
+    "year": 2024,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "sources": [
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2024
+      }
+    ]
+  },
+  {
+    "projectId": "nju-071-085410-01",
+    "year": 2024,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "city": "苏州",
+    "location": "江苏苏州",
+    "sources": [
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2024
+      }
+    ]
+  },
+  {
+    "projectId": "nju-072-085405-01",
+    "year": 2024,
+    "updatedAt": "2026-11-27",
+    "durationYears": 2,
+    "tuitionPerYear": 20000,
+    "city": "苏州",
+    "location": "江苏苏州",
+    "sources": [
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第5页）及招生目录、复试说明",
+        "kind": "training",
+        "year": 2024
+      }
+    ]
+  },
+  {
+    "projectId": "nju-032-085405-01",
+    "year": 2025,
+    "updatedAt": "2026-11-27",
+    "durationYears": 2,
+    "tuitionPerYear": 20000,
+    "sources": [
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "training"
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085404-01",
+    "year": 2025,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "sources": [
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "training"
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085404-02",
+    "year": 2025,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "sources": [
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "training"
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085412-01",
+    "year": 2025,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "sources": [
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "training"
+      }
+    ]
+  },
+  {
+    "projectId": "nju-037-085410-01",
+    "year": 2025,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "sources": [
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "training"
+      }
+    ]
+  },
+  {
+    "projectId": "nju-071-085410-01",
+    "year": 2025,
+    "updatedAt": "2026-11-27",
+    "durationYears": 3,
+    "tuitionPerYear": 10000,
+    "city": "苏州",
+    "location": "江苏苏州",
+    "sources": [
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "training"
+      }
+    ]
+  },
+  {
+    "projectId": "nju-072-085405-01",
+    "year": 2025,
+    "updatedAt": "2026-11-27",
+    "durationYears": 2,
+    "tuitionPerYear": 20000,
+    "city": "苏州",
+    "location": "江苏苏州",
+    "sources": [
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "training"
+      }
+    ]
+  },
+  {
+    "projectId": "nju-071-085410-01",
+    "year": 2026,
+    "updatedAt": "2026-11-27",
+    "city": "苏州",
+    "location": "江苏苏州",
+    "sources": [
+      {
+        "title": "智能科学与技术学院2026年复试细则",
+        "url": "https://is.nju.edu.cn/_upload/article/files/76/f4/7198658941fb949976ad54dbf1f2/0b78779b-9109-4ae9-8946-88e24b661768.pdf",
+        "year": 2026,
+        "kind": "retest"
+      }
+    ]
+  },
+  {
+    "projectId": "nju-072-085405-01",
+    "year": 2026,
+    "updatedAt": "2026-11-27",
+    "city": "苏州",
+    "location": "江苏苏州",
+    "sources": [
+      {
+        "title": "智能软件与工程学院2026年复试结果公示（存档）",
+        "url": "https://www.studio-boniee.com/__local/3/AF/5A/A70101FB5F8798099C96692CD4D_20732C94_1BF7A.pdf",
+        "year": 2026,
+        "kind": "history"
+      }
+    ]
   }
 ]

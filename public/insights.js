@@ -26,7 +26,6 @@ const moneyUnits = {
 };
 const employmentFields = {
   graduateCount: "毕业人数",
-  sampleSize: "统计样本",
   mastersGraduateCount: "硕士毕业人数",
   doctoratesGraduateCount: "博士毕业人数",
   doctorateGraduateCount: "博士毕业人数",
@@ -518,6 +517,10 @@ export function createInsights(data, ui) {
         title,
         show(record[key], key.includes("Rate") ? "%" : " 人"),
       ]);
+    if (Number.isFinite(record.sampleSize) &&
+        !Object.keys(employmentFields).some((key) =>
+          !key.includes("Rate") && record[key] === record.sampleSize))
+      stats.push(["覆盖人数", show(record.sampleSize, " 人")]);
     if (record.salary?.averageAnnualCNY != null)
       stats.push([
         "平均入职年薪",

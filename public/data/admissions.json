@@ -6662,41 +6662,210 @@
     "q3": 380,
     "sampleSize": 113,
     "reportedAdmissions": 113,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
     "sources": [
       {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2024
+      },
+      {
         "title": "码砖录取分数统计（GitHub归档）",
-        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
+        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-录取分数统计/data/schools/6.json",
         "year": 2024,
         "publisher": "CodeBrick码砖 / kaoyan408-share",
         "scope": "软件学院 软件工程",
-        "sourceType": "secondary"
-      }
-    ]
-  },
-  {
-    "projectId": "nju-033-085404-01",
-    "year": 2024,
-    "cutoff": 359,
-    "minimum": 361,
-    "maximum": 423,
-    "average": 380.82,
-    "median": 379.5,
-    "q1": 370.75,
-    "q3": 389.25,
-    "sampleSize": 44,
-    "reportedAdmissions": 44,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
-    "sources": [
+        "sourceType": "secondary",
+        "kind": "scores"
+      },
       {
-        "title": "码砖录取分数统计（GitHub归档）",
-        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
-        "year": 2024,
-        "publisher": "CodeBrick码砖 / kaoyan408-share",
-        "scope": "计算机学院 计算机技术",
-        "sourceType": "secondary"
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2024
+      },
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2024
+      },
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2024
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27",
+    "reportedInterviewees": 136,
+    "reportedInterviewRatio": 1.2035,
+    "interviewScoreStats": {
+      "average": 366
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "average": 70
+      },
+      "english": {
+        "average": 78
+      },
+      "math": {
+        "average": 114
+      },
+      "professional": {
+        "average": 104
+      }
+    },
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 59,
+        "q1": 66,
+        "median": 70,
+        "q3": 73,
+        "maximum": 79,
+        "average": 69.58
+      },
+      "english": {
+        "minimum": 61,
+        "q1": 77,
+        "median": 79,
+        "q3": 82,
+        "maximum": 90,
+        "average": 79
+      },
+      "math": {
+        "minimum": 85,
+        "q1": 105,
+        "median": 115,
+        "q3": 127,
+        "maximum": 142,
+        "average": 115.53
+      },
+      "professional": {
+        "minimum": 87,
+        "q1": 100,
+        "median": 105,
+        "q3": 112,
+        "maximum": 128,
+        "average": 105.59
+      }
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 33,
+        "admitted": 16
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 22,
+        "admitted": 19
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 27,
+        "admitted": 25
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 24,
+        "admitted": 23
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 12,
+        "admitted": 12
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 10,
+        "admitted": 10
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "interviewees": 4,
+        "admitted": 4
+      },
+      {
+        "min": 410,
+        "max": 419,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 420,
+        "max": 429,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
+    "scoreDistribution": [
+      {
+        "min": 340,
+        "max": 349,
+        "count": 16
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 19
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 25
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 23
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 12
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 10
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "count": 4
+      },
+      {
+        "min": 410,
+        "max": 419,
+        "count": 3
+      },
+      {
+        "min": 420,
+        "max": 429,
+        "count": 1
+      }
+    ],
+    "examAdmissions": 113,
+    "interviewEligible": 136,
+    "interviewRatio": 1.2035,
+    "metricScope": "普通统考",
+    "interviewRequirements": {
+      "retestMax": 300,
+      "initialWeight": 0.625
+    }
   },
   {
     "projectId": "nju-071-085410-01",
@@ -6706,20 +6875,47 @@
     "minimum": 380,
     "maximum": 418,
     "average": 397.71,
-    "median": 401,
+    "median": 401.0,
     "q1": 384.5,
     "q3": 407.25,
     "sampleSize": 14,
     "reportedAdmissions": 14,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "全校5月7日拟录取公示中全日制普通计划考生的初试总分；专项单列。复试人数及复试细则沿用前次调查。",
     "sources": [
       {
-        "title": "码砖录取分数统计（GitHub归档）",
+        "title": "智能科学与技术学院2026年复试细则",
+        "url": "https://is.nju.edu.cn/_upload/article/files/76/f4/7198658941fb949976ad54dbf1f2/0b78779b-9109-4ae9-8946-88e24b661768.pdf",
+        "year": 2026,
+        "kind": "retest"
+      },
+      {
+        "title": "码砖统计存档",
         "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
         "year": 2026,
         "publisher": "CodeBrick码砖 / kaoyan408-share",
         "scope": "智能科学与技术学院 人工智能",
-        "sourceType": "secondary"
+        "sourceType": "secondary",
+        "kind": "scores"
+      },
+      {
+        "title": "学院2026年复试结果公示（用户提供截图）",
+        "url": "https://is.nju.edu.cn/a6/5c/c61838a829020/page.htm",
+        "year": 2026,
+        "kind": "history"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第47页（原名单91—92页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "history"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第47页（原名单91—92页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "scores"
       },
       {
         "title": "2027考研择校数据汇总（2026录取）",
@@ -6729,12 +6925,127 @@
         "scope": "智能科学与技术学院 人工智能",
         "sourceType": "secondary"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27",
+    "reportedInterviewees": 17,
+    "interviewListCount": 17,
+    "reportedInterviewRatio": 1.2143,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 61,
+        "maximum": 75,
+        "average": 66.71,
+        "median": 66.5,
+        "q1": 64,
+        "q3": 69
+      },
+      "foreignLanguage": {
+        "minimum": 68,
+        "maximum": 87,
+        "average": 77.86,
+        "median": 78.5,
+        "q1": 75,
+        "q3": 81
+      },
+      "subject1": {
+        "minimum": 121,
+        "maximum": 148,
+        "average": 136.36,
+        "median": 138.5,
+        "q1": 132.5,
+        "q3": 140.75
+      },
+      "subject2": {
+        "minimum": 107,
+        "maximum": 127,
+        "average": 116.79,
+        "median": 116.5,
+        "q1": 113,
+        "q3": 122
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 380,
+      "maximum": 418,
+      "average": 395.65,
+      "median": 394.0,
+      "q1": 384.0,
+      "q3": 405.0
+    },
+    "interviewRequirements": {
+      "writtenMax": 100,
+      "writtenMinutes": 120,
+      "writtenSubjects": "人工智能、机器学习、离散数学、数据结构与算法",
+      "computerTestMax": 100,
+      "computerTestMinutes": 120,
+      "computerLanguages": [
+        "C++",
+        "Python"
+      ],
+      "interviewMax": 100,
+      "interviewPassingScore": 60,
+      "retestMax": 300,
+      "retestPassingScore": 120,
+      "totalFormula": "初试成绩+复试成绩",
+      "initialWeight": 0.625
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 7,
+        "admitted": 5
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 2,
+        "admitted": 1
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "interviewees": 6,
+        "admitted": 6
+      },
+      {
+        "min": 410,
+        "max": 419,
+        "interviewees": 2,
+        "admitted": 2
+      }
+    ],
+    "scoreDistribution": [
+      {
+        "min": 380,
+        "max": 389,
+        "count": 5
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 1
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "count": 6
+      },
+      {
+        "min": 410,
+        "max": 419,
+        "count": 2
+      }
+    ],
+    "specialPlanAdmissions": 0,
+    "interviewEligible": 17,
+    "interviewRatio": 1.2143,
+    "metricScope": "普通统考"
   },
   {
     "projectId": "nju-071-085410-01",
     "year": 2024,
-    "cutoff": 342,
+    "cutoff": 340,
     "minimum": 342,
     "maximum": 411,
     "average": 368.78,
@@ -6743,37 +7054,239 @@
     "q3": 381,
     "sampleSize": 18,
     "reportedAdmissions": 18,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
     "sources": [
       {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2024
+      },
+      {
         "title": "码砖录取分数统计（GitHub归档）",
-        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
+        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-录取分数统计/data/schools/6.json",
         "year": 2024,
         "publisher": "CodeBrick码砖 / kaoyan408-share",
         "scope": "智能科学与技术学院 人工智能",
-        "sourceType": "secondary"
+        "sourceType": "secondary",
+        "kind": "scores"
+      },
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2024
+      },
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2024
+      },
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2024
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27",
+    "reportedInterviewees": 22,
+    "reportedInterviewRatio": 1.2222,
+    "interviewScoreStats": {
+      "average": 367
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "average": 71
+      },
+      "english": {
+        "average": 78
+      },
+      "math": {
+        "average": 106
+      },
+      "professional": {
+        "average": 112
+      }
+    },
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 64,
+        "q1": 68.5,
+        "median": 71.5,
+        "q3": 73.75,
+        "maximum": 76,
+        "average": 71
+      },
+      "english": {
+        "minimum": 64,
+        "q1": 74,
+        "median": 81,
+        "q3": 84,
+        "maximum": 86,
+        "average": 78.61
+      },
+      "math": {
+        "minimum": 85,
+        "q1": 98.5,
+        "median": 105,
+        "q3": 113.75,
+        "maximum": 131,
+        "average": 106.39
+      },
+      "professional": {
+        "minimum": 86,
+        "q1": 107.5,
+        "median": 113,
+        "q3": 120.75,
+        "maximum": 138,
+        "average": 112.78
+      }
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 340,
+        "max": 349,
+        "interviewees": 4,
+        "admitted": 3
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 6,
+        "admitted": 5
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 4,
+        "admitted": 3
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 3,
+        "admitted": 2
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 410,
+        "max": 419,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
+    "scoreDistribution": [
+      {
+        "min": 340,
+        "max": 349,
+        "count": 3
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 5
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 3
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 2
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 1
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 2
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "count": 1
+      },
+      {
+        "min": 410,
+        "max": 419,
+        "count": 1
+      }
+    ],
+    "examAdmissions": 18,
+    "interviewEligible": 22,
+    "interviewRatio": 1.2222,
+    "metricScope": "普通统考",
+    "interviewRequirements": {
+      "retestMax": 350,
+      "initialWeight": 0.588235
+    }
   },
   {
     "projectId": "nju-072-085405-01",
     "year": 2026,
     "examAdmissions": 3,
-    "cutoff": 369,
     "minimum": 375,
     "maximum": 400,
     "average": 383.67,
     "sampleSize": 3,
     "reportedAdmissions": 3,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "全校5月7日拟录取公示中全日制普通计划考生的初试总分；专项单列。复试人数及复试细则沿用前次调查。",
     "sources": [
       {
-        "title": "码砖录取分数统计（GitHub归档）",
+        "title": "智能软件与工程学院2026年复试结果公示（存档）",
+        "url": "https://www.studio-boniee.com/__local/3/AF/5A/A70101FB5F8798099C96692CD4D_20732C94_1BF7A.pdf",
+        "year": 2026,
+        "kind": "history"
+      },
+      {
+        "title": "码砖统计存档",
         "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
         "year": 2026,
         "publisher": "CodeBrick码砖 / kaoyan408-share",
         "scope": "智能软件与工程学院 软件工程",
-        "sourceType": "secondary"
+        "sourceType": "secondary",
+        "kind": "scores"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第47页（原名单92页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "history"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第47页（原名单92页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "scores"
       },
       {
         "title": "2027考研择校数据汇总（2026录取）",
@@ -6783,12 +7296,86 @@
         "scope": "智能软件与工程学院 软件工程",
         "sourceType": "secondary"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27",
+    "reportedInterviewees": 4,
+    "interviewListCount": 4,
+    "reportedInterviewRatio": 1.3333,
+    "median": 376.0,
+    "q1": 375.5,
+    "q3": 388.0,
+    "observedMinimum": 369,
+    "interviewScoreStats": {
+      "minimum": 369,
+      "maximum": 400,
+      "average": 380.0,
+      "median": 375.5,
+      "q1": 373.5,
+      "q3": 382.0
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 1,
+        "admitted": 0
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
+    "scoreDistribution": [
+      {
+        "min": 370,
+        "max": 379,
+        "count": 2
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "count": 1
+      }
+    ],
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 60,
+        "maximum": 66,
+        "average": 63.33
+      },
+      "foreignLanguage": {
+        "minimum": 70,
+        "maximum": 85,
+        "average": 76.33
+      },
+      "subject1": {
+        "minimum": 124,
+        "maximum": 135,
+        "average": 129.67
+      },
+      "subject2": {
+        "minimum": 106,
+        "maximum": 119,
+        "average": 114.33
+      }
+    },
+    "specialPlanAdmissions": 0,
+    "interviewEligible": 4,
+    "interviewRatio": 1.3333,
+    "metricScope": "普通统考"
   },
   {
     "projectId": "nju-072-085405-01",
     "year": 2024,
-    "cutoff": 318,
+    "cutoff": 315,
     "minimum": 318,
     "maximum": 372,
     "average": 347.63,
@@ -6797,17 +7384,232 @@
     "q3": 357.5,
     "sampleSize": 8,
     "reportedAdmissions": 8,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
     "sources": [
       {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2024
+      },
+      {
         "title": "码砖录取分数统计（GitHub归档）",
-        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
+        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-录取分数统计/data/schools/6.json",
         "year": 2024,
         "publisher": "CodeBrick码砖 / kaoyan408-share",
         "scope": "智能软件与工程学院 软件工程",
-        "sourceType": "secondary"
+        "sourceType": "secondary",
+        "kind": "scores"
+      },
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第5页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2024
+      },
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第5页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2024
+      },
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第5页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2024
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27",
+    "reportedInterviewees": 8,
+    "reportedInterviewRatio": 1.0,
+    "interviewScoreStats": {
+      "average": 348
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "average": 69
+      },
+      "english": {
+        "average": 75
+      },
+      "math": {
+        "average": 103
+      },
+      "professional": {
+        "average": 102
+      }
+    },
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 64,
+        "q1": 66,
+        "median": 68,
+        "q3": 70,
+        "maximum": 76,
+        "average": 68.75
+      },
+      "english": {
+        "minimum": 65,
+        "q1": 69,
+        "median": 75,
+        "q3": 79,
+        "maximum": 85,
+        "average": 74.75
+      },
+      "math": {
+        "minimum": 85,
+        "q1": 97,
+        "median": 104.5,
+        "q3": 109.5,
+        "maximum": 116,
+        "average": 102.5
+      },
+      "professional": {
+        "minimum": 89,
+        "q1": 95.75,
+        "median": 101,
+        "q3": 107.75,
+        "maximum": 114,
+        "average": 101.63
+      }
+    },
+    "scoreDistribution": [
+      {
+        "min": 318,
+        "max": 323,
+        "count": 1
+      },
+      {
+        "min": 324,
+        "max": 328,
+        "count": 1
+      },
+      {
+        "min": 329,
+        "max": 333,
+        "count": 0
+      },
+      {
+        "min": 334,
+        "max": 338,
+        "count": 1
+      },
+      {
+        "min": 339,
+        "max": 343,
+        "count": 0
+      },
+      {
+        "min": 344,
+        "max": 348,
+        "count": 0
+      },
+      {
+        "min": 349,
+        "max": 353,
+        "count": 1
+      },
+      {
+        "min": 354,
+        "max": 358,
+        "count": 2
+      },
+      {
+        "min": 359,
+        "max": 363,
+        "count": 0
+      },
+      {
+        "min": 364,
+        "max": 368,
+        "count": 1
+      },
+      {
+        "min": 369,
+        "max": 373,
+        "count": 1
+      }
+    ],
+    "scoreBandOutcomes": [
+      {
+        "min": 318,
+        "max": 323,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 324,
+        "max": 328,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 329,
+        "max": 333,
+        "interviewees": 0,
+        "admitted": 0
+      },
+      {
+        "min": 334,
+        "max": 338,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 339,
+        "max": 343,
+        "interviewees": 0,
+        "admitted": 0
+      },
+      {
+        "min": 344,
+        "max": 348,
+        "interviewees": 0,
+        "admitted": 0
+      },
+      {
+        "min": 349,
+        "max": 353,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 354,
+        "max": 358,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 359,
+        "max": 363,
+        "interviewees": 0,
+        "admitted": 0
+      },
+      {
+        "min": 364,
+        "max": 368,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 369,
+        "max": 373,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
+    "examAdmissions": 8,
+    "interviewEligible": 8,
+    "interviewRatio": 1.0,
+    "metricScope": "普通统考",
+    "interviewRequirements": {
+      "retestMax": 300,
+      "initialWeight": 0.625
+    }
   },
   {
     "projectId": "nju-037-085410-01",
@@ -6816,18 +7618,45 @@
     "cutoff": 353,
     "minimum": 359,
     "maximum": 390,
-    "average": 371,
+    "average": 371.0,
     "sampleSize": 5,
     "reportedAdmissions": 5,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "全校5月7日拟录取公示中全日制普通计划考生的初试总分；专项单列。复试人数及复试细则沿用前次调查。",
     "sources": [
       {
-        "title": "码砖录取分数统计（GitHub归档）",
+        "title": "人工智能学院2026年复试细则（转载PDF）",
+        "url": "https://static.kaoyan.cn/file/2026/03/19/a3180bf926d300786c2fa30a63ff1db6.pdf",
+        "year": 2026,
+        "kind": "retest"
+      },
+      {
+        "title": "码砖统计存档",
         "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
         "year": 2026,
         "publisher": "CodeBrick码砖 / kaoyan408-share",
         "scope": "人工智能学院 人工智能",
-        "sourceType": "secondary"
+        "sourceType": "secondary",
+        "kind": "scores"
+      },
+      {
+        "title": "学院2026年复试结果公示（用户提供截图）",
+        "url": "https://ai.nju.edu.cn/a6/9b/c53055a829083/page.htm",
+        "year": 2026,
+        "kind": "history"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第45页（原名单88页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "history"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第45页（原名单88页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "scores"
       },
       {
         "title": "2027考研择校数据汇总（2026录取）",
@@ -6837,71 +7666,735 @@
         "scope": "人工智能学院 人工智能",
         "sourceType": "secondary"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27",
+    "reportedInterviewees": 6,
+    "interviewListCount": 6,
+    "reportedInterviewRatio": 1.2,
+    "median": 368.0,
+    "q1": 366.0,
+    "q3": 372.0,
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 64,
+        "maximum": 71,
+        "average": 67.4,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "foreignLanguage": {
+        "minimum": 66,
+        "maximum": 81,
+        "average": 72.6,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "subject1": {
+        "minimum": 113,
+        "maximum": 141,
+        "average": 121.0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      },
+      "subject2": {
+        "minimum": 100,
+        "maximum": 116,
+        "average": 110.0,
+        "median": null,
+        "q1": null,
+        "q3": null
+      }
+    },
+    "interviewScoreStats": {
+      "minimum": 353,
+      "maximum": 390,
+      "average": 368.0,
+      "median": 367.0,
+      "q1": 360.75,
+      "q3": 371.0
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 350,
+        "max": 359,
+        "interviewees": 2,
+        "admitted": 1
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
+    "scoreDistribution": [
+      {
+        "min": 350,
+        "max": 359,
+        "count": 1
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 2
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 1
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 1
+      }
+    ],
+    "interviewRequirements": {
+      "writtenMax": 150,
+      "writtenMinutes": 120,
+      "writtenSubjects": "人工智能、算法、概率统计",
+      "computerTestMax": 100,
+      "computerTestMinutes": 90,
+      "computerLanguages": [
+        "Python"
+      ],
+      "interviewMax": 150,
+      "interviewPassingScore": 90,
+      "retestMax": 400,
+      "retestPassingScore": 200,
+      "totalFormula": "初试成绩+复试成绩",
+      "initialWeight": 0.5555555555555556
+    },
+    "specialPlanAdmissions": 0,
+    "interviewEligible": 6,
+    "interviewRatio": 1.2,
+    "metricScope": "普通统考"
   },
   {
     "projectId": "nju-032-085405-01",
     "year": 2025,
     "cutoff": 372,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "王道在线2025届一志愿普通计划拟录取统计（不含士兵、少数民族专项）；初试总分及408均分、分数段录取人数采用该统计，复试单科统计与录取统计分开保存。未取得全校逐人拟录取名单。分数段按原图371—380等区间保存，末档400以上按相邻区间解释为401—500。9月预计统考名额与复试阶段实际计划分别保存。 软件学院132人复试名单已用上传的官方复试细则重新计算，分段复试人数与王道图一致。",
     "sources": [
       {
-        "title": "码砖录取分数统计（GitHub归档）",
+        "title": "N诺南京大学2025年考情统计",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "year": 2025,
+        "kind": "history"
+      },
+      {
+        "title": "软件学院2025年复试细则（含复试名单）",
+        "url": "https://static.kaoyan.cn/file/2025/04/22/5e9de153f58e646e1716492d23e6039c.pdf",
+        "year": 2025,
+        "kind": "retest"
+      },
+      {
+        "title": "码砖2025届复试成绩统计（GitHub归档）",
         "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
         "year": 2025,
         "publisher": "CodeBrick码砖 / kaoyan408-share",
         "scope": "软件学院 软件工程",
-        "sourceType": "secondary"
-      }
-    ]
-  },
-  {
-    "projectId": "nju-033-085404-01",
-    "year": 2025,
-    "cutoff": 353,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
-    "sources": [
+        "sourceType": "secondary",
+        "kind": "scores"
+      },
       {
-        "title": "码砖录取分数统计（GitHub归档）",
-        "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
         "year": 2025,
-        "publisher": "CodeBrick码砖 / kaoyan408-share",
-        "scope": "计算机学院 计算机技术",
-        "sourceType": "secondary"
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "history"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "scores"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "retest"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27",
+    "promotionAdmissions": 133,
+    "reportedAdmissions": 109,
+    "reportedInterviewees": 132,
+    "interviewListCount": 132,
+    "reportedInterviewRatio": 1.211,
+    "cutoffSubjects": [
+      55,
+      55,
+      85,
+      85
+    ],
+    "minimum": 372,
+    "maximum": 430,
+    "average": 389,
+    "interviewScoreStats": {
+      "minimum": 372.0,
+      "q1": 377.75,
+      "median": 385.0,
+      "q3": 394.0,
+      "maximum": 430.0,
+      "average": 387.46
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "minimum": 58.0,
+        "q1": 64.0,
+        "median": 66.0,
+        "q3": 68.0,
+        "maximum": 77.0,
+        "average": 66.08
+      },
+      "english": {
+        "minimum": 63.0,
+        "q1": 74.0,
+        "median": 78.0,
+        "q3": 82.0,
+        "maximum": 88.0,
+        "average": 77.75
+      },
+      "math": {
+        "minimum": 112.0,
+        "q1": 124.0,
+        "median": 131.0,
+        "q3": 134.0,
+        "maximum": 145.0,
+        "average": 129.55
+      },
+      "professional": {
+        "minimum": 95.0,
+        "q1": 109.0,
+        "median": 114.5,
+        "q3": 119.0,
+        "maximum": 134.0,
+        "average": 114.08
+      }
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 371,
+        "max": 380,
+        "interviewees": 45,
+        "admitted": 28
+      },
+      {
+        "min": 381,
+        "max": 390,
+        "interviewees": 42,
+        "admitted": 38
+      },
+      {
+        "min": 391,
+        "max": 400,
+        "interviewees": 29,
+        "admitted": 27
+      },
+      {
+        "min": 401,
+        "max": 500,
+        "interviewees": 16,
+        "admitted": 16,
+        "openEnded": true
+      }
+    ],
+    "median": 388,
+    "subjectScoreStats": {
+      "professional": {
+        "average": 114.9
+      }
+    },
+    "scoreDistribution": [
+      {
+        "min": 371,
+        "max": 380,
+        "count": 28
+      },
+      {
+        "min": 381,
+        "max": 390,
+        "count": 38
+      },
+      {
+        "min": 391,
+        "max": 400,
+        "count": 27
+      },
+      {
+        "min": 401,
+        "max": 500,
+        "count": 16,
+        "openEnded": true
+      }
+    ],
+    "interviewRequirements": {
+      "writtenMax": 100,
+      "writtenMinutes": 120,
+      "writtenSubjects": "软件工程、数据库",
+      "computerTestMax": 50,
+      "computerTestMinutes": 180,
+      "writtenComputerPassingScore": 75,
+      "oralMax": 150,
+      "interviewPassingScore": 90,
+      "retestMax": 300,
+      "initialWeight": 0.625,
+      "totalFormula": "初试成绩+复试成绩"
+    },
+    "examAdmissions": 109,
+    "interviewEligible": 132,
+    "interviewRatio": 1.211,
+    "metricScope": "普通统考"
   },
   {
     "projectId": "nju-071-085410-01",
     "year": 2025,
     "cutoff": 337,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "王道在线2025届一志愿普通计划拟录取统计（不含士兵、少数民族专项）；初试总分及408均分、分数段录取人数采用该统计，复试单科统计与录取统计分开保存。未取得全校逐人拟录取名单。分数段按原图371—380等区间保存，末档400以上按相邻区间解释为401—500。9月预计统考名额与复试阶段实际计划分别保存。",
     "sources": [
       {
-        "title": "码砖录取分数统计（GitHub归档）",
+        "title": "N诺南京大学2025年考情统计",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "year": 2025,
+        "kind": "history"
+      },
+      {
+        "title": "码砖2025届复试成绩统计（GitHub归档）",
         "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
         "year": 2025,
         "publisher": "CodeBrick码砖 / kaoyan408-share",
         "scope": "智能科学与技术学院 人工智能",
-        "sourceType": "secondary"
+        "sourceType": "secondary",
+        "kind": "scores"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "history"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "scores"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "retest"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27",
+    "promotionAdmissions": 27,
+    "reportedAdmissions": 37,
+    "reportedInterviewees": 46,
+    "interviewListCount": 46,
+    "reportedInterviewRatio": 1.2432,
+    "cutoffSubjects": [
+      55,
+      55,
+      85,
+      85
+    ],
+    "minimum": 337,
+    "maximum": 410,
+    "average": 359.5,
+    "interviewScoreStats": {
+      "minimum": 337,
+      "q1": 345.25,
+      "median": 351,
+      "q3": 366,
+      "maximum": 410,
+      "average": 356.43
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "minimum": 58,
+        "q1": 64,
+        "median": 65,
+        "q3": 68,
+        "maximum": 75,
+        "average": 65.54
+      },
+      "english": {
+        "minimum": 55,
+        "q1": 62,
+        "median": 68,
+        "q3": 71.75,
+        "maximum": 78,
+        "average": 67.13
+      },
+      "math": {
+        "minimum": 95,
+        "q1": 105,
+        "median": 113,
+        "q3": 122,
+        "maximum": 140,
+        "average": 113.76
+      },
+      "professional": {
+        "minimum": 90,
+        "q1": 104.5,
+        "median": 112,
+        "q3": 116,
+        "maximum": 127,
+        "average": 110
+      }
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 331,
+        "max": 340,
+        "interviewees": 6,
+        "admitted": 3
+      },
+      {
+        "min": 341,
+        "max": 350,
+        "interviewees": 15,
+        "admitted": 9
+      },
+      {
+        "min": 351,
+        "max": 360,
+        "interviewees": 10,
+        "admitted": 10
+      },
+      {
+        "min": 361,
+        "max": 370,
+        "interviewees": 6,
+        "admitted": 6
+      },
+      {
+        "min": 371,
+        "max": 380,
+        "interviewees": 5,
+        "admitted": 5
+      },
+      {
+        "min": 381,
+        "max": 390,
+        "interviewees": 2,
+        "admitted": 2
+      },
+      {
+        "min": 391,
+        "max": 400,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 401,
+        "max": 500,
+        "interviewees": 1,
+        "admitted": 1,
+        "openEnded": true
+      }
+    ],
+    "median": 357,
+    "subjectScoreStats": {
+      "professional": {
+        "average": 111.5
+      }
+    },
+    "scoreDistribution": [
+      {
+        "min": 331,
+        "max": 340,
+        "count": 3
+      },
+      {
+        "min": 341,
+        "max": 350,
+        "count": 9
+      },
+      {
+        "min": 351,
+        "max": 360,
+        "count": 10
+      },
+      {
+        "min": 361,
+        "max": 370,
+        "count": 6
+      },
+      {
+        "min": 371,
+        "max": 380,
+        "count": 5
+      },
+      {
+        "min": 381,
+        "max": 390,
+        "count": 2
+      },
+      {
+        "min": 391,
+        "max": 400,
+        "count": 1
+      },
+      {
+        "min": 401,
+        "max": 500,
+        "count": 1,
+        "openEnded": true
+      }
+    ],
+    "interviewRequirements": {
+      "writtenMax": 100,
+      "writtenMinutes": 120,
+      "writtenSubjects": "人工智能、机器学习、离散数学、数据结构与算法",
+      "computerTestMax": 100,
+      "computerTestMinutes": 120,
+      "computerLanguages": [
+        "C++",
+        "Python"
+      ],
+      "computerTestSubjects": "C++程序设计、数据结构与算法，numpy、pandas",
+      "oralMax": 150,
+      "interviewPassingScore": 90,
+      "retestMax": 350,
+      "initialWeight": 0.5882352941176471,
+      "totalFormula": "初试成绩+复试成绩"
+    },
+    "examAdmissions": 37,
+    "interviewEligible": 46,
+    "interviewRatio": 1.2432,
+    "metricScope": "普通统考"
   },
   {
     "projectId": "nju-033-085412-01",
     "year": 2025,
     "cutoff": 336,
-    "scope": "码砖统计口径，可能为名单最低分；以官方院线为准",
+    "scope": "王道在线2025届一志愿普通计划拟录取统计（不含士兵、少数民族专项）；初试总分及408均分、分数段录取人数采用该统计，复试单科统计与录取统计分开保存。未取得全校逐人拟录取名单。分数段按原图371—380等区间保存，末档400以上按相邻区间解释为401—500。9月预计统考名额与复试阶段实际计划分别保存。",
     "sources": [
       {
-        "title": "码砖录取分数统计（GitHub归档）",
+        "title": "N诺南京大学2025年考情统计",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "year": 2025,
+        "kind": "history"
+      },
+      {
+        "title": "码砖2025届复试成绩统计（GitHub归档）",
         "url": "https://github.com/Laz8Noy/kaoyan408-share/blob/main/10-%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BB%9F%E8%AE%A1/data/schools/6.json",
         "year": 2025,
         "publisher": "CodeBrick码砖 / kaoyan408-share",
         "scope": "计算机学院 网络与信息安全",
-        "sourceType": "secondary"
+        "sourceType": "secondary",
+        "kind": "scores"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "history"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "scores"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "retest"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27",
+    "promotionAdmissions": 1,
+    "reportedAdmissions": 9,
+    "reportedInterviewees": 11,
+    "interviewListCount": 11,
+    "reportedInterviewRatio": 1.2222,
+    "cutoffSubjects": [
+      55,
+      55,
+      85,
+      85
+    ],
+    "minimum": 336,
+    "maximum": 398,
+    "average": 359.7,
+    "interviewScoreStats": {
+      "minimum": 336,
+      "q1": 340.5,
+      "median": 351,
+      "q3": 369.5,
+      "maximum": 398,
+      "average": 357.36
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "minimum": 58,
+        "q1": 61.5,
+        "median": 66,
+        "q3": 70.5,
+        "maximum": 73,
+        "average": 66
+      },
+      "english": {
+        "minimum": 56,
+        "q1": 61,
+        "median": 64,
+        "q3": 72,
+        "maximum": 77,
+        "average": 66
+      },
+      "math": {
+        "minimum": 98,
+        "q1": 109,
+        "median": 116,
+        "q3": 127,
+        "maximum": 132,
+        "average": 117.27
+      },
+      "professional": {
+        "minimum": 90,
+        "q1": 102,
+        "median": 107,
+        "q3": 116.5,
+        "maximum": 122,
+        "average": 108.09
+      }
+    },
+    "median": 356,
+    "subjectScoreStats": {
+      "professional": {
+        "average": 108.1
+      }
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 331,
+        "max": 340,
+        "interviewees": 3,
+        "admitted": 3
+      },
+      {
+        "min": 341,
+        "max": 350,
+        "interviewees": 2,
+        "admitted": 1
+      },
+      {
+        "min": 351,
+        "max": 360,
+        "interviewees": 2,
+        "admitted": 1
+      },
+      {
+        "min": 361,
+        "max": 370,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 371,
+        "max": 380,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 381,
+        "max": 390,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 391,
+        "max": 400,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
+    "scoreDistribution": [
+      {
+        "min": 331,
+        "max": 340,
+        "count": 3
+      },
+      {
+        "min": 341,
+        "max": 350,
+        "count": 1
+      },
+      {
+        "min": 351,
+        "max": 360,
+        "count": 1
+      },
+      {
+        "min": 361,
+        "max": 370,
+        "count": 1
+      },
+      {
+        "min": 371,
+        "max": 380,
+        "count": 1
+      },
+      {
+        "min": 381,
+        "max": 390,
+        "count": 1
+      },
+      {
+        "min": 391,
+        "max": 400,
+        "count": 1
+      }
+    ],
+    "interviewRequirements": {
+      "writtenMax": 150,
+      "writtenMinutes": 180,
+      "writtenSubjects": "编译原理70分、离散数学80分",
+      "computerTestMax": 50,
+      "computerTestMinutes": 120,
+      "computerLanguages": [
+        "C",
+        "C++",
+        "Java"
+      ],
+      "oralMax": 100,
+      "interviewPassingScore": 90,
+      "retestMax": 300,
+      "initialWeight": 0.625,
+      "totalFormula": "初试成绩+复试成绩"
+    },
+    "examAdmissions": 9,
+    "interviewEligible": 11,
+    "interviewRatio": 1.2222,
+    "metricScope": "普通统考"
   },
   {
     "projectId": "nju-033-085404-01",
@@ -6910,9 +8403,29 @@
     "cutoff": 367,
     "minimum": 367,
     "maximum": 431,
-    "average": 393,
-    "scope": "依原文公布范围",
+    "average": 392.64,
+    "scope": "全校5月7日拟录取公示中全日制普通计划考生的初试总分；专项单列。复试人数及复试细则沿用前次调查。",
     "sources": [
+      {
+        "title": "计算机学院2026年复试细则（转载PDF）",
+        "url": "https://static.kaoyan.cn/file/2026/03/18/cbb2122e313fb6ca5a56b053dd2d14ca.pdf",
+        "year": 2026,
+        "kind": "retest"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第38—39页（原名单74—76页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "history"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第38—39页（原名单74—76页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "scores"
+      },
       {
         "title": "2027考研择校数据汇总（2026录取）",
         "url": "https://noobdream.com/zexiao/",
@@ -6921,7 +8434,93 @@
         "scope": "计算机学院 计算机技术",
         "sourceType": "secondary"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27",
+    "interviewListCount": 93,
+    "reportedInterviewees": 93,
+    "interviewPlanRatio": 1.2237,
+    "cutoffSubjects": [
+      55,
+      55,
+      85,
+      85
+    ],
+    "interviewRequirements": {
+      "writtenMax": 150,
+      "writtenMinutes": 180,
+      "writtenSubjects": "编译原理70分、离散数学80分",
+      "computerTestMax": 50,
+      "computerTestMinutes": 120,
+      "computerLanguages": [
+        "C",
+        "C++",
+        "Java"
+      ],
+      "oralMax": 100,
+      "interviewPassingScore": 90,
+      "retestMax": 300,
+      "retestPassingScore": 140,
+      "totalFormula": "初试成绩+复试成绩",
+      "initialWeight": 0.625
+    },
+    "specialPlanInterviewees": 1,
+    "median": 391.5,
+    "q1": 377.0,
+    "q3": 405.0,
+    "reportedAdmissions": 77,
+    "specialPlanAdmissions": 1,
+    "scoreDistribution": [
+      {
+        "min": 360,
+        "max": 369,
+        "count": 6
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 17
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 11
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 15
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "count": 12
+      },
+      {
+        "min": 410,
+        "max": 419,
+        "count": 8
+      },
+      {
+        "min": 420,
+        "max": 429,
+        "count": 6
+      },
+      {
+        "min": 430,
+        "max": 439,
+        "count": 1
+      }
+    ],
+    "reportedInterviewRatio": 1.2237,
+    "specialPlanDetails": [
+      {
+        "name": "少数民族骨干计划（非在职）",
+        "count": 1
+      }
+    ],
+    "interviewEligible": 93,
+    "interviewRatio": 1.2237,
+    "examAdmissionsTotal": 77
   },
   {
     "projectId": "nju-033-085405-01",
@@ -6930,9 +8529,29 @@
     "cutoff": 338,
     "minimum": 338,
     "maximum": 369,
-    "average": 355,
-    "scope": "依原文公布范围",
+    "average": 355.29,
+    "scope": "全校5月7日拟录取公示中全日制普通计划考生的初试总分；专项单列。复试人数及复试细则沿用前次调查。",
     "sources": [
+      {
+        "title": "计算机学院2026年复试细则（转载PDF）",
+        "url": "https://static.kaoyan.cn/file/2026/03/18/cbb2122e313fb6ca5a56b053dd2d14ca.pdf",
+        "year": 2026,
+        "kind": "retest"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第39页（原名单76页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "history"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第39页（原名单76页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "scores"
+      },
       {
         "title": "2027考研择校数据汇总（2026录取）",
         "url": "https://noobdream.com/zexiao/",
@@ -6941,7 +8560,66 @@
         "scope": "计算机学院 软件工程",
         "sourceType": "secondary"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27",
+    "interviewListCount": 9,
+    "reportedInterviewees": 9,
+    "interviewPlanRatio": 1.2857,
+    "cutoffSubjects": [
+      55,
+      55,
+      85,
+      85
+    ],
+    "interviewRequirements": {
+      "writtenMax": 150,
+      "writtenMinutes": 180,
+      "writtenSubjects": "编译原理70分、离散数学80分",
+      "computerTestMax": 50,
+      "computerTestMinutes": 120,
+      "computerLanguages": [
+        "C",
+        "C++",
+        "Java"
+      ],
+      "oralMax": 100,
+      "interviewPassingScore": 90,
+      "retestMax": 300,
+      "retestPassingScore": 140,
+      "totalFormula": "初试成绩+复试成绩",
+      "initialWeight": 0.625
+    },
+    "median": 360.0,
+    "q1": 348.0,
+    "q3": 362.0,
+    "reportedAdmissions": 7,
+    "specialPlanAdmissions": 0,
+    "scoreDistribution": [
+      {
+        "min": 330,
+        "max": 339,
+        "count": 1
+      },
+      {
+        "min": 340,
+        "max": 349,
+        "count": 1
+      },
+      {
+        "min": 350,
+        "max": 359,
+        "count": 1
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 4
+      }
+    ],
+    "reportedInterviewRatio": 1.2857,
+    "interviewEligible": 9,
+    "interviewRatio": 1.2857,
+    "metricScope": "普通统考"
   },
   {
     "projectId": "nju-033-085412-01",
@@ -6950,9 +8628,29 @@
     "cutoff": 335,
     "minimum": 335,
     "maximum": 402,
-    "average": 369,
-    "scope": "依原文公布范围",
+    "average": 369.0,
+    "scope": "全校5月7日拟录取公示中全日制普通计划考生的初试总分；专项单列。复试人数及复试细则沿用前次调查。",
     "sources": [
+      {
+        "title": "计算机学院2026年复试细则（转载PDF）",
+        "url": "https://static.kaoyan.cn/file/2026/03/18/cbb2122e313fb6ca5a56b053dd2d14ca.pdf",
+        "year": 2026,
+        "kind": "retest"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第39页（原名单76页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "history"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第39页（原名单76页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "scores"
+      },
       {
         "title": "2027考研择校数据汇总（2026录取）",
         "url": "https://noobdream.com/zexiao/",
@@ -6961,7 +8659,76 @@
         "scope": "计算机学院 网络与信息安全",
         "sourceType": "secondary"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27",
+    "interviewListCount": 11,
+    "reportedInterviewees": 11,
+    "interviewPlanRatio": 1.2222,
+    "cutoffSubjects": [
+      55,
+      55,
+      85,
+      85
+    ],
+    "interviewRequirements": {
+      "writtenMax": 150,
+      "writtenMinutes": 180,
+      "writtenSubjects": "编译原理70分、离散数学80分",
+      "computerTestMax": 50,
+      "computerTestMinutes": 120,
+      "computerLanguages": [
+        "C",
+        "C++",
+        "Java"
+      ],
+      "oralMax": 100,
+      "interviewPassingScore": 90,
+      "retestMax": 300,
+      "retestPassingScore": 140,
+      "totalFormula": "初试成绩+复试成绩",
+      "initialWeight": 0.625
+    },
+    "median": 371.0,
+    "q1": 361.0,
+    "q3": 381.0,
+    "reportedAdmissions": 9,
+    "specialPlanAdmissions": 0,
+    "scoreDistribution": [
+      {
+        "min": 330,
+        "max": 339,
+        "count": 2
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 2
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 2
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 1
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 1
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "count": 1
+      }
+    ],
+    "reportedInterviewRatio": 1.2222,
+    "interviewEligible": 11,
+    "interviewRatio": 1.2222,
+    "metricScope": "普通统考"
   },
   {
     "projectId": "nju-032-085405-01",
@@ -6970,18 +8737,82 @@
     "cutoff": 354,
     "minimum": 355,
     "maximum": 418,
-    "average": 383,
-    "scope": "依原文公布范围",
+    "average": 382.62,
+    "scope": "全校5月7日拟录取公示中全日制普通计划考生的初试总分；专项单列。复试人数及复试细则沿用前次调查。",
     "sources": [
       {
-        "title": "2027考研择校数据汇总（2026录取）",
+        "title": "N诺2027考研择校数据汇总（2026届复试人数）",
         "url": "https://noobdream.com/zexiao/",
         "year": 2026,
         "publisher": "N诺考研",
-        "scope": "软件学院 软件工程",
-        "sourceType": "secondary"
+        "scope": "复试人数沿用前次调查的第三方汇总，未核对原复试名单",
+        "sourceType": "secondary",
+        "kind": "history"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第36—38页（原名单70—73页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "history"
+      },
+      {
+        "title": "南京大学2026年硕士研究生拟录取名单公示（不含推免生）",
+        "url": "https://app.gaokaozhitongche.com/newsguide/h/9Xq7BL3G",
+        "year": 2026,
+        "scope": "PDF第36—38页（原名单70—73页）；用户上传完整网页PDF，来源南京大学2026年5月7日公示",
+        "kind": "scores"
       }
-    ]
+    ],
+    "updatedAt": "2026-11-27",
+    "median": 380.0,
+    "q1": 371.0,
+    "q3": 395.0,
+    "reportedAdmissions": 117,
+    "specialPlanAdmissions": 0,
+    "scoreDistribution": [
+      {
+        "min": 350,
+        "max": 359,
+        "count": 6
+      },
+      {
+        "min": 360,
+        "max": 369,
+        "count": 18
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 34
+      },
+      {
+        "min": 380,
+        "max": 389,
+        "count": 20
+      },
+      {
+        "min": 390,
+        "max": 399,
+        "count": 21
+      },
+      {
+        "min": 400,
+        "max": 409,
+        "count": 13
+      },
+      {
+        "min": 410,
+        "max": 419,
+        "count": 5
+      }
+    ],
+    "reportedInterviewees": 141,
+    "interviewListCount": 141,
+    "reportedInterviewRatio": 1.2051,
+    "interviewEligible": 141,
+    "interviewRatio": 1.2051,
+    "metricScope": "普通统考"
   },
   {
     "projectId": "zju-cs-085400-01",
@@ -14069,6 +15900,1269 @@
         "max": 389,
         "interviewees": 4,
         "admitted": 4
+      }
+    ]
+  },
+  {
+    "projectId": "nju-032-085405-01",
+    "year": 2027,
+    "updatedAt": "2026-11-27",
+    "promotionAdmissions": 136,
+    "sources": [
+      {
+        "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+        "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+        "sourceType": "official",
+        "kind": "catalog",
+        "year": 2027
+      },
+      {
+        "title": "2027年接收推荐免试研究生拟录取名单公示",
+        "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+        "kind": "catalog",
+        "year": 2027
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085405-01",
+    "year": 2027,
+    "updatedAt": "2026-11-27",
+    "promotionAdmissions": 10,
+    "sources": [
+      {
+        "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+        "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+        "sourceType": "official",
+        "kind": "catalog",
+        "year": 2027
+      },
+      {
+        "title": "2027年接收推荐免试研究生拟录取名单公示",
+        "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+        "kind": "catalog",
+        "year": 2027
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085412-01",
+    "year": 2027,
+    "updatedAt": "2026-11-27",
+    "promotionAdmissions": 3,
+    "sources": [
+      {
+        "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+        "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+        "sourceType": "official",
+        "kind": "catalog",
+        "year": 2027
+      },
+      {
+        "title": "2027年接收推荐免试研究生拟录取名单公示",
+        "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+        "kind": "catalog",
+        "year": 2027
+      }
+    ]
+  },
+  {
+    "projectId": "nju-037-085410-01",
+    "year": 2027,
+    "updatedAt": "2026-11-27",
+    "promotionAdmissions": 37,
+    "sources": [
+      {
+        "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+        "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+        "sourceType": "official",
+        "kind": "catalog",
+        "year": 2027
+      },
+      {
+        "title": "2027年接收推荐免试研究生拟录取名单公示",
+        "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+        "kind": "catalog",
+        "year": 2027
+      }
+    ]
+  },
+  {
+    "projectId": "nju-071-085410-01",
+    "year": 2027,
+    "updatedAt": "2026-11-27",
+    "promotionAdmissions": 64,
+    "sources": [
+      {
+        "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+        "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+        "sourceType": "official",
+        "kind": "catalog",
+        "year": 2027
+      },
+      {
+        "title": "2027年接收推荐免试研究生拟录取名单公示",
+        "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+        "kind": "catalog",
+        "year": 2027
+      }
+    ]
+  },
+  {
+    "projectId": "nju-072-085405-01",
+    "year": 2027,
+    "updatedAt": "2026-11-27",
+    "promotionAdmissions": 41,
+    "sources": [
+      {
+        "title": "南京大学2027年硕士推免生拟录取人数信息统计",
+        "url": "https://yzb.nju.edu.cn/ea/44/c47863a846404/page.htm",
+        "sourceType": "official",
+        "kind": "catalog",
+        "year": 2027
+      },
+      {
+        "title": "2027年接收推荐免试研究生拟录取名单公示",
+        "url": "https://yzb.nju.edu.cn/f7/77/c47863a849783/page.htm",
+        "kind": "catalog",
+        "year": 2027
+      }
+    ]
+  },
+  {
+    "projectId": "nju-032-085405-01",
+    "year": 2020,
+    "updatedAt": "2026-11-27",
+    "cutoff": 340,
+    "reportedInterviewees": 252,
+    "reportedAdmissions": 140,
+    "reportedInterviewRatio": 1.8,
+    "minimum": 340,
+    "maximum": 411,
+    "scope": "王道录取统计表。2020年统考人数由拟录取总人数减推免人数取得。",
+    "reportedTotalAdmissions": 240,
+    "promotionAdmissions": 100,
+    "mixedFullTimeAndPartTimeAverage": 359,
+    "mixedAverageScope": "原表均分359为全日制和非全日制合并单元格，暂不作为全日制独立均分",
+    "examAdmissions": 140,
+    "interviewEligible": 252,
+    "interviewRatio": 1.8,
+    "sources": [
+      {
+        "title": "王道在线：2020年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=5&sn=05868e5beedb9ed9487326049666df61&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第1页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2020
+      },
+      {
+        "title": "王道在线：2020年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=5&sn=05868e5beedb9ed9487326049666df61&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第1页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2020
+      },
+      {
+        "title": "王道在线：2020年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=5&sn=05868e5beedb9ed9487326049666df61&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第1页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2020
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085404-01",
+    "year": 2020,
+    "updatedAt": "2026-11-27",
+    "cutoff": 313,
+    "reportedInterviewees": 84,
+    "reportedAdmissions": 70,
+    "reportedInterviewRatio": 1.2,
+    "minimum": 313,
+    "maximum": 392,
+    "average": 341,
+    "scope": "王道录取统计表。2020年统考人数由拟录取总人数减推免人数取得。",
+    "reportedTotalAdmissions": 131,
+    "promotionAdmissions": 61,
+    "examAdmissions": 70,
+    "interviewEligible": 84,
+    "interviewRatio": 1.2,
+    "sources": [
+      {
+        "title": "王道在线：2020年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=5&sn=05868e5beedb9ed9487326049666df61&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第1页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2020
+      },
+      {
+        "title": "王道在线：2020年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=5&sn=05868e5beedb9ed9487326049666df61&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第1页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2020
+      },
+      {
+        "title": "王道在线：2020年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=5&sn=05868e5beedb9ed9487326049666df61&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第1页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2020
+      }
+    ]
+  },
+  {
+    "projectId": "nju-032-085405-01",
+    "year": 2021,
+    "updatedAt": "2026-11-27",
+    "cutoff": 364,
+    "reportedInterviewees": 152,
+    "reportedAdmissions": 124,
+    "average": 384.7,
+    "scope": "王道录取统计表统招人数。",
+    "reportedInterviewRatio": 1.2258,
+    "interviewScoreStats": {
+      "average": 382
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "average": 71
+      },
+      "english": {
+        "average": 78
+      },
+      "math": {
+        "average": 133
+      },
+      "professional": {
+        "average": 99
+      }
+    },
+    "minimum": 364,
+    "maximum": 422,
+    "examAdmissions": 124,
+    "interviewEligible": 152,
+    "interviewRatio": 1.2258,
+    "interviewRequirements": {
+      "retestMax": 250,
+      "initialWeight": 0.6666666666666666
+    },
+    "sources": [
+      {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2021
+      },
+      {
+        "title": "王道在线：2021年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=4&sn=8444966b01072b423944f0847697dea0&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2021
+      },
+      {
+        "title": "王道在线：2021年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=4&sn=8444966b01072b423944f0847697dea0&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2021
+      },
+      {
+        "title": "王道在线：2021年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=4&sn=8444966b01072b423944f0847697dea0&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2021
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085404-01",
+    "year": 2021,
+    "updatedAt": "2026-11-27",
+    "cutoff": 383,
+    "reportedInterviewees": 60,
+    "reportedAdmissions": 50,
+    "scope": "王道录取统计表统招人数。",
+    "reportedInterviewRatio": 1.2,
+    "interviewScoreStats": {
+      "average": 402
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "average": 72
+      },
+      "english": {
+        "average": 73
+      },
+      "math": {
+        "average": 128
+      },
+      "professional": {
+        "average": 128
+      }
+    },
+    "specialPlanAdmissions": 2,
+    "specialPlanInterviewees": 2,
+    "minimum": 384,
+    "maximum": 446,
+    "average": 405,
+    "examAdmissions": 50,
+    "interviewEligible": 60,
+    "interviewRatio": 1.2,
+    "interviewRequirements": {
+      "retestMax": 250,
+      "initialWeight": 0.6666666666666666
+    },
+    "sources": [
+      {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2021
+      },
+      {
+        "title": "王道在线：2021年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=4&sn=8444966b01072b423944f0847697dea0&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第2页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2021
+      },
+      {
+        "title": "王道在线：2021年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=4&sn=8444966b01072b423944f0847697dea0&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第2页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2021
+      },
+      {
+        "title": "王道在线：2021年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=4&sn=8444966b01072b423944f0847697dea0&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第2页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2021
+      }
+    ]
+  },
+  {
+    "projectId": "nju-032-085405-01",
+    "year": 2022,
+    "updatedAt": "2026-11-27",
+    "cutoff": 356,
+    "reportedInterviewees": 119,
+    "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
+    "interviewScoreStats": {
+      "average": 377
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "average": 70
+      },
+      "english": {
+        "average": 80
+      },
+      "math": {
+        "average": 116
+      },
+      "professional": {
+        "average": 110
+      }
+    },
+    "specialPlanInterviewees": 1,
+    "reportedAdmissions": 98,
+    "reportedInterviewRatio": 1.2143,
+    "minimum": 356,
+    "maximum": 428,
+    "average": 381.58,
+    "examAdmissions": 98,
+    "interviewEligible": 119,
+    "interviewRatio": 1.2143,
+    "metricScope": "普通统考",
+    "interviewRequirements": {
+      "retestMax": 250,
+      "initialWeight": 0.6666666666666666
+    },
+    "sources": [
+      {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2022
+      },
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2022
+      },
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2022
+      },
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085404-01",
+    "year": 2022,
+    "updatedAt": "2026-11-27",
+    "cutoff": 356,
+    "reportedInterviewees": 49,
+    "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
+    "sourceDiscrepancies": [
+      {
+        "field": "reportedInterviewees",
+        "selected": 49,
+        "alternative": 48,
+        "selectedSource": "王道在线2022表",
+        "alternativeSource": "此前N诺整理记录"
+      }
+    ],
+    "reportedAdmissions": 40,
+    "reportedInterviewRatio": 1.225,
+    "minimum": 356,
+    "maximum": 433,
+    "average": 381.03,
+    "examAdmissions": 40,
+    "interviewEligible": 49,
+    "interviewRatio": 1.225,
+    "metricScope": "普通统考",
+    "interviewRequirements": {
+      "retestMax": 250,
+      "initialWeight": 0.6666666666666666
+    },
+    "sources": [
+      {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2022
+      },
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2022
+      },
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2022
+      },
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第3页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "projectId": "nju-071-085410-01",
+    "year": 2022,
+    "updatedAt": "2026-11-27",
+    "cutoff": 298,
+    "reportedInterviewees": 11,
+    "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
+    "interviewScoreStats": {
+      "average": 334
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "average": 68
+      },
+      "english": {
+        "average": 69
+      },
+      "math": {
+        "average": 103
+      },
+      "professional": {
+        "average": 93
+      }
+    },
+    "reportedAdmissions": 3,
+    "reportedInterviewRatio": 3.6667,
+    "minimum": 332,
+    "maximum": 363,
+    "average": 350,
+    "examAdmissions": 3,
+    "interviewEligible": 11,
+    "interviewRatio": 3.6667,
+    "metricScope": "普通统考",
+    "interviewRequirements": {
+      "retestMax": 250,
+      "initialWeight": 0.6666666666666666
+    },
+    "sources": [
+      {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2022
+      },
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2022
+      },
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2022
+      },
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "projectId": "nju-072-085405-01",
+    "year": 2022,
+    "updatedAt": "2026-11-27",
+    "cutoff": 307,
+    "reportedInterviewees": 13,
+    "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
+    "interviewScoreStats": {
+      "average": 342
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "average": 67
+      },
+      "english": {
+        "average": 75
+      },
+      "math": {
+        "average": 101
+      },
+      "professional": {
+        "average": 97
+      }
+    },
+    "specialPlanInterviewees": 1,
+    "reportedAdmissions": 10,
+    "reportedInterviewRatio": 1.3,
+    "minimum": 323,
+    "maximum": 381,
+    "average": 351.9,
+    "examAdmissions": 10,
+    "interviewEligible": 13,
+    "interviewRatio": 1.3,
+    "metricScope": "普通统考",
+    "interviewRequirements": {
+      "retestMax": 250,
+      "initialWeight": 0.6666666666666666
+    },
+    "sources": [
+      {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2022
+      },
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2022
+      },
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2022
+      },
+      {
+        "title": "王道在线：2022年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=3&sn=f60b925bcfa81afcf7c7f52bd9167d4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "projectId": "nju-032-085405-01",
+    "year": 2023,
+    "updatedAt": "2026-11-27",
+    "cutoff": 358,
+    "reportedInterviewees": 107,
+    "reportedAdmissions": 87,
+    "minimum": 358,
+    "maximum": 428,
+    "average": 382,
+    "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
+    "reportedInterviewRatio": 1.2299,
+    "interviewScoreStats": {
+      "average": 381
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "average": 66
+      },
+      "english": {
+        "average": 68
+      },
+      "math": {
+        "average": 127
+      },
+      "professional": {
+        "average": 104
+      }
+    },
+    "subjectScoreStats": {
+      "professional": {
+        "average": 105
+      }
+    },
+    "examAdmissions": 87,
+    "interviewEligible": 107,
+    "interviewRatio": 1.2299,
+    "metricScope": "普通统考",
+    "interviewRequirements": {
+      "retestMax": 300,
+      "initialWeight": 0.625
+    },
+    "sources": [
+      {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2023
+      },
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2023
+      },
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2023
+      },
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2023
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085412-01",
+    "year": 2023,
+    "updatedAt": "2026-11-27",
+    "cutoff": 351,
+    "reportedInterviewees": 2,
+    "reportedAdmissions": 2,
+    "minimum": 354,
+    "maximum": 384,
+    "average": 369,
+    "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
+    "reportedInterviewRatio": 1.0,
+    "interviewScoreStats": {
+      "average": 369
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "average": 61
+      },
+      "english": {
+        "average": 76
+      },
+      "math": {
+        "average": 109
+      },
+      "professional": {
+        "average": 122
+      }
+    },
+    "subjectScoreStats": {
+      "professional": {
+        "average": 122
+      }
+    },
+    "examAdmissions": 2,
+    "interviewEligible": 2,
+    "interviewRatio": 1.0,
+    "metricScope": "普通统考",
+    "interviewRequirements": {
+      "retestMax": 300,
+      "initialWeight": 0.625
+    },
+    "sources": [
+      {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2023
+      },
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2023
+      },
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2023
+      },
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2023
+      }
+    ]
+  },
+  {
+    "projectId": "nju-071-085410-01",
+    "year": 2023,
+    "updatedAt": "2026-11-27",
+    "cutoff": 334,
+    "reportedInterviewees": 9,
+    "reportedAdmissions": 9,
+    "minimum": 334,
+    "maximum": 390,
+    "average": 351,
+    "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
+    "reportedInterviewRatio": 1.0,
+    "interviewScoreStats": {
+      "average": 351
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "average": 66
+      },
+      "english": {
+        "average": 75
+      },
+      "math": {
+        "average": 112
+      },
+      "professional": {
+        "average": 97
+      }
+    },
+    "sourceDiscrepancies": [
+      {
+        "field": "maximum",
+        "selected": 390,
+        "alternative": 396,
+        "selectedSource": "王道在线2023表",
+        "alternativeSource": "此前N诺整理记录",
+        "resolution": "暂用王道表值，未经原名单核实"
+      }
+    ],
+    "subjectScoreStats": {
+      "professional": {
+        "average": 98
+      }
+    },
+    "examAdmissions": 9,
+    "interviewEligible": 9,
+    "interviewRatio": 1.0,
+    "metricScope": "普通统考",
+    "interviewRequirements": {
+      "retestMax": 250,
+      "initialWeight": 0.666667
+    },
+    "sources": [
+      {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2023
+      },
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2023
+      },
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2023
+      },
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2023
+      }
+    ]
+  },
+  {
+    "projectId": "nju-072-085405-01",
+    "year": 2023,
+    "updatedAt": "2026-11-27",
+    "cutoff": 365,
+    "reportedInterviewees": 12,
+    "reportedAdmissions": 11,
+    "minimum": 365,
+    "maximum": 403,
+    "average": 378,
+    "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
+    "reportedInterviewRatio": 1.0909,
+    "interviewScoreStats": {
+      "average": 377
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "average": 67
+      },
+      "english": {
+        "average": 83
+      },
+      "math": {
+        "average": 124
+      },
+      "professional": {
+        "average": 102
+      }
+    },
+    "subjectScoreStats": {
+      "professional": {
+        "average": 103
+      }
+    },
+    "examAdmissions": 11,
+    "interviewEligible": 12,
+    "interviewRatio": 1.0909,
+    "metricScope": "普通统考",
+    "interviewRequirements": {
+      "retestMax": 300,
+      "initialWeight": 0.625
+    },
+    "sources": [
+      {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2023
+      },
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第5页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2023
+      },
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第5页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2023
+      },
+      {
+        "title": "王道在线：2023年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=2&sn=91dd57975596bdac2ca35cee6ddfba4f&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第5页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2023
+      }
+    ]
+  },
+  {
+    "projectId": "nju-033-085412-01",
+    "year": 2024,
+    "updatedAt": "2026-11-27",
+    "cutoff": 315,
+    "reportedInterviewees": 2,
+    "reportedAdmissions": 2,
+    "minimum": 325,
+    "maximum": 371,
+    "average": 348,
+    "scope": "王道录取统计表；2022—2024年排除专项、调剂及非全日制。2020年统考人数由拟录取总人数减推免人数取得。",
+    "reportedInterviewRatio": 1.0,
+    "interviewScoreStats": {
+      "average": 348
+    },
+    "interviewSubjectScoreStats": {
+      "politics": {
+        "average": 73
+      },
+      "english": {
+        "average": 76
+      },
+      "math": {
+        "average": 103
+      },
+      "professional": {
+        "average": 97
+      }
+    },
+    "subjectScoreStats": {
+      "professional": {
+        "average": 97
+      }
+    },
+    "median": 348,
+    "scoreDistribution": [
+      {
+        "min": 320,
+        "max": 329,
+        "count": 1
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "count": 1
+      }
+    ],
+    "scoreBandOutcomes": [
+      {
+        "min": 320,
+        "max": 329,
+        "interviewees": 1,
+        "admitted": 1
+      },
+      {
+        "min": 370,
+        "max": 379,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
+    "examAdmissions": 2,
+    "interviewEligible": 2,
+    "interviewRatio": 1.0,
+    "metricScope": "普通统考",
+    "interviewRequirements": {
+      "retestMax": 300,
+      "initialWeight": 0.625
+    },
+    "sources": [
+      {
+        "title": "N诺南京大学历年录取情况",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "kind": "history",
+        "year": 2024
+      },
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "history",
+        "year": 2024
+      },
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "scores",
+        "year": 2024
+      },
+      {
+        "title": "王道在线：2024年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s?__biz=MzA4OTE4MjIwMA==&mid=2666236947&idx=1&sn=13412c17a9834369971e8e2a65c34960&scene=21#wechat_redirect",
+        "scope": "录取统计表（用户提供PDF第4页）及招生目录、复试说明",
+        "kind": "retest",
+        "year": 2024
+      }
+    ]
+  },
+  {
+    "projectId": "nju-037-085410-01",
+    "year": 2025,
+    "updatedAt": "2026-11-27",
+    "promotionAdmissions": 4,
+    "reportedAdmissions": 1,
+    "reportedInterviewees": 1,
+    "interviewListCount": 1,
+    "reportedInterviewRatio": 1.0,
+    "cutoff": 315,
+    "cutoffSubjects": [
+      55,
+      55,
+      85,
+      85
+    ],
+    "minimum": 331,
+    "maximum": 331,
+    "average": 331,
+    "scope": "王道在线2025届一志愿普通计划拟录取统计（不含士兵、少数民族专项）；初试总分及408均分、分数段录取人数采用该统计，复试单科统计与录取统计分开保存。未取得全校逐人拟录取名单。分数段按原图371—380等区间保存，末档400以上按相邻区间解释为401—500。9月预计统考名额与复试阶段实际计划分别保存。",
+    "median": 331,
+    "q1": 331,
+    "q3": 331,
+    "scoreDistribution": [
+      {
+        "min": 331,
+        "max": 340,
+        "count": 1
+      }
+    ],
+    "subjectScoreStats": {
+      "politics": {
+        "minimum": 60,
+        "maximum": 60,
+        "average": 60,
+        "median": 60,
+        "q1": 60,
+        "q3": 60
+      },
+      "english": {
+        "minimum": 63,
+        "maximum": 63,
+        "average": 63,
+        "median": 63,
+        "q1": 63,
+        "q3": 63
+      },
+      "math": {
+        "minimum": 114,
+        "maximum": 114,
+        "average": 114,
+        "median": 114,
+        "q1": 114,
+        "q3": 114
+      },
+      "professional": {
+        "minimum": 94,
+        "maximum": 94,
+        "average": 94,
+        "median": 94,
+        "q1": 94,
+        "q3": 94
+      }
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 331,
+        "max": 340,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
+    "interviewRequirements": {
+      "writtenMax": 150,
+      "writtenMinutes": 120,
+      "writtenSubjects": "人工智能、算法、概率统计",
+      "computerTestMax": 100,
+      "computerTestMinutes": 90,
+      "computerLanguages": [
+        "Python"
+      ],
+      "computerTestSubjects": "人工智能程序设计，numpy",
+      "oralMax": 150,
+      "interviewPassingScore": 90,
+      "retestMax": 400,
+      "initialWeight": 0.5555555555555556,
+      "totalFormula": "初试成绩+复试成绩"
+    },
+    "examAdmissions": 1,
+    "interviewEligible": 1,
+    "interviewRatio": 1.0,
+    "metricScope": "普通统考",
+    "sources": [
+      {
+        "title": "N诺南京大学2025年考情统计",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "year": 2025,
+        "kind": "history"
+      },
+      {
+        "title": "人工智能学院2025年复试细则（含复试名单）",
+        "url": "https://ai.nju.edu.cn/_upload/article/files/78/13/075994ae46a59afc1c5cb354b7c0/7638305b-d783-4bff-a271-9aeee32b7522.pdf",
+        "year": 2025,
+        "kind": "retest"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "history"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "scores"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "retest"
+      }
+    ]
+  },
+  {
+    "projectId": "nju-072-085405-01",
+    "year": 2025,
+    "updatedAt": "2026-11-27",
+    "promotionAdmissions": 15,
+    "reportedAdmissions": 20,
+    "reportedInterviewees": 25,
+    "interviewListCount": 25,
+    "reportedInterviewRatio": 1.25,
+    "cutoff": 361,
+    "cutoffSubjects": [
+      55,
+      55,
+      85,
+      85
+    ],
+    "minimum": 361,
+    "maximum": 395,
+    "average": 374.7,
+    "scope": "王道在线2025届一志愿普通计划拟录取统计（不含士兵、少数民族专项）；初试总分及408均分、分数段录取人数采用该统计，复试单科统计与录取统计分开保存。未取得全校逐人拟录取名单。分数段按原图371—380等区间保存，末档400以上按相邻区间解释为401—500。9月预计统考名额与复试阶段实际计划分别保存。",
+    "median": 375,
+    "subjectScoreStats": {
+      "professional": {
+        "average": 108.9
+      }
+    },
+    "scoreBandOutcomes": [
+      {
+        "min": 361,
+        "max": 370,
+        "interviewees": 12,
+        "admitted": 7
+      },
+      {
+        "min": 371,
+        "max": 380,
+        "interviewees": 8,
+        "admitted": 8
+      },
+      {
+        "min": 381,
+        "max": 390,
+        "interviewees": 4,
+        "admitted": 4
+      },
+      {
+        "min": 391,
+        "max": 400,
+        "interviewees": 1,
+        "admitted": 1
+      }
+    ],
+    "scoreDistribution": [
+      {
+        "min": 361,
+        "max": 370,
+        "count": 7
+      },
+      {
+        "min": 371,
+        "max": 380,
+        "count": 8
+      },
+      {
+        "min": 381,
+        "max": 390,
+        "count": 4
+      },
+      {
+        "min": 391,
+        "max": 400,
+        "count": 1
+      }
+    ],
+    "interviewRequirements": {
+      "writtenMax": 100,
+      "writtenMinutes": 120,
+      "writtenSubjects": "软件工程、数据库",
+      "computerTestMax": 50,
+      "computerTestMinutes": 180,
+      "writtenComputerPassingScore": 75,
+      "oralMax": 150,
+      "interviewPassingScore": 90,
+      "retestMax": 300,
+      "initialWeight": 0.625,
+      "totalFormula": "初试成绩+复试成绩"
+    },
+    "examAdmissions": 20,
+    "interviewEligible": 25,
+    "interviewRatio": 1.25,
+    "metricScope": "普通统考",
+    "sources": [
+      {
+        "title": "N诺南京大学2025年考情统计",
+        "url": "https://noobdream.com/schoolinfo/17/",
+        "year": 2025,
+        "kind": "history"
+      },
+      {
+        "title": "智能软件与工程学院2025年复试细则",
+        "url": "https://ise.nju.edu.cn/__local/7/12/68/C5CB4012BD12582F0777C4B5D21_A1DA076A_47143.pdf",
+        "year": 2025,
+        "kind": "retest"
+      },
+      {
+        "title": "智能软件与工程学院2025年复试成绩及总成绩",
+        "url": "https://ise.nju.edu.cn/__local/0/6C/97/4AFCAEC146722F1BE34F80EEF2A_38EF2A3E_281E7.pdf",
+        "year": 2025,
+        "kind": "scores"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "history"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "scores"
+      },
+      {
+        "title": "王道在线：2025年南京大学计算机考研考情分析",
+        "url": "https://mp.weixin.qq.com/s/YVjBJHID47dG56q6d887pQ",
+        "year": 2025,
+        "scope": "第2—8页招生目录、录取统计及分数段；第12—15页复试细则、学费学制",
+        "kind": "retest"
       }
     ]
   }

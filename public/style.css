@@ -248,6 +248,29 @@ main:focus {
   color: var(--muted);
   margin-top: 8px;
 }
+.school-identity {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.school-identity > span {
+  min-width: 0;
+}
+.school-emblem {
+  --emblem-size: 1.375rem;
+  width: var(--emblem-size);
+  height: var(--emblem-size);
+  flex: none;
+  object-fit: contain;
+}
+.school-emblem--row {
+  --emblem-size: 1.75rem;
+}
+.school-emblem--heading {
+  --emblem-size: clamp(2rem, 6vw, 2.75rem);
+}
 .update {
   font-size: 13px;
   color: var(--muted);

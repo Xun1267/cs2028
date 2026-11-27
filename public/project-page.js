@@ -30,10 +30,27 @@ const retestKeys = [
   "综合分公式",
   "复试合格要求",
 ];
+const retestMetrics = [
+  ["writtenSubjects", "笔试科目"],
+  ["writtenMax", "笔试满分", " 分"],
+  ["writtenMinutes", "笔试时长", " 分钟"],
+  ["computerTestSubjects", "上机内容"],
+  ["computerLanguages", "上机语言"],
+  ["computerTestMax", "上机满分", " 分"],
+  ["computerTestMinutes", "上机时长", " 分钟"],
+  ["writtenComputerPassingScore", "笔试与上机合计合格线", " 分"],
+  ["oralMax", "面试满分", " 分"],
+  ["interviewPassingScore", "面试合格线", " 分"],
+  ["retestMax", "复试满分", " 分"],
+  ["retestPassingScore", "复试合格线", " 分"],
+  ["totalFormula", "总成绩计算"],
+];
+const catalogMetrics = [...planFields, ["promotionAdmissions", "实际推免人数"]];
 const hasNumber = (row, fields) =>
   fields.some(([key]) => Number.isFinite(row[key]));
 const scoreOrder = [
   "cutoff",
+  "observedMinimum",
   "schoolCutoff",
   "minimum",
   "average",
@@ -62,13 +79,14 @@ export function references(record, role) {
         (allowNeutral && !kind)
       );
     });
-  if (role === "catalog")
-    return [
-      ...forRole(annual.sources),
-      ...(record.annual || hasNumber(numbers(record), planFields)
-        ? all.filter((s) => sourceKind(s) === "retest")
-        : []),
-    ];
+  if (role === "catalog") {
+    const catalog = forRole(annual.sources);
+    const supplemental = hasNumber(numbers(record), planFields) &&
+      !catalog.some((s) => sourceKind(s) === "catalog");
+    return supplemental
+      ? [...catalog, ...all.filter((s) => sourceKind(s) === "retest")]
+      : catalog;
+  }
   if (role === "history")
     return [
       ...forRole(admission?.sources),
@@ -86,7 +104,7 @@ export function references(record, role) {
 }
 
 export function isScoreSource(source) {
-  return source.kind === "scores" || /分数|成绩|复试名单/.test(source.title);
+  return source.kind === "scores" || (!source.kind && /分数|成绩|复试名单/.test(source.title));
 }
 
 function chartRows(rows) {
@@ -133,20 +151,24 @@ export function createProjectViews({
     if (!record) return "";
     const metric = numbers(record);
     const subjects = record.annual.subjects
-      .map(({ code, name }) => `${code} ${name}`)
+      .map(({ code, name }) => [code, name].filter(Boolean).join(" "))
       .join("、");
     return (
       facts([
+        ["当年学院", record.annual.historicalCollege],
+        ["当年专业代码", record.annual.officialMajorCode],
+        ["当年专业", record.annual.officialMajorName],
+        ["当年研究方向", record.annual.historicalDirection],
         ["考试组合", record.annual.examCombo],
         ["初试科目", subjects],
       ]) +
-      metricFacts(planFields, metric) +
+      metricFacts(catalogMetrics, metric) +
       scopeNote(compactNotes(record.annual.planScope || record.annual.scope)) +
       record.sharedGroups
-        .filter((group) => hasNumber(numbers(group), planFields))
+        .filter((group) => hasNumber(numbers(group), catalogMetrics))
         .map(
           (group) =>
-            `<div class="shared-metrics" data-shared-group="${esc(groupedKey(group))}"><h3>共享招生计划</h3>${scopeNote(sharedTitle(group))}${metricFacts(planFields, numbers(group))}</div>`,
+            `<div class="shared-metrics" data-shared-group="${esc(groupedKey(group))}"><h3>共享招生计划</h3>${scopeNote(sharedTitle(group))}${metricFacts(catalogMetrics, numbers(group))}</div>`,
         )
         .join("") +
       sources(
@@ -189,14 +211,18 @@ export function createProjectViews({
         .map((r) => {
           const {
             officialMajorCode,
+            officialMajorName,
+            historicalCollege,
             historicalDirection,
             professionalSubject,
-          } = r.record?.annual || {};
+          } = r.annual || r.record?.annual || {};
           const legacyCode =
             officialMajorCode !== r.record?.majorId ? officialMajorCode : null;
           const context = [
             legacyCode,
-            legacyCode && historicalDirection,
+            legacyCode && officialMajorName,
+            historicalCollege,
+            historicalDirection,
             professionalSubject &&
               professionalSubject.code + " " + professionalSubject.name,
           ]
@@ -332,19 +358,30 @@ export function createProjectViews({
     const exact = timeTable(rows, scoreTrends, "（分）");
     const distribution = scoreDistribution(rows);
     const stats = scoreTrends
-      .filter(([key]) => !["cutoff", "schoolCutoff"].includes(key))
+      .filter(([key]) => !["cutoff", "observedMinimum", "schoolCutoff"].includes(key))
       .map(([key, label]) => [key, label.replace("录取", "")]);
-    const subjects = [...subjectSeries(rows)].map(([title, scores]) => {
-      const ordered = scores.slice().sort((a, b) => b.year - a.year);
-      return `<div><h3>${esc(title)}</h3>${rangeMarkup(ordered, title)}${timeTable(ordered, stats, "（分）")}</div>`;
-    });
+    const scoreDetails = (ordered, title) => {
+      const partial = ordered.some(({ average, minimum, maximum }) =>
+        Number.isFinite(average) && (!Number.isFinite(minimum) || !Number.isFinite(maximum)),
+      );
+      return rangeMarkup(ordered, title) +
+        (partial ? annualChart(title + "均分", "分", chartRows(ordered), [["average", "平均分"]]) : "") +
+        timeTable(ordered, stats, "（分）");
+    };
+    const renderSubjects = (entries) =>
+      [...entries].map(([title, scores]) => {
+        const ordered = scores.slice().sort((a, b) => b.year - a.year);
+        return `<div><h3>${esc(title)}</h3>${scoreDetails(ordered, title)}</div>`;
+      }).join("");
+    const subjects = renderSubjects(subjectSeries(rows));
+    const interviewSubjects = renderSubjects(subjectSeries(rows, true));
     const interview = rows
       .filter((r) => r.record.admission?.interviewScoreStats)
       .map(({ year, record }) => ({
         year,
         ...record.admission.interviewScoreStats,
       }));
-    if (!exact && !distribution && !subjects.length && !interview.length)
+    if (!exact && !distribution && !subjects && !interview.length && !interviewSubjects)
       return "";
     return (
       seriesHeading(series) +
@@ -353,10 +390,13 @@ export function createProjectViews({
         ${rangeMarkup(rows)}
       </div>${exact}${distribution}` +
       (subjects.length
-        ? `<details class="record-disclosure"><summary>录取考生初试各科成绩</summary><div class="admission-chart-grid individual-subjects">${subjects.join("")}</div></details>`
+        ? `<details class="record-disclosure"><summary>录取考生初试各科成绩</summary><div class="admission-chart-grid individual-subjects">${subjects}</div></details>`
         : "") +
       (interview.length
-        ? `<details class="record-disclosure"><summary>复试考生初试总分</summary><div>${rangeMarkup(interview, "复试考生初试总分区间")}${timeTable(interview, stats, "（分）")}</div></details>`
+        ? `<details class="record-disclosure"><summary>复试考生初试总分</summary><div>${scoreDetails(interview, "复试考生初试总分")}</div></details>`
+        : "") +
+      (interviewSubjects
+        ? `<details class="record-disclosure"><summary>复试考生初试各科成绩</summary><div class="admission-chart-grid individual-subjects">${interviewSubjects}</div></details>`
         : "")
     );
   }
@@ -455,12 +495,26 @@ export function createProjectViews({
 
   function retestBody(item) {
     const details = item.record.annual?.details || item.record.details || {};
-    const text = compactNotes(item.record.admission?.interviewRequirements);
+    const { interviewRequirements: requirements, cutoffSubjects } = item.record.admission || {};
+    const text = typeof requirements === "string" ? compactNotes(requirements) : "";
+    const structured = requirements && typeof requirements === "object" ? requirements : {};
+    const { initialWeight, interviewMax } = structured;
+    const subjects = item.record.annual?.subjects || item.record.subjects || [];
     const body = facts(
-      retestKeys.map((key) => {
-        const value = readable(details[key]);
-        return [key, text.includes(value) ? null : value];
-      }),
+      [
+        ...retestKeys.map((key) => {
+          const value = readable(details[key]);
+          return [key, text.includes(value) ? null : value];
+        }),
+        ...retestMetrics.map(([key, label, unit]) => [
+          label,
+          unit ? show(structured[key] ?? (key === "oralMax" ? interviewMax : null), unit) : readable(structured[key]),
+        ]),
+        ["初试权重", Number.isFinite(initialWeight) ? fmt.format(initialWeight * 100) + "%" : ""],
+        ["复试单科线", cutoffSubjects?.map((score, i) =>
+          `${subjects[i]?.name || ["政治", "外语", "业务课一", "业务课二"][i]} ${score} 分`,
+        ).join("、")],
+      ],
     );
     return (text ? `<p class="article">${esc(text)}</p>` : "") + body;
   }
@@ -475,11 +529,11 @@ export function createProjectViews({
         ),
       }))
       .map((item) => ({ ...item, body: retestBody(item) }))
-      .filter((item) => item.direct.length || item.body);
+      .filter((item) => item.body || item.direct.length);
     const newest =
       candidates.find(
         (item) =>
-          item.record.admission?.interviewPlanComplete || item.direct.length,
+          item.record.admission?.interviewPlanComplete || (item.direct.length && item.body),
       ) || candidates[0];
     if (!newest) return "";
     const current = newest.record.year;
@@ -527,17 +581,17 @@ export function createProjectViews({
         ["学制", show(training?.durationYears, " 年")],
         ["培养地点", training?.location],
         ...trainingKeys.map((key) => [key, readable(extra[key])]),
-      ]);
+      ]) + sources(references(record, "training"), 10);
     };
-    const record =
-      records.find((r) => r.training && content(r)) ||
-      records.find((r) => content(r));
-    return record
+    const entries = records.map((record) => ({ year: record.year, body: content(record) }))
+      .filter(({ body }) => body);
+    const [current, ...previous] = entries;
+    return current
       ? sectionWith(
           "培养条件",
-          `<p class="section-year"><time>${record.year}</time> 年适用</p>` +
-            content(record) +
-            sources(references(record, "training"), 10),
+          `<p class="section-year"><time>${current.year}</time> 年</p>${current.body}` +
+            (previous.length ? `<details class="record-disclosure"><summary>历年学费与学制</summary><div>${previous.map(({ year, body }) =>
+              `<div class="year-policy"><h3>${year} 年</h3>${body}</div>`).join("")}</div></details>` : ""),
         )
       : "";
   }
@@ -599,13 +653,13 @@ export function createProjectViews({
         ? `<p class="related-links small">后续独立招生项目 ${successors.map((next) => link("project", next.majorLabel || next.major.title, next.id)).join(" · ")}</p>`
         : "";
     const historical = history(records, defaultRange, predecessors);
-    return `${heading(project.school.name + " · " + (project.majorLabel || project.major.title), project.college)}
+    return `${heading(project.school.name + " · " + (project.majorLabel || project.major.title), project.college, project.schoolId)}
       <div id="projectActions" class="actions">${annualActions(project)}${explicitYear && project.year !== mostRecent.year ? `<span class="section-year">${project.year} 年项目</span>` : ""}</div>
       ${sectionWith(
         "项目基本信息",
         facts([
-          ["专业代码", project.majorId],
-          ["研究方向", project.direction],
+          ["专业代码", project.annual.officialMajorCode || project.majorId],
+          ["研究方向", project.annual.historicalDirection || project.direction],
           ["学习方式", project.studyMode],
           ["学位类型", project.degree],
           [

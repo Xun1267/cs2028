@@ -3,6 +3,8 @@ const numeric = (...values) => values.find(Number.isFinite);
 export const planFields = [
   ["planned", "计划招生人数"],
   ["promotionPlanned", "计划推免人数"],
+  ["earlyExamPlanned", "前期公布统考名额"],
+  ["estimatedExamPlanned", "预计统考名额"],
   ["examPlanned", "计划统考人数"],
   ["regularExamPlanned", "普通统考计划"],
   ["specialPlanPlanned", "专项招生计划"],
@@ -22,6 +24,7 @@ export const competitionFields = [
   ["examAttendees", "实考人数"],
   ["interviewees", "复试人数"],
   ["interviewEligible", "进入复试人数"],
+  ["specialPlanInterviewees", "专项复试人数"],
   ["examAdmissions", "统考录取人数"],
 ];
 export const ratioFields = [
@@ -31,6 +34,7 @@ export const ratioFields = [
 ];
 export const scoreFields = [
   ["cutoff", "复试线"],
+  ["observedMinimum", "复试名单最低分"],
   ["schoolCutoff", "校级复试线"],
   ["minimum", "录取最低分"],
   ["maximum", "录取最高分"],
@@ -95,6 +99,8 @@ export function numbers(record) {
   return {
     planned: numeric(annual.planned),
     promotionPlanned: numeric(annual.promotionPlanned),
+    earlyExamPlanned: numeric(annual.earlyExamPlanned),
+    estimatedExamPlanned: numeric(annual.estimatedExamPlanned),
     examPlanned: numeric(
       splitPlan ? undefined : annual.examPlanned,
       details["目录公布统考计划"],
@@ -130,10 +136,12 @@ export function numbers(record) {
       admission.interviewEligible,
       details["达到复试资格人数"],
     ),
+    specialPlanInterviewees: numeric(admission.specialPlanInterviewees),
     applicationRatio: numeric(admission.applicationRatio),
     examAttendanceRatio: numeric(admission.examAttendanceRatio),
     interviewRatio: numeric(admission.interviewRatio),
     cutoff: uncertainCutoff ? undefined : numeric(admission.cutoff),
+    observedMinimum: numeric(admission.observedMinimum),
     schoolCutoff: numeric(admission.schoolCutoff),
     minimum: numeric(admission.minimum),
     maximum: numeric(admission.maximum),
@@ -141,10 +149,9 @@ export function numbers(record) {
     median: numeric(admission.median),
     q1: numeric(admission.q1),
     q3: numeric(admission.q3),
-    admissionScope: hasBreakdown
-      ? ""
-      : admission.metricScope ||
-        (Number.isFinite(examAdmissions) ? separateScope(scope) : ""),
+    admissionScope:
+      admission.metricScope ||
+      (!hasBreakdown && Number.isFinite(examAdmissions) ? separateScope(scope) : ""),
     interviewRatioScope: admission.interviewRatioScope || "",
   };
 }
@@ -185,7 +192,12 @@ export function admitSeries(records) {
       if (!grouped.has(key)) grouped.set(key, []);
       grouped
         .get(key)
-        .push({ ...numbers(group), record: group, year: group.year });
+        .push({
+          ...numbers(group),
+          record: group,
+          annual: record.annual,
+          year: group.year,
+        });
     }
   }
   return [
@@ -246,6 +258,7 @@ const subjectNames = {
   foreignLanguage: "外国语",
   subject1: "业务课一",
   subject2: "专业课",
+  professional: "专业课",
   101: "思想政治理论",
   201: "英语一",
   204: "英语二",
@@ -254,14 +267,14 @@ const subjectNames = {
   408: "计算机学科专业基础",
 };
 
-export function subjectSeries(rows) {
+export function subjectSeries(rows, interview = false) {
   const series = new Map();
-  for (const { record, year } of rows) {
-    const subjects =
-      record.admission?.subjectScoreStats ||
-      (record.annual || record).details?.["分科成绩"] ||
-      record.admission?.subjectScores ||
-      {};
+  for (const { record, year, annual = record.annual || record } of rows) {
+    const subjects = (interview
+      ? record.admission?.interviewSubjectScoreStats
+      : record.admission?.subjectScoreStats ||
+        annual.details?.["分科成绩"] ||
+        record.admission?.subjectScores) || {};
     for (const [key, value] of Object.entries(subjects)) {
       const code =
         {
@@ -271,15 +284,17 @@ export function subjectSeries(rows) {
           math: "30",
           mathematics: "30",
           business2: "",
+          professional: "",
           subject1: "30",
           subject2: "",
         }[key] ?? key;
       const actual = code
-        ? record.annual?.subjects?.find((s) => s.code.startsWith(code))
-        : record.annual?.subjects?.[3] || record.annual?.professionalSubject;
-      const label = record.admission?.subjectScoreStats
-        ? subjectNames[key] || key
-        : actual?.name || subjectNames[key] || key;
+        ? annual.subjects?.find((s) => s.code.startsWith(code))
+        : annual.subjects?.[3] || annual.professionalSubject;
+      const label =
+        interview || record.admission?.subjectScoreStats
+          ? subjectNames[key] || key
+          : actual?.name || subjectNames[key] || key;
       if (!series.has(label)) series.set(label, []);
       series.get(label).push({
         year,
