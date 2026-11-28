@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { emptyData, today, addDays, parseImport, importRows, dueWords, todayStatus, startSession, answer, validateBackup, editWord, removeWord } from '../public/words/model.mjs';
+import { emptyData, today, addDays, parseImport, importRows, dueWords, todayStatus, startSession, answer, validateBackup, editWord, removeWord, removeWords, wordGroups, selectionState } from '../public/words/model.mjs';
 
 let serial = 0;
 const add = (data, rows) => importRows(data, rows, () => `test-${++serial}`);
@@ -71,4 +71,42 @@ test('editing rejects collisions; moving dates resets old review; deletion recon
   assert.equal(d.reviews.length, 0); assert.equal(d.session, null);
   startSession(d, d.words.map(w => w.id), 'all'); removeWord(d, id);
   assert.equal(d.session.ids.length, 1); assert.deepEqual(validateBackup(d), d);
+});
+
+
+test('year/month/day groups are descending, count all words and support three selection states', () => {
+  const d = emptyData();
+  add(d, [word('a', '2025-12-31'), word('b', '2026-11-28'), word('c', '2026-11-27'), word('d', '2026-10-01'), word('e', '2026-11-28')]);
+  const groups = wordGroups(d.words);
+  assert.deepEqual(groups.map(g => g.key), ['2026', '2025']);
+  assert.equal(groups[0].words.length, 4);
+  assert.deepEqual(groups[0].children.map(g => g.key), ['2026-11', '2026-10']);
+  const month = groups[0].children[0];
+  assert.deepEqual(month.children.map(g => g.key), ['2026-11-28', '2026-11-27']);
+  assert.equal(month.children[0].words.length, 2);
+  const selected = new Set();
+  assert.deepEqual(selectionState(month.words, selected), { checked: false, partial: false });
+  selected.add(month.words[0].id);
+  assert.deepEqual(selectionState(month.words, selected), { checked: false, partial: true });
+  month.words.forEach(w => selected.add(w.id));
+  assert.deepEqual(selectionState(month.words, selected), { checked: true, partial: false });
+  assert.deepEqual(selectionState(groups[0].words, selected), { checked: false, partial: true });
+});
+test('bulk deletion uses IDs, preserves same English on other dates, cleans reviews and session', () => {
+  const d = emptyData();
+  add(d, [word('same', '2025-12-31'), word('same', '2026-11-28'), word('b', '2026-11-27'), word('c', '2026-10-01')]);
+  const ids = d.words.map(w => w.id);
+  startSession(d, ids, 'all');
+  const done = d.session.queue[0]; answer(d, true, '2026-11-28');
+  d.reviews.push({ wordId: ids[0], date: '2026-11-27' });
+  const remove = new Set([ids[0], done]);
+  removeWords(d, [...remove]);
+  assert.ok(d.words.every(w => !remove.has(w.id)));
+  assert.ok(d.reviews.every(r => !remove.has(r.wordId)));
+  for (const key of ['ids', 'queue', 'done']) assert.ok(d.session[key].every(id => !remove.has(id)));
+  if (!remove.has(ids[1])) assert.ok(d.words.some(w => w.id === ids[1] && w.english === 'same'));
+  assert.deepEqual(validateBackup(JSON.parse(JSON.stringify(d))), d);
+  removeWords(d, d.words.map(w => w.id));
+  assert.deepEqual(d, emptyData());
+  assert.deepEqual(wordGroups(d.words), []);
 });

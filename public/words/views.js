@@ -1,8 +1,10 @@
-import { STORAGE_KEY, emptyData, today, clean, wordKey, validateWord, parseImport, importRows, dueWords, todayStatus, startSession, answer, removeWord, editWord, validateBackup } from './model.mjs';
+import { STORAGE_KEY, emptyData, today, wordKey, validateWord, parseImport, importRows, dueWords, todayStatus, startSession, answer, removeWord, removeWords, wordGroups, selectionState, editWord, validateBackup } from './model.mjs';
 
 export function createWordViews({ esc }) {
   let root, tab = 'today', data, raw, error = '', message = '', preview = [], added = [], flipped = false, busy = false, timer, generation = 0, day = today();
-  let query = '', selected = new Set(), expanded = new Set(), editing = null;
+  let query = '', selected = new Set(), managing = false, expanded = new Set(), editing = null;
+  let libraryGroups = new Map();
+  const matchesQuery = w => (w.english + '\n' + w.chinese).toLowerCase().includes(query.toLowerCase().trim());
   const active = () => root?.isConnected && location.hash.startsWith('#words');
   const button = (action, text, disabled = false, extra = '') => `<button type="button" data-word-action="${action}" ${disabled ? 'disabled' : ''} ${extra}>${text}</button>`;
   function load() {
@@ -45,11 +47,32 @@ export function createWordViews({ esc }) {
   function fields(w, index = '') {
     return `<label>录入日期<input type="date" name="date${index}" value="${esc(w.date)}" required></label><label>英文<input name="english${index}" value="${esc(w.english)}" maxlength="500" required lang="en"></label><label>中文释义<input name="chinese${index}" value="${esc(w.chinese)}" maxlength="5000" required></label>`;
   }
+  function selectionBox(words, key, title, individual = false) {
+    if (!managing) return '';
+    const state = selectionState(words, selected);
+    return `<label class="word-select"><input type="checkbox" ${individual ? 'data-word-select-id' : 'data-word-select-group'}="${esc(key)}" ${state.checked ? 'checked' : ''} data-partial="${state.partial}" aria-label="选择${esc(title)}"><span class="sr-only">选择${esc(title)}</span></label>`;
+  }
+  function libraryWord(w) {
+    return `<li>${selectionBox([w], w.id, w.english, true)}<div class="word-item-content">${editing === w.id ? `<form id="word-edit" data-id="${esc(w.id)}" class="word-form">${fields(w)}<div class="word-actions"><button type="submit">保存</button>${button('cancel-edit', '取消')}</div></form>` : `<div class="word-definition"><strong lang="en">${esc(w.english)}</strong><span>${esc(w.chinese)}</span></div><div class="word-actions">${button('edit', '修改', false, `data-id="${esc(w.id)}"`)}${button('delete', '删除', false, `data-id="${esc(w.id)}"`)}</div>`}</div></li>`;
+  }
+  function libraryGroup(g, depth = 0) {
+    const matching = g.words.filter(matchesQuery);
+    if (!matching.length) return '';
+    const parts = g.key.split('-'), title = depth === 0 ? parts[0] + '年' : depth === 1 ? Number(parts[1]) + '月' : Number(parts[1]) + '月' + Number(parts[2]) + '日';
+    const fullTitle = depth === 0 ? title : parts[0] + '年' + title;
+    const open = expanded.has(g.key);
+    return `<section class="word-group word-group-level-${depth}"><div class="word-group-head">${selectionBox(g.words, g.key, fullTitle)}${button('expand', `<span>${title}</span><span class="word-group-count">${g.words.length} 词${query.trim() ? ` · 匹配 ${matching.length}` : ''}</span><span aria-hidden="true">${open ? '−' : '+'}</span>`, false, `data-group="${g.key}" aria-label="${open ? '折叠' : '展开'}${fullTitle}" aria-expanded="${open}"`)}</div>
+      ${open ? `<div class="word-group-body">${depth < 2 ? g.children.map(child => libraryGroup(child, depth + 1)).join('') : `${!managing ? `<div class="word-day-actions">${button('start-day', '复习当天', false, `data-date="${g.key}"`)}</div>` : ''}<ul class="word-list">${matching.map(libraryWord).join('')}</ul>`}</div>` : ''}</section>`;
+  }
   function library() {
-    const filtered = data.words.filter(w => (w.english + '\n' + w.chinese).toLowerCase().includes(query.toLowerCase().trim()));
-    return `<div class="word-library-tools"><input id="word-search" type="search" placeholder="搜索英文或中文释义" aria-label="搜索英文或中文释义" value="${esc(query)}">${button('start-dates', `复习所选日期（${selected.size}）`, !selected.size)}</div>
-      ${group(filtered).map(([date, words]) => `<section class="word-group"><div class="word-group-head"><label class="word-date-check"><input type="checkbox" data-word-date="${date}" ${selected.has(date) ? 'checked' : ''}><span class="sr-only">选择 ${date}</span></label>${button('expand', `<time>${date}</time><span>${data.words.filter(w => w.date === date).length} 词</span><span aria-hidden="true">${expanded.has(date) ? '−' : '+'}</span>`, false, `data-date="${date}" aria-expanded="${expanded.has(date)}"`)}</div>
-      ${expanded.has(date) ? `<ul class="word-list">${words.map(w => `<li>${editing === w.id ? `<form id="word-edit" data-id="${esc(w.id)}" class="word-form">${fields(w)}<div class="word-actions"><button type="submit">保存</button>${button('cancel-edit', '取消')}</div></form>` : `<div class="word-definition"><strong lang="en">${esc(w.english)}</strong><span>${esc(w.chinese)}</span></div><div class="word-actions">${button('edit', '修改', false, `data-id="${esc(w.id)}"`)}${button('delete', '删除', false, `data-id="${esc(w.id)}"`)}</div>`}</li>`).join('')}</ul>` : ''}</section>`).join('') || '<p class="word-empty">暂无单词</p>'}
+    const groups = wordGroups(data.words);
+    libraryGroups = new Map();
+    const index = items => items.forEach(g => { libraryGroups.set(g.key, g.words); index(g.children); });
+    index(groups);
+    const filtered = data.words.filter(matchesQuery);
+    return `<div class="word-library-tools"><input id="word-search" type="search" placeholder="搜索英文或中文释义" aria-label="搜索英文或中文释义" value="${esc(query)}">${!managing ? button('manage', '批量管理', !data.words.length) : ''}</div>
+      ${managing ? `<div class="word-bulk-bar" role="region" aria-label="批量管理"><div class="word-bulk-summary"><span role="status" class="num">已选 ${selected.size} 词</span><div class="word-actions">${button('delete-selected', '删除所选', !selected.size)}${button('cancel-manage', '取消')}</div></div><div class="word-bulk-options">${button('select-filtered', '全选当前结果', !filtered.length)}${button('select-all', '全选整个单词库', !data.words.length)}${button('clear-selected', '取消全选', !selected.size)}${button('review-selected', '复习所选', !selected.size)}</div></div>` : ''}
+      ${filtered.length ? groups.map(g => libraryGroup(g)).join('') : `<p class="word-empty">${data.words.length ? '暂无匹配单词' : '暂无单词'}</p>`}
       <div class="word-backup word-actions">${button('export', '导出完整备份')}<label class="button">恢复备份<input id="word-restore" class="sr-only" type="file" accept=".json,application/json"></label></div>`;
   }
   function previewTable() {
@@ -72,9 +95,14 @@ export function createWordViews({ esc }) {
   }
   function draw() {
     if (!active()) return;
+    if (data) {
+      const live = new Set(data.words.map(w => w.id));
+      selected = new Set([...selected].filter(id => live.has(id)));
+    }
     root.className = 'words-page' + (tab === 'review' ? ' word-review' : '');
     document.body.classList.toggle('word-review-active', tab === 'review');
     root.innerHTML = `${tab === 'review' ? '' : '<h1>单词复习</h1>' + tabs()}<div class="word-error" role="alert" ${error ? '' : 'hidden'}>${esc(error)}</div><p class="word-message" role="status" ${message ? '' : 'hidden'}>${esc(message)}</p>${data ? (tab === 'review' ? flashcard() : `${data.session?.queue.length ? `<div class="word-resume">${button('resume', `继续复习（${data.session.done.length}/${data.session.ids.length}）`)}</div>` : ''}${tab === 'library' ? library() : tab === 'import' ? importer() : dashboard()}`) : `<div class="word-actions">${button('reload', '重新读取')}<label class="button">恢复备份<input id="word-restore" class="sr-only" type="file" accept=".json,application/json"></label></div>`}`;
+    root.querySelectorAll('input[data-partial]').forEach(input => { input.indeterminate = input.dataset.partial === 'true'; });
   }
   function goReview(ids, mode) {
     if (data.session?.queue.length && !confirm('开始新一轮复习将替换未完成的队列，是否继续？')) return;
@@ -129,14 +157,29 @@ export function createWordViews({ esc }) {
         case 'start-due': goReview(dueWords(data).map(w => w.id), 'due'); return;
         case 'start-new': goReview(all.filter(w => w.date === today()).map(w => w.id), 'new'); return;
         case 'start-all': goReview(all.map(w => w.id), 'all'); return;
-        case 'start-dates': goReview(all.filter(w => selected.has(w.date)).map(w => w.id), 'dates'); return;
+        case 'start-day': goReview(all.filter(w => w.date === b.dataset.date).map(w => w.id), 'dates'); return;
+        case 'review-selected': goReview([...selected], 'dates'); return;
+        case 'manage': managing = true; selected.clear(); editing = null; break;
+        case 'cancel-manage': managing = false; selected.clear(); break;
+        case 'select-filtered': all.filter(matchesQuery).forEach(w => selected.add(w.id)); break;
+        case 'select-all': all.forEach(w => selected.add(w.id)); break;
+        case 'clear-selected': selected.clear(); break;
+        case 'delete-selected': {
+          const ids = all.filter(w => selected.has(w.id)).map(w => w.id);
+          if (ids.length && confirm(`确定删除选中的${ids.length}个单词？对应的复习记录也将被删除，此操作无法撤销。`)) {
+            save(next => removeWords(next, ids));
+            selected.clear(); editing = null;
+            message = `已删除 ${ids.length} 个单词`;
+          }
+          break;
+        }
         case 'start-import': goReview(added, 'import'); return;
         case 'resume': flipped = false; location.hash = '#words/review'; return;
         case 'exit': case 'finish': location.hash = '#words/today'; return;
-        case 'expand': expanded.has(b.dataset.date) ? expanded.delete(b.dataset.date) : expanded.add(b.dataset.date); break;
+        case 'expand': expanded.has(b.dataset.group) ? expanded.delete(b.dataset.group) : expanded.add(b.dataset.group); break;
         case 'edit': editing = b.dataset.id; break;
         case 'cancel-edit': editing = null; break;
-        case 'delete': if (confirm('删除这个单词及其复习记录？')) save(next => removeWord(next, b.dataset.id)); break;
+        case 'delete': if (confirm('确定删除这个单词？对应的复习记录也将被删除，此操作无法撤销。')) save(next => removeWord(next, b.dataset.id)); break;
         case 'export': download(); break;
         case 'remove-preview': capturePreview(); preview.splice(Number(b.dataset.index), 1); break;
         case 'cancel-preview': preview = []; break;
@@ -166,7 +209,14 @@ export function createWordViews({ esc }) {
   async function change(event) {
     const input = event.target;
     try {
-      if (input.dataset.wordDate) { input.checked ? selected.add(input.dataset.wordDate) : selected.delete(input.dataset.wordDate); draw(); }
+      if (input.hasAttribute('data-word-select-group') || input.hasAttribute('data-word-select-id')) {
+        const groupKey = input.dataset.wordSelectGroup, id = input.dataset.wordSelectId;
+        const words = groupKey !== undefined ? libraryGroups.get(groupKey) || [] : data.words.filter(w => w.id === id);
+        words.forEach(w => input.checked ? selected.add(w.id) : selected.delete(w.id));
+        draw();
+        const selector = groupKey !== undefined ? '[data-word-select-group]' : '[data-word-select-id]';
+        [...root.querySelectorAll(selector)].find(el => groupKey !== undefined ? el.dataset.wordSelectGroup === groupKey : el.dataset.wordSelectId === id)?.focus({ preventScroll: true });
+      }
       if (input.id === 'word-file') {
         const token = generation;
         const rows = [];

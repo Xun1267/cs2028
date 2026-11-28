@@ -83,13 +83,30 @@ export function answer(data, remembered, day = today()) {
     if (!data.reviews.some(r => r.wordId === id && r.date === day)) data.reviews.push({ wordId: id, date: day });
   } else s.queue.splice(Math.min(3, s.queue.length), 0, id);
 }
-export function removeWord(data, id) {
-  data.words = data.words.filter(w => w.id !== id);
-  data.reviews = data.reviews.filter(r => r.wordId !== id);
+export function removeWords(data, ids) {
+  const removed = new Set(ids);
+  data.words = data.words.filter(w => !removed.has(w.id));
+  data.reviews = data.reviews.filter(r => !removed.has(r.wordId));
   if (data.session) {
-    for (const k of ['ids', 'queue', 'done']) data.session[k] = data.session[k].filter(v => v !== id);
+    for (const k of ['ids', 'queue', 'done']) data.session[k] = data.session[k].filter(id => !removed.has(id));
     if (!data.session.ids.length) data.session = null;
   }
+}
+export function removeWord(data, id) { removeWords(data, [id]); }
+export function wordGroups(words, depth = 0) {
+  const lengths = [4, 7, 10], groups = new Map();
+  for (const w of words) {
+    const key = w.date.slice(0, lengths[depth]);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(w);
+  }
+  return [...groups].sort(([a], [b]) => b.localeCompare(a)).map(([key, items]) => ({
+    key, words: items, children: depth < 2 ? wordGroups(items, depth + 1) : [],
+  }));
+}
+export function selectionState(words, selected) {
+  const count = words.reduce((sum, w) => sum + Number(selected.has(w.id)), 0);
+  return { checked: words.length > 0 && count === words.length, partial: count > 0 && count < words.length };
 }
 export function editWord(data, id, value) {
   const w = validateWord(value), old = data.words.find(w => w.id === id);

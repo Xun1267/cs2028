@@ -1972,3 +1972,29 @@ button.prep-answer.is-wrong:hover {
 .words-page .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .words-page label.button { position: relative; cursor: pointer; }
 .words-page label.button:focus-within { outline: 2px solid #a73812; outline-offset: 3px; }
+
+/* Hierarchical vocabulary management */
+.word-group-body { margin-left: 20px; }
+.word-group-body .word-group:last-child { border-bottom: 0; }
+.word-group-level-0 > .word-group-head button > span:first-child { color: var(--ink); font-weight: 600; }
+.word-group-count { font-size: 14px; }
+.word-select { display: flex; flex: 0 0 40px; align-items: center; justify-content: center; min-height: 44px; cursor: pointer; }
+.word-select input { width: 20px; height: 20px; margin: 0; accent-color: var(--orange); cursor: pointer; }
+.word-item-content { flex: 1; min-width: 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.word-list li:has(.word-select) { flex-direction: row; align-items: flex-start; gap: 8px; }
+.word-day-actions { margin: 8px 0 16px; }
+.word-bulk-bar { position: sticky; top: 0; z-index: 3; padding: 12px 0; background: var(--paper); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin-bottom: 14px; }
+.word-bulk-summary { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
+.word-bulk-summary .word-actions { margin: 0; }
+.word-bulk-options { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.word-bulk-options button { font-size: 14px; }
+.word-bulk-summary button[data-word-action="delete-selected"] { color: #a73812; border-color: #a73812; }
+@media (max-width: 600px) {
+  .word-group-body { margin-left: 10px; }
+  .word-group-head { gap: 4px; }
+  .word-group-head button { gap: 10px; min-width: 0; }
+  .word-group-count { font-size: 13px; }
+  .word-select { flex-basis: 34px; }
+  .word-item-content { flex-direction: column; align-items: stretch; gap: 12px; }
+  .word-bulk-bar { padding-top: 10px; }
+}
