@@ -17,6 +17,7 @@ import {
 import { byLatest, containsWords, groupBy, projectTree } from "./browse.js";
 import { schoolIdentity } from "./school-emblem.js";
 import { bindPrepReport, createPrepViews } from "./prep/views.js";
+import { createWordViews } from "./words/views.js";
 import { createHandbook } from "./handbook.js";
 import { createInsights } from "./insights.js";
 import {
@@ -44,6 +45,7 @@ const esc = (v) =>
 const nav = [
   ["home", "首页", "M3 10l9-7 9 7v10h-6v-7H9v7H3z"],
   ["handbook", "考研指南", "M5 4h14v16H5z M8 8h8 M8 12h8 M8 16h5"],
+  ["words", "单词复习", "M4 4h7v16H4z M13 4h7v16h-7 M7 8h1 M16 8h1"],
   ["prep", "备考记录", "M5 4h14v16H5z M8 15l3-4 2 2 3-5"],
   ["guide", "考研概况", "M3 5q5-2 9 1 4-3 9-1v14q-5-2-9 1-4-3-9-1z M12 6v14"],
   ["majors", "专业探索", "M12 3l10 5-10 5L2 8z M6 10v6q6 5 12 0v-6"],
@@ -1616,6 +1618,7 @@ function updateNavigation() {
   $("#crumb b").textContent = label(section) || "页面";
 }
 
+const wordViews = createWordViews({ esc });
 const prepViews = createPrepViews({ esc, heading, sect, link, table, empty });
 
 async function mountPrep(id, entry, top, animate = false) {
@@ -1684,6 +1687,7 @@ function render() {
     recruitment: () => dataInsights.marketDetail("recruitmentExamples", arg),
     guide,
     handbook: () => handbook.page(arg),
+    words: () => "",
     prep: () => heading("备考记录") + (prepUnlocked() ? empty("正在读取考试记录…") : ""),
     compare,
     decide: decision,
@@ -2455,6 +2459,7 @@ function navigate(animate = false) {
   }
   if (entry === activeEntry) return;
   cancelPageEntrance();
+  wordViews.unmount();
   closePrepPrompt();
   rememberScroll();
   clearTimeout(scrollTimer);
@@ -2487,6 +2492,12 @@ function navigate(animate = false) {
   main.focus({ preventScroll: true });
   const topic =
     page === "guide" && arg && document.getElementById("knowledge-" + arg);
+  if (page === "words") {
+    wordViews.mount(pageContent, arg);
+    document.title = "单词复习 · CS 2028";
+    scrollTo(0, savedScroll || 0);
+    return;
+  }
   if (page === "prep") {
     const id = arg;
     scrollTo(0, 0);
