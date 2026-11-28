@@ -1,9 +1,10 @@
 import { STORAGE_KEY, emptyData, today, wordKey, validateWord, parseImport, importRows, dueWords, todayStatus, startSession, answer, removeWord, removeWords, wordGroups, selectionState, editWord, validateBackup } from './model.mjs';
 
-export function createWordViews({ esc }) {
+export function createWordViews({ esc, getFlipMode = () => '3d' }) {
   let root, tab = 'today', data, raw, error = '', message = '', preview = [], added = [], flipped = false, busy = false, timer, generation = 0, day = today();
   let query = '', selected = new Set(), managing = false, expanded = new Set(), editing = null;
-  let libraryGroups = new Map();
+  let libraryGroups = new Map(), drag = null, lastPointerTap = 0;
+  const flipMode = () => (getFlipMode?.() === 'fast' ? 'fast' : '3d');
   const matchesQuery = w => (w.english + '\n' + w.chinese).toLowerCase().includes(query.toLowerCase().trim());
   const active = () => root?.isConnected && location.hash.startsWith('#words');
   const button = (action, text, disabled = false, extra = '') => `<button type="button" data-word-action="${action}" ${disabled ? 'disabled' : ''} ${extra}>${text}</button>`;
@@ -89,12 +90,39 @@ export function createWordViews({ esc }) {
     const s = data.session;
     if (!s?.queue.length) return `<section class="word-finish"><h1>复习完成</h1><p class="num">${s?.done.length || 0} 词 · 已完成</p>${button('finish', '返回今日复习')}</section>`;
     const w = data.words.find(w => w.id === s.queue[0]);
+    const mode = flipMode();
+    const isLong = w.chinese.length > 36 || w.chinese.includes('\n');
     return `<div class="word-review-head">${button('exit', '退出复习')}<span class="num" role="status">${s.done.length}/${s.ids.length}</span></div><progress class="word-progress" value="${s.done.length}" max="${s.ids.length}" aria-label="复习进度"></progress>
-      <div class="word-card-stage"><button type="button" class="word-card${flipped ? ' is-flipped' : ''}" data-word-action="flip" aria-label="${esc(flipped ? w.chinese : w.english)}" aria-pressed="${flipped}"><span class="word-card-inner"><span class="word-card-face word-card-front" lang="en" aria-hidden="${flipped}">${esc(w.english)}</span><span class="word-card-face word-card-back" aria-hidden="${!flipped}">${esc(w.chinese)}</span></span></button></div>
-      <div class="word-answer-actions" ${flipped ? '' : 'hidden'}>${button('forget', '不记得')}${button('remember', '记得')}</div>`;
+      <div class="word-card-wrap">
+        <div class="word-card-stage" data-flip-mode="${mode}">
+          ${s.queue.length > 1 ? '<div class="word-card-stack" aria-hidden="true"></div>' : ''}
+          <div class="word-card-drag">
+            <span class="word-swipe-badge word-swipe-forget" aria-hidden="true">不记得</span>
+            <span class="word-swipe-badge word-swipe-remember" aria-hidden="true">记得</span>
+            <button type="button" class="word-card${flipped ? ' is-flipped' : ''}" data-word-action="flip" aria-label="${esc(flipped ? w.chinese : w.english)}" aria-pressed="${flipped}">
+              <span class="word-card-inner">
+                <span class="word-card-face word-card-front" lang="en" aria-hidden="${flipped}">
+                  <span class="word-card-scroll"><span class="word-card-text">${esc(w.english)}</span></span>
+                  <span class="word-card-tip" aria-hidden="true">轻点卡片查看释义</span>
+                </span>
+                <span class="word-card-face word-card-back${isLong ? ' is-long' : ''}" aria-hidden="${!flipped}">
+                  <span class="word-card-back-head" lang="en" aria-hidden="true">${esc(w.english)}</span>
+                  <span class="word-card-scroll"><span class="word-card-text">${esc(w.chinese)}</span></span>
+                  <span class="word-card-tip" aria-hidden="true">← 左滑不记得 · 右滑记得 →</span>
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="word-answer-dock${flipped ? ' is-flipped' : ''}">
+        <p class="word-answer-hint" aria-hidden="${flipped}">点击卡片翻面后判断掌握情况</p>
+        <div class="word-answer-actions" aria-hidden="${!flipped}">${button('forget', '不记得', !flipped)}${button('remember', '记得', !flipped)}</div>
+      </div>`;
   }
   function draw() {
     if (!active()) return;
+    drag = null;
     if (data) {
       const live = new Set(data.words.map(w => w.id));
       selected = new Set([...selected].filter(id => live.has(id)));
@@ -110,11 +138,13 @@ export function createWordViews({ esc }) {
     flipped = false; location.hash = '#words/review';
     if (tab === 'review') draw();
   }
-  function switchCard(remembered) {
+  function switchCard(remembered, restoreFocus = true) {
     if (busy || !flipped || !data.session?.queue.length) return;
-    busy = true;
+    busy = true; drag = null;
     const token = generation;
-    root.querySelector('.word-card-stage')?.classList.add('is-leaving');
+    const stage = root.querySelector('.word-card-stage');
+    stage?.classList.remove('is-dragging');
+    stage?.classList.add(remembered ? 'is-leaving-right' : 'is-leaving-left');
     root.querySelectorAll('.word-answer-actions button').forEach(b => b.disabled = true);
     try { save(next => answer(next, remembered)); }
     catch (e) { busy = false; fail(e); return; }
@@ -122,8 +152,8 @@ export function createWordViews({ esc }) {
       if (generation !== token || !active()) return;
       busy = false; flipped = false; draw();
       root.querySelector('.word-card-stage')?.classList.add('is-entering');
-      root.querySelector('.word-card')?.focus({ preventScroll: true });
-    }, matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 180);
+      if (restoreFocus) root.querySelector('.word-card')?.focus({ preventScroll: true });
+    }, matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 190);
   }
   function flip() {
     if (busy || !data.session?.queue.length) return;
@@ -135,7 +165,12 @@ export function createWordViews({ esc }) {
     card.setAttribute('aria-label', flipped ? w.chinese : w.english);
     card.querySelector('.word-card-front').setAttribute('aria-hidden', String(flipped));
     card.querySelector('.word-card-back').setAttribute('aria-hidden', String(!flipped));
-    root.querySelector('.word-answer-actions').hidden = !flipped;
+    const dock = root.querySelector('.word-answer-dock');
+    dock?.classList.toggle('is-flipped', flipped);
+    dock?.querySelector('.word-answer-hint')?.setAttribute('aria-hidden', String(flipped));
+    const actions = dock?.querySelector('.word-answer-actions');
+    actions?.setAttribute('aria-hidden', String(!flipped));
+    actions?.querySelectorAll('button').forEach(b => { b.disabled = !flipped; });
   }
   function capturePreview() {
     const form = root.querySelector('#word-confirm');
@@ -143,11 +178,71 @@ export function createWordViews({ esc }) {
     const values = new FormData(form);
     preview = preview.map((w, i) => ({ date: values.get('date' + i), english: values.get('english' + i), chinese: values.get('chinese' + i) }));
   }
+  function pointerDown(event) {
+    if (tab !== 'review' || busy || event.button > 0) return;
+    const card = event.target.closest('.word-card');
+    if (!card) return;
+    drag = { card, id: event.pointerId, startX: event.clientX, startY: event.clientY, startTime: performance.now(), dx: 0, active: false, scrollLocked: false };
+  }
+  function pointerMove(event) {
+    if (!drag || event.pointerId !== drag.id || drag.scrollLocked) return;
+    const dx = event.clientX - drag.startX;
+    const dy = event.clientY - drag.startY;
+    if (!drag.active) {
+      if (Math.abs(dy) > 10 && Math.abs(dy) > Math.abs(dx)) { drag.scrollLocked = true; return; }
+      if (Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(dy)) {
+        drag.active = true;
+        root.querySelector('.word-card-stage')?.classList.add('is-dragging');
+        drag.card.setPointerCapture?.(drag.id);
+      } else return;
+    }
+    drag.dx = dx;
+    const stage = root.querySelector('.word-card-stage');
+    const shell = stage?.querySelector('.word-card-drag');
+    if (!shell) return;
+    const moveX = dx * (flipped ? 1 : 0.32);
+    const rot = Math.max(-9, Math.min(9, moveX * 0.04));
+    shell.style.transform = `translate3d(${moveX}px, ${Math.abs(moveX) * 0.04}px, 0) rotate(${rot}deg)`;
+    if (flipped) {
+      const progress = Math.min(1, Math.abs(moveX) / 85);
+      const forgetBadge = stage.querySelector('.word-swipe-forget');
+      const rememberBadge = stage.querySelector('.word-swipe-remember');
+      if (forgetBadge) forgetBadge.style.opacity = moveX < 0 ? String(progress) : '0';
+      if (rememberBadge) rememberBadge.style.opacity = moveX > 0 ? String(progress) : '0';
+    }
+  }
+  function pointerEnd(event) {
+    if (!drag || event.pointerId !== drag.id) return;
+    const current = drag; drag = null;
+    const stage = root.querySelector('.word-card-stage');
+    const shell = stage?.querySelector('.word-card-drag');
+    stage?.classList.remove('is-dragging');
+    stage?.querySelectorAll('.word-swipe-badge').forEach(b => { b.style.opacity = '0'; });
+    if (current.scrollLocked) return;
+    if (!current.active) {
+      if (event.type === 'pointerup' && Math.hypot(event.clientX - current.startX, event.clientY - current.startY) < 10) {
+        lastPointerTap = performance.now();
+        flip();
+      }
+      return;
+    }
+    const elapsed = Math.max(1, performance.now() - current.startTime);
+    const velocity = Math.abs(current.dx) / elapsed;
+    lastPointerTap = performance.now();
+    if (event.type === 'pointerup' && flipped && (Math.abs(current.dx) > 90 || velocity > 0.42)) {
+      switchCard(current.dx > 0, false);
+    } else if (shell) {
+      shell.style.transform = '';
+    }
+  }
   async function click(event) {
     const b = event.target.closest('[data-word-action]');
     if (!b || busy) return;
     const action = b.dataset.wordAction;
-    if (action === 'flip') { flip(); return; }
+    if (action === 'flip') {
+      if (performance.now() - lastPointerTap > 400) flip();
+      return;
+    }
     if (action === 'remember' || action === 'forget') { switchCard(action === 'remember'); return; }
     error = ''; message = '';
     try {
@@ -272,11 +367,15 @@ export function createWordViews({ esc }) {
   setInterval(refreshDay, 30000);
   addEventListener('focus', refreshDay);
   return {
-    unmount() { generation++; clearTimeout(timer); busy = false; document.body.classList.remove('word-review-active'); root = null; },
+    unmount() { generation++; clearTimeout(timer); busy = false; drag = null; document.body.classList.remove('word-review-active'); root = null; },
     mount(container, value) {
-      generation++; clearTimeout(timer); busy = false; flipped = false;
+      generation++; clearTimeout(timer); busy = false; flipped = false; drag = null;
       tab = ['today', 'library', 'import', 'review'].includes(value) ? value : 'today';
       root = document.createElement('div'); container.replaceChildren(root);
+      root.addEventListener('pointerdown', pointerDown);
+      root.addEventListener('pointermove', pointerMove);
+      root.addEventListener('pointerup', pointerEnd);
+      root.addEventListener('pointercancel', pointerEnd);
       root.addEventListener('click', click); root.addEventListener('submit', submit); root.addEventListener('change', change); root.addEventListener('input', input);
       try { load(); error = ''; if (tab === 'review' && !data.session) tab = 'today'; }
       catch { data = null; error = '本地数据无法读取，原数据已保留'; }

@@ -60,6 +60,11 @@ const nav = [
   ["decide", "择校决策", "M4 6h16 M4 12h16 M4 18h16 M8 3v6 M15 9v6 M9 15v6"],
   ["saved", "我的收藏", "M6 3h12v18l-6-4-6 4z"],
   [
+    "settings",
+    "设置",
+    "M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z",
+  ],
+  [
     "data",
     "数据管理",
     "M3 6c0-5 18-5 18 0s-18 5-18 0v12c0 5 18 5 18 0V6 M3 12c0 5 18 5 18 0",
@@ -104,7 +109,18 @@ function readBrowserState() {
 }
 const browserState = readBrowserState();
 browserState.directoryEntries ||= {};
-let state = { fav: [], comp: [], plans: [], notes: {}, city: "", ...read() };
+let state = {
+  fav: [],
+  comp: [],
+  plans: [],
+  notes: {},
+  city: "",
+  wordFlipMode: "3d",
+  ...read(),
+};
+function wordFlipMode() {
+  return state.wordFlipMode === "fast" ? "fast" : "3d";
+}
 let schools,
   projects,
   latestProjects,
@@ -1498,6 +1514,69 @@ function saved() {
     "</div>"
   );
 }
+function settings() {
+  const mode = wordFlipMode();
+  const options = [
+    [
+      "3d",
+      "3D 物理翻转（默认）",
+      "270ms 立体翻面，搭配卡片叠层、按压反馈与左右滑动切卡手势。",
+    ],
+    [
+      "fast",
+      "轻快微缩切换",
+      "180ms 微缩放与柔和模糊过渡，无大角度旋转，适合高频刷词。",
+    ],
+  ];
+  return (
+    heading("设置", "调整单词复习动效与个人使用偏好") +
+    `<section class="settings-section">
+      ${sect("单词闪卡翻面效果")}
+      <p class="settings-desc">切换后立即生效，并自动保存在当前浏览器中。</p>
+      <div class="settings-options" role="radiogroup" aria-label="单词闪卡翻面效果">
+        ${options
+          .map(
+            ([value, title, desc]) => `
+          <label class="settings-option${mode === value ? " is-selected" : ""}">
+            <input type="radio" name="wordFlipMode" value="${value}"${mode === value ? " checked" : ""}>
+            <span class="settings-option-body">
+              <strong>${esc(title)}</strong>
+              <span>${esc(desc)}</span>
+            </span>
+          </label>`,
+          )
+          .join("")}
+      </div>
+      <div class="settings-preview-block">
+        <div class="settings-preview-head">
+          <span>实时手感预览</span>
+          <a class="jump" href="#words/today">前往单词复习 →</a>
+        </div>
+        <div class="word-card-stage settings-preview-stage" data-flip-mode="${mode}">
+          <div class="word-card-drag">
+            <button type="button" class="word-card" id="settingsFlipPreview" aria-pressed="false" aria-label="示例卡片：ubiquitous，点击预览翻面效果">
+              <span class="word-card-inner">
+                <span class="word-card-face word-card-front">
+                  <span class="word-card-scroll">
+                    <span class="word-card-text">ubiquitous</span>
+                  </span>
+                  <span class="word-card-tip">点击体验当前翻面效果</span>
+                </span>
+                <span class="word-card-face word-card-back">
+                  <span class="word-card-back-head" aria-hidden="true">ubiquitous</span>
+                  <span class="word-card-scroll">
+                    <span class="word-card-text">adj. 无处不在的；普遍存在的</span>
+                  </span>
+                  <span class="word-card-tip">再次点击翻回正面</span>
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>`
+  );
+}
 function data() {
   return (
     heading("数据管理") +
@@ -1589,14 +1668,18 @@ function mountNavigation() {
   $("#rail").innerHTML =
     '<a class="brand" href="#home"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M1 1h30v7H8v16h23v7H1z M12 12h19v7H12z"/></svg>CS 2028</a><nav class="nav" aria-label="主导航">' +
     nav
-      .filter(([key]) => key !== "data")
+      .filter(([key]) => key !== "data" && key !== "settings")
       .map(
         ([k, t, d]) =>
           (k === "jobs" || k === "saved" ? "<hr>" : "") +
           `<a href="#${k}">${icon(d)}${t}</a>`,
       )
       .join("") +
-    '</nav><div class="railfoot"><a href="#data">' +
+    '</nav><div class="railfoot">' +
+    '<a href="#settings">' +
+    icon(nav.find(([key]) => key === "settings")[2]) +
+    "设置</a>" +
+    '<a href="#data">' +
     icon(nav.find(([key]) => key === "data")[2]) +
     "数据管理</a></div>";
   $("#searchOpen").innerHTML =
@@ -1618,7 +1701,7 @@ function updateNavigation() {
   $("#crumb b").textContent = label(section) || "页面";
 }
 
-const wordViews = createWordViews({ esc });
+const wordViews = createWordViews({ esc, getFlipMode: wordFlipMode });
 const prepViews = createPrepViews({ esc, heading, sect, link, table, empty });
 
 async function mountPrep(id, entry, top, animate = false) {
@@ -1692,6 +1775,7 @@ function render() {
     compare,
     decide: decision,
     saved,
+    settings,
     data,
     news: () =>
       heading("招生动态") +
@@ -1914,6 +1998,9 @@ function validState(v) {
     Object.values(v.notes).every((n) => typeof n === "string") &&
     typeof v.city === "string" &&
     (!v.wantCombo || typeof v.wantCombo === "string") &&
+    (!v.wordFlipMode ||
+      v.wordFlipMode === "3d" ||
+      v.wordFlipMode === "fast") &&
     (!v.filters ||
       ["q", "city", "combo", "year"].every(
         (k) => typeof v.filters[k] === "string",
@@ -1977,6 +2064,27 @@ document.addEventListener("change", async (e) => {
     const ref = projectRef(project.id, t.value);
     if (replaceComparison(t.dataset.compYear, ref)) updateComparison(ref);
     else t.value = String(project.year);
+    return;
+  }
+  if (t.name === "wordFlipMode") {
+    state.wordFlipMode = t.value === "fast" ? "fast" : "3d";
+    document.querySelectorAll(".settings-option").forEach((option) => {
+      const radio = option.querySelector('input[name="wordFlipMode"]');
+      option.classList.toggle("is-selected", radio?.checked);
+    });
+    const previewStage = $(".settings-preview-stage");
+    if (previewStage) {
+      previewStage.dataset.flipMode = state.wordFlipMode;
+      const card = $("#settingsFlipPreview");
+      card?.classList.remove("is-flipped");
+      card?.setAttribute("aria-pressed", "false");
+    }
+    if (save())
+      notify(
+        state.wordFlipMode === "fast"
+          ? "已切换为轻快微缩切换"
+          : "已切换为 3D 物理翻转",
+      );
     return;
   }
   if (t.id === "restore" && t.files.length) {
@@ -2366,6 +2474,13 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.addEventListener("click", (event) => {
+  const previewCard = event.target.closest("#settingsFlipPreview");
+  if (previewCard) {
+    const next = !previewCard.classList.contains("is-flipped");
+    previewCard.classList.toggle("is-flipped", next);
+    previewCard.setAttribute("aria-pressed", String(next));
+    return;
+  }
   const button = event.target.closest("[data-action]");
   if (button) act(button);
   const anchor = event.target.closest("a");
